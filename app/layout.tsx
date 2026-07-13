@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, JetBrains_Mono } from "next/font/google";
+import Nav from "@/components/nav";
 import "./globals.css";
 
 const pixelFont = Press_Start_2P({
@@ -30,7 +31,19 @@ export default function RootLayout({
       lang="es"
       className={`${pixelFont.variable} ${monoFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full">
+        {/* fondo: grid en perspectiva + scanlines + noise — fixed, no interactivo */}
+        <div className="av-bg" aria-hidden />
+        <div className="av-noise" aria-hidden />
+        {/* contenido por encima de las capas de fondo (rol de #root en el prototipo) */}
+        <div className="relative z-[2] flex min-h-full flex-col">
+          <Nav />
+          <main className="av-main flex-1">{children}</main>
+          <footer className="border-t border-line px-8 py-5 text-center font-mono text-[11px] tracking-[0.16em] text-ink-faint">
+            © 2026 ARCADE VAULT · HECHO CON PIXELES Y NEÓN · v2.6.0
+          </footer>
+        </div>
+      </body>
     </html>
   );
 }
