@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
+/* ===== Tailwind v4 theme tokens (bridged to the bespoke :root palette) =====
+   `inline` emits no :root var, so utilities resolve directly to the source
+   vars — this avoids colliding with next/font's --font-pixel set on <html>. */
+@theme inline {
+  --font-pixel: var(--font-pixel);
+  --font-mono: var(--font-mono);
+
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-bg-3: var(--bg-3);
+  --color-ink: var(--ink);
+  --color-ink-dim: var(--ink-dim);
+  --color-ink-faint: var(--ink-faint);
+  --color-cyan: var(--cyan);
+  --color-magenta: var(--magenta);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
+  --color-gold: var(--gold);
+  --color-silver: var(--silver);
+  --color-bronze: var(--bronze);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+}
+
 /* ===== ARCADE VAULT — theme ===== */
 :root {
   --bg: #0a0a0f;
