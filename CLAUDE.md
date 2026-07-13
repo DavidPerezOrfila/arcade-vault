@@ -39,6 +39,10 @@ There is no test runner configured yet. If you add one, update this file with th
 - `public/` — Static assets served from the root path.
 - `resources/templates/` — Reference HTML/JSX prototypes (`Arcade Vault.html`, `app.jsx`, `data.jsx`, `nav.jsx`, `biblioteca.jsx`, `detalle.jsx`, `reproductor.jsx`, `auth.jsx`, `salon.jsx`, `styles.css`). These define the intended screens, game catalog data, and visual style for the Arcade Vault product. Treat them as the design source of truth until formal specs exist.
 
+## Skills
+
+Usa siempre /frontend-design para diseñar la interfaz de usuario.
+
 ## Architecture notes
 
 - This is a **Next.js App Router** application. Server Components are the default; add `"use client"` only when a component uses state, effects, refs, browser APIs, or event handlers.
