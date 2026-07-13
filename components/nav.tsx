@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { clearUser, getUser, type User } from "@/app/data/storage";
+import { clearUser, getUser } from "@/app/data/storage";
+import type { User } from "@/app/data/types";
 
 export default function Nav() {
   const pathname = usePathname();
