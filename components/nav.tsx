@@ -44,6 +44,9 @@ export default function Nav() {
           <Link href="/" className={isActive("/") ? "active" : ""}>
             BIBLIOTECA
           </Link>
+          <Link href="/reproductor" className={isActive("/reproductor") ? "active" : ""}>
+            REPRODUCTOR
+          </Link>
           <Link href="/salon" className={isActive("/salon") ? "active" : ""}>
             SALÓN
           </Link>
@@ -85,6 +88,13 @@ export default function Nav() {
           onClick={() => setMobileOpen(false)}
         >
           Biblioteca
+        </Link>
+        <Link
+          href="/reproductor"
+          className={isActive("/reproductor") ? "active" : ""}
+          onClick={() => setMobileOpen(false)}
+        >
+          Reproductor
         </Link>
         <Link
           href="/salon"
