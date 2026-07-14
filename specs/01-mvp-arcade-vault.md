@@ -1,5 +1,5 @@
 ---
-state: Implementednp
+state: Implemented
 date: 2026-07-13
 dependencies: Ninguna
 ---
