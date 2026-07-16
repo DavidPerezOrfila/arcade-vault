@@ -17,8 +17,11 @@ export default function Nav() {
 
   const isActive = (href: string) => {
     if (href === "/") {
+      return pathname === "/";
+    }
+    if (href === "/games") {
       return (
-        pathname === "/" ||
+        pathname === "/games" ||
         pathname.startsWith("/detalle") ||
         pathname.startsWith("/player")
       );
@@ -42,6 +45,9 @@ export default function Nav() {
         </Link>
         <div className="links">
           <Link href="/" className={isActive("/") ? "active" : ""}>
+            INICIO
+          </Link>
+          <Link href="/games" className={isActive("/games") ? "active" : ""}>
             BIBLIOTECA
           </Link>
           <Link href="/reproductor" className={isActive("/reproductor") ? "active" : ""}>
@@ -85,6 +91,13 @@ export default function Nav() {
         <Link
           href="/"
           className={isActive("/") ? "active" : ""}
+          onClick={() => setMobileOpen(false)}
+        >
+          Inicio
+        </Link>
+        <Link
+          href="/games"
+          className={isActive("/games") ? "active" : ""}
           onClick={() => setMobileOpen(false)}
         >
           Biblioteca
