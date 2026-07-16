@@ -1,12 +1,12 @@
 ---
 source_file: "tsconfig.json"
 type: "code"
-community: "TypeScript Configuration"
+community: "TypeScript Config"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Configuration
+  - community/TypeScript_Config
 ---
 
 # lib
@@ -17,4 +17,4 @@ tags:
 - [[dom.iterable]] - `extends` [EXTRACTED]
 - [[esnext]] - `extends` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Configuration
+#graphify/code #graphify/EXTRACTED #community/TypeScript_Config

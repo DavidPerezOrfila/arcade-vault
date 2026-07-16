@@ -1,5 +1,5 @@
 ---
-state: Approved
+state: Implemented
 date: 2026-07-16
 dependencies: 02-home-page
 ---

@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "ESLint Configuration"
-location: "L22"
+community: "Dev Tooling"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESLint_Configuration
+  - community/Dev_Tooling
 ---
 
 # @types/react
@@ -15,4 +15,4 @@ tags:
 - [[@typesreact_1]] - `imports` [EXTRACTED]
 - [[devDependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESLint_Configuration
+#graphify/code #graphify/EXTRACTED #community/Dev_Tooling

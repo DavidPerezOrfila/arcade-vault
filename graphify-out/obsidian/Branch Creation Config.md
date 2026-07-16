@@ -1,11 +1,11 @@
 ---
 source_file: "specs/.spec-config.yml"
 type: "document"
-community: "Arcade Vault Core"
+community: "Spec Skills Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Arcade_Vault_Core
+  - community/Spec_Skills_Config
 ---
 
 # Branch Creation Config
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[spec-impl Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Arcade_Vault_Core
+#graphify/document #graphify/EXTRACTED #community/Spec_Skills_Config

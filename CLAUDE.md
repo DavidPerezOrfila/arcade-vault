@@ -78,13 +78,34 @@ Use `/spec` before starting any large feature. Do not write production code unti
 
 The product is Spanish-language (`es`). The root layout currently sets `lang="en"`; update it to `lang="es"` when localizing the application to match the content in `resources/templates/`.
 
+## 3-Layer Context Rule (mandatory)
+
+Every task MUST resolve context through these layers before opening any source file:
+
+1. **Graph query** — `graphify query "<question>"` or `graphify path "<A>" "<B>"` or `graphify explain "<concept>"`. This returns a scoped subgraph with the exact nodes and edges relevant to the question. Start here for ANY codebase question.
+
+2. **Obsidian vault** — `graphify-out/obsidian/` contains one `.md` per node with wikilinks, community tags, and cohesion scores. Use this for deep context on a specific concept, component, or spec. The vault index (`_COMMUNITY_*.md` files) maps communities to their members.
+
+3. **Source files** — Only open individual source files AFTER layers 1-2 have narrowed the scope. Never open 10+ files in a single message to "get context" — that is exactly what burns tokens. If the graph and vault don't surface enough, say so and ask which specific file to read.
+
+**Why this rule exists:** Opening dozens of source files per message is the primary token explosion vector. The graph and Obsidian vault are pre-extracted, deduplicated, and relationally linked — they answer most questions in <2000 tokens where raw file reads would cost 20,000+.
+
 ## graphify
 
-This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+This project has a knowledge graph at `graphify-out/` with 627 nodes, 51 communities, and cross-file relationships. The Obsidian vault at `graphify-out/obsidian/` mirrors the graph as navigable markdown with wikilinks.
+
+Commands:
+
+- `graphify query "<question>"` — BFS traversal for broad context (default)
+- `graphify query "<question>" --dfs` — DFS for tracing a specific path
+- `graphify path "<A>" "<B>"` — shortest path between two concepts
+- `graphify explain "<concept>"` — plain-language explanation of a node
+- `graphify-out/GRAPH_REPORT.md` — full audit report (god nodes, surprising connections, suggested questions)
+- `graphify update .` — incremental update after code changes (AST-only, no API cost)
 
 Rules:
 
-- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- **Always query the graph first.** Do not grep or read files until the graph has been consulted.
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+- Read GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current.

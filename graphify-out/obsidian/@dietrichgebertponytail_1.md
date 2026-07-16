@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "npm Dependencies"
-location: "L12"
+community: "Package Dependencies"
+location: "L13"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/npm_Dependencies
+  - community/Package_Dependencies
 ---
 
 # @dietrichgebert/ponytail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[@dietrichgebertponytail]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/npm_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/Package_Dependencies

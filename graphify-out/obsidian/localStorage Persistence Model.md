@@ -1,11 +1,11 @@
 ---
 source_file: "specs/01-mvp-arcade-vault.md"
 type: "rationale"
-community: "Arcade Vault Core"
+community: "Game Data Model"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Arcade_Vault_Core
+  - community/Game_Data_Model
 ---
 
 # localStorage Persistence Model
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MVP Arcade Vault Spec]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Arcade_Vault_Core
+#graphify/rationale #graphify/EXTRACTED #community/Game_Data_Model

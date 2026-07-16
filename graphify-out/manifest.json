@@ -1,347 +1,387 @@
 {
   ".claude/settings.json": {
-    "mtime": 1784202093.0350838,
+    "mtime": 1784237619.6027703,
     "ast_hash": "e22bf2a51273bd57cb6d42f2ac5eb1ed",
     "semantic_hash": "e22bf2a51273bd57cb6d42f2ac5eb1ed"
   },
   ".claude/settings.local.json": {
-    "mtime": 1784213310.8995287,
-    "ast_hash": "ac5ea40e9a6722743ae1bdc67ff32e3c",
-    "semantic_hash": ""
+    "mtime": 1784151991.5209973,
+    "ast_hash": "f934ccfe8ac21f4083406a4f1bf8381d",
+    "semantic_hash": "f934ccfe8ac21f4083406a4f1bf8381d"
   },
   "app/auth/page.tsx": {
-    "mtime": 1784019315.3695395,
+    "mtime": 1783981572.4962027,
     "ast_hash": "13398249d71fb1f1f54ecd87910499cb",
     "semantic_hash": "13398249d71fb1f1f54ecd87910499cb"
   },
   "app/data/games.ts": {
-    "mtime": 1784019315.3695395,
+    "mtime": 1783981572.4982042,
     "ast_hash": "07dd78ff192717480ae0fccb07ebc211",
     "semantic_hash": "07dd78ff192717480ae0fccb07ebc211"
   },
   "app/data/players.ts": {
-    "mtime": 1784019315.3708172,
+    "mtime": 1783981572.500206,
     "ast_hash": "5127799bf4e8727ade479f25c123915f",
     "semantic_hash": "5127799bf4e8727ade479f25c123915f"
   },
   "app/data/storage.ts": {
-    "mtime": 1784019315.371817,
+    "mtime": 1783981572.5012064,
     "ast_hash": "3f0a5dc9174821aec47e59fb8deab493",
     "semantic_hash": "3f0a5dc9174821aec47e59fb8deab493"
   },
   "app/data/types.ts": {
-    "mtime": 1784019315.3728216,
+    "mtime": 1783981572.5032084,
     "ast_hash": "f1ef8677ca541b94b946b18390cb4477",
     "semantic_hash": "f1ef8677ca541b94b946b18390cb4477"
   },
   "app/detalle/[id]/page.tsx": {
-    "mtime": 1784019315.3738172,
+    "mtime": 1783981572.5062122,
     "ast_hash": "5fc0740cedb906630c4aae4e6bf20d57",
     "semantic_hash": "5fc0740cedb906630c4aae4e6bf20d57"
   },
   "app/layout.tsx": {
-    "mtime": 1784019315.3768315,
+    "mtime": 1783981572.509215,
     "ast_hash": "bd01c697b0a99c06f0e4244ba502e60b",
     "semantic_hash": "bd01c697b0a99c06f0e4244ba502e60b"
   },
   "app/page.tsx": {
-    "mtime": 1784202093.0441618,
+    "mtime": 1784237619.6082778,
     "ast_hash": "19bbd1d94482a4f9fb8e8f87bccce0bf",
-    "semantic_hash": ""
+    "semantic_hash": "19bbd1d94482a4f9fb8e8f87bccce0bf"
   },
   "app/player/[id]/page.tsx": {
-    "mtime": 1784207321.7039602,
+    "mtime": 1784237619.6102798,
     "ast_hash": "e0a5c87f93f827991b705ecbcb7224a6",
-    "semantic_hash": ""
+    "semantic_hash": "e0a5c87f93f827991b705ecbcb7224a6"
   },
   "app/reproductor/ReproductorContent.tsx": {
-    "mtime": 1784043618.6684363,
+    "mtime": 1784064681.475464,
     "ast_hash": "2d3fedf388b295a27d5346bf83d0e84c",
     "semantic_hash": "2d3fedf388b295a27d5346bf83d0e84c"
   },
   "app/reproductor/page.tsx": {
-    "mtime": 1784043618.671556,
+    "mtime": 1784064681.4774697,
     "ast_hash": "5c00047fe88092fffe741370439d86cf",
     "semantic_hash": "5c00047fe88092fffe741370439d86cf"
   },
   "app/salon/page.tsx": {
-    "mtime": 1784207230.989511,
+    "mtime": 1784237619.6122813,
     "ast_hash": "5cb20a4b48544c30ec2972ce58100601",
-    "semantic_hash": ""
+    "semantic_hash": "5cb20a4b48544c30ec2972ce58100601"
   },
   "components/nav.tsx": {
-    "mtime": 1784207221.3515358,
-    "ast_hash": "3bd83870fa70f9941abd473599883bf8",
-    "semantic_hash": ""
+    "mtime": 1784238357.2205067,
+    "ast_hash": "b76905a6e1c63b21ebff6df54eb45d52",
+    "semantic_hash": "b76905a6e1c63b21ebff6df54eb45d52"
   },
   "eslint.config.mjs": {
-    "mtime": 1783937662.2060368,
-    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
-    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+    "mtime": 1783976573.916258,
+    "ast_hash": "6c4307ffa009658f5c97f5629094c0c2",
+    "semantic_hash": "6c4307ffa009658f5c97f5629094c0c2"
   },
   "next.config.ts": {
-    "mtime": 1783960425.114982,
+    "mtime": 1783976573.9172604,
     "ast_hash": "0490f3be7bc4ebe8a833cde2a4ee55f6",
     "semantic_hash": "0490f3be7bc4ebe8a833cde2a4ee55f6"
   },
   "package.json": {
-    "mtime": 1784043618.6780484,
-    "ast_hash": "085710c4fabe23a37623bd13bf4266ab",
-    "semantic_hash": "085710c4fabe23a37623bd13bf4266ab"
+    "mtime": 1784238357.2790809,
+    "ast_hash": "c903f38180310acf60b1bb340b240a13",
+    "semantic_hash": "c903f38180310acf60b1bb340b240a13"
   },
   "playwright.config.ts": {
-    "mtime": 1784043618.6795676,
-    "ast_hash": "f98c355dff08cddadb4b8efea83e00d6",
-    "semantic_hash": "f98c355dff08cddadb4b8efea83e00d6"
+    "mtime": 1784238357.280082,
+    "ast_hash": "38eec2f2c946e5486fe6c7b089462545",
+    "semantic_hash": "38eec2f2c946e5486fe6c7b089462545"
   },
   "postcss.config.mjs": {
-    "mtime": 1783937662.2522748,
-    "ast_hash": "239f3ebf717465dc636818a1a619398d",
-    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+    "mtime": 1783976573.9212644,
+    "ast_hash": "481fac0fdecd70e1821cc30b86030c1a",
+    "semantic_hash": "481fac0fdecd70e1821cc30b86030c1a"
   },
   "resources/templates/app.jsx": {
-    "mtime": 1778512045.0,
-    "ast_hash": "06df5143b706f3dd11e1a0711418ae92",
-    "semantic_hash": "06df5143b706f3dd11e1a0711418ae92"
+    "mtime": 1783976573.9282699,
+    "ast_hash": "41f4dab762b95e077f1864ccefea9a44",
+    "semantic_hash": "41f4dab762b95e077f1864ccefea9a44"
   },
   "resources/templates/auth.jsx": {
-    "mtime": 1778512045.0,
-    "ast_hash": "1853630950034410e10b2d55e807bfe0",
-    "semantic_hash": "1853630950034410e10b2d55e807bfe0"
+    "mtime": 1783976573.929271,
+    "ast_hash": "95ec3caf07e54f940215bfdf187d7c92",
+    "semantic_hash": "95ec3caf07e54f940215bfdf187d7c92"
   },
   "resources/templates/biblioteca.jsx": {
-    "mtime": 1778512045.0,
-    "ast_hash": "80508a5fbe1aec54d5272ab459f218ca",
-    "semantic_hash": "80508a5fbe1aec54d5272ab459f218ca"
+    "mtime": 1783976573.9302723,
+    "ast_hash": "83542e5d7eaaa3ffb7a642a05e4fe0c1",
+    "semantic_hash": "83542e5d7eaaa3ffb7a642a05e4fe0c1"
   },
   "resources/templates/data.jsx": {
-    "mtime": 1778512045.0,
-    "ast_hash": "fe31bae3fe6bc44fb2e689a005c33119",
-    "semantic_hash": "fe31bae3fe6bc44fb2e689a005c33119"
+    "mtime": 1783976573.9312727,
+    "ast_hash": "91adc6eebd663e1ca645e7894dad19c8",
+    "semantic_hash": "91adc6eebd663e1ca645e7894dad19c8"
   },
   "resources/templates/detalle.jsx": {
-    "mtime": 1778512045.0,
-    "ast_hash": "a29fdf4ecbf589277f97faccfee0d9f4",
-    "semantic_hash": "a29fdf4ecbf589277f97faccfee0d9f4"
+    "mtime": 1783976573.932274,
+    "ast_hash": "3ab52e1e86a042f1cec885d2260a719a",
+    "semantic_hash": "3ab52e1e86a042f1cec885d2260a719a"
   },
   "resources/templates/home-about/home.jsx": {
-    "mtime": 1784202093.2813957,
+    "mtime": 1784237619.8755662,
     "ast_hash": "bbfbc5a313f7b9907f2c38b667a23b8c",
-    "semantic_hash": ""
+    "semantic_hash": "bbfbc5a313f7b9907f2c38b667a23b8c"
   },
   "resources/templates/home-about/nav.jsx": {
-    "mtime": 1784202093.2824125,
+    "mtime": 1784237619.8765676,
     "ast_hash": "bc712033a55db830a0a5ca89f39b04c4",
-    "semantic_hash": ""
+    "semantic_hash": "bc712033a55db830a0a5ca89f39b04c4"
   },
   "resources/templates/nav.jsx": {
-    "mtime": 1778512045.0,
-    "ast_hash": "bd9281e6cbe40e6e29898db6d9c25403",
-    "semantic_hash": "bd9281e6cbe40e6e29898db6d9c25403"
+    "mtime": 1783976573.9332747,
+    "ast_hash": "7a0559c378f7f741ea8ab8d1320e850b",
+    "semantic_hash": "7a0559c378f7f741ea8ab8d1320e850b"
   },
   "resources/templates/reproductor.jsx": {
-    "mtime": 1778512045.0,
-    "ast_hash": "3dcbf5039dbaf03733bbf9e66c281e32",
-    "semantic_hash": "3dcbf5039dbaf03733bbf9e66c281e32"
+    "mtime": 1783976573.9342766,
+    "ast_hash": "184f128ef744b126b668e5789d33091c",
+    "semantic_hash": "184f128ef744b126b668e5789d33091c"
   },
   "resources/templates/salon.jsx": {
-    "mtime": 1778512045.0,
-    "ast_hash": "0ccd027ac09ddf7008785b83530a15f0",
-    "semantic_hash": "0ccd027ac09ddf7008785b83530a15f0"
+    "mtime": 1783976573.9342766,
+    "ast_hash": "3924f6591e0236eb3fd94cd6a977e407",
+    "semantic_hash": "3924f6591e0236eb3fd94cd6a977e407"
   },
   "skills-lock.json": {
-    "mtime": 1783951622.2310956,
+    "mtime": 1784152429.8388135,
     "ast_hash": "72e8fb45acf6675b8c265e046607579b",
     "semantic_hash": "72e8fb45acf6675b8c265e046607579b"
   },
   "tsconfig.json": {
-    "mtime": 1783944251.3476524,
-    "ast_hash": "02fc19ad21338c2ab820a70136310db4",
-    "semantic_hash": "02fc19ad21338c2ab820a70136310db4"
+    "mtime": 1783976573.9372787,
+    "ast_hash": "ab575e944f15d39a5486cf9fca385c5e",
+    "semantic_hash": "ab575e944f15d39a5486cf9fca385c5e"
   },
   ".agents/skills/playwright-cli/SKILL.md": {
-    "mtime": 1784043618.609064,
+    "mtime": 1784237619.585251,
     "ast_hash": "b6c2478cb358b1b77906319f65c218b2",
     "semantic_hash": "b6c2478cb358b1b77906319f65c218b2"
   },
   ".agents/skills/playwright-cli/references/element-attributes.md": {
-    "mtime": 1784043618.6105115,
+    "mtime": 1784237619.5872529,
     "ast_hash": "06a9cd91326c0fb1eeafa6853132ff0d",
     "semantic_hash": "06a9cd91326c0fb1eeafa6853132ff0d"
   },
   ".agents/skills/playwright-cli/references/playwright-tests.md": {
-    "mtime": 1784043618.6118045,
+    "mtime": 1784237619.5892546,
     "ast_hash": "2098b51f50cfc25605dfabd6d0368fd8",
     "semantic_hash": "2098b51f50cfc25605dfabd6d0368fd8"
   },
   ".agents/skills/playwright-cli/references/request-mocking.md": {
-    "mtime": 1784043618.6118045,
+    "mtime": 1784237619.5902555,
     "ast_hash": "281652081dacf00f27a637ce372c0d17",
     "semantic_hash": "281652081dacf00f27a637ce372c0d17"
   },
   ".agents/skills/playwright-cli/references/running-code.md": {
-    "mtime": 1784043618.613183,
+    "mtime": 1784237619.5912564,
     "ast_hash": "39be2ef507d2943ee6e969f23e8f6c20",
     "semantic_hash": "39be2ef507d2943ee6e969f23e8f6c20"
   },
   ".agents/skills/playwright-cli/references/session-management.md": {
-    "mtime": 1784043618.613183,
+    "mtime": 1784237619.5922573,
     "ast_hash": "50d6f92a413c507cd066e33526e5298e",
     "semantic_hash": "50d6f92a413c507cd066e33526e5298e"
   },
   ".agents/skills/playwright-cli/references/storage-state.md": {
-    "mtime": 1784043618.6243267,
+    "mtime": 1784237619.5932581,
     "ast_hash": "16c4d7ae1f2d8eceef11fc14de4ae130",
     "semantic_hash": "16c4d7ae1f2d8eceef11fc14de4ae130"
   },
   ".agents/skills/playwright-cli/references/test-generation.md": {
-    "mtime": 1784043618.6250424,
+    "mtime": 1784237619.5952601,
     "ast_hash": "a34accaf4ab93f7b94b40303ba7996b3",
     "semantic_hash": "a34accaf4ab93f7b94b40303ba7996b3"
   },
   ".agents/skills/playwright-cli/references/tracing.md": {
-    "mtime": 1784043618.6260734,
+    "mtime": 1784237619.5957632,
     "ast_hash": "8c66ddbc29fc172bde7d71211d4e3473",
     "semantic_hash": "8c66ddbc29fc172bde7d71211d4e3473"
   },
   ".agents/skills/playwright-cli/references/video-recording.md": {
-    "mtime": 1784043618.6268554,
+    "mtime": 1784237619.5977662,
     "ast_hash": "29e61c00414ae28d7719b6cc285a18bf",
     "semantic_hash": "29e61c00414ae28d7719b6cc285a18bf"
   },
   ".agents/skills/spec-impl/SKILL.md": {
-    "mtime": 1783951622.2234747,
+    "mtime": 1784237619.598767,
     "ast_hash": "ee110263e03dcd63774969ff84772851",
     "semantic_hash": "ee110263e03dcd63774969ff84772851"
   },
   ".agents/skills/spec/SKILL.md": {
-    "mtime": 1783951622.2249968,
+    "mtime": 1784237619.6007688,
     "ast_hash": "983d1ea9c0d5a4129190efca585b2243",
     "semantic_hash": "983d1ea9c0d5a4129190efca585b2243"
   },
   ".agents/skills/spec/template.md": {
-    "mtime": 1783951622.226001,
+    "mtime": 1784237619.6017694,
     "ast_hash": "c1f96e2054a5c24400db3023d9506778",
     "semantic_hash": "c1f96e2054a5c24400db3023d9506778"
   },
   ".claude/skills/playwright-cli/SKILL.md": {
-    "mtime": 1784043618.6278656,
+    "mtime": 1784064681.4496212,
     "ast_hash": "b6c2478cb358b1b77906319f65c218b2",
     "semantic_hash": "b6c2478cb358b1b77906319f65c218b2"
   },
   ".claude/skills/playwright-cli/references/element-attributes.md": {
-    "mtime": 1784043618.6290104,
+    "mtime": 1784064681.4516227,
     "ast_hash": "06a9cd91326c0fb1eeafa6853132ff0d",
     "semantic_hash": "06a9cd91326c0fb1eeafa6853132ff0d"
   },
   ".claude/skills/playwright-cli/references/playwright-tests.md": {
-    "mtime": 1784043618.6290104,
+    "mtime": 1784064681.453658,
     "ast_hash": "2098b51f50cfc25605dfabd6d0368fd8",
     "semantic_hash": "2098b51f50cfc25605dfabd6d0368fd8"
   },
   ".claude/skills/playwright-cli/references/request-mocking.md": {
-    "mtime": 1784043618.6303966,
+    "mtime": 1784064681.4556642,
     "ast_hash": "281652081dacf00f27a637ce372c0d17",
     "semantic_hash": "281652081dacf00f27a637ce372c0d17"
   },
   ".claude/skills/playwright-cli/references/running-code.md": {
-    "mtime": 1784043618.6316197,
+    "mtime": 1784064681.4576695,
     "ast_hash": "39be2ef507d2943ee6e969f23e8f6c20",
     "semantic_hash": "39be2ef507d2943ee6e969f23e8f6c20"
   },
   ".claude/skills/playwright-cli/references/session-management.md": {
-    "mtime": 1784043618.6321268,
+    "mtime": 1784064681.459675,
     "ast_hash": "50d6f92a413c507cd066e33526e5298e",
     "semantic_hash": "50d6f92a413c507cd066e33526e5298e"
   },
   ".claude/skills/playwright-cli/references/storage-state.md": {
-    "mtime": 1784043618.6334636,
+    "mtime": 1784064681.459675,
     "ast_hash": "16c4d7ae1f2d8eceef11fc14de4ae130",
     "semantic_hash": "16c4d7ae1f2d8eceef11fc14de4ae130"
   },
   ".claude/skills/playwright-cli/references/test-generation.md": {
-    "mtime": 1784043618.6345115,
+    "mtime": 1784064681.461681,
     "ast_hash": "a34accaf4ab93f7b94b40303ba7996b3",
     "semantic_hash": "a34accaf4ab93f7b94b40303ba7996b3"
   },
   ".claude/skills/playwright-cli/references/tracing.md": {
-    "mtime": 1784043618.6345115,
+    "mtime": 1784064681.4636867,
     "ast_hash": "8c66ddbc29fc172bde7d71211d4e3473",
     "semantic_hash": "8c66ddbc29fc172bde7d71211d4e3473"
   },
   ".claude/skills/playwright-cli/references/video-recording.md": {
-    "mtime": 1784043618.6360295,
+    "mtime": 1784064681.4656925,
     "ast_hash": "29e61c00414ae28d7719b6cc285a18bf",
     "semantic_hash": "29e61c00414ae28d7719b6cc285a18bf"
   },
   ".claude/skills/spec-impl/SKILL.md": {
-    "mtime": 1783951622.228096,
+    "mtime": 1783976573.9047472,
     "ast_hash": "ee110263e03dcd63774969ff84772851",
     "semantic_hash": "ee110263e03dcd63774969ff84772851"
   },
   ".claude/skills/spec/SKILL.md": {
-    "mtime": 1783951622.2290955,
+    "mtime": 1783976573.905748,
     "ast_hash": "983d1ea9c0d5a4129190efca585b2243",
     "semantic_hash": "983d1ea9c0d5a4129190efca585b2243"
   },
   ".claude/skills/spec/template.md": {
-    "mtime": 1783951622.2290955,
+    "mtime": 1783976573.9077492,
     "ast_hash": "c1f96e2054a5c24400db3023d9506778",
     "semantic_hash": "c1f96e2054a5c24400db3023d9506778"
   },
   "AGENTS.md": {
-    "mtime": 1783944296.9142008,
-    "ast_hash": "9e09241799026ac05be315a2f0b50055",
-    "semantic_hash": "9e09241799026ac05be315a2f0b50055"
+    "mtime": 1783976573.9097507,
+    "ast_hash": "9346a4897ff955555ddedb7bebf77adb",
+    "semantic_hash": "9346a4897ff955555ddedb7bebf77adb"
   },
   "CLAUDE.md": {
-    "mtime": 1784202093.0370836,
-    "ast_hash": "cffd15594d4afed648f268fff9adda54",
-    "semantic_hash": "cffd15594d4afed648f268fff9adda54"
+    "mtime": 1784238357.2124999,
+    "ast_hash": "ceb1a5c5d479935779254e994c34662b",
+    "semantic_hash": "ceb1a5c5d479935779254e994c34662b"
   },
   "README.md": {
-    "mtime": 1783944549.0014832,
-    "ast_hash": "31928aeb74f11cb6c925dbb8ea307aee",
-    "semantic_hash": "31928aeb74f11cb6c925dbb8ea307aee"
+    "mtime": 1783976573.911752,
+    "ast_hash": "02491aafec9fb3ea0258d7612f67a186",
+    "semantic_hash": "02491aafec9fb3ea0258d7612f67a186"
   },
   "resources/templates/Arcade Vault.html": {
-    "mtime": 1778512045.0,
-    "ast_hash": "20bd95c6577031c1cc23a072a7b52ebf",
-    "semantic_hash": "20bd95c6577031c1cc23a072a7b52ebf"
+    "mtime": 1783976573.9272697,
+    "ast_hash": "47bb24796304d82d7b1e8160dc5f1298",
+    "semantic_hash": "47bb24796304d82d7b1e8160dc5f1298"
   },
   "resources/templates/home-about/arcade-vault-standalone.html": {
-    "mtime": 1784202093.280228,
+    "mtime": 1784237619.8745651,
     "ast_hash": "974638af44c06697dd6581c58e2fb536",
-    "semantic_hash": ""
+    "semantic_hash": "974638af44c06697dd6581c58e2fb536"
   },
   "specs/.spec-config.yml": {
-    "mtime": 1784019315.3835616,
+    "mtime": 1783981572.519729,
     "ast_hash": "21293f3e34b10915b425dd7c30a0fe06",
     "semantic_hash": "21293f3e34b10915b425dd7c30a0fe06"
   },
   "specs/01-mvp-arcade-vault.md": {
-    "mtime": 1784044012.9682052,
+    "mtime": 1784064681.493282,
     "ast_hash": "77c2e5cd3cb6c68bbc8effccbe0ae9c3",
     "semantic_hash": "77c2e5cd3cb6c68bbc8effccbe0ae9c3"
   },
   "specs/02-home-page.md": {
-    "mtime": 1784202093.284411,
+    "mtime": 1784237619.87957,
     "ast_hash": "c443a32aee92b50a43fe38298df66a44",
-    "semantic_hash": ""
+    "semantic_hash": "c443a32aee92b50a43fe38298df66a44"
   },
   "app/games/page.tsx": {
-    "mtime": 1784202093.039148,
+    "mtime": 1784237619.606276,
     "ast_hash": "16442331d04aa2088a10881d637747f3",
-    "semantic_hash": ""
+    "semantic_hash": "16442331d04aa2088a10881d637747f3"
   },
   "resources/templates/home-about/about.jsx": {
-    "mtime": 1780422493.0,
-    "ast_hash": "f2f847efee39c3812ffc28d9e42b8feb",
-    "semantic_hash": ""
+    "mtime": 1784238357.2820837,
+    "ast_hash": "3049a0d74585c0be36a729fb15b60373",
+    "semantic_hash": "3049a0d74585c0be36a729fb15b60373"
   },
   "specs/03-about-page-resend.md": {
-    "mtime": 1784213279.8830163,
-    "ast_hash": "bd03b5f30d7c6a4b03f48efc216e5146",
-    "semantic_hash": ""
+    "mtime": 1784238357.2840855,
+    "ast_hash": "16e52fc6ed2f77add84cc75d427db4fc",
+    "semantic_hash": "16e52fc6ed2f77add84cc75d427db4fc"
+  },
+  ".playwright-output/.last-run.json": {
+    "mtime": 1784238621.717778,
+    "ast_hash": "f196824657d8858bc7fa44eecbba38b1",
+    "semantic_hash": "f196824657d8858bc7fa44eecbba38b1"
+  },
+  "app/about/actions.ts": {
+    "mtime": 1784238357.2145011,
+    "ast_hash": "ff500e007d94d51b9a0ad4a7db528526",
+    "semantic_hash": "ff500e007d94d51b9a0ad4a7db528526"
+  },
+  "app/about/highlight-icon.tsx": {
+    "mtime": 1784238357.2155025,
+    "ast_hash": "d9bb668115a0bf4e49a1e21dbb78255f",
+    "semantic_hash": "d9bb668115a0bf4e49a1e21dbb78255f"
+  },
+  "app/about/page.tsx": {
+    "mtime": 1784238357.2165031,
+    "ast_hash": "5b6abe376f84f984427913e18cdaf034",
+    "semantic_hash": "5b6abe376f84f984427913e18cdaf034"
+  },
+  "app/about/schema.ts": {
+    "mtime": 1784238357.2165031,
+    "ast_hash": "4e818df7c469087d6fbaf5e7a2e30a8d",
+    "semantic_hash": "4e818df7c469087d6fbaf5e7a2e30a8d"
+  },
+  "app/about/types.ts": {
+    "mtime": 1784238357.2175043,
+    "ast_hash": "34b78eb14be7195989d840513b79a1f9",
+    "semantic_hash": "34b78eb14be7195989d840513b79a1f9"
+  },
+  "e2e/about.spec.ts": {
+    "mtime": 1784238357.2225087,
+    "ast_hash": "91d5ff62e6d39a44e263281547d76dd9",
+    "semantic_hash": "91d5ff62e6d39a44e263281547d76dd9"
+  },
+  ".playwright-report/index.html": {
+    "mtime": 1784238621.715776,
+    "ast_hash": "56ac1efe341a5fdfc41a6d34646057c3",
+    "semantic_hash": "56ac1efe341a5fdfc41a6d34646057c3"
   }
 }

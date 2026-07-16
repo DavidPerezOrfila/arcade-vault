@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "npm Dependencies"
+community: "Package Dependencies"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/npm_Dependencies
+  - community/Package_Dependencies
 ---
 
 # scripts
@@ -17,5 +17,6 @@ tags:
 - [[lint]] - `contains` [EXTRACTED]
 - [[package.json]] - `contains` [EXTRACTED]
 - [[start]] - `contains` [EXTRACTED]
+- [[teste2e]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/npm_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Package_Dependencies

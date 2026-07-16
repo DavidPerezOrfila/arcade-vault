@@ -1,17 +1,16 @@
 ---
 source_file: ".claude/skills/spec/SKILL.md"
 type: "document"
-community: "Arcade Vault Core"
+community: "Spec Skills Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Arcade_Vault_Core
+  - community/Spec_Skills_Config
 ---
 
 # /spec Skill
 
 ## Connections
 - [[Spec Template_1]] - `references` [EXTRACTED]
-- [[Spec-Driven Design]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Arcade_Vault_Core
+#graphify/document #graphify/EXTRACTED #community/Spec_Skills_Config

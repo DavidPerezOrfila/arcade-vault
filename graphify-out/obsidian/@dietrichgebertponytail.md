@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "npm Dependencies"
-location: "L12"
+community: "Package Dependencies"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/npm_Dependencies
+  - community/Package_Dependencies
 ---
 
 # @dietrichgebert/ponytail
@@ -15,4 +15,4 @@ tags:
 - [[@dietrichgebertponytail_1]] - `imports` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/npm_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Package_Dependencies

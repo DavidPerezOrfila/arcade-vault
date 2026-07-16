@@ -1,12 +1,12 @@
 ---
 source_file: "tsconfig.json"
 type: "concept"
-community: "TypeScript Configuration"
+community: "TypeScript Config"
 location: "L4"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TypeScript_Configuration
+  - community/TypeScript_Config
 ---
 
 # esnext
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lib]] - `extends` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TypeScript_Configuration
+#graphify/concept #graphify/EXTRACTED #community/TypeScript_Config

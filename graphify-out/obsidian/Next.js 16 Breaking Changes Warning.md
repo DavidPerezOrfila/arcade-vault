@@ -1,17 +1,16 @@
 ---
 source_file: "AGENTS.md"
-type: "rationale"
-community: "Arcade Vault Core"
+type: "document"
+community: "Next.js 16 Warning"
 tags:
-  - graphify/rationale
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Arcade_Vault_Core
+  - community/Nextjs_16_Warning
 ---
 
 # Next.js 16 Breaking Changes Warning
 
 ## Connections
-- [[Arcade Vault]] - `references` [EXTRACTED]
-- [[Next.js 16]] - `conceptually_related_to` [EXTRACTED]
+- [[Next.js 16 Documentation Reference]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Arcade_Vault_Core
+#graphify/document #graphify/EXTRACTED #community/Nextjs_16_Warning

@@ -1,23 +1,25 @@
 ---
-source_file: "app/player/[id]/page.tsx"
+source_file: "app/about/page.tsx"
 type: "code"
-community: "Page Routes & Storage"
+community: "About Page & Contact"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Routes__Storage
+  - community/About_Page__Contact
 ---
 
 # page.tsx
 
 ## Connections
-- [[GAMES]] - `imports` [EXTRACTED]
-- [[GamePlayer()]] - `contains` [EXTRACTED]
-- [[PlayerPageProps]] - `contains` [EXTRACTED]
-- [[games.ts]] - `imports_from` [EXTRACTED]
-- [[getUser()]] - `imports` [EXTRACTED]
-- [[saveScore()]] - `imports` [EXTRACTED]
-- [[storage.ts]] - `imports_from` [EXTRACTED]
+- [[AboutPage()]] - `contains` [EXTRACTED]
+- [[ContactFormState]] - `imports` [EXTRACTED]
+- [[HIGHLIGHTS]] - `contains` [EXTRACTED]
+- [[HighlightIcon()]] - `imports` [EXTRACTED]
+- [[actions.ts]] - `imports_from` [EXTRACTED]
+- [[highlight-icon.tsx]] - `imports_from` [EXTRACTED]
+- [[initialState]] - `contains` [EXTRACTED]
+- [[sendContactEmail()]] - `imports` [EXTRACTED]
+- [[types.ts_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Routes__Storage
+#graphify/code #graphify/EXTRACTED #community/About_Page__Contact

@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/reproductor.jsx"
 type: "code"
-community: "Game Player Component"
+community: "Home Page UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Player_Component
+  - community/Home_Page_UI
 ---
 
 # reproductor.jsx
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GamePlayer()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Player_Component
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

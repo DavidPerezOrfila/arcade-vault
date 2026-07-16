@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "npm Dependencies"
-location: "L11"
+community: "Package Dependencies"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/npm_Dependencies
+  - community/Package_Dependencies
 ---
 
 # dependencies
@@ -18,5 +18,7 @@ tags:
 - [[package.json]] - `contains` [EXTRACTED]
 - [[react]] - `contains` [EXTRACTED]
 - [[react-dom]] - `contains` [EXTRACTED]
+- [[resend_1]] - `contains` [EXTRACTED]
+- [[zod]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/npm_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Package_Dependencies

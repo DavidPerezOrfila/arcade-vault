@@ -1,17 +1,17 @@
 ---
-source_file: "app/page.tsx"
+source_file: "app/games/page.tsx"
 type: "code"
-community: "Game Data & Types"
+community: "Games Page"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data__Types
+  - community/Games_Page
 ---
 
 # Home()
 
 ## Connections
-- [[page.tsx_2]] - `contains` [EXTRACTED]
+- [[page.tsx_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data__Types
+#graphify/code #graphify/EXTRACTED #community/Games_Page

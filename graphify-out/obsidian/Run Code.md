@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/running-code.md"
 type: "document"
-community: "Playwright Management"
+community: "Storage State"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Management
+  - community/Storage_State
 ---
 
 # Run Code
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Storage Management]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Management
+#graphify/document #graphify/EXTRACTED #community/Storage_State

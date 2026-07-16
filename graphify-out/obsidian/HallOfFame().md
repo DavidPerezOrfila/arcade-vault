@@ -1,20 +1,18 @@
 ---
 source_file: "app/salon/page.tsx"
 type: "code"
-community: "Game Data & Types"
+community: "Home Page UI"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data__Types
+  - community/Home_Page_UI
 ---
 
 # HallOfFame()
 
 ## Connections
-- [[getUser()]] - `calls` [EXTRACTED]
-- [[page.tsx_5]] - `contains` [EXTRACTED]
-- [[seededScores()]] - `calls` [EXTRACTED]
-- [[setUser()]] - `calls` [EXTRACTED]
+- [[GAMES_1]] - `references` [EXTRACTED]
+- [[page.tsx_7]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data__Types
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

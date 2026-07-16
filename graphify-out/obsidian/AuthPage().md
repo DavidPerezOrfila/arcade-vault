@@ -1,12 +1,12 @@
 ---
 source_file: "app/auth/page.tsx"
 type: "code"
-community: "Page Routes & Storage"
+community: "Game Data Layer"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Routes__Storage
+  - community/Game_Data_Layer
 ---
 
 # AuthPage()
@@ -16,4 +16,4 @@ tags:
 - [[page.tsx]] - `contains` [EXTRACTED]
 - [[setUser()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Routes__Storage
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

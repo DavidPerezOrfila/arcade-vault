@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/running-code.md"
 type: "document"
-community: "Playwright CLI References"
+community: "Playwright Summaries"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_References
+  - community/Playwright_Summaries
 ---
 
 # Running Custom Playwright Code Reference
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Playwright CLI Browser Automation Skill (.claude copy)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_References
+#graphify/document #graphify/EXTRACTED #community/Playwright_Summaries

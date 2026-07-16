@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "ESLint Configuration"
-location: "L22"
+community: "Dev Tooling"
+location: "L25"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ESLint_Configuration
+  - community/Dev_Tooling
 ---
 
 # @types/react
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[@typesreact]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ESLint_Configuration
+#graphify/concept #graphify/EXTRACTED #community/Dev_Tooling

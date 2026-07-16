@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "npm Dependencies"
+community: "Package Dependencies"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/npm_Dependencies
+  - community/Package_Dependencies
 ---
 
 # package.json
@@ -19,4 +19,4 @@ tags:
 - [[scripts]] - `contains` [EXTRACTED]
 - [[version]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/npm_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Package_Dependencies

@@ -1,17 +1,17 @@
 ---
-source_file: "resources/templates/home-about/home.jsx"
+source_file: "app/page.tsx"
 type: "code"
-community: "Home UI Components"
-location: "L86"
+community: "Home Page UI"
+location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_UI_Components
+  - community/Home_Page_UI
 ---
 
 # MiniCard()
 
 ## Connections
-- [[home.jsx]] - `contains` [EXTRACTED]
+- [[page.tsx_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_UI_Components
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

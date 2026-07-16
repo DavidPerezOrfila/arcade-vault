@@ -1,17 +1,16 @@
 ---
 source_file: "specs/01-mvp-arcade-vault.md"
 type: "concept"
-community: "Arcade Vault Core"
+community: "Game Data Model"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Arcade_Vault_Core
+  - community/Game_Data_Model
 ---
 
 # Game Data Model
 
 ## Connections
-- [[Home Page Spec]] - `references` [EXTRACTED]
 - [[MVP Arcade Vault Spec]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Arcade_Vault_Core
+#graphify/concept #graphify/EXTRACTED #community/Game_Data_Model
