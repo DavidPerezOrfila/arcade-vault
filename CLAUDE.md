@@ -29,9 +29,20 @@ npm run start
 
 # Run ESLint across the project
 npm run lint
+
+# Run E2E tests with Playwright
+npm run test:e2e
 ```
 
-There is no test runner configured yet. If you add one, update this file with the test command.
+## Environment variables
+
+Copy `.env.local.example` to `.env.local` and fill in the values. These variables are read only on the server (Server Actions / Node.js runtime):
+
+| Variable            | Description                    | Example                |
+| ------------------- | ------------------------------ | ---------------------- |
+| `RESEND_API_KEY`    | API key de Resend              | `re_xxxxxxxx`          |
+| `RESEND_FROM_EMAIL` | Remitente verificado en Resend | `hola@arcade-vault.gg` |
+| `CONTACT_EMAIL`     | Destinatario del mensaje       | `tu-email@example.com` |
 
 ## Project structure
 
