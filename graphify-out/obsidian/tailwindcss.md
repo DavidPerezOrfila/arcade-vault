@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "ESLint Configuration"
-location: "L26"
+community: "Dev Tooling"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESLint_Configuration
+  - community/Dev_Tooling
 ---
 
 # tailwindcss
@@ -15,4 +15,4 @@ tags:
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[tailwindcss_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESLint_Configuration
+#graphify/code #graphify/EXTRACTED #community/Dev_Tooling

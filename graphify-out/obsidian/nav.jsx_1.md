@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/nav.jsx"
 type: "code"
-community: "Navigation Component (dup)"
+community: "Nav Template"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Navigation_Component_dup
+  - community/Nav_Template
 ---
 
 # nav.jsx
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Nav()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Navigation_Component_dup
+#graphify/code #graphify/EXTRACTED #community/Nav_Template

@@ -1,17 +1,17 @@
 ---
 source_file: "app/player/[id]/page.tsx"
 type: "code"
-community: "Page Routes & Storage"
+community: "Home Page UI"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Routes__Storage
+  - community/Home_Page_UI
 ---
 
 # PlayerPageProps
 
 ## Connections
-- [[page.tsx_3]] - `contains` [EXTRACTED]
+- [[page.tsx_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Routes__Storage
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

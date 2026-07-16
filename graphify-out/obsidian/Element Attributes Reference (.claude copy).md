@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/element-attributes.md"
 type: "document"
-community: "Playwright CLI References"
+community: "Playwright Summaries"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_References
+  - community/Playwright_Summaries
 ---
 
 # Element Attributes Reference (.claude copy)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Playwright CLI Browser Automation Skill (.claude copy)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_References
+#graphify/document #graphify/EXTRACTED #community/Playwright_Summaries

@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/biblioteca.jsx"
 type: "code"
-community: "npm Dependencies"
+community: "Package Dependencies"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/npm_Dependencies
+  - community/Package_Dependencies
 ---
 
 # Library()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[biblioteca.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/npm_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Package_Dependencies

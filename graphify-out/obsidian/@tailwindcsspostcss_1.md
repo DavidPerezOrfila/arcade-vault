@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "ESLint Configuration"
-location: "L20"
+community: "Dev Tooling"
+location: "L23"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ESLint_Configuration
+  - community/Dev_Tooling
 ---
 
 # @tailwindcss/postcss
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[@tailwindcsspostcss]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ESLint_Configuration
+#graphify/concept #graphify/EXTRACTED #community/Dev_Tooling

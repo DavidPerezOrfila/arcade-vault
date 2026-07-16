@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "Page Routes & Storage"
+community: "Game Data Layer"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Routes__Storage
+  - community/Game_Data_Layer
 ---
 
 # ScoreEntry
@@ -15,4 +15,4 @@ tags:
 - [[storage.ts]] - `imports` [EXTRACTED]
 - [[types.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Routes__Storage
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "tsconfig.json"
 type: "code"
-community: "TypeScript Configuration"
+community: "TypeScript Config"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Configuration
+  - community/TypeScript_Config
 ---
 
 # noEmit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compilerOptions]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Configuration
+#graphify/code #graphify/EXTRACTED #community/TypeScript_Config

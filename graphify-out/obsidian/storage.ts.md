@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/storage.ts"
 type: "code"
-community: "Page Routes & Storage"
+community: "Game Data Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Routes__Storage
+  - community/Game_Data_Layer
 ---
 
 # storage.ts
@@ -17,12 +17,9 @@ tags:
 - [[clearUser()]] - `contains` [EXTRACTED]
 - [[getScores()]] - `contains` [EXTRACTED]
 - [[getUser()]] - `contains` [EXTRACTED]
-- [[nav.tsx]] - `imports_from` [EXTRACTED]
 - [[page.tsx]] - `imports_from` [EXTRACTED]
-- [[page.tsx_3]] - `imports_from` [EXTRACTED]
-- [[page.tsx_5]] - `imports_from` [EXTRACTED]
 - [[saveScore()]] - `contains` [EXTRACTED]
 - [[setUser()]] - `contains` [EXTRACTED]
 - [[types.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Routes__Storage
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

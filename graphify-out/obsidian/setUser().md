@@ -1,21 +1,19 @@
 ---
 source_file: "app/data/storage.ts"
 type: "code"
-community: "Page Routes & Storage"
+community: "Game Data Layer"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Routes__Storage
+  - community/Game_Data_Layer
 ---
 
 # setUser()
 
 ## Connections
 - [[AuthPage()]] - `calls` [EXTRACTED]
-- [[HallOfFame()]] - `calls` [EXTRACTED]
-- [[Nav()]] - `calls` [EXTRACTED]
 - [[page.tsx]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Routes__Storage
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/request-mocking.md"
 type: "document"
-community: "Playwright CLI References"
+community: "Playwright Summaries"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_References
+  - community/Playwright_Summaries
 ---
 
 # Request Mocking Reference (.claude copy)
@@ -14,4 +14,4 @@ tags:
 - [[Playwright CLI Browser Automation Skill (.claude copy)]] - `references` [EXTRACTED]
 - [[Test Generation Reference (PlanGenerateHeal)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_References
+#graphify/document #graphify/EXTRACTED #community/Playwright_Summaries

@@ -1,12 +1,12 @@
 ---
 source_file: "tsconfig.json"
 type: "code"
-community: "Type Declarations"
+community: "TypeScript Config"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Type_Declarations
+  - community/TypeScript_Config
 ---
 
 # include
@@ -20,4 +20,4 @@ tags:
 - [[next-env.d.ts]] - `extends` [EXTRACTED]
 - [[tsconfig.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Type_Declarations
+#graphify/code #graphify/EXTRACTED #community/TypeScript_Config

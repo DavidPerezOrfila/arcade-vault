@@ -1,25 +1,21 @@
 ---
-source_file: "app/salon/page.tsx"
+source_file: "app/page.tsx"
 type: "code"
-community: "Game Data & Types"
+community: "Home Page UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data__Types
+  - community/Home_Page_UI
 ---
 
 # page.tsx
 
 ## Connections
-- [[GAMES]] - `imports` [EXTRACTED]
-- [[HallOfFame()]] - `contains` [EXTRACTED]
-- [[User]] - `imports` [EXTRACTED]
-- [[games.ts]] - `imports_from` [EXTRACTED]
-- [[getUser()]] - `imports` [EXTRACTED]
-- [[players.ts]] - `imports_from` [EXTRACTED]
-- [[seededScores()]] - `imports` [EXTRACTED]
-- [[storage.ts]] - `imports_from` [EXTRACTED]
-- [[types.ts]] - `imports_from` [EXTRACTED]
+- [[FeatureIcon()]] - `contains` [EXTRACTED]
+- [[FloatingSilhouettes()]] - `contains` [EXTRACTED]
+- [[Home()_1]] - `contains` [EXTRACTED]
+- [[MiniCard()]] - `contains` [EXTRACTED]
+- [[useReveal()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data__Types
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

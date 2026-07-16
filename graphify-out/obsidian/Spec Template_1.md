@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/skills/spec/template.md"
 type: "document"
-community: "Arcade Vault Core"
+community: "Spec Skills Config"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Arcade_Vault_Core
+  - graphify/INFERRED
+  - community/Spec_Skills_Config
 ---
 
 # Spec Template
@@ -14,4 +14,4 @@ tags:
 - [[spec Skill]] - `references` [EXTRACTED]
 - [[spec-impl Skill]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Arcade_Vault_Core
+#graphify/document #graphify/INFERRED #community/Spec_Skills_Config

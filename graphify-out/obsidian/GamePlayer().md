@@ -1,19 +1,18 @@
 ---
 source_file: "app/player/[id]/page.tsx"
 type: "code"
-community: "Page Routes & Storage"
+community: "Home Page UI"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Routes__Storage
+  - community/Home_Page_UI
 ---
 
 # GamePlayer()
 
 ## Connections
-- [[getUser()]] - `calls` [EXTRACTED]
-- [[page.tsx_3]] - `contains` [EXTRACTED]
-- [[saveScore()]] - `calls` [EXTRACTED]
+- [[GAMES_1]] - `references` [EXTRACTED]
+- [[page.tsx_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Routes__Storage
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

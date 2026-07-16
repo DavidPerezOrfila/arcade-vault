@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/test-generation.md"
 type: "document"
-community: "Playwright CLI References"
+community: "Playwright Summaries"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_References
+  - community/Playwright_Summaries
 ---
 
 # Test Generation Reference (Plan/Generate/Heal)
@@ -17,4 +17,4 @@ tags:
 - [[Request Mocking Reference (.claude copy)]] - `references` [EXTRACTED]
 - [[Test Generation Workflow (PlanGenerateHeal)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_References
+#graphify/document #graphify/EXTRACTED #community/Playwright_Summaries

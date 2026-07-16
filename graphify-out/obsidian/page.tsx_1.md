@@ -1,12 +1,12 @@
 ---
 source_file: "app/detalle/[id]/page.tsx"
 type: "code"
-community: "Game Data & Types"
+community: "Game Data Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data__Types
+  - community/Game_Data_Layer
 ---
 
 # page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[players.ts]] - `imports_from` [EXTRACTED]
 - [[seededScores()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data__Types
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

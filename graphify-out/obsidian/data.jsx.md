@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/data.jsx"
 type: "code"
-community: "Data Layer"
+community: "Home Page UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Layer
+  - community/Home_Page_UI
 ---
 
 # data.jsx
@@ -17,4 +17,4 @@ tags:
 - [[PLAYERS_1]] - `contains` [EXTRACTED]
 - [[seededScores()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

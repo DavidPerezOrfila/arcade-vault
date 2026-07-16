@@ -1,16 +1,21 @@
 ---
-source_file: ".claude/skills/playwright-cli/references/video-recording.md"
+source_file: ".agents/skills/playwright-cli/references/video-recording.md"
 type: "document"
-community: "Playwright Tracing & Recording"
+community: "Playwright CLI Reference"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Tracing__Recording
+  - community/Playwright_CLI_Reference
 ---
 
 # Video Recording
 
 ## Connections
-- [[Tracing]] - `conceptually_related_to` [EXTRACTED]
+- [[Basic Recording]] - `contains` [EXTRACTED]
+- [[Best Practices_2]] - `contains` [EXTRACTED]
+- [[Limitations_1]] - `contains` [EXTRACTED]
+- [[Tracing vs Video]] - `contains` [EXTRACTED]
+- [[video-recording]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing__Recording
+#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference
