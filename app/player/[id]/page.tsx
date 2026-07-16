@@ -15,16 +15,13 @@ export default function GamePlayer({ params }: PlayerPageProps) {
 
   const [score, setScore] = useState(0);
   const [lives] = useState(3);
-  const [level, setLevel] = useState(1);
   const [paused, setPaused] = useState(false);
   const [over, setOver] = useState(false);
-  const [name, setName] = useState("");
-  const [saved, setSaved] = useState(false);
-
-  useEffect(() => {
+  const [name, setName] = useState(() => {
     const u = getUser();
-    setName(u ? u.name : "INVITADO");
-  }, []);
+    return u ? u.name : "INVITADO";
+  });
+  const [saved, setSaved] = useState(false);
 
   useEffect(() => {
     if (over || paused) return;
@@ -35,16 +32,14 @@ export default function GamePlayer({ params }: PlayerPageProps) {
     return () => clearInterval(t);
   }, [over, paused]);
 
-  useEffect(() => {
-    if (score > 0 && score % 2500 < 100) setLevel((l) => l + 1);
-  }, [score]);
+  // Derived state: level increments every 2500 points
+  const levelForRender = Math.floor(score / 2500) + 1;
 
   if (!game) return null;
 
   const endGame = () => setOver(true);
   const restart = () => {
     setScore(0);
-    setLevel(1);
     setPaused(false);
     setOver(false);
     setSaved(false);
@@ -78,7 +73,7 @@ export default function GamePlayer({ params }: PlayerPageProps) {
           </div>
           <div className="hud-stat level">
             <div className="l">Nivel</div>
-            <div className="v">{String(level).padStart(2, "0")}</div>
+            <div className="v">{String(levelForRender).padStart(2, "0")}</div>
           </div>
         </div>
         <div className="hud-actions">
