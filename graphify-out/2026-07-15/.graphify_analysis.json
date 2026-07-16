@@ -1,0 +1,418 @@
+{
+  "communities": {
+    "0": [
+      "app_data_games",
+      "app_data_games_cats",
+      "app_data_games_games",
+      "app_data_players",
+      "app_data_players_players",
+      "app_data_players_seededscores",
+      "app_data_types",
+      "app_data_types_game",
+      "app_data_types_gamecategory",
+      "app_data_types_gamecolor",
+      "app_data_types_gamefilter",
+      "app_data_types_scorerow",
+      "app_data_types_user",
+      "app_detalle_id_page",
+      "app_detalle_id_page_detailpage",
+      "app_detalle_id_page_detailpageprops",
+      "app_detalle_id_page_generatestaticparams",
+      "app_page",
+      "app_page_gamecard",
+      "app_page_home",
+      "app_reproductor_page",
+      "app_reproductor_page_reproductorpage",
+      "app_reproductor_reproductorcontent",
+      "app_reproductor_reproductorcontent_reproductorcontent",
+      "app_salon_page",
+      "app_salon_page_halloffame"
+    ],
+    "1": [
+      "eslint",
+      "eslint_config_next",
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_config_next",
+      "package_devdependencies_playwright_test",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_postcss",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "playwright_test",
+      "tailwindcss",
+      "tailwindcss_postcss",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript"
+    ],
+    "2": [
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target"
+    ],
+    "3": [
+      "agents_nextjs_breaking_changes",
+      "claude_app_router",
+      "claude_arcade_vault",
+      "claude_nextjs_16",
+      "claude_react_19",
+      "claude_skills_spec_impl_skill_spec_impl_skill",
+      "claude_skills_spec_skill_spec_skill",
+      "claude_skills_spec_template_spec_template",
+      "claude_spec_driven_design",
+      "claude_tailwind_css_v4",
+      "readme_arcade_vault_readme",
+      "resources_templates_arcade_vault_html_prototype",
+      "resources_templates_home_about_arcade_vault_standalone",
+      "specs_01_mvp_arcade_vault_game_data_model",
+      "specs_01_mvp_arcade_vault_mvp_spec",
+      "specs_01_mvp_arcade_vault_persistence_model",
+      "specs_02_home_page_home_page_spec",
+      "specs_spec_config_yml_branch_config"
+    ],
+    "4": [
+      "app_auth_page",
+      "app_auth_page_authpage",
+      "app_data_storage",
+      "app_data_storage_clearuser",
+      "app_data_storage_getscores",
+      "app_data_storage_getuser",
+      "app_data_storage_savescore",
+      "app_data_storage_setuser",
+      "app_data_types_scoreentry",
+      "app_player_id_page",
+      "app_player_id_page_gameplayer",
+      "app_player_id_page_playerpageprops",
+      "components_nav",
+      "components_nav_nav"
+    ],
+    "5": [
+      "_agents_skills_playwright_cli_references_running_code_document",
+      "_agents_skills_playwright_cli_references_session_management_document",
+      "_agents_skills_playwright_cli_references_test_generation_document",
+      "_agents_skills_playwright_cli_references_tracing_document",
+      "_claude_skills_playwright_cli_references_element_attributes_document",
+      "_claude_skills_playwright_cli_references_playwright_tests_document",
+      "_claude_skills_playwright_cli_references_request_mocking_document",
+      "_claude_skills_playwright_cli_skill_document",
+      "agents_skills_playwright_cli_references_test_generation_workflow_concept",
+      "browser_automation_cli_concept"
+    ],
+    "6": [
+      "dietrichgebert_ponytail",
+      "ecc_universal",
+      "next",
+      "package",
+      "package_dependencies",
+      "package_dependencies_dietrichgebert_ponytail",
+      "package_dependencies_ecc_universal",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_version",
+      "react",
+      "react_dom",
+      "resources_templates_biblioteca",
+      "resources_templates_biblioteca_gamecard",
+      "resources_templates_biblioteca_library"
+    ],
+    "7": [
+      "ref_mts",
+      "ref_next_dev_types_ts",
+      "ref_next_env_d_ts",
+      "ref_next_types_ts",
+      "ref_node_modules",
+      "ref_ts",
+      "ref_tsx",
+      "tsconfig",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "8": [
+      "_agents_skills_playwright_cli_references_playwright_tests_document"
+    ],
+    "9": [
+      "resources_templates_home_about_home",
+      "resources_templates_home_about_home_featureicon",
+      "resources_templates_home_about_home_floatingsilhouettes",
+      "resources_templates_home_about_home_home",
+      "resources_templates_home_about_home_minicard",
+      "resources_templates_home_about_home_usereveal"
+    ],
+    "10": [
+      "app_layout",
+      "app_layout_metadata",
+      "app_layout_monofont",
+      "app_layout_pixelfont",
+      "app_layout_rootlayout"
+    ],
+    "11": [
+      "resources_templates_data",
+      "resources_templates_data_cats",
+      "resources_templates_data_games",
+      "resources_templates_data_players",
+      "resources_templates_data_seededscores"
+    ],
+    "12": [
+      "_agents_skills_spec_impl_skill_document",
+      "_agents_skills_spec_skill_document",
+      "_agents_skills_spec_template_document",
+      "spec_driven_development_concept"
+    ],
+    "13": [
+      "claude_skills_playwright_cli_references_browser_session_mgmt",
+      "claude_skills_playwright_cli_references_run_code",
+      "claude_skills_playwright_cli_references_storage_mgmt",
+      "claude_skills_playwright_cli_references_test_generation"
+    ],
+    "14": [
+      "resources_templates_app",
+      "resources_templates_app_app",
+      "resources_templates_app_root"
+    ],
+    "15": [
+      "claude_skills_playwright_cli_references_tracing",
+      "claude_skills_playwright_cli_references_video_recording"
+    ],
+    "16": [
+      "eslint_config",
+      "eslint_config_eslintconfig"
+    ],
+    "17": [
+      "next_config",
+      "next_config_nextconfig"
+    ],
+    "18": [
+      "postcss_config",
+      "postcss_config_config"
+    ],
+    "19": [
+      "resources_templates_auth",
+      "resources_templates_auth_auth"
+    ],
+    "20": [
+      "resources_templates_detalle",
+      "resources_templates_detalle_gamedetail"
+    ],
+    "21": [
+      "resources_templates_home_about_nav",
+      "resources_templates_home_about_nav_nav"
+    ],
+    "22": [
+      "resources_templates_nav",
+      "resources_templates_nav_nav"
+    ],
+    "23": [
+      "resources_templates_reproductor",
+      "resources_templates_reproductor_gameplayer"
+    ],
+    "24": [
+      "resources_templates_salon",
+      "resources_templates_salon_halloffame"
+    ],
+    "25": [
+      "playwright_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.13230769230769232,
+    "1": 0.10526315789473684,
+    "2": 0.10526315789473684,
+    "3": 0.13071895424836602,
+    "4": 0.2967032967032967,
+    "5": 0.26666666666666666,
+    "6": 0.08695652173913043,
+    "7": 0.2,
+    "8": 1.0,
+    "9": 0.4,
+    "10": 0.4,
+    "11": 0.4,
+    "12": 0.6666666666666666,
+    "13": 0.5,
+    "14": 0.6666666666666666,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "_claude_skills_playwright_cli_skill_document",
+      "label": "Playwright CLI Browser Automation Skill (.claude copy)",
+      "degree": 8
+    },
+    {
+      "id": "app_data_storage_getuser",
+      "label": "getUser()",
+      "degree": 7
+    },
+    {
+      "id": "tsconfig_include",
+      "label": "include",
+      "degree": 7
+    },
+    {
+      "id": "claude_arcade_vault",
+      "label": "Arcade Vault",
+      "degree": 7
+    },
+    {
+      "id": "app_data_games_games",
+      "label": "GAMES",
+      "degree": 6
+    },
+    {
+      "id": "app_data_players_seededscores",
+      "label": "seededScores()",
+      "degree": 5
+    },
+    {
+      "id": "app_data_storage_setuser",
+      "label": "setUser()",
+      "degree": 5
+    },
+    {
+      "id": "app_data_storage_clearuser",
+      "label": "clearUser()",
+      "degree": 5
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Playwright CLI Browser Automation Skill (.claude copy)",
+      "target": "Browser Automation via CLI",
+      "source_files": [
+        ".claude/skills/playwright-cli/SKILL.md",
+        ".agents/skills/playwright-cli/SKILL.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Browser Automation via CLI` unexpectedly reaches hub `Playwright CLI Browser Automation Skill (.claude copy)`"
+    },
+    {
+      "source": "Playwright CLI Browser Automation Skill (.claude copy)",
+      "target": "Running Custom Playwright Code Reference",
+      "source_files": [
+        ".claude/skills/playwright-cli/SKILL.md",
+        ".agents/skills/playwright-cli/references/running-code.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Running Custom Playwright Code Reference` unexpectedly reaches hub `Playwright CLI Browser Automation Skill (.claude copy)`"
+    },
+    {
+      "source": "Playwright CLI Browser Automation Skill (.claude copy)",
+      "target": "Browser Session Management Reference",
+      "source_files": [
+        ".claude/skills/playwright-cli/SKILL.md",
+        ".agents/skills/playwright-cli/references/session-management.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Browser Session Management Reference` unexpectedly reaches hub `Playwright CLI Browser Automation Skill (.claude copy)`"
+    },
+    {
+      "source": "Test Generation Reference (Plan/Generate/Heal)",
+      "target": "Playwright Tests Reference (.claude copy)",
+      "source_files": [
+        ".agents/skills/playwright-cli/references/test-generation.md",
+        ".claude/skills/playwright-cli/references/playwright-tests.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Playwright Tests Reference (.claude copy)` unexpectedly reaches hub `Test Generation Reference (Plan/Generate/Heal)`"
+    },
+    {
+      "source": "Test Generation Reference (Plan/Generate/Heal)",
+      "target": "Request Mocking Reference (.claude copy)",
+      "source_files": [
+        ".agents/skills/playwright-cli/references/test-generation.md",
+        ".claude/skills/playwright-cli/references/request-mocking.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Request Mocking Reference (.claude copy)` unexpectedly reaches hub `Test Generation Reference (Plan/Generate/Heal)`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `ESLint Configuration` to `npm Dependencies`?",
+      "why": "High betweenness centrality (0.032) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `compilerOptions` connect `TypeScript Configuration` to `Type Declarations`?",
+      "why": "High betweenness centrality (0.019) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `PLAYERS`, `GameCategory`, `GameColor` to the rest of the system?",
+      "why": "78 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Game Data & Types` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13230769230769232 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `ESLint Configuration` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `TypeScript Configuration` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Arcade Vault Core` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13071895424836602 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
