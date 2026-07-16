@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { GAMES } from "@/app/data/games";
 import { seededScores } from "@/app/data/players";
 import { getUser } from "@/app/data/storage";
@@ -9,11 +9,7 @@ import type { User } from "@/app/data/types";
 
 export default function HallOfFame() {
   const [tab, setTab] = useState(GAMES[0].id);
-  const [user, setUser] = useState<User | null>(null);
-
-  useEffect(() => {
-    setUser(getUser());
-  }, []);
+  const [user] = useState<User | null>(() => getUser());
 
   const rows = useMemo(() => seededScores(tab.length * 23 + 7, 12), [tab]);
   const game = GAMES.find((g) => g.id === tab);
