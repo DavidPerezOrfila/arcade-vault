@@ -1,13 +1,13 @@
 {
   ".claude/settings.json": {
-    "mtime": 1784202093.0350838,
+    "mtime": 1784117009.2111552,
     "ast_hash": "e22bf2a51273bd57cb6d42f2ac5eb1ed",
     "semantic_hash": "e22bf2a51273bd57cb6d42f2ac5eb1ed"
   },
   ".claude/settings.local.json": {
-    "mtime": 1784213310.8995287,
-    "ast_hash": "ac5ea40e9a6722743ae1bdc67ff32e3c",
-    "semantic_hash": ""
+    "mtime": 1784038481.649608,
+    "ast_hash": "4797d3e83a2f96393ff19a927674ad65",
+    "semantic_hash": "4797d3e83a2f96393ff19a927674ad65"
   },
   "app/auth/page.tsx": {
     "mtime": 1784019315.3695395,
@@ -45,14 +45,14 @@
     "semantic_hash": "bd01c697b0a99c06f0e4244ba502e60b"
   },
   "app/page.tsx": {
-    "mtime": 1784202093.0441618,
-    "ast_hash": "19bbd1d94482a4f9fb8e8f87bccce0bf",
-    "semantic_hash": ""
+    "mtime": 1784019315.3773427,
+    "ast_hash": "16442331d04aa2088a10881d637747f3",
+    "semantic_hash": "16442331d04aa2088a10881d637747f3"
   },
   "app/player/[id]/page.tsx": {
-    "mtime": 1784207321.7039602,
-    "ast_hash": "e0a5c87f93f827991b705ecbcb7224a6",
-    "semantic_hash": ""
+    "mtime": 1784019315.3793488,
+    "ast_hash": "775fbfd1a9348cf89a29c0ec80c5b6bc",
+    "semantic_hash": "775fbfd1a9348cf89a29c0ec80c5b6bc"
   },
   "app/reproductor/ReproductorContent.tsx": {
     "mtime": 1784043618.6684363,
@@ -65,14 +65,14 @@
     "semantic_hash": "5c00047fe88092fffe741370439d86cf"
   },
   "app/salon/page.tsx": {
-    "mtime": 1784207230.989511,
-    "ast_hash": "5cb20a4b48544c30ec2972ce58100601",
-    "semantic_hash": ""
+    "mtime": 1784019315.3805628,
+    "ast_hash": "30c198baffa6018e38f48cc36b04f83e",
+    "semantic_hash": "30c198baffa6018e38f48cc36b04f83e"
   },
   "components/nav.tsx": {
-    "mtime": 1784207221.3515358,
-    "ast_hash": "3bd83870fa70f9941abd473599883bf8",
-    "semantic_hash": ""
+    "mtime": 1784043618.6754024,
+    "ast_hash": "faaf5b40473f1bea5f1436ff3609f705",
+    "semantic_hash": "faaf5b40473f1bea5f1436ff3609f705"
   },
   "eslint.config.mjs": {
     "mtime": 1783937662.2060368,
@@ -125,14 +125,14 @@
     "semantic_hash": "a29fdf4ecbf589277f97faccfee0d9f4"
   },
   "resources/templates/home-about/home.jsx": {
-    "mtime": 1784202093.2813957,
-    "ast_hash": "bbfbc5a313f7b9907f2c38b667a23b8c",
-    "semantic_hash": ""
+    "mtime": 1780422493.0,
+    "ast_hash": "9550a7cb3909748c71e892c8e36c6f7d",
+    "semantic_hash": "9550a7cb3909748c71e892c8e36c6f7d"
   },
   "resources/templates/home-about/nav.jsx": {
-    "mtime": 1784202093.2824125,
-    "ast_hash": "bc712033a55db830a0a5ca89f39b04c4",
-    "semantic_hash": ""
+    "mtime": 1780422493.0,
+    "ast_hash": "463ed720b4d379ae54408a47ffac1aba",
+    "semantic_hash": "463ed720b4d379ae54408a47ffac1aba"
   },
   "resources/templates/nav.jsx": {
     "mtime": 1778512045.0,
@@ -295,7 +295,7 @@
     "semantic_hash": "9e09241799026ac05be315a2f0b50055"
   },
   "CLAUDE.md": {
-    "mtime": 1784202093.0370836,
+    "mtime": 1784115621.0665016,
     "ast_hash": "cffd15594d4afed648f268fff9adda54",
     "semantic_hash": "cffd15594d4afed648f268fff9adda54"
   },
@@ -310,9 +310,9 @@
     "semantic_hash": "20bd95c6577031c1cc23a072a7b52ebf"
   },
   "resources/templates/home-about/arcade-vault-standalone.html": {
-    "mtime": 1784202093.280228,
-    "ast_hash": "974638af44c06697dd6581c58e2fb536",
-    "semantic_hash": ""
+    "mtime": 1780422493.0,
+    "ast_hash": "6d66a20f1e034222646e56283ea5c595",
+    "semantic_hash": "6d66a20f1e034222646e56283ea5c595"
   },
   "specs/.spec-config.yml": {
     "mtime": 1784019315.3835616,
@@ -325,23 +325,8 @@
     "semantic_hash": "77c2e5cd3cb6c68bbc8effccbe0ae9c3"
   },
   "specs/02-home-page.md": {
-    "mtime": 1784202093.284411,
-    "ast_hash": "c443a32aee92b50a43fe38298df66a44",
-    "semantic_hash": ""
-  },
-  "app/games/page.tsx": {
-    "mtime": 1784202093.039148,
-    "ast_hash": "16442331d04aa2088a10881d637747f3",
-    "semantic_hash": ""
-  },
-  "resources/templates/home-about/about.jsx": {
-    "mtime": 1780422493.0,
-    "ast_hash": "f2f847efee39c3812ffc28d9e42b8feb",
-    "semantic_hash": ""
-  },
-  "specs/03-about-page-resend.md": {
-    "mtime": 1784213279.8830163,
-    "ast_hash": "bd03b5f30d7c6a4b03f48efc216e5146",
-    "semantic_hash": ""
+    "mtime": 1784115759.7292655,
+    "ast_hash": "783cb6d6b911ae1a8c4b06889c1fbf91",
+    "semantic_hash": "783cb6d6b911ae1a8c4b06889c1fbf91"
   }
 }
