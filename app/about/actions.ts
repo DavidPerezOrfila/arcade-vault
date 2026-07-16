@@ -31,6 +31,10 @@ export async function sendContactEmail(
 
   const { name, email, message } = parsed.data;
 
+  if (process.env.RESEND_API_KEY === "test") {
+    return { success: true };
+  }
+
   try {
     const { error } = await resend.emails.send({
       from: getRequiredEnv("RESEND_FROM_EMAIL"),
