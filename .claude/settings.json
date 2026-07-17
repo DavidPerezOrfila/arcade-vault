@@ -7,6 +7,10 @@
           {
             "type": "command",
             "command": "C:\\Users\\david.perez\\.local\\bin\\graphify.EXE hook-guard search"
+          },
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Get-ChildItem -Path .,'C:\\Users\\david.perez\\AppData\\Local\\Temp','C:\\Users\\david.perez\\OneDrive - Timestamp - Sistemas de Informação S.A' -Filter 'bash.exe.stackdump' -Recurse -Depth 3 -ErrorAction SilentlyContinue -Force | Remove-Item -Force -ErrorAction SilentlyContinue; exit 0\""
           }
         ]
       },
@@ -16,6 +20,17 @@
           {
             "type": "command",
             "command": "C:\\Users\\david.perez\\.local\\bin\\graphify.EXE hook-guard read"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Get-ChildItem -Path .,'C:\\Users\\david.perez\\AppData\\Local\\Temp','C:\\Users\\david.perez\\OneDrive - Timestamp - Sistemas de Informação S.A' -Filter 'bash.exe.stackdump' -Recurse -Depth 3 -ErrorAction SilentlyContinue -Force | Remove-Item -Force -ErrorAction SilentlyContinue; exit 0\""
           }
         ]
       }
