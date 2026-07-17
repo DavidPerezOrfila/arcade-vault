@@ -4,16 +4,6 @@ import { Resend } from "resend";
 import { contactSchema } from "./schema";
 import type { ContactFormState } from "./types";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-function getRequiredEnv(name: string): string {
-  const value = process.env[name];
-  if (!value) {
-    throw new Error(`Missing environment variable: ${name}`);
-  }
-  return value;
-}
-
 export async function sendContactEmail(
   _prevState: ContactFormState,
   formData: FormData,
@@ -35,10 +25,19 @@ export async function sendContactEmail(
     return { success: true };
   }
 
+  const apiKey = process.env.RESEND_API_KEY;
+  const fromEmail = process.env.RESEND_FROM_EMAIL;
+  const contactEmail = process.env.CONTACT_EMAIL;
+
+  if (!apiKey || !fromEmail || !contactEmail) {
+    return { success: false, error: "Servicio de correo no configurado correctamente en el servidor." };
+  }
+
   try {
+    const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
-      from: getRequiredEnv("RESEND_FROM_EMAIL"),
-      to: getRequiredEnv("CONTACT_EMAIL"),
+      from: fromEmail,
+      to: contactEmail,
       subject: `Nuevo mensaje de ${name}`,
       text: `De: ${name} <${email}>\n\n${message}`,
       replyTo: email,
@@ -50,7 +49,7 @@ export async function sendContactEmail(
 
     return { success: true };
   } catch (err) {
-    const message = err instanceof Error ? err.message : "No se pudo enviar el mensaje. Inténtalo de nuevo.";
-    return { success: false, error: message };
+    const errorMessage = err instanceof Error ? err.message : "No se pudo enviar el mensaje. Inténtalo de nuevo.";
+    return { success: false, error: errorMessage };
   }
 }
