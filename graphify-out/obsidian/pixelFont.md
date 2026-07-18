@@ -1,12 +1,12 @@
 ---
 source_file: "app/layout.tsx"
 type: "code"
-community: "Root Layout"
+community: "Game Data Layer"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Root_Layout
+  - community/Game_Data_Layer
 ---
 
 # pixelFont
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[layout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Root_Layout
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

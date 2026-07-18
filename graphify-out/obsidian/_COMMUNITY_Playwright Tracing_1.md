@@ -1,31 +1,30 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # Playwright Tracing
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[1. Start Tracing Before the Problem_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[2. Clean Up Old Traces_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Analyzing Performance_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Basic Usage_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Best Practices_4]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Capturing Evidence_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Debugging Failed Actions_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Limitations_2]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Trace Output Files_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Trace vs Video vs Screenshot_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Tracing_3]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[Use Cases_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[What Traces Capture_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[`resources`_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[`trace-{timestamp}.network`_1]] - document - .claude/skills/playwright-cli/references/tracing.md
-- [[`trace-{timestamp}.trace`_1]] - document - .claude/skills/playwright-cli/references/tracing.md
+- [[1. `index.html`]] - document - resources/started-games/03-tetris/README.md
+- [[2. `style.css`]] - document - resources/started-games/03-tetris/README.md
+- [[3. `game.js`]] - document - resources/started-games/03-tetris/README.md
+- [[Controles_1]] - document - resources/started-games/03-tetris/README.md
+- [[Cómo ejecutar el juego]] - document - resources/started-games/03-tetris/README.md
+- [[Cómo funciona]] - document - resources/started-games/03-tetris/README.md
+- [[Estructura del proyecto]] - document - resources/started-games/03-tetris/README.md
+- [[Flujo del juego]] - document - resources/started-games/03-tetris/README.md
+- [[Licencia]] - document - resources/started-games/03-tetris/README.md
+- [[Opción 1 abrir el archivo directamente]] - document - resources/started-games/03-tetris/README.md
+- [[Opción 2 servidor local (recomendado)]] - document - resources/started-games/03-tetris/README.md
+- [[Personalización]] - document - resources/started-games/03-tetris/README.md
+- [[Qué hace el proyecto]] - document - resources/started-games/03-tetris/README.md
+- [[README_1]] - document - resources/started-games/03-tetris/README.md
+- [[Tabla de contenidos]] - document - resources/started-games/03-tetris/README.md
+- [[Tecnologías_1]] - document - resources/started-games/03-tetris/README.md
+- [[Tetris]] - document - resources/started-games/03-tetris/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +32,3 @@ members: 16
 TABLE source_file, type FROM #community/Playwright_Tracing
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Playwright CLI Reference]]
-
-## Top bridge nodes
-- [[Tracing_3]] - degree 8, connects to 1 community

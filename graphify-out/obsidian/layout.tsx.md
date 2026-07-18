@@ -1,12 +1,12 @@
 ---
 source_file: "app/layout.tsx"
 type: "code"
-community: "Root Layout"
+community: "Game Data Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Root_Layout
+  - community/Game_Data_Layer
 ---
 
 # layout.tsx
@@ -18,4 +18,4 @@ tags:
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
 - [[pixelFont]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Root_Layout
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

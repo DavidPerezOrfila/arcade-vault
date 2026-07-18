@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/video-recording.md"
+source_file: ".claude/skills/playwright-cli/references/tracing.md"
 type: "document"
-community: "Playwright CLI Reference"
-location: "L140"
+community: "Playwright Tracing"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/Playwright_Tracing
 ---
 
 # Limitations
 
 ## Connections
-- [[Video Recording]] - `contains` [EXTRACTED]
+- [[Tracing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing

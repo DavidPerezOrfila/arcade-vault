@@ -1,24 +1,22 @@
 ---
 type: community
-cohesion: 0.22
 members: 9
 ---
 
 # Cookie Management
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Advanced Multiple Cookies or Custom Options_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Clear All Cookies_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Cookies_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Delete a Cookie_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Filter Cookies by Domain_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Filter Cookies by Path_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Get Specific Cookie_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[List All Cookies_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Set a Cookie_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
+- [[spec-impl — Implementer of approved specs]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
+- [[Instructions]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
+- [[Phase 1 — Identify the spec]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
+- [[Phase 2 — Validate the spec's state]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
+- [[Phase 3 — Create the git branch and switch to it]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
+- [[Phase 4 — Implement step by step]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
+- [[SKILL_1]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
+- [[Session context]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
+- [[Summary of expected behavior]] - document - resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +24,3 @@ members: 9
 TABLE source_file, type FROM #community/Cookie_Management
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Storage State]]
-
-## Top bridge nodes
-- [[Cookies_1]] - degree 9, connects to 1 community

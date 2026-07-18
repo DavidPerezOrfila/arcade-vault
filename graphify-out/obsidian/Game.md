@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[games.ts]] - `imports` [EXTRACTED]
-- [[types.ts]] - `contains` [EXTRACTED]
+- [[page.tsx_3]] - `imports` [EXTRACTED]
+- [[types.ts_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

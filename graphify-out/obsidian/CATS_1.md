@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/data.jsx"
 type: "code"
-community: "Home Page UI"
+community: "Games Page"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_UI
+  - community/Games_Page
 ---
 
 # CATS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[data.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_UI
+#graphify/code #graphify/EXTRACTED #community/Games_Page

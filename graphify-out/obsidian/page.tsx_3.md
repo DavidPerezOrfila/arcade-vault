@@ -1,25 +1,23 @@
 ---
-source_file: "app/about/page.tsx"
+source_file: "app/games/page.tsx"
 type: "code"
-community: "About Page & Contact"
+community: "Game Data Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/Game_Data_Layer
 ---
 
 # page.tsx
 
 ## Connections
-- [[AboutPage()]] - `contains` [EXTRACTED]
-- [[ContactFormState]] - `imports` [EXTRACTED]
-- [[HIGHLIGHTS]] - `contains` [EXTRACTED]
-- [[HighlightIcon()]] - `imports` [EXTRACTED]
-- [[actions.ts]] - `imports_from` [EXTRACTED]
-- [[highlight-icon.tsx]] - `imports_from` [EXTRACTED]
-- [[initialState]] - `contains` [EXTRACTED]
-- [[sendContactEmail()]] - `imports` [EXTRACTED]
+- [[CATS]] - `imports` [EXTRACTED]
+- [[GAMES]] - `imports` [EXTRACTED]
+- [[Game]] - `imports` [EXTRACTED]
+- [[GameCard()]] - `contains` [EXTRACTED]
+- [[Home()]] - `contains` [EXTRACTED]
+- [[games.ts]] - `imports_from` [EXTRACTED]
 - [[types.ts_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

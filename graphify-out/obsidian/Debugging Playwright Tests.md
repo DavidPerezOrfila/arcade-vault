@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/playwright-tests.md"
 type: "document"
-community: "Playwright CLI Reference"
+community: "Storage State"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/Storage_State
 ---
 
 # Debugging Playwright Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[playwright-tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/document #graphify/EXTRACTED #community/Storage_State

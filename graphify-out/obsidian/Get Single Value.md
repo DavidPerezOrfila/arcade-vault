@@ -13,6 +13,5 @@ tags:
 
 ## Connections
 - [[Local Storage]] - `contains` [EXTRACTED]
-- [[Session Storage]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/localStorage_Ops

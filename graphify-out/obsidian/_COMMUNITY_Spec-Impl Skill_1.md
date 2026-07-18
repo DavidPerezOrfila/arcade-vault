@@ -1,24 +1,22 @@
 ---
 type: community
-cohesion: 0.22
 members: 9
 ---
 
 # Spec-Impl Skill
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[spec-impl — Implementer of approved specs_1]] - document - .claude/skills/spec-impl/SKILL.md
-- [[Instructions_1]] - document - .claude/skills/spec-impl/SKILL.md
-- [[Phase 1 — Identify the spec_1]] - document - .claude/skills/spec-impl/SKILL.md
-- [[Phase 2 — Validate the spec's state_1]] - document - .claude/skills/spec-impl/SKILL.md
-- [[Phase 3 — Create the git branch and switch to it_1]] - document - .claude/skills/spec-impl/SKILL.md
-- [[Phase 4 — Implement step by step_1]] - document - .claude/skills/spec-impl/SKILL.md
-- [[SKILL_4]] - document - .claude/skills/spec-impl/SKILL.md
-- [[Session context_1]] - document - .claude/skills/spec-impl/SKILL.md
-- [[Summary of expected behavior_1]] - document - .claude/skills/spec-impl/SKILL.md
+- [[02 — Animación de explosión al romper bloques]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
+- [[02-animacion-explosion-bloques]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
+- [[Alcance_1]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
+- [[Criterios de aceptación_1]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
+- [[Decisiones tomadas y descartadas_1]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
+- [[Dentro del spec]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
+- [[Fuera del alcance]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
+- [[Modelo de datos_1]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
+- [[Plan de implementación_1]] - document - resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md
 
 ## Live Query (requires Dataview plugin)
 

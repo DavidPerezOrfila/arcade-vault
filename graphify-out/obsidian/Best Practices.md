@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/session-management.md"
+source_file: ".agents/skills/playwright-cli/references/video-recording.md"
 type: "document"
-community: "Browser Sessions"
-location: "L193"
+community: "Root Layout"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Sessions
+  - community/Root_Layout
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Name Browser Sessions Semantically]] - `contains` [EXTRACTED]
-- [[2. Always Clean Up]] - `contains` [EXTRACTED]
-- [[3. Delete Stale Browser Data]] - `contains` [EXTRACTED]
-- [[Browser Session Management]] - `contains` [EXTRACTED]
+- [[1. Use Descriptive Filenames]] - `contains` [EXTRACTED]
+- [[2. Record entire hero scripts.]] - `contains` [EXTRACTED]
+- [[Overlay API Summary]] - `contains` [EXTRACTED]
+- [[Video Recording]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Sessions
+#graphify/document #graphify/EXTRACTED #community/Root_Layout

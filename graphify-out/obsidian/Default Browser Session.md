@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/session-management.md"
+source_file: ".claude/skills/playwright-cli/references/session-management.md"
 type: "document"
 community: "Browser Sessions"
 location: "L164"

@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.16
-members: 18
+members: 16
 ---
 
 # About Page & Contact
 
-**Cohesion:** 0.16 - loosely connected
-**Members:** 18 nodes
+**Members:** 16 nodes
 
 ## Members
 - [[AboutPage()]] - code - app/about/page.tsx
@@ -20,14 +18,12 @@ members: 18
 - [[HighlightIconProps]] - code - app/about/highlight-icon.tsx
 - [[actions.ts]] - code - app/about/actions.ts
 - [[contactSchema]] - code - app/about/schema.ts
-- [[getRequiredEnv()]] - code - app/about/actions.ts
 - [[highlight-icon.tsx]] - code - app/about/highlight-icon.tsx
 - [[initialState]] - code - app/about/page.tsx
-- [[page.tsx_3]] - code - app/about/page.tsx
-- [[resend]] - code - app/about/actions.ts
+- [[page.tsx]] - code - app/about/page.tsx
 - [[schema.ts]] - code - app/about/schema.ts
 - [[sendContactEmail()]] - code - app/about/actions.ts
-- [[types.ts_1]] - code - app/about/types.ts
+- [[types.ts]] - code - app/about/types.ts
 
 ## Live Query (requires Dataview plugin)
 

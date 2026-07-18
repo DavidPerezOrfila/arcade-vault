@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/SKILL.md"
 type: "document"
-community: "Playwright Automation"
+community: "Cookie Management"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Automation
+  - community/Cookie_Management
 ---
 
 # Storage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Automation
+#graphify/document #graphify/EXTRACTED #community/Cookie_Management

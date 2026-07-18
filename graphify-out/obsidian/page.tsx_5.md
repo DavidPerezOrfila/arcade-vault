@@ -1,21 +1,23 @@
 ---
-source_file: "app/page.tsx"
+source_file: "app/player/[id]/page.tsx"
 type: "code"
-community: "Home Page UI"
+community: "Game Data Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_UI
+  - community/Game_Data_Layer
 ---
 
 # page.tsx
 
 ## Connections
-- [[FeatureIcon()]] - `contains` [EXTRACTED]
-- [[FloatingSilhouettes()]] - `contains` [EXTRACTED]
-- [[Home()_1]] - `contains` [EXTRACTED]
-- [[MiniCard()]] - `contains` [EXTRACTED]
-- [[useReveal()]] - `contains` [EXTRACTED]
+- [[GAMES]] - `imports` [EXTRACTED]
+- [[GamePlayer()]] - `contains` [EXTRACTED]
+- [[PlayerPageProps]] - `contains` [EXTRACTED]
+- [[games.ts]] - `imports_from` [EXTRACTED]
+- [[getUser()]] - `imports` [EXTRACTED]
+- [[saveScore()]] - `imports` [EXTRACTED]
+- [[storage.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_UI
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

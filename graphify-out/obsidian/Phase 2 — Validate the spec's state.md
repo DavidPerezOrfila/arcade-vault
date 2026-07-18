@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/spec-impl/SKILL.md"
+source_file: "resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md"
 type: "document"
-community: "Spec-Impl Skill"
-location: "L51"
+community: "Cookie Management"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Impl_Skill
+  - community/Cookie_Management
 ---
 
 # Phase 2 — Validate the spec's state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Impl_Skill
+#graphify/document #graphify/EXTRACTED #community/Cookie_Management

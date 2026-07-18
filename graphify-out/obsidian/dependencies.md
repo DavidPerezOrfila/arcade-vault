@@ -2,7 +2,7 @@
 source_file: "package.json"
 type: "code"
 community: "Package Dependencies"
-location: "L12"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -18,7 +18,7 @@ tags:
 - [[package.json]] - `contains` [EXTRACTED]
 - [[react]] - `contains` [EXTRACTED]
 - [[react-dom]] - `contains` [EXTRACTED]
-- [[resend_1]] - `contains` [EXTRACTED]
+- [[resend]] - `contains` [EXTRACTED]
 - [[zod]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Package_Dependencies

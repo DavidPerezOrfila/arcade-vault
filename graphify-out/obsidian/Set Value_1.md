@@ -1,8 +1,8 @@
 ---
-source_file: ".claude/skills/playwright-cli/references/storage-state.md"
+source_file: ".agents/skills/playwright-cli/references/storage-state.md"
 type: "document"
 community: "localStorage Ops"
-location: "L137"
+location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # Set Value
 
 ## Connections
-- [[Local Storage_1]] - `contains` [EXTRACTED]
-- [[Session Storage_1]] - `contains` [EXTRACTED]
+- [[Session Storage]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/localStorage_Ops

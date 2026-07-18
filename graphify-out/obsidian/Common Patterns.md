@@ -1,20 +1,19 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/session-management.md"
+source_file: ".agents/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "Browser Sessions"
-location: "L61"
+community: "localStorage Ops"
+location: "L230"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Sessions
+  - community/localStorage_Ops
 ---
 
 # Common Patterns
 
 ## Connections
-- [[AB Testing Sessions]] - `contains` [EXTRACTED]
-- [[Browser Session Management]] - `contains` [EXTRACTED]
-- [[Concurrent Scraping]] - `contains` [EXTRACTED]
-- [[Persistent Profile]] - `contains` [EXTRACTED]
+- [[Authentication State Reuse]] - `contains` [EXTRACTED]
+- [[Save and Restore Roundtrip]] - `contains` [EXTRACTED]
+- [[Storage Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Sessions
+#graphify/document #graphify/EXTRACTED #community/localStorage_Ops

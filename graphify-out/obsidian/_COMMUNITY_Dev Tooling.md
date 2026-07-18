@@ -1,13 +1,11 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+members: 23
 ---
 
 # Dev Tooling
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Members:** 23 nodes
 
 ## Members
 - [[@playwrighttest]] - code - package.json
@@ -21,10 +19,14 @@ members: 19
 - [[@typesreact-dom]] - code - package.json
 - [[@typesreact-dom_1]] - concept - package.json
 - [[devDependencies]] - code - package.json
-- [[eslint_1]] - concept - package.json
 - [[eslint]] - code - package.json
-- [[eslint-config-next_1]] - concept - package.json
+- [[eslint_1]] - concept - package.json
 - [[eslint-config-next]] - code - package.json
+- [[eslint-config-next_1]] - concept - package.json
+- [[prettier]] - code - package.json
+- [[prettier_1]] - concept - package.json
+- [[prettier-plugin-tailwindcss]] - code - package.json
+- [[prettier-plugin-tailwindcss_1]] - concept - package.json
 - [[tailwindcss]] - code - package.json
 - [[tailwindcss_1]] - concept - package.json
 - [[typescript]] - code - package.json
@@ -41,4 +43,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Package Dependencies]]
 
 ## Top bridge nodes
-- [[devDependencies]] - degree 10, connects to 1 community
+- [[devDependencies]] - degree 12, connects to 1 community

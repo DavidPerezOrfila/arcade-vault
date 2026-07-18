@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/tracing.md"
+source_file: ".claude/skills/playwright-cli/references/tracing.md"
 type: "document"
 community: "Playwright Tracing"
 location: "L20"

@@ -1,10 +1,10 @@
 ---
 source_file: "package.json"
-type: "code"
+type: "concept"
 community: "Package Dependencies"
-location: "L18"
+location: "L23"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
   - community/Package_Dependencies
 ---
@@ -12,7 +12,6 @@ tags:
 # resend
 
 ## Connections
-- [[dependencies]] - `contains` [EXTRACTED]
-- [[resend_2]] - `imports` [EXTRACTED]
+- [[resend]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/Package_Dependencies

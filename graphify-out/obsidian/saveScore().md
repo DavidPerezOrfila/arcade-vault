@@ -12,7 +12,9 @@ tags:
 # saveScore()
 
 ## Connections
+- [[GamePlayer()]] - `calls` [EXTRACTED]
 - [[getScores()]] - `calls` [EXTRACTED]
+- [[page.tsx_5]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

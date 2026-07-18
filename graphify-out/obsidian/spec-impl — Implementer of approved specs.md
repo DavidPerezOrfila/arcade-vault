@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/spec-impl/SKILL.md"
+source_file: "resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md"
 type: "document"
-community: "Spec-Impl Skill"
+community: "Cookie Management"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Impl_Skill
+  - community/Cookie_Management
 ---
 
 # /spec-impl — Implementer of approved specs
@@ -17,4 +17,4 @@ tags:
 - [[Session context]] - `contains` [EXTRACTED]
 - [[Summary of expected behavior]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Impl_Skill
+#graphify/document #graphify/EXTRACTED #community/Cookie_Management

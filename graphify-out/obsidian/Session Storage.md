@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[Clear sessionStorage]] - `contains` [EXTRACTED]
-- [[Delete Single Item]] - `contains` [EXTRACTED]
-- [[Get Single Value]] - `contains` [EXTRACTED]
+- [[Delete Single Item_1]] - `contains` [EXTRACTED]
+- [[Get Single Value_1]] - `contains` [EXTRACTED]
 - [[List All sessionStorage Items]] - `contains` [EXTRACTED]
-- [[Set Value]] - `contains` [EXTRACTED]
+- [[Set Value_1]] - `contains` [EXTRACTED]
 - [[Storage Management]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/localStorage_Ops

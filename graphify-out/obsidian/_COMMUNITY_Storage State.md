@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+members: 9
 ---
 
 # Storage State
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Authentication State Reuse]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Common Patterns_1]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Run Code]] - document - .claude/skills/playwright-cli/references/running-code.md
-- [[Save and Restore Roundtrip]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Security Notes]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Security Notes_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Storage Management]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Debugging Playwright Tests]] - document - .agents/skills/playwright-cli/references/playwright-tests.md
+- [[Examples]] - document - .agents/skills/playwright-cli/references/element-attributes.md
+- [[Inspecting Element Attributes]] - document - .agents/skills/playwright-cli/references/element-attributes.md
+- [[Running Playwright Tests]] - document - .agents/skills/playwright-cli/references/playwright-tests.md
+- [[SKILL]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[element-attributes]] - document - .agents/skills/playwright-cli/references/element-attributes.md
+- [[playwright-tests]] - document - .agents/skills/playwright-cli/references/playwright-tests.md
 - [[storage-state]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[video-recording]] - document - .agents/skills/playwright-cli/references/video-recording.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,19 +26,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_localStorage Ops]]
-- 2 edges to [[_COMMUNITY_localStorage Ops_1]]
 - 1 edge to [[_COMMUNITY_Playwright CLI Reference_1]]
-- 1 edge to [[_COMMUNITY_Browser Sessions]]
-- 1 edge to [[_COMMUNITY_Cookie Management]]
-- 1 edge to [[_COMMUNITY_IndexedDB Ops]]
-- 1 edge to [[_COMMUNITY_Storage State API]]
-- 1 edge to [[_COMMUNITY_Auth State Patterns]]
-- 1 edge to [[_COMMUNITY_Cookie Management_1]]
-- 1 edge to [[_COMMUNITY_IndexedDB Ops_1]]
-- 1 edge to [[_COMMUNITY_Storage State API_1]]
-- 1 edge to [[_COMMUNITY_Playwright CLI Reference]]
+- 1 edge to [[_COMMUNITY_Playwright Automation_1]]
+- 1 edge to [[_COMMUNITY_localStorage Ops]]
+- 1 edge to [[_COMMUNITY_Root Layout]]
 
 ## Top bridge nodes
-- [[Storage Management]] - degree 18, connects to 11 communities
+- [[SKILL]] - degree 6, connects to 2 communities
 - [[storage-state]] - degree 2, connects to 1 community
+- [[video-recording]] - degree 2, connects to 1 community

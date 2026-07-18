@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "IndexedDB Ops"
+community: "localStorage Ops"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IndexedDB_Ops
+  - community/localStorage_Ops
 ---
 
 # Delete Database
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IndexedDB_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IndexedDB_Ops
+#graphify/document #graphify/EXTRACTED #community/localStorage_Ops

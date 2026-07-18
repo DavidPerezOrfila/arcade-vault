@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 7
 ---
 
 # Storage State API
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Restore Storage State]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Save Storage State]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Storage State]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Storage State File Format]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Architecture_1]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[CLAUDE_2]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[CLAUDE_3]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[Game flow]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[Running the game]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[Tunable constants (top of game.js)]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[game.js internals]] - document - resources/started-games/03-tetris/CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Storage_State_API
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Storage State]]
-
-## Top bridge nodes
-- [[Storage State]] - degree 4, connects to 1 community

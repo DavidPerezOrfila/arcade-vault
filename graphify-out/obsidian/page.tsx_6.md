@@ -1,18 +1,18 @@
 ---
-source_file: "app/player/[id]/page.tsx"
+source_file: "app/reproductor/page.tsx"
 type: "code"
-community: "Home Page UI"
+community: "Game Data Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_UI
+  - community/Game_Data_Layer
 ---
 
 # page.tsx
 
 ## Connections
-- [[GamePlayer()]] - `contains` [EXTRACTED]
-- [[PlayerPageProps]] - `contains` [EXTRACTED]
+- [[ReproductorContent.tsx]] - `imports_from` [EXTRACTED]
+- [[ReproductorPage()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_UI
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

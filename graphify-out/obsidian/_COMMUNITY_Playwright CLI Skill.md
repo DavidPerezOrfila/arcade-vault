@@ -1,26 +1,25 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+members: 12
 ---
 
 # Playwright CLI Skill
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[spec — Guided spec designer]] - document - .agents/skills/spec/SKILL.md
-- [[Arguments]] - document - .agents/skills/spec/SKILL.md
-- [[Command flow]] - document - .agents/skills/spec/SKILL.md
-- [[Hard rules]] - document - .agents/skills/spec/SKILL.md
-- [[Phase 1 — Understand the context]] - document - .agents/skills/spec/SKILL.md
-- [[Phase 2 — Clarify through questions]] - document - .agents/skills/spec/SKILL.md
-- [[Phase 3 — Develop the spec section by section]] - document - .agents/skills/spec/SKILL.md
-- [[Phase 4 — Save the spec]] - document - .agents/skills/spec/SKILL.md
-- [[Philosophy]] - document - .agents/skills/spec/SKILL.md
-- [[SKILL_2]] - document - .agents/skills/spec/SKILL.md
-- [[Tone when asking questions]] - document - .agents/skills/spec/SKILL.md
+- [[Final section — What is NOT in (reinforcement)]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Global rules about the whole document]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Header]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Section 1 — Why this spec exists (optional)]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Section 2 — Scope]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Section 3 — Data model]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Section 4 — Implementation plan]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Section 5 — Acceptance criteria]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Section 6 — Decisions taken and discarded]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Section 7 — Identified risks (optional)]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[Template for a useful spec]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
+- [[template]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/template.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -2,7 +2,7 @@
 source_file: "package.json"
 type: "code"
 community: "Dev Tooling"
-location: "L21"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -20,6 +20,8 @@ tags:
 - [[eslint]] - `contains` [EXTRACTED]
 - [[eslint-config-next]] - `contains` [EXTRACTED]
 - [[package.json]] - `contains` [EXTRACTED]
+- [[prettier]] - `contains` [EXTRACTED]
+- [[prettier-plugin-tailwindcss]] - `contains` [EXTRACTED]
 - [[tailwindcss]] - `contains` [EXTRACTED]
 - [[typescript]] - `contains` [EXTRACTED]
 

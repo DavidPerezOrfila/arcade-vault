@@ -1,20 +1,29 @@
 ---
-source_file: "app/about/types.ts"
+source_file: "app/data/types.ts"
 type: "code"
-community: "About Page & Contact"
+community: "Game Data Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/Game_Data_Layer
 ---
 
 # types.ts
 
 ## Connections
-- [[ContactFormInput]] - `contains` [EXTRACTED]
-- [[ContactFormState]] - `contains` [EXTRACTED]
-- [[actions.ts]] - `imports_from` [EXTRACTED]
+- [[Game]] - `contains` [EXTRACTED]
+- [[GameCategory]] - `contains` [EXTRACTED]
+- [[GameColor]] - `contains` [EXTRACTED]
+- [[GameFilter]] - `contains` [EXTRACTED]
+- [[ScoreEntry]] - `contains` [EXTRACTED]
+- [[ScoreRow]] - `contains` [EXTRACTED]
+- [[User]] - `contains` [EXTRACTED]
+- [[games.ts]] - `imports_from` [EXTRACTED]
+- [[nav.tsx]] - `imports_from` [EXTRACTED]
 - [[page.tsx_3]] - `imports_from` [EXTRACTED]
+- [[page.tsx_7]] - `imports_from` [EXTRACTED]
+- [[players.ts]] - `imports_from` [EXTRACTED]
+- [[storage.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

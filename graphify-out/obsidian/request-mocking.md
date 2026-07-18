@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[Request Mocking]] - `contains` [EXTRACTED]
 - [[SKILL]] - `references` [EXTRACTED]
-- [[test-generation]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference

@@ -2,7 +2,7 @@
 source_file: "package.json"
 type: "code"
 community: "Package Dependencies"
-location: "L10"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED

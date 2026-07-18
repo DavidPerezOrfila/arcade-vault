@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[clearUser()]] - `calls` [EXTRACTED]
-- [[page.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_1]] - `contains` [EXTRACTED]
 - [[setUser()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

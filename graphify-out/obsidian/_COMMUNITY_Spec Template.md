@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 15
 ---
 
 # Spec Template
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Final section — What is NOT in (reinforcement)]] - document - .agents/skills/spec/template.md
-- [[Global rules about the whole document]] - document - .agents/skills/spec/template.md
-- [[Header]] - document - .agents/skills/spec/template.md
-- [[Section 1 — Why this spec exists (optional)]] - document - .agents/skills/spec/template.md
-- [[Section 2 — Scope]] - document - .agents/skills/spec/template.md
-- [[Section 3 — Data model]] - document - .agents/skills/spec/template.md
-- [[Section 4 — Implementation plan]] - document - .agents/skills/spec/template.md
-- [[Section 5 — Acceptance criteria]] - document - .agents/skills/spec/template.md
-- [[Section 6 — Decisions taken and discarded]] - document - .agents/skills/spec/template.md
-- [[Section 7 — Identified risks (optional)]] - document - .agents/skills/spec/template.md
-- [[Template for a useful spec]] - document - .agents/skills/spec/template.md
-- [[template]] - document - .agents/skills/spec/template.md
+- [[API de `spritesheet.js`]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Archivos principales]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Arquitectura]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Assets]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[CLAUDE_4]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[CLAUDE_5]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Ciclo de vida de una spec]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Comandos]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Desarrollo]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Estado del juego (en `game.js`)]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Estructura de una spec (`specsNN-slug.md`)]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Flujo de trabajo spec-driven]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Proyecto]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Specs existentes]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Sprites disponibles]] - document - resources/started-games/04-arkanoid/CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

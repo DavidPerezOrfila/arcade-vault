@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/spec-impl/SKILL.md"
+source_file: "resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md"
 type: "document"
-community: "Spec-Impl Skill"
-location: "L27"
+community: "Cookie Management"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Impl_Skill
+  - community/Cookie_Management
 ---
 
 # Instructions
@@ -18,4 +18,4 @@ tags:
 - [[Phase 3 — Create the git branch and switch to it]] - `contains` [EXTRACTED]
 - [[Phase 4 — Implement step by step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Impl_Skill
+#graphify/document #graphify/EXTRACTED #community/Cookie_Management

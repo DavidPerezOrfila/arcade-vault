@@ -15,6 +15,6 @@ tags:
 - [[HighlightIcon()]] - `contains` [EXTRACTED]
 - [[HighlightIconKind]] - `contains` [EXTRACTED]
 - [[HighlightIconProps]] - `contains` [EXTRACTED]
-- [[page.tsx_3]] - `imports_from` [EXTRACTED]
+- [[page.tsx]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/About_Page__Contact
