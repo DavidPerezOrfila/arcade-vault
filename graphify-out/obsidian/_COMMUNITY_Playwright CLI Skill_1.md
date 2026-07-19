@@ -1,26 +1,25 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+members: 12
 ---
 
 # Playwright CLI Skill
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[spec — Guided spec designer_1]] - document - .claude/skills/spec/SKILL.md
-- [[Arguments_1]] - document - .claude/skills/spec/SKILL.md
-- [[Command flow_1]] - document - .claude/skills/spec/SKILL.md
-- [[Hard rules_1]] - document - .claude/skills/spec/SKILL.md
-- [[Phase 1 — Understand the context_1]] - document - .claude/skills/spec/SKILL.md
-- [[Phase 2 — Clarify through questions_1]] - document - .claude/skills/spec/SKILL.md
-- [[Phase 3 — Develop the spec section by section_1]] - document - .claude/skills/spec/SKILL.md
-- [[Phase 4 — Save the spec_1]] - document - .claude/skills/spec/SKILL.md
-- [[Philosophy_1]] - document - .claude/skills/spec/SKILL.md
-- [[SKILL_5]] - document - .claude/skills/spec/SKILL.md
-- [[Tone when asking questions_1]] - document - .claude/skills/spec/SKILL.md
+- [[03 — Sonidos y niveles]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[03-sonidos-y-niveles]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Alcance_2]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Criterios de aceptación_2]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Decisiones tomadas y descartadas_2]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Definición de niveles]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Dentro del spec_1]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Estado de pausa]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Fuera del alcance_1]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Modelo de datos_2]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Nuevas variables de estado en `game.js`]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
+- [[Plan de implementación_2]] - document - resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md
 
 ## Live Query (requires Dataview plugin)
 

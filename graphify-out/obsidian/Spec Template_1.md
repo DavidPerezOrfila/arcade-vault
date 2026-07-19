@@ -4,7 +4,7 @@ type: "document"
 community: "Spec Skills Config"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Spec_Skills_Config
 ---
 
@@ -14,4 +14,4 @@ tags:
 - [[spec Skill]] - `references` [EXTRACTED]
 - [[spec-impl Skill]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Spec_Skills_Config
+#graphify/document #graphify/EXTRACTED #community/Spec_Skills_Config

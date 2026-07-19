@@ -1,19 +1,18 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/session-management.md"
+source_file: ".claude/skills/playwright-cli/references/session-management.md"
 type: "document"
-community: "Playwright CLI Reference"
+community: "Browser Sessions"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/Browser_Sessions
 ---
 
 # session-management.md
 
 ## Connections
 - [[Browser Session Management]] - `contains` [EXTRACTED]
-- [[SKILL]] - `references` [EXTRACTED]
 - [[test-generation]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/document #graphify/EXTRACTED #community/Browser_Sessions

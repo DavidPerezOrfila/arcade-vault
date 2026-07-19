@@ -1,18 +1,18 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 5
 ---
 
 # Games Page
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[GameCard()]] - code - app/games/page.tsx
-- [[Home()]] - code - app/games/page.tsx
-- [[page.tsx_4]] - code - app/games/page.tsx
+- [[CATS_1]] - code - resources/templates/data.jsx
+- [[GAMES_1]] - code - resources/templates/data.jsx
+- [[PLAYERS_1]] - code - resources/templates/data.jsx
+- [[data.jsx]] - code - resources/templates/data.jsx
+- [[seededScores()_1]] - code - resources/templates/data.jsx
 
 ## Live Query (requires Dataview plugin)
 

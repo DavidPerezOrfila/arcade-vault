@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+members: 10
 ---
 
 # Cookie Management
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Advanced Multiple Cookies or Custom Options]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Clear All Cookies]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Cookies]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Delete a Cookie]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Filter Cookies by Domain]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Filter Cookies by Path]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Get Specific Cookie]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[List All Cookies]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Set a Cookie]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Commands]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Core]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[DevTools]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Keyboard]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Mouse]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Navigation]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Network]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Save as]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Storage]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Tabs]] - document - .agents/skills/playwright-cli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Storage State]]
+- 1 edge to [[_COMMUNITY_Playwright Automation_1]]
 
 ## Top bridge nodes
-- [[Cookies]] - degree 9, connects to 1 community
+- [[Commands]] - degree 10, connects to 1 community

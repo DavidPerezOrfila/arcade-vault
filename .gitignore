@@ -49,3 +49,6 @@ next-env.d.ts
 
 # Git Bash crash residue on Windows
 / bash.exe.stackdump
+
+# graphify cache (reproducible hash files, no need to commit)
+/graphify-out/cache/

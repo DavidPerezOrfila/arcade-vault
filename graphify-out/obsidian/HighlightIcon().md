@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[highlight-icon.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx_3]] - `imports` [EXTRACTED]
+- [[page.tsx]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/About_Page__Contact

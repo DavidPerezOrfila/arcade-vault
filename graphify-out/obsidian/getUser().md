@@ -12,6 +12,12 @@ tags:
 # getUser()
 
 ## Connections
+- [[GamePlayer()]] - `calls` [EXTRACTED]
+- [[HallOfFame()]] - `calls` [EXTRACTED]
+- [[Nav()]] - `calls` [EXTRACTED]
+- [[nav.tsx]] - `imports` [EXTRACTED]
+- [[page.tsx_5]] - `imports` [EXTRACTED]
+- [[page.tsx_7]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

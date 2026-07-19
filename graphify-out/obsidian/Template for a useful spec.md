@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/spec/template.md"
+source_file: "resources/started-games/04-arkanoid/.agents/skills/spec/template.md"
 type: "document"
-community: "Spec Template"
+community: "Playwright CLI Skill"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec_Template
+  - community/Playwright_CLI_Skill
 ---
 
 # Template for a useful spec
@@ -24,4 +24,4 @@ tags:
 - [[Section 7 — Identified risks (optional)]] - `contains` [EXTRACTED]
 - [[template]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec_Template
+#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Skill

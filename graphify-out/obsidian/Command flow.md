@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/spec/SKILL.md"
+source_file: "resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md"
 type: "document"
-community: "Playwright CLI Skill"
+community: "MVP Spec"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Skill
+  - community/MVP_Spec
 ---
 
 # Command flow
@@ -18,4 +18,4 @@ tags:
 - [[Phase 3 — Develop the spec section by section]] - `contains` [EXTRACTED]
 - [[Phase 4 — Save the spec]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Skill
+#graphify/document #graphify/EXTRACTED #community/MVP_Spec

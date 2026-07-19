@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/tracing.md"
+source_file: ".claude/skills/playwright-cli/references/tracing.md"
 type: "document"
 community: "Playwright Tracing"
 location: "L1"
@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Basic Usage]] - `contains` [EXTRACTED]
-- [[Best Practices_1]] - `contains` [EXTRACTED]
-- [[Limitations]] - `contains` [EXTRACTED]
+- [[Best Practices_2]] - `contains` [EXTRACTED]
+- [[Limitations_1]] - `contains` [EXTRACTED]
 - [[Trace Output Files]] - `contains` [EXTRACTED]
 - [[Trace vs Video vs Screenshot]] - `contains` [EXTRACTED]
 - [[Use Cases]] - `contains` [EXTRACTED]

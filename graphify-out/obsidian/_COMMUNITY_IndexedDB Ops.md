@@ -1,18 +1,20 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 7
 ---
 
 # IndexedDB Ops
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Delete Database]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[IndexedDB]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[List Databases]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[EXPLOSION_FRAMES]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[SPRITES]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[drawFrame()]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[drawSprite()]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[loadSpritesheet()]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[spritesheet.js]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[ssCallbacks]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +22,3 @@ members: 3
 TABLE source_file, type FROM #community/IndexedDB_Ops
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Storage State]]
-
-## Top bridge nodes
-- [[IndexedDB]] - degree 3, connects to 1 community

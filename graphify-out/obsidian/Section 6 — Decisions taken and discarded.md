@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/spec/template.md"
+source_file: "resources/started-games/04-arkanoid/.agents/skills/spec/template.md"
 type: "document"
-community: "Spec Template"
-location: "L126"
+community: "Playwright CLI Skill"
+location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec_Template
+  - community/Playwright_CLI_Skill
 ---
 
 # Section 6 — Decisions taken and discarded
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Template for a useful spec]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec_Template
+#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Skill

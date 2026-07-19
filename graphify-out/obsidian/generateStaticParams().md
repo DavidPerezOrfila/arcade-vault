@@ -12,6 +12,6 @@ tags:
 # generateStaticParams()
 
 ## Connections
-- [[page.tsx_1]] - `contains` [EXTRACTED]
+- [[page.tsx_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

@@ -1,27 +1,26 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 13
 ---
 
 # Spec Template
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Final section — What is NOT in (reinforcement)_1]] - document - .claude/skills/spec/template.md
-- [[Global rules about the whole document_1]] - document - .claude/skills/spec/template.md
-- [[Header_1]] - document - .claude/skills/spec/template.md
-- [[Section 1 — Why this spec exists (optional)_1]] - document - .claude/skills/spec/template.md
-- [[Section 2 — Scope_1]] - document - .claude/skills/spec/template.md
-- [[Section 3 — Data model_1]] - document - .claude/skills/spec/template.md
-- [[Section 4 — Implementation plan_1]] - document - .claude/skills/spec/template.md
-- [[Section 5 — Acceptance criteria_1]] - document - .claude/skills/spec/template.md
-- [[Section 6 — Decisions taken and discarded_1]] - document - .claude/skills/spec/template.md
-- [[Section 7 — Identified risks (optional)_1]] - document - .claude/skills/spec/template.md
-- [[Template for a useful spec_1]] - document - .claude/skills/spec/template.md
-- [[template_1]] - document - .claude/skills/spec/template.md
+- [[01 — MVP jugable de Arkanoid]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[01-mvp-arkanoid]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Alcance]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Bloques]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Criterios de aceptación]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Decisiones tomadas y descartadas]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Dentro del MVP]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Estado del juego]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Fuera del MVP (dejado para specs posteriores)]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Modelo de datos]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Paddle_1]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Pelota]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Plan de implementación]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 
 ## Live Query (requires Dataview plugin)
 

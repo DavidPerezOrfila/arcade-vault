@@ -13,7 +13,9 @@ tags:
 
 ## Connections
 - [[AuthPage()]] - `calls` [EXTRACTED]
-- [[page.tsx]] - `imports` [EXTRACTED]
+- [[Nav()]] - `calls` [EXTRACTED]
+- [[nav.tsx]] - `imports` [EXTRACTED]
+- [[page.tsx_1]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

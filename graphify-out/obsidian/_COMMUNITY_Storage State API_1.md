@@ -1,19 +1,21 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 8
 ---
 
 # Storage State API
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Restore Storage State_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Save Storage State_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Storage State_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
-- [[Storage State File Format_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
+- [[Arkanoid]] - document - resources/started-games/04-arkanoid/README.md
+- [[Características_1]] - document - resources/started-games/04-arkanoid/README.md
+- [[Controles_2]] - document - resources/started-games/04-arkanoid/README.md
+- [[Estructura del proyecto_1]] - document - resources/started-games/04-arkanoid/README.md
+- [[Jugar]] - document - resources/started-games/04-arkanoid/README.md
+- [[Niveles]] - document - resources/started-games/04-arkanoid/README.md
+- [[README_2]] - document - resources/started-games/04-arkanoid/README.md
+- [[Specs implementadas]] - document - resources/started-games/04-arkanoid/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,3 @@ members: 4
 TABLE source_file, type FROM #community/Storage_State_API
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Storage State]]
-
-## Top bridge nodes
-- [[Storage State_1]] - degree 4, connects to 1 community

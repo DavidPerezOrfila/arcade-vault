@@ -5,14 +5,14 @@ community: "About Page & Contact"
 location: "L28"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/About_Page__Contact
 ---
 
 # AboutPage()
 
 ## Connections
-- [[page.tsx_3]] - `contains` [EXTRACTED]
+- [[page.tsx]] - `contains` [EXTRACTED]
 - [[sendContactEmail()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/INFERRED #community/About_Page__Contact

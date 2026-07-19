@@ -6,11 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "C:\\Users\\david.perez\\.local\\bin\\graphify.EXE hook-guard search"
-          },
-          {
-            "type": "command",
-            "command": "powershell -NoProfile -Command \"Get-ChildItem -Path .,'C:\\Users\\david.perez\\AppData\\Local\\Temp','C:\\Users\\david.perez\\OneDrive - Timestamp - Sistemas de Informação S.A' -Filter 'bash.exe.stackdump' -Recurse -Depth 3 -ErrorAction SilentlyContinue -Force | Remove-Item -Force -ErrorAction SilentlyContinue; exit 0\""
+            "command": "C:\\Users\\DAVID\\.local\\bin\\graphify.EXE hook-guard search"
           }
         ]
       },
@@ -19,7 +15,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "C:\\Users\\david.perez\\.local\\bin\\graphify.EXE hook-guard read"
+            "command": "C:\\Users\\DAVID\\.local\\bin\\graphify.EXE hook-guard read"
           }
         ]
       }
@@ -30,7 +26,27 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -Command \"Get-ChildItem -Path .,'C:\\Users\\david.perez\\AppData\\Local\\Temp','C:\\Users\\david.perez\\OneDrive - Timestamp - Sistemas de Informação S.A' -Filter 'bash.exe.stackdump' -Recurse -Depth 3 -ErrorAction SilentlyContinue -Force | Remove-Item -Force -ErrorAction SilentlyContinue; exit 0\""
+            "command": "powershell -NoProfile -Command \"Get-ChildItem -Path .,'C:\\Users\\david.perez\\AppData\\Local\\Temp','C:\\Users\\david.perez\\OneDrive - Timestamp - Sistemas de Informa\u00e7\u00e3o S.A' -Filter 'bash.exe.stackdump' -Recurse -Depth 3 -ErrorAction SilentlyContinue -Force | Remove-Item -Force -ErrorAction SilentlyContinue; exit 0\""
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy RemoteSigned -File \".claude/hooks/accumulate-edited.ps1\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy RemoteSigned -File \".claude/hooks/format-batch.ps1\""
           }
         ]
       }

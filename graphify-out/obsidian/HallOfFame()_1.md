@@ -1,18 +1,17 @@
 ---
 source_file: "resources/templates/salon.jsx"
 type: "code"
-community: "Home Page UI"
+community: "salon.jsx"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_UI
+  - community/salonjsx
 ---
 
 # HallOfFame()
 
 ## Connections
-- [[GAMES_1]] - `references` [EXTRACTED]
 - [[salon.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_UI
+#graphify/code #graphify/EXTRACTED #community/salonjsx

@@ -1,18 +1,17 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "Playwright CLI Reference"
+community: "localStorage Ops"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/localStorage_Ops
 ---
 
 # storage-state.md
 
 ## Connections
-- [[SKILL_3]] - `references` [EXTRACTED]
-- [[Storage Management]] - `contains` [EXTRACTED]
+- [[Storage Management_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/document #graphify/EXTRACTED #community/localStorage_Ops

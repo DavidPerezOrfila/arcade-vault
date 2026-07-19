@@ -12,6 +12,6 @@ tags:
 # HIGHLIGHTS
 
 ## Connections
-- [[page.tsx_3]] - `contains` [EXTRACTED]
+- [[page.tsx]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/About_Page__Contact

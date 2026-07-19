@@ -90,22 +90,36 @@ Every task MUST resolve context through these layers before opening any source f
 
 **Why this rule exists:** Opening dozens of source files per message is the primary token explosion vector. The graph and Obsidian vault are pre-extracted, deduplicated, and relationally linked — they answer most questions in <2000 tokens where raw file reads would cost 20,000+.
 
+<!-- BEGIN:graphify-reminder -->
+A dedicated `consult-graph` skill is installed at `.claude/skills/consult-graph/SKILL.md` to drive this 3-layer rule end-to-end: it opens `graphify-out/obsidian/index.md`, picks 1–3 community pages, and summarises findings with `[[wikilinks]]`. Prefer invoking it (or following its workflow directly above) before falling back to source files.
+<!-- END:graphify-reminder -->
+
 ## graphify
 
-This project has a knowledge graph at `graphify-out/` with 627 nodes, 51 communities, and cross-file relationships. The Obsidian vault at `graphify-out/obsidian/` mirrors the graph as navigable markdown with wikilinks.
-
-Commands:
-
-- `graphify query "<question>"` — BFS traversal for broad context (default)
-- `graphify query "<question>" --dfs` — DFS for tracing a specific path
-- `graphify path "<A>" "<B>"` — shortest path between two concepts
-- `graphify explain "<concept>"` — plain-language explanation of a node
-- `graphify-out/GRAPH_REPORT.md` — full audit report (god nodes, surprising connections, suggested questions)
-- `graphify update .` — incremental update after code changes (AST-only, no API cost)
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
 
 Rules:
-
-- **Always query the graph first.** Do not grep or read files until the graph has been consulted.
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying code, run `graphify update .` to keep the graph current.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+
+### Obsidian
+
+El vault en `graphify-out/obsidian/` es el wiki del proyecto. Ábrelo en Obsidian como bóveda para navegar el grafo visualmente.
+
+Siguiendo el patrón [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) (Karpathy):
+- **Obsidian es el IDE** — navegas las conexiones entre componentes, specs y docs.
+- **El agente es el programador** — escribe y mantiene el grafo automáticamente.
+- **La wiki es el codebase** — el grafo refleja la arquitectura real del proyecto.
+
+```bash
+# Reconstruir el grafo (AST‑only) y re‑exportar el vault
+npm run graphify:update
+npm run graphify:obsidian
+```
+
+### Git policy
+
+- **Se commitea:** `graphify-out/graph.json`, `GRAPH_REPORT.md`, `graph.html`, `graphify-out/obsidian/`
+- **No se commitea:** `graphify-out/cache/`

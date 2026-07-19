@@ -12,7 +12,6 @@ tags:
 # Home()
 
 ## Connections
-- [[GAMES_1]] - `references` [EXTRACTED]
 - [[home.jsx]] - `contains` [EXTRACTED]
 - [[useReveal()_1]] - `calls` [EXTRACTED]
 

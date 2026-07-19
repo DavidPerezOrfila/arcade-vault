@@ -15,6 +15,7 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[name]] - `contains` [EXTRACTED]
+- [[overrides]] - `contains` [EXTRACTED]
 - [[private]] - `contains` [EXTRACTED]
 - [[scripts]] - `contains` [EXTRACTED]
 - [[version]] - `contains` [EXTRACTED]

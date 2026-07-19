@@ -1,20 +1,19 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/video-recording.md"
+source_file: ".claude/skills/playwright-cli/references/tracing.md"
 type: "document"
-community: "Playwright CLI Reference"
-location: "L30"
+community: "Playwright Tracing"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/Playwright_Tracing
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Use Descriptive Filenames]] - `contains` [EXTRACTED]
-- [[2. Record entire hero scripts.]] - `contains` [EXTRACTED]
-- [[Overlay API Summary]] - `contains` [EXTRACTED]
-- [[Video Recording]] - `contains` [EXTRACTED]
+- [[1. Start Tracing Before the Problem]] - `contains` [EXTRACTED]
+- [[2. Clean Up Old Traces]] - `contains` [EXTRACTED]
+- [[Tracing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing

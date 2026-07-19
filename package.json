@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint app components e2e",
-    "test:e2e": "playwright test"
+    "lint:fix": "eslint --fix app components e2e",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:e2e": "playwright test",
+    "graphify:update": "graphify update .",
+    "graphify:obsidian": "graphify export obsidian --dir graphify-out/obsidian"
   },
   "dependencies": {
     "@dietrichgebert/ponytail": "^4.8.4",
@@ -26,6 +31,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "prettier": "^3",
+    "prettier-plugin-tailwindcss": "^0.6",
+    "supabase": "^2.109.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

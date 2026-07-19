@@ -1,17 +1,18 @@
 ---
-source_file: "app/about/actions.ts"
+source_file: "package.json"
 type: "code"
-community: "About Page & Contact"
-location: "L7"
+community: "Package Dependencies"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/Package_Dependencies
 ---
 
 # resend
 
 ## Connections
-- [[actions.ts]] - `contains` [EXTRACTED]
+- [[dependencies]] - `contains` [EXTRACTED]
+- [[resend_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/Package_Dependencies
