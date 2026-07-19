@@ -90,6 +90,10 @@ Every task MUST resolve context through these layers before opening any source f
 
 **Why this rule exists:** Opening dozens of source files per message is the primary token explosion vector. The graph and Obsidian vault are pre-extracted, deduplicated, and relationally linked — they answer most questions in <2000 tokens where raw file reads would cost 20,000+.
 
+<!-- BEGIN:graphify-reminder -->
+A dedicated `consult-graph` skill is installed at `.claude/skills/consult-graph/SKILL.md` to drive this 3-layer rule end-to-end: it opens `graphify-out/obsidian/index.md`, picks 1–3 community pages, and summarises findings with `[[wikilinks]]`. Prefer invoking it (or following its workflow directly above) before falling back to source files.
+<!-- END:graphify-reminder -->
+
 ## graphify
 
 This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
