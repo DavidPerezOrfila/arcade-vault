@@ -1,5 +1,7 @@
 // === Tipos compartidos de Arcade Vault ===
 
+import type { Database } from "@/lib/supabase/types";
+
 export type GameCategory = "ARCADE" | "PUZZLE" | "SHOOTER" | "VERSUS";
 // Filtro de biblioteca: una categoría real o "TODOS" (chip que anula el filtro).
 export type GameFilter = GameCategory | "TODOS";
@@ -17,17 +19,21 @@ export interface Game {
   plays: string;
 }
 
-// Puntuación persistida por el jugador (clave `av_scores` en localStorage).
+// Puntuación persistida en `public.scores` (Postgres via Supabase).
+// El dominio sigue siendo `at: number` (epoch ms) — la capa scores.ts
+// mapea `timestamptz ↔ number` para que la UI nunca vea el string ISO.
 export interface ScoreEntry {
   game: string;
   score: number;
   name: string;
-  at: number; // epoch ms
+  at: number;
 }
 
-// Fila de leaderboard sintética generada por seededScores() para Detalle/Salón.
-// Observación: el spec solo tipa ScoreEntry (persistencia); seededScores produce
-// filas de display con rank/date, que es justamente lo que consumen los prototipos.
+// Fila cruda tal cual la devuelve Supabase — no se exporta a la UI.
+export type ScoreRowDb = Database["public"]["Tables"]["scores"]["Row"];
+
+// Fila de leaderboard sintética generada por seededScores() para el top-5
+// "Players del día" mientras no haya jugadores reales suficientes.
 export interface ScoreRow {
   rank: number;
   name: string;

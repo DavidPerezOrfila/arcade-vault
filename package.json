@@ -12,10 +12,18 @@
     "format:check": "prettier --check .",
     "test:e2e": "playwright test",
     "graphify:update": "graphify update .",
-    "graphify:obsidian": "graphify export obsidian --dir graphify-out/obsidian"
+    "graphify:obsidian": "graphify export obsidian --dir graphify-out/obsidian",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:reset": "supabase db reset",
+    "db:status": "supabase status",
+    "db:migrate": "supabase migration up",
+    "db:types": "supabase gen types typescript --local > lib/supabase/types.ts"
   },
   "dependencies": {
     "@dietrichgebert/ponytail": "^4.8.4",
+    "@supabase/ssr": "^0.12.3",
+    "@supabase/supabase-js": "^2.110.8",
     "ecc-universal": "^2.0.0",
     "next": "16.2.10",
     "react": "19.2.4",

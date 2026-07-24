@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { use, useEffect, useState } from "react";
+import { use, useEffect, useState, useTransition } from "react";
 import { GAMES } from "@/app/data/games";
-import { getUser, saveScore } from "@/app/data/storage";
+import { getUser } from "@/app/data/storage";
+import { saveScoreAction } from "@/app/data/actions";
 
 interface PlayerPageProps {
   params: Promise<{ id: string }>;
@@ -22,6 +23,7 @@ export default function GamePlayer({ params }: PlayerPageProps) {
     return u ? u.name : "INVITADO";
   });
   const [saved, setSaved] = useState(false);
+  const [, startSaveTransition] = useTransition();
 
   useEffect(() => {
     if (over || paused) return;
@@ -45,8 +47,17 @@ export default function GamePlayer({ params }: PlayerPageProps) {
     setSaved(false);
   };
   const handleSave = () => {
-    saveScore({ game: id, score, name, at: Date.now() });
-    setSaved(true);
+    startSaveTransition(async () => {
+      const fd = new FormData();
+      fd.set("game", id);
+      fd.set("score", String(score));
+      fd.set("name", name);
+      fd.set("at", String(Date.now()));
+      const result = await saveScoreAction(null, fd);
+      if (result.ok) {
+        setSaved(true);
+      }
+    });
   };
 
   return (
@@ -77,10 +88,7 @@ export default function GamePlayer({ params }: PlayerPageProps) {
           </div>
         </div>
         <div className="hud-actions">
-          <button
-            className="btn yellow"
-            onClick={() => setPaused((p) => !p)}
-          >
+          <button className="btn yellow" onClick={() => setPaused((p) => !p)}>
             {paused ? "REANUDAR" : "PAUSA"}
           </button>
           <button className="btn magenta" onClick={endGame}>
@@ -127,9 +135,7 @@ export default function GamePlayer({ params }: PlayerPageProps) {
         </div>
         <div className="crt-bottom">
           <span className="led">SEÑAL OK</span>
-          <span>
-            {game.title} · CRT-83 · 60 HZ
-          </span>
+          <span>{game.title} · CRT-83 · 60 HZ</span>
           <span>CARGA · 1MB</span>
         </div>
       </div>

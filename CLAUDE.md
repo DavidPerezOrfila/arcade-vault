@@ -32,17 +32,32 @@ npm run lint
 
 # Run E2E tests with Playwright
 npm run test:e2e
+
+# Local Supabase stack — SPEC 04 (scores foundation)
+npm run db:start    # docker up + apply migrations (primera vez tarda ~2 min)
+npm run db:status   # imprime URL, anon key, service_role key → .env.local
+npm run db:reset    # drop+recreate DB y reaplica migrations
+npm run db:stop     # apaga el stack
+npm run db:types    # regenera lib/supabase/types.ts desde el esquema actual
+npm run db:migrate  # aplica migrations nuevas sin reset
 ```
 
 ## Environment variables
 
 Copy `.env.local.example` to `.env.local` and fill in the values. These variables are read only on the server (Server Actions / Node.js runtime):
 
-| Variable            | Description                    | Example                |
-| ------------------- | ------------------------------ | ---------------------- |
-| `RESEND_API_KEY`    | API key de Resend              | `re_xxxxxxxx`          |
-| `RESEND_FROM_EMAIL` | Remitente verificado en Resend | `hola@arcade-vault.gg` |
-| `CONTACT_EMAIL`     | Destinatario del mensaje       | `tu-email@example.com` |
+| Variable                       | Description                                                       | Source                                                       |
+| ------------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------ |
+| `NEXT_PUBLIC_SUPABASE_URL`     | URL pública de la API de Supabase                                 | `npm run db:status` → API URL (default `http://127.0.0.1:54321`) |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY`| Clave anónima — cliente y Server Components                       | `npm run db:status` → anon key                               |
+| `SUPABASE_SERVICE_ROLE_KEY`    | Clave con permisos totales (server-side ONLY, nunca en cliente)   | `npm run db:status` → service_role key                       |
+| `RESEND_API_KEY`               | API key de Resend (formulario de contacto)                        | Cuenta Resend                                                |
+| `RESEND_FROM_EMAIL`            | Remitente verificado en Resend                                    | `hola@arcade-vault.gg`                                       |
+| `CONTACT_EMAIL`                | Destinatario del mensaje                                          | `tu-email@example.com`                                       |
+
+Las tres primeras (`NEXT_PUBLIC_SUPABASE_*` + `SUPABASE_SERVICE_ROLE_KEY`) son
+obligatorias: sin ellas, Home, `/salon` y `/detalle/[id]` fallan al consultar
+`getScores` y la migración inicial de localStorage se aborta.
 
 ## Project structure
 
