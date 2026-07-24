@@ -1,27 +1,8 @@
-"use client";
-
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { GAMES } from "@/app/data/games";
-
-function useReveal() {
-  useEffect(() => {
-    const els = document.querySelectorAll<HTMLDivElement>(".reveal");
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("in");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12 },
-    );
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, []);
-}
+import RecentActivity from "@/app/_home/RecentActivity";
+import TopPlayersToday from "@/app/_home/TopPlayersToday";
+import HomeEnhancer from "@/app/_home/HomeEnhancer";
 
 function FloatingSilhouettes() {
   return (
@@ -53,10 +34,10 @@ function FloatingSilhouettes() {
       </svg>
       <svg className="silo s3" viewBox="0 0 32 32">
         <g fill="#f5ff00">
-          <rect x="10" y="0" width="12" height="4" />
-          <rect x="6" y="4" width="20" height="4" />
-          <rect x="4" y="8" width="6" height="6" />
-          <rect x="22" y="8" width="6" height="6" />
+          <rect x="10" y="2" width="12" height="4" />
+          <rect x="6" y="6" width="20" height="4" />
+          <rect x="4" y="10" width="6" height="6" />
+          <rect x="22" y="10" width="6" height="6" />
           <rect x="2" y="14" width="28" height="10" />
           <rect x="6" y="24" width="4" height="4" />
           <rect x="14" y="24" width="4" height="4" />
@@ -197,15 +178,9 @@ function FeatureIcon({ kind }: { kind: string }) {
   return null;
 }
 
-function MiniCard({
-  game,
-  onClick,
-}: {
-  game: (typeof GAMES)[0];
-  onClick: () => void;
-}) {
+function MiniCard({ game }: { game: (typeof GAMES)[0] }) {
   return (
-    <div className="mini-card" onClick={onClick}>
+    <Link href={`/detalle/${game.id}`} className="mini-card">
       <div className="mini-cover">
         <div className={`cover-bg ${game.cover}`} />
       </div>
@@ -213,22 +188,11 @@ function MiniCard({
         <div className="mini-title">{game.title}</div>
         <div className="mini-cat">{game.cat}</div>
       </div>
-    </div>
+    </Link>
   );
 }
 
 export default function Home() {
-  useReveal();
-  const router = useRouter();
-
-  const navigate = (route: { name: string; id?: string }) => {
-    if (route.name === "biblioteca") router.push("/games");
-    else if (route.name === "auth") router.push("/auth");
-    else if (route.name === "detalle" && route.id)
-      router.push(`/detalle/${route.id}`);
-    else if (route.name === "salon") router.push("/salon");
-  };
-
   return (
     <div className="home fade-in">
       {/* HERO */}
@@ -249,18 +213,12 @@ export default function Home() {
             Sin descargas. Sin costo. Solo diversión.
           </p>
           <div className="home-ctas">
-            <button
-              className="btn xl pulse"
-              onClick={() => navigate({ name: "biblioteca" })}
-            >
+            <Link href="/games" className="btn xl pulse">
               ▶ EXPLORAR JUEGOS
-            </button>
-            <button
-              className="btn xl magenta"
-              onClick={() => navigate({ name: "auth" })}
-            >
+            </Link>
+            <Link href="/auth" className="btn xl magenta">
               ✦ CREAR CUENTA
-            </button>
+            </Link>
           </div>
           <div className="hero-scroll" aria-hidden="true">
             <span>DESLIZA</span>
@@ -273,7 +231,7 @@ export default function Home() {
       <section className="home-section reveal">
         <div className="section-head">
           <div className="kicker pixel neon-magenta">{"// 01"}</div>
-          <h2 className="section-title">¿POR QUÉ ARCADE VAULT?</h2>
+          <h2 className="section-title">¿POR QUÉ ARCADE VAULT</h2>
           <div className="section-rule" />
         </div>
         <div className="feature-grid">
@@ -325,20 +283,13 @@ export default function Home() {
         </div>
         <div className="mini-rail">
           {GAMES.slice(0, 6).map((g) => (
-            <MiniCard
-              key={g.id}
-              game={g}
-              onClick={() => navigate({ name: "detalle", id: g.id })}
-            />
+            <MiniCard key={g.id} game={g} />
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 24 }}>
-          <button
-            className="btn lg"
-            onClick={() => navigate({ name: "biblioteca" })}
-          >
+          <Link href="/games" className="btn lg">
             VER TODOS LOS JUEGOS →
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -371,113 +322,8 @@ export default function Home() {
           <div className="section-rule" />
         </div>
         <div className="activity-grid">
-          <div className="activity-card">
-            <div className="ac-head">
-              <div className="ac-title pixel">▸ ÚLTIMAS PUNTUACIONES</div>
-            </div>
-            <div className="ticker">
-              {[
-                {
-                  p: "NEONFOX",
-                  g: "Caída",
-                  s: 184220,
-                  t: "hace 2 min",
-                  c: "magenta",
-                },
-                {
-                  p: "PX_KAI",
-                  g: "Glotón",
-                  s: 96400,
-                  t: "hace 5 min",
-                  c: "yellow",
-                },
-                {
-                  p: "Z3R0COOL",
-                  g: "Invasores",
-                  s: 54190,
-                  t: "hace 8 min",
-                  c: "green",
-                },
-                {
-                  p: "VAULT_07",
-                  g: "Rocas",
-                  s: 41200,
-                  t: "hace 12 min",
-                  c: "cyan",
-                },
-                {
-                  p: "GLITCHA",
-                  g: "Bloque Buster",
-                  s: 28450,
-                  t: "hace 18 min",
-                  c: "cyan",
-                },
-                {
-                  p: "ARKADYA",
-                  g: "Serpentina",
-                  s: 7820,
-                  t: "hace 24 min",
-                  c: "green",
-                },
-                {
-                  p: "CYBER_LU",
-                  g: "Ranaria",
-                  s: 18900,
-                  t: "hace 31 min",
-                  c: "yellow",
-                },
-              ].map((r, i) => (
-                <div
-                  key={i}
-                  className="tick-row"
-                  style={{ animationDelay: `${i * 60}ms` }}
-                >
-                  <span className={`tk-p neon-${r.c}`}>{r.p}</span>
-                  <span className="tk-mid">▸ {r.g}</span>
-                  <span className="tk-s">+{r.s.toLocaleString("es-ES")}</span>
-                  <span className="tk-t">{r.t}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="activity-card">
-            <div className="ac-head">
-              <div className="ac-title pixel neon-magenta">
-                ▸ TOP JUGADORES · HOY
-              </div>
-              <button
-                className="lb-link"
-                onClick={() => navigate({ name: "salon" })}
-              >
-                VER SALÓN →
-              </button>
-            </div>
-            <div className="top-list">
-              {[
-                { r: 1, p: "NEONFOX", s: 312840 },
-                { r: 2, p: "PX_KAI", s: 248110 },
-                { r: 3, p: "M00NRYU", s: 196720 },
-                { r: 4, p: "VAULT_07", s: 154300 },
-                { r: 5, p: "GLITCHA", s: 138900 },
-              ].map((r, i) => (
-                <div
-                  key={i}
-                  className={`top-row${i === 0 ? "top1" : i === 1 ? "top2" : i === 2 ? "top3" : ""}`}
-                >
-                  <span className="tp-rk">#{String(r.r).padStart(2, "0")}</span>
-                  <span className="tp-bar">
-                    <span
-                      className="tp-fill"
-                      style={{ width: `${100 - i * 16}%` }}
-                    />
-                  </span>
-                  <span className="tp-p">{r.p}</span>
-                  <span className="tp-s">{r.s.toLocaleString("es-ES")}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <RecentActivity />
+          <TopPlayersToday />
         </div>
       </section>
 
@@ -505,14 +351,14 @@ export default function Home() {
               <li>✔ Nuevos juegos cada mes</li>
               <li>✔ Funciona en cualquier navegador</li>
             </ul>
-            <button
+            <Link
+              href="/auth"
               className="btn xl pulse"
               style={{ width: "100%" }}
-              onClick={() => navigate({ name: "auth" })}
             >
               EMPEZAR GRATIS →
-            </button>
-            <div className="pc-foot">No pedimos tarjeta. Nunca lo haremos.</div>
+            </Link>
+            <div className="pc-foot">No pedimos tarjeta. Nunca lo haremos</div>
             <div className="pc-stamp pixel">
               FREE
               <br />
@@ -522,7 +368,7 @@ export default function Home() {
 
           <div className="pricing-faq">
             <div className="faq-item">
-              <div className="faq-q pixel">¿REALMENTE ES GRATIS?</div>
+              <div className="faq-q pixel">¿REALMENTE ES GRATIS</div>
               <div className="faq-a">
                 Sí. Arcade Vault es un proyecto sin fines de lucro hecho por
                 amor a los cl&aacute;sicos. No hay versi&oacute;n premium
@@ -530,14 +376,14 @@ export default function Home() {
               </div>
             </div>
             <div className="faq-item">
-              <div className="faq-q pixel">¿NECESITO CREAR CUENTA?</div>
+              <div className="faq-q pixel">¿NECESITO CREAR CUENTA</div>
               <div className="faq-a">
                 No. Puedes jugar como invitado. Si quieres guardar tu puntuación
                 y aparecer en el ranking, regístrate en 10 segundos.
               </div>
             </div>
             <div className="faq-item">
-              <div className="faq-q pixel">¿CÓMO SOBREVIVEN SIN COBRAR?</div>
+              <div className="faq-q pixel">¿CÓMO SOBREVIVEN SIN COBRAR</div>
               <div className="faq-a">
                 Es un proyecto comunitario. Si te gusta, compártelo. Esa es toda
                 la moneda que aceptamos.
@@ -549,17 +395,16 @@ export default function Home() {
 
       {/* FINAL CTA */}
       <section className="home-final reveal">
-        <h2 className="final-title pixel">¿LISTO PARA JUGAR?</h2>
-        <button
-          className="btn xl pulse final-cta"
-          onClick={() => navigate({ name: "biblioteca" })}
-        >
+        <h2 className="final-title pixel">¿LISTO PARA JUGAR</h2>
+        <Link href="/games" className="btn xl pulse final-cta">
           INSERTAR MONEDA →
-        </button>
+        </Link>
         <div className="final-tag">
           Gratis. Sin registro obligatorio. Empieza en segundos.
         </div>
       </section>
+
+      <HomeEnhancer />
     </div>
   );
 }
