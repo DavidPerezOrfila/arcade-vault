@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { clearUser, getUser } from "@/app/data/storage";
-import type { User } from "@/app/data/types";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
+import { clearUser, getUser } from '@/app/data/storage';
+import type { User } from '@/app/data/types';
 
 export default function Nav() {
   const pathname = usePathname();
@@ -12,14 +12,14 @@ export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const isActive = (href: string) => {
-    if (href === "/") {
-      return pathname === "/";
+    if (href === '/') {
+      return pathname === '/';
     }
-    if (href === "/games") {
+    if (href === '/games') {
       return (
-        pathname === "/games" ||
-        pathname.startsWith("/detalle") ||
-        pathname.startsWith("/player")
+        pathname === '/games' ||
+        pathname.startsWith('/detalle') ||
+        pathname.startsWith('/player')
       );
     }
     return pathname === href || pathname.startsWith(`${href}/`);
@@ -32,110 +32,103 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="av-nav">
-        <Link href="/" className="logo">
-          <span className="logo-mark" aria-hidden />
-          <span className="logo-text neon-cyan">
-            ARCADE <span className="neon-magenta">VAULT</span>
+      <nav className='av-nav'>
+        <Link href='/' className='logo'>
+          <span className='logo-mark' aria-hidden />
+          <span className='logo-text neon-cyan'>
+            ARCADE <span className='neon-magenta'>VAULT</span>
           </span>
         </Link>
-        <div className="links">
-          <Link href="/" className={isActive("/") ? "active" : ""}>
+        <div className='links'>
+          <Link href='/' className={isActive('/') ? 'active' : ''}>
             INICIO
           </Link>
-          <Link href="/games" className={isActive("/games") ? "active" : ""}>
+          <Link href='/games' className={isActive('/games') ? 'active' : ''}>
             BIBLIOTECA
           </Link>
-          <Link href="/reproductor" className={isActive("/reproductor") ? "active" : ""}>
-            REPRODUCTOR
-          </Link>
-          <Link href="/salon" className={isActive("/salon") ? "active" : ""}>
+          <Link href='/salon' className={isActive('/salon') ? 'active' : ''}>
             SALÓN
           </Link>
-          <Link href="/about" className={isActive("/about") ? "active" : ""}>
+          <Link href='/about' className={isActive('/about') ? 'active' : ''}>
             ACERCA DE
           </Link>
         </div>
-        <div className="spacer" />
-        <div className="coin-counter">
-          <span className="coin" aria-hidden />
+        <div className='spacer' />
+        <div className='coin-counter'>
+          <span className='coin' aria-hidden />
           <span>CRÉDITOS · 03</span>
         </div>
         {user ? (
-          <button className="btn ghost auth-btn" onClick={handleSignOut}>
+          <button className='btn ghost auth-btn' onClick={handleSignOut}>
             {user.name} ▾
           </button>
         ) : (
-          <Link href="/auth" className="btn auth-btn">
+          <Link href='/auth' className='btn auth-btn'>
             Iniciar Sesión
           </Link>
         )}
         <button
-          className="btn ghost hamburger"
+          className='btn ghost hamburger'
           onClick={() => setMobileOpen(true)}
-          aria-label="Menú"
+          aria-label='Menú'
         >
           ≡
         </button>
       </nav>
 
       <div
-        className={`av-mobile-backdrop${mobileOpen ? " open" : ""}`}
+        className={`av-mobile-backdrop${mobileOpen ? 'open' : ''}`}
         onClick={() => setMobileOpen(false)}
       />
-      <aside className={`av-mobile-panel${mobileOpen ? " open" : ""}`}>
-        <div className="pixel neon-cyan" style={{ fontSize: 11, marginBottom: 16 }}>
+      <aside className={`av-mobile-panel${mobileOpen ? 'open' : ''}`}>
+        <div
+          className='pixel neon-cyan'
+          style={{ fontSize: 11, marginBottom: 16 }}
+        >
           MENÚ
         </div>
         <Link
-          href="/"
-          className={isActive("/") ? "active" : ""}
+          href='/'
+          className={isActive('/') ? 'active' : ''}
           onClick={() => setMobileOpen(false)}
         >
           Inicio
         </Link>
         <Link
-          href="/games"
-          className={isActive("/games") ? "active" : ""}
+          href='/games'
+          className={isActive('/games') ? 'active' : ''}
           onClick={() => setMobileOpen(false)}
         >
           Biblioteca
         </Link>
         <Link
-          href="/reproductor"
-          className={isActive("/reproductor") ? "active" : ""}
-          onClick={() => setMobileOpen(false)}
-        >
-          Reproductor
-        </Link>
-        <Link
-          href="/salon"
-          className={isActive("/salon") ? "active" : ""}
+          href='/salon'
+          className={isActive('/salon') ? 'active' : ''}
           onClick={() => setMobileOpen(false)}
         >
           Salón de la Fama
         </Link>
         <Link
-          href="/about"
-          className={isActive("/about") ? "active" : ""}
+          href='/about'
+          className={isActive('/about') ? 'active' : ''}
           onClick={() => setMobileOpen(false)}
         >
           Acerca de
         </Link>
         <Link
-          href="/auth"
-          className={isActive("/auth") ? "active" : ""}
+          href='/auth'
+          className={isActive('/auth') ? 'active' : ''}
           onClick={() => setMobileOpen(false)}
         >
-          {user ? "Cuenta" : "Iniciar Sesión"}
+          {user ? 'Cuenta' : 'Iniciar Sesión'}
         </Link>
         <div style={{ flex: 1 }} />
         <div
-          className="pixel"
+          className='pixel'
           style={{
             fontSize: 9,
-            color: "var(--ink-faint)",
-            letterSpacing: "0.16em",
+            color: 'var(--ink-faint)',
+            letterSpacing: '0.16em'
           }}
         >
           CRÉDITOS · 03

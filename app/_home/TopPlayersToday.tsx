@@ -12,9 +12,7 @@ export default function TopPlayersToday() {
   return (
     <div className="activity-card">
       <div className="ac-head">
-        <div className="ac-title pixel neon-magenta">
-          ▸ TOP JUGADORES · HOY
-        </div>
+        <div className="ac-title pixel neon-magenta">▸ TOP JUGADORES · HOY</div>
         <Link href="/salon" className="lb-link">
           VER SALÓN →
         </Link>
@@ -23,14 +21,11 @@ export default function TopPlayersToday() {
         {rows.map((r, i) => (
           <div
             key={`${r.name}-${i}`}
-            className={`top-row${i === 0 ? "top1" : i === 1 ? "top2" : i === 2 ? "top3" : ""}`}
+            className={`top-row${["top1", "top2", "top3"][i] ?? ""}`}
           >
             <span className="tp-rk">#{String(r.rank).padStart(2, "0")}</span>
             <span className="tp-bar">
-              <span
-                className="tp-fill"
-                style={{ width: `${100 - i * 16}%` }}
-              />
+              <span className="tp-fill" style={{ width: `${100 - i * 16}%` }} />
             </span>
             <span className="tp-p">{r.name}</span>
             <span className="tp-s">{r.score.toLocaleString("es-ES")}</span>

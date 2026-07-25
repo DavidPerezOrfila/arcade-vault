@@ -13,7 +13,9 @@ function formatDate(at: number): string {
   return `${day}/${mon}/${d.getFullYear()}`;
 }
 
-export default async function HallOfFame({ searchParams }: HallOfFamePageProps) {
+export default async function HallOfFame({
+  searchParams,
+}: HallOfFamePageProps) {
   const sp = await searchParams;
   const activeId =
     sp.game && GAMES.some((g) => g.id === sp.game) ? sp.game : GAMES[0].id;
@@ -34,7 +36,7 @@ export default async function HallOfFame({ searchParams }: HallOfFamePageProps) 
           <Link
             key={g.id}
             href={{ pathname: "/salon", query: { game: g.id } }}
-            className={`chip${activeId === g.id ? " active" : ""}`}
+            className={`chip${activeId === g.id ? "active" : ""}`}
           >
             {g.title}
           </Link>
@@ -70,7 +72,10 @@ export default async function HallOfFame({ searchParams }: HallOfFamePageProps) 
                 >
                   CAMPEÓN
                 </div>
-                <div className="rank-num" style={{ fontSize: 36, marginTop: 4 }}>
+                <div
+                  className="rank-num"
+                  style={{ fontSize: 36, marginTop: 4 }}
+                >
                   01
                 </div>
                 <div className="name">{rows[0].name}</div>
@@ -102,8 +107,7 @@ export default async function HallOfFame({ searchParams }: HallOfFamePageProps) 
             {rows.map((r, i) => (
               <div
                 key={`${r.name}-${r.at}-${i}`}
-                className={`tr${i === 0 ? " top1" : i === 1 ? " top2" : i === 2 ? " top3" : ""
-                  }`}
+                className={`tr${["top1", "top2", "top3"][i] ?? ""}`}
                 style={{ animationDelay: `${i * 50}ms` }}
               >
                 <div className="rk">#{String(i + 1).padStart(2, "0")}</div>

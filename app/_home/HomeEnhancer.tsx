@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 // ponytail: único useEffect del Home — activa el IntersectionObserver que
 // marca `.reveal` cuando entra en el viewport. Mantenido aparte para que
@@ -8,17 +8,17 @@ import { useEffect } from "react";
 // async (`RecentActivity`, `TopPlayersToday`).
 export default function HomeEnhancer() {
   useEffect(() => {
-    const els = document.querySelectorAll<HTMLDivElement>(".reveal");
+    const els = document.querySelectorAll < HTMLDivElement >('.reveal');
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.classList.add("in");
+            e.target.classList.add('in');
             io.unobserve(e.target);
           }
         });
       },
-      { threshold: 0.12 },
+      { threshold: 0.12 }
     );
     els.forEach((el) => io.observe(el));
     return () => io.disconnect();

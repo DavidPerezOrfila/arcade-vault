@@ -26,7 +26,9 @@ export default function GamePlayer({ params }: PlayerPageProps) {
   const [, startSaveTransition] = useTransition();
 
   useEffect(() => {
-    if (over || paused) return;
+    if (over || paused) {
+      return undefined;
+    }
     const t = setInterval(
       () => setScore((s) => s + Math.floor(10 + Math.random() * 90)),
       220,
