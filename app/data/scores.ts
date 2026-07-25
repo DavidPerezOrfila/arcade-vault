@@ -5,7 +5,12 @@ import type { ScoreEntryInputParsed } from "./schema";
 const SELECT_COLUMNS = "game, score, name, at";
 const TOP_LIMIT = 100;
 
-function rowToEntry(row: { game: string; score: number; name: string; at: string }): ScoreEntry {
+function rowToEntry(row: {
+  game: string;
+  score: number;
+  name: string;
+  at: string;
+}): ScoreEntry {
   return {
     game: row.game,
     score: row.score,
