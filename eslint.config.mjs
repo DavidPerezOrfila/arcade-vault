@@ -1,18 +1,107 @@
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
+import tseslint from "typescript-eslint";
+import globals from "globals";
 
-const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...nextTs,
-  // Override default ignores of eslint-config-next.
-  globalIgnores([
-    // Default ignores of eslint-config-next:
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
-]);
-
-export default eslintConfig;
+/** @type {import('eslint').Linter.Config[]} */
+export default [
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: "module",
+      parser: tseslint.parser,
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.es2022,
+        React: true,
+        JSX: true,
+      },
+    },
+    rules: {
+      "brace-style": ["error", "1tbs", { allowSingleLine: true }],
+      "camelcase": "error",
+      "comma-dangle": "error",
+      "comma-spacing": "error",
+      "comma-style": "error",
+      "consistent-return": "error",
+      "curly": ["error", "multi-line"],
+      "eqeqeq": ["error", "allow-null"],
+      "func-style": ["error", "declaration", { allowArrowFunctions: true }],
+      "indent": ["error", 2, { SwitchCase: 1 }],
+      "jsx-quotes": ["error", "prefer-single"],
+      "key-spacing": "error",
+      "linebreak-style": "error",
+      "new-parens": "error",
+      "no-cond-assign": "error",
+      "no-const-assign": "error",
+      "no-delete-var": "error",
+      "no-dupe-args": "error",
+      "no-dupe-keys": "error",
+      "no-duplicate-case": "error",
+      "no-eval": "error",
+      "no-ex-assign": "error",
+      "no-extend-native": "error",
+      "no-extra-bind": "error",
+      "no-extra-boolean-cast": "error",
+      "no-extra-semi": "error",
+      "no-fallthrough": "error",
+      "no-func-assign": "error",
+      "no-invalid-regexp": "error",
+      "no-irregular-whitespace": "error",
+      "no-lone-blocks": "error",
+      "no-lonely-if": "error",
+      "no-mixed-spaces-and-tabs": "error",
+      "no-multi-spaces": "error",
+      "no-multiple-empty-lines": "error",
+      "no-native-reassign": "error",
+      "no-negated-in-lhs": "error",
+      "no-nested-ternary": "error",
+      "no-new": "error",
+      "no-obj-calls": "error",
+      "no-octal": "error",
+      "no-redeclare": "error",
+      "no-regex-spaces": "error",
+      "no-sequences": "error",
+      "no-shadow-restricted-names": "error",
+      "no-spaced-func": "error",
+      "no-sparse-arrays": "error",
+      "no-undef": "error",
+      "no-undef-init": "error",
+      "no-unneeded-ternary": "error",
+      "no-unreachable": "error",
+      "no-unused-expressions": "error",
+      "no-unused-vars": "error",
+      "no-var": "error",
+      "object-shorthand": "error",
+      "prefer-const": "error",
+      "quotes": ["error", "single"],
+      "radix": "error",
+      "semi": "error",
+      "semi-spacing": "error",
+      "keyword-spacing": "error",
+      "space-before-blocks": "error",
+      "space-before-function-paren": ["error", "never"],
+      "space-in-parens": "error",
+      "space-infix-ops": "error",
+      "space-unary-ops": "error",
+      "spaced-comment": "error",
+      "use-isnan": "error",
+      "valid-typeof": "error",
+      "yoda": ["error", "never"],
+    },
+  },
+  {
+    ignores: [
+      ".next/**",
+      "out/**",
+      "build/**",
+      "next-env.d.ts",
+      "resources/started-games/__MACOSX/**",
+    ],
+  },
+];

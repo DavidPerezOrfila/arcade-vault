@@ -13,19 +13,19 @@ const COLORS = [
   '#e57373', // Z - red
   '#90caf9', // J - pale blue
   '#ffb74d', // L - orange
-  '#9e9e9e', // N - tuerca (gris metálico)
+  '#9e9e9e' // N - tuerca (gris metálico)
 ];
 
 const PIECES = [
   null,
-  [[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]], // I
-  [[2,2],[2,2]],                               // O
-  [[0,3,0],[3,3,3],[0,0,0]],                  // T
-  [[0,4,4],[4,4,0],[0,0,0]],                  // S
-  [[5,5,0],[0,5,5],[0,0,0]],                  // Z
-  [[6,0,0],[6,6,6],[0,0,0]],                  // J
-  [[0,0,7],[7,7,7],[0,0,0]],                  // L
-  [[8,8,8],[8,0,8],[8,8,8]],                  // N (tuerca)
+  [[0, 0, 0, 0], [1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], // I
+  [[2, 2], [2, 2]], // O
+  [[0, 3, 0], [3, 3, 3], [0, 0, 0]], // T
+  [[0, 4, 4], [4, 4, 0], [0, 0, 0]], // S
+  [[5, 5, 0], [0, 5, 5], [0, 0, 0]], // Z
+  [[6, 0, 0], [6, 6, 6], [0, 0, 0]], // J
+  [[0, 0, 7], [7, 7, 7], [0, 0, 0]], // L
+  [[8, 8, 8], [8, 0, 8], [8, 8, 8]] // N (tuerca)
 ];
 
 const LINE_SCORES = [0, 100, 300, 500, 800];
@@ -70,9 +70,9 @@ function collide(shape, ox, oy) {
 function rotateCW(shape) {
   const rows = shape.length, cols = shape[0].length;
   const result = Array.from({ length: cols }, () => new Array(rows).fill(0));
-  for (let r = 0; r < rows; r++)
-    for (let c = 0; c < cols; c++)
-      result[c][rows - 1 - r] = shape[r][c];
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {result[c][rows - 1 - r] = shape[r][c];}
+  }
   return result;
 }
 
@@ -89,10 +89,11 @@ function tryRotate() {
 }
 
 function merge() {
-  for (let r = 0; r < current.shape.length; r++)
-    for (let c = 0; c < current.shape[r].length; c++)
-      if (current.shape[r][c])
-        board[current.y + r][current.x + c] = current.shape[r][c];
+  for (let r = 0; r < current.shape.length; r++) {
+    for (let c = 0; c < current.shape[r].length; c++) {
+      if (current.shape[r][c]) {board[current.y + r][current.x + c] = current.shape[r][c];}
+    }
+  }
 }
 
 function clearLines() {
@@ -192,21 +193,22 @@ function draw() {
   drawGrid();
 
   // board
-  for (let r = 0; r < ROWS; r++)
-    for (let c = 0; c < COLS; c++)
-      drawBlock(ctx, c, r, board[r][c], BLOCK);
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {drawBlock(ctx, c, r, board[r][c], BLOCK);}
+  }
 
   // ghost
   const gy = ghostY();
-  for (let r = 0; r < current.shape.length; r++)
-    for (let c = 0; c < current.shape[r].length; c++)
-      if (current.shape[r][c])
-        drawBlock(ctx, current.x + c, gy + r, current.shape[r][c], BLOCK, 0.2);
+  for (let r = 0; r < current.shape.length; r++) {
+    for (let c = 0; c < current.shape[r].length; c++) {
+      if (current.shape[r][c]) {drawBlock(ctx, current.x + c, gy + r, current.shape[r][c], BLOCK, 0.2);}
+    }
+  }
 
   // current piece
-  for (let r = 0; r < current.shape.length; r++)
-    for (let c = 0; c < current.shape[r].length; c++)
-      drawBlock(ctx, current.x + c, current.y + r, current.shape[r][c], BLOCK);
+  for (let r = 0; r < current.shape.length; r++) {
+    for (let c = 0; c < current.shape[r].length; c++) {drawBlock(ctx, current.x + c, current.y + r, current.shape[r][c], BLOCK);}
+  }
 }
 
 function drawNext() {
@@ -215,9 +217,9 @@ function drawNext() {
   const shape = next.shape;
   const offX = Math.floor((4 - shape[0].length) / 2);
   const offY = Math.floor((4 - shape.length) / 2);
-  for (let r = 0; r < shape.length; r++)
-    for (let c = 0; c < shape[r].length; c++)
-      drawBlock(nextCtx, offX + c, offY + r, shape[r][c], NB);
+  for (let r = 0; r < shape.length; r++) {
+    for (let c = 0; c < shape[r].length; c++) {drawBlock(nextCtx, offX + c, offY + r, shape[r][c], NB);}
+  }
 }
 
 function endGame() {

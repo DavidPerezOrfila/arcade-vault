@@ -1,25 +1,27 @@
-"use client";
+'use client';
 
-import "@/app/globals.css";
-import MigrateLocalStorageScores from "@/components/migrate-local-storage"
-import Footer from "./footer"
+import '@/app/globals.css';
+import Nav from '@/components/nav';
+import MigrateLocalStorageScores from '@/components/migrate-local-storage';
+import Footer from './footer';
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang='es'>
       <body>
-        <div className="av-bg" />
-        <div className="av-noise" />
-        <div id="root">
+        <div className='av-bg' />
+        <div className='av-noise' />
+        <div id='root'>
+          <Nav />
           {children}
           <MigrateLocalStorageScores />
           <Footer />
         </div>
       </body>
     </html>
-  )
+  );
 }

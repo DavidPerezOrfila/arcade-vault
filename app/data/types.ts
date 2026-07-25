@@ -1,11 +1,11 @@
 // === Tipos compartidos de Arcade Vault ===
 
-import type { Database } from "@/lib/supabase/types";
+import type { Database } from '@/lib/supabase/types';
 
-export type GameCategory = "ARCADE" | "PUZZLE" | "SHOOTER" | "VERSUS";
+export type GameCategory = 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS';
 // Filtro de biblioteca: una categoría real o "TODOS" (chip que anula el filtro).
-export type GameFilter = GameCategory | "TODOS";
-export type GameColor = "cyan" | "magenta" | "yellow" | "green";
+export type GameFilter = GameCategory | 'TODOS';
+export type GameColor = 'cyan' | 'magenta' | 'yellow' | 'green';
 
 export interface Game {
   id: string;
@@ -30,7 +30,7 @@ export interface ScoreEntry {
 }
 
 // Fila cruda tal cual la devuelve Supabase — no se exporta a la UI.
-export type ScoreRowDb = Database["public"]["Tables"]["scores"]["Row"];
+export type ScoreRowDb = Database['public']['Tables']['scores']['Row'];
 
 // Fila de leaderboard sintética generada por seededScores() para el top-5
 // "Players del día" mientras no haya jugadores reales suficientes.

@@ -1,115 +1,115 @@
-"use client";
+'use client';
 
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { setUser, clearUser } from "@/app/data/storage";
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import { setUser, clearUser } from '@/app/data/storage';
 
 export default function AuthPage() {
   const router = useRouter();
-  const [tab, setTab] = useState<"in" | "up">("in");
-  const [user, setUserVal] = useState("");
-  const [pass, setPass] = useState("");
-  const [email, setEmail] = useState("");
+  const [tab, setTab] = useState<'in' | 'up'>('in');
+  const [user, setUserVal] = useState('');
+  const [pass, setPass] = useState('');
+  const [email, setEmail] = useState('');
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    const name = (user || "PLAYER1").toUpperCase().slice(0, 10);
+    const name = (user || 'PLAYER1').toUpperCase().slice(0, 10);
     setUser({ name });
-    router.push("/");
+    router.push('/');
   };
 
   const playAsGuest = () => {
     clearUser();
-    router.push("/");
+    router.push('/');
   };
 
   return (
-    <div className="av-auth-wrap fade-in">
-      <div className="auth-card">
-        <div className="auth-header">
-          <div className="mark" />
-          <h2 className="neon-cyan">ARCADE VAULT</h2>
+    <div className='av-auth-wrap fade-in'>
+      <div className='auth-card'>
+        <div className='auth-header'>
+          <div className='mark' />
+          <h2 className='neon-cyan'>ARCADE VAULT</h2>
           <div
-            className="mono"
+            className='mono'
             style={{
               fontSize: 11,
-              color: "var(--ink-faint)",
-              letterSpacing: "0.16em",
-              marginTop: 6,
+              color: 'var(--ink-faint)',
+              letterSpacing: '0.16em',
+              marginTop: 6
             }}
           >
             ACCESO AL SISTEMA · v2.6
           </div>
         </div>
 
-        <div className="auth-tabs">
+        <div className='auth-tabs'>
           <button
-            className={tab === "in" ? "on" : ""}
-            onClick={() => setTab("in")}
+            className={tab === 'in' ? 'on' : ''}
+            onClick={() => setTab('in')}
           >
             INICIAR SESIÓN
           </button>
           <button
-            className={tab === "up" ? "on" : ""}
-            onClick={() => setTab("up")}
+            className={tab === 'up' ? 'on' : ''}
+            onClick={() => setTab('up')}
           >
             CREAR CUENTA
           </button>
         </div>
 
         <form onSubmit={submit}>
-          <div className="field">
+          <div className='field'>
             <label>Usuario</label>
             <input
               value={user}
               onChange={(e) => setUserVal(e.target.value)}
-              placeholder="px_kai"
+              placeholder='px_kai'
             />
           </div>
-          {tab === "up" && (
-            <div className="field slide-in">
+          {tab === 'up' && (
+            <div className='field slide-in'>
               <label>Correo electrónico</label>
               <input
-                type="email"
+                type='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="jugador@vault.gg"
+                placeholder='jugador@vault.gg'
               />
             </div>
           )}
-          <div className="field">
+          <div className='field'>
             <label>Contraseña</label>
             <input
-              type="password"
+              type='password'
               value={pass}
               onChange={(e) => setPass(e.target.value)}
-              placeholder="••••••••"
+              placeholder='••••••••'
             />
           </div>
 
           <button
-            className="btn lg"
-            type="submit"
-            style={{ width: "100%", marginTop: 8 }}
+            className='btn lg'
+            type='submit'
+            style={{ width: '100%', marginTop: 8 }}
           >
-            {tab === "in" ? "ENTRAR AL VAULT" : "CREAR Y JUGAR"}
+            {tab === 'in' ? 'ENTRAR AL VAULT' : 'CREAR Y JUGAR'}
           </button>
         </form>
 
         <button
-          className="btn ghost"
-          style={{ width: "100%", marginTop: 10 }}
+          className='btn ghost'
+          style={{ width: '100%', marginTop: 10 }}
           onClick={playAsGuest}
         >
           JUGAR COMO INVITADO
         </button>
 
-        <div className="auth-divider">O CONTINÚA CON</div>
-        <div className="social">
-          <button className="btn ghost" type="button">
+        <div className='auth-divider'>O CONTINÚA CON</div>
+        <div className='social'>
+          <button className='btn ghost' type='button'>
             ◆ GOOGLE
           </button>
-          <button className="btn ghost" type="button">
+          <button className='btn ghost' type='button'>
             ▣ GITHUB
           </button>
         </div>
@@ -117,10 +117,10 @@ export default function AuthPage() {
         <div
           style={{
             marginTop: 18,
-            textAlign: "center",
+            textAlign: 'center',
             fontSize: 11,
-            color: "var(--ink-faint)",
-            letterSpacing: "0.1em",
+            color: 'var(--ink-faint)',
+            letterSpacing: '0.1em'
           }}
         >
           AL ENTRAR ACEPTAS LOS TÉRMINOS DEL SALÓN ARCADE

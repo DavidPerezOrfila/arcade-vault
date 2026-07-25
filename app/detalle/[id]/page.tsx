@@ -92,8 +92,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
             rows.map((r, i) => (
               <div
                 key={`${r.name}-${r.at}-${i}`}
-                className={`lb-row${i === 0 ? " top1" : i === 1 ? " top2" : i === 2 ? " top3" : ""
-                  }`}
+                className={`lb-row${["top1", "top2", "top3"][i] ?? ""}`}
               >
                 <div className="rk">#{String(i + 1).padStart(2, "0")}</div>
                 <div className="pl">

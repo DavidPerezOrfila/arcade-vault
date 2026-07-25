@@ -48,7 +48,7 @@ objective: Sustituir la persistencia de puntuaciones (y de usuario mientras no e
    - `app/detalle/[id]` — leaderboard lateral lee `getScoresByGame(id)` en el server.
    - `app/page.tsx` (Home, sección Activity ticker) — `await getScores()` con slice top N.
    - `seededScores()` se mantiene solo para los nombres del top-5 "Players del día" en la Home mientras no haya suficientes jugadores reales.
-9. **Variables de entorno.** Añadir `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (solo servidor, **sin** `NEXT_PUBLIC_`) a `.env.local.example`. Documentar en `CLAUDE.md` la tabla de variables Supabase y la nota: "los valores se obtienen de `npx supabase status` en desarrollo local". El password de la DB local vive en `.env.db` (gitignored); el CLI de Supabase lo carga automáticamente.
+9. **Variables de entorno.** Añadir `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (solo servidor, **sin** `NEXT_PUBLIC_`) a `.env.local.example`. Documentar en `CLAUDE.md` la tabla de variables Supabase y la nota: "los valores se obtienen de `npx supabase status` en desarrollo local". El password de la DB local vive en `.env.db` (gitignored); el CLI de Supabase lo carga automáticamente.
 10. **Tipos generados.** Añadir script `db:types` en `package.json`: `"db:types": "supabase gen types typescript --local > lib/supabase/types.ts"`.
 11. **Verificación.** `npm run build`, `npm run lint`, `npx supabase status` muestra stack arriba, `npm run test:e2e` pasa (los flows existentes — `/auth` → `/games` → `/detalle/[id]` → `/player/[id]` → guardar score → ver `/salon` — deben seguir funcionando).
 12. **Actualizar grafo.** Ejecutar `graphify update .` al finalizar.
@@ -169,14 +169,15 @@ export type ScoreEntryInputParsed = z.infer<typeof scoreEntrySchema>;
 ```bash
 # .env.local — claves de la API de Supabase (servidor + cliente).
 # Valores en dev local: `npx supabase status`.
-NEXT_PUBLIC_SUPABASE_URL="http://127.0.0.1:54321"
-NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJh…"
+NEXT_PUBLIC_SUPABASE_URL="https://fqiiurfqabfbwwnmoizy.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="sb_publishable_p4VLG_UIcsBaXjkj8jt1Fg_vH3-fT7N"
 # Solo servidor. NUNCA usar NEXT_PUBLIC_.
-SUPABASE_SERVICE_ROLE_KEY="eyJh…"
+SUPABASE_SERVICE_ROLE_KEY="<SERVICE_ROLE_KEY_FROM_SUPABASE_STATUS>"
 
 # .env.db — gitignored. Contiene solo la contraseña del rol `postgres`
 # que arrancará el stack local. El CLI de Supabase la carga automáticamente
 # (referenciada en `supabase/config.toml` → `[db].password = "${DB_PASSWORD}"`).
+DB_PASSWORD="BVz.MJ9Y4P+K9D?"
 ```
 
 **Notas explícitas:**
