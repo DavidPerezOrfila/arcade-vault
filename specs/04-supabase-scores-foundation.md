@@ -1,5 +1,5 @@
 ---
-state: Approved
+state: Implemented
 date: 2026-07-20
 dependencies:
   - 01-mvp-arcade-vault
