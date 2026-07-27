@@ -1,0 +1,190 @@
+/* AsteroidsGame Component Styles */
+
+.asteroids-game-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+}
+
+.asteroids-game-container canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid #1f2937;
+  border-radius: 0.5rem;
+  background: #000;
+  touch-action: none; /* Prevent touch scrolling on canvas */
+}
+
+.asteroids-game-container canvas:focus-visible {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
+}
+
+/* External Leaderboard HUD */
+.asteroids-leaderboard-hud {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+  max-width: 200px;
+  z-index: 10;
+}
+
+.asteroids-leaderboard-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #06b6d4;
+}
+
+.asteroids-leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.asteroids-leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.asteroids-leaderboard-item--current-user {
+  color: #06b6d4;
+}
+
+.asteroids-leaderboard-rank-player {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.asteroids-leaderboard-empty {
+  color: #6b7280;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Auth Prompt Overlay */
+.asteroids-auth-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  padding: 1rem;
+}
+
+.asteroids-auth-prompt {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.asteroids-auth-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.asteroids-auth-message {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.asteroids-auth-button {
+  display: inline-block;
+  background: #06b6d4;
+  color: #000;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.asteroids-auth-button:hover {
+  background: #0891b2;
+}
+
+.asteroids-auth-dismiss {
+  margin-left: 1rem;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.asteroids-auth-dismiss:hover {
+  color: #fff;
+}
+
+/* Loading State */
+.asteroids-loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.5rem;
+  z-index: 5;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .asteroids-auth-overlay,
+  .asteroids-auth-prompt,
+  .asteroids-leaderboard-hud {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .asteroids-leaderboard-hud {
+    bottom: 0.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+    max-width: none;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .asteroids-auth-prompt {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .asteroids-auth-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .asteroids-auth-dismiss {
+    margin-left: 0;
+  }
+}

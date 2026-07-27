@@ -164,22 +164,6 @@ export const scoreEntrySchema = z.object({
 export type ScoreEntryInputParsed = z.infer<typeof scoreEntrySchema>;
 ```
 
-**Variables de entorno (`app/.env.local.example`, añadir):**
-
-```bash
-# .env.local — claves de la API de Supabase (servidor + cliente).
-# Valores en dev local: `npx supabase status`.
-NEXT_PUBLIC_SUPABASE_URL="https://<PROJECT_REF>.supabase.co"
-NEXT_PUBLIC_SUPABASE_ANON_KEY="<ANON_KEY_FROM_SUPABASE_STATUS>"
-# Solo servidor. NUNCA usar NEXT_PUBLIC_.
-SUPABASE_SERVICE_ROLE_KEY="<SERVICE_ROLE_KEY_FROM_SUPABASE_STATUS>"
-
-# .env.db — gitignored. Contiene solo la contraseña del rol `postgres`
-# que arrancará el stack local. El CLI de Supabase la carga automáticamente
-# (referenciada en `supabase/config.toml` → `[db].password = "${DB_PASSWORD}"`).
-DB_PASSWORD="${DB_PASSWORD}"
-```
-
 **Notas explícitas:**
 
 - **No se introducen más tablas.** `GAMES` se queda en `app/data/games.ts` (catálogo estático de 8 juegos, sin valor en DB).
@@ -196,13 +180,16 @@ DB_PASSWORD="${DB_PASSWORD}"
    - Confirmar `.gitignore` ignora `supabase/.branches`, `supabase/.temp`.
    - Instalar deps: `npm install @supabase/supabase-js @supabase/ssr` (runtime).
    - Configurar `supabase/config.toml` para que el stack local use la contraseña indicada en `.env.db` (el CLI la carga automáticamente):
+
      ```toml
+
      [db]
      port = 54322
      shadow_port = 54320
      password = "${DB_PASSWORD}"
      # …
      ```
+
    - `.env.db` debe existir en la raíz con solo la contraseña (gitignored, ya cubierto por `.env*` en `.gitignore`).
    - Resultado: stack arrancable con `npx supabase start` (requiere Docker Desktop).
    - Verificación: `npx supabase status` imprime `API URL`, `anon key`, `service_role key`, `DB URL`.
