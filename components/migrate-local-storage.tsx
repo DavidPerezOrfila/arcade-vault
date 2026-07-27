@@ -1,21 +1,21 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
-import { saveScoreAction } from "@/app/data/actions";
+import { useEffect } from 'react';
+import { saveScoreAction } from '@/app/data/actions';
 
 export default function migrateLocalStorageScores() {
   const getLocalScores = () => {
-    const stored = localStorage.getItem("av_scores");
+    const stored = localStorage.getItem('av_scores');
     return stored ? JSON.parse(stored) : [];
   };
 
   const getLocalUser = () => {
-    const stored = localStorage.getItem("av_user");
+    const stored = localStorage.getItem('av_user');
     return stored ? JSON.parse(stored) : null;
   };
 
   useEffect(() => {
-    const migrate = async () => {
+    const migrate = async() => {
       const scoresData = getLocalScores();
       const userData = getLocalUser();
       const hasData = scoresData.length > 0 || userData !== null;
@@ -25,11 +25,11 @@ export default function migrateLocalStorageScores() {
       }
 
       // Marca el flag ANTES de empezar el bucle (evita carrera entre pestañas)
-      const flag = "av_migrated_v1";
-      if (localStorage.getItem(flag) === "true") {
+      const flag = 'av_migrated_v1';
+      if (localStorage.getItem(flag) === 'true') {
         return;
       }
-      localStorage.setItem(flag, "true");
+      localStorage.setItem(flag, 'true');
 
       try {
         // Migrar scores primero
@@ -37,16 +37,16 @@ export default function migrateLocalStorageScores() {
           for (let i = 0; i < scoresData.length; i++) {
             const score = scoresData[i];
             const formData = new FormData();
-            formData.set("game", score.game);
-            formData.set("score", score.score.toString());
-            formData.set("name", score.name);
-            formData.set("at", score.at.toString());
+            formData.set('game', score.game);
+            formData.set('score', score.score.toString());
+            formData.set('name', score.name);
+            formData.set('at', score.at.toString());
 
             const result = await saveScoreAction(null, formData);
             if (!result.ok) {
               console.warn(
                 `Migración fallida para la puntuación #${i}:`,
-                result,
+                result
               );
             }
           }
@@ -59,14 +59,14 @@ export default function migrateLocalStorageScores() {
         }
 
         // Limpiar los datos migrados para que no se vuelvan a subir
-        localStorage.setItem("av_scores", "[]");
+        localStorage.setItem('av_scores', '[]');
         if (userData) {
-          localStorage.setItem("av_user", "null");
+          localStorage.setItem('av_user', 'null');
         }
 
-        console.log("Migración completada exitosamente");
+        console.log('Migración completada exitosamente');
       } catch (error) {
-        console.error("Error durante la migración:", error);
+        console.error('Error durante la migración:', error);
         // No limpiar los datos migrados en caso de error para reintentar
       }
     };

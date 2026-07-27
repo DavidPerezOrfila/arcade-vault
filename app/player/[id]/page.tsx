@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { use, useEffect, useState, useTransition } from "react";
-import { GAMES } from "@/app/data/games";
-import { getUser } from "@/app/data/storage";
-import { saveScoreAction } from "@/app/data/actions";
+import Link from 'next/link';
+import { use, useEffect, useState, useTransition } from 'react';
+import { GAMES } from '@/app/data/games';
+import { getUser } from '@/app/data/storage';
+import { saveScoreAction } from '@/app/data/actions';
 
 interface PlayerPageProps {
   params: Promise<{ id: string }>;
@@ -20,7 +20,7 @@ export default function GamePlayer({ params }: PlayerPageProps) {
   const [over, setOver] = useState(false);
   const [name, setName] = useState(() => {
     const u = getUser();
-    return u ? u.name : "INVITADO";
+    return u ? u.name : 'INVITADO';
   });
   const [saved, setSaved] = useState(false);
   const [, startSaveTransition] = useTransition();
@@ -31,7 +31,7 @@ export default function GamePlayer({ params }: PlayerPageProps) {
     }
     const t = setInterval(
       () => setScore((s) => s + Math.floor(10 + Math.random() * 90)),
-      220,
+      220
     );
     return () => clearInterval(t);
   }, [over, paused]);
@@ -49,12 +49,12 @@ export default function GamePlayer({ params }: PlayerPageProps) {
     setSaved(false);
   };
   const handleSave = () => {
-    startSaveTransition(async () => {
+    startSaveTransition(async() => {
       const fd = new FormData();
-      fd.set("game", id);
-      fd.set("score", String(score));
-      fd.set("name", name);
-      fd.set("at", String(Date.now()));
+      fd.set('game', id);
+      fd.set('score', String(score));
+      fd.set('name', name);
+      fd.set('at', String(Date.now()));
       const result = await saveScoreAction(null, fd);
       if (result.ok) {
         setSaved(true);
@@ -63,70 +63,70 @@ export default function GamePlayer({ params }: PlayerPageProps) {
   };
 
   return (
-    <div className="av-player fade-in">
-      <div className="player-hud">
-        <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
-          <div className="hud-stat">
-            <div className="l">Jugador</div>
-            <div className="v" style={{ color: "var(--ink)" }}>
+    <div className='av-player fade-in'>
+      <div className='player-hud'>
+        <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+          <div className='hud-stat'>
+            <div className='l'>Jugador</div>
+            <div className='v' style={{ color: 'var(--ink)' }}>
               {name}
             </div>
           </div>
-          <div className="hud-stat">
-            <div className="l">Puntuación</div>
-            <div className="v">{score.toLocaleString("es-ES")}</div>
+          <div className='hud-stat'>
+            <div className='l'>Puntuación</div>
+            <div className='v'>{score.toLocaleString('es-ES')}</div>
           </div>
-          <div className="hud-stat lives">
-            <div className="l">Vidas</div>
-            <div className="v">
+          <div className='hud-stat lives'>
+            <div className='l'>Vidas</div>
+            <div className='v'>
               {lives > 0
-                ? Array.from({ length: lives }, () => "♥").join(" ")
-                : "—"}
+                ? Array.from({ length: lives }, () => '♥').join(' ')
+                : '—'}
             </div>
           </div>
-          <div className="hud-stat level">
-            <div className="l">Nivel</div>
-            <div className="v">{String(levelForRender).padStart(2, "0")}</div>
+          <div className='hud-stat level'>
+            <div className='l'>Nivel</div>
+            <div className='v'>{String(levelForRender).padStart(2, '0')}</div>
           </div>
         </div>
-        <div className="hud-actions">
-          <button className="btn yellow" onClick={() => setPaused((p) => !p)}>
-            {paused ? "REANUDAR" : "PAUSA"}
+        <div className='hud-actions'>
+          <button className='btn yellow' onClick={() => setPaused((p) => !p)}>
+            {paused ? 'REANUDAR' : 'PAUSA'}
           </button>
-          <button className="btn magenta" onClick={endGame}>
+          <button className='btn magenta' onClick={endGame}>
             FIN
           </button>
-          <Link href={`/detalle/${id}`} className="btn ghost">
+          <Link href={`/detalle/${id}`} className='btn ghost'>
             SALIR
           </Link>
         </div>
       </div>
 
-      <div className="crt">
-        <div className="crt-screen">
-          <div className="game-arena">
-            <div className="grid-floor" />
-            <div className="enemy e1" />
-            <div className="enemy e2" />
-            <div className="enemy e3" />
-            <div className="player-ship" />
+      <div className='crt'>
+        <div className='crt-screen'>
+          <div className='game-arena'>
+            <div className='grid-floor' />
+            <div className='enemy e1' />
+            <div className='enemy e2' />
+            <div className='enemy e3' />
+            <div className='player-ship' />
           </div>
           {paused && (
             <div
-              className="crt-content"
-              style={{ background: "rgba(0,0,0,0.6)", zIndex: 5 }}
+              className='crt-content'
+              style={{ background: 'rgba(0,0,0,0.6)', zIndex: 5 }}
             >
               <div>
-                <div className="pixel neon-yellow" style={{ fontSize: 22 }}>
+                <div className='pixel neon-yellow' style={{ fontSize: 22 }}>
                   EN PAUSA
                 </div>
                 <div
-                  className="mono"
+                  className='mono'
                   style={{
                     fontSize: 11,
-                    color: "var(--ink-dim)",
+                    color: 'var(--ink-dim)',
                     marginTop: 10,
-                    letterSpacing: "0.16em",
+                    letterSpacing: '0.16em'
                   }}
                 >
                   PULSA REANUDAR PARA CONTINUAR
@@ -135,40 +135,40 @@ export default function GamePlayer({ params }: PlayerPageProps) {
             </div>
           )}
         </div>
-        <div className="crt-bottom">
-          <span className="led">SEÑAL OK</span>
+        <div className='crt-bottom'>
+          <span className='led'>SEÑAL OK</span>
           <span>{game.title} · CRT-83 · 60 HZ</span>
           <span>CARGA · 1MB</span>
         </div>
       </div>
 
       {over && (
-        <div className="modal-bd">
-          <div className="modal">
+        <div className='modal-bd'>
+          <div className='modal'>
             <h2>FIN DEL JUEGO</h2>
-            <div className="final-label">PUNTUACIÓN FINAL</div>
-            <div className="final">{score.toLocaleString("es-ES")}</div>
+            <div className='final-label'>PUNTUACIÓN FINAL</div>
+            <div className='final'>{score.toLocaleString('es-ES')}</div>
             {!saved ? (
-              <div className="input-row">
+              <div className='input-row'>
                 <input
                   value={name}
                   onChange={(e) =>
                     setName(e.target.value.toUpperCase().slice(0, 10))
                   }
-                  placeholder="TUS INICIALES"
+                  placeholder='TUS INICIALES'
                 />
-                <button className="btn yellow" onClick={handleSave}>
+                <button className='btn yellow' onClick={handleSave}>
                   GUARDAR PUNTUACIÓN
                 </button>
               </div>
             ) : (
-              <div className="toast-saved">▸ PUNTUACIÓN GUARDADA_</div>
+              <div className='toast-saved'>▸ PUNTUACIÓN GUARDADA_</div>
             )}
-            <div className="actions">
-              <button className="btn" onClick={restart}>
+            <div className='actions'>
+              <button className='btn' onClick={restart}>
                 JUGAR DE NUEVO
               </button>
-              <Link href="/" className="btn magenta">
+              <Link href='/' className='btn magenta'>
                 VOLVER AL VAULT
               </Link>
             </div>
