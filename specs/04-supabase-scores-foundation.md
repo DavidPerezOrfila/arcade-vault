@@ -169,15 +169,15 @@ export type ScoreEntryInputParsed = z.infer<typeof scoreEntrySchema>;
 ```bash
 # .env.local — claves de la API de Supabase (servidor + cliente).
 # Valores en dev local: `npx supabase status`.
-NEXT_PUBLIC_SUPABASE_URL="https://fqiiurfqabfbwwnmoizy.supabase.co"
-NEXT_PUBLIC_SUPABASE_ANON_KEY="sb_publishable_p4VLG_UIcsBaXjkj8jt1Fg_vH3-fT7N"
+NEXT_PUBLIC_SUPABASE_URL="https://<PROJECT_REF>.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="<ANON_KEY_FROM_SUPABASE_STATUS>"
 # Solo servidor. NUNCA usar NEXT_PUBLIC_.
 SUPABASE_SERVICE_ROLE_KEY="<SERVICE_ROLE_KEY_FROM_SUPABASE_STATUS>"
 
 # .env.db — gitignored. Contiene solo la contraseña del rol `postgres`
 # que arrancará el stack local. El CLI de Supabase la carga automáticamente
 # (referenciada en `supabase/config.toml` → `[db].password = "${DB_PASSWORD}"`).
-DB_PASSWORD="BVz.MJ9Y4P+K9D?"
+DB_PASSWORD="${DB_PASSWORD}"
 ```
 
 **Notas explícitas:**
