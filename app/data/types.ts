@@ -7,6 +7,14 @@ export type GameCategory = 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS';
 export type GameFilter = GameCategory | 'TODOS';
 export type GameColor = 'cyan' | 'magenta' | 'yellow' | 'green';
 
+export const CATS: readonly GameFilter[] = [
+  'TODOS',
+  'ARCADE',
+  'PUZZLE',
+  'SHOOTER',
+  'VERSUS'
+] as const;
+
 export interface Game {
   id: string;
   title: string;

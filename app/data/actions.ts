@@ -3,6 +3,7 @@
 import { revalidatePath, revalidateTag } from 'next/cache';
 import { scoreEntrySchema } from './schema';
 import { saveScore } from './scores';
+import { createSupabaseServerClient } from '@/lib/supabase/server';
 
 export type SaveScoreResult = { ok: true } | { ok: false; error: string };
 
@@ -31,8 +32,57 @@ export async function saveScoreAction(
 
   revalidatePath('/salon');
   revalidatePath('/games');
-  revalidatePath('/detalle/[id]', 'page');
+  revalidatePath('/games/[slug]', 'page');
   revalidateTag('leaderboard');
 
   return { ok: true };
+}
+
+export interface LeaderboardRow {
+  game: string;
+  score: number;
+  name: string;
+  at: number;
+}
+
+export async function getSalonLeaderboard(gameId: string): Promise<LeaderboardRow[]> {
+  try {
+    const supabase = await createSupabaseServerClient();
+    const { data, error } = await supabase
+      .from('scores')
+      .select('game, score, name, at')
+      .eq('game', gameId)
+      .order('score', { ascending: false })
+      .order('at', { ascending: false })
+      .limit(12);
+
+    if (error) throw error;
+    return (data ?? []).map((row) => ({
+      game: row.game,
+      score: row.score,
+      name: row.name,
+      at: new Date(row.at).getTime()
+    }));
+  } catch {
+    return [];
+  }
+}
+
+export async function getUserBestScore(gameId: string, userId: string): Promise<number | null> {
+  try {
+    const supabase = await createSupabaseServerClient();
+    const { data, error } = await supabase
+      .from('scores')
+      .select('score')
+      .eq('game', gameId)
+      .eq('name', userId)
+      .order('score', { ascending: false })
+      .limit(1)
+      .single();
+
+    if (error) throw error;
+    return data?.score ?? null;
+  } catch {
+    return null;
+  }
 }

@@ -1,8 +1,10 @@
 import Link from 'next/link';
-import { GAMES } from '@/app/data/games';
+import { getGames } from '@/app/data/games';
 import RecentActivity from '@/app/_home/RecentActivity';
 import TopPlayersToday from '@/app/_home/TopPlayersToday';
 import HomeEnhancer from '@/app/_home/HomeEnhancer';
+
+export const dynamic = 'force-dynamic';
 
 function FloatingSilhouettes() {
   return (
@@ -182,9 +184,9 @@ function FeatureIcon({ kind }: { kind: string }) {
   return null;
 }
 
-function MiniCard({ game }: { game: (typeof GAMES)[0] }) {
+function MiniCard({ game }: { game: Awaited<ReturnType<typeof getGames>>[0] }) {
   return (
-    <Link href={`/detalle/${game.id}`} className='mini-card'>
+    <Link href={`/games/${game.id}`} className='mini-card'>
       <div className='mini-cover'>
         <div className={`cover-bg ${game.cover}`} />
       </div>
@@ -196,7 +198,9 @@ function MiniCard({ game }: { game: (typeof GAMES)[0] }) {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const games = await getGames();
+
   return (
     <div className='home fade-in'>
       {/* HERO */}
@@ -286,7 +290,7 @@ export default function Home() {
           <div className='section-rule' />
         </div>
         <div className='mini-rail'>
-          {GAMES.slice(0, 6).map((g) => (
+          {games.slice(0, 6).map((g) => (
             <MiniCard key={g.id} game={g} />
           ))}
         </div>
@@ -375,7 +379,7 @@ export default function Home() {
               <div className='faq-q pixel'>¿REALMENTE ES GRATIS</div>
               <div className='faq-a'>
                 Sí. Arcade Vault es un proyecto sin fines de lucro hecho por
-                amor a los cl&aacute;sicos. No hay versi&oacute;n premium
+                amor a los clásicos. No hay versión premium
                 escondida.
               </div>
             </div>
