@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import type { AsteroidsGameProps, LeaderboardEntry } from '@/lib/games/asteroids/types';
 import './asteroids.css';
 
-// eslint-disable-next-line no-unused-vars
+ 
 interface GameModule {
   // eslint-disable-next-line no-unused-vars
   initGame: (canvas: HTMLCanvasElement, _options?: { onGameOver?: (_score: number) => void }) => void;
@@ -124,7 +124,7 @@ export function AsteroidsGame({
             <h3 className='asteroids-auth-title'>¡Partida terminada!</h3>
             <p className='asteroids-auth-message'>Inicia sesión para guardar tu puntuación en el ranking global.</p>
             <a
-              href='/auth?redirect=/juegos/asteroids'
+              href='/auth?redirect=/games/asteroids'
               className='asteroids-auth-button'
             >
               Iniciar sesión

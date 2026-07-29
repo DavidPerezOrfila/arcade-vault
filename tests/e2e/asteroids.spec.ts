@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Asteroids Game', () => {
   test.beforeEach(async({ page }) => {
-    await page.goto('/juegos/asteroids');
+    await page.goto('/games/asteroids');
     // Wait for the game canvas to be ready
     await page.waitForSelector('.asteroids-game-container canvas', { timeout: 10000 });
     // Give the game a moment to initialize
@@ -38,7 +38,7 @@ test.describe('Asteroids Game', () => {
     await expect(page.locator('text=ESPACIO')).toBeVisible(); // Shoot
 
     // Check for power-up info
-    await expect(page.locator('text=POWER-UP')).toBeVisible();
+    await expect(page.locator('h2.asteroids-sidebar-title--powerup')).toBeVisible();
     await expect(page.locator('text=3x')).toBeVisible();
 
     // Check for scoring info
@@ -128,7 +128,7 @@ test.describe('Asteroids Game', () => {
 
     // Check meta description
     const metaDescription = page.locator('meta[name="description"]');
-    await expect(metaDescription).toHaveAttribute('content', /Asteroides/);
+    await expect(metaDescription).toHaveAttribute('content', /Asteroids/);
 
     // Check Open Graph tags
     const ogTitle = page.locator('meta[property="og:title"]');

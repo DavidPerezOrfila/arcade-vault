@@ -18,7 +18,7 @@ export default function Nav() {
     if (href === '/games') {
       return (
         pathname === '/games' ||
-        pathname.startsWith('/detalle') ||
+        pathname.startsWith('/games/') ||
         pathname.startsWith('/player')
       );
     }
