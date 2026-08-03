@@ -35,3 +35,6 @@ insert into public.games (id, title, short, long, cat, cover, color, best, plays
   ('ranaria', 'RANARIA', 'Cruza la autopista de píxeles.', 'Salta entre carriles de coches a toda velocidad y troncos a la deriva en el río. Llega a los nenúfares antes de que se acabe el tiempo.', 'ARCADE', 'cover-rana', 'green', 18900, '6.4K'),
   ('duelo-pixel', 'DUELO PIXEL', 'Dos paletas. Una pelota. Reflejos máximos.', 'El duelo más puro: dos paletas verticales se enfrentan por rebotar una pelota luminosa. Modo solitario contra la CPU o partida local a dos jugadores.', 'VERSUS', 'cover-duelo', 'cyan', 24, '4.2K')
 on conflict (id) do nothing;
+
+grant select on public.games to anon, authenticated;
+grant all on public.games to service_role;

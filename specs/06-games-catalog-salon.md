@@ -1,5 +1,5 @@
 ---
-state: Draft
+state: Implementado
 dependencies: ["04-scores-foundation", "05-asteroids-game"]
 date: 2026-07-28
 ---

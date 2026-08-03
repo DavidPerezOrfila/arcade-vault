@@ -24,3 +24,6 @@ create policy scores_insert_anon_or_owner
   on public.scores
   for insert
   with check (user_id is null or auth.uid() = user_id);
+
+grant select, insert on public.scores to anon, authenticated;
+grant select, insert, update, delete on public.scores to service_role;
