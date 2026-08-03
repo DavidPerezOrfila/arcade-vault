@@ -4,7 +4,9 @@ test.describe('Asteroids Game', () => {
   test.beforeEach(async({ page }) => {
     await page.goto('/games/asteroids');
     // Wait for the game canvas to be ready
-    await page.waitForSelector('.asteroids-game-container canvas', { timeout: 10000 });
+    await page.waitForSelector('.asteroids-game-container canvas', {
+      timeout: 10000
+    });
     // Give the game a moment to initialize
     await page.waitForTimeout(1000);
   });
@@ -19,7 +21,7 @@ test.describe('Asteroids Game', () => {
 
     // Check no console errors
     const errors: string[] = [];
-    page.on('console', msg => {
+    page.on('console', (msg) => {
       if (msg.type() === 'error') {
         errors.push(msg.text());
       }
@@ -27,7 +29,11 @@ test.describe('Asteroids Game', () => {
 
     // Give time for any errors to surface
     await page.waitForTimeout(500);
-    expect(errors.filter(e => !e.includes('favicon') && !e.includes('chrome-extension')).length).toBe(0);
+    expect(
+      errors.filter(
+        (e) => !e.includes('favicon') && !e.includes('chrome-extension')
+      ).length
+    ).toBe(0);
   });
 
   test('shows game controls sidebar', async({ page }) => {
@@ -38,11 +44,15 @@ test.describe('Asteroids Game', () => {
     await expect(page.locator('text=ESPACIO')).toBeVisible(); // Shoot
 
     // Check for power-up info
-    await expect(page.locator('h2.asteroids-sidebar-title--powerup')).toBeVisible();
+    await expect(
+      page.locator('h2.asteroids-sidebar-title--powerup')
+    ).toBeVisible();
     await expect(page.locator('text=3x')).toBeVisible();
 
-    // Check for scoring info
-    await expect(page.locator('text=PUNTUACIÓN')).toBeVisible();
+    // Check for scoring info - use specific selector to avoid strict mode violation
+    await expect(
+      page.locator('h2.asteroids-sidebar-title--scoring')
+    ).toBeVisible();
     await expect(page.locator('text=Asteroide grande')).toBeVisible();
   });
 
@@ -75,7 +85,9 @@ test.describe('Asteroids Game', () => {
     await expect(canvas).toBeVisible();
   });
 
-  test('game over shows auth prompt for unauthenticated user', async({ page }) => {
+  test('game over shows auth prompt for unauthenticated user', async({
+    page
+  }) => {
     const canvas = page.locator('.asteroids-game-container canvas');
     await canvas.click();
 
@@ -85,7 +97,6 @@ test.describe('Asteroids Game', () => {
     // (it may be hidden but present)
 
     // The auth overlay should be present in the DOM (hidden by default)
-    const authOverlay = page.locator('.asteroids-auth-overlay');
 
     // We can't easily trigger game over in a short test,
     // but we can verify the component structure exists
@@ -98,7 +109,9 @@ test.describe('Asteroids Game', () => {
     await expect(leaderboard).toBeVisible();
 
     // Check title
-    await expect(page.locator('.asteroids-leaderboard-title')).toContainText('TOP 10');
+    await expect(page.locator('.asteroids-leaderboard-title')).toContainText(
+      'TOP 10'
+    );
   });
 
   test('responsive canvas scales correctly', async({ page }) => {
@@ -135,7 +148,7 @@ test.describe('Asteroids Game', () => {
     await expect(ogTitle).toHaveAttribute('content', /Asteroids/);
 
     const ogDescription = page.locator('meta[property="og:description"]');
-    await expect(ogDescription).toHaveAttribute('content', /Asteroides/);
+    await expect(ogDescription).toHaveAttribute('content', /Asteroids/);
 
     const ogType = page.locator('meta[property="og:type"]');
     await expect(ogType).toHaveAttribute('content', 'website');

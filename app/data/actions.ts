@@ -2,7 +2,7 @@
 
 import { revalidatePath, revalidateTag } from 'next/cache';
 import { scoreEntrySchema } from './schema';
-import { saveScore } from './scores';
+import { saveScore, getScoresByGame } from './scores';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 
 export type SaveScoreResult = { ok: true } | { ok: false; error: string };
@@ -45,40 +45,36 @@ export interface LeaderboardRow {
   at: number;
 }
 
-export async function getSalonLeaderboard(gameId: string): Promise<LeaderboardRow[]> {
+export async function getSalonLeaderboard(
+  gameId: string
+): Promise<LeaderboardRow[]> {
   try {
-    const supabase = await createSupabaseServerClient();
-    const { data, error } = await supabase
-      .from('scores')
-      .select('game, score, name, at')
-      .eq('game', gameId)
-      .order('score', { ascending: false })
-      .order('at', { ascending: false })
-      .limit(12);
-
-    if (error) throw error;
-    return (data ?? []).map((row) => ({
-      game: row.game,
-      score: row.score,
-      name: row.name,
-      at: new Date(row.at).getTime()
+    const entries = await getScoresByGame(gameId);
+    return entries.slice(0, 12).map((entry) => ({
+      game: entry.game,
+      score: entry.score,
+      name: entry.name,
+      at: entry.at
     }));
   } catch {
     return [];
   }
 }
 
-export async function getUserBestScore(gameId: string, userId: string): Promise<number | null> {
+export async function getUserBestScore(
+  gameId: string,
+  userId: string
+): Promise<number | null> {
   try {
     const supabase = await createSupabaseServerClient();
     const { data, error } = await supabase
       .from('scores')
       .select('score')
       .eq('game', gameId)
-      .eq('name', userId)
+      .eq('user_id', userId)
       .order('score', { ascending: false })
       .limit(1)
-      .single();
+      .maybeSingle();
 
     if (error) throw error;
     return data?.score ?? null;
