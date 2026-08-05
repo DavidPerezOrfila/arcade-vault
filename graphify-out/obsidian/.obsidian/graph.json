@@ -365,16 +365,6 @@
       }
     },
     {
-<<<<<<< HEAD
-      "query": "tag:#community/detalle.jsx",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-=======
->>>>>>> origin/main
       "query": "tag:#community/accumulate-edited.ps1",
       "color": {
         "a": 1,

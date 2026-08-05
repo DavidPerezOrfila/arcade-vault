@@ -1243,7 +1243,7 @@
       "label": "Game Data Layer",
       "x": 6480,
       "y": 0,
-      "width": 1760,
+      "width": 1980,
       "height": 920,
       "color": "5"
     },
@@ -1323,11 +1323,7 @@
       "id": "n_app_page_floatingsilhouettes",
       "type": "file",
       "file": "FloatingSilhouettes().md",
-<<<<<<< HEAD
-      "x": 7080,
-=======
       "x": 8100,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -1336,13 +1332,8 @@
       "id": "n_app_api_leaderboard_asteroids_route_get",
       "type": "file",
       "file": "GET().md",
-<<<<<<< HEAD
-      "x": 7280,
-      "y": 80,
-=======
       "x": 6500,
       "y": 160,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -1350,13 +1341,8 @@
       "id": "n_app_data_games_game",
       "type": "file",
       "file": "Game.md",
-<<<<<<< HEAD
-      "x": 7480,
-      "y": 80,
-=======
       "x": 6700,
       "y": 160,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -1364,13 +1350,8 @@
       "id": "n_app_salon_salonclient_game",
       "type": "file",
       "file": "Game_2.md",
-<<<<<<< HEAD
-      "x": 7680,
-      "y": 80,
-=======
       "x": 6900,
       "y": 160,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -1477,11 +1458,7 @@
       "id": "n_app_page_minicard",
       "type": "file",
       "file": "MiniCard().md",
-<<<<<<< HEAD
-      "x": 6280,
-=======
       "x": 7500,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -1490,38 +1467,7 @@
       "id": "n_app_home_recentactivity_palette",
       "type": "file",
       "file": "PALETTE.md",
-<<<<<<< HEAD
-      "x": 6480,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_player_id_playerclient_playerclient",
-      "type": "file",
-      "file": "PlayerClient().md",
-      "x": 6680,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_player_id_playerclient",
-      "type": "file",
-      "file": "PlayerClient.tsx.md",
-      "x": 6880,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_player_id_playerclient_playerclientprops",
-      "type": "file",
-      "file": "PlayerClientProps.md",
-      "x": 7080,
-=======
       "x": 7700,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -1530,11 +1476,7 @@
       "id": "n_app_player_id_page_playerpage",
       "type": "file",
       "file": "PlayerPage().md",
-<<<<<<< HEAD
-      "x": 7280,
-=======
       "x": 7900,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -1543,11 +1485,7 @@
       "id": "n_app_player_id_page_playerpageprops",
       "type": "file",
       "file": "PlayerPageProps.md",
-<<<<<<< HEAD
-      "x": 7480,
-=======
       "x": 8100,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -1556,13 +1494,8 @@
       "id": "n_app_home_recentactivity_recentactivity",
       "type": "file",
       "file": "RecentActivity().md",
-<<<<<<< HEAD
-      "x": 7680,
-      "y": 240,
-=======
       "x": 6500,
       "y": 320,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -1570,11 +1503,7 @@
       "id": "n_app_home_recentactivity",
       "type": "file",
       "file": "RecentActivity.tsx.md",
-<<<<<<< HEAD
-      "x": 6280,
-=======
       "x": 6700,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -1583,11 +1512,7 @@
       "id": "n_app_salon_salonclient_salonclient",
       "type": "file",
       "file": "SalonClient().md",
-<<<<<<< HEAD
-      "x": 6480,
-=======
       "x": 6900,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -1596,11 +1521,7 @@
       "id": "n_app_salon_salonclient",
       "type": "file",
       "file": "SalonClient.tsx.md",
-<<<<<<< HEAD
-      "x": 6680,
-=======
       "x": 7100,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -1609,11 +1530,7 @@
       "id": "n_app_salon_salonclient_salonclientprops",
       "type": "file",
       "file": "SalonClientProps.md",
-<<<<<<< HEAD
-      "x": 6880,
-=======
       "x": 7300,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -1622,11 +1539,7 @@
       "id": "n_app_salon_page_salonpage",
       "type": "file",
       "file": "SalonPage().md",
-<<<<<<< HEAD
-      "x": 7080,
-=======
       "x": 7500,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -1635,20 +1548,7 @@
       "id": "n_app_data_actions_savescoreresult",
       "type": "file",
       "file": "SaveScoreResult.md",
-<<<<<<< HEAD
-      "x": 7280,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_data_types_scoreentry",
-      "type": "file",
-      "file": "ScoreEntry.md",
-      "x": 7480,
-=======
       "x": 7700,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -1657,9 +1557,6 @@
       "id": "n_app_data_schema_scoreentryinputparsed",
       "type": "file",
       "file": "ScoreEntryInputParsed.md",
-<<<<<<< HEAD
-      "x": 7680,
-=======
       "x": 7900,
       "y": 320,
       "width": 180,
@@ -1670,7 +1567,6 @@
       "type": "file",
       "file": "SubmitScoreResult.md",
       "x": 8100,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -1679,9 +1575,6 @@
       "id": "n_app_data_actions",
       "type": "file",
       "file": "actions.ts_1.md",
-<<<<<<< HEAD
-      "x": 6280,
-=======
       "x": 6500,
       "y": 400,
       "width": 180,
@@ -1692,7 +1585,6 @@
       "type": "file",
       "file": "actions.ts_2.md",
       "x": 6700,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -1701,11 +1593,7 @@
       "id": "n_lib_supabase_client",
       "type": "file",
       "file": "client.ts.md",
-<<<<<<< HEAD
-      "x": 6480,
-=======
       "x": 6900,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -1714,11 +1602,7 @@
       "id": "n_lib_supabase_client_createsupabasebrowserclient",
       "type": "file",
       "file": "createSupabaseBrowserClient().md",
-<<<<<<< HEAD
-      "x": 6680,
-=======
       "x": 7100,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -1727,11 +1611,7 @@
       "id": "n_lib_supabase_server_createsupabaseserverclient",
       "type": "file",
       "file": "createSupabaseServerClient().md",
-<<<<<<< HEAD
-      "x": 6880,
-=======
       "x": 7300,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -1740,11 +1620,7 @@
       "id": "n_app_games_slug_page_formatdate",
       "type": "file",
       "file": "formatDate().md",
-<<<<<<< HEAD
-      "x": 7080,
-=======
       "x": 7500,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -1753,11 +1629,7 @@
       "id": "n_app_home_recentactivity_gamelabel",
       "type": "file",
       "file": "gameLabel().md",
-<<<<<<< HEAD
-      "x": 7280,
-=======
       "x": 7700,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -1766,9 +1638,6 @@
       "id": "n_app_data_games",
       "type": "file",
       "file": "games.ts.md",
-<<<<<<< HEAD
-      "x": 7480,
-=======
       "x": 7900,
       "y": 400,
       "width": 180,
@@ -1779,7 +1648,6 @@
       "type": "file",
       "file": "getAsteroidsLeaderboard().md",
       "x": 8100,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -1788,13 +1656,8 @@
       "id": "n_app_data_games_getgamebyid",
       "type": "file",
       "file": "getGameById().md",
-<<<<<<< HEAD
-      "x": 7680,
-      "y": 400,
-=======
       "x": 6500,
       "y": 480,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -1802,11 +1665,7 @@
       "id": "n_app_data_games_getgamebyslug",
       "type": "file",
       "file": "getGameBySlug().md",
-<<<<<<< HEAD
-      "x": 6280,
-=======
       "x": 6700,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -1815,11 +1674,7 @@
       "id": "n_app_data_games_getgames",
       "type": "file",
       "file": "getGames().md",
-<<<<<<< HEAD
-      "x": 6480,
-=======
       "x": 6900,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -1828,11 +1683,7 @@
       "id": "n_app_data_games_getgamesbycategory",
       "type": "file",
       "file": "getGamesByCategory().md",
-<<<<<<< HEAD
-      "x": 6680,
-=======
       "x": 7100,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -1841,11 +1692,7 @@
       "id": "n_app_data_actions_getsalonleaderboard",
       "type": "file",
       "file": "getSalonLeaderboard().md",
-<<<<<<< HEAD
-      "x": 6880,
-=======
       "x": 7300,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -1854,11 +1701,7 @@
       "id": "n_app_data_scores_getscores",
       "type": "file",
       "file": "getScores().md",
-<<<<<<< HEAD
-      "x": 7080,
-=======
       "x": 7500,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -1867,11 +1710,7 @@
       "id": "n_app_data_scores_getscoresbygame",
       "type": "file",
       "file": "getScoresByGame().md",
-<<<<<<< HEAD
-      "x": 7280,
-=======
       "x": 7700,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -1880,10 +1719,6 @@
       "id": "n_app_data_actions_getuserbestscore",
       "type": "file",
       "file": "getUserBestScore().md",
-<<<<<<< HEAD
-      "x": 7480,
-      "y": 480,
-=======
       "x": 7900,
       "y": 480,
       "width": 180,
@@ -1904,7 +1739,6 @@
       "file": "metadata.md",
       "x": 6500,
       "y": 560,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -1912,10 +1746,6 @@
       "id": "n_app_games_slug_page",
       "type": "file",
       "file": "page.tsx_2.md",
-<<<<<<< HEAD
-      "x": 7680,
-      "y": 480,
-=======
       "x": 6700,
       "y": 560,
       "width": 180,
@@ -1927,7 +1757,6 @@
       "file": "page.tsx_3.md",
       "x": 6900,
       "y": 560,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -1935,11 +1764,7 @@
       "id": "n_app_games_page",
       "type": "file",
       "file": "page.tsx_4.md",
-<<<<<<< HEAD
-      "x": 6280,
-=======
       "x": 7100,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -1948,11 +1773,7 @@
       "id": "n_app_page",
       "type": "file",
       "file": "page.tsx_5.md",
-<<<<<<< HEAD
-      "x": 6480,
-=======
       "x": 7300,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -1961,11 +1782,7 @@
       "id": "n_app_player_id_page",
       "type": "file",
       "file": "page.tsx_6.md",
-<<<<<<< HEAD
-      "x": 6680,
-=======
       "x": 7500,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -1974,20 +1791,7 @@
       "id": "n_app_salon_page",
       "type": "file",
       "file": "page.tsx_7.md",
-<<<<<<< HEAD
-      "x": 6880,
-      "y": 560,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_data_actions_parseformdata",
-      "type": "file",
-      "file": "parseFormData().md",
-      "x": 7080,
-=======
       "x": 7700,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -1996,11 +1800,7 @@
       "id": "n_app_home_recentactivity_relativetime",
       "type": "file",
       "file": "relativeTime().md",
-<<<<<<< HEAD
-      "x": 7280,
-=======
       "x": 7900,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -2009,11 +1809,7 @@
       "id": "n_app_api_leaderboard_asteroids_route",
       "type": "file",
       "file": "route.ts.md",
-<<<<<<< HEAD
-      "x": 7480,
-=======
       "x": 8100,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -2022,13 +1818,8 @@
       "id": "n_app_data_scores_rowtoentry",
       "type": "file",
       "file": "rowToEntry().md",
-<<<<<<< HEAD
-      "x": 7680,
-      "y": 560,
-=======
       "x": 6500,
       "y": 640,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -2036,20 +1827,7 @@
       "id": "n_app_data_scores_savescore",
       "type": "file",
       "file": "saveScore().md",
-<<<<<<< HEAD
-      "x": 6280,
-      "y": 640,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_data_actions_savescoreaction",
-      "type": "file",
-      "file": "saveScoreAction().md",
-      "x": 6480,
-=======
       "x": 6700,
->>>>>>> origin/main
       "y": 640,
       "width": 180,
       "height": 60
@@ -2058,11 +1836,7 @@
       "id": "n_app_data_schema",
       "type": "file",
       "file": "schema.ts_1.md",
-<<<<<<< HEAD
-      "x": 6680,
-=======
       "x": 6900,
->>>>>>> origin/main
       "y": 640,
       "width": 180,
       "height": 60
@@ -2071,11 +1845,7 @@
       "id": "n_app_data_schema_scoreentryschema",
       "type": "file",
       "file": "scoreEntrySchema.md",
-<<<<<<< HEAD
-      "x": 6880,
-=======
       "x": 7100,
->>>>>>> origin/main
       "y": 640,
       "width": 180,
       "height": 60
@@ -2084,11 +1854,7 @@
       "id": "n_app_data_scores",
       "type": "file",
       "file": "scores.ts.md",
-<<<<<<< HEAD
-      "x": 7080,
-=======
       "x": 7300,
->>>>>>> origin/main
       "y": 640,
       "width": 180,
       "height": 60
@@ -2097,9 +1863,6 @@
       "id": "n_lib_supabase_server",
       "type": "file",
       "file": "server.ts.md",
-<<<<<<< HEAD
-      "x": 7280,
-=======
       "x": 7500,
       "y": 640,
       "width": 180,
@@ -2110,7 +1873,6 @@
       "type": "file",
       "file": "submitAsteroidsScore().md",
       "x": 7700,
->>>>>>> origin/main
       "y": 640,
       "width": 180,
       "height": 60
@@ -2119,9 +1881,6 @@
       "id": "n_app_home_recentactivity_tone",
       "type": "file",
       "file": "tone().md",
-<<<<<<< HEAD
-      "x": 7480,
-=======
       "x": 7900,
       "y": 640,
       "width": 180,
@@ -2132,7 +1891,6 @@
       "type": "file",
       "file": "types.ts_2.md",
       "x": 8100,
->>>>>>> origin/main
       "y": 640,
       "width": 180,
       "height": 60
@@ -2141,11 +1899,7 @@
       "id": "g5",
       "type": "group",
       "label": "TypeScript Config",
-<<<<<<< HEAD
-      "x": 8100,
-=======
       "x": 8540,
->>>>>>> origin/main
       "y": 0,
       "width": 1320,
       "height": 620,
@@ -2155,11 +1909,7 @@
       "id": "n_ref_mts",
       "type": "file",
       "file": ".mts.md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2168,11 +1918,7 @@
       "id": "n_ref_ts",
       "type": "file",
       "file": ".ts.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2181,11 +1927,7 @@
       "id": "n_ref_tsx",
       "type": "file",
       "file": ".tsx.md",
-<<<<<<< HEAD
-      "x": 8520,
-=======
       "x": 8960,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2194,11 +1936,7 @@
       "id": "n_ref_next_dev_types_ts",
       "type": "file",
       "file": ".nextdevtypes.ts.md",
-<<<<<<< HEAD
-      "x": 8720,
-=======
       "x": 9160,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2207,11 +1945,7 @@
       "id": "n_ref_next_types_ts",
       "type": "file",
       "file": ".nexttypes.ts.md",
-<<<<<<< HEAD
-      "x": 8920,
-=======
       "x": 9360,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2220,11 +1954,7 @@
       "id": "n_tsconfig_compileroptions_allowjs",
       "type": "file",
       "file": "allowJs.md",
-<<<<<<< HEAD
-      "x": 9120,
-=======
       "x": 9560,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2233,11 +1963,7 @@
       "id": "n_tsconfig_compileroptions",
       "type": "file",
       "file": "compilerOptions.md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2246,11 +1972,7 @@
       "id": "n_ref_dom",
       "type": "file",
       "file": "dom.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2259,11 +1981,7 @@
       "id": "n_ref_dom_iterable",
       "type": "file",
       "file": "dom.iterable.md",
-<<<<<<< HEAD
-      "x": 8520,
-=======
       "x": 8960,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2272,11 +1990,7 @@
       "id": "n_tsconfig_compileroptions_esmoduleinterop",
       "type": "file",
       "file": "esModuleInterop.md",
-<<<<<<< HEAD
-      "x": 8720,
-=======
       "x": 9160,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2285,11 +1999,7 @@
       "id": "n_ref_esnext",
       "type": "file",
       "file": "esnext.md",
-<<<<<<< HEAD
-      "x": 8920,
-=======
       "x": 9360,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2298,11 +2008,7 @@
       "id": "n_tsconfig_exclude",
       "type": "file",
       "file": "exclude.md",
-<<<<<<< HEAD
-      "x": 9120,
-=======
       "x": 9560,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2311,11 +2017,7 @@
       "id": "n_tsconfig_include",
       "type": "file",
       "file": "include.md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2324,11 +2026,7 @@
       "id": "n_tsconfig_compileroptions_incremental",
       "type": "file",
       "file": "incremental.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2337,11 +2035,7 @@
       "id": "n_tsconfig_compileroptions_isolatedmodules",
       "type": "file",
       "file": "isolatedModules.md",
-<<<<<<< HEAD
-      "x": 8520,
-=======
       "x": 8960,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2350,11 +2044,7 @@
       "id": "n_tsconfig_compileroptions_jsx",
       "type": "file",
       "file": "jsx.md",
-<<<<<<< HEAD
-      "x": 8720,
-=======
       "x": 9160,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2363,11 +2053,7 @@
       "id": "n_tsconfig_compileroptions_lib",
       "type": "file",
       "file": "lib.md",
-<<<<<<< HEAD
-      "x": 8920,
-=======
       "x": 9360,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2376,11 +2062,7 @@
       "id": "n_tsconfig_compileroptions_module",
       "type": "file",
       "file": "module.md",
-<<<<<<< HEAD
-      "x": 9120,
-=======
       "x": 9560,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2389,11 +2071,7 @@
       "id": "n_tsconfig_compileroptions_moduleresolution",
       "type": "file",
       "file": "moduleResolution.md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -2402,11 +2080,7 @@
       "id": "n_ref_next_env_d_ts",
       "type": "file",
       "file": "next-env.d.ts.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -2415,11 +2089,7 @@
       "id": "n_tsconfig_compileroptions_noemit",
       "type": "file",
       "file": "noEmit.md",
-<<<<<<< HEAD
-      "x": 8520,
-=======
       "x": 8960,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -2428,11 +2098,7 @@
       "id": "n_ref_node_modules",
       "type": "file",
       "file": "node_modules.md",
-<<<<<<< HEAD
-      "x": 8720,
-=======
       "x": 9160,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -2441,11 +2107,7 @@
       "id": "n_tsconfig_compileroptions_paths",
       "type": "file",
       "file": "paths.md",
-<<<<<<< HEAD
-      "x": 8920,
-=======
       "x": 9360,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -2454,11 +2116,7 @@
       "id": "n_tsconfig_compileroptions_plugins",
       "type": "file",
       "file": "plugins.md",
-<<<<<<< HEAD
-      "x": 9120,
-=======
       "x": 9560,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -2467,11 +2125,7 @@
       "id": "n_tsconfig_compileroptions_resolvejsonmodule",
       "type": "file",
       "file": "resolveJsonModule.md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -2480,11 +2134,7 @@
       "id": "n_tsconfig_compileroptions_skiplibcheck",
       "type": "file",
       "file": "skipLibCheck.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -2493,11 +2143,7 @@
       "id": "n_tsconfig_compileroptions_strict",
       "type": "file",
       "file": "strict.md",
-<<<<<<< HEAD
-      "x": 8520,
-=======
       "x": 8960,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -2506,11 +2152,7 @@
       "id": "n_tsconfig_compileroptions_target",
       "type": "file",
       "file": "target.md",
-<<<<<<< HEAD
-      "x": 8720,
-=======
       "x": 9160,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -2519,11 +2161,7 @@
       "id": "n_tsconfig",
       "type": "file",
       "file": "tsconfig.json.md",
-<<<<<<< HEAD
-      "x": 8920,
-=======
       "x": 9360,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -2532,11 +2170,7 @@
       "id": "g6",
       "type": "group",
       "label": "Home Page UI",
-<<<<<<< HEAD
-      "x": 9500,
-=======
       "x": 9940,
->>>>>>> origin/main
       "y": 0,
       "width": 1100,
       "height": 520,
@@ -2546,11 +2180,7 @@
       "id": "n_resources_templates_data_cats",
       "type": "file",
       "file": "CATS_2.md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2559,11 +2189,7 @@
       "id": "n_resources_templates_home_about_home_featureicon",
       "type": "file",
       "file": "FeatureIcon()_1.md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2572,11 +2198,7 @@
       "id": "n_resources_templates_home_about_home_floatingsilhouettes",
       "type": "file",
       "file": "FloatingSilhouettes()_1.md",
-<<<<<<< HEAD
-      "x": 9920,
-=======
       "x": 10360,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2585,11 +2207,7 @@
       "id": "n_resources_templates_data_games",
       "type": "file",
       "file": "GAMES.md",
-<<<<<<< HEAD
-      "x": 10120,
-=======
       "x": 10560,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2598,11 +2216,7 @@
       "id": "n_resources_templates_detalle_gamedetail",
       "type": "file",
       "file": "GameDetail().md",
-<<<<<<< HEAD
-      "x": 10320,
-=======
       "x": 10760,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2611,11 +2225,7 @@
       "id": "n_resources_templates_reproductor_gameplayer",
       "type": "file",
       "file": "GamePlayer().md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2624,11 +2234,7 @@
       "id": "n_resources_templates_salon_halloffame",
       "type": "file",
       "file": "HallOfFame().md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2637,11 +2243,7 @@
       "id": "n_resources_templates_home_about_home_home",
       "type": "file",
       "file": "Home()_1.md",
-<<<<<<< HEAD
-      "x": 9920,
-=======
       "x": 10360,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2650,11 +2252,7 @@
       "id": "n_resources_templates_home_about_home_minicard",
       "type": "file",
       "file": "MiniCard()_1.md",
-<<<<<<< HEAD
-      "x": 10120,
-=======
       "x": 10560,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2663,11 +2261,7 @@
       "id": "n_resources_templates_data_players",
       "type": "file",
       "file": "PLAYERS_1.md",
-<<<<<<< HEAD
-      "x": 10320,
-=======
       "x": 10760,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2676,11 +2270,7 @@
       "id": "n_resources_templates_data",
       "type": "file",
       "file": "data.jsx.md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2689,11 +2279,7 @@
       "id": "n_resources_templates_detalle",
       "type": "file",
       "file": "detalle.jsx.md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2702,11 +2288,7 @@
       "id": "n_resources_templates_home_about_home",
       "type": "file",
       "file": "home.jsx.md",
-<<<<<<< HEAD
-      "x": 9920,
-=======
       "x": 10360,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2715,11 +2297,7 @@
       "id": "n_resources_templates_reproductor",
       "type": "file",
       "file": "reproductor.jsx.md",
-<<<<<<< HEAD
-      "x": 10120,
-=======
       "x": 10560,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2728,11 +2306,7 @@
       "id": "n_resources_templates_salon",
       "type": "file",
       "file": "salon.jsx.md",
-<<<<<<< HEAD
-      "x": 10320,
-=======
       "x": 10760,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2741,11 +2315,7 @@
       "id": "n_resources_templates_data_seededscores",
       "type": "file",
       "file": "seededScores()_1.md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -2754,11 +2324,7 @@
       "id": "n_resources_templates_home_about_home_usereveal",
       "type": "file",
       "file": "useReveal().md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -2767,11 +2333,7 @@
       "id": "g7",
       "type": "group",
       "label": "Package Dependencies",
-<<<<<<< HEAD
-      "x": 10900,
-=======
       "x": 11340,
->>>>>>> origin/main
       "y": 0,
       "width": 1540,
       "height": 820,
@@ -2781,11 +2343,7 @@
       "id": "n_package_dependencies_dietrichgebert_ponytail",
       "type": "file",
       "file": "@dietrichgebertponytail.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2794,11 +2352,7 @@
       "id": "n_dietrichgebert_ponytail",
       "type": "file",
       "file": "@dietrichgebertponytail_1.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2807,11 +2361,7 @@
       "id": "n_package_dependencies_supabase_ssr",
       "type": "file",
       "file": "@supabasessr.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2820,11 +2370,7 @@
       "id": "n_supabase_ssr",
       "type": "file",
       "file": "@supabasessr_1.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2833,11 +2379,7 @@
       "id": "n_package_dependencies_supabase_supabase_js",
       "type": "file",
       "file": "@supabasesupabase-js.md",
-<<<<<<< HEAD
-      "x": 11720,
-=======
       "x": 12160,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2846,11 +2388,7 @@
       "id": "n_supabase_supabase_js",
       "type": "file",
       "file": "@supabasesupabase-js_1.md",
-<<<<<<< HEAD
-      "x": 11920,
-=======
       "x": 12360,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2859,11 +2397,7 @@
       "id": "n_resources_templates_biblioteca_gamecard",
       "type": "file",
       "file": "GameCard()_1.md",
-<<<<<<< HEAD
-      "x": 12120,
-=======
       "x": 12560,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -2872,11 +2406,7 @@
       "id": "n_resources_templates_biblioteca_library",
       "type": "file",
       "file": "Library().md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2885,11 +2415,7 @@
       "id": "n_resources_templates_biblioteca",
       "type": "file",
       "file": "biblioteca.jsx.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2898,11 +2424,7 @@
       "id": "n_package_scripts_build",
       "type": "file",
       "file": "build.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2911,11 +2433,7 @@
       "id": "n_package_scripts_db_migrate",
       "type": "file",
       "file": "dbmigrate.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2924,11 +2442,7 @@
       "id": "n_package_scripts_db_reset",
       "type": "file",
       "file": "dbreset.md",
-<<<<<<< HEAD
-      "x": 11720,
-=======
       "x": 12160,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2937,11 +2451,7 @@
       "id": "n_package_scripts_db_start",
       "type": "file",
       "file": "dbstart.md",
-<<<<<<< HEAD
-      "x": 11920,
-=======
       "x": 12360,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2950,11 +2460,7 @@
       "id": "n_package_scripts_db_status",
       "type": "file",
       "file": "dbstatus.md",
-<<<<<<< HEAD
-      "x": 12120,
-=======
       "x": 12560,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -2963,11 +2469,7 @@
       "id": "n_package_scripts_db_stop",
       "type": "file",
       "file": "dbstop.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2976,11 +2478,7 @@
       "id": "n_package_scripts_db_types",
       "type": "file",
       "file": "dbtypes.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -2989,11 +2487,7 @@
       "id": "n_package_dependencies",
       "type": "file",
       "file": "dependencies.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3002,11 +2496,7 @@
       "id": "n_package_scripts_dev",
       "type": "file",
       "file": "dev.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3015,11 +2505,7 @@
       "id": "n_package_dependencies_ecc_universal",
       "type": "file",
       "file": "ecc-universal.md",
-<<<<<<< HEAD
-      "x": 11720,
-=======
       "x": 12160,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3028,11 +2514,7 @@
       "id": "n_ecc_universal",
       "type": "file",
       "file": "ecc-universal_1.md",
-<<<<<<< HEAD
-      "x": 11920,
-=======
       "x": 12360,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3041,11 +2523,7 @@
       "id": "n_package_scripts_format",
       "type": "file",
       "file": "format.md",
-<<<<<<< HEAD
-      "x": 12120,
-=======
       "x": 12560,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3054,11 +2532,7 @@
       "id": "n_package_scripts_format_check",
       "type": "file",
       "file": "formatcheck.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -3067,11 +2541,7 @@
       "id": "n_package_scripts_graphify_obsidian",
       "type": "file",
       "file": "graphifyobsidian.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -3080,11 +2550,7 @@
       "id": "n_package_scripts_graphify_update",
       "type": "file",
       "file": "graphifyupdate.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -3093,11 +2559,7 @@
       "id": "n_package_scripts_lint",
       "type": "file",
       "file": "lint.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -3106,11 +2568,7 @@
       "id": "n_package_scripts_lint_fix",
       "type": "file",
       "file": "lintfix.md",
-<<<<<<< HEAD
-      "x": 11720,
-=======
       "x": 12160,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -3119,11 +2577,7 @@
       "id": "n_package_name",
       "type": "file",
       "file": "name.md",
-<<<<<<< HEAD
-      "x": 11920,
-=======
       "x": 12360,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -3132,11 +2586,7 @@
       "id": "n_package_dependencies_next",
       "type": "file",
       "file": "next.md",
-<<<<<<< HEAD
-      "x": 12120,
-=======
       "x": 12560,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -3145,11 +2595,7 @@
       "id": "n_next",
       "type": "file",
       "file": "next_1.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -3158,11 +2604,7 @@
       "id": "n_package_overrides",
       "type": "file",
       "file": "overrides.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -3171,11 +2613,7 @@
       "id": "n_package",
       "type": "file",
       "file": "package.json.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -3184,11 +2622,7 @@
       "id": "n_package_overrides_postcss",
       "type": "file",
       "file": "postcss.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -3197,11 +2631,7 @@
       "id": "n_package_private",
       "type": "file",
       "file": "private.md",
-<<<<<<< HEAD
-      "x": 11720,
-=======
       "x": 12160,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -3210,11 +2640,7 @@
       "id": "n_package_dependencies_react",
       "type": "file",
       "file": "react.md",
-<<<<<<< HEAD
-      "x": 11920,
-=======
       "x": 12360,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -3223,11 +2649,7 @@
       "id": "n_react",
       "type": "file",
       "file": "react_1.md",
-<<<<<<< HEAD
-      "x": 12120,
-=======
       "x": 12560,
->>>>>>> origin/main
       "y": 400,
       "width": 180,
       "height": 60
@@ -3236,11 +2658,7 @@
       "id": "n_package_dependencies_react_dom",
       "type": "file",
       "file": "react-dom.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -3249,11 +2667,7 @@
       "id": "n_react_dom",
       "type": "file",
       "file": "react-dom_1.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -3262,11 +2676,7 @@
       "id": "n_package_dependencies_resend",
       "type": "file",
       "file": "resend.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -3275,11 +2685,7 @@
       "id": "n_resend",
       "type": "file",
       "file": "resend_1.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -3288,11 +2694,7 @@
       "id": "n_package_scripts",
       "type": "file",
       "file": "scripts.md",
-<<<<<<< HEAD
-      "x": 11720,
-=======
       "x": 12160,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -3301,11 +2703,7 @@
       "id": "n_package_scripts_start",
       "type": "file",
       "file": "start.md",
-<<<<<<< HEAD
-      "x": 11920,
-=======
       "x": 12360,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -3314,11 +2712,7 @@
       "id": "n_package_scripts_test_e2e",
       "type": "file",
       "file": "teste2e.md",
-<<<<<<< HEAD
-      "x": 12120,
-=======
       "x": 12560,
->>>>>>> origin/main
       "y": 480,
       "width": 180,
       "height": 60
@@ -3327,11 +2721,7 @@
       "id": "n_package_version",
       "type": "file",
       "file": "version.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -3340,11 +2730,7 @@
       "id": "n_package_dependencies_zod",
       "type": "file",
       "file": "zod.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -3353,11 +2739,7 @@
       "id": "n_zod",
       "type": "file",
       "file": "zod_1.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 560,
       "width": 180,
       "height": 60
@@ -3366,11 +2748,7 @@
       "id": "g8",
       "type": "group",
       "label": "Playwright Automation",
-<<<<<<< HEAD
-      "x": 12520,
-=======
       "x": 12960,
->>>>>>> origin/main
       "y": 0,
       "width": 880,
       "height": 520,
@@ -3380,11 +2758,7 @@
       "id": "n_agents_skills_playwright_cli_skill_browser_automation_with_playwright_cli",
       "type": "file",
       "file": "Browser Automation with playwright-cli.md",
-<<<<<<< HEAD
-      "x": 12540,
-=======
       "x": 12980,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -3393,11 +2767,7 @@
       "id": "n_agents_skills_playwright_cli_skill_browser_sessions",
       "type": "file",
       "file": "Browser Sessions.md",
-<<<<<<< HEAD
-      "x": 12740,
-=======
       "x": 13180,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -3406,11 +2776,7 @@
       "id": "n_agents_skills_playwright_cli_skill_example_debugging_with_devtools",
       "type": "file",
       "file": "Example Debugging with DevTools.md",
-<<<<<<< HEAD
-      "x": 12940,
-=======
       "x": 13380,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -3419,11 +2785,7 @@
       "id": "n_agents_skills_playwright_cli_skill_example_form_submission",
       "type": "file",
       "file": "Example Form submission.md",
-<<<<<<< HEAD
-      "x": 13140,
-=======
       "x": 13580,
->>>>>>> origin/main
       "y": 80,
       "width": 180,
       "height": 60
@@ -3432,11 +2794,7 @@
       "id": "n_agents_skills_playwright_cli_skill_example_interactive_session",
       "type": "file",
       "file": "Example Interactive session.md",
-<<<<<<< HEAD
-      "x": 12540,
-=======
       "x": 12980,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -3445,11 +2803,7 @@
       "id": "n_agents_skills_playwright_cli_skill_example_multi_tab_workflow",
       "type": "file",
       "file": "Example Multi-tab workflow.md",
-<<<<<<< HEAD
-      "x": 12740,
-=======
       "x": 13180,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -3458,11 +2812,7 @@
       "id": "n_agents_skills_playwright_cli_skill_installation",
       "type": "file",
       "file": "Installation.md",
-<<<<<<< HEAD
-      "x": 12940,
-=======
       "x": 13380,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -3471,11 +2821,7 @@
       "id": "n_agents_skills_playwright_cli_skill_open_parameters",
       "type": "file",
       "file": "Open parameters.md",
-<<<<<<< HEAD
-      "x": 13140,
-=======
       "x": 13580,
->>>>>>> origin/main
       "y": 160,
       "width": 180,
       "height": 60
@@ -3484,11 +2830,7 @@
       "id": "n_agents_skills_playwright_cli_skill_quick_start",
       "type": "file",
       "file": "Quick start.md",
-<<<<<<< HEAD
-      "x": 12540,
-=======
       "x": 12980,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3497,11 +2839,7 @@
       "id": "n_agents_skills_playwright_cli_skill_raw_output",
       "type": "file",
       "file": "Raw output.md",
-<<<<<<< HEAD
-      "x": 12740,
-=======
       "x": 13180,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3510,11 +2848,7 @@
       "id": "n_agents_skills_playwright_cli_skill_snapshots",
       "type": "file",
       "file": "Snapshots.md",
-<<<<<<< HEAD
-      "x": 12940,
-=======
       "x": 13380,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3523,11 +2857,7 @@
       "id": "n_agents_skills_playwright_cli_skill_specific_tasks",
       "type": "file",
       "file": "Specific tasks.md",
-<<<<<<< HEAD
-      "x": 13140,
-=======
       "x": 13580,
->>>>>>> origin/main
       "y": 240,
       "width": 180,
       "height": 60
@@ -3536,11 +2866,7 @@
       "id": "n_agents_skills_playwright_cli_skill_targeting_elements",
       "type": "file",
       "file": "Targeting elements.md",
-<<<<<<< HEAD
-      "x": 12540,
-=======
       "x": 12980,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -3549,11 +2875,7 @@
       "id": "n_agents_skills_playwright_cli_skill_urls_with_on_windows",
       "type": "file",
       "file": "URLs with `&` on Windows.md",
-<<<<<<< HEAD
-      "x": 12740,
-=======
       "x": 13180,
->>>>>>> origin/main
       "y": 320,
       "width": 180,
       "height": 60
@@ -4219,19 +3541,10 @@
       "height": 60
     },
     {
-      "id": "n_app_footer_footer",
-      "type": "file",
-      "file": "Footer().md",
-      "x": 3020,
-      "y": 1160,
-      "width": 180,
-      "height": 60
-    },
-    {
       "id": "n_app_data_types_game",
       "type": "file",
       "file": "Game_1.md",
-      "x": 3220,
+      "x": 3020,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -4240,7 +3553,7 @@
       "id": "n_app_games_gamesclient_gamecard",
       "type": "file",
       "file": "GameCard().md",
-      "x": 3420,
+      "x": 3220,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -4249,7 +3562,7 @@
       "id": "n_app_data_types_gamecolor",
       "type": "file",
       "file": "GameColor.md",
-      "x": 3620,
+      "x": 3420,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -4258,7 +3571,7 @@
       "id": "n_app_data_types_gamefilter",
       "type": "file",
       "file": "GameFilter_1.md",
-      "x": 3820,
+      "x": 3620,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -4267,7 +3580,7 @@
       "id": "n_app_games_gamesclient_gamesclient",
       "type": "file",
       "file": "GamesClient().md",
-      "x": 4020,
+      "x": 3820,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -4276,8 +3589,8 @@
       "id": "n_app_games_gamesclient",
       "type": "file",
       "file": "GamesClient.tsx.md",
-      "x": 2820,
-      "y": 1240,
+      "x": 4020,
+      "y": 1160,
       "width": 180,
       "height": 60
     },
@@ -4285,13 +3598,8 @@
       "id": "n_app_games_gamesclient_gamesclientprops",
       "type": "file",
       "file": "GamesClientProps.md",
-<<<<<<< HEAD
-      "x": 3020,
-      "y": 1240,
-=======
       "x": 4220,
       "y": 1160,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -4299,11 +3607,7 @@
       "id": "n_lib_supabase_types_json",
       "type": "file",
       "file": "Json.md",
-<<<<<<< HEAD
-      "x": 3220,
-=======
       "x": 2820,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -4312,11 +3616,7 @@
       "id": "n_components_nav_nav",
       "type": "file",
       "file": "Nav().md",
-<<<<<<< HEAD
-      "x": 3420,
-=======
       "x": 3020,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -4325,9 +3625,6 @@
       "id": "n_app_data_players_players",
       "type": "file",
       "file": "PLAYERS.md",
-<<<<<<< HEAD
-      "x": 3620,
-=======
       "x": 3220,
       "y": 1240,
       "width": 180,
@@ -4338,33 +3635,20 @@
       "type": "file",
       "file": "PlayerClient().md",
       "x": 3420,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_app_layout_rootlayout",
+      "id": "n_app_player_id_playerclient",
       "type": "file",
-<<<<<<< HEAD
-      "file": "RootLayout().md",
-      "x": 3820,
-=======
       "file": "PlayerClient.tsx.md",
       "x": 3620,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
     },
     {
-<<<<<<< HEAD
-      "id": "n_app_data_types_scorerow",
-      "type": "file",
-      "file": "ScoreRow.md",
-      "x": 4020,
-      "y": 1240,
-=======
       "id": "n_app_player_id_playerclient_playerclientprops",
       "type": "file",
       "file": "PlayerClientProps.md",
@@ -4397,7 +3681,6 @@
       "file": "ScoreRow.md",
       "x": 2820,
       "y": 1320,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -4405,11 +3688,7 @@
       "id": "n_app_data_types_scorerowdb",
       "type": "file",
       "file": "ScoreRowDb.md",
-<<<<<<< HEAD
-      "x": 2820,
-=======
       "x": 3020,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -4418,11 +3697,7 @@
       "id": "n_lib_supabase_types_tables",
       "type": "file",
       "file": "Tables.md",
-<<<<<<< HEAD
-      "x": 3020,
-=======
       "x": 3220,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -4431,11 +3706,7 @@
       "id": "n_lib_supabase_types_tablesinsert",
       "type": "file",
       "file": "TablesInsert.md",
-<<<<<<< HEAD
-      "x": 3220,
-=======
       "x": 3420,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -4444,11 +3715,7 @@
       "id": "n_lib_supabase_types_tablesupdate",
       "type": "file",
       "file": "TablesUpdate.md",
-<<<<<<< HEAD
-      "x": 3420,
-=======
       "x": 3620,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -4457,11 +3724,7 @@
       "id": "n_app_home_topplayerstoday_topplayerstoday",
       "type": "file",
       "file": "TopPlayersToday().md",
-<<<<<<< HEAD
-      "x": 3620,
-=======
       "x": 3820,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -4470,11 +3733,7 @@
       "id": "n_app_home_topplayerstoday",
       "type": "file",
       "file": "TopPlayersToday.tsx.md",
-<<<<<<< HEAD
-      "x": 3820,
-=======
       "x": 4020,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -4483,11 +3742,7 @@
       "id": "n_app_data_types_user",
       "type": "file",
       "file": "User.md",
-<<<<<<< HEAD
-      "x": 4020,
-=======
       "x": 4220,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -4497,8 +3752,6 @@
       "type": "file",
       "file": "clearUser().md",
       "x": 2820,
-<<<<<<< HEAD
-=======
       "y": 1400,
       "width": 180,
       "height": 60
@@ -4508,21 +3761,15 @@
       "type": "file",
       "file": "footer.tsx.md",
       "x": 3020,
->>>>>>> origin/main
       "y": 1400,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_app_footer",
+      "id": "n_app_data_storage_getscores",
       "type": "file",
-<<<<<<< HEAD
-      "file": "footer.tsx.md",
-      "x": 3020,
-=======
       "file": "getScores()_1.md",
       "x": 3220,
->>>>>>> origin/main
       "y": 1400,
       "width": 180,
       "height": 60
@@ -4531,11 +3778,7 @@
       "id": "n_app_data_storage_getuser",
       "type": "file",
       "file": "getUser().md",
-<<<<<<< HEAD
-      "x": 3220,
-=======
       "x": 3420,
->>>>>>> origin/main
       "y": 1400,
       "width": 180,
       "height": 60
@@ -4544,11 +3787,7 @@
       "id": "n_app_layout",
       "type": "file",
       "file": "layout.tsx.md",
-<<<<<<< HEAD
-      "x": 3420,
-=======
       "x": 3620,
->>>>>>> origin/main
       "y": 1400,
       "width": 180,
       "height": 60
@@ -4575,11 +3814,7 @@
       "id": "n_components_nav",
       "type": "file",
       "file": "nav.tsx.md",
-<<<<<<< HEAD
-      "x": 3620,
-=======
       "x": 4220,
->>>>>>> origin/main
       "y": 1400,
       "width": 180,
       "height": 60
@@ -4588,10 +3823,6 @@
       "id": "n_app_auth_page",
       "type": "file",
       "file": "page.tsx_1.md",
-<<<<<<< HEAD
-      "x": 3820,
-      "y": 1400,
-=======
       "x": 2820,
       "y": 1480,
       "width": 180,
@@ -4603,7 +3834,6 @@
       "file": "parseFormData().md",
       "x": 3020,
       "y": 1480,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -4611,10 +3841,6 @@
       "id": "n_app_data_players",
       "type": "file",
       "file": "players.ts.md",
-<<<<<<< HEAD
-      "x": 4020,
-      "y": 1400,
-=======
       "x": 3220,
       "y": 1480,
       "width": 180,
@@ -4635,7 +3861,6 @@
       "file": "saveScoreAction().md",
       "x": 3620,
       "y": 1480,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -4643,11 +3868,7 @@
       "id": "n_app_data_players_seededscores",
       "type": "file",
       "file": "seededScores().md",
-<<<<<<< HEAD
-      "x": 2820,
-=======
       "x": 3820,
->>>>>>> origin/main
       "y": 1480,
       "width": 180,
       "height": 60
@@ -4656,11 +3877,7 @@
       "id": "n_app_data_storage_setuser",
       "type": "file",
       "file": "setUser().md",
-<<<<<<< HEAD
-      "x": 3020,
-=======
       "x": 4020,
->>>>>>> origin/main
       "y": 1480,
       "width": 180,
       "height": 60
@@ -4669,11 +3886,7 @@
       "id": "n_app_data_storage",
       "type": "file",
       "file": "storage.ts.md",
-<<<<<<< HEAD
-      "x": 3220,
-=======
       "x": 4220,
->>>>>>> origin/main
       "y": 1480,
       "width": 180,
       "height": 60
@@ -4682,13 +3895,8 @@
       "id": "n_app_data_types",
       "type": "file",
       "file": "types.ts_1.md",
-<<<<<<< HEAD
-      "x": 3420,
-      "y": 1480,
-=======
       "x": 2820,
       "y": 1560,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -4696,13 +3904,8 @@
       "id": "n_lib_supabase_types",
       "type": "file",
       "file": "types.ts_3.md",
-<<<<<<< HEAD
-      "x": 3620,
-      "y": 1480,
-=======
       "x": 3020,
       "y": 1560,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -5234,11 +4437,7 @@
       "id": "g14",
       "type": "group",
       "label": "Playwright Tracing",
-<<<<<<< HEAD
-      "x": 8100,
-=======
       "x": 8540,
->>>>>>> origin/main
       "y": 1000,
       "width": 1100,
       "height": 520,
@@ -5248,11 +4447,7 @@
       "id": "n_resources_started_games_03_tetris_readme_1_index_html",
       "type": "file",
       "file": "1. `index.html`.md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5261,11 +4456,7 @@
       "id": "n_resources_started_games_03_tetris_readme_2_style_css",
       "type": "file",
       "file": "2. `style.css`.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5274,11 +4465,7 @@
       "id": "n_resources_started_games_03_tetris_readme_3_game_js",
       "type": "file",
       "file": "3. `game.js`.md",
-<<<<<<< HEAD
-      "x": 8520,
-=======
       "x": 8960,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5287,11 +4474,7 @@
       "id": "n_resources_started_games_03_tetris_readme_controles",
       "type": "file",
       "file": "Controles_1.md",
-<<<<<<< HEAD
-      "x": 8720,
-=======
       "x": 9160,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5300,11 +4483,7 @@
       "id": "n_resources_started_games_03_tetris_readme_c\u00f3mo_ejecutar_el_juego",
       "type": "file",
       "file": "C\u00f3mo ejecutar el juego.md",
-<<<<<<< HEAD
-      "x": 8920,
-=======
       "x": 9360,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5313,11 +4492,7 @@
       "id": "n_resources_started_games_03_tetris_readme_c\u00f3mo_funciona",
       "type": "file",
       "file": "C\u00f3mo funciona.md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5326,11 +4501,7 @@
       "id": "n_resources_started_games_03_tetris_readme_estructura_del_proyecto",
       "type": "file",
       "file": "Estructura del proyecto.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5339,11 +4510,7 @@
       "id": "n_resources_started_games_03_tetris_readme_flujo_del_juego",
       "type": "file",
       "file": "Flujo del juego.md",
-<<<<<<< HEAD
-      "x": 8520,
-=======
       "x": 8960,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5352,11 +4519,7 @@
       "id": "n_resources_started_games_03_tetris_readme_licencia",
       "type": "file",
       "file": "Licencia.md",
-<<<<<<< HEAD
-      "x": 8720,
-=======
       "x": 9160,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5365,11 +4528,7 @@
       "id": "n_resources_started_games_03_tetris_readme_opci\u00f3n_1_abrir_el_archivo_directamente",
       "type": "file",
       "file": "Opci\u00f3n 1 abrir el archivo directamente.md",
-<<<<<<< HEAD
-      "x": 8920,
-=======
       "x": 9360,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5378,11 +4537,7 @@
       "id": "n_resources_started_games_03_tetris_readme_opci\u00f3n_2_servidor_local_recomendado",
       "type": "file",
       "file": "Opci\u00f3n 2 servidor local (recomendado).md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5391,11 +4546,7 @@
       "id": "n_resources_started_games_03_tetris_readme_personalizaci\u00f3n",
       "type": "file",
       "file": "Personalizaci\u00f3n.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5404,11 +4555,7 @@
       "id": "n_resources_started_games_03_tetris_readme_qu\u00e9_hace_el_proyecto",
       "type": "file",
       "file": "Qu\u00e9 hace el proyecto.md",
-<<<<<<< HEAD
-      "x": 8520,
-=======
       "x": 8960,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5417,11 +4564,7 @@
       "id": "n_resources_started_games_03_tetris_readme",
       "type": "file",
       "file": "README_8.md",
-<<<<<<< HEAD
-      "x": 8720,
-=======
       "x": 9160,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5430,11 +4573,7 @@
       "id": "n_resources_started_games_03_tetris_readme_tabla_de_contenidos",
       "type": "file",
       "file": "Tabla de contenidos.md",
-<<<<<<< HEAD
-      "x": 8920,
-=======
       "x": 9360,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5443,11 +4582,7 @@
       "id": "n_resources_started_games_03_tetris_readme_tecnolog\u00edas",
       "type": "file",
       "file": "Tecnolog\u00edas_1.md",
-<<<<<<< HEAD
-      "x": 8120,
-=======
       "x": 8560,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -5456,11 +4591,7 @@
       "id": "n_resources_started_games_03_tetris_readme_tetris",
       "type": "file",
       "file": "Tetris.md",
-<<<<<<< HEAD
-      "x": 8320,
-=======
       "x": 8760,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -5469,11 +4600,7 @@
       "id": "g15",
       "type": "group",
       "label": "Playwright Tracing",
-<<<<<<< HEAD
-      "x": 9500,
-=======
       "x": 9940,
->>>>>>> origin/main
       "y": 1000,
       "width": 1320,
       "height": 620,
@@ -5483,11 +4610,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_1_start_tracing_before_the_problem",
       "type": "file",
       "file": "1. Start Tracing Before the Problem.md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5496,11 +4619,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording_1_use_descriptive_filenames",
       "type": "file",
       "file": "1. Use Descriptive Filenames_1.md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5509,11 +4628,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_2_clean_up_old_traces",
       "type": "file",
       "file": "2. Clean Up Old Traces.md",
-<<<<<<< HEAD
-      "x": 9920,
-=======
       "x": 10360,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5522,11 +4637,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording_2_record_entire_hero_scripts",
       "type": "file",
       "file": "2. Record entire hero scripts._1.md",
-<<<<<<< HEAD
-      "x": 10120,
-=======
       "x": 10560,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5535,11 +4646,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_analyzing_performance",
       "type": "file",
       "file": "Analyzing Performance.md",
-<<<<<<< HEAD
-      "x": 10320,
-=======
       "x": 10760,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5548,11 +4655,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording_basic_recording",
       "type": "file",
       "file": "Basic Recording_1.md",
-<<<<<<< HEAD
-      "x": 10520,
-=======
       "x": 10960,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5561,11 +4664,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_basic_usage",
       "type": "file",
       "file": "Basic Usage.md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5574,11 +4673,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_best_practices",
       "type": "file",
       "file": "Best Practices_2.md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5587,11 +4682,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording_best_practices",
       "type": "file",
       "file": "Best Practices_3.md",
-<<<<<<< HEAD
-      "x": 9920,
-=======
       "x": 10360,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5600,11 +4691,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_capturing_evidence",
       "type": "file",
       "file": "Capturing Evidence.md",
-<<<<<<< HEAD
-      "x": 10120,
-=======
       "x": 10560,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5613,11 +4700,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_debugging_failed_actions",
       "type": "file",
       "file": "Debugging Failed Actions.md",
-<<<<<<< HEAD
-      "x": 10320,
-=======
       "x": 10760,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5626,11 +4709,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_limitations",
       "type": "file",
       "file": "Limitations_1.md",
-<<<<<<< HEAD
-      "x": 10520,
-=======
       "x": 10960,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5639,11 +4718,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording_limitations",
       "type": "file",
       "file": "Limitations_2.md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5652,11 +4727,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording_overlay_api_summary",
       "type": "file",
       "file": "Overlay API Summary_1.md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5665,11 +4736,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_trace_output_files",
       "type": "file",
       "file": "Trace Output Files.md",
-<<<<<<< HEAD
-      "x": 9920,
-=======
       "x": 10360,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5678,11 +4745,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_trace_vs_video_vs_screenshot",
       "type": "file",
       "file": "Trace vs Video vs Screenshot.md",
-<<<<<<< HEAD
-      "x": 10120,
-=======
       "x": 10560,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5691,11 +4754,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_tracing",
       "type": "file",
       "file": "Tracing_1.md",
-<<<<<<< HEAD
-      "x": 10320,
-=======
       "x": 10760,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5704,11 +4763,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording_tracing_vs_video",
       "type": "file",
       "file": "Tracing vs Video_1.md",
-<<<<<<< HEAD
-      "x": 10520,
-=======
       "x": 10960,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5717,11 +4772,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_use_cases",
       "type": "file",
       "file": "Use Cases.md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -5730,11 +4781,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording_video_recording",
       "type": "file",
       "file": "Video Recording_1.md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -5743,11 +4790,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_what_traces_capture",
       "type": "file",
       "file": "What Traces Capture.md",
-<<<<<<< HEAD
-      "x": 9920,
-=======
       "x": 10360,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -5756,11 +4799,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_resources",
       "type": "file",
       "file": "`resources`.md",
-<<<<<<< HEAD
-      "x": 10120,
-=======
       "x": 10560,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -5769,11 +4808,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_trace_timestamp_network",
       "type": "file",
       "file": "`trace-{timestamp}.network`.md",
-<<<<<<< HEAD
-      "x": 10320,
-=======
       "x": 10760,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -5782,11 +4817,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing_trace_timestamp_trace",
       "type": "file",
       "file": "`trace-{timestamp}.trace`.md",
-<<<<<<< HEAD
-      "x": 10520,
-=======
       "x": 10960,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -5795,11 +4826,7 @@
       "id": "n_claude_skills_playwright_cli_references_tracing",
       "type": "file",
       "file": "tracing.md",
-<<<<<<< HEAD
-      "x": 9520,
-=======
       "x": 9960,
->>>>>>> origin/main
       "y": 1400,
       "width": 180,
       "height": 60
@@ -5808,11 +4835,7 @@
       "id": "n_claude_skills_playwright_cli_references_video_recording",
       "type": "file",
       "file": "video-recording_1.md",
-<<<<<<< HEAD
-      "x": 9720,
-=======
       "x": 10160,
->>>>>>> origin/main
       "y": 1400,
       "width": 180,
       "height": 60
@@ -5821,11 +4844,7 @@
       "id": "g16",
       "type": "group",
       "label": "Spec Template",
-<<<<<<< HEAD
-      "x": 10900,
-=======
       "x": 11340,
->>>>>>> origin/main
       "y": 1000,
       "width": 880,
       "height": 520,
@@ -5835,11 +4854,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_api_de_spritesheet_js",
       "type": "file",
       "file": "API de `spritesheet.js`.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5848,11 +4863,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_archivos_principales",
       "type": "file",
       "file": "Archivos principales.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5861,11 +4872,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_arquitectura",
       "type": "file",
       "file": "Arquitectura.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5874,11 +4881,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_assets",
       "type": "file",
       "file": "Assets.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -5887,11 +4890,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude",
       "type": "file",
       "file": "CLAUDE_4.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5900,11 +4899,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_claude_md",
       "type": "file",
       "file": "CLAUDE_5.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5913,11 +4908,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_ciclo_de_vida_de_una_spec",
       "type": "file",
       "file": "Ciclo de vida de una spec.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5926,11 +4917,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_comandos",
       "type": "file",
       "file": "Comandos.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -5939,11 +4926,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_desarrollo",
       "type": "file",
       "file": "Desarrollo.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5952,11 +4935,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_estado_del_juego_en_game_js",
       "type": "file",
       "file": "Estado del juego (en `game.js`).md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5965,11 +4944,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_estructura_de_una_spec_specs_nn_slug_md",
       "type": "file",
       "file": "Estructura de una spec (`specsNN-slug.md`).md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5978,11 +4953,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_flujo_de_trabajo_spec_driven",
       "type": "file",
       "file": "Flujo de trabajo spec-driven.md",
-<<<<<<< HEAD
-      "x": 11520,
-=======
       "x": 11960,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -5991,11 +4962,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_proyecto",
       "type": "file",
       "file": "Proyecto.md",
-<<<<<<< HEAD
-      "x": 10920,
-=======
       "x": 11360,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -6004,11 +4971,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_specs_existentes",
       "type": "file",
       "file": "Specs existentes.md",
-<<<<<<< HEAD
-      "x": 11120,
-=======
       "x": 11560,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -6017,11 +4980,7 @@
       "id": "n_resources_started_games_04_arkanoid_claude_sprites_disponibles",
       "type": "file",
       "file": "Sprites disponibles.md",
-<<<<<<< HEAD
-      "x": 11320,
-=======
       "x": 11760,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -6030,11 +4989,7 @@
       "id": "g17",
       "type": "group",
       "label": "Spec Template",
-<<<<<<< HEAD
-      "x": 12520,
-=======
       "x": 12960,
->>>>>>> origin/main
       "y": 1000,
       "width": 880,
       "height": 520,
@@ -6044,11 +4999,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_01_mvp_jugable_de_arkanoid",
       "type": "file",
       "file": "01 \u2014 MVP jugable de Arkanoid.md",
-<<<<<<< HEAD
-      "x": 12540,
-=======
       "x": 12980,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -6057,11 +5008,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid",
       "type": "file",
       "file": "01-mvp-arkanoid.md",
-<<<<<<< HEAD
-      "x": 12740,
-=======
       "x": 13180,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -6070,11 +5017,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_alcance",
       "type": "file",
       "file": "Alcance.md",
-<<<<<<< HEAD
-      "x": 12940,
-=======
       "x": 13380,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -6083,11 +5026,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_bloques",
       "type": "file",
       "file": "Bloques.md",
-<<<<<<< HEAD
-      "x": 13140,
-=======
       "x": 13580,
->>>>>>> origin/main
       "y": 1080,
       "width": 180,
       "height": 60
@@ -6096,11 +5035,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_criterios_de_aceptaci\u00f3n",
       "type": "file",
       "file": "Criterios de aceptaci\u00f3n.md",
-<<<<<<< HEAD
-      "x": 12540,
-=======
       "x": 12980,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -6109,11 +5044,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_decisiones_tomadas_y_descartadas",
       "type": "file",
       "file": "Decisiones tomadas y descartadas.md",
-<<<<<<< HEAD
-      "x": 12740,
-=======
       "x": 13180,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -6122,11 +5053,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_dentro_del_mvp",
       "type": "file",
       "file": "Dentro del MVP.md",
-<<<<<<< HEAD
-      "x": 12940,
-=======
       "x": 13380,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -6135,11 +5062,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_estado_del_juego",
       "type": "file",
       "file": "Estado del juego.md",
-<<<<<<< HEAD
-      "x": 13140,
-=======
       "x": 13580,
->>>>>>> origin/main
       "y": 1160,
       "width": 180,
       "height": 60
@@ -6148,11 +5071,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_fuera_del_mvp_dejado_para_specs_posteriores",
       "type": "file",
       "file": "Fuera del MVP (dejado para specs posteriores).md",
-<<<<<<< HEAD
-      "x": 12540,
-=======
       "x": 12980,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -6161,11 +5080,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_modelo_de_datos",
       "type": "file",
       "file": "Modelo de datos.md",
-<<<<<<< HEAD
-      "x": 12740,
-=======
       "x": 13180,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -6174,11 +5089,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_paddle",
       "type": "file",
       "file": "Paddle_1.md",
-<<<<<<< HEAD
-      "x": 12940,
-=======
       "x": 13380,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -6187,11 +5098,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_pelota",
       "type": "file",
       "file": "Pelota.md",
-<<<<<<< HEAD
-      "x": 13140,
-=======
       "x": 13580,
->>>>>>> origin/main
       "y": 1240,
       "width": 180,
       "height": 60
@@ -6200,11 +5107,7 @@
       "id": "n_resources_started_games_04_arkanoid_specs_01_mvp_arkanoid_plan_de_implementaci\u00f3n",
       "type": "file",
       "file": "Plan de implementaci\u00f3n.md",
-<<<<<<< HEAD
-      "x": 12540,
-=======
       "x": 12980,
->>>>>>> origin/main
       "y": 1320,
       "width": 180,
       "height": 60
@@ -6214,11 +5117,7 @@
       "type": "group",
       "label": "localStorage Ops",
       "x": 0,
-<<<<<<< HEAD
-      "y": 1800,
-=======
       "y": 1900,
->>>>>>> origin/main
       "width": 1320,
       "height": 720,
       "color": "1"
@@ -6251,31 +5150,10 @@
       "height": 60
     },
     {
-      "id": "n_agents_skills_playwright_cli_references_storage_state_advanced_multiple_operations",
-      "type": "file",
-      "file": "Advanced Multiple Operations.md",
-      "x": 220,
-      "y": 1880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_references_storage_state_authentication_state_reuse",
-      "type": "file",
-      "file": "Authentication State Reuse.md",
-      "x": 420,
-      "y": 1880,
-      "width": 180,
-      "height": 60
-    },
-    {
       "id": "n_agents_skills_playwright_cli_references_storage_state_clear_all_cookies",
       "type": "file",
       "file": "Clear All Cookies.md",
       "x": 620,
-<<<<<<< HEAD
-      "y": 1880,
-=======
       "y": 1980,
       "width": 180,
       "height": 60
@@ -6304,34 +5182,6 @@
       "file": "Common Patterns.md",
       "x": 20,
       "y": 2060,
->>>>>>> origin/main
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_references_storage_state_clear_all_localstorage",
-      "type": "file",
-      "file": "Clear All localStorage.md",
-      "x": 820,
-      "y": 1880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_references_storage_state_clear_sessionstorage",
-      "type": "file",
-      "file": "Clear sessionStorage.md",
-      "x": 1020,
-      "y": 1880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_references_storage_state_common_patterns",
-      "type": "file",
-      "file": "Common Patterns.md",
-      "x": 20,
-      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -6340,11 +5190,7 @@
       "type": "file",
       "file": "Cookies.md",
       "x": 220,
-<<<<<<< HEAD
-      "y": 1960,
-=======
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6353,11 +5199,7 @@
       "type": "file",
       "file": "Delete Database.md",
       "x": 420,
-<<<<<<< HEAD
-      "y": 1960,
-=======
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6366,11 +5208,7 @@
       "type": "file",
       "file": "Delete Single Item.md",
       "x": 620,
-<<<<<<< HEAD
-      "y": 1960,
-=======
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6379,11 +5217,7 @@
       "type": "file",
       "file": "Delete Single Item_1.md",
       "x": 820,
-<<<<<<< HEAD
-      "y": 1960,
-=======
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6392,11 +5226,7 @@
       "type": "file",
       "file": "Delete a Cookie.md",
       "x": 1020,
-<<<<<<< HEAD
-      "y": 1960,
-=======
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6405,11 +5235,7 @@
       "type": "file",
       "file": "Filter Cookies by Domain.md",
       "x": 20,
-<<<<<<< HEAD
-      "y": 2040,
-=======
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6418,11 +5244,7 @@
       "type": "file",
       "file": "Filter Cookies by Path.md",
       "x": 220,
-<<<<<<< HEAD
-      "y": 2040,
-=======
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6431,11 +5253,7 @@
       "type": "file",
       "file": "Get Single Value.md",
       "x": 420,
-<<<<<<< HEAD
-      "y": 2040,
-=======
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6444,11 +5262,7 @@
       "type": "file",
       "file": "Get Single Value_1.md",
       "x": 620,
-<<<<<<< HEAD
-      "y": 2040,
-=======
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6457,11 +5271,7 @@
       "type": "file",
       "file": "Get Specific Cookie.md",
       "x": 820,
-<<<<<<< HEAD
-      "y": 2040,
-=======
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6470,11 +5280,7 @@
       "type": "file",
       "file": "IndexedDB.md",
       "x": 1020,
-<<<<<<< HEAD
-      "y": 2040,
-=======
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6483,11 +5289,7 @@
       "type": "file",
       "file": "List All Cookies.md",
       "x": 20,
-<<<<<<< HEAD
-      "y": 2120,
-=======
       "y": 2220,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6496,11 +5298,7 @@
       "type": "file",
       "file": "List All localStorage Items.md",
       "x": 220,
-<<<<<<< HEAD
-      "y": 2120,
-=======
       "y": 2220,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6509,11 +5307,7 @@
       "type": "file",
       "file": "List All sessionStorage Items.md",
       "x": 420,
-<<<<<<< HEAD
-      "y": 2120,
-=======
       "y": 2220,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6522,11 +5316,7 @@
       "type": "file",
       "file": "List Databases.md",
       "x": 620,
-<<<<<<< HEAD
-      "y": 2120,
-=======
       "y": 2220,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6535,11 +5325,7 @@
       "type": "file",
       "file": "Local Storage.md",
       "x": 820,
-<<<<<<< HEAD
-      "y": 2120,
-=======
       "y": 2220,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6548,11 +5334,7 @@
       "type": "file",
       "file": "Restore Storage State.md",
       "x": 1020,
-<<<<<<< HEAD
-      "y": 2120,
-=======
       "y": 2220,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6561,11 +5343,7 @@
       "type": "file",
       "file": "Run Code.md",
       "x": 20,
-<<<<<<< HEAD
-      "y": 2200,
-=======
       "y": 2300,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6574,11 +5352,7 @@
       "type": "file",
       "file": "Save Storage State.md",
       "x": 220,
-<<<<<<< HEAD
-      "y": 2200,
-=======
       "y": 2300,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6587,11 +5361,7 @@
       "type": "file",
       "file": "Save and Restore Roundtrip.md",
       "x": 420,
-<<<<<<< HEAD
-      "y": 2200,
-=======
       "y": 2300,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6600,11 +5370,7 @@
       "type": "file",
       "file": "Security Notes.md",
       "x": 620,
-<<<<<<< HEAD
-      "y": 2200,
-=======
       "y": 2300,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6613,11 +5379,7 @@
       "type": "file",
       "file": "Session Storage.md",
       "x": 820,
-<<<<<<< HEAD
-      "y": 2200,
-=======
       "y": 2300,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6626,11 +5388,7 @@
       "type": "file",
       "file": "Set JSON Value.md",
       "x": 1020,
-<<<<<<< HEAD
-      "y": 2200,
-=======
       "y": 2300,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6639,11 +5397,7 @@
       "type": "file",
       "file": "Set Value.md",
       "x": 20,
-<<<<<<< HEAD
-      "y": 2280,
-=======
       "y": 2380,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6652,11 +5406,7 @@
       "type": "file",
       "file": "Set Value_1.md",
       "x": 220,
-<<<<<<< HEAD
-      "y": 2280,
-=======
       "y": 2380,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6665,11 +5415,7 @@
       "type": "file",
       "file": "Set a Cookie.md",
       "x": 420,
-<<<<<<< HEAD
-      "y": 2280,
-=======
       "y": 2380,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6678,11 +5424,7 @@
       "type": "file",
       "file": "Storage Management.md",
       "x": 620,
-<<<<<<< HEAD
-      "y": 2280,
-=======
       "y": 2380,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6691,11 +5433,7 @@
       "type": "file",
       "file": "Storage State.md",
       "x": 820,
-<<<<<<< HEAD
-      "y": 2280,
-=======
       "y": 2380,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -6704,11 +5442,7 @@
       "type": "file",
       "file": "Storage State File Format.md",
       "x": 1020,
-<<<<<<< HEAD
-      "y": 2280,
-=======
       "y": 2380,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7386,13 +6120,8 @@
       "id": "g23",
       "type": "group",
       "label": "MVP Spec",
-<<<<<<< HEAD
-      "x": 8100,
-      "y": 1800,
-=======
       "x": 8540,
       "y": 1900,
->>>>>>> origin/main
       "width": 880,
       "height": 420,
       "color": "6"
@@ -7401,13 +6130,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_spec_guided_spec_designer",
       "type": "file",
       "file": "spec \u2014 Guided spec designer.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 1880,
-=======
       "x": 8560,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7415,13 +6139,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_arguments",
       "type": "file",
       "file": "Arguments.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 1880,
-=======
       "x": 8760,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7429,13 +6148,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_command_flow",
       "type": "file",
       "file": "Command flow.md",
-<<<<<<< HEAD
-      "x": 8520,
-      "y": 1880,
-=======
       "x": 8960,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7443,13 +6157,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_hard_rules",
       "type": "file",
       "file": "Hard rules.md",
-<<<<<<< HEAD
-      "x": 8720,
-      "y": 1880,
-=======
       "x": 9160,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7457,13 +6166,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_phase_1_understand_the_context",
       "type": "file",
       "file": "Phase 1 \u2014 Understand the context.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 1960,
-=======
       "x": 8560,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7471,13 +6175,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_phase_2_clarify_through_questions",
       "type": "file",
       "file": "Phase 2 \u2014 Clarify through questions.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 1960,
-=======
       "x": 8760,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7485,13 +6184,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_phase_3_develop_the_spec_section_by_section",
       "type": "file",
       "file": "Phase 3 \u2014 Develop the spec section by section.md",
-<<<<<<< HEAD
-      "x": 8520,
-      "y": 1960,
-=======
       "x": 8960,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7499,13 +6193,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_phase_4_save_the_spec",
       "type": "file",
       "file": "Phase 4 \u2014 Save the spec.md",
-<<<<<<< HEAD
-      "x": 8720,
-      "y": 1960,
-=======
       "x": 9160,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7513,13 +6202,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_philosophy",
       "type": "file",
       "file": "Philosophy.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 2040,
-=======
       "x": 8560,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7527,13 +6211,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill",
       "type": "file",
       "file": "SKILL_11.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 2040,
-=======
       "x": 8760,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7541,13 +6220,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_skill_tone_when_asking_questions",
       "type": "file",
       "file": "Tone when asking questions.md",
-<<<<<<< HEAD
-      "x": 8520,
-      "y": 2040,
-=======
       "x": 8960,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7555,274 +6229,99 @@
       "id": "g24",
       "type": "group",
       "label": "Cookie Management",
-<<<<<<< HEAD
-      "x": 9500,
-      "y": 1800,
-      "width": 1100,
-      "height": 620,
-=======
       "x": 9940,
       "y": 1900,
       "width": 880,
       "height": 420,
->>>>>>> origin/main
       "color": "1"
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_commands",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsConfig.md",
-      "x": 9520,
-      "y": 1880,
-=======
       "file": "Commands.md",
       "x": 9960,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_core",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsGame().md",
-      "x": 9720,
-      "y": 1880,
-=======
       "file": "Core.md",
       "x": 10160,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_devtools",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsGame.tsx.md",
-      "x": 9920,
-      "y": 1880,
-=======
       "file": "DevTools.md",
       "x": 10360,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_keyboard",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsGameClient().md",
-      "x": 10120,
-      "y": 1880,
-=======
       "file": "Keyboard.md",
       "x": 10560,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_mouse",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsGameClient.tsx.md",
-      "x": 10320,
-      "y": 1880,
-=======
       "file": "Mouse.md",
       "x": 9960,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_navigation",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsGameClientProps.md",
-      "x": 9520,
-      "y": 1960,
-=======
       "file": "Navigation.md",
       "x": 10160,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_network",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsGameProps.md",
-      "x": 9720,
-      "y": 1960,
-=======
       "file": "Network.md",
       "x": 10360,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_save_as",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsGameState.md",
-      "x": 9920,
-      "y": 1960,
-=======
       "file": "Save as.md",
       "x": 10560,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_storage",
       "type": "file",
-<<<<<<< HEAD
-      "file": "AsteroidsPage().md",
-      "x": 10120,
-      "y": 1960,
-=======
       "file": "Storage.md",
       "x": 9960,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
     {
       "id": "n_agents_skills_playwright_cli_skill_tabs",
       "type": "file",
-<<<<<<< HEAD
-      "file": "GET()_1.md",
-      "x": 10320,
-      "y": 1960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_components_games_asteroids_asteroidsgame_gamemodule",
-      "type": "file",
-      "file": "GameModule.md",
-      "x": 9520,
-      "y": 2040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_lib_games_asteroids_types_leaderboardentry",
-      "type": "file",
-      "file": "LeaderboardEntry.md",
-      "x": 9720,
-      "y": 2040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_page_leaderboardserver",
-      "type": "file",
-      "file": "LeaderboardServer().md",
-      "x": 9920,
-      "y": 2040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_actions_submitscoreresult",
-      "type": "file",
-      "file": "SubmitScoreResult.md",
-      "x": 10120,
-      "y": 2040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_actions",
-      "type": "file",
-      "file": "actions.ts_2.md",
-      "x": 10320,
-      "y": 2040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_actions_getasteroidsleaderboard",
-      "type": "file",
-      "file": "getAsteroidsLeaderboard().md",
-      "x": 9520,
-      "y": 2120,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_actions_maptoleaderboardentry",
-      "type": "file",
-      "file": "mapToLeaderboardEntry().md",
-      "x": 9720,
-      "y": 2120,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_page_metadata",
-      "type": "file",
-      "file": "metadata.md",
-      "x": 9920,
-      "y": 2120,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_page",
-      "type": "file",
-      "file": "page.tsx_3.md",
-      "x": 10120,
-      "y": 2120,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_api_leaderboard_route",
-      "type": "file",
-      "file": "route.ts_1.md",
-      "x": 10320,
-      "y": 2120,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_app_games_asteroids_actions_submitasteroidsscore",
-      "type": "file",
-      "file": "submitAsteroidsScore().md",
-      "x": 9520,
-      "y": 2200,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_lib_games_asteroids_types",
-      "type": "file",
-      "file": "types.ts_2.md",
-      "x": 9720,
-      "y": 2200,
-=======
       "file": "Tabs.md",
       "x": 10160,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7830,13 +6329,8 @@
       "id": "g25",
       "type": "group",
       "label": "Spec-Impl Skill",
-<<<<<<< HEAD
-      "x": 10900,
-      "y": 1800,
-=======
       "x": 11340,
       "y": 1900,
->>>>>>> origin/main
       "width": 660,
       "height": 420,
       "color": "2"
@@ -7845,13 +6339,8 @@
       "id": "n_resources_started_games_02_asteroids_readme_asteroids",
       "type": "file",
       "file": "Asteroids.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 1880,
-=======
       "x": 11360,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7859,13 +6348,8 @@
       "id": "n_resources_started_games_02_asteroids_readme_caracter\u00edsticas",
       "type": "file",
       "file": "Caracter\u00edsticas.md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 1880,
-=======
       "x": 11560,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7873,13 +6357,8 @@
       "id": "n_resources_started_games_02_asteroids_readme_controles",
       "type": "file",
       "file": "Controles.md",
-<<<<<<< HEAD
-      "x": 11320,
-      "y": 1880,
-=======
       "x": 11760,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7887,13 +6366,8 @@
       "id": "n_resources_started_games_02_asteroids_readme_c\u00f3mo_correr",
       "type": "file",
       "file": "C\u00f3mo correr.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 1960,
-=======
       "x": 11360,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7901,13 +6375,8 @@
       "id": "n_resources_started_games_02_asteroids_readme_demo",
       "type": "file",
       "file": "Demo.md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 1960,
-=======
       "x": 11560,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7915,13 +6384,8 @@
       "id": "n_resources_started_games_02_asteroids_readme_descripci\u00f3n",
       "type": "file",
       "file": "Descripci\u00f3n.md",
-<<<<<<< HEAD
-      "x": 11320,
-      "y": 1960,
-=======
       "x": 11760,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7929,13 +6393,8 @@
       "id": "n_resources_started_games_02_asteroids_readme_puntuaci\u00f3n",
       "type": "file",
       "file": "Puntuaci\u00f3n.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 2040,
-=======
       "x": 11360,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7943,13 +6402,8 @@
       "id": "n_resources_started_games_02_asteroids_readme",
       "type": "file",
       "file": "README_7.md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 2040,
-=======
       "x": 11560,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7957,13 +6411,8 @@
       "id": "n_resources_started_games_02_asteroids_readme_tecnolog\u00edas",
       "type": "file",
       "file": "Tecnolog\u00edas.md",
-<<<<<<< HEAD
-      "x": 11320,
-      "y": 2040,
-=======
       "x": 11760,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -7971,13 +6420,8 @@
       "id": "g26",
       "type": "group",
       "label": "Cookie Management",
-<<<<<<< HEAD
-      "x": 12520,
-      "y": 1800,
-=======
       "x": 12960,
       "y": 1900,
->>>>>>> origin/main
       "width": 660,
       "height": 420,
       "color": "3"
@@ -7986,13 +6430,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill_spec_impl_implementer_of_approved_specs",
       "type": "file",
       "file": "spec-impl \u2014 Implementer of approved specs.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 1880,
-=======
       "x": 12980,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8000,13 +6439,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill_instructions",
       "type": "file",
       "file": "Instructions.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 1880,
-=======
       "x": 13180,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8014,13 +6448,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill_phase_1_identify_the_spec",
       "type": "file",
       "file": "Phase 1 \u2014 Identify the spec.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 1880,
-=======
       "x": 13380,
       "y": 1980,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8028,13 +6457,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill_phase_2_validate_the_spec_s_state",
       "type": "file",
       "file": "Phase 2 \u2014 Validate the spec's state.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 1960,
-=======
       "x": 12980,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8042,13 +6466,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill_phase_3_create_the_git_branch_and_switch_to_it",
       "type": "file",
       "file": "Phase 3 \u2014 Create the git branch and switch to it.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 1960,
-=======
       "x": 13180,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8056,13 +6475,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill_phase_4_implement_step_by_step",
       "type": "file",
       "file": "Phase 4 \u2014 Implement step by step.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 1960,
-=======
       "x": 13380,
       "y": 2060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8070,13 +6484,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill",
       "type": "file",
       "file": "SKILL_10.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 2040,
-=======
       "x": 12980,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8084,13 +6493,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill_session_context",
       "type": "file",
       "file": "Session context.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 2040,
-=======
       "x": 13180,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8098,13 +6502,8 @@
       "id": "n_resources_started_games_04_arkanoid_agents_skills_spec_impl_skill_summary_of_expected_behavior",
       "type": "file",
       "file": "Summary of expected behavior.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 2040,
-=======
       "x": 13380,
       "y": 2140,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8504,13 +6903,8 @@
       "id": "g32",
       "type": "group",
       "label": "Storage State API",
-<<<<<<< HEAD
-      "x": 8100,
-      "y": 2600,
-=======
       "x": 8540,
       "y": 2700,
->>>>>>> origin/main
       "width": 660,
       "height": 420,
       "color": "3"
@@ -8519,13 +6913,8 @@
       "id": "n_resources_started_games_03_tetris_claude_architecture",
       "type": "file",
       "file": "Architecture_1.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 2680,
-=======
       "x": 8560,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8533,13 +6922,8 @@
       "id": "n_resources_started_games_03_tetris_claude",
       "type": "file",
       "file": "CLAUDE_2.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 2680,
-=======
       "x": 8760,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8547,13 +6931,8 @@
       "id": "n_resources_started_games_03_tetris_claude_claude_md",
       "type": "file",
       "file": "CLAUDE_3.md",
-<<<<<<< HEAD
-      "x": 8520,
-      "y": 2680,
-=======
       "x": 8960,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8561,13 +6940,8 @@
       "id": "n_resources_started_games_03_tetris_claude_game_flow",
       "type": "file",
       "file": "Game flow.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 2760,
-=======
       "x": 8560,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8575,13 +6949,8 @@
       "id": "n_resources_started_games_03_tetris_claude_running_the_game",
       "type": "file",
       "file": "Running the game.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 2760,
-=======
       "x": 8760,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8589,13 +6958,8 @@
       "id": "n_resources_started_games_03_tetris_claude_tunable_constants_top_of_game_js",
       "type": "file",
       "file": "Tunable constants (top of game.js).md",
-<<<<<<< HEAD
-      "x": 8520,
-      "y": 2760,
-=======
       "x": 8960,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8603,13 +6967,8 @@
       "id": "n_resources_started_games_03_tetris_claude_game_js_internals",
       "type": "file",
       "file": "game.js internals.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 2840,
-=======
       "x": 8560,
       "y": 2940,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8617,13 +6976,8 @@
       "id": "g33",
       "type": "group",
       "label": "Spec Skills Config",
-<<<<<<< HEAD
-      "x": 9500,
-      "y": 2600,
-=======
       "x": 9940,
       "y": 2700,
->>>>>>> origin/main
       "width": 600,
       "height": 400,
       "color": "4"
@@ -8632,13 +6986,8 @@
       "id": "n_claude_skills_spec_skill_spec_skill",
       "type": "file",
       "file": "spec Skill.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 2680,
-=======
       "x": 9960,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8646,13 +6995,8 @@
       "id": "n_claude_skills_spec_impl_skill_spec_impl_skill",
       "type": "file",
       "file": "spec-impl Skill.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 2680,
-=======
       "x": 10160,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8660,13 +7004,8 @@
       "id": "n_specs_spec_config_yml_branch_config",
       "type": "file",
       "file": "Branch Creation Config.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 2760,
-=======
       "x": 9960,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8674,13 +7013,8 @@
       "id": "n_claude_skills_spec_template_spec_template",
       "type": "file",
       "file": "Spec Template_1.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 2760,
-=======
       "x": 10160,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8688,13 +7022,8 @@
       "id": "g34",
       "type": "group",
       "label": "IndexedDB Ops",
-<<<<<<< HEAD
-      "x": 10900,
-      "y": 2600,
-=======
       "x": 11340,
       "y": 2700,
->>>>>>> origin/main
       "width": 660,
       "height": 420,
       "color": "5"
@@ -8703,13 +7032,8 @@
       "id": "n_resources_started_games_04_arkanoid_assets_spritesheet_explosion_frames",
       "type": "file",
       "file": "EXPLOSION_FRAMES.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 2680,
-=======
       "x": 11360,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8717,13 +7041,8 @@
       "id": "n_resources_started_games_04_arkanoid_assets_spritesheet_sprites",
       "type": "file",
       "file": "SPRITES.md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 2680,
-=======
       "x": 11560,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8731,13 +7050,8 @@
       "id": "n_resources_started_games_04_arkanoid_assets_spritesheet_drawframe",
       "type": "file",
       "file": "drawFrame().md",
-<<<<<<< HEAD
-      "x": 11320,
-      "y": 2680,
-=======
       "x": 11760,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8745,13 +7059,8 @@
       "id": "n_resources_started_games_04_arkanoid_assets_spritesheet_drawsprite",
       "type": "file",
       "file": "drawSprite().md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 2760,
-=======
       "x": 11360,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8759,13 +7068,8 @@
       "id": "n_resources_started_games_04_arkanoid_assets_spritesheet_loadspritesheet",
       "type": "file",
       "file": "loadSpritesheet().md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 2760,
-=======
       "x": 11560,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8773,13 +7077,8 @@
       "id": "n_resources_started_games_04_arkanoid_assets_spritesheet",
       "type": "file",
       "file": "spritesheet.js.md",
-<<<<<<< HEAD
-      "x": 11320,
-      "y": 2760,
-=======
       "x": 11760,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8787,13 +7086,8 @@
       "id": "n_resources_started_games_04_arkanoid_assets_spritesheet_sscallbacks",
       "type": "file",
       "file": "ssCallbacks.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 2840,
-=======
       "x": 11360,
       "y": 2940,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8801,13 +7095,8 @@
       "id": "g35",
       "type": "group",
       "label": "Games Page",
-<<<<<<< HEAD
-      "x": 12520,
-      "y": 2600,
-=======
       "x": 12960,
       "y": 2700,
->>>>>>> origin/main
       "width": 1320,
       "height": 720,
       "color": "6"
@@ -8816,13 +7105,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_rationale_43",
       "type": "file",
       "file": "Check if a line looks like code..md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 2680,
-=======
       "x": 12980,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8830,13 +7114,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_rationale_48",
       "type": "file",
       "file": "Check if content is valid JSON..md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 2680,
-=======
       "x": 13180,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8844,13 +7123,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_rationale_73",
       "type": "file",
       "file": "Classify a file as 'natural_language', 'code', 'config', or 'unknown'.      Re.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 2680,
-=======
       "x": 13380,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8858,13 +7132,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_rationale_94",
       "type": "file",
       "file": "Heuristic denylist for files that must never be shipped to a third-party API..md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 2680,
-=======
       "x": 13580,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8872,13 +7141,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_rationale_57",
       "type": "file",
       "file": "Heuristic check if content looks like YAML..md",
-<<<<<<< HEAD
-      "x": 13340,
-      "y": 2680,
-=======
       "x": 13780,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8886,13 +7150,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_py_path",
       "type": "file",
       "file": "Path_1.md",
-<<<<<<< HEAD
-      "x": 13540,
-      "y": 2680,
-=======
       "x": 13980,
       "y": 2780,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8900,13 +7159,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_py_path",
       "type": "file",
       "file": "Path_2.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 2760,
-=======
       "x": 12980,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8914,13 +7168,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_rationale_70",
       "type": "file",
       "file": "Resolve the out-of-tree backup directory for a given source file.      Backups.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 2760,
-=======
       "x": 13180,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8928,13 +7177,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_rationale_119",
       "type": "file",
       "file": "Return True if the file is natural language and should be compressed..md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 2760,
-=======
       "x": 13380,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8942,13 +7186,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_rationale_123",
       "type": "file",
       "file": "Send a prompt to Claude.      Prefers the Anthropic SDK when ANTHROPIC_API_KEY.md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 2760,
-=======
       "x": 13580,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8956,13 +7195,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_rationale_29",
       "type": "file",
       "file": "Split YAML frontmatter from body. Returns (frontmatter, body).      Memory fil.md",
-<<<<<<< HEAD
-      "x": 13340,
-      "y": 2760,
-=======
       "x": 13780,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8970,13 +7204,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_rationale_107",
       "type": "file",
       "file": "Strip outer ```markdown ... ``` fence when it wraps the entire output..md",
-<<<<<<< HEAD
-      "x": 13540,
-      "y": 2760,
-=======
       "x": 13980,
       "y": 2860,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8984,13 +7213,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_main",
       "type": "file",
       "file": "__main__.py.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 2840,
-=======
       "x": 12980,
       "y": 2940,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -8998,13 +7222,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_is_code_line",
       "type": "file",
       "file": "_is_code_line().md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 2840,
-=======
       "x": 13180,
       "y": 2940,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9012,13 +7231,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_is_json_content",
       "type": "file",
       "file": "_is_json_content().md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 2840,
-=======
       "x": 13380,
       "y": 2940,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9026,13 +7240,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_is_yaml_content",
       "type": "file",
       "file": "_is_yaml_content().md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 2840,
-=======
       "x": 13580,
       "y": 2940,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9040,13 +7249,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_backup_dir_for",
       "type": "file",
       "file": "backup_dir_for().md",
-<<<<<<< HEAD
-      "x": 13340,
-      "y": 2840,
-=======
       "x": 13780,
       "y": 2940,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9054,13 +7258,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_build_compress_prompt",
       "type": "file",
       "file": "build_compress_prompt().md",
-<<<<<<< HEAD
-      "x": 13540,
-      "y": 2840,
-=======
       "x": 13980,
       "y": 2940,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9068,13 +7267,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_build_fix_prompt",
       "type": "file",
       "file": "build_fix_prompt().md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 2920,
-=======
       "x": 12980,
       "y": 3020,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9082,13 +7276,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_call_claude",
       "type": "file",
       "file": "call_claude().md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 2920,
-=======
       "x": 13180,
       "y": 3020,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9096,13 +7285,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_cli",
       "type": "file",
       "file": "cli.py.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 2920,
-=======
       "x": 13380,
       "y": 3020,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9110,13 +7294,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress",
       "type": "file",
       "file": "compress.py.md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 2920,
-=======
       "x": 13580,
       "y": 3020,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9124,13 +7303,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_compress_file",
       "type": "file",
       "file": "compress_file().md",
-<<<<<<< HEAD
-      "x": 13340,
-      "y": 2920,
-=======
       "x": 13780,
       "y": 3020,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9138,13 +7312,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect",
       "type": "file",
       "file": "detect.py.md",
-<<<<<<< HEAD
-      "x": 13540,
-      "y": 2920,
-=======
       "x": 13980,
       "y": 3020,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9152,13 +7321,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_detect_file_type",
       "type": "file",
       "file": "detect_file_type().md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 3000,
-=======
       "x": 12980,
       "y": 3100,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9166,13 +7330,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_is_sensitive_path",
       "type": "file",
       "file": "is_sensitive_path().md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 3000,
-=======
       "x": 13180,
       "y": 3100,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9180,13 +7339,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_cli_main",
       "type": "file",
       "file": "main()_1.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 3000,
-=======
       "x": 13380,
       "y": 3100,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9194,13 +7348,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_cli_print_usage",
       "type": "file",
       "file": "print_usage().md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 3000,
-=======
       "x": 13580,
       "y": 3100,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9208,13 +7357,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_detect_should_compress",
       "type": "file",
       "file": "should_compress().md",
-<<<<<<< HEAD
-      "x": 13340,
-      "y": 3000,
-=======
       "x": 13780,
       "y": 3100,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9222,13 +7366,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_split_frontmatter",
       "type": "file",
       "file": "split_frontmatter().md",
-<<<<<<< HEAD
-      "x": 13540,
-      "y": 3000,
-=======
       "x": 13980,
       "y": 3100,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9236,13 +7375,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_compress_strip_llm_wrapper",
       "type": "file",
       "file": "strip_llm_wrapper().md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 3080,
-=======
       "x": 12980,
       "y": 3180,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9453,13 +7587,8 @@
       "id": "g41",
       "type": "group",
       "label": "Next.js 16 Warning",
-<<<<<<< HEAD
-      "x": 8100,
-      "y": 3400,
-=======
       "x": 8540,
       "y": 3500,
->>>>>>> origin/main
       "width": 600,
       "height": 400,
       "color": "6"
@@ -9468,13 +7597,8 @@
       "id": "n_agents_nextjs16breakingchanges",
       "type": "file",
       "file": "Next.js 16 Breaking Changes Warning.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 3480,
-=======
       "x": 8560,
       "y": 3580,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9482,13 +7606,8 @@
       "id": "n_agents_nextjs16docsreference",
       "type": "file",
       "file": "Next.js 16 Documentation Reference.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 3480,
-=======
       "x": 8760,
       "y": 3580,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9496,13 +7615,8 @@
       "id": "g42",
       "type": "group",
       "label": "ESLint Config",
-<<<<<<< HEAD
-      "x": 9500,
-      "y": 3400,
-=======
       "x": 9940,
       "y": 3500,
->>>>>>> origin/main
       "width": 600,
       "height": 400,
       "color": "1"
@@ -9511,13 +7625,8 @@
       "id": "n_eslint_config",
       "type": "file",
       "file": "eslint.config.mjs.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 3480,
-=======
       "x": 9960,
       "y": 3580,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9525,13 +7634,8 @@
       "id": "g43",
       "type": "group",
       "label": "Next Config",
-<<<<<<< HEAD
-      "x": 10900,
-      "y": 3400,
-=======
       "x": 11340,
       "y": 3500,
->>>>>>> origin/main
       "width": 600,
       "height": 400,
       "color": "2"
@@ -9540,13 +7644,8 @@
       "id": "n_next_config",
       "type": "file",
       "file": "next.config.mjs.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 3480,
-=======
       "x": 11360,
       "y": 3580,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9554,13 +7653,8 @@
       "id": "n_next_config_nextconfig",
       "type": "file",
       "file": "nextConfig.md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 3480,
-=======
       "x": 11560,
       "y": 3580,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9568,13 +7662,8 @@
       "id": "g44",
       "type": "group",
       "label": "PostCSS Config",
-<<<<<<< HEAD
-      "x": 12520,
-      "y": 3400,
-=======
       "x": 12960,
       "y": 3500,
->>>>>>> origin/main
       "width": 600,
       "height": 400,
       "color": "3"
@@ -9583,13 +7672,8 @@
       "id": "n_postcss_config_config",
       "type": "file",
       "file": "config.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 3480,
-=======
       "x": 12980,
       "y": 3580,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -9597,13 +7681,8 @@
       "id": "n_postcss_config",
       "type": "file",
       "file": "postcss.config.mjs.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 3480,
-=======
       "x": 13180,
       "y": 3580,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10345,13 +8424,8 @@
       "id": "g50",
       "type": "group",
       "label": "Custom Bundler",
-<<<<<<< HEAD
-      "x": 8100,
-      "y": 3880,
-=======
       "x": 8540,
       "y": 3980,
->>>>>>> origin/main
       "width": 600,
       "height": 400,
       "color": "3"
@@ -10360,13 +8434,8 @@
       "id": "n_resources_templates_home_about_arcade_vault_standalone_custombundler",
       "type": "file",
       "file": "Custom Bundler Asset Unpacking System.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 3960,
-=======
       "x": 8560,
       "y": 4060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10374,13 +8443,8 @@
       "id": "g51",
       "type": "group",
       "label": "levels.js",
-<<<<<<< HEAD
-      "x": 9500,
-      "y": 3880,
-=======
       "x": 9940,
       "y": 3980,
->>>>>>> origin/main
       "width": 600,
       "height": 400,
       "color": "4"
@@ -10389,13 +8453,8 @@
       "id": "n_resources_started_games_04_arkanoid_levels_levels",
       "type": "file",
       "file": "LEVELS.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 3960,
-=======
       "x": 9960,
       "y": 4060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10403,113 +8462,8 @@
       "id": "n_resources_started_games_04_arkanoid_levels",
       "type": "file",
       "file": "levels.js.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 3960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g52",
-      "type": "group",
-      "label": "detalle.jsx",
-      "x": 10900,
-      "y": 3880,
-      "width": 880,
-      "height": 420,
-      "color": "5"
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_commands",
-      "type": "file",
-      "file": "Commands.md",
-      "x": 10920,
-      "y": 3960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_core",
-      "type": "file",
-      "file": "Core.md",
-      "x": 11120,
-      "y": 3960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_devtools",
-      "type": "file",
-      "file": "DevTools.md",
-      "x": 11320,
-      "y": 3960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_keyboard",
-      "type": "file",
-      "file": "Keyboard.md",
-      "x": 11520,
-      "y": 3960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_mouse",
-      "type": "file",
-      "file": "Mouse.md",
-      "x": 10920,
-      "y": 4040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_navigation",
-      "type": "file",
-      "file": "Navigation.md",
-      "x": 11120,
-      "y": 4040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_network",
-      "type": "file",
-      "file": "Network.md",
-      "x": 11320,
-      "y": 4040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_save_as",
-      "type": "file",
-      "file": "Save as.md",
-      "x": 11520,
-      "y": 4040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_storage",
-      "type": "file",
-      "file": "Storage.md",
-      "x": 10920,
-      "y": 4120,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_playwright_cli_skill_tabs",
-      "type": "file",
-      "file": "Tabs.md",
-      "x": 11120,
-      "y": 4120,
-=======
       "x": 10160,
       "y": 4060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10517,31 +8471,18 @@
       "id": "g55",
       "type": "group",
       "label": "accumulate-edited.ps1",
-<<<<<<< HEAD
-      "x": 12520,
-      "y": 3880,
-      "width": 600,
-      "height": 400,
-      "color": "6"
-=======
       "x": 11340,
       "y": 3980,
       "width": 600,
       "height": 400,
       "color": "5"
->>>>>>> origin/main
     },
     {
       "id": "n_claude_hooks_accumulate_edited",
       "type": "file",
       "file": "accumulate-edited.ps1.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 3960,
-=======
       "x": 11360,
       "y": 4060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10549,31 +8490,18 @@
       "id": "g56",
       "type": "group",
       "label": "clima.md",
-<<<<<<< HEAD
-      "x": 0,
-      "y": 4780,
-      "width": 600,
-      "height": 400,
-      "color": "1"
-=======
       "x": 12960,
       "y": 3980,
       "width": 600,
       "height": 400,
       "color": "6"
->>>>>>> origin/main
     },
     {
       "id": "n_resources_started_games_03_tetris_claude_commands_clima",
       "type": "file",
       "file": "clima.md",
-<<<<<<< HEAD
-      "x": 20,
-      "y": 4860,
-=======
       "x": 12980,
       "y": 4060,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10581,31 +8509,18 @@
       "id": "g58",
       "type": "group",
       "label": "._game.js",
-<<<<<<< HEAD
-      "x": 1620,
-      "y": 4780,
-      "width": 600,
-      "height": 400,
-      "color": "2"
-=======
       "x": 0,
       "y": 4880,
       "width": 600,
       "height": 400,
       "color": "1"
->>>>>>> origin/main
     },
     {
       "id": "n_lib_supabase_admin",
       "type": "file",
       "file": "admin.ts.md",
-<<<<<<< HEAD
-      "x": 1640,
-      "y": 4860,
-=======
       "x": 20,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10613,13 +8528,8 @@
       "id": "n_lib_supabase_admin_createsupabaseadminclient",
       "type": "file",
       "file": "createSupabaseAdminClient().md",
-<<<<<<< HEAD
-      "x": 1840,
-      "y": 4860,
-=======
       "x": 220,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10627,31 +8537,18 @@
       "id": "g59",
       "type": "group",
       "label": "._README.md",
-<<<<<<< HEAD
-      "x": 2800,
-      "y": 4780,
-      "width": 600,
-      "height": 400,
-      "color": "3"
-=======
       "x": 1620,
       "y": 4880,
       "width": 600,
       "height": 400,
       "color": "2"
->>>>>>> origin/main
     },
     {
       "id": "n_e2e_about_spec",
       "type": "file",
       "file": "about.spec.ts.md",
-<<<<<<< HEAD
-      "x": 2820,
-      "y": 4860,
-=======
       "x": 1640,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10659,31 +8556,18 @@
       "id": "g60",
       "type": "group",
       "label": "._CLAUDE.md",
-<<<<<<< HEAD
-      "x": 4420,
-      "y": 4780,
-      "width": 600,
-      "height": 400,
-      "color": "4"
-=======
       "x": 2800,
       "y": 4880,
       "width": 600,
       "height": 400,
       "color": "3"
->>>>>>> origin/main
     },
     {
       "id": "n_playwright_config",
       "type": "file",
       "file": "playwright.config.ts.md",
-<<<<<<< HEAD
-      "x": 4440,
-      "y": 4860,
-=======
       "x": 2820,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10691,31 +8575,18 @@
       "id": "g61",
       "type": "group",
       "label": "._clima.md",
-<<<<<<< HEAD
-      "x": 6260,
-      "y": 4780,
-      "width": 600,
-      "height": 400,
-      "color": "5"
-=======
       "x": 4640,
       "y": 4880,
       "width": 600,
       "height": 400,
       "color": "4"
->>>>>>> origin/main
     },
     {
       "id": "n_tests_e2e_asteroids_spec",
       "type": "file",
       "file": "asteroids.spec.ts.md",
-<<<<<<< HEAD
-      "x": 6280,
-      "y": 4860,
-=======
       "x": 4660,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10723,31 +8594,18 @@
       "id": "g62",
       "type": "group",
       "label": "._game.js",
-<<<<<<< HEAD
-      "x": 8100,
-      "y": 4780,
-      "width": 600,
-      "height": 400,
-      "color": "6"
-=======
       "x": 6480,
       "y": 4880,
       "width": 600,
       "height": 400,
       "color": "5"
->>>>>>> origin/main
     },
     {
       "id": "n_tests_e2e_salon_spec",
       "type": "file",
       "file": "salon.spec.ts.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 4860,
-=======
       "x": 6500,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10755,31 +8613,18 @@
       "id": "g73",
       "type": "group",
       "label": "._02-animacion-explosion-bloques.md",
-<<<<<<< HEAD
-      "x": 9500,
-      "y": 4780,
-      "width": 1100,
-      "height": 620,
-      "color": "1"
-=======
       "x": 8540,
       "y": 4880,
       "width": 1100,
       "height": 620,
       "color": "6"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_caveman_compress_readme_img_src_docs_assets_dancing_rock_svg_width_20_height_20_alt_rock_caveman_285_tokens",
       "type": "file",
       "file": "img src=....docsassetsdancing-rock.svg width=20 height=20 alt=rock Caveman (285 tokens).md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 4860,
-=======
       "x": 8560,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10787,13 +8632,8 @@
       "id": "n_agents_skills_caveman_compress_security_auth_behavior",
       "type": "file",
       "file": "Auth behavior.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 4860,
-=======
       "x": 8760,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10801,13 +8641,8 @@
       "id": "n_agents_skills_caveman_compress_readme_before_after",
       "type": "file",
       "file": "Before  After.md",
-<<<<<<< HEAD
-      "x": 9920,
-      "y": 4860,
-=======
       "x": 8960,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10815,13 +8650,8 @@
       "id": "n_agents_skills_caveman_compress_readme_benchmarks",
       "type": "file",
       "file": "Benchmarks.md",
-<<<<<<< HEAD
-      "x": 10120,
-      "y": 4860,
-=======
       "x": 9160,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10829,13 +8659,8 @@
       "id": "n_agents_skills_caveman_compress_security_file_size_limit",
       "type": "file",
       "file": "File size limit.md",
-<<<<<<< HEAD
-      "x": 10320,
-      "y": 4860,
-=======
       "x": 9360,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10843,13 +8668,8 @@
       "id": "n_agents_skills_caveman_compress_readme_how_it_work",
       "type": "file",
       "file": "How It Work.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 4940,
-=======
       "x": 8560,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10857,13 +8677,8 @@
       "id": "n_agents_skills_caveman_compress_readme_install",
       "type": "file",
       "file": "Install.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 4940,
-=======
       "x": 8760,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10871,13 +8686,8 @@
       "id": "n_agents_skills_caveman_compress_readme_part_of_caveman",
       "type": "file",
       "file": "Part of Caveman.md",
-<<<<<<< HEAD
-      "x": 9920,
-      "y": 4940,
-=======
       "x": 8960,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10885,13 +8695,8 @@
       "id": "n_agents_skills_caveman_compress_readme",
       "type": "file",
       "file": "README_2.md",
-<<<<<<< HEAD
-      "x": 10120,
-      "y": 4940,
-=======
       "x": 9160,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10899,13 +8704,8 @@
       "id": "n_agents_skills_caveman_compress_security_reporting_a_vulnerability",
       "type": "file",
       "file": "Reporting a vulnerability.md",
-<<<<<<< HEAD
-      "x": 10320,
-      "y": 4940,
-=======
       "x": 9360,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10913,13 +8713,8 @@
       "id": "n_agents_skills_caveman_compress_security",
       "type": "file",
       "file": "SECURITY_1.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 5020,
-=======
       "x": 8560,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10927,13 +8722,8 @@
       "id": "n_agents_skills_caveman_compress_readme_security",
       "type": "file",
       "file": "Security.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 5020,
-=======
       "x": 8760,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10941,13 +8731,8 @@
       "id": "n_agents_skills_caveman_compress_security_security",
       "type": "file",
       "file": "Security_2.md",
-<<<<<<< HEAD
-      "x": 9920,
-      "y": 5020,
-=======
       "x": 8960,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10955,13 +8740,8 @@
       "id": "n_agents_skills_caveman_compress_security_snyk_high_risk_rating",
       "type": "file",
       "file": "Snyk High Risk Rating.md",
-<<<<<<< HEAD
-      "x": 10120,
-      "y": 5020,
-=======
       "x": 9160,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10969,13 +8749,8 @@
       "id": "n_agents_skills_caveman_compress_readme_usage",
       "type": "file",
       "file": "Usage.md",
-<<<<<<< HEAD
-      "x": 10320,
-      "y": 5020,
-=======
       "x": 9360,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10983,13 +8758,8 @@
       "id": "n_agents_skills_caveman_compress_readme_what_is_preserved",
       "type": "file",
       "file": "What Is Preserved.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 5100,
-=======
       "x": 8560,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -10997,13 +8767,8 @@
       "id": "n_agents_skills_caveman_compress_readme_what_it_do",
       "type": "file",
       "file": "What It Do.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 5100,
-=======
       "x": 8760,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11011,13 +8776,8 @@
       "id": "n_agents_skills_caveman_compress_readme_what_files_work",
       "type": "file",
       "file": "What files work.md",
-<<<<<<< HEAD
-      "x": 9920,
-      "y": 5100,
-=======
       "x": 8960,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11025,13 +8785,8 @@
       "id": "n_agents_skills_caveman_compress_security_what_the_skill_does_not_do",
       "type": "file",
       "file": "What the skill does NOT do.md",
-<<<<<<< HEAD
-      "x": 10120,
-      "y": 5100,
-=======
       "x": 9160,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11039,13 +8794,8 @@
       "id": "n_agents_skills_caveman_compress_security_what_triggers_the_rating",
       "type": "file",
       "file": "What triggers the rating.md",
-<<<<<<< HEAD
-      "x": 10320,
-      "y": 5100,
-=======
       "x": 9360,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11053,13 +8803,8 @@
       "id": "n_agents_skills_caveman_compress_readme_why_this_matter",
       "type": "file",
       "file": "Why This Matter.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 5180,
-=======
       "x": 8560,
       "y": 5280,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11067,13 +8812,8 @@
       "id": "n_agents_skills_caveman_compress_readme_original_706_tokens",
       "type": "file",
       "file": "\ud83d\udcc4 Original (706 tokens).md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 5180,
-=======
       "x": 8760,
       "y": 5280,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11081,31 +8821,18 @@
       "id": "g75",
       "type": "group",
       "label": "format-batch.ps1",
-<<<<<<< HEAD
-      "x": 10900,
-      "y": 4780,
-      "width": 600,
-      "height": 400,
-      "color": "2"
-=======
       "x": 9940,
       "y": 4880,
       "width": 600,
       "height": 400,
       "color": "1"
->>>>>>> origin/main
     },
     {
       "id": "n_claude_hooks_format_batch",
       "type": "file",
       "file": "format-batch.ps1.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 4860,
-=======
       "x": 9960,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11113,31 +8840,18 @@
       "id": "g98",
       "type": "group",
       "label": "06-games-catalog-salon",
-<<<<<<< HEAD
-      "x": 12520,
-      "y": 4780,
-      "width": 880,
-      "height": 520,
-      "color": "3"
-=======
       "x": 11340,
       "y": 4880,
       "width": 880,
       "height": 520,
       "color": "2"
->>>>>>> origin/main
     },
     {
       "id": "n_specs_06_games_catalog_salon_06_games_catalog_salon",
       "type": "file",
       "file": "06-games-catalog-salon_1.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 4860,
-=======
       "x": 11360,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11145,13 +8859,8 @@
       "id": "n_specs_06_games_catalog_salon",
       "type": "file",
       "file": "06-games-catalog-salon.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 4860,
-=======
       "x": 11560,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11159,13 +8868,8 @@
       "id": "n_specs_06_games_catalog_salon_acceptance_criteria",
       "type": "file",
       "file": "Acceptance Criteria_2.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 4860,
-=======
       "x": 11760,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11173,13 +8877,8 @@
       "id": "n_specs_06_games_catalog_salon_data_model",
       "type": "file",
       "file": "Data Model_2.md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 4860,
-=======
       "x": 11960,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11187,13 +8886,8 @@
       "id": "n_specs_06_games_catalog_salon_decisions_taken_discarded",
       "type": "file",
       "file": "Decisions Taken & Discarded_1.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 4940,
-=======
       "x": 11360,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11201,13 +8895,8 @@
       "id": "n_specs_06_games_catalog_salon_identified_risks",
       "type": "file",
       "file": "Identified Risks_2.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 4940,
-=======
       "x": 11560,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11215,13 +8904,8 @@
       "id": "n_specs_06_games_catalog_salon_implementation_plan",
       "type": "file",
       "file": "Implementation Plan_2.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 4940,
-=======
       "x": 11760,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11229,13 +8913,8 @@
       "id": "n_specs_06_games_catalog_salon_phase_1_supabase_migration_db",
       "type": "file",
       "file": "Phase 1 Supabase Migration (DB).md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 4940,
-=======
       "x": 11960,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11243,13 +8922,8 @@
       "id": "n_specs_06_games_catalog_salon_phase_2_data_layer_app_data_games_ts",
       "type": "file",
       "file": "Phase 2 Data Layer (`appdatagames.ts`).md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 5020,
-=======
       "x": 11360,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11257,13 +8931,8 @@
       "id": "n_specs_06_games_catalog_salon_phase_3_salon_renovation",
       "type": "file",
       "file": "Phase 3 `salon` Renovation.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 5020,
-=======
       "x": 11560,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11271,13 +8940,8 @@
       "id": "n_specs_06_games_catalog_salon_phase_4_routing_verification",
       "type": "file",
       "file": "Phase 4 Routing Verification.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 5020,
-=======
       "x": 11760,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11285,13 +8949,8 @@
       "id": "n_specs_06_games_catalog_salon_phase_5_tests",
       "type": "file",
       "file": "Phase 5 Tests.md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 5020,
-=======
       "x": 11960,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11299,13 +8958,8 @@
       "id": "n_specs_06_games_catalog_salon_scope",
       "type": "file",
       "file": "Scope_2.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 5100,
-=======
       "x": 11360,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11313,13 +8967,8 @@
       "id": "n_specs_06_games_catalog_salon_seed_data_8_rows_mirror_of_app_data_games_ts",
       "type": "file",
       "file": "Seed data (8 rows, mirror of `appdatagames.ts`).md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 5100,
-=======
       "x": 11560,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11327,13 +8976,8 @@
       "id": "n_specs_06_games_catalog_salon_supabase_games_table",
       "type": "file",
       "file": "Supabase `games` table.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 5100,
-=======
       "x": 11760,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11341,13 +8985,8 @@
       "id": "n_specs_06_games_catalog_salon_typescript_types_extend_existing_app_data_types_ts",
       "type": "file",
       "file": "TypeScript types (extend existing `appdatatypes.ts`).md",
-<<<<<<< HEAD
-      "x": 13140,
-      "y": 5100,
-=======
       "x": 11960,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11355,31 +8994,18 @@
       "id": "g102",
       "type": "group",
       "label": "SKILL.md",
-<<<<<<< HEAD
-      "x": 0,
-      "y": 5480,
-      "width": 880,
-      "height": 520,
-      "color": "4"
-=======
       "x": 12960,
       "y": 4880,
       "width": 880,
       "height": 520,
       "color": "3"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_cavecrew_skill_auto_clarity_inherited",
       "type": "file",
       "file": "Auto-clarity (inherited).md",
-<<<<<<< HEAD
-      "x": 20,
-      "y": 5560,
-=======
       "x": 12980,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11387,13 +9013,8 @@
       "id": "n_agents_skills_cavecrew_skill_chaining_patterns",
       "type": "file",
       "file": "Chaining patterns.md",
-<<<<<<< HEAD
-      "x": 220,
-      "y": 5560,
-=======
       "x": 13180,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11401,13 +9022,8 @@
       "id": "n_agents_skills_cavecrew_readme_example_chaining",
       "type": "file",
       "file": "Example chaining.md",
-<<<<<<< HEAD
-      "x": 420,
-      "y": 5560,
-=======
       "x": 13380,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11415,13 +9031,8 @@
       "id": "n_agents_skills_cavecrew_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke.md",
-<<<<<<< HEAD
-      "x": 620,
-      "y": 5560,
-=======
       "x": 13580,
       "y": 4960,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11429,13 +9040,8 @@
       "id": "n_agents_skills_cavecrew_readme_model_overrides",
       "type": "file",
       "file": "Model overrides.md",
-<<<<<<< HEAD
-      "x": 20,
-      "y": 5640,
-=======
       "x": 12980,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11443,13 +9049,8 @@
       "id": "n_agents_skills_cavecrew_skill_output_contracts",
       "type": "file",
       "file": "Output contracts.md",
-<<<<<<< HEAD
-      "x": 220,
-      "y": 5640,
-=======
       "x": 13180,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11457,13 +9058,8 @@
       "id": "n_agents_skills_cavecrew_readme",
       "type": "file",
       "file": "README.md",
-<<<<<<< HEAD
-      "x": 420,
-      "y": 5640,
-=======
       "x": 13380,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11471,13 +9067,8 @@
       "id": "n_agents_skills_cavecrew_skill",
       "type": "file",
       "file": "SKILL.md",
-<<<<<<< HEAD
-      "x": 620,
-      "y": 5640,
-=======
       "x": 13580,
       "y": 5040,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11485,13 +9076,8 @@
       "id": "n_agents_skills_cavecrew_readme_see_also",
       "type": "file",
       "file": "See also.md",
-<<<<<<< HEAD
-      "x": 20,
-      "y": 5720,
-=======
       "x": 12980,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11499,13 +9085,8 @@
       "id": "n_agents_skills_cavecrew_skill_what_not_to_do",
       "type": "file",
       "file": "What NOT to do.md",
-<<<<<<< HEAD
-      "x": 220,
-      "y": 5720,
-=======
       "x": 13180,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11513,13 +9094,8 @@
       "id": "n_agents_skills_cavecrew_readme_what_it_does",
       "type": "file",
       "file": "What it does.md",
-<<<<<<< HEAD
-      "x": 420,
-      "y": 5720,
-=======
       "x": 13380,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11527,13 +9103,8 @@
       "id": "n_agents_skills_cavecrew_skill_when_to_use_cavecrew_vs_alternatives",
       "type": "file",
       "file": "When to use cavecrew vs alternatives.md",
-<<<<<<< HEAD
-      "x": 620,
-      "y": 5720,
-=======
       "x": 13580,
       "y": 5120,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11541,13 +9112,8 @@
       "id": "n_agents_skills_cavecrew_skill_why_this_exists_the_real_win",
       "type": "file",
       "file": "Why this exists (the real win).md",
-<<<<<<< HEAD
-      "x": 20,
-      "y": 5800,
-=======
       "x": 12980,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11555,13 +9121,8 @@
       "id": "n_agents_skills_cavecrew_readme_cavecrew",
       "type": "file",
       "file": "cavecrew.md",
-<<<<<<< HEAD
-      "x": 220,
-      "y": 5800,
-=======
       "x": 13180,
       "y": 5200,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11569,31 +9130,18 @@
       "id": "g103",
       "type": "group",
       "label": "Caveman Help",
-<<<<<<< HEAD
-      "x": 1620,
-      "y": 5480,
-      "width": 880,
-      "height": 520,
-      "color": "5"
-=======
       "x": 0,
       "y": 5580,
       "width": 880,
       "height": 520,
       "color": "4"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_caveman_help_skill_caveman_help",
       "type": "file",
       "file": "Caveman Help.md",
-<<<<<<< HEAD
-      "x": 1640,
-      "y": 5560,
-=======
       "x": 20,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11601,13 +9149,8 @@
       "id": "n_agents_skills_caveman_help_skill_configure_default_mode",
       "type": "file",
       "file": "Configure Default Mode.md",
-<<<<<<< HEAD
-      "x": 1840,
-      "y": 5560,
-=======
       "x": 220,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11615,13 +9158,8 @@
       "id": "n_agents_skills_caveman_help_skill_deactivate",
       "type": "file",
       "file": "Deactivate.md",
-<<<<<<< HEAD
-      "x": 2040,
-      "y": 5560,
-=======
       "x": 420,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11629,13 +9167,8 @@
       "id": "n_agents_skills_caveman_help_readme_example_output",
       "type": "file",
       "file": "Example output_1.md",
-<<<<<<< HEAD
-      "x": 2240,
-      "y": 5560,
-=======
       "x": 620,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11643,13 +9176,8 @@
       "id": "n_agents_skills_caveman_help_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_2.md",
-<<<<<<< HEAD
-      "x": 1640,
-      "y": 5640,
-=======
       "x": 20,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11657,13 +9185,8 @@
       "id": "n_agents_skills_caveman_help_skill_language",
       "type": "file",
       "file": "Language.md",
-<<<<<<< HEAD
-      "x": 1840,
-      "y": 5640,
-=======
       "x": 220,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11671,13 +9194,8 @@
       "id": "n_agents_skills_caveman_help_skill_modes",
       "type": "file",
       "file": "Modes.md",
-<<<<<<< HEAD
-      "x": 2040,
-      "y": 5640,
-=======
       "x": 420,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11685,13 +9203,8 @@
       "id": "n_agents_skills_caveman_help_skill_more",
       "type": "file",
       "file": "More.md",
-<<<<<<< HEAD
-      "x": 2240,
-      "y": 5640,
-=======
       "x": 620,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11699,13 +9212,8 @@
       "id": "n_agents_skills_caveman_help_readme",
       "type": "file",
       "file": "README_3.md",
-<<<<<<< HEAD
-      "x": 1640,
-      "y": 5720,
-=======
       "x": 20,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11713,13 +9221,8 @@
       "id": "n_agents_skills_caveman_help_skill",
       "type": "file",
       "file": "SKILL_3.md",
-<<<<<<< HEAD
-      "x": 1840,
-      "y": 5720,
-=======
       "x": 220,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11727,13 +9230,8 @@
       "id": "n_agents_skills_caveman_help_readme_see_also",
       "type": "file",
       "file": "See also_2.md",
-<<<<<<< HEAD
-      "x": 2040,
-      "y": 5720,
-=======
       "x": 420,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11741,13 +9239,8 @@
       "id": "n_agents_skills_caveman_help_skill_skills",
       "type": "file",
       "file": "Skills.md",
-<<<<<<< HEAD
-      "x": 2240,
-      "y": 5720,
-=======
       "x": 620,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11755,13 +9248,8 @@
       "id": "n_agents_skills_caveman_help_readme_what_it_does",
       "type": "file",
       "file": "What it does_2.md",
-<<<<<<< HEAD
-      "x": 1640,
-      "y": 5800,
-=======
       "x": 20,
       "y": 5900,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11769,13 +9257,8 @@
       "id": "n_agents_skills_caveman_help_readme_caveman_help",
       "type": "file",
       "file": "caveman-help.md",
-<<<<<<< HEAD
-      "x": 1840,
-      "y": 5800,
-=======
       "x": 220,
       "y": 5900,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11783,31 +9266,18 @@
       "id": "g109",
       "type": "group",
       "label": "Mermaid AI Skills",
-<<<<<<< HEAD
-      "x": 2800,
-      "y": 5480,
-      "width": 880,
-      "height": 520,
-      "color": "6"
-=======
       "x": 1620,
       "y": 5580,
       "width": 880,
       "height": 520,
       "color": "5"
->>>>>>> origin/main
     },
     {
       "id": "n_github_instructions_mermaid_instructions_mermaid_chart_slash_commands",
       "type": "file",
       "file": "@mermaid-chart slash commands.md",
-<<<<<<< HEAD
-      "x": 2820,
-      "y": 5560,
-=======
       "x": 1640,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11815,13 +9285,8 @@
       "id": "n_github_instructions_mermaid_instructions_diagram_editing_preview",
       "type": "file",
       "file": "Diagram editing & preview.md",
-<<<<<<< HEAD
-      "x": 3020,
-      "y": 5560,
-=======
       "x": 1840,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11829,13 +9294,8 @@
       "id": "n_github_instructions_mermaid_instructions_docs",
       "type": "file",
       "file": "Docs.md",
-<<<<<<< HEAD
-      "x": 3220,
-      "y": 5560,
-=======
       "x": 2040,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11843,13 +9303,8 @@
       "id": "n_github_instructions_mermaid_instructions_generate_diagrams_github_copilot_required",
       "type": "file",
       "file": "Generate diagrams (GitHub Copilot required).md",
-<<<<<<< HEAD
-      "x": 3420,
-      "y": 5560,
-=======
       "x": 2240,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11857,13 +9312,8 @@
       "id": "n_github_instructions_mermaid_instructions_install_update_this_pack",
       "type": "file",
       "file": "Install  update this pack.md",
-<<<<<<< HEAD
-      "x": 2820,
-      "y": 5640,
-=======
       "x": 1640,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11871,13 +9321,8 @@
       "id": "n_github_instructions_mermaid_instructions_lm_tools_call_these_for_every_diagram_interaction",
       "type": "file",
       "file": "LM Tools \u2014 call these for every diagram interaction.md",
-<<<<<<< HEAD
-      "x": 3020,
-      "y": 5640,
-=======
       "x": 1840,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11885,13 +9330,8 @@
       "id": "n_github_instructions_mermaid_instructions_mermaid_ai_skills",
       "type": "file",
       "file": "Mermaid AI Skills.md",
-<<<<<<< HEAD
-      "x": 3220,
-      "y": 5640,
-=======
       "x": 2040,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11899,13 +9339,8 @@
       "id": "n_github_instructions_mermaid_instructions_mermaid_chart_cloud",
       "type": "file",
       "file": "Mermaid Chart cloud.md",
-<<<<<<< HEAD
-      "x": 3420,
-      "y": 5640,
-=======
       "x": 2240,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11913,13 +9348,8 @@
       "id": "n_github_instructions_mermaid_instructions_review_mermaid_sync",
       "type": "file",
       "file": "Review Mermaid Sync.md",
-<<<<<<< HEAD
-      "x": 2820,
-      "y": 5720,
-=======
       "x": 1640,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11927,13 +9357,8 @@
       "id": "n_github_instructions_mermaid_instructions_rules",
       "type": "file",
       "file": "Rules_3.md",
-<<<<<<< HEAD
-      "x": 3020,
-      "y": 5720,
-=======
       "x": 1840,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11941,13 +9366,8 @@
       "id": "n_github_instructions_mermaid_instructions_vs_code_commands",
       "type": "file",
       "file": "VS Code Commands.md",
-<<<<<<< HEAD
-      "x": 3220,
-      "y": 5720,
-=======
       "x": 2040,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11955,13 +9375,8 @@
       "id": "n_github_instructions_mermaid_instructions_workflow",
       "type": "file",
       "file": "Workflow_2.md",
-<<<<<<< HEAD
-      "x": 3420,
-      "y": 5720,
-=======
       "x": 2240,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11969,13 +9384,8 @@
       "id": "n_github_instructions_mermaid_instructions",
       "type": "file",
       "file": "mermaid.instructions.md",
-<<<<<<< HEAD
-      "x": 2820,
-      "y": 5800,
-=======
       "x": 1640,
       "y": 5900,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -11983,31 +9393,18 @@
       "id": "g111",
       "type": "group",
       "label": "Caveman Compress",
-<<<<<<< HEAD
-      "x": 4420,
-      "y": 5480,
-      "width": 880,
-      "height": 420,
-      "color": "1"
-=======
       "x": 2800,
       "y": 5580,
       "width": 880,
       "height": 420,
       "color": "6"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_caveman_compress_skill_boundaries",
       "type": "file",
       "file": "Boundaries_1.md",
-<<<<<<< HEAD
-      "x": 4440,
-      "y": 5560,
-=======
       "x": 2820,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12015,13 +9412,8 @@
       "id": "n_agents_skills_caveman_compress_skill_caveman_compress",
       "type": "file",
       "file": "Caveman Compress.md",
-<<<<<<< HEAD
-      "x": 4640,
-      "y": 5560,
-=======
       "x": 3020,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12029,13 +9421,8 @@
       "id": "n_agents_skills_caveman_compress_skill_compress",
       "type": "file",
       "file": "Compress.md",
-<<<<<<< HEAD
-      "x": 4840,
-      "y": 5560,
-=======
       "x": 3220,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12043,13 +9430,8 @@
       "id": "n_agents_skills_caveman_compress_skill_compression_rules",
       "type": "file",
       "file": "Compression Rules.md",
-<<<<<<< HEAD
-      "x": 5040,
-      "y": 5560,
-=======
       "x": 3420,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12057,13 +9439,8 @@
       "id": "n_agents_skills_caveman_compress_skill_pattern",
       "type": "file",
       "file": "Pattern.md",
-<<<<<<< HEAD
-      "x": 4440,
-      "y": 5640,
-=======
       "x": 2820,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12071,13 +9448,8 @@
       "id": "n_agents_skills_caveman_compress_skill_preserve_exactly_never_modify",
       "type": "file",
       "file": "Preserve EXACTLY (never modify).md",
-<<<<<<< HEAD
-      "x": 4640,
-      "y": 5640,
-=======
       "x": 3020,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12085,13 +9457,8 @@
       "id": "n_agents_skills_caveman_compress_skill_preserve_structure",
       "type": "file",
       "file": "Preserve Structure.md",
-<<<<<<< HEAD
-      "x": 4840,
-      "y": 5640,
-=======
       "x": 3220,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12099,13 +9466,8 @@
       "id": "n_agents_skills_caveman_compress_skill_process",
       "type": "file",
       "file": "Process.md",
-<<<<<<< HEAD
-      "x": 5040,
-      "y": 5640,
-=======
       "x": 3420,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12113,13 +9475,8 @@
       "id": "n_agents_skills_caveman_compress_skill_purpose",
       "type": "file",
       "file": "Purpose.md",
-<<<<<<< HEAD
-      "x": 4440,
-      "y": 5720,
-=======
       "x": 2820,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12127,13 +9484,8 @@
       "id": "n_agents_skills_caveman_compress_skill_remove",
       "type": "file",
       "file": "Remove.md",
-<<<<<<< HEAD
-      "x": 4640,
-      "y": 5720,
-=======
       "x": 3020,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12141,13 +9493,8 @@
       "id": "n_agents_skills_caveman_compress_skill",
       "type": "file",
       "file": "SKILL_2.md",
-<<<<<<< HEAD
-      "x": 4840,
-      "y": 5720,
-=======
       "x": 3220,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12155,13 +9502,8 @@
       "id": "n_agents_skills_caveman_compress_skill_trigger",
       "type": "file",
       "file": "Trigger.md",
-<<<<<<< HEAD
-      "x": 5040,
-      "y": 5720,
-=======
       "x": 3420,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12169,31 +9511,18 @@
       "id": "g112",
       "type": "group",
       "label": "SKILL.md",
-<<<<<<< HEAD
-      "x": 6260,
-      "y": 5480,
-      "width": 880,
-      "height": 420,
-      "color": "2"
-=======
       "x": 4640,
       "y": 5580,
       "width": 880,
       "height": 420,
       "color": "1"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_caveman_skill_auto_clarity",
       "type": "file",
       "file": "Auto-Clarity_2.md",
-<<<<<<< HEAD
-      "x": 6280,
-      "y": 5560,
-=======
       "x": 4660,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12201,13 +9530,8 @@
       "id": "n_agents_skills_caveman_skill_boundaries",
       "type": "file",
       "file": "Boundaries_3.md",
-<<<<<<< HEAD
-      "x": 6480,
-      "y": 5560,
-=======
       "x": 4860,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12215,13 +9539,8 @@
       "id": "n_agents_skills_caveman_readme_example_output",
       "type": "file",
       "file": "Example output_4.md",
-<<<<<<< HEAD
-      "x": 6680,
-      "y": 5560,
-=======
       "x": 5060,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12229,13 +9548,8 @@
       "id": "n_agents_skills_caveman_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_5.md",
-<<<<<<< HEAD
-      "x": 6880,
-      "y": 5560,
-=======
       "x": 5260,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12243,13 +9557,8 @@
       "id": "n_agents_skills_caveman_skill_intensity",
       "type": "file",
       "file": "Intensity.md",
-<<<<<<< HEAD
-      "x": 6280,
-      "y": 5640,
-=======
       "x": 4660,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12257,13 +9566,8 @@
       "id": "n_agents_skills_caveman_skill_persistence",
       "type": "file",
       "file": "Persistence.md",
-<<<<<<< HEAD
-      "x": 6480,
-      "y": 5640,
-=======
       "x": 4860,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12271,13 +9575,8 @@
       "id": "n_agents_skills_caveman_readme",
       "type": "file",
       "file": "README_6.md",
-<<<<<<< HEAD
-      "x": 6680,
-      "y": 5640,
-=======
       "x": 5060,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12285,13 +9584,8 @@
       "id": "n_agents_skills_caveman_skill_rules",
       "type": "file",
       "file": "Rules_2.md",
-<<<<<<< HEAD
-      "x": 6880,
-      "y": 5640,
-=======
       "x": 5260,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12299,13 +9593,8 @@
       "id": "n_agents_skills_caveman_skill",
       "type": "file",
       "file": "SKILL_6.md",
-<<<<<<< HEAD
-      "x": 6280,
-      "y": 5720,
-=======
       "x": 4660,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12313,13 +9602,8 @@
       "id": "n_agents_skills_caveman_readme_see_also",
       "type": "file",
       "file": "See also_5.md",
-<<<<<<< HEAD
-      "x": 6480,
-      "y": 5720,
-=======
       "x": 4860,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12327,13 +9611,8 @@
       "id": "n_agents_skills_caveman_readme_what_it_does",
       "type": "file",
       "file": "What it does_5.md",
-<<<<<<< HEAD
-      "x": 6680,
-      "y": 5720,
-=======
       "x": 5060,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12341,13 +9620,8 @@
       "id": "n_agents_skills_caveman_readme_caveman",
       "type": "file",
       "file": "caveman.md",
-<<<<<<< HEAD
-      "x": 6880,
-      "y": 5720,
-=======
       "x": 5260,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12355,31 +9629,18 @@
       "id": "g116",
       "type": "group",
       "label": "caveman-commit",
-<<<<<<< HEAD
-      "x": 8100,
-      "y": 5480,
-      "width": 880,
-      "height": 420,
-      "color": "3"
-=======
       "x": 6480,
       "y": 5580,
       "width": 880,
       "height": 420,
       "color": "2"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_caveman_commit_skill_auto_clarity",
       "type": "file",
       "file": "Auto-Clarity.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 5560,
-=======
       "x": 6500,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12387,13 +9648,8 @@
       "id": "n_agents_skills_caveman_commit_skill_boundaries",
       "type": "file",
       "file": "Boundaries.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 5560,
-=======
       "x": 6700,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12401,13 +9657,8 @@
       "id": "n_agents_skills_caveman_commit_readme_example_output",
       "type": "file",
       "file": "Example output.md",
-<<<<<<< HEAD
-      "x": 8520,
-      "y": 5560,
-=======
       "x": 6900,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12415,13 +9666,8 @@
       "id": "n_agents_skills_caveman_commit_skill_examples",
       "type": "file",
       "file": "Examples.md",
-<<<<<<< HEAD
-      "x": 8720,
-      "y": 5560,
-=======
       "x": 7100,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12429,13 +9675,8 @@
       "id": "n_agents_skills_caveman_commit_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_1.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 5640,
-=======
       "x": 6500,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12443,13 +9684,8 @@
       "id": "n_agents_skills_caveman_commit_readme",
       "type": "file",
       "file": "README_1.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 5640,
-=======
       "x": 6700,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12457,13 +9693,8 @@
       "id": "n_agents_skills_caveman_commit_skill_rules",
       "type": "file",
       "file": "Rules.md",
-<<<<<<< HEAD
-      "x": 8520,
-      "y": 5640,
-=======
       "x": 6900,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12471,13 +9702,8 @@
       "id": "n_agents_skills_caveman_commit_skill",
       "type": "file",
       "file": "SKILL_1.md",
-<<<<<<< HEAD
-      "x": 8720,
-      "y": 5640,
-=======
       "x": 7100,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12485,13 +9711,8 @@
       "id": "n_agents_skills_caveman_commit_readme_see_also",
       "type": "file",
       "file": "See also_1.md",
-<<<<<<< HEAD
-      "x": 8120,
-      "y": 5720,
-=======
       "x": 6500,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12499,13 +9720,8 @@
       "id": "n_agents_skills_caveman_commit_readme_what_it_does",
       "type": "file",
       "file": "What it does_1.md",
-<<<<<<< HEAD
-      "x": 8320,
-      "y": 5720,
-=======
       "x": 6700,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12513,13 +9729,8 @@
       "id": "n_agents_skills_caveman_commit_readme_caveman_commit",
       "type": "file",
       "file": "caveman-commit.md",
-<<<<<<< HEAD
-      "x": 8520,
-      "y": 5720,
-=======
       "x": 6900,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12527,31 +9738,18 @@
       "id": "g117",
       "type": "group",
       "label": "caveman-review",
-<<<<<<< HEAD
-      "x": 9500,
-      "y": 5480,
-      "width": 880,
-      "height": 420,
-      "color": "4"
-=======
       "x": 8540,
       "y": 5580,
       "width": 880,
       "height": 420,
       "color": "3"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_caveman_review_skill_auto_clarity",
       "type": "file",
       "file": "Auto-Clarity_1.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 5560,
-=======
       "x": 8560,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12559,13 +9757,8 @@
       "id": "n_agents_skills_caveman_review_skill_boundaries",
       "type": "file",
       "file": "Boundaries_2.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 5560,
-=======
       "x": 8760,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12573,13 +9766,8 @@
       "id": "n_agents_skills_caveman_review_readme_example_output",
       "type": "file",
       "file": "Example output_2.md",
-<<<<<<< HEAD
-      "x": 9920,
-      "y": 5560,
-=======
       "x": 8960,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12587,13 +9775,8 @@
       "id": "n_agents_skills_caveman_review_skill_examples",
       "type": "file",
       "file": "Examples_1.md",
-<<<<<<< HEAD
-      "x": 10120,
-      "y": 5560,
-=======
       "x": 9160,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12601,13 +9784,8 @@
       "id": "n_agents_skills_caveman_review_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_3.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 5640,
-=======
       "x": 8560,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12615,13 +9793,8 @@
       "id": "n_agents_skills_caveman_review_readme",
       "type": "file",
       "file": "README_4.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 5640,
-=======
       "x": 8760,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12629,13 +9802,8 @@
       "id": "n_agents_skills_caveman_review_skill_rules",
       "type": "file",
       "file": "Rules_1.md",
-<<<<<<< HEAD
-      "x": 9920,
-      "y": 5640,
-=======
       "x": 8960,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12643,13 +9811,8 @@
       "id": "n_agents_skills_caveman_review_skill",
       "type": "file",
       "file": "SKILL_4.md",
-<<<<<<< HEAD
-      "x": 10120,
-      "y": 5640,
-=======
       "x": 9160,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12657,13 +9820,8 @@
       "id": "n_agents_skills_caveman_review_readme_see_also",
       "type": "file",
       "file": "See also_3.md",
-<<<<<<< HEAD
-      "x": 9520,
-      "y": 5720,
-=======
       "x": 8560,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12671,13 +9829,8 @@
       "id": "n_agents_skills_caveman_review_readme_what_it_does",
       "type": "file",
       "file": "What it does_3.md",
-<<<<<<< HEAD
-      "x": 9720,
-      "y": 5720,
-=======
       "x": 8760,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12685,13 +9838,8 @@
       "id": "n_agents_skills_caveman_review_readme_caveman_review",
       "type": "file",
       "file": "caveman-review.md",
-<<<<<<< HEAD
-      "x": 9920,
-      "y": 5720,
-=======
       "x": 8960,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12699,31 +9847,18 @@
       "id": "g134",
       "type": "group",
       "label": "SPEC 04 \u2014 Supabase: foundation y persistencia de puntuaciones",
-<<<<<<< HEAD
-      "x": 10900,
-      "y": 5480,
-      "width": 660,
-      "height": 420,
-      "color": "5"
-=======
       "x": 9940,
       "y": 5580,
       "width": 660,
       "height": 420,
       "color": "4"
->>>>>>> origin/main
     },
     {
       "id": "n_specs_04_supabase_scores_foundation",
       "type": "file",
       "file": "04-supabase-scores-foundation.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 5560,
-=======
       "x": 9960,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12731,13 +9866,8 @@
       "id": "n_specs_04_supabase_scores_foundation_acceptance_criteria",
       "type": "file",
       "file": "Acceptance criteria.md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 5560,
-=======
       "x": 10160,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12745,13 +9875,8 @@
       "id": "n_specs_04_supabase_scores_foundation_data_model",
       "type": "file",
       "file": "Data model.md",
-<<<<<<< HEAD
-      "x": 11320,
-      "y": 5560,
-=======
       "x": 10360,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12759,13 +9884,8 @@
       "id": "n_specs_04_supabase_scores_foundation_decisiones_tomadas_y_descartadas",
       "type": "file",
       "file": "Decisiones tomadas y descartadas_3.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 5640,
-=======
       "x": 9960,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12773,13 +9893,8 @@
       "id": "n_specs_04_supabase_scores_foundation_identified_risks",
       "type": "file",
       "file": "Identified risks.md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 5640,
-=======
       "x": 10160,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12787,13 +9902,8 @@
       "id": "n_specs_04_supabase_scores_foundation_implementation_plan",
       "type": "file",
       "file": "Implementation plan.md",
-<<<<<<< HEAD
-      "x": 11320,
-      "y": 5640,
-=======
       "x": 10360,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12801,13 +9911,8 @@
       "id": "n_specs_04_supabase_scores_foundation_spec_04_supabase_foundation_y_persistencia_de_puntuaciones",
       "type": "file",
       "file": "SPEC 04 \u2014 Supabase foundation y persistencia de puntuaciones.md",
-<<<<<<< HEAD
-      "x": 10920,
-      "y": 5720,
-=======
       "x": 9960,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12815,13 +9920,8 @@
       "id": "n_specs_04_supabase_scores_foundation_scope",
       "type": "file",
       "file": "Scope.md",
-<<<<<<< HEAD
-      "x": 11120,
-      "y": 5720,
-=======
       "x": 10160,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12829,31 +9929,18 @@
       "id": "g135",
       "type": "group",
       "label": "05-asteroids-game",
-<<<<<<< HEAD
-      "x": 12520,
-      "y": 5480,
-      "width": 660,
-      "height": 420,
-      "color": "6"
-=======
       "x": 11340,
       "y": 5580,
       "width": 660,
       "height": 420,
       "color": "5"
->>>>>>> origin/main
     },
     {
       "id": "n_specs_05_asteroids_game_05_asteroids_game",
       "type": "file",
       "file": "05-asteroids-game_1.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 5560,
-=======
       "x": 11360,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12861,13 +9948,8 @@
       "id": "n_specs_05_asteroids_game",
       "type": "file",
       "file": "05-asteroids-game.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 5560,
-=======
       "x": 11560,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12875,13 +9957,8 @@
       "id": "n_specs_05_asteroids_game_acceptance_criteria",
       "type": "file",
       "file": "Acceptance Criteria_1.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 5560,
-=======
       "x": 11760,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12889,13 +9966,8 @@
       "id": "n_specs_05_asteroids_game_data_model",
       "type": "file",
       "file": "Data Model_1.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 5640,
-=======
       "x": 11360,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12903,13 +9975,8 @@
       "id": "n_specs_05_asteroids_game_decisions_taken_discarded",
       "type": "file",
       "file": "Decisions Taken & Discarded.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 5640,
-=======
       "x": 11560,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12917,13 +9984,8 @@
       "id": "n_specs_05_asteroids_game_identified_risks",
       "type": "file",
       "file": "Identified Risks_1.md",
-<<<<<<< HEAD
-      "x": 12940,
-      "y": 5640,
-=======
       "x": 11760,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12931,13 +9993,8 @@
       "id": "n_specs_05_asteroids_game_implementation_plan",
       "type": "file",
       "file": "Implementation Plan_1.md",
-<<<<<<< HEAD
-      "x": 12540,
-      "y": 5720,
-=======
       "x": 11360,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12945,13 +10002,8 @@
       "id": "n_specs_05_asteroids_game_scope",
       "type": "file",
       "file": "Scope_1.md",
-<<<<<<< HEAD
-      "x": 12740,
-      "y": 5720,
-=======
       "x": 11560,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12959,31 +10011,18 @@
       "id": "g136",
       "type": "group",
       "label": "caveman-stats",
-<<<<<<< HEAD
-      "x": 0,
-      "y": 6080,
-      "width": 660,
-      "height": 420,
-      "color": "1"
-=======
       "x": 12960,
       "y": 5580,
       "width": 660,
       "height": 420,
       "color": "6"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_caveman_stats_readme_example_output",
       "type": "file",
       "file": "Example output_3.md",
-<<<<<<< HEAD
-      "x": 20,
-      "y": 6160,
-=======
       "x": 12980,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -12991,13 +10030,8 @@
       "id": "n_agents_skills_caveman_stats_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_4.md",
-<<<<<<< HEAD
-      "x": 220,
-      "y": 6160,
-=======
       "x": 13180,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13005,13 +10039,8 @@
       "id": "n_agents_skills_caveman_stats_readme",
       "type": "file",
       "file": "README_5.md",
-<<<<<<< HEAD
-      "x": 420,
-      "y": 6160,
-=======
       "x": 13380,
       "y": 5660,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13019,13 +10048,8 @@
       "id": "n_agents_skills_caveman_stats_skill",
       "type": "file",
       "file": "SKILL_5.md",
-<<<<<<< HEAD
-      "x": 20,
-      "y": 6240,
-=======
       "x": 12980,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13033,13 +10057,8 @@
       "id": "n_agents_skills_caveman_stats_readme_see_also",
       "type": "file",
       "file": "See also_4.md",
-<<<<<<< HEAD
-      "x": 220,
-      "y": 6240,
-=======
       "x": 13180,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13047,13 +10066,8 @@
       "id": "n_agents_skills_caveman_stats_readme_what_it_does",
       "type": "file",
       "file": "What it does_4.md",
-<<<<<<< HEAD
-      "x": 420,
-      "y": 6240,
-=======
       "x": 13380,
       "y": 5740,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13061,13 +10075,8 @@
       "id": "n_agents_skills_caveman_stats_readme_caveman_stats",
       "type": "file",
       "file": "caveman-stats.md",
-<<<<<<< HEAD
-      "x": 20,
-      "y": 6320,
-=======
       "x": 12980,
       "y": 5820,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13075,31 +10084,18 @@
       "id": "g178",
       "type": "group",
       "label": "SKILL.md",
-<<<<<<< HEAD
-      "x": 1620,
-      "y": 6080,
-      "width": 600,
-      "height": 400,
-      "color": "2"
-=======
       "x": 0,
       "y": 6180,
       "width": 600,
       "height": 400,
       "color": "1"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_consult_graph_skill_boundaries",
       "type": "file",
       "file": "Boundaries_4.md",
-<<<<<<< HEAD
-      "x": 1640,
-      "y": 6160,
-=======
       "x": 20,
       "y": 6260,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13107,13 +10103,8 @@
       "id": "n_agents_skills_consult_graph_skill_refresh_policy",
       "type": "file",
       "file": "Refresh policy.md",
-<<<<<<< HEAD
-      "x": 1840,
-      "y": 6160,
-=======
       "x": 220,
       "y": 6260,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13121,13 +10112,8 @@
       "id": "n_agents_skills_consult_graph_skill",
       "type": "file",
       "file": "SKILL_7.md",
-<<<<<<< HEAD
-      "x": 1640,
-      "y": 6240,
-=======
       "x": 20,
       "y": 6340,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13135,13 +10121,8 @@
       "id": "n_agents_skills_consult_graph_skill_workflow",
       "type": "file",
       "file": "Workflow.md",
-<<<<<<< HEAD
-      "x": 1840,
-      "y": 6240,
-=======
       "x": 220,
       "y": 6340,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13149,31 +10130,18 @@
       "id": "g179",
       "type": "group",
       "label": "SKILL.md",
-<<<<<<< HEAD
-      "x": 2800,
-      "y": 6080,
-      "width": 600,
-      "height": 400,
-      "color": "3"
-=======
       "x": 1620,
       "y": 6180,
       "width": 600,
       "height": 400,
       "color": "2"
->>>>>>> origin/main
     },
     {
       "id": "n_claude_skills_consult_graph_skill_boundaries",
       "type": "file",
       "file": "Boundaries_5.md",
-<<<<<<< HEAD
-      "x": 2820,
-      "y": 6160,
-=======
       "x": 1640,
       "y": 6260,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13181,13 +10149,8 @@
       "id": "n_claude_skills_consult_graph_skill_refresh_policy",
       "type": "file",
       "file": "Refresh policy_1.md",
-<<<<<<< HEAD
-      "x": 3020,
-      "y": 6160,
-=======
       "x": 1840,
       "y": 6260,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13195,13 +10158,8 @@
       "id": "n_claude_skills_consult_graph_skill",
       "type": "file",
       "file": "SKILL_9.md",
-<<<<<<< HEAD
-      "x": 2820,
-      "y": 6240,
-=======
       "x": 1640,
       "y": 6340,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13209,13 +10167,8 @@
       "id": "n_claude_skills_consult_graph_skill_workflow",
       "type": "file",
       "file": "Workflow_1.md",
-<<<<<<< HEAD
-      "x": 3020,
-      "y": 6240,
-=======
       "x": 1840,
       "y": 6340,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13223,31 +10176,18 @@
       "id": "g216",
       "type": "group",
       "label": "__init__.py",
-<<<<<<< HEAD
-      "x": 4420,
-      "y": 6080,
-      "width": 600,
-      "height": 400,
-      "color": "4"
-=======
       "x": 2800,
       "y": 6180,
       "width": 600,
       "height": 400,
       "color": "3"
->>>>>>> origin/main
     },
     {
       "id": "n_agents_skills_caveman_compress_scripts_init_rationale_1",
       "type": "file",
       "file": "Caveman compress scripts.  This package provides tools to compress natural lan.md",
-<<<<<<< HEAD
-      "x": 4440,
-      "y": 6160,
-=======
       "x": 2820,
       "y": 6260,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13255,13 +10195,8 @@
       "id": "n_agents_skills_caveman_compress_scripts_init",
       "type": "file",
       "file": "__init__.py.md",
-<<<<<<< HEAD
-      "x": 4640,
-      "y": 6160,
-=======
       "x": 3020,
       "y": 6260,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13269,31 +10204,18 @@
       "id": "g217",
       "type": "group",
       "label": "copilot-instructions.md",
-<<<<<<< HEAD
-      "x": 6260,
-      "y": 6080,
-      "width": 600,
-      "height": 400,
-      "color": "5"
-=======
       "x": 4640,
       "y": 6180,
       "width": 600,
       "height": 400,
       "color": "4"
->>>>>>> origin/main
     },
     {
       "id": "n_github_copilot_instructions_mermaid_diagrams",
       "type": "file",
       "file": "Mermaid Diagrams.md",
-<<<<<<< HEAD
-      "x": 6280,
-      "y": 6160,
-=======
       "x": 4660,
       "y": 6260,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     },
@@ -13301,13 +10223,8 @@
       "id": "n_github_copilot_instructions",
       "type": "file",
       "file": "copilot-instructions.md",
-<<<<<<< HEAD
-      "x": 6480,
-      "y": 6160,
-=======
       "x": 4860,
       "y": 6260,
->>>>>>> origin/main
       "width": 180,
       "height": 60
     }
@@ -14442,6 +11359,12 @@
       "label": "imports_from [EXTRACTED]"
     },
     {
+      "id": "e_app_data_actions_components_migrate_local_storage",
+      "fromNode": "n_app_data_actions",
+      "toNode": "n_components_migrate_local_storage",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
       "id": "e_app_data_actions_parseformdata_app_data_actions_savescoreaction",
       "fromNode": "n_app_data_actions_parseformdata",
       "toNode": "n_app_data_actions_savescoreaction",
@@ -14463,6 +11386,18 @@
       "id": "e_app_data_actions_savescoreaction_app_player_id_playerclient_playerclient",
       "fromNode": "n_app_data_actions_savescoreaction",
       "toNode": "n_app_player_id_playerclient_playerclient",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_data_actions_savescoreaction_components_migrate_local_storage",
+      "fromNode": "n_app_data_actions_savescoreaction",
+      "toNode": "n_components_migrate_local_storage",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_data_actions_savescoreaction_components_migrate_local_storage_migratelocalstoragescores",
+      "fromNode": "n_app_data_actions_savescoreaction",
+      "toNode": "n_components_migrate_local_storage_migratelocalstoragescores",
       "label": "calls [EXTRACTED]"
     },
     {
@@ -14494,15 +11429,6 @@
       "fromNode": "n_app_data_actions_getuserbestscore",
       "toNode": "n_app_salon_salonclient",
       "label": "imports [EXTRACTED]"
-<<<<<<< HEAD
-    },
-    {
-      "id": "e_app_data_actions_getuserbestscore_app_salon_salonclient_salonclient",
-      "fromNode": "n_app_data_actions_getuserbestscore",
-      "toNode": "n_app_salon_salonclient_salonclient",
-      "label": "calls [EXTRACTED]"
-=======
->>>>>>> origin/main
     }
   ]
 }

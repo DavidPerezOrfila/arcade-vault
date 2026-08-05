@@ -1,19 +1,11 @@
 ---
 type: community
-<<<<<<< HEAD
-members: 63
-=======
 members: 72
->>>>>>> origin/main
 ---
 
 # Game Data Layer
 
-<<<<<<< HEAD
-**Members:** 63 nodes
-=======
 **Members:** 72 nodes
->>>>>>> origin/main
 
 ## Members
 - [[AsteroidsGame()]] - code - components/games/asteroids/AsteroidsGame.tsx
@@ -41,9 +33,6 @@ members: 72
 - [[LeaderboardServer()]] - code - app/games/asteroids/page.tsx
 - [[MiniCard()]] - code - app/page.tsx
 - [[PALETTE]] - code - app/_home/RecentActivity.tsx
-- [[PlayerClient()]] - code - app/player/[id]/PlayerClient.tsx
-- [[PlayerClient.tsx]] - code - app/player/[id]/PlayerClient.tsx
-- [[PlayerClientProps]] - code - app/player/[id]/PlayerClient.tsx
 - [[PlayerPage()]] - code - app/player/[id]/page.tsx
 - [[PlayerPageProps]] - code - app/player/[id]/page.tsx
 - [[RecentActivity()]] - code - app/_home/RecentActivity.tsx
@@ -53,7 +42,6 @@ members: 72
 - [[SalonClientProps]] - code - app/salon/SalonClient.tsx
 - [[SalonPage()]] - code - app/salon/page.tsx
 - [[SaveScoreResult]] - code - app/data/actions.ts
-- [[ScoreEntry]] - code - app/data/types.ts
 - [[ScoreEntryInputParsed]] - code - app/data/schema.ts
 - [[SubmitScoreResult]] - code - app/games/asteroids/actions.ts
 - [[actions.ts_1]] - code - app/data/actions.ts
@@ -73,11 +61,8 @@ members: 72
 - [[getScores()]] - code - app/data/scores.ts
 - [[getScoresByGame()]] - code - app/data/scores.ts
 - [[getUserBestScore()]] - code - app/data/actions.ts
-<<<<<<< HEAD
-=======
 - [[mapToLeaderboardEntry()]] - code - app/games/asteroids/actions.ts
 - [[metadata]] - code - app/games/asteroids/page.tsx
->>>>>>> origin/main
 - [[page.tsx_2]] - code - app/games/[slug]/page.tsx
 - [[page.tsx_3]] - code - app/games/asteroids/page.tsx
 - [[page.tsx_4]] - code - app/games/page.tsx
@@ -104,17 +89,6 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-<<<<<<< HEAD
-- 11 edges to [[_COMMUNITY_Test Generation]]
-- 7 edges to [[_COMMUNITY_Cookie Management]]
-
-## Top bridge nodes
-- [[scores.ts]] - degree 15, connects to 2 communities
-- [[ScoreEntry]] - degree 4, connects to 2 communities
-- [[games.ts]] - degree 17, connects to 1 community
-- [[page.tsx_5]] - degree 12, connects to 1 community
-- [[getScoresByGame()]] - degree 11, connects to 1 community
-=======
 - 15 edges to [[_COMMUNITY_Test Generation]]
 - 1 edge to [[_COMMUNITY_E2E Test]]
 
@@ -124,4 +98,3 @@ SORT file.name ASC
 - [[scores.ts]] - degree 14, connects to 1 community
 - [[actions.ts_2]] - degree 14, connects to 1 community
 - [[page.tsx_5]] - degree 12, connects to 1 community
->>>>>>> origin/main

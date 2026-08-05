@@ -13,11 +13,14 @@ tags:
 
 ## Connections
 - [[PlayerClient.tsx]] - `imports_from` [EXTRACTED]
+- [[ScoreEntry]] - `imports` [EXTRACTED]
 - [[User]] - `imports` [EXTRACTED]
 - [[clearUser()]] - `contains` [EXTRACTED]
+- [[getScores()_1]] - `contains` [EXTRACTED]
 - [[getUser()]] - `contains` [EXTRACTED]
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
 - [[page.tsx_1]] - `imports_from` [EXTRACTED]
+- [[saveScore()_1]] - `contains` [EXTRACTED]
 - [[setUser()]] - `contains` [EXTRACTED]
 - [[types.ts_1]] - `imports_from` [EXTRACTED]
 

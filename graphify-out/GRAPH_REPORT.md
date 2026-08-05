@@ -1,18 +1,6 @@
 # Graph Report - 05-arcade-vault  (2026-08-05)
 
 ## Corpus Check
-<<<<<<< HEAD
-- 147 files · ~85,676 words
-- Verdict: corpus is large enough that graph structure adds value.
-
-## Summary
-- 1055 nodes · 1290 edges · 77 communities (68 shown, 9 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 29 edges (avg confidence: 0.72)
-- Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `b6453331`
-=======
 - 146 files · ~86,108 words
 - Verdict: corpus is large enough that graph structure adds value.
 
@@ -23,7 +11,6 @@
 
 ## Graph Freshness
 - Built from commit: `83236c36`
->>>>>>> origin/main
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -75,10 +62,6 @@
 - Playwright Config
 - Custom Bundler
 - levels.js
-<<<<<<< HEAD
-- detalle.jsx
-=======
->>>>>>> origin/main
 - ._02-animacion-explosion-bloques.md
 - 06-games-catalog-salon
 - SKILL.md
@@ -129,11 +112,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-<<<<<<< HEAD
-## Communities (77 total, 9 thin omitted)
-=======
 ## Communities (76 total, 9 thin omitted)
->>>>>>> origin/main
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -153,11 +132,7 @@ Nodes (32): Playwright Test Report, Arcade Vault Project Overview, Graphify Know
 
 ### Community 4 - "Game Data Layer"
 Cohesion: 0.06
-<<<<<<< HEAD
-Nodes (44): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+36 more)
-=======
 Nodes (49): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, SaveScoreResult, CATS, Game, GameFilter (+41 more)
->>>>>>> origin/main
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
@@ -184,13 +159,8 @@ Cohesion: 0.14
 Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collideAABB(), ctx (+10 more)
 
 ### Community 11 - "Test Generation"
-<<<<<<< HEAD
-Cohesion: 0.07
-Nodes (26): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+18 more)
-=======
 Cohesion: 0.06
 Nodes (34): AuthPage(), parseFormData(), saveScoreAction(), PLAYERS, seededScores(), clearUser(), getScores(), getUser() (+26 more)
->>>>>>> origin/main
 
 ### Community 12 - "Dev Tooling"
 Cohesion: 0.07
@@ -304,13 +274,6 @@ Nodes (33): Asteroid, attachInput(), Bullet, destroy(), detachInput(), dist(), d
 Cohesion: 0.18
 Nodes (11): sendContactEmail(), HighlightIcon(), HighlightIconKind, HighlightIconProps, AboutPage(), HIGHLIGHTS, initialState, ContactFormData (+3 more)
 
-<<<<<<< HEAD
-### Community 52 - "detalle.jsx"
-Cohesion: 0.20
-Nodes (10): Commands, Core, DevTools, Keyboard, Mouse, Navigation, Network, Save as (+2 more)
-
-=======
->>>>>>> origin/main
 ### Community 73 - "._02-animacion-explosion-bloques.md"
 Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
@@ -377,15 +340,8 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AsteroidsGame()` connect `Game Data Layer` to `E2E Test`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-<<<<<<< HEAD
-- **Why does `devDependencies` connect `Dev Tooling` to `Package Dependencies`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Storage Management` connect `localStorage Ops` to `Storage State`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
-=======
 - **Why does `saveScore()` connect `Game Data Layer` to `Test Generation`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
->>>>>>> origin/main
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
   _527 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**

@@ -2,7 +2,7 @@
 source_file: "app/data/storage.ts"
 type: "code"
 community: "Test Generation"
-location: "L21"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED

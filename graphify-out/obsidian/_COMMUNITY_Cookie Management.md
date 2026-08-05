@@ -27,13 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-<<<<<<< HEAD
-- 7 edges to [[_COMMUNITY_Game Data Layer]]
-- 1 edge to [[_COMMUNITY_Test Generation]]
-- 1 edge to [[_COMMUNITY_E2E Test]]
-=======
 - 1 edge to [[_COMMUNITY_Playwright Automation_1]]
->>>>>>> origin/main
 
 ## Top bridge nodes
 - [[Commands]] - degree 10, connects to 1 community

@@ -2,20 +2,17 @@
 source_file: "app/data/storage.ts"
 type: "code"
 community: "Test Generation"
-location: "L25"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
   - community/Test_Generation
 ---
 
-# clearUser()
+# getScores()
 
 ## Connections
-- [[AuthPage()]] - `calls` [EXTRACTED]
-- [[Nav()]] - `calls` [EXTRACTED]
-- [[nav.tsx]] - `imports` [EXTRACTED]
-- [[page.tsx_1]] - `imports` [EXTRACTED]
+- [[saveScore()_1]] - `calls` [EXTRACTED]
 - [[storage.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Test_Generation

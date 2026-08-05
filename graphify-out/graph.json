@@ -1379,7 +1379,7 @@
       "label": "getUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L11",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "app_data_storage_getuser",
       "community": 11,
@@ -1390,7 +1390,7 @@
       "label": "setUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L21",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "app_data_storage_setuser",
       "community": 11,
@@ -1401,12 +1401,34 @@
       "label": "clearUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L26",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "app_data_storage_clearuser",
       "community": 11,
       "community_name": "Test Generation",
       "norm_label": "clearuser()"
+    },
+    {
+      "label": "getScores()",
+      "file_type": "code",
+      "source_file": "app/data/storage.ts",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "app_data_storage_getscores",
+      "community": 11,
+      "community_name": "Test Generation",
+      "norm_label": "getscores()"
+    },
+    {
+      "label": "saveScore()",
+      "file_type": "code",
+      "source_file": "app/data/storage.ts",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "app_data_storage_savescore",
+      "community": 11,
+      "community_name": "Test Generation",
+      "norm_label": "savescore()"
     },
     {
       "label": "types.ts",
@@ -1481,8 +1503,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "app_data_types_scoreentry",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "scoreentry"
     },
     {
@@ -1764,7 +1786,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "app/layout.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
       "community": 11,
@@ -1833,8 +1855,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_player_id_playerclient",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "playerclient.tsx"
     },
     {
@@ -1844,8 +1866,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "app_player_id_playerclient_playerclientprops",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "playerclientprops"
     },
     {
@@ -1855,8 +1877,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_player_id_playerclient_playerclient",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "playerclient()"
     },
     {
@@ -2003,8 +2025,6 @@
       "norm_label": "asteroidsgame()"
     },
     {
-<<<<<<< HEAD
-=======
       "label": "migrate-local-storage.tsx",
       "file_type": "code",
       "source_file": "components/migrate-local-storage.tsx",
@@ -2027,7 +2047,6 @@
       "norm_label": "migratelocalstoragescores()"
     },
     {
->>>>>>> origin/main
       "label": "nav.tsx",
       "file_type": "code",
       "source_file": "components/nav.tsx",
@@ -6918,13 +6937,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_commands",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "commands"
     },
     {
@@ -6934,13 +6948,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_core",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "core"
     },
     {
@@ -6950,13 +6959,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_navigation",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "navigation"
     },
     {
@@ -6966,13 +6970,8 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_keyboard",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "keyboard"
     },
     {
@@ -6982,13 +6981,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_mouse",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "mouse"
     },
     {
@@ -6998,13 +6992,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_save_as",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "save as"
     },
     {
@@ -7014,13 +7003,8 @@
       "source_location": "L105",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_tabs",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "tabs"
     },
     {
@@ -7030,13 +7014,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_storage",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "storage"
     },
     {
@@ -7046,13 +7025,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_network",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "network"
     },
     {
@@ -7062,13 +7036,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_devtools",
-<<<<<<< HEAD
-      "community": 52,
-      "community_name": "detalle.jsx",
-=======
       "community": 24,
       "community_name": "Cookie Management",
->>>>>>> origin/main
       "norm_label": "devtools"
     },
     {
@@ -14030,6 +13999,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/migrate-local-storage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_migrate_local_storage",
+      "target": "app_data_actions",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -14075,6 +14056,30 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_player_id_playerclient_playerclient",
+      "target": "app_data_actions_savescoreaction"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/migrate-local-storage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_migrate_local_storage",
+      "target": "app_data_actions_savescoreaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/migrate-local-storage.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_migrate_local_storage_migratelocalstoragescores",
       "target": "app_data_actions_savescoreaction"
     },
     {
@@ -14882,7 +14887,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L26",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -14893,7 +14898,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L11",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_storage",
+      "target": "app_data_storage_getscores",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/data/storage.ts",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -14904,7 +14920,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L21",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_storage",
+      "target": "app_data_storage_savescore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/data/storage.ts",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -14921,6 +14948,18 @@
       "_origin": "ast",
       "source": "app_data_storage",
       "target": "app_data_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/data/storage.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_storage",
+      "target": "app_data_types_scoreentry",
       "confidence_score": 1.0
     },
     {
@@ -15042,6 +15081,18 @@
       "_origin": "ast",
       "source": "components_nav_nav",
       "target": "app_data_storage_clearuser"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/data/storage.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_storage_savescore",
+      "target": "app_data_storage_getscores",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15278,7 +15329,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_layout",
@@ -15625,11 +15676,35 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_layout",
       "target": "app_layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_layout",
+      "target": "components_migrate_local_storage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_layout",
+      "target": "components_migrate_local_storage_migratelocalstoragescores",
       "confidence_score": 1.0
     },
     {
@@ -15916,6 +15991,17 @@
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame_asteroidsgame",
       "target": "lib_games_asteroids_game_esm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/migrate-local-storage.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_migrate_local_storage",
+      "target": "components_migrate_local_storage_migratelocalstoragescores",
       "confidence_score": 1.0
     },
     {
@@ -26245,9 +26331,5 @@
       "source_file": ".agents/skills/spec/SKILL.md"
     }
   ],
-<<<<<<< HEAD
-  "built_at_commit": "b6453331fb177d8075005b840908a0ade2feedbd"
-=======
   "built_at_commit": "83236c36d8c3c05361f01ea2d8e8d32acfb3fe01"
->>>>>>> origin/main
 }

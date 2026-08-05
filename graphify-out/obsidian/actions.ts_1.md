@@ -20,6 +20,7 @@ tags:
 - [[getSalonLeaderboard()]] - `contains` [EXTRACTED]
 - [[getScoresByGame()]] - `imports` [EXTRACTED]
 - [[getUserBestScore()]] - `contains` [EXTRACTED]
+- [[migrate-local-storage.tsx]] - `imports_from` [EXTRACTED]
 - [[parseFormData()]] - `contains` [EXTRACTED]
 - [[saveScore()]] - `imports` [EXTRACTED]
 - [[saveScoreAction()]] - `contains` [EXTRACTED]
