@@ -20,7 +20,8 @@ export async function submitAsteroidsScore(score: number): Promise<SubmitScoreRe
       game: 'asteroids',
       score,
       name: user.user_metadata?.full_name ?? user.email?.split('@')[0] ?? 'Jugador',
-      at: Date.now()
+      at: Date.now(),
+      userId: user.id
     });
   } catch {
     return { ok: false, error: 'DB_ERROR' };
