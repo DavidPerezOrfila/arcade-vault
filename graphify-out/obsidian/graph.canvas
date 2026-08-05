@@ -8453,7 +8453,7 @@
     {
       "id": "n_workflows_opencode_loop_decisiones_documentadas",
       "type": "file",
-      "file": "Decisiones documentadas.md",
+      "file": "Decisiones documentadas_1.md",
       "x": 11340,
       "y": 4060,
       "width": 180,
@@ -8462,7 +8462,7 @@
     {
       "id": "n_workflows_opencode_loop_flujo",
       "type": "file",
-      "file": "Flujo.md",
+      "file": "Flujo_1.md",
       "x": 11540,
       "y": 4060,
       "width": 180,
@@ -8480,7 +8480,7 @@
     {
       "id": "n_workflows_opencode_loop_out_of_scope",
       "type": "file",
-      "file": "Out of scope.md",
+      "file": "Out of scope_1.md",
       "x": 11140,
       "y": 4140,
       "width": 180,
@@ -8498,7 +8498,7 @@
     {
       "id": "n_workflows_opencode_loop_resumen",
       "type": "file",
-      "file": "Resumen.md",
+      "file": "Resumen_1.md",
       "x": 11540,
       "y": 4140,
       "width": 180,
@@ -8507,7 +8507,7 @@
     {
       "id": "n_workflows_opencode_loop_trigger",
       "type": "file",
-      "file": "Trigger_1.md",
+      "file": "Trigger_2.md",
       "x": 11740,
       "y": 4140,
       "width": 180,
@@ -8516,7 +8516,7 @@
     {
       "id": "n_workflows_opencode_loop_validaci\u00f3n",
       "type": "file",
-      "file": "Validaci\u00f3n.md",
+      "file": "Validaci\u00f3n_1.md",
       "x": 11140,
       "y": 4220,
       "width": 180,
@@ -8614,20 +8614,111 @@
       "height": 60
     },
     {
+      "id": "g54",
+      "type": "group",
+      "label": "Workflow: issue-loop",
+      "x": 0,
+      "y": 4880,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_workflows_issue_loop_configuraci\u00f3n_t\u00e9cnica",
+      "type": "file",
+      "file": "Configuraci\u00f3n t\u00e9cnica.md",
+      "x": 20,
+      "y": 4960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_workflows_issue_loop_decisiones_documentadas",
+      "type": "file",
+      "file": "Decisiones documentadas.md",
+      "x": 220,
+      "y": 4960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_workflows_issue_loop_flujo",
+      "type": "file",
+      "file": "Flujo.md",
+      "x": 420,
+      "y": 4960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_workflows_issue_loop_out_of_scope",
+      "type": "file",
+      "file": "Out of scope.md",
+      "x": 20,
+      "y": 5040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_workflows_issue_loop_resumen",
+      "type": "file",
+      "file": "Resumen.md",
+      "x": 220,
+      "y": 5040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_workflows_issue_loop_trigger",
+      "type": "file",
+      "file": "Trigger_1.md",
+      "x": 420,
+      "y": 5040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_workflows_issue_loop_validaci\u00f3n",
+      "type": "file",
+      "file": "Validaci\u00f3n.md",
+      "x": 20,
+      "y": 5120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_workflows_issue_loop_workflow_issue_loop",
+      "type": "file",
+      "file": "Workflow issue-loop.md",
+      "x": 220,
+      "y": 5120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_workflows_issue_loop",
+      "type": "file",
+      "file": "issue-loop.md",
+      "x": 420,
+      "y": 5120,
+      "width": 180,
+      "height": 60
+    },
+    {
       "id": "g55",
       "type": "group",
       "label": "accumulate-edited.ps1",
-      "x": 0,
+      "x": 1620,
       "y": 4880,
       "width": 600,
       "height": 400,
-      "color": "1"
+      "color": "2"
     },
     {
       "id": "n_claude_hooks_accumulate_edited",
       "type": "file",
       "file": "accumulate-edited.ps1.md",
-      "x": 20,
+      "x": 1640,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8636,17 +8727,17 @@
       "id": "g56",
       "type": "group",
       "label": "clima.md",
-      "x": 1620,
+      "x": 2800,
       "y": 4880,
       "width": 600,
       "height": 400,
-      "color": "2"
+      "color": "3"
     },
     {
       "id": "n_resources_started_games_03_tetris_claude_commands_clima",
       "type": "file",
       "file": "clima.md",
-      "x": 1640,
+      "x": 2820,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8655,17 +8746,17 @@
       "id": "g58",
       "type": "group",
       "label": "._game.js",
-      "x": 2800,
+      "x": 4420,
       "y": 4880,
       "width": 600,
       "height": 400,
-      "color": "3"
+      "color": "4"
     },
     {
       "id": "n_lib_supabase_admin",
       "type": "file",
       "file": "admin.ts.md",
-      "x": 2820,
+      "x": 4440,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8674,7 +8765,7 @@
       "id": "n_lib_supabase_admin_createsupabaseadminclient",
       "type": "file",
       "file": "createSupabaseAdminClient().md",
-      "x": 3020,
+      "x": 4640,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8683,17 +8774,17 @@
       "id": "g59",
       "type": "group",
       "label": "._README.md",
-      "x": 4420,
+      "x": 6260,
       "y": 4880,
       "width": 600,
       "height": 400,
-      "color": "4"
+      "color": "5"
     },
     {
       "id": "n_e2e_about_spec",
       "type": "file",
       "file": "about.spec.ts.md",
-      "x": 4440,
+      "x": 6280,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8702,17 +8793,17 @@
       "id": "g60",
       "type": "group",
       "label": "._CLAUDE.md",
-      "x": 6260,
+      "x": 8320,
       "y": 4880,
       "width": 600,
       "height": 400,
-      "color": "5"
+      "color": "6"
     },
     {
       "id": "n_playwright_config",
       "type": "file",
       "file": "playwright.config.ts.md",
-      "x": 6280,
+      "x": 8340,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8721,17 +8812,17 @@
       "id": "g61",
       "type": "group",
       "label": "._clima.md",
-      "x": 8320,
+      "x": 9720,
       "y": 4880,
       "width": 600,
       "height": 400,
-      "color": "6"
+      "color": "1"
     },
     {
       "id": "n_tests_e2e_asteroids_spec",
       "type": "file",
       "file": "asteroids.spec.ts.md",
-      "x": 8340,
+      "x": 9740,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8740,17 +8831,17 @@
       "id": "g62",
       "type": "group",
       "label": "._game.js",
-      "x": 9720,
+      "x": 11120,
       "y": 4880,
       "width": 600,
       "height": 400,
-      "color": "1"
+      "color": "2"
     },
     {
       "id": "n_tests_e2e_salon_spec",
       "type": "file",
       "file": "salon.spec.ts.md",
-      "x": 9740,
+      "x": 11140,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8759,17 +8850,17 @@
       "id": "g73",
       "type": "group",
       "label": "._02-animacion-explosion-bloques.md",
-      "x": 11120,
+      "x": 12740,
       "y": 4880,
       "width": 1100,
       "height": 620,
-      "color": "2"
+      "color": "3"
     },
     {
       "id": "n_agents_skills_caveman_compress_readme_img_src_docs_assets_dancing_rock_svg_width_20_height_20_alt_rock_caveman_285_tokens",
       "type": "file",
       "file": "img src=....docsassetsdancing-rock.svg width=20 height=20 alt=rock Caveman (285 tokens).md",
-      "x": 11140,
+      "x": 12760,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8778,7 +8869,7 @@
       "id": "n_agents_skills_caveman_compress_security_auth_behavior",
       "type": "file",
       "file": "Auth behavior.md",
-      "x": 11340,
+      "x": 12960,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8787,7 +8878,7 @@
       "id": "n_agents_skills_caveman_compress_readme_before_after",
       "type": "file",
       "file": "Before  After.md",
-      "x": 11540,
+      "x": 13160,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8796,7 +8887,7 @@
       "id": "n_agents_skills_caveman_compress_readme_benchmarks",
       "type": "file",
       "file": "Benchmarks.md",
-      "x": 11740,
+      "x": 13360,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8805,7 +8896,7 @@
       "id": "n_agents_skills_caveman_compress_security_file_size_limit",
       "type": "file",
       "file": "File size limit.md",
-      "x": 11940,
+      "x": 13560,
       "y": 4960,
       "width": 180,
       "height": 60
@@ -8814,7 +8905,7 @@
       "id": "n_agents_skills_caveman_compress_readme_how_it_work",
       "type": "file",
       "file": "How It Work.md",
-      "x": 11140,
+      "x": 12760,
       "y": 5040,
       "width": 180,
       "height": 60
@@ -8823,7 +8914,7 @@
       "id": "n_agents_skills_caveman_compress_readme_install",
       "type": "file",
       "file": "Install.md",
-      "x": 11340,
+      "x": 12960,
       "y": 5040,
       "width": 180,
       "height": 60
@@ -8832,7 +8923,7 @@
       "id": "n_agents_skills_caveman_compress_readme_part_of_caveman",
       "type": "file",
       "file": "Part of Caveman.md",
-      "x": 11540,
+      "x": 13160,
       "y": 5040,
       "width": 180,
       "height": 60
@@ -8841,7 +8932,7 @@
       "id": "n_agents_skills_caveman_compress_readme",
       "type": "file",
       "file": "README_2.md",
-      "x": 11740,
+      "x": 13360,
       "y": 5040,
       "width": 180,
       "height": 60
@@ -8850,7 +8941,7 @@
       "id": "n_agents_skills_caveman_compress_security_reporting_a_vulnerability",
       "type": "file",
       "file": "Reporting a vulnerability.md",
-      "x": 11940,
+      "x": 13560,
       "y": 5040,
       "width": 180,
       "height": 60
@@ -8859,7 +8950,7 @@
       "id": "n_agents_skills_caveman_compress_security",
       "type": "file",
       "file": "SECURITY_1.md",
-      "x": 11140,
+      "x": 12760,
       "y": 5120,
       "width": 180,
       "height": 60
@@ -8868,7 +8959,7 @@
       "id": "n_agents_skills_caveman_compress_readme_security",
       "type": "file",
       "file": "Security.md",
-      "x": 11340,
+      "x": 12960,
       "y": 5120,
       "width": 180,
       "height": 60
@@ -8877,7 +8968,7 @@
       "id": "n_agents_skills_caveman_compress_security_security",
       "type": "file",
       "file": "Security_2.md",
-      "x": 11540,
+      "x": 13160,
       "y": 5120,
       "width": 180,
       "height": 60
@@ -8886,7 +8977,7 @@
       "id": "n_agents_skills_caveman_compress_security_snyk_high_risk_rating",
       "type": "file",
       "file": "Snyk High Risk Rating.md",
-      "x": 11740,
+      "x": 13360,
       "y": 5120,
       "width": 180,
       "height": 60
@@ -8895,7 +8986,7 @@
       "id": "n_agents_skills_caveman_compress_readme_usage",
       "type": "file",
       "file": "Usage.md",
-      "x": 11940,
+      "x": 13560,
       "y": 5120,
       "width": 180,
       "height": 60
@@ -8904,7 +8995,7 @@
       "id": "n_agents_skills_caveman_compress_readme_what_is_preserved",
       "type": "file",
       "file": "What Is Preserved.md",
-      "x": 11140,
+      "x": 12760,
       "y": 5200,
       "width": 180,
       "height": 60
@@ -8913,7 +9004,7 @@
       "id": "n_agents_skills_caveman_compress_readme_what_it_do",
       "type": "file",
       "file": "What It Do.md",
-      "x": 11340,
+      "x": 12960,
       "y": 5200,
       "width": 180,
       "height": 60
@@ -8922,7 +9013,7 @@
       "id": "n_agents_skills_caveman_compress_readme_what_files_work",
       "type": "file",
       "file": "What files work.md",
-      "x": 11540,
+      "x": 13160,
       "y": 5200,
       "width": 180,
       "height": 60
@@ -8931,7 +9022,7 @@
       "id": "n_agents_skills_caveman_compress_security_what_the_skill_does_not_do",
       "type": "file",
       "file": "What the skill does NOT do.md",
-      "x": 11740,
+      "x": 13360,
       "y": 5200,
       "width": 180,
       "height": 60
@@ -8940,7 +9031,7 @@
       "id": "n_agents_skills_caveman_compress_security_what_triggers_the_rating",
       "type": "file",
       "file": "What triggers the rating.md",
-      "x": 11940,
+      "x": 13560,
       "y": 5200,
       "width": 180,
       "height": 60
@@ -8949,7 +9040,7 @@
       "id": "n_agents_skills_caveman_compress_readme_why_this_matter",
       "type": "file",
       "file": "Why This Matter.md",
-      "x": 11140,
+      "x": 12760,
       "y": 5280,
       "width": 180,
       "height": 60
@@ -8958,7 +9049,7 @@
       "id": "n_agents_skills_caveman_compress_readme_original_706_tokens",
       "type": "file",
       "file": "\ud83d\udcc4 Original (706 tokens).md",
-      "x": 11340,
+      "x": 12960,
       "y": 5280,
       "width": 180,
       "height": 60
@@ -8967,18 +9058,18 @@
       "id": "g75",
       "type": "group",
       "label": "format-batch.ps1",
-      "x": 12740,
-      "y": 4880,
+      "x": 0,
+      "y": 5580,
       "width": 600,
       "height": 400,
-      "color": "3"
+      "color": "4"
     },
     {
       "id": "n_claude_hooks_format_batch",
       "type": "file",
       "file": "format-batch.ps1.md",
-      "x": 12760,
-      "y": 4960,
+      "x": 20,
+      "y": 5660,
       "width": 180,
       "height": 60
     },
@@ -8986,17 +9077,17 @@
       "id": "g98",
       "type": "group",
       "label": "06-games-catalog-salon",
-      "x": 0,
+      "x": 1620,
       "y": 5580,
       "width": 880,
       "height": 520,
-      "color": "4"
+      "color": "5"
     },
     {
       "id": "n_specs_06_games_catalog_salon_06_games_catalog_salon",
       "type": "file",
       "file": "06-games-catalog-salon_1.md",
-      "x": 20,
+      "x": 1640,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9005,7 +9096,7 @@
       "id": "n_specs_06_games_catalog_salon",
       "type": "file",
       "file": "06-games-catalog-salon.md",
-      "x": 220,
+      "x": 1840,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9014,7 +9105,7 @@
       "id": "n_specs_06_games_catalog_salon_acceptance_criteria",
       "type": "file",
       "file": "Acceptance Criteria_2.md",
-      "x": 420,
+      "x": 2040,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9023,7 +9114,7 @@
       "id": "n_specs_06_games_catalog_salon_data_model",
       "type": "file",
       "file": "Data Model_2.md",
-      "x": 620,
+      "x": 2240,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9032,7 +9123,7 @@
       "id": "n_specs_06_games_catalog_salon_decisions_taken_discarded",
       "type": "file",
       "file": "Decisions Taken & Discarded_1.md",
-      "x": 20,
+      "x": 1640,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9041,7 +9132,7 @@
       "id": "n_specs_06_games_catalog_salon_identified_risks",
       "type": "file",
       "file": "Identified Risks_2.md",
-      "x": 220,
+      "x": 1840,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9050,7 +9141,7 @@
       "id": "n_specs_06_games_catalog_salon_implementation_plan",
       "type": "file",
       "file": "Implementation Plan_2.md",
-      "x": 420,
+      "x": 2040,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9059,7 +9150,7 @@
       "id": "n_specs_06_games_catalog_salon_phase_1_supabase_migration_db",
       "type": "file",
       "file": "Phase 1 Supabase Migration (DB).md",
-      "x": 620,
+      "x": 2240,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9068,7 +9159,7 @@
       "id": "n_specs_06_games_catalog_salon_phase_2_data_layer_app_data_games_ts",
       "type": "file",
       "file": "Phase 2 Data Layer (`appdatagames.ts`).md",
-      "x": 20,
+      "x": 1640,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9077,7 +9168,7 @@
       "id": "n_specs_06_games_catalog_salon_phase_3_salon_renovation",
       "type": "file",
       "file": "Phase 3 `salon` Renovation.md",
-      "x": 220,
+      "x": 1840,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9086,7 +9177,7 @@
       "id": "n_specs_06_games_catalog_salon_phase_4_routing_verification",
       "type": "file",
       "file": "Phase 4 Routing Verification.md",
-      "x": 420,
+      "x": 2040,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9095,7 +9186,7 @@
       "id": "n_specs_06_games_catalog_salon_phase_5_tests",
       "type": "file",
       "file": "Phase 5 Tests.md",
-      "x": 620,
+      "x": 2240,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9104,7 +9195,7 @@
       "id": "n_specs_06_games_catalog_salon_scope",
       "type": "file",
       "file": "Scope_2.md",
-      "x": 20,
+      "x": 1640,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9113,7 +9204,7 @@
       "id": "n_specs_06_games_catalog_salon_seed_data_8_rows_mirror_of_app_data_games_ts",
       "type": "file",
       "file": "Seed data (8 rows, mirror of `appdatagames.ts`).md",
-      "x": 220,
+      "x": 1840,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9122,7 +9213,7 @@
       "id": "n_specs_06_games_catalog_salon_supabase_games_table",
       "type": "file",
       "file": "Supabase `games` table.md",
-      "x": 420,
+      "x": 2040,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9131,7 +9222,7 @@
       "id": "n_specs_06_games_catalog_salon_typescript_types_extend_existing_app_data_types_ts",
       "type": "file",
       "file": "TypeScript types (extend existing `appdatatypes.ts`).md",
-      "x": 620,
+      "x": 2240,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9140,17 +9231,17 @@
       "id": "g102",
       "type": "group",
       "label": "SKILL.md",
-      "x": 1620,
+      "x": 2800,
       "y": 5580,
       "width": 880,
       "height": 520,
-      "color": "5"
+      "color": "6"
     },
     {
       "id": "n_agents_skills_cavecrew_skill_auto_clarity_inherited",
       "type": "file",
       "file": "Auto-clarity (inherited).md",
-      "x": 1640,
+      "x": 2820,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9159,7 +9250,7 @@
       "id": "n_agents_skills_cavecrew_skill_chaining_patterns",
       "type": "file",
       "file": "Chaining patterns.md",
-      "x": 1840,
+      "x": 3020,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9168,7 +9259,7 @@
       "id": "n_agents_skills_cavecrew_readme_example_chaining",
       "type": "file",
       "file": "Example chaining.md",
-      "x": 2040,
+      "x": 3220,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9177,7 +9268,7 @@
       "id": "n_agents_skills_cavecrew_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke.md",
-      "x": 2240,
+      "x": 3420,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9186,7 +9277,7 @@
       "id": "n_agents_skills_cavecrew_readme_model_overrides",
       "type": "file",
       "file": "Model overrides.md",
-      "x": 1640,
+      "x": 2820,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9195,7 +9286,7 @@
       "id": "n_agents_skills_cavecrew_skill_output_contracts",
       "type": "file",
       "file": "Output contracts.md",
-      "x": 1840,
+      "x": 3020,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9204,7 +9295,7 @@
       "id": "n_agents_skills_cavecrew_readme",
       "type": "file",
       "file": "README.md",
-      "x": 2040,
+      "x": 3220,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9213,7 +9304,7 @@
       "id": "n_agents_skills_cavecrew_skill",
       "type": "file",
       "file": "SKILL.md",
-      "x": 2240,
+      "x": 3420,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9222,7 +9313,7 @@
       "id": "n_agents_skills_cavecrew_readme_see_also",
       "type": "file",
       "file": "See also.md",
-      "x": 1640,
+      "x": 2820,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9231,7 +9322,7 @@
       "id": "n_agents_skills_cavecrew_skill_what_not_to_do",
       "type": "file",
       "file": "What NOT to do.md",
-      "x": 1840,
+      "x": 3020,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9240,7 +9331,7 @@
       "id": "n_agents_skills_cavecrew_readme_what_it_does",
       "type": "file",
       "file": "What it does.md",
-      "x": 2040,
+      "x": 3220,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9249,7 +9340,7 @@
       "id": "n_agents_skills_cavecrew_skill_when_to_use_cavecrew_vs_alternatives",
       "type": "file",
       "file": "When to use cavecrew vs alternatives.md",
-      "x": 2240,
+      "x": 3420,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9258,7 +9349,7 @@
       "id": "n_agents_skills_cavecrew_skill_why_this_exists_the_real_win",
       "type": "file",
       "file": "Why this exists (the real win).md",
-      "x": 1640,
+      "x": 2820,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9267,7 +9358,7 @@
       "id": "n_agents_skills_cavecrew_readme_cavecrew",
       "type": "file",
       "file": "cavecrew.md",
-      "x": 1840,
+      "x": 3020,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9276,17 +9367,17 @@
       "id": "g103",
       "type": "group",
       "label": "Caveman Help",
-      "x": 2800,
+      "x": 4420,
       "y": 5580,
       "width": 880,
       "height": 520,
-      "color": "6"
+      "color": "1"
     },
     {
       "id": "n_agents_skills_caveman_help_skill_caveman_help",
       "type": "file",
       "file": "Caveman Help.md",
-      "x": 2820,
+      "x": 4440,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9295,7 +9386,7 @@
       "id": "n_agents_skills_caveman_help_skill_configure_default_mode",
       "type": "file",
       "file": "Configure Default Mode.md",
-      "x": 3020,
+      "x": 4640,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9304,7 +9395,7 @@
       "id": "n_agents_skills_caveman_help_skill_deactivate",
       "type": "file",
       "file": "Deactivate.md",
-      "x": 3220,
+      "x": 4840,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9313,7 +9404,7 @@
       "id": "n_agents_skills_caveman_help_readme_example_output",
       "type": "file",
       "file": "Example output_1.md",
-      "x": 3420,
+      "x": 5040,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9322,7 +9413,7 @@
       "id": "n_agents_skills_caveman_help_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_2.md",
-      "x": 2820,
+      "x": 4440,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9331,7 +9422,7 @@
       "id": "n_agents_skills_caveman_help_skill_language",
       "type": "file",
       "file": "Language.md",
-      "x": 3020,
+      "x": 4640,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9340,7 +9431,7 @@
       "id": "n_agents_skills_caveman_help_skill_modes",
       "type": "file",
       "file": "Modes.md",
-      "x": 3220,
+      "x": 4840,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9349,7 +9440,7 @@
       "id": "n_agents_skills_caveman_help_skill_more",
       "type": "file",
       "file": "More.md",
-      "x": 3420,
+      "x": 5040,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9358,7 +9449,7 @@
       "id": "n_agents_skills_caveman_help_readme",
       "type": "file",
       "file": "README_3.md",
-      "x": 2820,
+      "x": 4440,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9367,7 +9458,7 @@
       "id": "n_agents_skills_caveman_help_skill",
       "type": "file",
       "file": "SKILL_3.md",
-      "x": 3020,
+      "x": 4640,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9376,7 +9467,7 @@
       "id": "n_agents_skills_caveman_help_readme_see_also",
       "type": "file",
       "file": "See also_2.md",
-      "x": 3220,
+      "x": 4840,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9385,7 +9476,7 @@
       "id": "n_agents_skills_caveman_help_skill_skills",
       "type": "file",
       "file": "Skills.md",
-      "x": 3420,
+      "x": 5040,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9394,7 +9485,7 @@
       "id": "n_agents_skills_caveman_help_readme_what_it_does",
       "type": "file",
       "file": "What it does_2.md",
-      "x": 2820,
+      "x": 4440,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9403,7 +9494,7 @@
       "id": "n_agents_skills_caveman_help_readme_caveman_help",
       "type": "file",
       "file": "caveman-help.md",
-      "x": 3020,
+      "x": 4640,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9412,17 +9503,17 @@
       "id": "g109",
       "type": "group",
       "label": "Mermaid AI Skills",
-      "x": 4420,
+      "x": 6260,
       "y": 5580,
       "width": 880,
       "height": 520,
-      "color": "1"
+      "color": "2"
     },
     {
       "id": "n_github_instructions_mermaid_instructions_mermaid_chart_slash_commands",
       "type": "file",
       "file": "@mermaid-chart slash commands.md",
-      "x": 4440,
+      "x": 6280,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9431,7 +9522,7 @@
       "id": "n_github_instructions_mermaid_instructions_diagram_editing_preview",
       "type": "file",
       "file": "Diagram editing & preview.md",
-      "x": 4640,
+      "x": 6480,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9440,7 +9531,7 @@
       "id": "n_github_instructions_mermaid_instructions_docs",
       "type": "file",
       "file": "Docs.md",
-      "x": 4840,
+      "x": 6680,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9449,7 +9540,7 @@
       "id": "n_github_instructions_mermaid_instructions_generate_diagrams_github_copilot_required",
       "type": "file",
       "file": "Generate diagrams (GitHub Copilot required).md",
-      "x": 5040,
+      "x": 6880,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9458,7 +9549,7 @@
       "id": "n_github_instructions_mermaid_instructions_install_update_this_pack",
       "type": "file",
       "file": "Install  update this pack.md",
-      "x": 4440,
+      "x": 6280,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9467,7 +9558,7 @@
       "id": "n_github_instructions_mermaid_instructions_lm_tools_call_these_for_every_diagram_interaction",
       "type": "file",
       "file": "LM Tools \u2014 call these for every diagram interaction.md",
-      "x": 4640,
+      "x": 6480,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9476,7 +9567,7 @@
       "id": "n_github_instructions_mermaid_instructions_mermaid_ai_skills",
       "type": "file",
       "file": "Mermaid AI Skills.md",
-      "x": 4840,
+      "x": 6680,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9485,7 +9576,7 @@
       "id": "n_github_instructions_mermaid_instructions_mermaid_chart_cloud",
       "type": "file",
       "file": "Mermaid Chart cloud.md",
-      "x": 5040,
+      "x": 6880,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9494,7 +9585,7 @@
       "id": "n_github_instructions_mermaid_instructions_review_mermaid_sync",
       "type": "file",
       "file": "Review Mermaid Sync.md",
-      "x": 4440,
+      "x": 6280,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9503,7 +9594,7 @@
       "id": "n_github_instructions_mermaid_instructions_rules",
       "type": "file",
       "file": "Rules_3.md",
-      "x": 4640,
+      "x": 6480,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9512,7 +9603,7 @@
       "id": "n_github_instructions_mermaid_instructions_vs_code_commands",
       "type": "file",
       "file": "VS Code Commands.md",
-      "x": 4840,
+      "x": 6680,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9521,7 +9612,7 @@
       "id": "n_github_instructions_mermaid_instructions_workflow",
       "type": "file",
       "file": "Workflow_2.md",
-      "x": 5040,
+      "x": 6880,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9530,7 +9621,7 @@
       "id": "n_github_instructions_mermaid_instructions",
       "type": "file",
       "file": "mermaid.instructions.md",
-      "x": 4440,
+      "x": 6280,
       "y": 5900,
       "width": 180,
       "height": 60
@@ -9539,17 +9630,17 @@
       "id": "g111",
       "type": "group",
       "label": "Caveman Compress",
-      "x": 6260,
+      "x": 8320,
       "y": 5580,
       "width": 880,
       "height": 420,
-      "color": "2"
+      "color": "3"
     },
     {
       "id": "n_agents_skills_caveman_compress_skill_boundaries",
       "type": "file",
       "file": "Boundaries_1.md",
-      "x": 6280,
+      "x": 8340,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9558,7 +9649,7 @@
       "id": "n_agents_skills_caveman_compress_skill_caveman_compress",
       "type": "file",
       "file": "Caveman Compress.md",
-      "x": 6480,
+      "x": 8540,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9567,7 +9658,7 @@
       "id": "n_agents_skills_caveman_compress_skill_compress",
       "type": "file",
       "file": "Compress.md",
-      "x": 6680,
+      "x": 8740,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9576,7 +9667,7 @@
       "id": "n_agents_skills_caveman_compress_skill_compression_rules",
       "type": "file",
       "file": "Compression Rules.md",
-      "x": 6880,
+      "x": 8940,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9585,7 +9676,7 @@
       "id": "n_agents_skills_caveman_compress_skill_pattern",
       "type": "file",
       "file": "Pattern.md",
-      "x": 6280,
+      "x": 8340,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9594,7 +9685,7 @@
       "id": "n_agents_skills_caveman_compress_skill_preserve_exactly_never_modify",
       "type": "file",
       "file": "Preserve EXACTLY (never modify).md",
-      "x": 6480,
+      "x": 8540,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9603,7 +9694,7 @@
       "id": "n_agents_skills_caveman_compress_skill_preserve_structure",
       "type": "file",
       "file": "Preserve Structure.md",
-      "x": 6680,
+      "x": 8740,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9612,7 +9703,7 @@
       "id": "n_agents_skills_caveman_compress_skill_process",
       "type": "file",
       "file": "Process.md",
-      "x": 6880,
+      "x": 8940,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9621,7 +9712,7 @@
       "id": "n_agents_skills_caveman_compress_skill_purpose",
       "type": "file",
       "file": "Purpose.md",
-      "x": 6280,
+      "x": 8340,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9630,7 +9721,7 @@
       "id": "n_agents_skills_caveman_compress_skill_remove",
       "type": "file",
       "file": "Remove.md",
-      "x": 6480,
+      "x": 8540,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9639,7 +9730,7 @@
       "id": "n_agents_skills_caveman_compress_skill",
       "type": "file",
       "file": "SKILL_2.md",
-      "x": 6680,
+      "x": 8740,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9648,7 +9739,7 @@
       "id": "n_agents_skills_caveman_compress_skill_trigger",
       "type": "file",
       "file": "Trigger.md",
-      "x": 6880,
+      "x": 8940,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9657,17 +9748,17 @@
       "id": "g112",
       "type": "group",
       "label": "SKILL.md",
-      "x": 8320,
+      "x": 9720,
       "y": 5580,
       "width": 880,
       "height": 420,
-      "color": "3"
+      "color": "4"
     },
     {
       "id": "n_agents_skills_caveman_skill_auto_clarity",
       "type": "file",
       "file": "Auto-Clarity_2.md",
-      "x": 8340,
+      "x": 9740,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9676,7 +9767,7 @@
       "id": "n_agents_skills_caveman_skill_boundaries",
       "type": "file",
       "file": "Boundaries_3.md",
-      "x": 8540,
+      "x": 9940,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9685,7 +9776,7 @@
       "id": "n_agents_skills_caveman_readme_example_output",
       "type": "file",
       "file": "Example output_4.md",
-      "x": 8740,
+      "x": 10140,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9694,7 +9785,7 @@
       "id": "n_agents_skills_caveman_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_5.md",
-      "x": 8940,
+      "x": 10340,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9703,7 +9794,7 @@
       "id": "n_agents_skills_caveman_skill_intensity",
       "type": "file",
       "file": "Intensity.md",
-      "x": 8340,
+      "x": 9740,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9712,7 +9803,7 @@
       "id": "n_agents_skills_caveman_skill_persistence",
       "type": "file",
       "file": "Persistence.md",
-      "x": 8540,
+      "x": 9940,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9721,7 +9812,7 @@
       "id": "n_agents_skills_caveman_readme",
       "type": "file",
       "file": "README_6.md",
-      "x": 8740,
+      "x": 10140,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9730,7 +9821,7 @@
       "id": "n_agents_skills_caveman_skill_rules",
       "type": "file",
       "file": "Rules_2.md",
-      "x": 8940,
+      "x": 10340,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9739,7 +9830,7 @@
       "id": "n_agents_skills_caveman_skill",
       "type": "file",
       "file": "SKILL_6.md",
-      "x": 8340,
+      "x": 9740,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9748,7 +9839,7 @@
       "id": "n_agents_skills_caveman_readme_see_also",
       "type": "file",
       "file": "See also_5.md",
-      "x": 8540,
+      "x": 9940,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9757,7 +9848,7 @@
       "id": "n_agents_skills_caveman_readme_what_it_does",
       "type": "file",
       "file": "What it does_5.md",
-      "x": 8740,
+      "x": 10140,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9766,7 +9857,7 @@
       "id": "n_agents_skills_caveman_readme_caveman",
       "type": "file",
       "file": "caveman.md",
-      "x": 8940,
+      "x": 10340,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9775,17 +9866,17 @@
       "id": "g116",
       "type": "group",
       "label": "caveman-commit",
-      "x": 9720,
+      "x": 11120,
       "y": 5580,
       "width": 880,
       "height": 420,
-      "color": "4"
+      "color": "5"
     },
     {
       "id": "n_agents_skills_caveman_commit_skill_auto_clarity",
       "type": "file",
       "file": "Auto-Clarity.md",
-      "x": 9740,
+      "x": 11140,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9794,7 +9885,7 @@
       "id": "n_agents_skills_caveman_commit_skill_boundaries",
       "type": "file",
       "file": "Boundaries.md",
-      "x": 9940,
+      "x": 11340,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9803,7 +9894,7 @@
       "id": "n_agents_skills_caveman_commit_readme_example_output",
       "type": "file",
       "file": "Example output.md",
-      "x": 10140,
+      "x": 11540,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9812,7 +9903,7 @@
       "id": "n_agents_skills_caveman_commit_skill_examples",
       "type": "file",
       "file": "Examples.md",
-      "x": 10340,
+      "x": 11740,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9821,7 +9912,7 @@
       "id": "n_agents_skills_caveman_commit_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_1.md",
-      "x": 9740,
+      "x": 11140,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9830,7 +9921,7 @@
       "id": "n_agents_skills_caveman_commit_readme",
       "type": "file",
       "file": "README_1.md",
-      "x": 9940,
+      "x": 11340,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9839,7 +9930,7 @@
       "id": "n_agents_skills_caveman_commit_skill_rules",
       "type": "file",
       "file": "Rules.md",
-      "x": 10140,
+      "x": 11540,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9848,7 +9939,7 @@
       "id": "n_agents_skills_caveman_commit_skill",
       "type": "file",
       "file": "SKILL_1.md",
-      "x": 10340,
+      "x": 11740,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9857,7 +9948,7 @@
       "id": "n_agents_skills_caveman_commit_readme_see_also",
       "type": "file",
       "file": "See also_1.md",
-      "x": 9740,
+      "x": 11140,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9866,7 +9957,7 @@
       "id": "n_agents_skills_caveman_commit_readme_what_it_does",
       "type": "file",
       "file": "What it does_1.md",
-      "x": 9940,
+      "x": 11340,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9875,7 +9966,7 @@
       "id": "n_agents_skills_caveman_commit_readme_caveman_commit",
       "type": "file",
       "file": "caveman-commit.md",
-      "x": 10140,
+      "x": 11540,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9884,17 +9975,17 @@
       "id": "g117",
       "type": "group",
       "label": "caveman-review",
-      "x": 11120,
+      "x": 12740,
       "y": 5580,
       "width": 880,
       "height": 420,
-      "color": "5"
+      "color": "6"
     },
     {
       "id": "n_agents_skills_caveman_review_skill_auto_clarity",
       "type": "file",
       "file": "Auto-Clarity_1.md",
-      "x": 11140,
+      "x": 12760,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9903,7 +9994,7 @@
       "id": "n_agents_skills_caveman_review_skill_boundaries",
       "type": "file",
       "file": "Boundaries_2.md",
-      "x": 11340,
+      "x": 12960,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9912,7 +10003,7 @@
       "id": "n_agents_skills_caveman_review_readme_example_output",
       "type": "file",
       "file": "Example output_2.md",
-      "x": 11540,
+      "x": 13160,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9921,7 +10012,7 @@
       "id": "n_agents_skills_caveman_review_skill_examples",
       "type": "file",
       "file": "Examples_1.md",
-      "x": 11740,
+      "x": 13360,
       "y": 5660,
       "width": 180,
       "height": 60
@@ -9930,7 +10021,7 @@
       "id": "n_agents_skills_caveman_review_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_3.md",
-      "x": 11140,
+      "x": 12760,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9939,7 +10030,7 @@
       "id": "n_agents_skills_caveman_review_readme",
       "type": "file",
       "file": "README_4.md",
-      "x": 11340,
+      "x": 12960,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9948,7 +10039,7 @@
       "id": "n_agents_skills_caveman_review_skill_rules",
       "type": "file",
       "file": "Rules_1.md",
-      "x": 11540,
+      "x": 13160,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9957,7 +10048,7 @@
       "id": "n_agents_skills_caveman_review_skill",
       "type": "file",
       "file": "SKILL_4.md",
-      "x": 11740,
+      "x": 13360,
       "y": 5740,
       "width": 180,
       "height": 60
@@ -9966,7 +10057,7 @@
       "id": "n_agents_skills_caveman_review_readme_see_also",
       "type": "file",
       "file": "See also_3.md",
-      "x": 11140,
+      "x": 12760,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9975,7 +10066,7 @@
       "id": "n_agents_skills_caveman_review_readme_what_it_does",
       "type": "file",
       "file": "What it does_3.md",
-      "x": 11340,
+      "x": 12960,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9984,7 +10075,7 @@
       "id": "n_agents_skills_caveman_review_readme_caveman_review",
       "type": "file",
       "file": "caveman-review.md",
-      "x": 11540,
+      "x": 13160,
       "y": 5820,
       "width": 180,
       "height": 60
@@ -9993,88 +10084,6 @@
       "id": "g134",
       "type": "group",
       "label": "SPEC 04 \u2014 Supabase: foundation y persistencia de puntuaciones",
-      "x": 12740,
-      "y": 5580,
-      "width": 660,
-      "height": 420,
-      "color": "6"
-    },
-    {
-      "id": "n_specs_04_supabase_scores_foundation",
-      "type": "file",
-      "file": "04-supabase-scores-foundation.md",
-      "x": 12760,
-      "y": 5660,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_specs_04_supabase_scores_foundation_acceptance_criteria",
-      "type": "file",
-      "file": "Acceptance criteria.md",
-      "x": 12960,
-      "y": 5660,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_specs_04_supabase_scores_foundation_data_model",
-      "type": "file",
-      "file": "Data model.md",
-      "x": 13160,
-      "y": 5660,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_specs_04_supabase_scores_foundation_decisiones_tomadas_y_descartadas",
-      "type": "file",
-      "file": "Decisiones tomadas y descartadas_3.md",
-      "x": 12760,
-      "y": 5740,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_specs_04_supabase_scores_foundation_identified_risks",
-      "type": "file",
-      "file": "Identified risks.md",
-      "x": 12960,
-      "y": 5740,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_specs_04_supabase_scores_foundation_implementation_plan",
-      "type": "file",
-      "file": "Implementation plan.md",
-      "x": 13160,
-      "y": 5740,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_specs_04_supabase_scores_foundation_spec_04_supabase_foundation_y_persistencia_de_puntuaciones",
-      "type": "file",
-      "file": "SPEC 04 \u2014 Supabase foundation y persistencia de puntuaciones.md",
-      "x": 12760,
-      "y": 5820,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_specs_04_supabase_scores_foundation_scope",
-      "type": "file",
-      "file": "Scope.md",
-      "x": 12960,
-      "y": 5820,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g135",
-      "type": "group",
-      "label": "05-asteroids-game",
       "x": 0,
       "y": 6180,
       "width": 660,
@@ -10082,10 +10091,92 @@
       "color": "1"
     },
     {
+      "id": "n_specs_04_supabase_scores_foundation",
+      "type": "file",
+      "file": "04-supabase-scores-foundation.md",
+      "x": 20,
+      "y": 6260,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_specs_04_supabase_scores_foundation_acceptance_criteria",
+      "type": "file",
+      "file": "Acceptance criteria.md",
+      "x": 220,
+      "y": 6260,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_specs_04_supabase_scores_foundation_data_model",
+      "type": "file",
+      "file": "Data model.md",
+      "x": 420,
+      "y": 6260,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_specs_04_supabase_scores_foundation_decisiones_tomadas_y_descartadas",
+      "type": "file",
+      "file": "Decisiones tomadas y descartadas_3.md",
+      "x": 20,
+      "y": 6340,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_specs_04_supabase_scores_foundation_identified_risks",
+      "type": "file",
+      "file": "Identified risks.md",
+      "x": 220,
+      "y": 6340,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_specs_04_supabase_scores_foundation_implementation_plan",
+      "type": "file",
+      "file": "Implementation plan.md",
+      "x": 420,
+      "y": 6340,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_specs_04_supabase_scores_foundation_spec_04_supabase_foundation_y_persistencia_de_puntuaciones",
+      "type": "file",
+      "file": "SPEC 04 \u2014 Supabase foundation y persistencia de puntuaciones.md",
+      "x": 20,
+      "y": 6420,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_specs_04_supabase_scores_foundation_scope",
+      "type": "file",
+      "file": "Scope.md",
+      "x": 220,
+      "y": 6420,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g135",
+      "type": "group",
+      "label": "05-asteroids-game",
+      "x": 1620,
+      "y": 6180,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
       "id": "n_specs_05_asteroids_game_05_asteroids_game",
       "type": "file",
       "file": "05-asteroids-game_1.md",
-      "x": 20,
+      "x": 1640,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10094,7 +10185,7 @@
       "id": "n_specs_05_asteroids_game",
       "type": "file",
       "file": "05-asteroids-game.md",
-      "x": 220,
+      "x": 1840,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10103,7 +10194,7 @@
       "id": "n_specs_05_asteroids_game_acceptance_criteria",
       "type": "file",
       "file": "Acceptance Criteria_1.md",
-      "x": 420,
+      "x": 2040,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10112,7 +10203,7 @@
       "id": "n_specs_05_asteroids_game_data_model",
       "type": "file",
       "file": "Data Model_1.md",
-      "x": 20,
+      "x": 1640,
       "y": 6340,
       "width": 180,
       "height": 60
@@ -10121,7 +10212,7 @@
       "id": "n_specs_05_asteroids_game_decisions_taken_discarded",
       "type": "file",
       "file": "Decisions Taken & Discarded.md",
-      "x": 220,
+      "x": 1840,
       "y": 6340,
       "width": 180,
       "height": 60
@@ -10130,7 +10221,7 @@
       "id": "n_specs_05_asteroids_game_identified_risks",
       "type": "file",
       "file": "Identified Risks_1.md",
-      "x": 420,
+      "x": 2040,
       "y": 6340,
       "width": 180,
       "height": 60
@@ -10139,7 +10230,7 @@
       "id": "n_specs_05_asteroids_game_implementation_plan",
       "type": "file",
       "file": "Implementation Plan_1.md",
-      "x": 20,
+      "x": 1640,
       "y": 6420,
       "width": 180,
       "height": 60
@@ -10148,7 +10239,7 @@
       "id": "n_specs_05_asteroids_game_scope",
       "type": "file",
       "file": "Scope_1.md",
-      "x": 220,
+      "x": 1840,
       "y": 6420,
       "width": 180,
       "height": 60
@@ -10157,17 +10248,17 @@
       "id": "g136",
       "type": "group",
       "label": "caveman-stats",
-      "x": 1620,
+      "x": 2800,
       "y": 6180,
       "width": 660,
       "height": 420,
-      "color": "2"
+      "color": "3"
     },
     {
       "id": "n_agents_skills_caveman_stats_readme_example_output",
       "type": "file",
       "file": "Example output_3.md",
-      "x": 1640,
+      "x": 2820,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10176,7 +10267,7 @@
       "id": "n_agents_skills_caveman_stats_readme_how_to_invoke",
       "type": "file",
       "file": "How to invoke_4.md",
-      "x": 1840,
+      "x": 3020,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10185,7 +10276,7 @@
       "id": "n_agents_skills_caveman_stats_readme",
       "type": "file",
       "file": "README_5.md",
-      "x": 2040,
+      "x": 3220,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10194,7 +10285,7 @@
       "id": "n_agents_skills_caveman_stats_skill",
       "type": "file",
       "file": "SKILL_5.md",
-      "x": 1640,
+      "x": 2820,
       "y": 6340,
       "width": 180,
       "height": 60
@@ -10203,7 +10294,7 @@
       "id": "n_agents_skills_caveman_stats_readme_see_also",
       "type": "file",
       "file": "See also_4.md",
-      "x": 1840,
+      "x": 3020,
       "y": 6340,
       "width": 180,
       "height": 60
@@ -10212,7 +10303,7 @@
       "id": "n_agents_skills_caveman_stats_readme_what_it_does",
       "type": "file",
       "file": "What it does_4.md",
-      "x": 2040,
+      "x": 3220,
       "y": 6340,
       "width": 180,
       "height": 60
@@ -10221,59 +10312,13 @@
       "id": "n_agents_skills_caveman_stats_readme_caveman_stats",
       "type": "file",
       "file": "caveman-stats.md",
-      "x": 1640,
+      "x": 2820,
       "y": 6420,
       "width": 180,
       "height": 60
     },
     {
       "id": "g178",
-      "type": "group",
-      "label": "SKILL.md",
-      "x": 2800,
-      "y": 6180,
-      "width": 600,
-      "height": 400,
-      "color": "3"
-    },
-    {
-      "id": "n_agents_skills_consult_graph_skill_boundaries",
-      "type": "file",
-      "file": "Boundaries_4.md",
-      "x": 2820,
-      "y": 6260,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_consult_graph_skill_refresh_policy",
-      "type": "file",
-      "file": "Refresh policy.md",
-      "x": 3020,
-      "y": 6260,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_consult_graph_skill",
-      "type": "file",
-      "file": "SKILL_7.md",
-      "x": 2820,
-      "y": 6340,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_agents_skills_consult_graph_skill_workflow",
-      "type": "file",
-      "file": "Workflow.md",
-      "x": 3020,
-      "y": 6340,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g179",
       "type": "group",
       "label": "SKILL.md",
       "x": 4420,
@@ -10283,10 +10328,56 @@
       "color": "4"
     },
     {
+      "id": "n_agents_skills_consult_graph_skill_boundaries",
+      "type": "file",
+      "file": "Boundaries_4.md",
+      "x": 4440,
+      "y": 6260,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_skills_consult_graph_skill_refresh_policy",
+      "type": "file",
+      "file": "Refresh policy.md",
+      "x": 4640,
+      "y": 6260,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_skills_consult_graph_skill",
+      "type": "file",
+      "file": "SKILL_7.md",
+      "x": 4440,
+      "y": 6340,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_skills_consult_graph_skill_workflow",
+      "type": "file",
+      "file": "Workflow.md",
+      "x": 4640,
+      "y": 6340,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g179",
+      "type": "group",
+      "label": "SKILL.md",
+      "x": 6260,
+      "y": 6180,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
       "id": "n_claude_skills_consult_graph_skill_boundaries",
       "type": "file",
       "file": "Boundaries_5.md",
-      "x": 4440,
+      "x": 6280,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10295,7 +10386,7 @@
       "id": "n_claude_skills_consult_graph_skill_refresh_policy",
       "type": "file",
       "file": "Refresh policy_1.md",
-      "x": 4640,
+      "x": 6480,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10304,7 +10395,7 @@
       "id": "n_claude_skills_consult_graph_skill",
       "type": "file",
       "file": "SKILL_9.md",
-      "x": 4440,
+      "x": 6280,
       "y": 6340,
       "width": 180,
       "height": 60
@@ -10313,7 +10404,7 @@
       "id": "n_claude_skills_consult_graph_skill_workflow",
       "type": "file",
       "file": "Workflow_1.md",
-      "x": 4640,
+      "x": 6480,
       "y": 6340,
       "width": 180,
       "height": 60
@@ -10322,17 +10413,17 @@
       "id": "g216",
       "type": "group",
       "label": "__init__.py",
-      "x": 6260,
+      "x": 8320,
       "y": 6180,
       "width": 600,
       "height": 400,
-      "color": "5"
+      "color": "6"
     },
     {
       "id": "n_agents_skills_caveman_compress_scripts_init_rationale_1",
       "type": "file",
       "file": "Caveman compress scripts.  This package provides tools to compress natural lan.md",
-      "x": 6280,
+      "x": 8340,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10341,7 +10432,7 @@
       "id": "n_agents_skills_caveman_compress_scripts_init",
       "type": "file",
       "file": "__init__.py.md",
-      "x": 6480,
+      "x": 8540,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10350,17 +10441,17 @@
       "id": "g217",
       "type": "group",
       "label": "copilot-instructions.md",
-      "x": 8320,
+      "x": 9720,
       "y": 6180,
       "width": 600,
       "height": 400,
-      "color": "6"
+      "color": "1"
     },
     {
       "id": "n_github_copilot_instructions_mermaid_diagrams",
       "type": "file",
       "file": "Mermaid Diagrams.md",
-      "x": 8340,
+      "x": 9740,
       "y": 6260,
       "width": 180,
       "height": 60
@@ -10369,7 +10460,7 @@
       "id": "n_github_copilot_instructions",
       "type": "file",
       "file": "copilot-instructions.md",
-      "x": 8540,
+      "x": 9940,
       "y": 6260,
       "width": 180,
       "height": 60
