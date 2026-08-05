@@ -1,23 +1,35 @@
 ---
 type: community
-members: 10
+members: 22
 ---
 
 # Cookie Management
 
-**Members:** 10 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[Commands]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[Core]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[DevTools]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[Keyboard]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[Mouse]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[Navigation]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[Network]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[Save as]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[Storage]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[Tabs]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[AsteroidsConfig]] - code - lib/games/asteroids/types.ts
+- [[AsteroidsGame()]] - code - components/games/asteroids/AsteroidsGame.tsx
+- [[AsteroidsGame.tsx]] - code - components/games/asteroids/AsteroidsGame.tsx
+- [[AsteroidsGameClient()]] - code - app/games/asteroids/AsteroidsGameClient.tsx
+- [[AsteroidsGameClient.tsx]] - code - app/games/asteroids/AsteroidsGameClient.tsx
+- [[AsteroidsGameClientProps]] - code - app/games/asteroids/AsteroidsGameClient.tsx
+- [[AsteroidsGameProps]] - code - lib/games/asteroids/types.ts
+- [[AsteroidsGameState]] - code - lib/games/asteroids/types.ts
+- [[AsteroidsPage()]] - code - app/games/asteroids/page.tsx
+- [[GET()_1]] - code - app/games/asteroids/api/leaderboard/route.ts
+- [[GameModule]] - code - components/games/asteroids/AsteroidsGame.tsx
+- [[LeaderboardEntry]] - code - lib/games/asteroids/types.ts
+- [[LeaderboardServer()]] - code - app/games/asteroids/page.tsx
+- [[SubmitScoreResult]] - code - app/games/asteroids/actions.ts
+- [[actions.ts_2]] - code - app/games/asteroids/actions.ts
+- [[getAsteroidsLeaderboard()]] - code - app/games/asteroids/actions.ts
+- [[mapToLeaderboardEntry()]] - code - app/games/asteroids/actions.ts
+- [[metadata]] - code - app/games/asteroids/page.tsx
+- [[page.tsx_3]] - code - app/games/asteroids/page.tsx
+- [[route.ts_1]] - code - app/games/asteroids/api/leaderboard/route.ts
+- [[submitAsteroidsScore()]] - code - app/games/asteroids/actions.ts
+- [[types.ts_2]] - code - lib/games/asteroids/types.ts
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +39,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Playwright Automation_1]]
+- 6 edges to [[_COMMUNITY_Game Data Layer]]
+- 2 edges to [[_COMMUNITY_Test Generation]]
+- 1 edge to [[_COMMUNITY_E2E Test]]
 
 ## Top bridge nodes
-- [[Commands]] - degree 10, connects to 1 community
+- [[actions.ts_2]] - degree 14, connects to 2 communities
+- [[getAsteroidsLeaderboard()]] - degree 7, connects to 1 community
+- [[submitAsteroidsScore()]] - degree 5, connects to 1 community
+- [[AsteroidsGame()]] - degree 3, connects to 1 community

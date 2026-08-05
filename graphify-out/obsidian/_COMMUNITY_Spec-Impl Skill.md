@@ -15,7 +15,7 @@ members: 9
 - [[Demo]] - document - resources/started-games/02-asteroids/README.md
 - [[Descripción]] - document - resources/started-games/02-asteroids/README.md
 - [[Puntuación]] - document - resources/started-games/02-asteroids/README.md
-- [[README]] - document - resources/started-games/02-asteroids/README.md
+- [[README_7]] - document - resources/started-games/02-asteroids/README.md
 - [[Tecnologías]] - document - resources/started-games/02-asteroids/README.md
 
 ## Live Query (requires Dataview plugin)

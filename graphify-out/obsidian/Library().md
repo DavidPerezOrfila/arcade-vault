@@ -2,7 +2,7 @@
 source_file: "resources/templates/biblioteca.jsx"
 type: "code"
 community: "Package Dependencies"
-location: "L45"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED

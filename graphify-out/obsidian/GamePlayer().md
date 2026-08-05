@@ -1,19 +1,18 @@
 ---
-source_file: "app/player/[id]/page.tsx"
+source_file: "resources/templates/reproductor.jsx"
 type: "code"
-community: "Game Data Layer"
-location: "L12"
+community: "Home Page UI"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Home_Page_UI
 ---
 
 # GamePlayer()
 
 ## Connections
-- [[getUser()]] - `calls` [EXTRACTED]
-- [[page.tsx_5]] - `contains` [EXTRACTED]
-- [[saveScore()]] - `calls` [EXTRACTED]
+- [[GAMES]] - `references` [EXTRACTED]
+- [[reproductor.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/page.tsx"
 type: "code"
-community: "About Page & Contact"
-location: "L10"
+community: "Playwright Config"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/Playwright_Config
 ---
 
 # HIGHLIGHTS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[page.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/Playwright_Config

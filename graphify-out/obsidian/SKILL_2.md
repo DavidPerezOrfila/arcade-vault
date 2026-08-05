@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md"
+source_file: ".agents/skills/caveman-compress/SKILL.md"
 type: "document"
-community: "MVP Spec"
+community: "Caveman Compress"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MVP_Spec
+  - community/Caveman_Compress
 ---
 
 # SKILL.md
 
 ## Connections
-- [[spec — Guided spec designer]] - `contains` [EXTRACTED]
+- [[Caveman Compress]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MVP_Spec
+#graphify/document #graphify/EXTRACTED #community/Caveman_Compress

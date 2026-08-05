@@ -1,23 +1,21 @@
 ---
 source_file: "app/data/storage.ts"
 type: "code"
-community: "Game Data Layer"
+community: "Test Generation"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Test_Generation
 ---
 
 # getUser()
 
 ## Connections
-- [[GamePlayer()]] - `calls` [EXTRACTED]
-- [[HallOfFame()]] - `calls` [EXTRACTED]
 - [[Nav()]] - `calls` [EXTRACTED]
+- [[PlayerClient()]] - `calls` [EXTRACTED]
+- [[PlayerClient.tsx]] - `imports` [EXTRACTED]
 - [[nav.tsx]] - `imports` [EXTRACTED]
-- [[page.tsx_5]] - `imports` [EXTRACTED]
-- [[page.tsx_7]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Test_Generation

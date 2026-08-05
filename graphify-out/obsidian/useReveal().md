@@ -1,18 +1,18 @@
 ---
-source_file: "app/page.tsx"
+source_file: "resources/templates/home-about/home.jsx"
 type: "code"
-community: "Game Data Layer"
-location: "L7"
+community: "Home Page UI"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Home_Page_UI
 ---
 
 # useReveal()
 
 ## Connections
 - [[Home()_1]] - `calls` [EXTRACTED]
-- [[page.tsx_4]] - `contains` [EXTRACTED]
+- [[home.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

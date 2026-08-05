@@ -2,7 +2,7 @@
 source_file: "resources/started-games/04-arkanoid/levels.js"
 type: "code"
 community: "levels.js"
-location: "L1"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED

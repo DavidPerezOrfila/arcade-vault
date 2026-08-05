@@ -1,64 +1,78 @@
 ---
 type: community
-members: 51
+members: 65
 ---
 
 # Game Data Layer
 
-**Members:** 51 nodes
+**Members:** 65 nodes
 
 ## Members
-- [[AuthPage()]] - code - app/auth/page.tsx
 - [[CATS]] - code - app/data/games.ts
-- [[DetailPage()]] - code - app/detalle/[id]/page.tsx
-- [[DetailPageProps]] - code - app/detalle/[id]/page.tsx
+- [[DetailPage()]] - code - app/games/[slug]/page.tsx
+- [[DetailPageProps]] - code - app/games/[slug]/page.tsx
 - [[FeatureIcon()]] - code - app/page.tsx
 - [[FloatingSilhouettes()]] - code - app/page.tsx
-- [[GAMES]] - code - app/data/games.ts
-- [[Game]] - code - app/data/types.ts
-- [[GameCard()]] - code - app/games/page.tsx
+- [[Footer()]] - code - app/footer.tsx
+- [[GET()]] - code - app/api/leaderboard/asteroids/route.ts
+- [[Game]] - code - app/data/games.ts
+- [[Game_2]] - code - app/salon/SalonClient.tsx
 - [[GameCategory]] - code - app/data/types.ts
-- [[GameColor]] - code - app/data/types.ts
-- [[GameFilter]] - code - app/data/types.ts
-- [[GamePlayer()]] - code - app/player/[id]/page.tsx
-- [[HallOfFame()]] - code - app/salon/page.tsx
-- [[Home()]] - code - app/games/page.tsx
-- [[Home()_1]] - code - app/page.tsx
+- [[GameFilter]] - code - app/data/games.ts
+- [[GamesPage()]] - code - app/games/page.tsx
+- [[Home()]] - code - app/page.tsx
+- [[HomeEnhancer()]] - code - app/_home/HomeEnhancer.tsx
+- [[HomeEnhancer.tsx]] - code - app/_home/HomeEnhancer.tsx
+- [[LeaderboardRow]] - code - app/data/actions.ts
+- [[LeaderboardRow_1]] - code - app/salon/SalonClient.tsx
 - [[MiniCard()]] - code - app/page.tsx
-- [[Nav()]] - code - components/nav.tsx
-- [[PLAYERS]] - code - app/data/players.ts
+- [[PALETTE]] - code - app/_home/RecentActivity.tsx
+- [[PlayerPage()]] - code - app/player/[id]/page.tsx
 - [[PlayerPageProps]] - code - app/player/[id]/page.tsx
-- [[ReproductorContent()]] - code - app/reproductor/ReproductorContent.tsx
-- [[ReproductorContent.tsx]] - code - app/reproductor/ReproductorContent.tsx
-- [[ReproductorPage()]] - code - app/reproductor/page.tsx
+- [[RecentActivity()]] - code - app/_home/RecentActivity.tsx
+- [[RecentActivity.tsx]] - code - app/_home/RecentActivity.tsx
 - [[RootLayout()]] - code - app/layout.tsx
-- [[ScoreEntry]] - code - app/data/types.ts
-- [[ScoreRow]] - code - app/data/types.ts
-- [[User]] - code - app/data/types.ts
-- [[clearUser()]] - code - app/data/storage.ts
+- [[SalonClient()]] - code - app/salon/SalonClient.tsx
+- [[SalonClient.tsx]] - code - app/salon/SalonClient.tsx
+- [[SalonClientProps]] - code - app/salon/SalonClient.tsx
+- [[SalonPage()]] - code - app/salon/page.tsx
+- [[SaveScoreResult]] - code - app/data/actions.ts
+- [[ScoreEntryInputParsed]] - code - app/data/schema.ts
+- [[actions.ts_1]] - code - app/data/actions.ts
+- [[client.ts]] - code - lib/supabase/client.ts
+- [[createSupabaseBrowserClient()]] - code - lib/supabase/client.ts
+- [[createSupabaseServerClient()]] - code - lib/supabase/server.ts
+- [[footer.tsx]] - code - app/footer.tsx
+- [[formatDate()]] - code - app/games/[slug]/page.tsx
+- [[gameLabel()]] - code - app/_home/RecentActivity.tsx
 - [[games.ts]] - code - app/data/games.ts
-- [[generateStaticParams()]] - code - app/detalle/[id]/page.tsx
-- [[getScores()]] - code - app/data/storage.ts
-- [[getUser()]] - code - app/data/storage.ts
+- [[getGameById()]] - code - app/data/games.ts
+- [[getGameBySlug()]] - code - app/data/games.ts
+- [[getGames()]] - code - app/data/games.ts
+- [[getGamesByCategory()]] - code - app/data/games.ts
+- [[getSalonLeaderboard()]] - code - app/data/actions.ts
+- [[getScores()]] - code - app/data/scores.ts
+- [[getScoresByGame()]] - code - app/data/scores.ts
+- [[getUserBestScore()]] - code - app/data/actions.ts
 - [[layout.tsx]] - code - app/layout.tsx
-- [[metadata]] - code - app/layout.tsx
-- [[monoFont]] - code - app/layout.tsx
-- [[nav.tsx]] - code - components/nav.tsx
-- [[page.tsx_1]] - code - app/auth/page.tsx
-- [[page.tsx_2]] - code - app/detalle/[id]/page.tsx
-- [[page.tsx_3]] - code - app/games/page.tsx
-- [[page.tsx_4]] - code - app/page.tsx
-- [[page.tsx_5]] - code - app/player/[id]/page.tsx
-- [[page.tsx_6]] - code - app/reproductor/page.tsx
+- [[migrate-local-storage.tsx]] - code - components/migrate-local-storage.tsx
+- [[migrateLocalStorageScores()]] - code - components/migrate-local-storage.tsx
+- [[page.tsx_2]] - code - app/games/[slug]/page.tsx
+- [[page.tsx_4]] - code - app/games/page.tsx
+- [[page.tsx_5]] - code - app/page.tsx
+- [[page.tsx_6]] - code - app/player/[id]/page.tsx
 - [[page.tsx_7]] - code - app/salon/page.tsx
-- [[pixelFont]] - code - app/layout.tsx
-- [[players.ts]] - code - app/data/players.ts
-- [[saveScore()]] - code - app/data/storage.ts
-- [[seededScores()]] - code - app/data/players.ts
-- [[setUser()]] - code - app/data/storage.ts
-- [[storage.ts]] - code - app/data/storage.ts
-- [[types.ts_1]] - code - app/data/types.ts
-- [[useReveal()]] - code - app/page.tsx
+- [[parseFormData()]] - code - app/data/actions.ts
+- [[relativeTime()]] - code - app/_home/RecentActivity.tsx
+- [[route.ts]] - code - app/api/leaderboard/asteroids/route.ts
+- [[rowToEntry()]] - code - app/data/scores.ts
+- [[saveScore()]] - code - app/data/scores.ts
+- [[saveScoreAction()]] - code - app/data/actions.ts
+- [[schema.ts_1]] - code - app/data/schema.ts
+- [[scoreEntrySchema]] - code - app/data/schema.ts
+- [[scores.ts]] - code - app/data/scores.ts
+- [[server.ts]] - code - lib/supabase/server.ts
+- [[tone()]] - code - app/_home/RecentActivity.tsx
 
 ## Live Query (requires Dataview plugin)
 
@@ -66,3 +80,14 @@ members: 51
 TABLE source_file, type FROM #community/Game_Data_Layer
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 14 edges to [[_COMMUNITY_Test Generation]]
+- 6 edges to [[_COMMUNITY_Cookie Management]]
+
+## Top bridge nodes
+- [[scores.ts]] - degree 15, connects to 2 communities
+- [[games.ts]] - degree 17, connects to 1 community
+- [[actions.ts_1]] - degree 16, connects to 1 community
+- [[page.tsx_5]] - degree 12, connects to 1 community
+- [[getScoresByGame()]] - degree 11, connects to 1 community

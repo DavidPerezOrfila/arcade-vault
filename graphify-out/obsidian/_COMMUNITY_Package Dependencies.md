@@ -1,19 +1,29 @@
 ---
 type: community
-members: 35
+members: 45
 ---
 
 # Package Dependencies
 
-**Members:** 35 nodes
+**Members:** 45 nodes
 
 ## Members
 - [[@dietrichgebertponytail]] - code - package.json
 - [[@dietrichgebertponytail_1]] - concept - package.json
+- [[@supabasessr]] - code - package.json
+- [[@supabasessr_1]] - concept - package.json
+- [[@supabasesupabase-js]] - code - package.json
+- [[@supabasesupabase-js_1]] - concept - package.json
 - [[GameCard()_1]] - code - resources/templates/biblioteca.jsx
 - [[Library()]] - code - resources/templates/biblioteca.jsx
 - [[biblioteca.jsx]] - code - resources/templates/biblioteca.jsx
 - [[build]] - code - package.json
+- [[dbmigrate]] - code - package.json
+- [[dbreset]] - code - package.json
+- [[dbstart]] - code - package.json
+- [[dbstatus]] - code - package.json
+- [[dbstop]] - code - package.json
+- [[dbtypes]] - code - package.json
 - [[dependencies]] - code - package.json
 - [[dev]] - code - package.json
 - [[ecc-universal]] - code - package.json

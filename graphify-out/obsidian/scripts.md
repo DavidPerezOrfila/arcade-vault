@@ -13,6 +13,12 @@ tags:
 
 ## Connections
 - [[build]] - `contains` [EXTRACTED]
+- [[dbmigrate]] - `contains` [EXTRACTED]
+- [[dbreset]] - `contains` [EXTRACTED]
+- [[dbstart]] - `contains` [EXTRACTED]
+- [[dbstatus]] - `contains` [EXTRACTED]
+- [[dbstop]] - `contains` [EXTRACTED]
+- [[dbtypes]] - `contains` [EXTRACTED]
 - [[dev]] - `contains` [EXTRACTED]
 - [[format]] - `contains` [EXTRACTED]
 - [[formatcheck]] - `contains` [EXTRACTED]

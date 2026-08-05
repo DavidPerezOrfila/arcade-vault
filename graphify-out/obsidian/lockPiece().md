@@ -2,7 +2,7 @@
 source_file: "resources/started-games/03-tetris/game.js"
 type: "code"
 community: "Playwright Automation"
-location: "L140"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,7 +15,7 @@ tags:
 - [[clearLines()]] - `calls` [EXTRACTED]
 - [[game.js_1]] - `contains` [EXTRACTED]
 - [[hardDrop()]] - `calls` [EXTRACTED]
-- [[loop()_1]] - `calls` [EXTRACTED]
+- [[loop()_2]] - `calls` [EXTRACTED]
 - [[merge()]] - `calls` [EXTRACTED]
 - [[softDrop()]] - `calls` [EXTRACTED]
 - [[spawn()]] - `calls` [EXTRACTED]

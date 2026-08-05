@@ -8,8 +8,8 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Reporting a Vulnerability]] - document - SECURITY.md
-- [[SECURITY]] - document - SECURITY.md
+- [[Reporting a Vulnerability_1]] - document - SECURITY.md
+- [[SECURITY_3]] - document - SECURITY.md
 - [[Security Policy]] - document - SECURITY.md
 - [[Supported Versions]] - document - SECURITY.md
 

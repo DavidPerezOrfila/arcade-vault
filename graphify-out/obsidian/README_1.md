@@ -1,17 +1,18 @@
 ---
-source_file: "resources/started-games/03-tetris/README.md"
+source_file: ".agents/skills/caveman-commit/README.md"
 type: "document"
-community: "Playwright Tracing"
+community: "caveman-commit"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Tracing
+  - community/caveman-commit
 ---
 
 # README.md
 
 ## Connections
-- [[Tetris]] - `contains` [EXTRACTED]
+- [[SKILL_1]] - `references` [EXTRACTED]
+- [[caveman-commit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing
+#graphify/document #graphify/EXTRACTED #community/caveman-commit

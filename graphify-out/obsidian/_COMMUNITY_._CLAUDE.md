@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[._CLAUDE]] - document - resources/started-games/__MACOSX/02-asteroids/._CLAUDE.md
+- [[playwright.config.ts]] - code - playwright.config.ts
 
 ## Live Query (requires Dataview plugin)
 

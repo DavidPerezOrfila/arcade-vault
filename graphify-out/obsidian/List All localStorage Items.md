@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "localStorage Ops"
+community: "reproductor.jsx"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/localStorage_Ops
+  - community/reproductorjsx
 ---
 
 # List All localStorage Items
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Local Storage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/localStorage_Ops
+#graphify/document #graphify/EXTRACTED #community/reproductorjsx

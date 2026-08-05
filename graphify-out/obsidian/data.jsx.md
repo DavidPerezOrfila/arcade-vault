@@ -1,20 +1,20 @@
 ---
 source_file: "resources/templates/data.jsx"
 type: "code"
-community: "Games Page"
+community: "Home Page UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/Home_Page_UI
 ---
 
 # data.jsx
 
 ## Connections
-- [[CATS_1]] - `contains` [EXTRACTED]
-- [[GAMES_1]] - `contains` [EXTRACTED]
+- [[CATS_2]] - `contains` [EXTRACTED]
+- [[GAMES]] - `contains` [EXTRACTED]
 - [[PLAYERS_1]] - `contains` [EXTRACTED]
 - [[seededScores()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

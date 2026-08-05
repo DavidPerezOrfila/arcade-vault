@@ -1,22 +1,23 @@
 ---
-source_file: ".agents/skills/playwright-cli/SKILL.md"
+source_file: ".agents/skills/cavecrew/SKILL.md"
 type: "document"
-community: "Storage State"
+community: "SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Storage_State
+  - community/SKILLmd
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Browser Automation with playwright-cli]] - `contains` [EXTRACTED]
-- [[element-attributes]] - `references` [EXTRACTED]
-- [[playwright-tests]] - `references` [EXTRACTED]
-- [[request-mocking]] - `references` [EXTRACTED]
-- [[storage-state]] - `references` [EXTRACTED]
-- [[video-recording]] - `references` [EXTRACTED]
+- [[Auto-clarity (inherited)]] - `contains` [EXTRACTED]
+- [[Chaining patterns]] - `contains` [EXTRACTED]
+- [[Output contracts]] - `contains` [EXTRACTED]
+- [[README]] - `references` [EXTRACTED]
+- [[What NOT to do]] - `contains` [EXTRACTED]
+- [[When to use cavecrew vs alternatives]] - `contains` [EXTRACTED]
+- [[Why this exists (the real win)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Storage_State
+#graphify/document #graphify/EXTRACTED #community/SKILLmd

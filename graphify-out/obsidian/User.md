@@ -1,20 +1,19 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "Game Data Layer"
-location: "L38"
+community: "Test Generation"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Test_Generation
 ---
 
 # User
 
 ## Connections
 - [[nav.tsx]] - `imports` [EXTRACTED]
-- [[page.tsx_7]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `imports` [EXTRACTED]
 - [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Test_Generation

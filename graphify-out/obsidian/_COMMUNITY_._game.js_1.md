@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[._game.js_1]] - code - resources/started-games/__MACOSX/03-tetris/._game.js
+- [[salon.spec.ts]] - code - tests/e2e/salon.spec.ts
 
 ## Live Query (requires Dataview plugin)
 

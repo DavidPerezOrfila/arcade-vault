@@ -1,15 +1,21 @@
 ---
 type: community
-members: 2
+members: 8
 ---
 
 # reproductor.jsx
 
-**Members:** 2 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[GamePlayer()_1]] - code - resources/templates/reproductor.jsx
-- [[reproductor.jsx]] - code - resources/templates/reproductor.jsx
+- [[Advanced Multiple Operations]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Clear All localStorage]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Delete Single Item]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Get Single Value]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[List All localStorage Items]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Local Storage]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Set JSON Value]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Set Value]] - document - .agents/skills/playwright-cli/references/storage-state.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,3 +23,9 @@ members: 2
 TABLE source_file, type FROM #community/reproductorjsx
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_detalle.jsx]]
+
+## Top bridge nodes
+- [[Local Storage]] - degree 8, connects to 1 community

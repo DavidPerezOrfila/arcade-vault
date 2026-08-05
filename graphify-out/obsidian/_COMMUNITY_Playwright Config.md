@@ -1,14 +1,29 @@
 ---
 type: community
-members: 1
+members: 16
 ---
 
 # Playwright Config
 
-**Members:** 1 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[playwright.config.ts]] - code - playwright.config.ts
+- [[AboutPage()]] - code - app/about/page.tsx
+- [[ContactFormData]] - code - app/about/schema.ts
+- [[ContactFormInput]] - code - app/about/types.ts
+- [[ContactFormState]] - code - app/about/types.ts
+- [[HIGHLIGHTS]] - code - app/about/page.tsx
+- [[HighlightIcon()]] - code - app/about/highlight-icon.tsx
+- [[HighlightIconKind]] - code - app/about/highlight-icon.tsx
+- [[HighlightIconProps]] - code - app/about/highlight-icon.tsx
+- [[actions.ts]] - code - app/about/actions.ts
+- [[contactSchema]] - code - app/about/schema.ts
+- [[highlight-icon.tsx]] - code - app/about/highlight-icon.tsx
+- [[initialState]] - code - app/about/page.tsx
+- [[page.tsx]] - code - app/about/page.tsx
+- [[schema.ts]] - code - app/about/schema.ts
+- [[sendContactEmail()]] - code - app/about/actions.ts
+- [[types.ts]] - code - app/about/types.ts
 
 ## Live Query (requires Dataview plugin)
 

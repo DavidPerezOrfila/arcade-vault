@@ -1,23 +1,23 @@
 ---
-source_file: "app/games/page.tsx"
+source_file: "app/games/asteroids/page.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "Cookie Management"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Cookie_Management
 ---
 
 # page.tsx
 
 ## Connections
-- [[CATS]] - `imports` [EXTRACTED]
-- [[GAMES]] - `imports` [EXTRACTED]
-- [[Game]] - `imports` [EXTRACTED]
-- [[GameCard()]] - `contains` [EXTRACTED]
-- [[Home()]] - `contains` [EXTRACTED]
-- [[games.ts]] - `imports_from` [EXTRACTED]
-- [[types.ts_1]] - `imports_from` [EXTRACTED]
+- [[AsteroidsGameClient()]] - `imports` [EXTRACTED]
+- [[AsteroidsGameClient.tsx]] - `imports_from` [EXTRACTED]
+- [[AsteroidsPage()]] - `contains` [EXTRACTED]
+- [[LeaderboardServer()]] - `contains` [EXTRACTED]
+- [[actions.ts_2]] - `imports_from` [EXTRACTED]
+- [[getAsteroidsLeaderboard()]] - `imports` [EXTRACTED]
+- [[metadata]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Cookie_Management

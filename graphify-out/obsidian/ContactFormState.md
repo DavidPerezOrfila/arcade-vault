@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/types.ts"
 type: "code"
-community: "About Page & Contact"
+community: "Playwright Config"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/Playwright_Config
 ---
 
 # ContactFormState
@@ -16,4 +16,4 @@ tags:
 - [[page.tsx]] - `imports` [EXTRACTED]
 - [[types.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/Playwright_Config

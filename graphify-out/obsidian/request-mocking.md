@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Request Mocking]] - `contains` [EXTRACTED]
-- [[SKILL]] - `references` [EXTRACTED]
+- [[SKILL_8]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference

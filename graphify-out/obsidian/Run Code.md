@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/running-code.md"
 type: "document"
-community: "localStorage Ops"
+community: "detalle.jsx"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/localStorage_Ops
+  - community/detallejsx
 ---
 
 # Run Code
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Storage Management]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/localStorage_Ops
+#graphify/document #graphify/EXTRACTED #community/detallejsx

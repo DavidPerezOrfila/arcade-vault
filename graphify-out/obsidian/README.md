@@ -1,17 +1,18 @@
 ---
-source_file: "resources/started-games/02-asteroids/README.md"
+source_file: ".agents/skills/cavecrew/README.md"
 type: "document"
-community: "Spec-Impl Skill"
+community: "SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Impl_Skill
+  - community/SKILLmd
 ---
 
 # README.md
 
 ## Connections
-- [[Asteroids]] - `contains` [EXTRACTED]
+- [[SKILL]] - `references` [EXTRACTED]
+- [[cavecrew]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Impl_Skill
+#graphify/document #graphify/EXTRACTED #community/SKILLmd

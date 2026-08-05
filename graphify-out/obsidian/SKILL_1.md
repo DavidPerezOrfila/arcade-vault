@@ -1,17 +1,21 @@
 ---
-source_file: "resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md"
+source_file: ".agents/skills/caveman-commit/SKILL.md"
 type: "document"
-community: "Cookie Management"
+community: "caveman-commit"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/caveman-commit
 ---
 
 # SKILL.md
 
 ## Connections
-- [[spec-impl — Implementer of approved specs]] - `contains` [EXTRACTED]
+- [[Auto-Clarity]] - `contains` [EXTRACTED]
+- [[Boundaries]] - `contains` [EXTRACTED]
+- [[Examples]] - `contains` [EXTRACTED]
+- [[README_1]] - `references` [EXTRACTED]
+- [[Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Cookie_Management
+#graphify/document #graphify/EXTRACTED #community/caveman-commit

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 23
+members: 29
 ---
 
 # Dev Tooling
 
-**Members:** 23 nodes
+**Members:** 29 nodes
 
 ## Members
 - [[@playwrighttest]] - code - package.json
@@ -23,14 +23,20 @@ members: 23
 - [[eslint_1]] - concept - package.json
 - [[eslint-config-next]] - code - package.json
 - [[eslint-config-next_1]] - concept - package.json
+- [[globals]] - code - package.json
+- [[globals_1]] - concept - package.json
 - [[prettier]] - code - package.json
 - [[prettier_1]] - concept - package.json
 - [[prettier-plugin-tailwindcss]] - code - package.json
 - [[prettier-plugin-tailwindcss_1]] - concept - package.json
+- [[supabase]] - code - package.json
+- [[supabase_1]] - concept - package.json
 - [[tailwindcss]] - code - package.json
 - [[tailwindcss_1]] - concept - package.json
 - [[typescript]] - code - package.json
 - [[typescript_1]] - concept - package.json
+- [[typescript-eslint]] - code - package.json
+- [[typescript-eslint_1]] - concept - package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,4 +49,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Package Dependencies]]
 
 ## Top bridge nodes
-- [[devDependencies]] - degree 12, connects to 1 community
+- [[devDependencies]] - degree 15, connects to 1 community

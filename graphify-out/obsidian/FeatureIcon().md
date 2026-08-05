@@ -2,7 +2,7 @@
 source_file: "app/page.tsx"
 type: "code"
 community: "Game Data Layer"
-location: "L123"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # FeatureIcon()
 
 ## Connections
-- [[page.tsx_4]] - `contains` [EXTRACTED]
+- [[page.tsx_5]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Inspecting Element Attributes]] - `contains` [EXTRACTED]
-- [[SKILL]] - `references` [EXTRACTED]
+- [[SKILL_8]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Storage_State

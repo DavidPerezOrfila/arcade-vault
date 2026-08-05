@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/schema.ts"
 type: "code"
-community: "About Page & Contact"
+community: "Playwright Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/Playwright_Config
 ---
 
 # schema.ts
@@ -16,4 +16,4 @@ tags:
 - [[actions.ts]] - `imports_from` [EXTRACTED]
 - [[contactSchema]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/Playwright_Config

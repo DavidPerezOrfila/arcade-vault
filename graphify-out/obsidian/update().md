@@ -1,12 +1,12 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L357"
+community: "E2E Test"
+location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/E2E_Test
 ---
 
 # update()
@@ -17,11 +17,11 @@ tags:
 - [[.tryShoot()]] - `calls` [EXTRACTED]
 - [[dist()]] - `calls` [EXTRACTED]
 - [[explode()]] - `calls` [EXTRACTED]
-- [[game.js]] - `contains` [EXTRACTED]
-- [[initGame()]] - `calls` [EXTRACTED]
+- [[game.esm.js]] - `contains` [EXTRACTED]
+- [[initGameState()]] - `calls` [EXTRACTED]
 - [[killShip()]] - `calls` [EXTRACTED]
 - [[loop()]] - `calls` [EXTRACTED]
 - [[nextLevel()]] - `calls` [EXTRACTED]
 - [[pressed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/E2E_Test

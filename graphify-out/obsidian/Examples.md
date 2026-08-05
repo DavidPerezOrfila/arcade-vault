@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/element-attributes.md"
+source_file: ".agents/skills/caveman-commit/SKILL.md"
 type: "document"
-community: "Storage State"
-location: "L5"
+community: "caveman-commit"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Storage_State
+  - community/caveman-commit
 ---
 
 # Examples
 
 ## Connections
-- [[Inspecting Element Attributes]] - `contains` [EXTRACTED]
+- [[SKILL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Storage_State
+#graphify/document #graphify/EXTRACTED #community/caveman-commit

@@ -2,7 +2,7 @@
 source_file: "tsconfig.json"
 type: "code"
 community: "TypeScript Config"
-location: "L11"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED

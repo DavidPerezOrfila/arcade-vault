@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[RootLayout()]] - `contains` [EXTRACTED]
-- [[metadata]] - `contains` [EXTRACTED]
-- [[monoFont]] - `contains` [EXTRACTED]
+- [[footer.tsx]] - `imports_from` [EXTRACTED]
+- [[migrate-local-storage.tsx]] - `imports_from` [EXTRACTED]
+- [[migrateLocalStorageScores()]] - `imports` [EXTRACTED]
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
-- [[pixelFont]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

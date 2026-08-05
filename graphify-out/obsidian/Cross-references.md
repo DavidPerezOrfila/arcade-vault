@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/test-generation.md"
 type: "document"
-community: "Test Generation"
+community: "Browser Sessions"
 location: "L427"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/Browser_Sessions
 ---
 
 # Cross-references
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test generation (plan → generate → heal)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Generation
+#graphify/document #graphify/EXTRACTED #community/Browser_Sessions
