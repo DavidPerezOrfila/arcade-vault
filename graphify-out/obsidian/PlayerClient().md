@@ -1,12 +1,12 @@
 ---
 source_file: "app/player/[id]/PlayerClient.tsx"
 type: "code"
-community: "Test Generation"
+community: "Game Data Layer"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/Game_Data_Layer
 ---
 
 # PlayerClient()
@@ -16,4 +16,4 @@ tags:
 - [[getUser()]] - `calls` [EXTRACTED]
 - [[saveScoreAction()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
