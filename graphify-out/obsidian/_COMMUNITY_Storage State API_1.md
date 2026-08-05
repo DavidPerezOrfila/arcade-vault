@@ -14,7 +14,7 @@ members: 8
 - [[Estructura del proyecto_1]] - document - resources/started-games/04-arkanoid/README.md
 - [[Jugar]] - document - resources/started-games/04-arkanoid/README.md
 - [[Niveles]] - document - resources/started-games/04-arkanoid/README.md
-- [[README_2]] - document - resources/started-games/04-arkanoid/README.md
+- [[README_9]] - document - resources/started-games/04-arkanoid/README.md
 - [[Specs implementadas]] - document - resources/started-games/04-arkanoid/README.md
 
 ## Live Query (requires Dataview plugin)

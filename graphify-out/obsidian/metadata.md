@@ -1,8 +1,8 @@
 ---
-source_file: "app/layout.tsx"
+source_file: "app/games/asteroids/page.tsx"
 type: "code"
 community: "Game Data Layer"
-location: "L18"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # metadata
 
 ## Connections
-- [[layout.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

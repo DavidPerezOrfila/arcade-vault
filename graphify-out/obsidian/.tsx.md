@@ -2,7 +2,7 @@
 source_file: "tsconfig.json"
 type: "concept"
 community: "TypeScript Config"
-location: "L25"
+location: "L31"
 tags:
   - graphify/concept
   - graphify/EXTRACTED

@@ -1,23 +1,21 @@
 ---
-source_file: "app/data/games.ts"
+source_file: "resources/templates/data.jsx"
 type: "code"
-community: "Game Data Layer"
-location: "L3"
+community: "Home Page UI"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Home_Page_UI
 ---
 
 # GAMES
 
 ## Connections
-- [[ReproductorContent.tsx]] - `imports` [EXTRACTED]
-- [[games.ts]] - `contains` [EXTRACTED]
-- [[page.tsx_2]] - `imports` [EXTRACTED]
-- [[page.tsx_3]] - `imports` [EXTRACTED]
-- [[page.tsx_4]] - `imports` [EXTRACTED]
-- [[page.tsx_5]] - `imports` [EXTRACTED]
-- [[page.tsx_7]] - `imports` [EXTRACTED]
+- [[GameDetail()]] - `references` [EXTRACTED]
+- [[GamePlayer()]] - `references` [EXTRACTED]
+- [[HallOfFame()]] - `references` [EXTRACTED]
+- [[Home()_1]] - `references` [EXTRACTED]
+- [[data.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

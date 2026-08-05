@@ -1,14 +1,15 @@
 ---
 type: community
-members: 1
+members: 2
 ---
 
 # ._game.js
 
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[._game.js]] - code - resources/started-games/__MACOSX/02-asteroids/._game.js
+- [[admin.ts]] - code - lib/supabase/admin.ts
+- [[createSupabaseAdminClient()]] - code - lib/supabase/admin.ts
 
 ## Live Query (requires Dataview plugin)
 

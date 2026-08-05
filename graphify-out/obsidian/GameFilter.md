@@ -1,8 +1,8 @@
 ---
-source_file: "app/data/types.ts"
+source_file: "app/data/games.ts"
 type: "code"
 community: "Game Data Layer"
-location: "L5"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # GameFilter
 
 ## Connections
-- [[games.ts]] - `imports` [EXTRACTED]
-- [[types.ts_1]] - `contains` [EXTRACTED]
+- [[games.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

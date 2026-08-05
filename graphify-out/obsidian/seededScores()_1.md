@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/data.jsx"
 type: "code"
-community: "Games Page"
-location: "L102"
+community: "Home Page UI"
+location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/Home_Page_UI
 ---
 
 # seededScores()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[data.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/Home_Page_UI

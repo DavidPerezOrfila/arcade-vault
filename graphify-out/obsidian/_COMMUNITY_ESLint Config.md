@@ -1,15 +1,14 @@
 ---
 type: community
-members: 2
+members: 1
 ---
 
 # ESLint Config
 
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
 - [[eslint.config.mjs]] - code - eslint.config.mjs
-- [[eslintConfig]] - code - eslint.config.mjs
 
 ## Live Query (requires Dataview plugin)
 

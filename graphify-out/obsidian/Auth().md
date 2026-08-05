@@ -2,7 +2,7 @@
 source_file: "resources/templates/auth.jsx"
 type: "code"
 community: "Auth Template"
-location: "L4"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED

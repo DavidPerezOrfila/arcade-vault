@@ -2,7 +2,7 @@
 source_file: "resources/started-games/04-arkanoid/game.js"
 type: "code"
 community: "Test Generation"
-location: "L31"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED

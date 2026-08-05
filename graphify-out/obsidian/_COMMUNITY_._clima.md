@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[._clima]] - document - resources/started-games/__MACOSX/03-tetris/.Claude/commands/._clima.md
+- [[asteroids.spec.ts]] - code - tests/e2e/asteroids.spec.ts
 
 ## Live Query (requires Dataview plugin)
 

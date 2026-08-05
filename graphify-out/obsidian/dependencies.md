@@ -2,7 +2,7 @@
 source_file: "package.json"
 type: "code"
 community: "Package Dependencies"
-location: "L17"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,8 @@ tags:
 
 ## Connections
 - [[@dietrichgebertponytail]] - `contains` [EXTRACTED]
+- [[@supabasessr]] - `contains` [EXTRACTED]
+- [[@supabasesupabase-js]] - `contains` [EXTRACTED]
 - [[ecc-universal]] - `contains` [EXTRACTED]
 - [[next]] - `contains` [EXTRACTED]
 - [[package.json]] - `contains` [EXTRACTED]

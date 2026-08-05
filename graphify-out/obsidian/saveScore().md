@@ -1,8 +1,8 @@
 ---
-source_file: "app/data/storage.ts"
+source_file: "app/data/scores.ts"
 type: "code"
 community: "Game Data Layer"
-location: "L40"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,12 @@ tags:
 # saveScore()
 
 ## Connections
-- [[GamePlayer()]] - `calls` [EXTRACTED]
-- [[getScores()]] - `calls` [EXTRACTED]
-- [[page.tsx_5]] - `imports` [EXTRACTED]
-- [[storage.ts]] - `contains` [EXTRACTED]
+- [[actions.ts_1]] - `imports` [EXTRACTED]
+- [[actions.ts_2]] - `imports` [EXTRACTED]
+- [[createSupabaseServerClient()]] - `calls` [EXTRACTED]
+- [[rowToEntry()]] - `calls` [EXTRACTED]
+- [[saveScoreAction()]] - `calls` [EXTRACTED]
+- [[scores.ts]] - `contains` [EXTRACTED]
+- [[submitAsteroidsScore()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

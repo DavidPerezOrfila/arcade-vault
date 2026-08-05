@@ -12,7 +12,7 @@ tags:
 # storage-state.md
 
 ## Connections
-- [[SKILL]] - `references` [EXTRACTED]
+- [[SKILL_8]] - `references` [EXTRACTED]
 - [[Storage Management]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Storage_State

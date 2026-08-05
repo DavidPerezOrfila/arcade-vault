@@ -1,5 +1,5 @@
 ---
-source_file: "app/page.tsx"
+source_file: "app/games/page.tsx"
 type: "code"
 community: "Game Data Layer"
 location: "L1"
@@ -12,12 +12,9 @@ tags:
 # page.tsx
 
 ## Connections
-- [[FeatureIcon()]] - `contains` [EXTRACTED]
-- [[FloatingSilhouettes()]] - `contains` [EXTRACTED]
-- [[GAMES]] - `imports` [EXTRACTED]
-- [[Home()_1]] - `contains` [EXTRACTED]
-- [[MiniCard()]] - `contains` [EXTRACTED]
+- [[GamesClient.tsx]] - `imports_from` [EXTRACTED]
+- [[GamesPage()]] - `contains` [EXTRACTED]
 - [[games.ts]] - `imports_from` [EXTRACTED]
-- [[useReveal()]] - `contains` [EXTRACTED]
+- [[getGames()]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

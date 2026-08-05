@@ -12,7 +12,7 @@ tags:
 # Inspecting Element Attributes
 
 ## Connections
-- [[Examples]] - `contains` [EXTRACTED]
+- [[Examples_2]] - `contains` [EXTRACTED]
 - [[element-attributes]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Storage_State

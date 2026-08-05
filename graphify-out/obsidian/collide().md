@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[game.js_1]] - `contains` [EXTRACTED]
 - [[ghostY()]] - `calls` [EXTRACTED]
-- [[loop()_1]] - `calls` [EXTRACTED]
+- [[loop()_2]] - `calls` [EXTRACTED]
 - [[softDrop()]] - `calls` [EXTRACTED]
 - [[spawn()]] - `calls` [EXTRACTED]
 - [[tryRotate()]] - `calls` [EXTRACTED]

@@ -1,5 +1,5 @@
 ---
-source_file: "app/games/page.tsx"
+source_file: "app/games/asteroids/page.tsx"
 type: "code"
 community: "Game Data Layer"
 location: "L1"
@@ -12,12 +12,12 @@ tags:
 # page.tsx
 
 ## Connections
-- [[CATS]] - `imports` [EXTRACTED]
-- [[GAMES]] - `imports` [EXTRACTED]
-- [[Game]] - `imports` [EXTRACTED]
-- [[GameCard()]] - `contains` [EXTRACTED]
-- [[Home()]] - `contains` [EXTRACTED]
-- [[games.ts]] - `imports_from` [EXTRACTED]
-- [[types.ts_1]] - `imports_from` [EXTRACTED]
+- [[AsteroidsGame()]] - `imports` [EXTRACTED]
+- [[AsteroidsGame.tsx]] - `imports_from` [EXTRACTED]
+- [[AsteroidsPage()]] - `contains` [EXTRACTED]
+- [[LeaderboardServer()]] - `contains` [EXTRACTED]
+- [[actions.ts_2]] - `imports_from` [EXTRACTED]
+- [[getAsteroidsLeaderboard()]] - `imports` [EXTRACTED]
+- [[metadata]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

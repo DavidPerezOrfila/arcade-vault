@@ -21,7 +21,7 @@ members: 17
 - [[Opción 2 servidor local (recomendado)]] - document - resources/started-games/03-tetris/README.md
 - [[Personalización]] - document - resources/started-games/03-tetris/README.md
 - [[Qué hace el proyecto]] - document - resources/started-games/03-tetris/README.md
-- [[README_1]] - document - resources/started-games/03-tetris/README.md
+- [[README_8]] - document - resources/started-games/03-tetris/README.md
 - [[Tabla de contenidos]] - document - resources/started-games/03-tetris/README.md
 - [[Tecnologías_1]] - document - resources/started-games/03-tetris/README.md
 - [[Tetris]] - document - resources/started-games/03-tetris/README.md

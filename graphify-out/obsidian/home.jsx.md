@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[FeatureIcon()_1]] - `contains` [EXTRACTED]
 - [[FloatingSilhouettes()_1]] - `contains` [EXTRACTED]
-- [[Home()_2]] - `contains` [EXTRACTED]
+- [[Home()_1]] - `contains` [EXTRACTED]
 - [[MiniCard()_1]] - `contains` [EXTRACTED]
-- [[useReveal()_1]] - `contains` [EXTRACTED]
+- [[useReveal()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Home_Page_UI

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[._README]] - document - resources/started-games/__MACOSX/02-asteroids/._README.md
+- [[about.spec.ts]] - code - e2e/about.spec.ts
 
 ## Live Query (requires Dataview plugin)
 

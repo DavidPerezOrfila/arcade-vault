@@ -16,7 +16,7 @@ tags:
 - [[Command flow]] - `contains` [EXTRACTED]
 - [[Hard rules]] - `contains` [EXTRACTED]
 - [[Philosophy]] - `contains` [EXTRACTED]
-- [[SKILL_2]] - `contains` [EXTRACTED]
+- [[SKILL_11]] - `contains` [EXTRACTED]
 - [[Tone when asking questions]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/MVP_Spec

@@ -2,7 +2,7 @@
 source_file: "resources/started-games/03-tetris/game.js"
 type: "code"
 community: "Playwright Automation"
-location: "L123"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED

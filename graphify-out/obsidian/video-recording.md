@@ -12,7 +12,7 @@ tags:
 # video-recording.md
 
 ## Connections
-- [[SKILL]] - `references` [EXTRACTED]
+- [[SKILL_8]] - `references` [EXTRACTED]
 - [[Video Recording]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Storage_State

@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Asteroids Game', () => {
   test.beforeEach(async({ page }) => {
-    await page.goto('/games/asteroids');
+    await page.goto('/games/asteroids?e2e=1');
     // Wait for the game canvas to be ready
     await page.waitForSelector('.asteroids-game-container canvas', {
       timeout: 10000
@@ -88,19 +88,25 @@ test.describe('Asteroids Game', () => {
   test('game over shows auth prompt for unauthenticated user', async({
     page
   }) => {
+    // The game over is forced via the test hook (?e2e=1). As an unauthenticated
+    // user, submitAsteroidsScore returns UNAUTHENTICATED, so the auth prompt
+    // must appear.
     const canvas = page.locator('.asteroids-game-container canvas');
-    await canvas.click();
-
-    // Trigger game over by letting the game run or simulating ship death
-    // Since we can't easily simulate a full game over in a quick test,
-    // we'll just verify the auth prompt component exists in the DOM
-    // (it may be hidden but present)
-
-    // The auth overlay should be present in the DOM (hidden by default)
-
-    // We can't easily trigger game over in a short test,
-    // but we can verify the component structure exists
     await expect(canvas).toBeVisible();
+
+    await page.evaluate(() => {
+      (window as { __forceGameOver?: (score?: number) => void }).__forceGameOver?.();
+    });
+
+    const overlay = page.locator('.asteroids-auth-overlay');
+    await expect(overlay).toBeVisible();
+    await expect(overlay.locator('.asteroids-auth-title')).toHaveText(
+      '¡Partida terminada!'
+    );
+    await expect(overlay.locator('.asteroids-auth-button')).toHaveAttribute(
+      'href',
+      '/auth?redirect=/games/asteroids'
+    );
   });
 
   test('leaderboard displays', async({ page }) => {

@@ -22,7 +22,7 @@ tags:
 - [[Open parameters]] - `contains` [EXTRACTED]
 - [[Quick start]] - `contains` [EXTRACTED]
 - [[Raw output]] - `contains` [EXTRACTED]
-- [[SKILL]] - `contains` [EXTRACTED]
+- [[SKILL_8]] - `contains` [EXTRACTED]
 - [[Snapshots]] - `contains` [EXTRACTED]
 - [[Specific tasks]] - `contains` [EXTRACTED]
 - [[Targeting elements]] - `contains` [EXTRACTED]

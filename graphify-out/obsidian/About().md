@@ -2,7 +2,7 @@
 source_file: "resources/templates/home-about/about.jsx"
 type: "code"
 community: "About Template"
-location: "L4"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED

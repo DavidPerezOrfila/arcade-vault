@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/page.tsx"
 type: "code"
-community: "About Page & Contact"
+community: "Playwright Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/Playwright_Config
 ---
 
 # page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[sendContactEmail()]] - `imports` [EXTRACTED]
 - [[types.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/Playwright_Config

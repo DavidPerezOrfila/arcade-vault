@@ -1,29 +1,40 @@
 ---
 type: community
-members: 16
+members: 27
 ---
 
 # About Page & Contact
 
-**Members:** 16 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[AboutPage()]] - code - app/about/page.tsx
-- [[ContactFormData]] - code - app/about/schema.ts
-- [[ContactFormInput]] - code - app/about/types.ts
-- [[ContactFormState]] - code - app/about/types.ts
-- [[HIGHLIGHTS]] - code - app/about/page.tsx
-- [[HighlightIcon()]] - code - app/about/highlight-icon.tsx
-- [[HighlightIconKind]] - code - app/about/highlight-icon.tsx
-- [[HighlightIconProps]] - code - app/about/highlight-icon.tsx
-- [[actions.ts]] - code - app/about/actions.ts
-- [[contactSchema]] - code - app/about/schema.ts
-- [[highlight-icon.tsx]] - code - app/about/highlight-icon.tsx
-- [[initialState]] - code - app/about/page.tsx
-- [[page.tsx]] - code - app/about/page.tsx
-- [[schema.ts]] - code - app/about/schema.ts
-- [[sendContactEmail()]] - code - app/about/actions.ts
-- [[types.ts]] - code - app/about/types.ts
+- [[.__init__()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[.add_error()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[.add_warning()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[Line-based fenced code block extractor.      Handles ``` and ~~~ fences with v]] - rationale - .agents/skills/caveman-compress/scripts/validate.py
+- [[Path]] - code
+- [[Path_3]] - code
+- [[ValidationResult]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[benchmark.py]] - code - .agents/skills/caveman-compress/scripts/benchmark.py
+- [[benchmark_pair()]] - code - .agents/skills/caveman-compress/scripts/benchmark.py
+- [[count_bullets()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[count_tokens()]] - code - .agents/skills/caveman-compress/scripts/benchmark.py
+- [[extract_code_blocks()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[extract_headings()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[extract_inline_codes()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[extract_paths()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[extract_urls()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[main()]] - code - .agents/skills/caveman-compress/scripts/benchmark.py
+- [[print_table()]] - code - .agents/skills/caveman-compress/scripts/benchmark.py
+- [[read_file()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[validate()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[validate.py]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[validate_bullets()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[validate_code_blocks()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[validate_headings()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[validate_inline_codes()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[validate_paths()]] - code - .agents/skills/caveman-compress/scripts/validate.py
+- [[validate_urls()]] - code - .agents/skills/caveman-compress/scripts/validate.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +42,10 @@ members: 16
 TABLE source_file, type FROM #community/About_Page__Contact
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Games Page]]
+
+## Top bridge nodes
+- [[validate.py]] - degree 17, connects to 1 community
+- [[validate()]] - degree 14, connects to 1 community

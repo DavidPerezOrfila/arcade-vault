@@ -2,7 +2,7 @@
 source_file: "resources/started-games/03-tetris/game.js"
 type: "code"
 community: "Playwright Automation"
-location: "L161"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # drawBlock()
 
 ## Connections
-- [[draw()_1]] - `calls` [EXTRACTED]
+- [[draw()_2]] - `calls` [EXTRACTED]
 - [[drawNext()]] - `calls` [EXTRACTED]
 - [[game.js_1]] - `contains` [EXTRACTED]
 

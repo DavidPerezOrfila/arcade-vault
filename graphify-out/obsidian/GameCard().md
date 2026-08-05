@@ -1,17 +1,17 @@
 ---
-source_file: "app/games/page.tsx"
+source_file: "app/games/GamesClient.tsx"
 type: "code"
-community: "Game Data Layer"
-location: "L8"
+community: "Test Generation"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Test_Generation
 ---
 
 # GameCard()
 
 ## Connections
-- [[page.tsx_3]] - `contains` [EXTRACTED]
+- [[GamesClient.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Test_Generation

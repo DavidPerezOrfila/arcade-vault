@@ -2,7 +2,7 @@
 source_file: "resources/templates/nav.jsx"
 type: "code"
 community: "Nav Template"
-location: "L4"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED

@@ -1,8 +1,8 @@
 ---
-source_file: "next.config.ts"
+source_file: "next.config.mjs"
 type: "code"
 community: "Next Config"
-location: "L3"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # nextConfig
 
 ## Connections
-- [[next.config.ts]] - `contains` [EXTRACTED]
+- [[next.config.mjs]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Next_Config

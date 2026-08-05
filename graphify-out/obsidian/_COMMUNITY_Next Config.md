@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[next.config.ts]] - code - next.config.ts
-- [[nextConfig]] - code - next.config.ts
+- [[next.config.mjs]] - code - next.config.mjs
+- [[nextConfig]] - code - next.config.mjs
 
 ## Live Query (requires Dataview plugin)
 

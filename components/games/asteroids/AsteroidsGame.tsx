@@ -1,8 +1,10 @@
+'use client';
+
 import { useEffect, useRef, useState, useCallback } from 'react';
+import { submitAsteroidsScore } from '@/app/games/asteroids/actions';
 import type { AsteroidsGameProps, LeaderboardEntry } from '@/lib/games/asteroids/types';
 import './asteroids.css';
 
- 
 interface GameModule {
   // eslint-disable-next-line no-unused-vars
   initGame: (canvas: HTMLCanvasElement, _options?: { onGameOver?: (_score: number) => void }) => void;
@@ -12,14 +14,11 @@ interface GameModule {
 }
 
 export function AsteroidsGame({
-  onScoreSubmit,
-  onGameOver,
-  embedMode = false,
   initialLeaderboard = []
 }: AsteroidsGameProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const gameRef = useRef<GameModule | null>(null);
-  const [leaderboard] = useState<LeaderboardEntry[]>(initialLeaderboard);
+  const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>(initialLeaderboard);
   const [showAuthPrompt, setShowAuthPrompt] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -35,27 +34,49 @@ export function AsteroidsGame({
     });
   }, []);
 
-  // Handle game over - submit score if authenticated
+  // Refresh leaderboard from the canonical API route
+  const refreshLeaderboard = useCallback(async() => {
+    const response = await fetch('/api/leaderboard/asteroids');
+    if (response.ok) {
+      const data = (await response.json()) as LeaderboardEntry[];
+      setLeaderboard(data);
+    }
+  }, []);
+
+  // Handle game over - submit score once, then refresh or prompt
   const handleGameOver = useCallback(
     async(score: number) => {
-      onGameOver?.(score);
-
-      if (onScoreSubmit) {
-        try {
-          await onScoreSubmit(score);
-        } catch (error) {
-          console.error('Failed to submit score:', error);
-          setShowAuthPrompt(true);
-        }
-      } else {
+      const result = await submitAsteroidsScore(score);
+      if (!result.ok) {
         setShowAuthPrompt(true);
+        return;
       }
+      await refreshLeaderboard();
     },
-    [onScoreSubmit, onGameOver]
+    [refreshLeaderboard]
   );
 
-  // Initialize game when canvas is ready
+  // Test hook (solo con ?e2e=1): permite forzar el game over de forma
+  // determinista desde los tests E2E de Playwright.
   useEffect(() => {
+    if (typeof window === 'undefined') return undefined;
+    const isE2E = new URLSearchParams(window.location.search).get('e2e') === '1';
+    if (!isE2E) return undefined;
+
+    const win = window as unknown as {
+      // eslint-disable-next-line no-unused-vars
+      __forceGameOver?: (_score?: number) => void;
+    };
+    win.__forceGameOver = (_score = 1000) => handleGameOver(_score);
+
+    return () => {
+      delete win.__forceGameOver;
+    };
+  }, [handleGameOver]);
+
+  // Initialize game once the module is loaded and the canvas is ready
+  useEffect(() => {
+    if (isLoading) return undefined;
     const canvas = canvasRef.current;
     const game = gameRef.current;
     if (!canvas || !game) return undefined;
@@ -76,7 +97,7 @@ export function AsteroidsGame({
       window.removeEventListener('resize', handleResize);
       game.destroy();
     };
-  }, [handleGameOver]);
+  }, [isLoading, handleGameOver]);
 
   if (isLoading) {
     return (
@@ -96,29 +117,27 @@ export function AsteroidsGame({
         aria-label='Juego Asteroids'
       />
 
-      {/* External HUD / Leaderboard - hidden in embed mode */}
-      {!embedMode && (
-        <div className='asteroids-leaderboard-hud'>
-          <div className='asteroids-leaderboard-title'>TOP 10</div>
-          <ol className='asteroids-leaderboard-list'>
-            {leaderboard.slice(0, 10).map((entry) => (
-              <li
-                key={`${entry.playerName}-${entry.score}`}
-                className={`asteroids-leaderboard-item ${entry.isCurrentUser ? 'asteroids-leaderboard-item--current-user' : ''}`}
-              >
-                <span className='asteroids-leaderboard-rank-player'>#{entry.rank} {entry.playerName}</span>
-                <span>{entry.score.toLocaleString()}</span>
-              </li>
-            ))}
-            {leaderboard.length === 0 && (
-              <li className='asteroids-leaderboard-empty'>Sin puntuaciones aún</li>
-            )}
-          </ol>
-        </div>
-      )}
+      {/* External HUD / Leaderboard */}
+      <div className='asteroids-leaderboard-hud'>
+        <div className='asteroids-leaderboard-title'>TOP 10</div>
+        <ol className='asteroids-leaderboard-list'>
+          {leaderboard.slice(0, 10).map((entry) => (
+            <li
+              key={`${entry.playerName}-${entry.score}`}
+              className={`asteroids-leaderboard-item ${entry.isCurrentUser ? 'asteroids-leaderboard-item--current-user' : ''}`}
+            >
+              <span className='asteroids-leaderboard-rank-player'>#{entry.rank} {entry.playerName}</span>
+              <span>{entry.score.toLocaleString()}</span>
+            </li>
+          ))}
+          {leaderboard.length === 0 && (
+            <li className='asteroids-leaderboard-empty'>Sin puntuaciones aún</li>
+          )}
+        </ol>
+      </div>
 
       {/* Auth prompt overlay */}
-      {showAuthPrompt && !embedMode && (
+      {showAuthPrompt && (
         <div className='asteroids-auth-overlay'>
           <div className='asteroids-auth-prompt'>
             <h3 className='asteroids-auth-title'>¡Partida terminada!</h3>
@@ -138,8 +157,6 @@ export function AsteroidsGame({
           </div>
         </div>
       )}
-
-      {/* Restart hint when gameover - handled by game internally via SPACE */}
     </div>
   );
 }

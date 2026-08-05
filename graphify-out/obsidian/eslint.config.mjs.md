@@ -11,7 +11,4 @@ tags:
 
 # eslint.config.mjs
 
-## Connections
-- [[eslintConfig]] - `contains` [EXTRACTED]
-
 #graphify/code #graphify/EXTRACTED #community/ESLint_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/page.tsx"
 type: "code"
-community: "About Page & Contact"
-location: "L28"
+community: "Playwright Config"
+location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/About_Page__Contact
+  - community/Playwright_Config
 ---
 
 # AboutPage()
@@ -15,4 +15,4 @@ tags:
 - [[page.tsx]] - `contains` [EXTRACTED]
 - [[sendContactEmail()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/About_Page__Contact
+#graphify/code #graphify/INFERRED #community/Playwright_Config

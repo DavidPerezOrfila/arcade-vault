@@ -1,0 +1,807 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1785596448.1474457,
+    "ast_hash": "e10fcbe8e07e7b6437a093ba80270d9f",
+    "semantic_hash": ""
+  },
+  "app/auth/page.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "3bcb724ef3fe7b0d4f5ea9ab24d43ab2",
+    "semantic_hash": ""
+  },
+  "app/data/games.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "f62dfca7c98d99c5f6d0b7a4928463a7",
+    "semantic_hash": ""
+  },
+  "app/data/players.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "6ee03eead4f157fe44158e8c7c9e72f9",
+    "semantic_hash": ""
+  },
+  "app/data/storage.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "ffbb8d8aeb0cab2207fbd70c2b199c97",
+    "semantic_hash": ""
+  },
+  "app/data/types.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "2c2ff06beed475fad85c4ccfa4c417a1",
+    "semantic_hash": ""
+  },
+  "app/layout.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "238a364bd14ae4ba0f64b74ee19bd075",
+    "semantic_hash": ""
+  },
+  "app/page.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "6b854f25576de67d276b61aab2c0972f",
+    "semantic_hash": ""
+  },
+  "app/player/[id]/page.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "2d9250ff63e25846fc8645ebb7d194a8",
+    "semantic_hash": ""
+  },
+  "app/salon/page.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "da831afda2ff025af2cd202262d942c7",
+    "semantic_hash": ""
+  },
+  "components/nav.tsx": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "690b78626cd9faa462cf7b724dde19bc",
+    "semantic_hash": ""
+  },
+  "eslint.config.mjs": {
+    "mtime": 1784993056.8164792,
+    "ast_hash": "316d9ffc665c39670fab92bb2cfce6e2",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1785787559.000698,
+    "ast_hash": "a4ca62474389305e7e7559631aaf2584",
+    "semantic_hash": ""
+  },
+  "playwright.config.ts": {
+    "mtime": 1785787559.0026975,
+    "ast_hash": "f4b66dce155106e623dbee38bc9f0cd2",
+    "semantic_hash": ""
+  },
+  "postcss.config.mjs": {
+    "mtime": 1783976573.9212644,
+    "ast_hash": "481fac0fdecd70e1821cc30b86030c1a",
+    "semantic_hash": "481fac0fdecd70e1821cc30b86030c1a"
+  },
+  "resources/templates/app.jsx": {
+    "mtime": 1784993056.8354962,
+    "ast_hash": "fdda07410e9cfc82702474e4c1b9b34d",
+    "semantic_hash": ""
+  },
+  "resources/templates/auth.jsx": {
+    "mtime": 1784993056.8364975,
+    "ast_hash": "9db183811d3a2dca64abd1854aa5cabf",
+    "semantic_hash": ""
+  },
+  "resources/templates/biblioteca.jsx": {
+    "mtime": 1784993056.8374999,
+    "ast_hash": "74b00a304c1299f7f3903e88adabc222",
+    "semantic_hash": ""
+  },
+  "resources/templates/data.jsx": {
+    "mtime": 1784993056.839501,
+    "ast_hash": "88f37ce8619e52983a3aba3a32eb8723",
+    "semantic_hash": ""
+  },
+  "resources/templates/detalle.jsx": {
+    "mtime": 1784993056.8405018,
+    "ast_hash": "c730945a4e890a4ed01dc450b93a3166",
+    "semantic_hash": ""
+  },
+  "resources/templates/home-about/home.jsx": {
+    "mtime": 1784993056.8435047,
+    "ast_hash": "219b50e70a2e2a5e1d51b87de356487c",
+    "semantic_hash": ""
+  },
+  "resources/templates/home-about/nav.jsx": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "1a2b42927585bbb270e55dc87c4345a8",
+    "semantic_hash": ""
+  },
+  "resources/templates/nav.jsx": {
+    "mtime": 1784993056.8455064,
+    "ast_hash": "f832c80fadae1b77f748b68bbbc312a9",
+    "semantic_hash": ""
+  },
+  "resources/templates/reproductor.jsx": {
+    "mtime": 1784993056.8475082,
+    "ast_hash": "025cced90127c66026139a0531029624",
+    "semantic_hash": ""
+  },
+  "resources/templates/salon.jsx": {
+    "mtime": 1784993056.8485093,
+    "ast_hash": "e460a004597093b8209e9fc6b9ff290d",
+    "semantic_hash": ""
+  },
+  "skills-lock.json": {
+    "mtime": 1784929784.6813426,
+    "ast_hash": "258dbd5e58241e24e2275f36dad9f93d",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1784993056.851512,
+    "ast_hash": "c57d9c0fb5baa59b8ff1cb394096f2ca",
+    "semantic_hash": ""
+  },
+  ".agents/skills/playwright-cli/SKILL.md": {
+    "mtime": 1784237619.585251,
+    "ast_hash": "b6c2478cb358b1b77906319f65c218b2",
+    "semantic_hash": "b6c2478cb358b1b77906319f65c218b2"
+  },
+  ".agents/skills/playwright-cli/references/element-attributes.md": {
+    "mtime": 1784237619.5872529,
+    "ast_hash": "06a9cd91326c0fb1eeafa6853132ff0d",
+    "semantic_hash": "06a9cd91326c0fb1eeafa6853132ff0d"
+  },
+  ".agents/skills/playwright-cli/references/playwright-tests.md": {
+    "mtime": 1784237619.5892546,
+    "ast_hash": "2098b51f50cfc25605dfabd6d0368fd8",
+    "semantic_hash": "2098b51f50cfc25605dfabd6d0368fd8"
+  },
+  ".agents/skills/playwright-cli/references/request-mocking.md": {
+    "mtime": 1784237619.5902555,
+    "ast_hash": "281652081dacf00f27a637ce372c0d17",
+    "semantic_hash": "281652081dacf00f27a637ce372c0d17"
+  },
+  ".agents/skills/playwright-cli/references/running-code.md": {
+    "mtime": 1784237619.5912564,
+    "ast_hash": "39be2ef507d2943ee6e969f23e8f6c20",
+    "semantic_hash": "39be2ef507d2943ee6e969f23e8f6c20"
+  },
+  ".agents/skills/playwright-cli/references/session-management.md": {
+    "mtime": 1784237619.5922573,
+    "ast_hash": "50d6f92a413c507cd066e33526e5298e",
+    "semantic_hash": "50d6f92a413c507cd066e33526e5298e"
+  },
+  ".agents/skills/playwright-cli/references/storage-state.md": {
+    "mtime": 1784237619.5932581,
+    "ast_hash": "16c4d7ae1f2d8eceef11fc14de4ae130",
+    "semantic_hash": "16c4d7ae1f2d8eceef11fc14de4ae130"
+  },
+  ".agents/skills/playwright-cli/references/test-generation.md": {
+    "mtime": 1784237619.5952601,
+    "ast_hash": "a34accaf4ab93f7b94b40303ba7996b3",
+    "semantic_hash": "a34accaf4ab93f7b94b40303ba7996b3"
+  },
+  ".agents/skills/playwright-cli/references/tracing.md": {
+    "mtime": 1784237619.5957632,
+    "ast_hash": "8c66ddbc29fc172bde7d71211d4e3473",
+    "semantic_hash": "8c66ddbc29fc172bde7d71211d4e3473"
+  },
+  ".agents/skills/playwright-cli/references/video-recording.md": {
+    "mtime": 1784237619.5977662,
+    "ast_hash": "29e61c00414ae28d7719b6cc285a18bf",
+    "semantic_hash": "29e61c00414ae28d7719b6cc285a18bf"
+  },
+  ".agents/skills/spec-impl/SKILL.md": {
+    "mtime": 1784237619.598767,
+    "ast_hash": "ee110263e03dcd63774969ff84772851",
+    "semantic_hash": "ee110263e03dcd63774969ff84772851"
+  },
+  ".agents/skills/spec/SKILL.md": {
+    "mtime": 1784237619.6007688,
+    "ast_hash": "983d1ea9c0d5a4129190efca585b2243",
+    "semantic_hash": "983d1ea9c0d5a4129190efca585b2243"
+  },
+  ".agents/skills/spec/template.md": {
+    "mtime": 1784237619.6017694,
+    "ast_hash": "c1f96e2054a5c24400db3023d9506778",
+    "semantic_hash": "c1f96e2054a5c24400db3023d9506778"
+  },
+  ".claude/skills/playwright-cli/SKILL.md": {
+    "mtime": 1784482962.2262602,
+    "ast_hash": "70549797a5f7f029b17df7c101447c83",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/element-attributes.md": {
+    "mtime": 1784482962.2117429,
+    "ast_hash": "8b8ffc48e38a5b4a04baec18a2732cd7",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/playwright-tests.md": {
+    "mtime": 1784482962.2147458,
+    "ast_hash": "99970dceff6228941c8f994e7dd71d27",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/request-mocking.md": {
+    "mtime": 1784482962.218749,
+    "ast_hash": "3b74af1fc908062c9c7f2cef04be6a24",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/running-code.md": {
+    "mtime": 1784482962.2207508,
+    "ast_hash": "971c216502efd1af848fe0711e2cffc7",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/session-management.md": {
+    "mtime": 1784482962.224257,
+    "ast_hash": "82975a2a618d15314a5c4397b6245a7c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/storage-state.md": {
+    "mtime": 1784482962.230264,
+    "ast_hash": "128ea37ea2ddc5022920718d0f9ab96d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/test-generation.md": {
+    "mtime": 1784482962.233267,
+    "ast_hash": "10d3d7de2b5b8e7053d5023feebb606d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/tracing.md": {
+    "mtime": 1784482962.235268,
+    "ast_hash": "2ecb8b98a4fa4e2d481e3de623072559",
+    "semantic_hash": ""
+  },
+  ".claude/skills/playwright-cli/references/video-recording.md": {
+    "mtime": 1784482962.238271,
+    "ast_hash": "3b384a256080e9c4d791d4660da4c369",
+    "semantic_hash": ""
+  },
+  ".claude/skills/spec-impl/SKILL.md": {
+    "mtime": 1783976573.9047472,
+    "ast_hash": "ee110263e03dcd63774969ff84772851",
+    "semantic_hash": "ee110263e03dcd63774969ff84772851"
+  },
+  ".claude/skills/spec/SKILL.md": {
+    "mtime": 1783976573.905748,
+    "ast_hash": "983d1ea9c0d5a4129190efca585b2243",
+    "semantic_hash": "983d1ea9c0d5a4129190efca585b2243"
+  },
+  ".claude/skills/spec/template.md": {
+    "mtime": 1783976573.9077492,
+    "ast_hash": "c1f96e2054a5c24400db3023d9506778",
+    "semantic_hash": "c1f96e2054a5c24400db3023d9506778"
+  },
+  "AGENTS.md": {
+    "mtime": 1785949576.2023456,
+    "ast_hash": "1017316f3c253d8d7fe194dc5e3dc025",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1784929784.6498013,
+    "ast_hash": "93a47727955456981c9ccc852f62fef2",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784929784.650802,
+    "ast_hash": "4d034bbf5cade88164d5011e000dfa8b",
+    "semantic_hash": ""
+  },
+  "resources/templates/Arcade Vault.html": {
+    "mtime": 1783976573.9272697,
+    "ast_hash": "47bb24796304d82d7b1e8160dc5f1298",
+    "semantic_hash": "47bb24796304d82d7b1e8160dc5f1298"
+  },
+  "resources/templates/home-about/arcade-vault-standalone.html": {
+    "mtime": 1784237619.8745651,
+    "ast_hash": "974638af44c06697dd6581c58e2fb536",
+    "semantic_hash": "974638af44c06697dd6581c58e2fb536"
+  },
+  "specs/.spec-config.yml": {
+    "mtime": 1783981572.519729,
+    "ast_hash": "21293f3e34b10915b425dd7c30a0fe06",
+    "semantic_hash": "21293f3e34b10915b425dd7c30a0fe06"
+  },
+  "specs/01-mvp-arcade-vault.md": {
+    "mtime": 1784064681.493282,
+    "ast_hash": "77c2e5cd3cb6c68bbc8effccbe0ae9c3",
+    "semantic_hash": "77c2e5cd3cb6c68bbc8effccbe0ae9c3"
+  },
+  "specs/02-home-page.md": {
+    "mtime": 1784237619.87957,
+    "ast_hash": "c443a32aee92b50a43fe38298df66a44",
+    "semantic_hash": "c443a32aee92b50a43fe38298df66a44"
+  },
+  "app/games/page.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "9e11156f9545eefbcfdb1b6ea151b34c",
+    "semantic_hash": ""
+  },
+  "resources/templates/home-about/about.jsx": {
+    "mtime": 1784993056.8425035,
+    "ast_hash": "b504b9089011279f6464ed62ae64db56",
+    "semantic_hash": ""
+  },
+  "specs/03-about-page-resend.md": {
+    "mtime": 1784322023.118595,
+    "ast_hash": "ed475ff4ca769a8f8547d74d2a2ac110",
+    "semantic_hash": ""
+  },
+  "app/about/actions.ts": {
+    "mtime": 1785618694.212885,
+    "ast_hash": "97f542cb06863aef32c50b4a65c5916d",
+    "semantic_hash": ""
+  },
+  "app/about/highlight-icon.tsx": {
+    "mtime": 1785618694.212885,
+    "ast_hash": "8463235e371adc54e8d1ff52d5bc6bc8",
+    "semantic_hash": ""
+  },
+  "app/about/page.tsx": {
+    "mtime": 1785618694.212885,
+    "ast_hash": "36bc287f396f1f1a6483e4e12c9ff975",
+    "semantic_hash": ""
+  },
+  "app/about/schema.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "13e46f2c24bc8b29b41236e57dddc279",
+    "semantic_hash": ""
+  },
+  "app/about/types.ts": {
+    "mtime": 1784988802.4678955,
+    "ast_hash": "d539b33b943892615de5e2e2235b660b",
+    "semantic_hash": ""
+  },
+  "e2e/about.spec.ts": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "5ed159e24ae1b41b5c6603baba4daf9a",
+    "semantic_hash": ""
+  },
+  ".claude/hooks/accumulate-edited.ps1": {
+    "mtime": 1784490337.9935336,
+    "ast_hash": "3ea3029e364e24445b32ba51dfe75c14",
+    "semantic_hash": ""
+  },
+  "resources/started-games/02-asteroids/game.js": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "a8c3fa5d9c7a68e70277d4029a800a0a",
+    "semantic_hash": ""
+  },
+  "resources/started-games/03-tetris/game.js": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "f422fc3ca18726fc3df17577b283ca09",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/assets/spritesheet.js": {
+    "mtime": 1784993056.8314924,
+    "ast_hash": "0d854a12af67c8f5e0e2b113d5211304",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/game.js": {
+    "mtime": 1784993056.8324938,
+    "ast_hash": "4598d82e390375e32bf93ccdc5faf21d",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/levels.js": {
+    "mtime": 1784993056.8334944,
+    "ast_hash": "567104603bf226c1586d4c6a079a4468",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/skills-lock.json": {
+    "mtime": 1784490338.8372765,
+    "ast_hash": "4d6375efed7130b96394d3fdadbf2be7",
+    "semantic_hash": ""
+  },
+  "SECURITY.md": {
+    "mtime": 1784322022.338156,
+    "ast_hash": "3634b1ffff5f5ab021b7db549fef6968",
+    "semantic_hash": ""
+  },
+  "resources/started-games/02-asteroids/CLAUDE.md": {
+    "mtime": 1784490338.8011017,
+    "ast_hash": "1b9441f70a454729750db26029bf3e5e",
+    "semantic_hash": ""
+  },
+  "resources/started-games/02-asteroids/README.md": {
+    "mtime": 1784490338.8021023,
+    "ast_hash": "cac110817b68a805b7c4e04d6423744e",
+    "semantic_hash": ""
+  },
+  "resources/started-games/02-asteroids/index.html": {
+    "mtime": 1784490338.8051064,
+    "ast_hash": "d813d3bed3ac2fc30719ab99b9615563",
+    "semantic_hash": ""
+  },
+  "resources/started-games/03-tetris/.Claude/commands/clima.md": {
+    "mtime": 1784490338.8081229,
+    "ast_hash": "846e67b2647af126798c1b9a71e80070",
+    "semantic_hash": ""
+  },
+  "resources/started-games/03-tetris/.github/workflows/claude-code-review.yml": {
+    "mtime": 1784490338.8101325,
+    "ast_hash": "eb8350983dfe3661a54b70c99fb2f60e",
+    "semantic_hash": ""
+  },
+  "resources/started-games/03-tetris/.github/workflows/claude-issue-triage.yml": {
+    "mtime": 1784490338.8111427,
+    "ast_hash": "d4cad013c95e2451c30810df5027d4ba",
+    "semantic_hash": ""
+  },
+  "resources/started-games/03-tetris/.github/workflows/claude.yml": {
+    "mtime": 1784490338.8121448,
+    "ast_hash": "2e918f34313c24594c2c8c90ac2d4d06",
+    "semantic_hash": ""
+  },
+  "resources/started-games/03-tetris/CLAUDE.md": {
+    "mtime": 1784490338.8141477,
+    "ast_hash": "dd23ce9dc1426d508f267aad647123dd",
+    "semantic_hash": ""
+  },
+  "resources/started-games/03-tetris/README.md": {
+    "mtime": 1784490338.8141477,
+    "ast_hash": "23451457dec8b39d3daea91f94ffaff4",
+    "semantic_hash": ""
+  },
+  "resources/started-games/03-tetris/index.html": {
+    "mtime": 1784490338.8167155,
+    "ast_hash": "205c892be4d5f4e220e6d03348afd86b",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md": {
+    "mtime": 1784490338.8217397,
+    "ast_hash": "80d9087b636cc4219265a9321695849a",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md": {
+    "mtime": 1784490338.822742,
+    "ast_hash": "ccc720dcf08ac489b65d6863955778a1",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/.agents/skills/spec/template.md": {
+    "mtime": 1784490338.823743,
+    "ast_hash": "9129f7d242a182fd668d2a9ede192233",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/CLAUDE.md": {
+    "mtime": 1784490338.8277466,
+    "ast_hash": "3f5faf55e12aab9175aa750b70d54e75",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/README.md": {
+    "mtime": 1784490338.8292496,
+    "ast_hash": "51779aa7379b95d018249249e3a704ca",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/index.html": {
+    "mtime": 1784490338.8352747,
+    "ast_hash": "acc927acd0c8dabbae45ade050f469ed",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md": {
+    "mtime": 1784490338.8392787,
+    "ast_hash": "68150010f16e979c0cef809ff387cf15",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md": {
+    "mtime": 1784490338.840286,
+    "ast_hash": "7a9ab97a21b8c71f448cc3adf2ddd6b4",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md": {
+    "mtime": 1784490338.841298,
+    "ast_hash": "da34a101ca9cdadf049ebb163a3cdae2",
+    "semantic_hash": ""
+  },
+  "resources/started-games/02-asteroids/favicon.svg": {
+    "mtime": 1784490338.8031046,
+    "ast_hash": "7e821d99a939849b7a8bda2dc322c29e",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/assets/spritesheet-breakout.png": {
+    "mtime": 1784490338.8332715,
+    "ast_hash": "12d88e5efd5564beaf77798a670008bc",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/assets/sounds/ball-bounce.mp3": {
+    "mtime": 1784490338.830765,
+    "ast_hash": "7ec7df15d2f354d21143337394f980b1",
+    "semantic_hash": ""
+  },
+  "resources/started-games/04-arkanoid/assets/sounds/break-sound.mp3": {
+    "mtime": 1784490338.831767,
+    "ast_hash": "7bfa565cf85bdbe86dffaf6ac06002b9",
+    "semantic_hash": ""
+  },
+  ".claude/hooks/format-batch.ps1": {
+    "mtime": 1784490337.9945345,
+    "ast_hash": "4839b4fb195a8454b8760ae3e2a5639c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/scripts/__init__.py": {
+    "mtime": 1784929784.5957327,
+    "ast_hash": "d6acae7e188357d1bc1258ce02a29811",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/scripts/__main__.py": {
+    "mtime": 1784929784.5967338,
+    "ast_hash": "5bd0e02db4907bf4e435e5d770256fef",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/scripts/benchmark.py": {
+    "mtime": 1784929784.5977347,
+    "ast_hash": "07500037c8606fc9ab1832f55a5ff346",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/scripts/cli.py": {
+    "mtime": 1784929784.5987358,
+    "ast_hash": "9ed03f4b75aae3f25ea0d9c15dbf6894",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/scripts/compress.py": {
+    "mtime": 1784929784.5997365,
+    "ast_hash": "1ad5157c3585b77dd4e547dd4a98bdf9",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/scripts/detect.py": {
+    "mtime": 1784929784.601738,
+    "ast_hash": "0609f322d0fbadc4e2fc3bf2af01a171",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/scripts/validate.py": {
+    "mtime": 1784929784.6027396,
+    "ast_hash": "5d3394df7677d1ee08f0b69bb767b38c",
+    "semantic_hash": ""
+  },
+  "app/_home/HomeEnhancer.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "ad656946527659e4649aa29f3bfcd149",
+    "semantic_hash": ""
+  },
+  "app/_home/RecentActivity.tsx": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "1d4f02c3b320a65a2838c66f24186af7",
+    "semantic_hash": ""
+  },
+  "app/_home/TopPlayersToday.tsx": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "caa4939524fa9a6f53bf51e609763954",
+    "semantic_hash": ""
+  },
+  "app/api/leaderboard/asteroids/route.ts": {
+    "mtime": 1785618694.212885,
+    "ast_hash": "69f0bcdecbdf6de82de62cc819131f4a",
+    "semantic_hash": ""
+  },
+  "app/data/actions.ts": {
+    "mtime": 1785787558.9946973,
+    "ast_hash": "a313bd0494972106c14915ea8b0621a8",
+    "semantic_hash": ""
+  },
+  "app/data/schema.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "76c91e5bf77667fb67d7d08b294b100c",
+    "semantic_hash": ""
+  },
+  "app/data/scores.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "8eda1f486d4876a7b18dda2d27beebdc",
+    "semantic_hash": ""
+  },
+  "app/footer.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "3b359e91d8f1cd5d50d3aefe58bdf4ca",
+    "semantic_hash": ""
+  },
+  "app/games/GamesClient.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "48b28704f1c433741e1b29cbdc0a4523",
+    "semantic_hash": ""
+  },
+  "app/games/[slug]/page.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "7d321b188c36819be68745c0abf45245",
+    "semantic_hash": ""
+  },
+  "app/games/asteroids/AsteroidsGameClient.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "837f67f35b64df4727d5236c0b3b623e",
+    "semantic_hash": ""
+  },
+  "app/games/asteroids/actions.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "3d5d6a19fc28c791cb01181f4216f948",
+    "semantic_hash": ""
+  },
+  "app/games/asteroids/api/leaderboard/route.ts": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "fe887fb4712a8bb7e031e700ab088acb",
+    "semantic_hash": ""
+  },
+  "app/games/asteroids/page.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "3c7686948c16d7aa534da534b5bda2c6",
+    "semantic_hash": ""
+  },
+  "app/player/[id]/PlayerClient.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "f789ffcaa36acd252713d949d559e987",
+    "semantic_hash": ""
+  },
+  "app/salon/SalonClient.tsx": {
+    "mtime": 1785618694.21339,
+    "ast_hash": "08628d0a8faf7ec4b185badd8af542cd",
+    "semantic_hash": ""
+  },
+  "components/games/asteroids/AsteroidsGame.tsx": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "ba5e92d51be819274f72f9f708321b8a",
+    "semantic_hash": ""
+  },
+  "components/migrate-local-storage.tsx": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "ecd04f1123aab66ff8b404364780d8a4",
+    "semantic_hash": ""
+  },
+  "lib/games/asteroids/game.esm.js": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "aecd11b34ac7a62ea03c7c05b6398ba1",
+    "semantic_hash": ""
+  },
+  "lib/games/asteroids/types.ts": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "724c03c8f7705f3136ee42c5e95eefd1",
+    "semantic_hash": ""
+  },
+  "lib/supabase/admin.ts": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "8222fe05749ee1bd56f9e4ca88b7802c",
+    "semantic_hash": ""
+  },
+  "lib/supabase/client.ts": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "b3ea23fcfc78b0854336be9fdd4fe180",
+    "semantic_hash": ""
+  },
+  "lib/supabase/server.ts": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "46a4ea394256dc778ce7d6ac15bdb7a1",
+    "semantic_hash": ""
+  },
+  "lib/supabase/types.ts": {
+    "mtime": 1785787558.9976976,
+    "ast_hash": "32480c4deecb284c71ac3c435f6ac563",
+    "semantic_hash": ""
+  },
+  "next.config.mjs": {
+    "mtime": 1784993056.8214836,
+    "ast_hash": "41af521a5a52011af914ea9d2d48624f",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/20260719000001_init_scores.sql": {
+    "mtime": 1785787559.005214,
+    "ast_hash": "abd250156aab834092a53c5fdab85177",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/20260728_games_catalog.sql": {
+    "mtime": 1785787559.0072145,
+    "ast_hash": "f338e090fe2018fb1b76ec7bce0484e2",
+    "semantic_hash": ""
+  },
+  "tests/e2e/asteroids.spec.ts": {
+    "mtime": 1785787704.5378613,
+    "ast_hash": "bf8b1928982cce55a4b45e4b8c1ac7a0",
+    "semantic_hash": ""
+  },
+  "tests/e2e/salon.spec.ts": {
+    "mtime": 1785618694.2138934,
+    "ast_hash": "eab7ba0115d5f4565b75f35bf66aa4df",
+    "semantic_hash": ""
+  },
+  ".agents/skills/cavecrew/README.md": {
+    "mtime": 1784929784.5847137,
+    "ast_hash": "0a65af5636728fa3358d4356b337a146",
+    "semantic_hash": ""
+  },
+  ".agents/skills/cavecrew/SKILL.md": {
+    "mtime": 1784929784.586219,
+    "ast_hash": "6ea8150438c6392a5ee0afef0a735ad4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-commit/README.md": {
+    "mtime": 1784929784.5882225,
+    "ast_hash": "2fe1d98cadbd2709a34ee3c77795a143",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-commit/SKILL.md": {
+    "mtime": 1784929784.5892234,
+    "ast_hash": "e00f68129a6f77783860a980074f97f7",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/README.md": {
+    "mtime": 1784929784.5902245,
+    "ast_hash": "78d3757502badfab9db0e38724d336b3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/SECURITY.md": {
+    "mtime": 1784929784.591728,
+    "ast_hash": "b2caed82d9d4a58c0530f7e741851224",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-compress/SKILL.md": {
+    "mtime": 1784929784.5937312,
+    "ast_hash": "5cfd6ee9993c9e72da6404a9841d82fd",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-help/README.md": {
+    "mtime": 1784929784.604741,
+    "ast_hash": "f49266e99b58d33c1d40b7bf0a644ec3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-help/SKILL.md": {
+    "mtime": 1784929784.6057425,
+    "ast_hash": "0f7aa6d0d0ae831d099d13894d833d14",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-review/README.md": {
+    "mtime": 1784929784.6067429,
+    "ast_hash": "9777a26704850f1e091ab072f02fa10f",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-review/SKILL.md": {
+    "mtime": 1784929784.608745,
+    "ast_hash": "0e038c50a6bfdc9b8a307e6316c07236",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-stats/README.md": {
+    "mtime": 1784929784.609746,
+    "ast_hash": "866dc96f332b4e2bc1f80fec878fea52",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman-stats/SKILL.md": {
+    "mtime": 1784929784.6117473,
+    "ast_hash": "e9966f688641209792719474f241a6ef",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman/README.md": {
+    "mtime": 1784929784.6127481,
+    "ast_hash": "c7a8a8fdab77e5bd25bf42b5c99c516c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman/SKILL.md": {
+    "mtime": 1784929784.6137497,
+    "ast_hash": "29958ba8f4a7c23450444f66aa9fab90",
+    "semantic_hash": ""
+  },
+  ".agents/skills/consult-graph/SKILL.md": {
+    "mtime": 1784490337.9925332,
+    "ast_hash": "c53177ffaf2858f4f6d264909ef23932",
+    "semantic_hash": ""
+  },
+  ".claude/skills/consult-graph/SKILL.md": {
+    "mtime": 1784490337.997553,
+    "ast_hash": "c53177ffaf2858f4f6d264909ef23932",
+    "semantic_hash": ""
+  },
+  ".github/copilot-instructions.md": {
+    "mtime": 1784929784.615751,
+    "ast_hash": "fc1ee1c6b52dbcd0cdaa61050770c4fe",
+    "semantic_hash": ""
+  },
+  ".github/instructions/mermaid.instructions.md": {
+    "mtime": 1784929784.6177528,
+    "ast_hash": "7fa3440f2da702e6012dc8cd26f59acc",
+    "semantic_hash": ""
+  },
+  "specs/04-supabase-scores-foundation.md": {
+    "mtime": 1785168462.5280058,
+    "ast_hash": "5364d90faf56a41e0ed6d17e0727d3f5",
+    "semantic_hash": ""
+  },
+  "specs/05-asteroids-game.md": {
+    "mtime": 1785168462.5290067,
+    "ast_hash": "2d0f1d493052cbef8593b95c2dbcf7cf",
+    "semantic_hash": ""
+  },
+  "specs/06-games-catalog-salon.md": {
+    "mtime": 1785787559.0042057,
+    "ast_hash": "9e3c64552ad640fd29818a6d3f69548b",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1785791711.6512756,
+    "ast_hash": "13040175cef1ce591aeb95fdb1a77d16",
+    "semantic_hash": ""
+  }
+}

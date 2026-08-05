@@ -2,7 +2,7 @@
 source_file: "resources/templates/home-about/home.jsx"
 type: "code"
 community: "Home Page UI"
-location: "L86"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED

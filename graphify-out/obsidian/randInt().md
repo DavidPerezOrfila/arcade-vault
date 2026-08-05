@@ -1,19 +1,19 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L29"
+community: "E2E Test"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/E2E_Test
 ---
 
 # randInt()
 
 ## Connections
 - [[.constructor()_1]] - `calls` [EXTRACTED]
-- [[game.js]] - `contains` [EXTRACTED]
+- [[game.esm.js]] - `contains` [EXTRACTED]
 - [[rand()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/E2E_Test

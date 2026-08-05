@@ -12,14 +12,9 @@ tags:
 # page.tsx
 
 ## Connections
-- [[GAMES]] - `imports` [EXTRACTED]
-- [[HallOfFame()]] - `contains` [EXTRACTED]
-- [[User]] - `imports` [EXTRACTED]
+- [[SalonClient.tsx]] - `imports_from` [EXTRACTED]
+- [[SalonPage()]] - `contains` [EXTRACTED]
 - [[games.ts]] - `imports_from` [EXTRACTED]
-- [[getUser()]] - `imports` [EXTRACTED]
-- [[players.ts]] - `imports_from` [EXTRACTED]
-- [[seededScores()]] - `imports` [EXTRACTED]
-- [[storage.ts]] - `imports_from` [EXTRACTED]
-- [[types.ts_1]] - `imports_from` [EXTRACTED]
+- [[getGames()]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

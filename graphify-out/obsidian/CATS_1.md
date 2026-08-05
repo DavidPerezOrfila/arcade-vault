@@ -1,17 +1,18 @@
 ---
-source_file: "resources/templates/data.jsx"
+source_file: "app/data/types.ts"
 type: "code"
-community: "Games Page"
-location: "L94"
+community: "Test Generation"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/Test_Generation
 ---
 
 # CATS
 
 ## Connections
-- [[data.jsx]] - `contains` [EXTRACTED]
+- [[GamesClient.tsx]] - `imports` [EXTRACTED]
+- [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/Test_Generation

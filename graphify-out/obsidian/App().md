@@ -2,7 +2,7 @@
 source_file: "resources/templates/app.jsx"
 type: "code"
 community: "App Shell"
-location: "L4"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED

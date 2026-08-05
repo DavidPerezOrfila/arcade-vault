@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Instructions]] - `contains` [EXTRACTED]
-- [[SKILL_1]] - `contains` [EXTRACTED]
+- [[SKILL_10]] - `contains` [EXTRACTED]
 - [[Session context]] - `contains` [EXTRACTED]
 - [[Summary of expected behavior]] - `contains` [EXTRACTED]
 
