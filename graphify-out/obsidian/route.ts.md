@@ -13,9 +13,7 @@ tags:
 
 ## Connections
 - [[GET()]] - `contains` [EXTRACTED]
-- [[ScoreEntry]] - `imports` [EXTRACTED]
-- [[getScoresByGame()]] - `imports` [EXTRACTED]
-- [[scores.ts]] - `imports_from` [EXTRACTED]
-- [[types.ts_1]] - `imports_from` [EXTRACTED]
+- [[actions.ts_2]] - `imports_from` [EXTRACTED]
+- [[getAsteroidsLeaderboard()]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

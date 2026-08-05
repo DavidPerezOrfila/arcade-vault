@@ -1,11 +1,19 @@
 ---
 type: community
+<<<<<<< HEAD
 members: 40
+=======
+members: 50
+>>>>>>> origin/main
 ---
 
 # Test Generation
 
+<<<<<<< HEAD
 **Members:** 40 nodes
+=======
+**Members:** 50 nodes
+>>>>>>> origin/main
 
 ## Members
 - [[AuthPage()]] - code - app/auth/page.tsx
@@ -27,7 +35,15 @@ members: 40
 - [[Json]] - code - lib/supabase/types.ts
 - [[Nav()]] - code - components/nav.tsx
 - [[PLAYERS]] - code - app/data/players.ts
+<<<<<<< HEAD
 - [[RootLayout()]] - code - app/layout.tsx
+=======
+- [[PlayerClient()]] - code - app/player/[id]/PlayerClient.tsx
+- [[PlayerClient.tsx]] - code - app/player/[id]/PlayerClient.tsx
+- [[PlayerClientProps]] - code - app/player/[id]/PlayerClient.tsx
+- [[RootLayout()]] - code - app/layout.tsx
+- [[ScoreEntry]] - code - app/data/types.ts
+>>>>>>> origin/main
 - [[ScoreRow]] - code - app/data/types.ts
 - [[ScoreRowDb]] - code - app/data/types.ts
 - [[Tables]] - code - lib/supabase/types.ts
@@ -38,11 +54,25 @@ members: 40
 - [[User]] - code - app/data/types.ts
 - [[clearUser()]] - code - app/data/storage.ts
 - [[footer.tsx]] - code - app/footer.tsx
+<<<<<<< HEAD
 - [[getUser()]] - code - app/data/storage.ts
 - [[layout.tsx]] - code - app/layout.tsx
+=======
+- [[getScores()_1]] - code - app/data/storage.ts
+- [[getUser()]] - code - app/data/storage.ts
+- [[layout.tsx]] - code - app/layout.tsx
+- [[migrate-local-storage.tsx]] - code - components/migrate-local-storage.tsx
+- [[migrateLocalStorageScores()]] - code - components/migrate-local-storage.tsx
+>>>>>>> origin/main
 - [[nav.tsx]] - code - components/nav.tsx
 - [[page.tsx_1]] - code - app/auth/page.tsx
+- [[parseFormData()]] - code - app/data/actions.ts
 - [[players.ts]] - code - app/data/players.ts
+<<<<<<< HEAD
+=======
+- [[saveScore()_1]] - code - app/data/storage.ts
+- [[saveScoreAction()]] - code - app/data/actions.ts
+>>>>>>> origin/main
 - [[seededScores()]] - code - app/data/players.ts
 - [[setUser()]] - code - app/data/storage.ts
 - [[storage.ts]] - code - app/data/storage.ts
@@ -57,6 +87,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+<<<<<<< HEAD
 - 11 edges to [[_COMMUNITY_Game Data Layer]]
 - 1 edge to [[_COMMUNITY_Cookie Management]]
 
@@ -65,4 +96,13 @@ SORT file.name ASC
 - [[storage.ts]] - degree 8, connects to 1 community
 - [[GamesClient.tsx]] - degree 7, connects to 1 community
 - [[getUser()]] - degree 5, connects to 1 community
+=======
+- 15 edges to [[_COMMUNITY_Game Data Layer]]
+
+## Top bridge nodes
+- [[types.ts_1]] - degree 18, connects to 1 community
+- [[saveScoreAction()]] - degree 7, connects to 1 community
+- [[GamesClient.tsx]] - degree 7, connects to 1 community
+- [[PlayerClient.tsx]] - degree 7, connects to 1 community
+>>>>>>> origin/main
 - [[TopPlayersToday.tsx]] - degree 4, connects to 1 community

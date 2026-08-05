@@ -15,6 +15,7 @@ tags:
 - [[actions.ts_1]] - `imports_from` [EXTRACTED]
 - [[createSupabaseServerClient()]] - `contains` [EXTRACTED]
 - [[games.ts]] - `imports_from` [EXTRACTED]
+- [[getAsteroidsLeaderboard()]] - `imports_from` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
 - [[submitAsteroidsScore()]] - `imports_from` [EXTRACTED]
 

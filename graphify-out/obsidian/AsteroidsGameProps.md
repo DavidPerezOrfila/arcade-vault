@@ -1,12 +1,12 @@
 ---
 source_file: "lib/games/asteroids/types.ts"
 type: "code"
-community: "Cookie Management"
-location: "L25"
+community: "Game Data Layer"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/Game_Data_Layer
 ---
 
 # AsteroidsGameProps
@@ -15,4 +15,4 @@ tags:
 - [[AsteroidsGame.tsx]] - `imports` [EXTRACTED]
 - [[types.ts_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

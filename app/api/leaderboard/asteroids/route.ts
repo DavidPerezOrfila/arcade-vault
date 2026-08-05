@@ -1,14 +1,9 @@
 import { NextResponse } from 'next/server';
-import { getScoresByGame } from '@/app/data/scores';
-import type { ScoreEntry } from '@/app/data/types';
+import { getAsteroidsLeaderboard } from '@/app/games/asteroids/actions';
 
 export async function GET() {
   try {
-    const scores = await getScoresByGame('asteroids');
-    const leaderboard: ScoreEntry[] = scores.slice(0, 10).map((score, index) => ({
-      ...score,
-      rank: index + 1
-    }));
+    const leaderboard = await getAsteroidsLeaderboard();
     return NextResponse.json(leaderboard);
   } catch (error) {
     console.error('Failed to fetch leaderboard:', error);

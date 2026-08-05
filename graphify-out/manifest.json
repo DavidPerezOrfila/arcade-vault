@@ -25,8 +25,13 @@
     "semantic_hash": ""
   },
   "app/data/types.ts": {
+<<<<<<< HEAD
     "mtime": 1785956133.1610827,
     "ast_hash": "2c2ff06beed475fad85c4ccfa4c417a1",
+=======
+    "mtime": 1785952792.7204733,
+    "ast_hash": "13b989a040f74f66f6b32020c5105b64",
+>>>>>>> origin/main
     "semantic_hash": ""
   },
   "app/layout.tsx": {
@@ -560,16 +565,26 @@
     "semantic_hash": ""
   },
   "app/api/leaderboard/asteroids/route.ts": {
+<<<<<<< HEAD
     "mtime": 1785956133.10645,
     "ast_hash": "69f0bcdecbdf6de82de62cc819131f4a",
     "semantic_hash": ""
   },
   "app/data/actions.ts": {
     "mtime": 1785956133.1204588,
+=======
+    "mtime": 1785952792.7466204,
+    "ast_hash": "51bc563ed1d4f47d2ab5ad6fe2490e64",
+    "semantic_hash": ""
+  },
+  "app/data/actions.ts": {
+    "mtime": 1785952792.7817526,
+>>>>>>> origin/main
     "ast_hash": "cfffd92280135f65a676764a8e94a5e2",
     "semantic_hash": ""
   },
   "app/data/schema.ts": {
+<<<<<<< HEAD
     "mtime": 1785956133.1409783,
     "ast_hash": "76c91e5bf77667fb67d7d08b294b100c",
     "semantic_hash": ""
@@ -577,6 +592,15 @@
   "app/data/scores.ts": {
     "mtime": 1785956133.1474879,
     "ast_hash": "8eda1f486d4876a7b18dda2d27beebdc",
+=======
+    "mtime": 1785952792.7270024,
+    "ast_hash": "e99cdf75a139115f2cba3ddfac6473b8",
+    "semantic_hash": ""
+  },
+  "app/data/scores.ts": {
+    "mtime": 1785952792.7124333,
+    "ast_hash": "a93a492f5acf59f4e26965217c63be1d",
+>>>>>>> origin/main
     "semantic_hash": ""
   },
   "app/footer.tsx": {
@@ -594,6 +618,7 @@
     "ast_hash": "7d321b188c36819be68745c0abf45245",
     "semantic_hash": ""
   },
+<<<<<<< HEAD
   "app/games/asteroids/AsteroidsGameClient.tsx": {
     "mtime": 1785956133.1931112,
     "ast_hash": "837f67f35b64df4727d5236c0b3b623e",
@@ -612,6 +637,16 @@
   "app/games/asteroids/page.tsx": {
     "mtime": 1785956133.1996188,
     "ast_hash": "3c7686948c16d7aa534da534b5bda2c6",
+=======
+  "app/games/asteroids/actions.ts": {
+    "mtime": 1785952792.7335067,
+    "ast_hash": "2fecfc3d9c3ef40a4f6e5a8ad7e10356",
+    "semantic_hash": ""
+  },
+  "app/games/asteroids/page.tsx": {
+    "mtime": 1785952792.7395952,
+    "ast_hash": "3b0ebafd13895c61035aa306ae80ad63",
+>>>>>>> origin/main
     "semantic_hash": ""
   },
   "app/player/[id]/PlayerClient.tsx": {
@@ -625,8 +660,13 @@
     "semantic_hash": ""
   },
   "components/games/asteroids/AsteroidsGame.tsx": {
+<<<<<<< HEAD
     "mtime": 1785956133.3012505,
     "ast_hash": "ba5e92d51be819274f72f9f708321b8a",
+=======
+    "mtime": 1785952792.753629,
+    "ast_hash": "7d10300c82b4a239a33b209853a33ca9",
+>>>>>>> origin/main
     "semantic_hash": ""
   },
   "lib/games/asteroids/game.esm.js": {
@@ -635,8 +675,13 @@
     "semantic_hash": ""
   },
   "lib/games/asteroids/types.ts": {
+<<<<<<< HEAD
     "mtime": 1785956133.3297844,
     "ast_hash": "724c03c8f7705f3136ee42c5e95eefd1",
+=======
+    "mtime": 1785952792.7686927,
+    "ast_hash": "26fe981d7d7920f562c8e5cf060be189",
+>>>>>>> origin/main
     "semantic_hash": ""
   },
   "lib/supabase/admin.ts": {
@@ -675,8 +720,13 @@
     "semantic_hash": ""
   },
   "tests/e2e/asteroids.spec.ts": {
+<<<<<<< HEAD
     "mtime": 1785956133.3602982,
     "ast_hash": "200e5340b81137c51c0f514bec857b6c",
+=======
+    "mtime": 1785952792.774223,
+    "ast_hash": "d491d307667262b07b5c90deddbb1655",
+>>>>>>> origin/main
     "semantic_hash": ""
   },
   "tests/e2e/salon.spec.ts": {

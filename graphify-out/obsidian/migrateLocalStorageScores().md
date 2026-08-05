@@ -1,18 +1,19 @@
 ---
-source_file: "app/data/actions.ts"
+source_file: "components/migrate-local-storage.tsx"
 type: "code"
 community: "Test Generation"
-location: "L10"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
   - community/Test_Generation
 ---
 
-# parseFormData()
+# migrateLocalStorageScores()
 
 ## Connections
-- [[actions.ts_1]] - `contains` [EXTRACTED]
+- [[layout.tsx]] - `imports` [EXTRACTED]
+- [[migrate-local-storage.tsx]] - `contains` [EXTRACTED]
 - [[saveScoreAction()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Test_Generation

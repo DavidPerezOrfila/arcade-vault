@@ -1,8 +1,7 @@
 import { Metadata } from 'next';
 import { Suspense } from 'react';
 import { getAsteroidsLeaderboard } from './actions';
-import { AsteroidsGameClient } from './AsteroidsGameClient';
-import './asteroids.css';
+import { AsteroidsGame } from '@/components/games/asteroids/AsteroidsGame';
 
 export const metadata: Metadata = {
   title: 'Asteroids | Arcade Vault',
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
 
 async function LeaderboardServer() {
   const leaderboard = await getAsteroidsLeaderboard();
-  return <AsteroidsGameClient initialLeaderboard={leaderboard.slice(0, 10)} />;
+  return <AsteroidsGame initialLeaderboard={leaderboard.slice(0, 10)} />;
 }
 
 export default function AsteroidsPage() {

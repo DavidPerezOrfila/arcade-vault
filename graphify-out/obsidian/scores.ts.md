@@ -21,7 +21,6 @@ tags:
 - [[getScores()]] - `contains` [EXTRACTED]
 - [[getScoresByGame()]] - `contains` [EXTRACTED]
 - [[page.tsx_2]] - `imports_from` [EXTRACTED]
-- [[route.ts]] - `imports_from` [EXTRACTED]
 - [[rowToEntry()]] - `contains` [EXTRACTED]
 - [[saveScore()]] - `contains` [EXTRACTED]
 - [[schema.ts_1]] - `imports_from` [EXTRACTED]

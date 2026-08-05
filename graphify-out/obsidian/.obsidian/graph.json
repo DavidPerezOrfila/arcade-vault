@@ -365,6 +365,7 @@
       }
     },
     {
+<<<<<<< HEAD
       "query": "tag:#community/detalle.jsx",
       "color": {
         "a": 1,
@@ -372,6 +373,8 @@
       }
     },
     {
+=======
+>>>>>>> origin/main
       "query": "tag:#community/accumulate-edited.ps1",
       "color": {
         "a": 1,

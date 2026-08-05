@@ -32,7 +32,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Storage State]]
+<<<<<<< HEAD
 - 1 edge to [[_COMMUNITY_detalle.jsx]]
+=======
+- 1 edge to [[_COMMUNITY_Cookie Management]]
+>>>>>>> origin/main
 
 ## Top bridge nodes
 - [[Browser Automation with playwright-cli]] - degree 15, connects to 2 communities

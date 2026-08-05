@@ -27,7 +27,6 @@ tags:
 - [[games.ts]] - `imports_from` [EXTRACTED]
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
 - [[players.ts]] - `imports_from` [EXTRACTED]
-- [[route.ts]] - `imports_from` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
 - [[storage.ts]] - `imports_from` [EXTRACTED]
 - [[types.ts_3]] - `imports_from` [EXTRACTED]

@@ -2,7 +2,7 @@
 source_file: "app/data/schema.ts"
 type: "code"
 community: "Game Data Layer"
-location: "L10"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED

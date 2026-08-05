@@ -2,7 +2,7 @@ import { createSupabaseServerClient } from '@/lib/supabase/server';
 import type { ScoreEntry } from './types';
 import type { ScoreEntryInputParsed } from './schema';
 
-const SELECT_COLUMNS = 'game, score, name, at';
+const SELECT_COLUMNS = 'game, score, name, at, user_id';
 const TOP_LIMIT = 100;
 
 function rowToEntry(row: {
@@ -10,12 +10,14 @@ function rowToEntry(row: {
   score: number;
   name: string;
   at: string;
+  user_id: string | null;
 }): ScoreEntry {
   return {
     game: row.game,
     score: row.score,
     name: row.name,
-    at: new Date(row.at).getTime()
+    at: new Date(row.at).getTime(),
+    userId: row.user_id
   };
 }
 
@@ -61,7 +63,8 @@ export async function saveScore(
       game: input.game,
       score: input.score,
       name: input.name,
-      at: new Date(input.at).toISOString()
+      at: new Date(input.at).toISOString(),
+      ['user_id']: input.userId ?? null
     })
     .select(SELECT_COLUMNS)
     .single();
