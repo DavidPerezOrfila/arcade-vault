@@ -1,11 +1,11 @@
 ---
 type: community
-members: 72
+members: 77
 ---
 
 # Game Data Layer
 
-**Members:** 72 nodes
+**Members:** 77 nodes
 
 ## Members
 - [[AsteroidsGame()]] - code - components/games/asteroids/AsteroidsGame.tsx
@@ -33,6 +33,9 @@ members: 72
 - [[LeaderboardServer()]] - code - app/games/asteroids/page.tsx
 - [[MiniCard()]] - code - app/page.tsx
 - [[PALETTE]] - code - app/_home/RecentActivity.tsx
+- [[PlayerClient()]] - code - app/player/[id]/PlayerClient.tsx
+- [[PlayerClient.tsx]] - code - app/player/[id]/PlayerClient.tsx
+- [[PlayerClientProps]] - code - app/player/[id]/PlayerClient.tsx
 - [[PlayerPage()]] - code - app/player/[id]/page.tsx
 - [[PlayerPageProps]] - code - app/player/[id]/page.tsx
 - [[RecentActivity()]] - code - app/_home/RecentActivity.tsx
@@ -69,10 +72,12 @@ members: 72
 - [[page.tsx_5]] - code - app/page.tsx
 - [[page.tsx_6]] - code - app/player/[id]/page.tsx
 - [[page.tsx_7]] - code - app/salon/page.tsx
+- [[parseFormData()]] - code - app/data/actions.ts
 - [[relativeTime()]] - code - app/_home/RecentActivity.tsx
 - [[route.ts]] - code - app/api/leaderboard/asteroids/route.ts
 - [[rowToEntry()]] - code - app/data/scores.ts
 - [[saveScore()]] - code - app/data/scores.ts
+- [[saveScoreAction()]] - code - app/data/actions.ts
 - [[schema.ts_1]] - code - app/data/schema.ts
 - [[scoreEntrySchema]] - code - app/data/schema.ts
 - [[scores.ts]] - code - app/data/scores.ts
@@ -89,12 +94,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Test Generation]]
+- 12 edges to [[_COMMUNITY_Test Generation]]
 - 1 edge to [[_COMMUNITY_E2E Test]]
 
 ## Top bridge nodes
 - [[games.ts]] - degree 17, connects to 1 community
-- [[actions.ts_1]] - degree 16, connects to 1 community
 - [[scores.ts]] - degree 14, connects to 1 community
 - [[actions.ts_2]] - degree 14, connects to 1 community
 - [[page.tsx_5]] - degree 12, connects to 1 community
+- [[PlayerClient.tsx]] - degree 7, connects to 1 community

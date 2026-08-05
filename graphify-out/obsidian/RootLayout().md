@@ -2,7 +2,7 @@
 source_file: "app/layout.tsx"
 type: "code"
 community: "Test Generation"
-location: "L8"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED

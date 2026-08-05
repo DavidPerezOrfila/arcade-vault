@@ -365,6 +365,20 @@
       }
     },
     {
+      "query": "tag:#community/detalle.jsx",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/reproductor.jsx",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
       "query": "tag:#community/accumulate-edited.ps1",
       "color": {
         "a": 1,

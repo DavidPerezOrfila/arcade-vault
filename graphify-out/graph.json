@@ -1107,8 +1107,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "app_data_actions_parseformdata",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "parseformdata()"
     },
     {
@@ -1118,8 +1118,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "app_data_actions_savescoreaction",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "savescoreaction()"
     },
     {
@@ -1379,7 +1379,7 @@
       "label": "getUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "app_data_storage_getuser",
       "community": 11,
@@ -1390,7 +1390,7 @@
       "label": "setUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "app_data_storage_setuser",
       "community": 11,
@@ -1401,34 +1401,12 @@
       "label": "clearUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "app_data_storage_clearuser",
       "community": 11,
       "community_name": "Test Generation",
       "norm_label": "clearuser()"
-    },
-    {
-      "label": "getScores()",
-      "file_type": "code",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "app_data_storage_getscores",
-      "community": 11,
-      "community_name": "Test Generation",
-      "norm_label": "getscores()"
-    },
-    {
-      "label": "saveScore()",
-      "file_type": "code",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "app_data_storage_savescore",
-      "community": 11,
-      "community_name": "Test Generation",
-      "norm_label": "savescore()"
     },
     {
       "label": "types.ts",
@@ -1786,7 +1764,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "app/layout.tsx",
-      "source_location": "L8",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
       "community": 11,
@@ -1855,8 +1833,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_player_id_playerclient",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "playerclient.tsx"
     },
     {
@@ -1866,8 +1844,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "app_player_id_playerclient_playerclientprops",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "playerclientprops"
     },
     {
@@ -1877,8 +1855,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_player_id_playerclient_playerclient",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "playerclient()"
     },
     {
@@ -2023,28 +2001,6 @@
       "community": 4,
       "community_name": "Game Data Layer",
       "norm_label": "asteroidsgame()"
-    },
-    {
-      "label": "migrate-local-storage.tsx",
-      "file_type": "code",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "components_migrate_local_storage",
-      "community": 11,
-      "community_name": "Test Generation",
-      "norm_label": "migrate-local-storage.tsx"
-    },
-    {
-      "label": "migrateLocalStorageScores()",
-      "file_type": "code",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "components_migrate_local_storage_migratelocalstoragescores",
-      "community": 11,
-      "community_name": "Test Generation",
-      "norm_label": "migratelocalstoragescores()"
     },
     {
       "label": "nav.tsx",
@@ -9219,6 +9175,83 @@
       "norm_label": "docs"
     },
     {
+      "label": "NOTES.md",
+      "file_type": "document",
+      "source_file": "NOTES.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "notes",
+      "community": 53,
+      "community_name": "reproductor.jsx",
+      "norm_label": "notes.md"
+    },
+    {
+      "label": "NOTES.md \u2014 mundo del usuario",
+      "file_type": "document",
+      "source_file": "NOTES.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "notes_notes_md_mundo_del_usuario",
+      "community": 53,
+      "community_name": "reproductor.jsx",
+      "norm_label": "notes.md \u2014 mundo del usuario"
+    },
+    {
+      "label": "Contexto del workspace",
+      "file_type": "document",
+      "source_file": "NOTES.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "notes_contexto_del_workspace",
+      "community": 53,
+      "community_name": "reproductor.jsx",
+      "norm_label": "contexto del workspace"
+    },
+    {
+      "label": "Herramientas y canales",
+      "file_type": "document",
+      "source_file": "NOTES.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "notes_herramientas_y_canales",
+      "community": 53,
+      "community_name": "reproductor.jsx",
+      "norm_label": "herramientas y canales"
+    },
+    {
+      "label": "Loops observados (patrones recurrentes delegables)",
+      "file_type": "document",
+      "source_file": "NOTES.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "notes_loops_observados_patrones_recurrentes_delegables",
+      "community": 53,
+      "community_name": "reproductor.jsx",
+      "norm_label": "loops observados (patrones recurrentes delegables)"
+    },
+    {
+      "label": "Terminolog\u00eda",
+      "file_type": "document",
+      "source_file": "NOTES.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "notes_terminolog\u00eda",
+      "community": 53,
+      "community_name": "reproductor.jsx",
+      "norm_label": "terminologia"
+    },
+    {
+      "label": "Pendiente de entrevista",
+      "file_type": "document",
+      "source_file": "NOTES.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "notes_pendiente_de_entrevista",
+      "community": 53,
+      "community_name": "reproductor.jsx",
+      "norm_label": "pendiente de entrevista"
+    },
+    {
       "label": "SECURITY.md",
       "file_type": "document",
       "source_file": "SECURITY.md",
@@ -11010,6 +11043,127 @@
       "community": 98,
       "community_name": "06-games-catalog-salon",
       "norm_label": "identified risks"
+    },
+    {
+      "label": "opencode-loop.md",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "opencode-loop.md"
+    },
+    {
+      "label": "Workflow: opencode-loop",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_workflow_opencode_loop",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "workflow: opencode-loop"
+    },
+    {
+      "label": "Resumen",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_resumen",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "resumen"
+    },
+    {
+      "label": "Trigger",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_trigger",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "trigger"
+    },
+    {
+      "label": "Flujo",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_flujo",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "flujo"
+    },
+    {
+      "label": "Reglas de comportamiento",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_reglas_de_comportamiento",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "reglas de comportamiento"
+    },
+    {
+      "label": "Configuraci\u00f3n t\u00e9cnica (GitHub Actions)",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_configuraci\u00f3n_t\u00e9cnica_github_actions",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "configuracion tecnica (github actions)"
+    },
+    {
+      "label": "Interfaz con el usuario",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_interfaz_con_el_usuario",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "interfaz con el usuario"
+    },
+    {
+      "label": "Decisiones documentadas",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_decisiones_documentadas",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "decisiones documentadas"
+    },
+    {
+      "label": "Validaci\u00f3n",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_validaci\u00f3n",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "validacion"
+    },
+    {
+      "label": "Out of scope",
+      "file_type": "document",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "workflows_opencode_loop_out_of_scope",
+      "community": 52,
+      "community_name": "detalle.jsx",
+      "norm_label": "out of scope"
     },
     {
       "label": "Running Custom Playwright Code Reference",
@@ -13999,18 +14153,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_migrate_local_storage",
-      "target": "app_data_actions",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -14056,30 +14198,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_player_id_playerclient_playerclient",
-      "target": "app_data_actions_savescoreaction"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_migrate_local_storage",
-      "target": "app_data_actions_savescoreaction",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_migrate_local_storage_migratelocalstoragescores",
       "target": "app_data_actions_savescoreaction"
     },
     {
@@ -14887,7 +15005,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -14898,18 +15016,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_data_storage",
-      "target": "app_data_storage_getscores",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -14920,18 +15027,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_data_storage",
-      "target": "app_data_storage_savescore",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -14948,18 +15044,6 @@
       "_origin": "ast",
       "source": "app_data_storage",
       "target": "app_data_types",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_data_storage",
-      "target": "app_data_types_scoreentry",
       "confidence_score": 1.0
     },
     {
@@ -15081,18 +15165,6 @@
       "_origin": "ast",
       "source": "components_nav_nav",
       "target": "app_data_storage_clearuser"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_data_storage_savescore",
-      "target": "app_data_storage_getscores",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15329,7 +15401,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_layout",
@@ -15676,35 +15748,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_layout",
       "target": "app_layout_rootlayout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/layout.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_layout",
-      "target": "components_migrate_local_storage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/layout.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_layout",
-      "target": "components_migrate_local_storage_migratelocalstoragescores",
       "confidence_score": 1.0
     },
     {
@@ -15991,17 +16039,6 @@
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame_asteroidsgame",
       "target": "lib_games_asteroids_game_esm",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_migrate_local_storage",
-      "target": "components_migrate_local_storage_migratelocalstoragescores",
       "confidence_score": 1.0
     },
     {
@@ -24015,6 +24052,72 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "NOTES.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "notes",
+      "target": "notes_notes_md_mundo_del_usuario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "NOTES.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "notes_notes_md_mundo_del_usuario",
+      "target": "notes_contexto_del_workspace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "NOTES.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "notes_notes_md_mundo_del_usuario",
+      "target": "notes_herramientas_y_canales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "NOTES.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "notes_notes_md_mundo_del_usuario",
+      "target": "notes_loops_observados_patrones_recurrentes_delegables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "NOTES.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "notes_notes_md_mundo_del_usuario",
+      "target": "notes_pendiente_de_entrevista",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "NOTES.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "notes_notes_md_mundo_del_usuario",
+      "target": "notes_terminolog\u00eda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "SECURITY.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -25619,6 +25722,116 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop",
+      "target": "workflows_opencode_loop_workflow_opencode_loop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_configuraci\u00f3n_t\u00e9cnica_github_actions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_decisiones_documentadas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_flujo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_interfaz_con_el_usuario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_out_of_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_reglas_de_comportamiento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_resumen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_trigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "workflows/opencode-loop.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "workflows_opencode_loop_workflow_opencode_loop",
+      "target": "workflows_opencode_loop_validaci\u00f3n",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -26331,5 +26544,5 @@
       "source_file": ".agents/skills/spec/SKILL.md"
     }
   ],
-  "built_at_commit": "83236c36d8c3c05361f01ea2d8e8d32acfb3fe01"
+  "built_at_commit": "6ca0ee0eacf551a0eaa6f6865d817c457bfd6131"
 }
