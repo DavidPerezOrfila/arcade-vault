@@ -39,7 +39,7 @@ npm run db:types     # regenera lib/supabase/types.ts desde el esquema actual
 | Variable                       | Origen              | Descripción                                                       |
 | ------------------------------ | ------------------- | ----------------------------------------------------------------- |
 | `NEXT_PUBLIC_SUPABASE_URL`     | `npm run db:status` | URL de la API de Supabase (por defecto `http://127.0.0.1:54321`). |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY`| `npm run db:status` | Clave anónima — usada en cliente y Server Components              |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`| `npm run db:status` | Clave anónima — usada en cliente y Server Components        |
 | `SUPABASE_SERVICE_ROLE_KEY`    | `npm run db:status` | Clave con permisos totales — solo server-side, nunca en cliente   |
 | `RESEND_API_KEY`               | Cuenta Resend       | API key para enviar el formulario de contacto                     |
 | `RESEND_FROM_EMAIL`            | Cuenta Resend       | Remitente verificado (ej. `hola@arcade-vault.gg`)                 |

@@ -8,7 +8,7 @@ Arcade Vault is a retro arcade gaming platform where users play online and compe
 
 ## Tech stack
 
-- **Framework:** Next.js 16.2.10 (App Router)
+- **Framework:** Next.js 16.3.0 (App Router)
 - **Runtime:** React 19.2.4
 - **Language:** TypeScript 5
 - **Styling:** Tailwind CSS v4 with CSS-based configuration
@@ -49,7 +49,7 @@ Copy `.env.local.example` to `.env.local` and fill in the values. These variable
 | Variable                       | Description                                                       | Source                                                       |
 | ------------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------ |
 | `NEXT_PUBLIC_SUPABASE_URL`     | URL pública de la API de Supabase                                 | `npm run db:status` → API URL (default `http://127.0.0.1:54321`) |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY`| Clave anónima — cliente y Server Components                       | `npm run db:status` → anon key                               |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`| Clave anónima — cliente y Server Components                  | `npm run db:status` → publishable key                         |
 | `SUPABASE_SERVICE_ROLE_KEY`    | Clave con permisos totales (server-side ONLY, nunca en cliente)   | `npm run db:status` → service_role key                       |
 | `RESEND_API_KEY`               | API key de Resend (formulario de contacto)                        | Cuenta Resend                                                |
 | `RESEND_FROM_EMAIL`            | Remitente verificado en Resend                                    | `hola@arcade-vault.gg`                                       |
@@ -57,7 +57,7 @@ Copy `.env.local.example` to `.env.local` and fill in the values. These variable
 
 Las tres primeras (`NEXT_PUBLIC_SUPABASE_*` + `SUPABASE_SERVICE_ROLE_KEY`) son
 obligatorias: sin ellas, Home, `/salon` y `/detalle/[id]` fallan al consultar
-`getScores` y la migración inicial de localStorage se aborta.
+`getScores`.
 
 ## Project structure
 
