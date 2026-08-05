@@ -1,11 +1,12 @@
-import type { ScoreEntry, User } from './types';
+import type { User } from './types';
 
 const USER_KEY = 'av_user';
-const SCORES_KEY = 'av_scores';
 
 // ponytail: guard SSR — App Router renderiza en servidor donde localStorage no
 // existe. Los componentes cliente se hidratan y releen en el navegador; los
-// getters devuelven null/[] durante el pase del servidor (sin flash de datos).
+// getters devuelven null durante el pase del servidor (sin flash de datos).
+// Las puntuaciones viven en Supabase (app/data/scores.ts); aquí solo queda la
+// identidad por nombre hasta que exista el flujo real de Supabase Auth.
 
 export function getUser(): User | null {
   if (typeof window === 'undefined') return null;
@@ -25,21 +26,4 @@ export function setUser(user: User): void {
 export function clearUser(): void {
   if (typeof window === 'undefined') return;
   window.localStorage.removeItem(USER_KEY);
-}
-
-export function getScores(): ScoreEntry[] {
-  if (typeof window === 'undefined') return [];
-  try {
-    const raw = window.localStorage.getItem(SCORES_KEY);
-    return raw ? (JSON.parse(raw) as ScoreEntry[]) : [];
-  } catch {
-    return [];
-  }
-}
-
-export function saveScore(entry: ScoreEntry): void {
-  if (typeof window === 'undefined') return;
-  const scores = getScores();
-  scores.push(entry);
-  window.localStorage.setItem(SCORES_KEY, JSON.stringify(scores));
 }
