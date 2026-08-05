@@ -2,7 +2,6 @@
 
 import '@/app/globals.css';
 import Nav from '@/components/nav';
-import MigrateLocalStorageScores from '@/components/migrate-local-storage';
 import Footer from './footer';
 
 export default function RootLayout({
@@ -18,7 +17,6 @@ export default function RootLayout({
         <div id='root'>
           <Nav />
           {children}
-          <MigrateLocalStorageScores />
           <Footer />
         </div>
       </body>
