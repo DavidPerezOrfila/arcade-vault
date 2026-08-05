@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "._CLAUDE.md"
+community: "localStorage Ops"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_CLAUDEmd
+  - community/localStorage_Ops
 ---
 
 # Storage State File Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Storage State]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/localStorage_Ops

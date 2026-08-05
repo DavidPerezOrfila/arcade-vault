@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "salon.jsx"
+community: "localStorage Ops"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/salonjsx
+  - community/localStorage_Ops
 ---
 
 # Set Value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Session Storage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/salonjsx
+#graphify/document #graphify/EXTRACTED #community/localStorage_Ops

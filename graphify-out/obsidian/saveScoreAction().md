@@ -15,8 +15,6 @@ tags:
 - [[PlayerClient()]] - `calls` [EXTRACTED]
 - [[PlayerClient.tsx]] - `imports` [EXTRACTED]
 - [[actions.ts_1]] - `contains` [EXTRACTED]
-- [[migrate-local-storage.tsx]] - `imports` [EXTRACTED]
-- [[migrateLocalStorageScores()]] - `calls` [EXTRACTED]
 - [[parseFormData()]] - `calls` [EXTRACTED]
 - [[saveScore()]] - `calls` [EXTRACTED]
 

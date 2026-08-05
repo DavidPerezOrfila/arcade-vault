@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/SKILL.md"
 type: "document"
-community: "Playwright Automation"
+community: "detalle.jsx"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Automation
+  - community/detallejsx
 ---
 
 # Commands
@@ -23,4 +23,4 @@ tags:
 - [[Storage]] - `contains` [EXTRACTED]
 - [[Tabs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Automation
+#graphify/document #graphify/EXTRACTED #community/detallejsx

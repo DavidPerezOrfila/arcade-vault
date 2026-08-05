@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+members: 10
 ---
 
 # detalle.jsx
 
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Authentication State Reuse]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Common Patterns]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Delete Database]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[IndexedDB]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[List Databases]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Run Code]] - document - .claude/skills/playwright-cli/references/running-code.md
-- [[Save and Restore Roundtrip]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Security Notes]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[Storage Management]] - document - .agents/skills/playwright-cli/references/storage-state.md
+- [[Commands]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Core]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[DevTools]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Keyboard]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Mouse]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Navigation]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Network]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Save as]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Storage]] - document - .agents/skills/playwright-cli/SKILL.md
+- [[Tabs]] - document - .agents/skills/playwright-cli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,11 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Storage State]]
-- 1 edge to [[_COMMUNITY_localStorage Ops]]
-- 1 edge to [[_COMMUNITY_reproductor.jsx]]
-- 1 edge to [[_COMMUNITY_salon.jsx]]
-- 1 edge to [[_COMMUNITY_._CLAUDE_1]]
+- 1 edge to [[_COMMUNITY_Playwright Automation_1]]
 
 ## Top bridge nodes
-- [[Storage Management]] - degree 9, connects to 5 communities
+- [[Commands]] - degree 10, connects to 1 community

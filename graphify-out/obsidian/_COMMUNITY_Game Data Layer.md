@@ -1,11 +1,11 @@
 ---
 type: community
-members: 65
+members: 63
 ---
 
 # Game Data Layer
 
-**Members:** 65 nodes
+**Members:** 63 nodes
 
 ## Members
 - [[CATS]] - code - app/data/games.ts
@@ -13,7 +13,6 @@ members: 65
 - [[DetailPageProps]] - code - app/games/[slug]/page.tsx
 - [[FeatureIcon()]] - code - app/page.tsx
 - [[FloatingSilhouettes()]] - code - app/page.tsx
-- [[Footer()]] - code - app/footer.tsx
 - [[GET()]] - code - app/api/leaderboard/asteroids/route.ts
 - [[Game]] - code - app/data/games.ts
 - [[Game_2]] - code - app/salon/SalonClient.tsx
@@ -27,22 +26,24 @@ members: 65
 - [[LeaderboardRow_1]] - code - app/salon/SalonClient.tsx
 - [[MiniCard()]] - code - app/page.tsx
 - [[PALETTE]] - code - app/_home/RecentActivity.tsx
+- [[PlayerClient()]] - code - app/player/[id]/PlayerClient.tsx
+- [[PlayerClient.tsx]] - code - app/player/[id]/PlayerClient.tsx
+- [[PlayerClientProps]] - code - app/player/[id]/PlayerClient.tsx
 - [[PlayerPage()]] - code - app/player/[id]/page.tsx
 - [[PlayerPageProps]] - code - app/player/[id]/page.tsx
 - [[RecentActivity()]] - code - app/_home/RecentActivity.tsx
 - [[RecentActivity.tsx]] - code - app/_home/RecentActivity.tsx
-- [[RootLayout()]] - code - app/layout.tsx
 - [[SalonClient()]] - code - app/salon/SalonClient.tsx
 - [[SalonClient.tsx]] - code - app/salon/SalonClient.tsx
 - [[SalonClientProps]] - code - app/salon/SalonClient.tsx
 - [[SalonPage()]] - code - app/salon/page.tsx
 - [[SaveScoreResult]] - code - app/data/actions.ts
+- [[ScoreEntry]] - code - app/data/types.ts
 - [[ScoreEntryInputParsed]] - code - app/data/schema.ts
 - [[actions.ts_1]] - code - app/data/actions.ts
 - [[client.ts]] - code - lib/supabase/client.ts
 - [[createSupabaseBrowserClient()]] - code - lib/supabase/client.ts
 - [[createSupabaseServerClient()]] - code - lib/supabase/server.ts
-- [[footer.tsx]] - code - app/footer.tsx
 - [[formatDate()]] - code - app/games/[slug]/page.tsx
 - [[gameLabel()]] - code - app/_home/RecentActivity.tsx
 - [[games.ts]] - code - app/data/games.ts
@@ -54,9 +55,6 @@ members: 65
 - [[getScores()]] - code - app/data/scores.ts
 - [[getScoresByGame()]] - code - app/data/scores.ts
 - [[getUserBestScore()]] - code - app/data/actions.ts
-- [[layout.tsx]] - code - app/layout.tsx
-- [[migrate-local-storage.tsx]] - code - components/migrate-local-storage.tsx
-- [[migrateLocalStorageScores()]] - code - components/migrate-local-storage.tsx
 - [[page.tsx_2]] - code - app/games/[slug]/page.tsx
 - [[page.tsx_4]] - code - app/games/page.tsx
 - [[page.tsx_5]] - code - app/page.tsx
@@ -82,12 +80,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Test Generation]]
-- 6 edges to [[_COMMUNITY_Cookie Management]]
+- 11 edges to [[_COMMUNITY_Test Generation]]
+- 7 edges to [[_COMMUNITY_Cookie Management]]
 
 ## Top bridge nodes
 - [[scores.ts]] - degree 15, connects to 2 communities
+- [[ScoreEntry]] - degree 4, connects to 2 communities
 - [[games.ts]] - degree 17, connects to 1 community
-- [[actions.ts_1]] - degree 16, connects to 1 community
 - [[page.tsx_5]] - degree 12, connects to 1 community
 - [[getScoresByGame()]] - degree 11, connects to 1 community

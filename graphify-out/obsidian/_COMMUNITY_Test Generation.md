@@ -1,11 +1,11 @@
 ---
 type: community
-members: 42
+members: 40
 ---
 
 # Test Generation
 
-**Members:** 42 nodes
+**Members:** 40 nodes
 
 ## Members
 - [[AuthPage()]] - code - app/auth/page.tsx
@@ -16,6 +16,7 @@ members: 42
 - [[DatabaseWithoutInternals]] - code - lib/supabase/types.ts
 - [[DefaultSchema]] - code - lib/supabase/types.ts
 - [[Enums]] - code - lib/supabase/types.ts
+- [[Footer()]] - code - app/footer.tsx
 - [[Game_1]] - code - app/data/types.ts
 - [[GameCard()]] - code - app/games/GamesClient.tsx
 - [[GameColor]] - code - app/data/types.ts
@@ -26,10 +27,7 @@ members: 42
 - [[Json]] - code - lib/supabase/types.ts
 - [[Nav()]] - code - components/nav.tsx
 - [[PLAYERS]] - code - app/data/players.ts
-- [[PlayerClient()]] - code - app/player/[id]/PlayerClient.tsx
-- [[PlayerClient.tsx]] - code - app/player/[id]/PlayerClient.tsx
-- [[PlayerClientProps]] - code - app/player/[id]/PlayerClient.tsx
-- [[ScoreEntry]] - code - app/data/types.ts
+- [[RootLayout()]] - code - app/layout.tsx
 - [[ScoreRow]] - code - app/data/types.ts
 - [[ScoreRowDb]] - code - app/data/types.ts
 - [[Tables]] - code - lib/supabase/types.ts
@@ -39,12 +37,12 @@ members: 42
 - [[TopPlayersToday.tsx]] - code - app/_home/TopPlayersToday.tsx
 - [[User]] - code - app/data/types.ts
 - [[clearUser()]] - code - app/data/storage.ts
-- [[getScores()_1]] - code - app/data/storage.ts
+- [[footer.tsx]] - code - app/footer.tsx
 - [[getUser()]] - code - app/data/storage.ts
+- [[layout.tsx]] - code - app/layout.tsx
 - [[nav.tsx]] - code - components/nav.tsx
 - [[page.tsx_1]] - code - app/auth/page.tsx
 - [[players.ts]] - code - app/data/players.ts
-- [[saveScore()_1]] - code - app/data/storage.ts
 - [[seededScores()]] - code - app/data/players.ts
 - [[setUser()]] - code - app/data/storage.ts
 - [[storage.ts]] - code - app/data/storage.ts
@@ -59,12 +57,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Game Data Layer]]
-- 2 edges to [[_COMMUNITY_Cookie Management]]
+- 11 edges to [[_COMMUNITY_Game Data Layer]]
+- 1 edge to [[_COMMUNITY_Cookie Management]]
 
 ## Top bridge nodes
 - [[types.ts_1]] - degree 19, connects to 2 communities
-- [[ScoreEntry]] - degree 5, connects to 2 communities
+- [[storage.ts]] - degree 8, connects to 1 community
 - [[GamesClient.tsx]] - degree 7, connects to 1 community
-- [[PlayerClient.tsx]] - degree 7, connects to 1 community
-- [[nav.tsx]] - degree 7, connects to 1 community
+- [[getUser()]] - degree 5, connects to 1 community
+- [[TopPlayersToday.tsx]] - degree 4, connects to 1 community

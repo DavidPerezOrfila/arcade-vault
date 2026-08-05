@@ -39,8 +39,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Game Data Layer]]
-- 2 edges to [[_COMMUNITY_Test Generation]]
+- 7 edges to [[_COMMUNITY_Game Data Layer]]
+- 1 edge to [[_COMMUNITY_Test Generation]]
 - 1 edge to [[_COMMUNITY_E2E Test]]
 
 ## Top bridge nodes

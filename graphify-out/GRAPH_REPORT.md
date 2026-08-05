@@ -1,16 +1,16 @@
 # Graph Report - 05-arcade-vault  (2026-08-05)
 
 ## Corpus Check
-- 148 files · ~86,092 words
+- 147 files · ~85,676 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1059 nodes · 1300 edges · 80 communities (71 shown, 9 thin omitted)
+- 1055 nodes · 1290 edges · 77 communities (68 shown, 9 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 29 edges (avg confidence: 0.72)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `38fa5e47`
+- Built from commit: `b6453331`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -63,9 +63,6 @@
 - Custom Bundler
 - levels.js
 - detalle.jsx
-- reproductor.jsx
-- salon.jsx
-- ._CLAUDE.md
 - ._02-animacion-explosion-bloques.md
 - 06-games-catalog-salon
 - SKILL.md
@@ -116,7 +113,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (80 total, 9 thin omitted)
+## Communities (77 total, 9 thin omitted)
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -136,7 +133,7 @@ Nodes (32): Playwright Test Report, Arcade Vault Project Overview, Graphify Know
 
 ### Community 4 - "Game Data Layer"
 Cohesion: 0.06
-Nodes (42): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+34 more)
+Nodes (44): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+36 more)
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
@@ -151,8 +148,8 @@ Cohesion: 0.04
 Nodes (42): @dietrichgebert/ponytail, ecc-universal, next, dependencies, @dietrichgebert/ponytail, ecc-universal, next, react (+34 more)
 
 ### Community 8 - "Playwright Automation"
-Cohesion: 0.08
-Nodes (24): Browser Automation with playwright-cli, Browser Sessions, Commands, Core, DevTools, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session (+16 more)
+Cohesion: 0.14
+Nodes (14): Browser Automation with playwright-cli, Browser Sessions, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session, Example: Multi-tab workflow, Installation, Open parameters (+6 more)
 
 ### Community 9 - "Playwright Automation"
 Cohesion: 0.08
@@ -164,7 +161,7 @@ Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collide
 
 ### Community 11 - "Test Generation"
 Cohesion: 0.07
-Nodes (31): AuthPage(), PLAYERS, seededScores(), clearUser(), getScores(), getUser(), saveScore(), setUser() (+23 more)
+Nodes (26): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+18 more)
 
 ### Community 12 - "Dev Tooling"
 Cohesion: 0.07
@@ -191,8 +188,8 @@ Cohesion: 0.15
 Nodes (12): 01 — MVP jugable de Arkanoid, Alcance, Bloques, Criterios de aceptación, Decisiones tomadas y descartadas, Dentro del MVP, Estado del juego, Fuera del MVP (dejado para specs posteriores) (+4 more)
 
 ### Community 18 - "localStorage Ops"
-Cohesion: 0.22
-Nodes (9): Advanced: Multiple Cookies or Custom Options, Clear All Cookies, Cookies, Delete a Cookie, Filter Cookies by Domain, Filter Cookies by Path, Get Specific Cookie, List All Cookies (+1 more)
+Cohesion: 0.06
+Nodes (36): Advanced: Multiple Cookies or Custom Options, Advanced: Multiple Operations, Authentication State Reuse, Clear All Cookies, Clear All localStorage, Clear sessionStorage, Common Patterns, Cookies (+28 more)
 
 ### Community 19 - "Playwright CLI Skill"
 Cohesion: 0.17
@@ -279,20 +276,8 @@ Cohesion: 0.18
 Nodes (11): sendContactEmail(), HighlightIcon(), HighlightIconKind, HighlightIconProps, AboutPage(), HIGHLIGHTS, initialState, ContactFormData (+3 more)
 
 ### Community 52 - "detalle.jsx"
-Cohesion: 0.22
-Nodes (9): Authentication State Reuse, Common Patterns, Delete Database, IndexedDB, List Databases, Save and Restore Roundtrip, Security Notes, Storage Management (+1 more)
-
-### Community 53 - "reproductor.jsx"
-Cohesion: 0.25
-Nodes (8): Advanced: Multiple Operations, Clear All localStorage, Delete Single Item, Get Single Value, List All localStorage Items, Local Storage, Set JSON Value, Set Value
-
-### Community 54 - "salon.jsx"
-Cohesion: 0.33
-Nodes (6): Clear sessionStorage, Delete Single Item, Get Single Value, List All sessionStorage Items, Session Storage, Set Value
-
-### Community 57 - "._CLAUDE.md"
-Cohesion: 0.50
-Nodes (4): Restore Storage State, Save Storage State, Storage State, Storage State File Format
+Cohesion: 0.20
+Nodes (10): Commands, Core, DevTools, Keyboard, Mouse, Navigation, Network, Save as (+2 more)
 
 ### Community 73 - "._02-animacion-explosion-bloques.md"
 Cohesion: 0.09
@@ -361,8 +346,8 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `AsteroidsGame()` connect `Cookie Management` to `E2E Test`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `Dev Tooling` to `Package Dependencies`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `submitAsteroidsScore()` connect `Cookie Management` to `Game Data Layer`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **Why does `Storage Management` connect `localStorage Ops` to `Storage State`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
   _529 weakly-connected nodes found - possible documentation gaps or missing edges._

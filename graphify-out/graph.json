@@ -1379,7 +1379,7 @@
       "label": "getUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "app_data_storage_getuser",
       "community": 11,
@@ -1390,7 +1390,7 @@
       "label": "setUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "app_data_storage_setuser",
       "community": 11,
@@ -1401,34 +1401,12 @@
       "label": "clearUser()",
       "file_type": "code",
       "source_file": "app/data/storage.ts",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "app_data_storage_clearuser",
       "community": 11,
       "community_name": "Test Generation",
       "norm_label": "clearuser()"
-    },
-    {
-      "label": "getScores()",
-      "file_type": "code",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "app_data_storage_getscores",
-      "community": 11,
-      "community_name": "Test Generation",
-      "norm_label": "getscores()"
-    },
-    {
-      "label": "saveScore()",
-      "file_type": "code",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "app_data_storage_savescore",
-      "community": 11,
-      "community_name": "Test Generation",
-      "norm_label": "savescore()"
     },
     {
       "label": "types.ts",
@@ -1503,8 +1481,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "app_data_types_scoreentry",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "scoreentry"
     },
     {
@@ -1547,8 +1525,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_footer",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "footer.tsx"
     },
     {
@@ -1558,8 +1536,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "app_footer_footer",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "footer()"
     },
     {
@@ -1833,19 +1811,19 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_layout",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "layout.tsx"
     },
     {
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "app/layout.tsx",
-      "source_location": "L8",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "rootlayout()"
     },
     {
@@ -1910,8 +1888,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_player_id_playerclient",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "playerclient.tsx"
     },
     {
@@ -1921,8 +1899,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "app_player_id_playerclient_playerclientprops",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "playerclientprops"
     },
     {
@@ -1932,8 +1910,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_player_id_playerclient_playerclient",
-      "community": 11,
-      "community_name": "Test Generation",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "playerclient()"
     },
     {
@@ -2078,28 +2056,6 @@
       "community": 24,
       "community_name": "Cookie Management",
       "norm_label": "asteroidsgame()"
-    },
-    {
-      "label": "migrate-local-storage.tsx",
-      "file_type": "code",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "components_migrate_local_storage",
-      "community": 4,
-      "community_name": "Game Data Layer",
-      "norm_label": "migrate-local-storage.tsx"
-    },
-    {
-      "label": "migrateLocalStorageScores()",
-      "file_type": "code",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "components_migrate_local_storage_migratelocalstoragescores",
-      "community": 4,
-      "community_name": "Game Data Layer",
-      "norm_label": "migratelocalstoragescores()"
     },
     {
       "label": "nav.tsx",
@@ -7014,8 +6970,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_commands",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "commands"
     },
     {
@@ -7025,8 +6981,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_core",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "core"
     },
     {
@@ -7036,8 +6992,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_navigation",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "navigation"
     },
     {
@@ -7047,8 +7003,8 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_keyboard",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "keyboard"
     },
     {
@@ -7058,8 +7014,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_mouse",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "mouse"
     },
     {
@@ -7069,8 +7025,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_save_as",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "save as"
     },
     {
@@ -7080,8 +7036,8 @@
       "source_location": "L105",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_tabs",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "tabs"
     },
     {
@@ -7091,8 +7047,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_storage",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "storage"
     },
     {
@@ -7102,8 +7058,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_network",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "network"
     },
     {
@@ -7113,8 +7069,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_devtools",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 52,
+      "community_name": "detalle.jsx",
       "norm_label": "devtools"
     },
     {
@@ -7432,8 +7388,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_storage_management",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "storage management"
     },
     {
@@ -7443,8 +7399,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_storage_state",
-      "community": 57,
-      "community_name": "._CLAUDE.md",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "storage state"
     },
     {
@@ -7454,8 +7410,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_save_storage_state",
-      "community": 57,
-      "community_name": "._CLAUDE.md",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "save storage state"
     },
     {
@@ -7465,8 +7421,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_restore_storage_state",
-      "community": 57,
-      "community_name": "._CLAUDE.md",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "restore storage state"
     },
     {
@@ -7476,8 +7432,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_storage_state_file_format",
-      "community": 57,
-      "community_name": "._CLAUDE.md",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "storage state file format"
     },
     {
@@ -7586,8 +7542,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_local_storage",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "local storage"
     },
     {
@@ -7597,8 +7553,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_list_all_localstorage_items",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "list all localstorage items"
     },
     {
@@ -7608,8 +7564,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_get_single_value",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "get single value"
     },
     {
@@ -7619,8 +7575,8 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_set_value",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "set value"
     },
     {
@@ -7630,8 +7586,8 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_set_json_value",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "set json value"
     },
     {
@@ -7641,8 +7597,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_delete_single_item",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "delete single item"
     },
     {
@@ -7652,8 +7608,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_clear_all_localstorage",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "clear all localstorage"
     },
     {
@@ -7663,8 +7619,8 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_advanced_multiple_operations",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "advanced: multiple operations"
     },
     {
@@ -7674,8 +7630,8 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_session_storage",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "session storage"
     },
     {
@@ -7685,8 +7641,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_list_all_sessionstorage_items",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "list all sessionstorage items"
     },
     {
@@ -7696,8 +7652,8 @@
       "source_location": "L183",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_get_single_value_183",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "get single value"
     },
     {
@@ -7707,8 +7663,8 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_set_value_189",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "set value"
     },
     {
@@ -7718,8 +7674,8 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_delete_single_item_195",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "delete single item"
     },
     {
@@ -7729,8 +7685,8 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_clear_sessionstorage",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "clear sessionstorage"
     },
     {
@@ -7740,8 +7696,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_indexeddb",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "indexeddb"
     },
     {
@@ -7751,8 +7707,8 @@
       "source_location": "L209",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_list_databases",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "list databases"
     },
     {
@@ -7762,8 +7718,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_delete_database",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "delete database"
     },
     {
@@ -7773,8 +7729,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_common_patterns",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "common patterns"
     },
     {
@@ -7784,8 +7740,8 @@
       "source_location": "L232",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_authentication_state_reuse",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "authentication state reuse"
     },
     {
@@ -7795,8 +7751,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_save_and_restore_roundtrip",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "save and restore roundtrip"
     },
     {
@@ -7806,8 +7762,8 @@
       "source_location": "L269",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_security_notes",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "security notes"
     },
     {
@@ -11335,9 +11291,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 18,
       "norm_label": "run code",
-      "community_name": "detalle.jsx",
+      "community_name": "localStorage Ops",
       "id": "claude_skills_playwright_cli_references_run_code"
     },
     {
@@ -14100,18 +14056,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_migrate_local_storage",
-      "target": "app_data_actions",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -14157,30 +14101,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_player_id_playerclient_playerclient",
-      "target": "app_data_actions_savescoreaction"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_migrate_local_storage",
-      "target": "app_data_actions_savescoreaction",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_migrate_local_storage_migratelocalstoragescores",
       "target": "app_data_actions_savescoreaction"
     },
     {
@@ -14988,7 +14908,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -14999,18 +14919,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_data_storage",
-      "target": "app_data_storage_getscores",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -15021,18 +14930,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/storage.ts",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_data_storage",
-      "target": "app_data_storage_savescore",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_storage",
@@ -15049,18 +14947,6 @@
       "_origin": "ast",
       "source": "app_data_storage",
       "target": "app_data_types",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_data_storage",
-      "target": "app_data_types_scoreentry",
       "confidence_score": 1.0
     },
     {
@@ -15182,18 +15068,6 @@
       "_origin": "ast",
       "source": "components_nav_nav",
       "target": "app_data_storage_clearuser"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/data/storage.ts",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_data_storage_savescore",
-      "target": "app_data_storage_getscores",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15430,7 +15304,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_layout",
@@ -15893,35 +15767,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/layout.tsx",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_layout",
       "target": "app_layout_rootlayout",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/layout.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_layout",
-      "target": "components_migrate_local_storage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/layout.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_layout",
-      "target": "components_migrate_local_storage_migratelocalstoragescores",
       "confidence_score": 1.0
     },
     {
@@ -16208,17 +16058,6 @@
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame_asteroidsgame",
       "target": "lib_games_asteroids_game_esm",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "components/migrate-local-storage.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "components_migrate_local_storage",
-      "target": "components_migrate_local_storage_migratelocalstoragescores",
       "confidence_score": 1.0
     },
     {
@@ -26570,5 +26409,5 @@
       "source_file": ".agents/skills/spec/SKILL.md"
     }
   ],
-  "built_at_commit": "38fa5e47efdcf5386eb0077dbe8ed841154c0caf"
+  "built_at_commit": "b6453331fb177d8075005b840908a0ade2feedbd"
 }
