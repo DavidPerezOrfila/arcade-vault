@@ -74,8 +74,9 @@ export function AsteroidsGame({
     };
   }, [handleGameOver]);
 
-  // Initialize game when canvas is ready
+  // Initialize game once the module is loaded and the canvas is ready
   useEffect(() => {
+    if (isLoading) return undefined;
     const canvas = canvasRef.current;
     const game = gameRef.current;
     if (!canvas || !game) return undefined;
@@ -96,7 +97,7 @@ export function AsteroidsGame({
       window.removeEventListener('resize', handleResize);
       game.destroy();
     };
-  }, [handleGameOver]);
+  }, [isLoading, handleGameOver]);
 
   if (isLoading) {
     return (
