@@ -13,7 +13,6 @@ interface GameModule {
 
 export function AsteroidsGame({
   onScoreSubmit,
-  onGameOver,
   embedMode = false,
   initialLeaderboard = []
 }: AsteroidsGameProps) {
@@ -35,23 +34,22 @@ export function AsteroidsGame({
     });
   }, []);
 
-  // Handle game over - submit score if authenticated
+  // Handle game over - submit score once
   const handleGameOver = useCallback(
     async(score: number) => {
-      onGameOver?.(score);
+      if (!onScoreSubmit) {
+        setShowAuthPrompt(true);
+        return;
+      }
 
-      if (onScoreSubmit) {
-        try {
-          await onScoreSubmit(score);
-        } catch (error) {
-          console.error('Failed to submit score:', error);
-          setShowAuthPrompt(true);
-        }
-      } else {
+      try {
+        await onScoreSubmit(score);
+      } catch (error) {
+        console.error('Failed to submit score:', error);
         setShowAuthPrompt(true);
       }
     },
-    [onScoreSubmit, onGameOver]
+    [onScoreSubmit]
   );
 
   // Initialize game when canvas is ready

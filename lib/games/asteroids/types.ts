@@ -25,8 +25,6 @@ export interface LeaderboardEntry {
 export interface AsteroidsGameProps {
   // eslint-disable-next-line no-unused-vars
   onScoreSubmit?: (_score: number) => Promise<void>;
-  // eslint-disable-next-line no-unused-vars
-  onGameOver?: (_finalScore: number) => void;
   initialConfig?: Partial<AsteroidsConfig>;
   embedMode?: boolean;
   initialLeaderboard?: LeaderboardEntry[];

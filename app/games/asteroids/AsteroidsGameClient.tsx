@@ -24,14 +24,9 @@ export function AsteroidsGameClient({ initialLeaderboard }: AsteroidsGameClientP
     }
   }, []);
 
-  const handleGameOver = useCallback((finalScore: number) => {
-    handleScoreSubmit(finalScore);
-  }, [handleScoreSubmit]);
-
   return (
     <AsteroidsGame
       onScoreSubmit={handleScoreSubmit}
-      onGameOver={handleGameOver}
       initialLeaderboard={leaderboard}
     />
   );
