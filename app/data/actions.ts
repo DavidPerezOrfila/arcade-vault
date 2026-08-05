@@ -33,7 +33,7 @@ export async function saveScoreAction(
   revalidatePath('/salon');
   revalidatePath('/games');
   revalidatePath('/games/[slug]', 'page');
-  revalidateTag('leaderboard');
+  revalidateTag('leaderboard', 'max');
 
   return { ok: true };
 }

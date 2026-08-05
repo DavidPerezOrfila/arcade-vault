@@ -29,7 +29,7 @@ export async function submitAsteroidsScore(score: number): Promise<SubmitScoreRe
 
   revalidatePath('/games/asteroids');
   revalidatePath('/salon');
-  revalidateTag('leaderboard');
+  revalidateTag('leaderboard', 'max');
 
   return { ok: true };
 }
