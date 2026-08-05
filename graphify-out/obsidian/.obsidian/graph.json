@@ -365,27 +365,6 @@
       }
     },
     {
-      "query": "tag:#community/detalle.jsx",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/reproductor.jsx",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/salon.jsx",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
       "query": "tag:#community/accumulate-edited.ps1",
       "color": {
         "a": 1,
@@ -397,13 +376,6 @@
       "color": {
         "a": 1,
         "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/._CLAUDE.md",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
       }
     },
     {

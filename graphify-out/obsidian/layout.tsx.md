@@ -1,12 +1,12 @@
 ---
 source_file: "app/layout.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "Test Generation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Test_Generation
 ---
 
 # layout.tsx
@@ -18,4 +18,4 @@ tags:
 - [[migrateLocalStorageScores()]] - `imports` [EXTRACTED]
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Test_Generation

@@ -2,7 +2,7 @@
 source_file: "app/data/types.ts"
 type: "code"
 community: "Test Generation"
-location: "L33"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[actions.ts_2]] - `imports` [EXTRACTED]
-- [[route.ts]] - `imports` [EXTRACTED]
 - [[scores.ts]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `imports` [EXTRACTED]
 - [[types.ts_1]] - `contains` [EXTRACTED]

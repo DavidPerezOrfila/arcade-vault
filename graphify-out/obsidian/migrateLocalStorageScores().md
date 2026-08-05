@@ -1,12 +1,12 @@
 ---
 source_file: "components/migrate-local-storage.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "Test Generation"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Test_Generation
 ---
 
 # migrateLocalStorageScores()
@@ -16,4 +16,4 @@ tags:
 - [[migrate-local-storage.tsx]] - `contains` [EXTRACTED]
 - [[saveScoreAction()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Test_Generation

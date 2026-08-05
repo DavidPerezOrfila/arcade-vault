@@ -2,7 +2,7 @@
 source_file: "app/data/types.ts"
 type: "code"
 community: "Test Generation"
-location: "L52"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED

@@ -1,21 +1,21 @@
 ---
 source_file: "app/games/asteroids/actions.ts"
 type: "code"
-community: "Cookie Management"
+community: "Game Data Layer"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/Game_Data_Layer
 ---
 
 # submitAsteroidsScore()
 
 ## Connections
-- [[AsteroidsGameClient()]] - `calls` [EXTRACTED]
-- [[AsteroidsGameClient.tsx]] - `imports` [EXTRACTED]
+- [[AsteroidsGame()]] - `calls` [EXTRACTED]
+- [[AsteroidsGame.tsx]] - `imports` [EXTRACTED]
 - [[actions.ts_2]] - `contains` [EXTRACTED]
 - [[saveScore()]] - `calls` [EXTRACTED]
 - [[server.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

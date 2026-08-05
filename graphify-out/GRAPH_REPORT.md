@@ -1,16 +1,16 @@
 # Graph Report - 05-arcade-vault  (2026-08-05)
 
 ## Corpus Check
-- 148 files · ~86,092 words
+- 146 files · ~86,108 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1059 nodes · 1300 edges · 80 communities (71 shown, 9 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 29 edges (avg confidence: 0.72)
+- 1052 nodes · 1286 edges · 76 communities (67 shown, 9 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.72)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `38fa5e47`
+- Built from commit: `83236c36`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -62,10 +62,6 @@
 - Playwright Config
 - Custom Bundler
 - levels.js
-- detalle.jsx
-- reproductor.jsx
-- salon.jsx
-- ._CLAUDE.md
 - ._02-animacion-explosion-bloques.md
 - 06-games-catalog-salon
 - SKILL.md
@@ -91,9 +87,9 @@
 5. `About Page with Resend Spec (03)` - 14 edges
 6. `Home Page Spec (02)` - 13 edges
 7. `compress_file()` - 12 edges
-8. `getScoresByGame()` - 11 edges
-9. `update()` - 11 edges
-10. `createSupabaseServerClient()` - 11 edges
+8. `update()` - 11 edges
+9. `createSupabaseServerClient()` - 11 edges
+10. `update()` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Playwright CLI Browser Automation Skill (.claude copy)` --conceptually_related_to--> `Browser Automation via CLI`  [INFERRED]
@@ -104,8 +100,8 @@
   specs/02-home-page.md → CLAUDE.md
 - `About Page with Resend Spec (03)` --references--> `Arcade Vault Standalone Bundled Prototype`  [INFERRED]
   specs/03-about-page-resend.md → resources/templates/home-about/arcade-vault-standalone.html
-- `AsteroidsGameClientProps` --references--> `LeaderboardEntry`  [EXTRACTED]
-  app/games/asteroids/AsteroidsGameClient.tsx → lib/games/asteroids/types.ts
+- `Storage Management` --references--> `Run Code`  [EXTRACTED]
+  .agents/skills/playwright-cli/references/storage-state.md → .claude/skills/playwright-cli/references/running-code.md
 
 ## Import Cycles
 - None detected.
@@ -116,7 +112,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (80 total, 9 thin omitted)
+## Communities (76 total, 9 thin omitted)
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -136,7 +132,7 @@ Nodes (32): Playwright Test Report, Arcade Vault Project Overview, Graphify Know
 
 ### Community 4 - "Game Data Layer"
 Cohesion: 0.06
-Nodes (42): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+34 more)
+Nodes (49): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, SaveScoreResult, CATS, Game, GameFilter (+41 more)
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
@@ -151,8 +147,8 @@ Cohesion: 0.04
 Nodes (42): @dietrichgebert/ponytail, ecc-universal, next, dependencies, @dietrichgebert/ponytail, ecc-universal, next, react (+34 more)
 
 ### Community 8 - "Playwright Automation"
-Cohesion: 0.08
-Nodes (24): Browser Automation with playwright-cli, Browser Sessions, Commands, Core, DevTools, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session (+16 more)
+Cohesion: 0.14
+Nodes (14): Browser Automation with playwright-cli, Browser Sessions, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session, Example: Multi-tab workflow, Installation, Open parameters (+6 more)
 
 ### Community 9 - "Playwright Automation"
 Cohesion: 0.08
@@ -163,8 +159,8 @@ Cohesion: 0.14
 Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collideAABB(), ctx (+10 more)
 
 ### Community 11 - "Test Generation"
-Cohesion: 0.07
-Nodes (31): AuthPage(), PLAYERS, seededScores(), clearUser(), getScores(), getUser(), saveScore(), setUser() (+23 more)
+Cohesion: 0.06
+Nodes (34): AuthPage(), parseFormData(), saveScoreAction(), PLAYERS, seededScores(), clearUser(), getScores(), getUser() (+26 more)
 
 ### Community 12 - "Dev Tooling"
 Cohesion: 0.07
@@ -191,8 +187,8 @@ Cohesion: 0.15
 Nodes (12): 01 — MVP jugable de Arkanoid, Alcance, Bloques, Criterios de aceptación, Decisiones tomadas y descartadas, Dentro del MVP, Estado del juego, Fuera del MVP (dejado para specs posteriores) (+4 more)
 
 ### Community 18 - "localStorage Ops"
-Cohesion: 0.22
-Nodes (9): Advanced: Multiple Cookies or Custom Options, Clear All Cookies, Cookies, Delete a Cookie, Filter Cookies by Domain, Filter Cookies by Path, Get Specific Cookie, List All Cookies (+1 more)
+Cohesion: 0.06
+Nodes (36): Advanced: Multiple Cookies or Custom Options, Advanced: Multiple Operations, Authentication State Reuse, Clear All Cookies, Clear All localStorage, Clear sessionStorage, Common Patterns, Cookies (+28 more)
 
 ### Community 19 - "Playwright CLI Skill"
 Cohesion: 0.17
@@ -215,8 +211,8 @@ Cohesion: 0.18
 Nodes (10): Arguments, Command flow, Hard rules, Phase 1 — Understand the context, Phase 2 — Clarify through questions, Phase 3 — Develop the spec section by section, Phase 4 — Save the spec, Philosophy (+2 more)
 
 ### Community 24 - "Cookie Management"
-Cohesion: 0.16
-Nodes (15): getAsteroidsLeaderboard(), mapToLeaderboardEntry(), submitAsteroidsScore(), SubmitScoreResult, GET(), AsteroidsGameClient(), AsteroidsGameClientProps, LeaderboardServer() (+7 more)
+Cohesion: 0.20
+Nodes (10): Commands, Core, DevTools, Keyboard, Mouse, Navigation, Network, Save as (+2 more)
 
 ### Community 25 - "Spec-Impl Skill"
 Cohesion: 0.22
@@ -278,22 +274,6 @@ Nodes (33): Asteroid, attachInput(), Bullet, destroy(), detachInput(), dist(), d
 Cohesion: 0.18
 Nodes (11): sendContactEmail(), HighlightIcon(), HighlightIconKind, HighlightIconProps, AboutPage(), HIGHLIGHTS, initialState, ContactFormData (+3 more)
 
-### Community 52 - "detalle.jsx"
-Cohesion: 0.22
-Nodes (9): Authentication State Reuse, Common Patterns, Delete Database, IndexedDB, List Databases, Save and Restore Roundtrip, Security Notes, Storage Management (+1 more)
-
-### Community 53 - "reproductor.jsx"
-Cohesion: 0.25
-Nodes (8): Advanced: Multiple Operations, Clear All localStorage, Delete Single Item, Get Single Value, List All localStorage Items, Local Storage, Set JSON Value, Set Value
-
-### Community 54 - "salon.jsx"
-Cohesion: 0.33
-Nodes (6): Clear sessionStorage, Delete Single Item, Get Single Value, List All sessionStorage Items, Session Storage, Set Value
-
-### Community 57 - "._CLAUDE.md"
-Cohesion: 0.50
-Nodes (4): Restore Storage State, Save Storage State, Storage State, Storage State File Format
-
 ### Community 73 - "._02-animacion-explosion-bloques.md"
 Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
@@ -351,24 +331,24 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **529 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+524 more)
+- **527 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+522 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `AsteroidsGame()` connect `Cookie Management` to `E2E Test`?**
+- **Why does `AsteroidsGame()` connect `Game Data Layer` to `E2E Test`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `Dev Tooling` to `Package Dependencies`?**
+- **Why does `saveScore()` connect `Game Data Layer` to `Test Generation`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `submitAsteroidsScore()` connect `Cookie Management` to `Game Data Layer`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
-  _529 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _527 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Sessions` be split into smaller, more focused modules?**
   _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
 - **Should `Project Architecture` be split into smaller, more focused modules?**
   _Cohesion score 0.08669354838709678 - nodes in this community are weakly interconnected._
+- **Should `Game Data Layer` be split into smaller, more focused modules?**
+  _Cohesion score 0.05672926447574335 - nodes in this community are weakly interconnected._

@@ -28,7 +28,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Playwright CLI Reference_1]]
 - 1 edge to [[_COMMUNITY_Playwright Automation_1]]
-- 1 edge to [[_COMMUNITY_detalle.jsx]]
+- 1 edge to [[_COMMUNITY_localStorage Ops]]
 - 1 edge to [[_COMMUNITY_Root Layout]]
 
 ## Top bridge nodes

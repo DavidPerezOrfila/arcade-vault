@@ -2,7 +2,7 @@
 source_file: "app/data/scores.ts"
 type: "code"
 community: "Game Data Layer"
-location: "L22"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
