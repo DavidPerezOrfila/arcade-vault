@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { Suspense } from 'react';
 import { getAsteroidsLeaderboard } from './actions';
 import { AsteroidsGame } from '@/components/games/asteroids/AsteroidsGame';
-import './asteroids.css';
 
 export const metadata: Metadata = {
   title: 'Asteroids | Arcade Vault',
