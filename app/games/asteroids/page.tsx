@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Suspense } from 'react';
 import { getAsteroidsLeaderboard } from './actions';
-import { AsteroidsGameClient } from './AsteroidsGameClient';
+import { AsteroidsGame } from '@/components/games/asteroids/AsteroidsGame';
 import './asteroids.css';
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 async function LeaderboardServer() {
   const leaderboard = await getAsteroidsLeaderboard();
-  return <AsteroidsGameClient initialLeaderboard={leaderboard.slice(0, 10)} />;
+  return <AsteroidsGame initialLeaderboard={leaderboard.slice(0, 10)} />;
 }
 
 export default function AsteroidsPage() {
