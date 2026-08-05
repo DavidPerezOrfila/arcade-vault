@@ -31,7 +31,7 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 
 - Action: `anomalyco/opencode/github@a3b97d9090ccf4aa9ac32268486283e3131e36b4` (pinned a SHA; `@latest` es mutable)
 - Modelo: `nvidia/minimaxai/minimax-m3`
-- Secret: `NVIDIA_API_KEY` (env)
+- Secret: `NVIDIA_API_KEY` (env) + `GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}` (obligatorio: con `use_github_token: true` el action exige el token en el entorno; el automático del job no está en el env por defecto)
 - `use_github_token: true` — el action usa el GITHUB_TOKEN del job (evita el OpenCode App token exchange vía OIDC, que requiere App instalada; permite prescindir de `id-token`)
 - `share: false` — no publica enlaces de sesión
 - **Permisos del job**: `contents: write` (rama y commits), `pull-requests: write` (PR), `issues: write` (comentarios). Sin `id-token`
@@ -42,6 +42,7 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 - Invocar: comentar `/oc` + contexto opcional en el issue
 - Iterar: comentar `/oc` + feedback en el review del PR
 - Cancelar: cerrar el PR o borrar la rama (no hay comando de cancelación; el humano gobierna vía PR)
+- **Ojo con Git Bash en Windows**: al usar `gh issue comment --body '/oc'` desde Git Bash, MSYS convierte `/oc` en `C:/Program Files/Git/oc` y el trigger no matchea. Invocar desde la web de GitHub, o con `MSYS_NO_PATHCONV=1 gh issue comment <n> --body '/oc'`
 
 ## Decisiones documentadas
 
