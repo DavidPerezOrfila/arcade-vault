@@ -30,11 +30,14 @@ export interface Game {
 // Puntuación persistida en `public.scores` (Postgres via Supabase).
 // El dominio sigue siendo `at: number` (epoch ms) — la capa scores.ts
 // mapea `timestamptz ↔ number` para que la UI nunca vea el string ISO.
+// `userId` refleja la columna nullable `user_id`; es `null` para puntuaciones
+// anónimas o legacy (localStorage).
 export interface ScoreEntry {
   game: string;
   score: number;
   name: string;
   at: number;
+  userId: string | null;
 }
 
 // Fila cruda tal cual la devuelve Supabase — no se exporta a la UI.
