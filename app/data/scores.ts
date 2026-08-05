@@ -64,7 +64,7 @@ export async function saveScore(
       score: input.score,
       name: input.name,
       at: new Date(input.at).toISOString(),
-      user_id: input.userId ?? null
+      ['user_id']: input.userId ?? null
     })
     .select(SELECT_COLUMNS)
     .single();

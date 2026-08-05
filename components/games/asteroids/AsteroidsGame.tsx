@@ -56,6 +56,24 @@ export function AsteroidsGame({
     [refreshLeaderboard]
   );
 
+  // Test hook (solo con ?e2e=1): permite forzar el game over de forma
+  // determinista desde los tests E2E de Playwright.
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined;
+    const isE2E = new URLSearchParams(window.location.search).get('e2e') === '1';
+    if (!isE2E) return undefined;
+
+    const win = window as unknown as {
+      // eslint-disable-next-line no-unused-vars
+      __forceGameOver?: (_score?: number) => void;
+    };
+    win.__forceGameOver = (_score = 1000) => handleGameOver(_score);
+
+    return () => {
+      delete win.__forceGameOver;
+    };
+  }, [handleGameOver]);
+
   // Initialize game when canvas is ready
   useEffect(() => {
     const canvas = canvasRef.current;
