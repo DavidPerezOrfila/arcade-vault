@@ -379,6 +379,13 @@
       }
     },
     {
+      "query": "tag:#community/Workflow:_issue-loop",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
       "query": "tag:#community/accumulate-edited.ps1",
       "color": {
         "a": 1,

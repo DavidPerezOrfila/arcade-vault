@@ -1,16 +1,16 @@
-# Graph Report - 05-arcade-vault  (2026-08-05)
+# Graph Report - 05-arcade-vault  (2026-08-06)
 
 ## Corpus Check
-- 147 files · ~86,597 words
+- 148 files · ~87,170 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1066 nodes · 1292 edges · 78 communities (69 shown, 9 thin omitted)
+- 1075 nodes · 1300 edges · 79 communities (70 shown, 9 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.72)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6ca0ee0e`
+- Built from commit: `4638bfe7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,6 +64,7 @@
 - levels.js
 - detalle.jsx
 - reproductor.jsx
+- Workflow: issue-loop
 - ._02-animacion-explosion-bloques.md
 - 06-games-catalog-salon
 - SKILL.md
@@ -114,7 +115,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (78 total, 9 thin omitted)
+## Communities (79 total, 9 thin omitted)
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -284,6 +285,10 @@ Nodes (10): Configuración técnica (GitHub Actions), Decisiones documentadas, F
 Cohesion: 0.29
 Nodes (6): Contexto del workspace, Herramientas y canales, Loops observados (patrones recurrentes delegables), NOTES.md — mundo del usuario, Pendiente de entrevista, Terminología
 
+### Community 54 - "Workflow: issue-loop"
+Cohesion: 0.22
+Nodes (8): Configuración técnica, Decisiones documentadas, Flujo, Out of scope, Resumen, Trigger, Validación, Workflow: issue-loop
+
 ### Community 73 - "._02-animacion-explosion-bloques.md"
 Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
@@ -341,7 +346,7 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **541 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+536 more)
+- **548 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+543 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -351,7 +356,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `AsteroidsGame()` connect `Game Data Layer` to `E2E Test`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
-  _541 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _548 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Sessions` be split into smaller, more focused modules?**
