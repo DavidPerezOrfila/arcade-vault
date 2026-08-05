@@ -28,5 +28,11 @@ jobs:
       - name: Typecheck
         run: npx tsc --noEmit
 
+      # El build prerenderiza paginas que crean el client de Supabase;
+      # con placeholders no lanzan y las queries fallan con catch (-> []).
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: 'http://127.0.0.1:54321'
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: 'placeholder'
+          SUPABASE_SERVICE_ROLE_KEY: 'placeholder'
