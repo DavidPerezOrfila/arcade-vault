@@ -29,15 +29,13 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 
 ## Configuración técnica (GitHub Actions)
 
-- Action: `anomalyco/opencode/github@latest`
+- Action: `anomalyco/opencode/github@a3b97d9090ccf4aa9ac32268486283e3131e36b4` (pinned a SHA; `@latest` es mutable)
 - Modelo: `nvidia/minimaxai/minimax-m3`
 - Secret: `NVIDIA_API_KEY` (env)
-- **Permisos del job** (el yml actual NO los cumple — solo lectura):
-  - `contents: write` — crear rama y commits
-  - `pull-requests: write` — abrir/actualizar el PR
-  - `issues: write` — comentar progreso/fallo en el issue
-  - `id-token: write` — OIDC para el action
-- Checkout con `persist-credentials: false` (el action gestiona su propia autenticación con el GITHUB_TOKEN del job)
+- `use_github_token: true` — el action usa el GITHUB_TOKEN del job (evita el OpenCode App token exchange vía OIDC, que requiere App instalada; permite prescindir de `id-token`)
+- `share: false` — no publica enlaces de sesión
+- **Permisos del job**: `contents: write` (rama y commits), `pull-requests: write` (PR), `issues: write` (comentarios). Sin `id-token`
+- Checkout con `persist-credentials: false` (el action se autentica con el GITHUB_TOKEN del job)
 
 ## Interfaz con el usuario
 
@@ -72,6 +70,4 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 - Comandos de cancelación
 - Despliegue u otras acciones post-merge
 
-## Mejora opcional futura
 
-- Pinar `anomalyco/opencode/github@latest` a un SHA de commit (seguridad de supply chain: el job tiene permisos write; `@latest` es una ref mutable). Recomendado antes de depender del loop en producción
