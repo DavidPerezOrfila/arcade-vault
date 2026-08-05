@@ -34,17 +34,27 @@ export async function submitAsteroidsScore(score: number): Promise<SubmitScoreRe
   return { ok: true };
 }
 
-function mapToLeaderboardEntry(entry: ScoreEntry, index: number): LeaderboardEntry {
+function mapToLeaderboardEntry(
+  entry: ScoreEntry,
+  index: number,
+  currentUserId: string | null
+): LeaderboardEntry {
   return {
     rank: index + 1,
     playerName: entry.name,
     score: entry.score,
     createdAt: new Date(entry.at).toISOString(),
-    isCurrentUser: false
+    isCurrentUser: entry.userId !== null && entry.userId === currentUserId
   };
 }
 
 export async function getAsteroidsLeaderboard(): Promise<LeaderboardEntry[]> {
+  const supabase = await (await import('@/lib/supabase/server')).createSupabaseServerClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  const currentUserId = user?.id ?? null;
+
   const scores = await getScoresByGame('asteroids');
-  return scores.slice(0, 10).map(mapToLeaderboardEntry);
+  return scores.slice(0, 10).map((entry, index) =>
+    mapToLeaderboardEntry(entry, index, currentUserId)
+  );
 }
