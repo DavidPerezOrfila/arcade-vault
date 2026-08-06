@@ -27,6 +27,7 @@ Flujo completo de resolución de issues, de punta a punta: el humano inicia, ope
 ## Configuración técnica
 
 - Reutiliza `.github/workflows/opencode.yml` (ya operativo) para la implementación
+- Requiere que el workflow configure la **identidad git** del runner (opencode commitea/pushea el PR; sin `user.name`/`user.email` el commit falla y no hay PR)
 - Añade un workflow de checks en PRs (`.github/workflows/ci.yml`): `npm ci`, `npm run lint`, `npx tsc --noEmit`, `npm run build`
 - E2E **fuera** de CI (los de salón requieren Supabase local/Docker); la validación E2E es manual o local
 

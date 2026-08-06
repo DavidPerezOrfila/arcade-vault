@@ -37,6 +37,7 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 - `share: false` — no publica enlaces de sesión
 - **Permisos del job**: `contents: write` (rama y commits), `pull-requests: write` (PR), `issues: write` (comentarios). Sin `id-token`
 - Checkout con `persist-credentials: false` (el action se autentica con el GITHUB_TOKEN del job)
+- **Identidad git**: el action hace `git commit`/`git push`; sin `user.name`/`user.email` el commit falla (`Author identity unknown`) y no se crea el PR. El workflow configura `github-actions[bot]` como identidad global antes de correr la action
 
 ## Interfaz con el usuario
 
