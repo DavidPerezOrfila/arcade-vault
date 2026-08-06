@@ -1049,7 +1049,7 @@
       "label": "GET()",
       "file_type": "code",
       "source_file": "app/api/leaderboard/asteroids/route.ts",
-      "source_location": "L5",
+      "source_location": "L4",
       "_origin": "ast",
       "id": "app_api_leaderboard_asteroids_route_get",
       "community": 4,
@@ -1107,8 +1107,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "app_data_actions_parseformdata",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "parseformdata()"
     },
     {
@@ -1118,8 +1118,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "app_data_actions_savescoreaction",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "savescoreaction()"
     },
     {
@@ -1302,7 +1302,7 @@
       "label": "ScoreEntryInputParsed",
       "file_type": "code",
       "source_file": "app/data/schema.ts",
-      "source_location": "L10",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "app_data_schema_scoreentryinputparsed",
       "community": 4,
@@ -1335,7 +1335,7 @@
       "label": "getScores()",
       "file_type": "code",
       "source_file": "app/data/scores.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "app_data_scores_getscores",
       "community": 4,
@@ -1346,7 +1346,7 @@
       "label": "getScoresByGame()",
       "file_type": "code",
       "source_file": "app/data/scores.ts",
-      "source_location": "L37",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "app_data_scores_getscoresbygame",
       "community": 4,
@@ -1357,7 +1357,7 @@
       "label": "saveScore()",
       "file_type": "code",
       "source_file": "app/data/scores.ts",
-      "source_location": "L54",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "app_data_scores_savescore",
       "community": 4,
@@ -1500,7 +1500,7 @@
       "label": "ScoreEntry",
       "file_type": "code",
       "source_file": "app/data/types.ts",
-      "source_location": "L33",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "app_data_types_scoreentry",
       "community": 11,
@@ -1511,7 +1511,7 @@
       "label": "ScoreRowDb",
       "file_type": "code",
       "source_file": "app/data/types.ts",
-      "source_location": "L41",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "app_data_types_scorerowdb",
       "community": 11,
@@ -1522,7 +1522,7 @@
       "label": "ScoreRow",
       "file_type": "code",
       "source_file": "app/data/types.ts",
-      "source_location": "L45",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "app_data_types_scorerow",
       "community": 11,
@@ -1533,7 +1533,7 @@
       "label": "User",
       "file_type": "code",
       "source_file": "app/data/types.ts",
-      "source_location": "L52",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "app_data_types_user",
       "community": 11,
@@ -1547,8 +1547,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_footer",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "footer.tsx"
     },
     {
@@ -1558,8 +1558,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "app_footer_footer",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "footer()"
     },
     {
@@ -1651,47 +1651,14 @@
       "norm_label": "detailpage()"
     },
     {
-      "label": "AsteroidsGameClient.tsx",
-      "file_type": "code",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "app_games_asteroids_asteroidsgameclient",
-      "community": 24,
-      "community_name": "Cookie Management",
-      "norm_label": "asteroidsgameclient.tsx"
-    },
-    {
-      "label": "AsteroidsGameClientProps",
-      "file_type": "code",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "app_games_asteroids_asteroidsgameclient_asteroidsgameclientprops",
-      "community": 24,
-      "community_name": "Cookie Management",
-      "norm_label": "asteroidsgameclientprops"
-    },
-    {
-      "label": "AsteroidsGameClient()",
-      "file_type": "code",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "app_games_asteroids_asteroidsgameclient_asteroidsgameclient",
-      "community": 24,
-      "community_name": "Cookie Management",
-      "norm_label": "asteroidsgameclient()"
-    },
-    {
       "label": "actions.ts",
       "file_type": "code",
       "source_file": "app/games/asteroids/actions.ts",
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_asteroids_actions",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "actions.ts"
     },
     {
@@ -1701,8 +1668,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "app_games_asteroids_actions_submitscoreresult",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "submitscoreresult"
     },
     {
@@ -1712,53 +1679,31 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "app_games_asteroids_actions_submitasteroidsscore",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "submitasteroidsscore()"
     },
     {
       "label": "mapToLeaderboardEntry()",
       "file_type": "code",
       "source_file": "app/games/asteroids/actions.ts",
-      "source_location": "L36",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "app_games_asteroids_actions_maptoleaderboardentry",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "maptoleaderboardentry()"
     },
     {
       "label": "getAsteroidsLeaderboard()",
       "file_type": "code",
       "source_file": "app/games/asteroids/actions.ts",
-      "source_location": "L46",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "app_games_asteroids_actions_getasteroidsleaderboard",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "getasteroidsleaderboard()"
-    },
-    {
-      "label": "route.ts",
-      "file_type": "code",
-      "source_file": "app/games/asteroids/api/leaderboard/route.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "app_games_asteroids_api_leaderboard_route",
-      "community": 24,
-      "community_name": "Cookie Management",
-      "norm_label": "route.ts"
-    },
-    {
-      "label": "GET()",
-      "file_type": "code",
-      "source_file": "app/games/asteroids/api/leaderboard/route.ts",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "app_games_asteroids_api_leaderboard_route_get",
-      "community": 24,
-      "community_name": "Cookie Management",
-      "norm_label": "get()"
     },
     {
       "label": "page.tsx",
@@ -1767,41 +1712,41 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_asteroids_page",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "page.tsx"
     },
     {
       "label": "metadata",
       "file_type": "code",
       "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L7",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "app_games_asteroids_page_metadata",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "metadata"
     },
     {
       "label": "LeaderboardServer()",
       "file_type": "code",
       "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L17",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "app_games_asteroids_page_leaderboardserver",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "leaderboardserver()"
     },
     {
       "label": "AsteroidsPage()",
       "file_type": "code",
       "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L22",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "app_games_asteroids_page_asteroidspage",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "asteroidspage()"
     },
     {
@@ -1833,8 +1778,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_layout",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "layout.tsx"
     },
     {
@@ -1844,8 +1789,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "app_layout_rootlayout",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "rootlayout()"
     },
     {
@@ -2053,30 +1998,30 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_games_asteroids_asteroidsgame",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "asteroidsgame.tsx"
     },
     {
       "label": "GameModule",
       "file_type": "code",
       "source_file": "components/games/asteroids/AsteroidsGame.tsx",
-      "source_location": "L6",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "components_games_asteroids_asteroidsgame_gamemodule",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "gamemodule"
     },
     {
       "label": "AsteroidsGame()",
       "file_type": "code",
       "source_file": "components/games/asteroids/AsteroidsGame.tsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "components_games_asteroids_asteroidsgame_asteroidsgame",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "asteroidsgame()"
     },
     {
@@ -2086,8 +2031,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_migrate_local_storage",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "migrate-local-storage.tsx"
     },
     {
@@ -2097,8 +2042,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_migrate_local_storage_migratelocalstoragescores",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "migratelocalstoragescores()"
     },
     {
@@ -2746,52 +2691,30 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_games_asteroids_types",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "types.ts"
-    },
-    {
-      "label": "AsteroidsGameState",
-      "file_type": "code",
-      "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "lib_games_asteroids_types_asteroidsgamestate",
-      "community": 24,
-      "community_name": "Cookie Management",
-      "norm_label": "asteroidsgamestate"
-    },
-    {
-      "label": "AsteroidsConfig",
-      "file_type": "code",
-      "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "lib_games_asteroids_types_asteroidsconfig",
-      "community": 24,
-      "community_name": "Cookie Management",
-      "norm_label": "asteroidsconfig"
     },
     {
       "label": "LeaderboardEntry",
       "file_type": "code",
       "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L17",
+      "source_location": "L3",
       "_origin": "ast",
       "id": "lib_games_asteroids_types_leaderboardentry",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "leaderboardentry"
     },
     {
       "label": "AsteroidsGameProps",
       "file_type": "code",
       "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L25",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "lib_games_asteroids_types_asteroidsgameprops",
-      "community": 24,
-      "community_name": "Cookie Management",
+      "community": 4,
+      "community_name": "Game Data Layer",
       "norm_label": "asteroidsgameprops"
     },
     {
@@ -7014,8 +6937,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_commands",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "commands"
     },
     {
@@ -7025,8 +6948,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_core",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "core"
     },
     {
@@ -7036,8 +6959,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_navigation",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "navigation"
     },
     {
@@ -7047,8 +6970,8 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_keyboard",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "keyboard"
     },
     {
@@ -7058,8 +6981,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_mouse",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "mouse"
     },
     {
@@ -7069,8 +6992,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_save_as",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "save as"
     },
     {
@@ -7080,8 +7003,8 @@
       "source_location": "L105",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_tabs",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "tabs"
     },
     {
@@ -7091,8 +7014,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_storage",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "storage"
     },
     {
@@ -7102,8 +7025,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_network",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "network"
     },
     {
@@ -7113,8 +7036,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_skill_devtools",
-      "community": 8,
-      "community_name": "Playwright Automation",
+      "community": 24,
+      "community_name": "Cookie Management",
       "norm_label": "devtools"
     },
     {
@@ -7432,8 +7355,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_storage_management",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "storage management"
     },
     {
@@ -7443,8 +7366,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_storage_state",
-      "community": 57,
-      "community_name": "._CLAUDE.md",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "storage state"
     },
     {
@@ -7454,8 +7377,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_save_storage_state",
-      "community": 57,
-      "community_name": "._CLAUDE.md",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "save storage state"
     },
     {
@@ -7465,8 +7388,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_restore_storage_state",
-      "community": 57,
-      "community_name": "._CLAUDE.md",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "restore storage state"
     },
     {
@@ -7476,8 +7399,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_storage_state_file_format",
-      "community": 57,
-      "community_name": "._CLAUDE.md",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "storage state file format"
     },
     {
@@ -7586,8 +7509,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_local_storage",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "local storage"
     },
     {
@@ -7597,8 +7520,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_list_all_localstorage_items",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "list all localstorage items"
     },
     {
@@ -7608,8 +7531,8 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_get_single_value",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "get single value"
     },
     {
@@ -7619,8 +7542,8 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_set_value",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "set value"
     },
     {
@@ -7630,8 +7553,8 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_set_json_value",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "set json value"
     },
     {
@@ -7641,8 +7564,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_delete_single_item",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "delete single item"
     },
     {
@@ -7652,8 +7575,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_clear_all_localstorage",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "clear all localstorage"
     },
     {
@@ -7663,8 +7586,8 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_advanced_multiple_operations",
-      "community": 53,
-      "community_name": "reproductor.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "advanced: multiple operations"
     },
     {
@@ -7674,8 +7597,8 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_session_storage",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "session storage"
     },
     {
@@ -7685,8 +7608,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_list_all_sessionstorage_items",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "list all sessionstorage items"
     },
     {
@@ -7696,8 +7619,8 @@
       "source_location": "L183",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_get_single_value_183",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "get single value"
     },
     {
@@ -7707,8 +7630,8 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_set_value_189",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "set value"
     },
     {
@@ -7718,8 +7641,8 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_delete_single_item_195",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "delete single item"
     },
     {
@@ -7729,8 +7652,8 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_clear_sessionstorage",
-      "community": 54,
-      "community_name": "salon.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "clear sessionstorage"
     },
     {
@@ -7740,8 +7663,8 @@
       "source_location": "L207",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_indexeddb",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "indexeddb"
     },
     {
@@ -7751,8 +7674,8 @@
       "source_location": "L209",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_list_databases",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "list databases"
     },
     {
@@ -7762,8 +7685,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_delete_database",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "delete database"
     },
     {
@@ -7773,8 +7696,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_common_patterns",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "common patterns"
     },
     {
@@ -7784,8 +7707,8 @@
       "source_location": "L232",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_authentication_state_reuse",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "authentication state reuse"
     },
     {
@@ -7795,8 +7718,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_save_and_restore_roundtrip",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "save and restore roundtrip"
     },
     {
@@ -7806,8 +7729,8 @@
       "source_location": "L269",
       "_origin": "ast",
       "id": "agents_skills_playwright_cli_references_storage_state_security_notes",
-      "community": 52,
-      "community_name": "detalle.jsx",
+      "community": 18,
+      "community_name": "localStorage Ops",
       "norm_label": "security notes"
     },
     {
@@ -11335,9 +11258,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 18,
       "norm_label": "run code",
-      "community_name": "detalle.jsx",
+      "community_name": "localStorage Ops",
       "id": "claude_skills_playwright_cli_references_run_code"
     },
     {
@@ -13787,7 +13710,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/leaderboard/asteroids/route.ts",
-      "source_location": "L5",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_leaderboard_asteroids_route",
@@ -13803,7 +13726,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_leaderboard_asteroids_route",
-      "target": "app_data_scores",
+      "target": "app_games_asteroids_actions",
       "confidence_score": 1.0
     },
     {
@@ -13815,31 +13738,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_leaderboard_asteroids_route",
-      "target": "app_data_scores_getscoresbygame",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/api/leaderboard/asteroids/route.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_api_leaderboard_asteroids_route",
-      "target": "app_data_types",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/api/leaderboard/asteroids/route.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_api_leaderboard_asteroids_route",
-      "target": "app_data_types_scoreentry",
+      "target": "app_games_asteroids_actions_getasteroidsleaderboard",
       "confidence_score": 1.0
     },
     {
@@ -13848,11 +13747,11 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/api/leaderboard/asteroids/route.ts",
-      "source_location": "L7",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_leaderboard_asteroids_route_get",
-      "target": "app_data_scores_getscoresbygame"
+      "target": "app_games_asteroids_actions_getasteroidsleaderboard"
     },
     {
       "relation": "contains",
@@ -14682,7 +14581,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/schema.ts",
-      "source_location": "L10",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_schema",
@@ -14728,7 +14627,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/scores.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores",
@@ -14739,7 +14638,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/scores.ts",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores",
@@ -14761,7 +14660,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/scores.ts",
-      "source_location": "L54",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores",
@@ -14845,7 +14744,7 @@
       "context": "argument",
       "confidence": "INFERRED",
       "source_file": "app/data/scores.ts",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores_getscores",
@@ -14857,7 +14756,7 @@
       "context": "argument",
       "confidence": "INFERRED",
       "source_file": "app/data/scores.ts",
-      "source_location": "L48",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores_getscoresbygame",
@@ -14869,7 +14768,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/data/scores.ts",
-      "source_location": "L69",
+      "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores_savescore",
@@ -14882,7 +14781,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/data/scores.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores_getscores",
@@ -14894,7 +14793,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/data/scores.ts",
-      "source_location": "L39",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores_getscoresbygame",
@@ -14918,7 +14817,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/games/asteroids/actions.ts",
-      "source_location": "L47",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_games_asteroids_actions_getasteroidsleaderboard",
@@ -14954,7 +14853,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/data/scores.ts",
-      "source_location": "L57",
+      "source_location": "L59",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_scores_savescore",
@@ -15254,7 +15153,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/types.ts",
-      "source_location": "L33",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_types",
@@ -15265,7 +15164,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/types.ts",
-      "source_location": "L45",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_types",
@@ -15276,7 +15175,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/types.ts",
-      "source_location": "L41",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_types",
@@ -15287,7 +15186,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/types.ts",
-      "source_location": "L52",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_types",
@@ -15528,152 +15427,10 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient",
-      "target": "app_games_asteroids_actions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient",
-      "target": "app_games_asteroids_actions_submitasteroidsscore",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient",
-      "target": "app_games_asteroids_asteroidsgameclient_asteroidsgameclient",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient",
-      "target": "app_games_asteroids_asteroidsgameclient_asteroidsgameclientprops",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient",
-      "target": "components_games_asteroids_asteroidsgame",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient",
-      "target": "components_games_asteroids_asteroidsgame_asteroidsgame",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient",
-      "target": "lib_games_asteroids_types",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient",
-      "target": "lib_games_asteroids_types_leaderboardentry",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_page",
-      "target": "app_games_asteroids_asteroidsgameclient",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "field",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient_asteroidsgameclientprops",
-      "target": "lib_games_asteroids_types_leaderboardentry",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/games/asteroids/AsteroidsGameClient.tsx",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_asteroidsgameclient_asteroidsgameclient",
-      "target": "app_games_asteroids_actions_submitasteroidsscore"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_page",
-      "target": "app_games_asteroids_asteroidsgameclient_asteroidsgameclient",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/games/asteroids/actions.ts",
-      "source_location": "L46",
+      "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_games_asteroids_actions",
@@ -15684,7 +15441,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/games/asteroids/actions.ts",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_games_asteroids_actions",
@@ -15741,11 +15498,11 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/api/leaderboard/route.ts",
-      "source_location": "L1",
+      "source_file": "app/games/asteroids/page.tsx",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_games_asteroids_api_leaderboard_route",
+      "source": "app_games_asteroids_page",
       "target": "app_games_asteroids_actions",
       "confidence_score": 1.0
     },
@@ -15753,11 +15510,11 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L3",
+      "source_file": "components/games/asteroids/AsteroidsGame.tsx",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_games_asteroids_page",
+      "source": "components_games_asteroids_asteroidsgame",
       "target": "app_games_asteroids_actions",
       "confidence_score": 1.0
     },
@@ -15775,27 +15532,15 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "indirect_call",
-      "context": "argument",
-      "confidence": "INFERRED",
-      "source_file": "app/games/asteroids/actions.ts",
-      "source_location": "L48",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_actions_getasteroidsleaderboard",
-      "target": "app_games_asteroids_actions_maptoleaderboardentry",
-      "confidence_score": 0.5
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/api/leaderboard/route.ts",
-      "source_location": "L1",
+      "source_file": "components/games/asteroids/AsteroidsGame.tsx",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_games_asteroids_api_leaderboard_route",
-      "target": "app_games_asteroids_actions_getasteroidsleaderboard",
+      "source": "components_games_asteroids_asteroidsgame",
+      "target": "app_games_asteroids_actions_submitasteroidsscore",
       "confidence_score": 1.0
     },
     {
@@ -15803,12 +15548,37 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "app/games/asteroids/api/leaderboard/route.ts",
-      "source_location": "L4",
+      "source_file": "components/games/asteroids/AsteroidsGame.tsx",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_games_asteroids_api_leaderboard_route_get",
-      "target": "app_games_asteroids_actions_getasteroidsleaderboard"
+      "source": "components_games_asteroids_asteroidsgame_asteroidsgame",
+      "target": "app_games_asteroids_actions_submitasteroidsscore"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/games/asteroids/actions.ts",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_games_asteroids_actions_getasteroidsleaderboard",
+      "target": "app_games_asteroids_actions_maptoleaderboardentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "deferred": true,
+      "confidence": "EXTRACTED",
+      "source_file": "app/games/asteroids/actions.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_games_asteroids_actions_getasteroidsleaderboard",
+      "target": "lib_supabase_server",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -15827,7 +15597,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L18",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_games_asteroids_page_leaderboardserver",
@@ -15837,19 +15607,8 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/games/asteroids/api/leaderboard/route.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_games_asteroids_api_leaderboard_route",
-      "target": "app_games_asteroids_api_leaderboard_route_get",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L22",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_games_asteroids_page",
@@ -15860,7 +15619,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L17",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_games_asteroids_page",
@@ -15871,11 +15630,35 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/games/asteroids/page.tsx",
-      "source_location": "L7",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_games_asteroids_page",
       "target": "app_games_asteroids_page_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/games/asteroids/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_games_asteroids_page",
+      "target": "components_games_asteroids_asteroidsgame",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/games/asteroids/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_games_asteroids_page",
+      "target": "components_games_asteroids_asteroidsgame_asteroidsgame",
       "confidence_score": 1.0
     },
     {
@@ -16143,7 +15926,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/games/asteroids/AsteroidsGame.tsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame",
@@ -16154,7 +15937,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/games/asteroids/AsteroidsGame.tsx",
-      "source_location": "L6",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame",
@@ -16166,7 +15949,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "components/games/asteroids/AsteroidsGame.tsx",
-      "source_location": "L2",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame",
@@ -16178,7 +15961,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "components/games/asteroids/AsteroidsGame.tsx",
-      "source_location": "L2",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame",
@@ -16190,7 +15973,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "components/games/asteroids/AsteroidsGame.tsx",
-      "source_location": "L2",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame",
@@ -16203,7 +15986,7 @@
       "deferred": true,
       "confidence": "EXTRACTED",
       "source_file": "components/games/asteroids/AsteroidsGame.tsx",
-      "source_location": "L28",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_games_asteroids_asteroidsgame_asteroidsgame",
@@ -17275,18 +17058,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_games_asteroids_types",
-      "target": "lib_games_asteroids_types_asteroidsconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L25",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_asteroids_types",
@@ -17298,17 +17070,6 @@
       "confidence": "EXTRACTED",
       "source_file": "lib/games/asteroids/types.ts",
       "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "lib_games_asteroids_types",
-      "target": "lib_games_asteroids_types_asteroidsgamestate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_asteroids_types",
@@ -26570,5 +26331,5 @@
       "source_file": ".agents/skills/spec/SKILL.md"
     }
   ],
-  "built_at_commit": "38fa5e47efdcf5386eb0077dbe8ed841154c0caf"
+  "built_at_commit": "83236c36d8c3c05361f01ea2d8e8d32acfb3fe01"
 }

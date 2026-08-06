@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "components/nav.tsx": {
-    "mtime": 1785967259.6674767,
-    "ast_hash": "690b78626cd9faa462cf7b724dde19bc",
+    "mtime": 1786048610.4325395,
+    "ast_hash": "af3af8a3e24dd54a59c8377e8df50edc",
     "semantic_hash": ""
   },
   "eslint.config.mjs": {
@@ -265,18 +265,18 @@
     "semantic_hash": "c1f96e2054a5c24400db3023d9506778"
   },
   "AGENTS.md": {
-    "mtime": 1785955826.482016,
-    "ast_hash": "771cf8e510c2c641c72456772af52124",
+    "mtime": 1786052435.691485,
+    "ast_hash": "ea8d1ca91df21690b731484448d0af59",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1785967669.9470384,
-    "ast_hash": "7c63d29c1b1202d39c17b55bc6cfec3a",
+    "mtime": 1786053127.799983,
+    "ast_hash": "b936714f7efae925ef9cb6fd0cdbc448",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785967669.93551,
-    "ast_hash": "357a45fa34de62f3ca332f1e59282d35",
+    "mtime": 1786048610.4265394,
+    "ast_hash": "df6223308855e79a08d9f77c16a54e5e",
     "semantic_hash": ""
   },
   "resources/templates/Arcade Vault.html": {
@@ -550,8 +550,8 @@
     "semantic_hash": ""
   },
   "app/_home/RecentActivity.tsx": {
-    "mtime": 1785967259.6377778,
-    "ast_hash": "1d4f02c3b320a65a2838c66f24186af7",
+    "mtime": 1786048610.4275396,
+    "ast_hash": "ace15ca1b5214684af85f8b786294298",
     "semantic_hash": ""
   },
   "app/_home/TopPlayersToday.tsx": {
@@ -605,8 +605,8 @@
     "semantic_hash": ""
   },
   "app/player/[id]/PlayerClient.tsx": {
-    "mtime": 1785967259.6096592,
-    "ast_hash": "f789ffcaa36acd252713d949d559e987",
+    "mtime": 1786048610.4305394,
+    "ast_hash": "556b3b7e5186ae59d69493066e50b0e5",
     "semantic_hash": ""
   },
   "app/salon/SalonClient.tsx": {
@@ -790,8 +790,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/opencode.yml": {
-    "mtime": 1785965555.408223,
-    "ast_hash": "0f9e6143048edc623be6dcc3743839de",
+    "mtime": 1786048610.4245305,
+    "ast_hash": "b83652218b814769297b4583231ddfeb",
     "semantic_hash": ""
   },
   "NOTES.md": {
@@ -800,18 +800,23 @@
     "semantic_hash": ""
   },
   "workflows/opencode-loop.md": {
-    "mtime": 1785965555.4103782,
-    "ast_hash": "9a4576129462dd304c4755414d3633ff",
+    "mtime": 1786048610.4355445,
+    "ast_hash": "4ecd951542eb22d64b4c910997ee801b",
     "semantic_hash": ""
   },
   ".github/workflows/ci.yml": {
-    "mtime": 1785967489.964933,
-    "ast_hash": "ef36455648dacb5bada04f6b30f7bf53",
+    "mtime": 1786048610.423024,
+    "ast_hash": "8a732ee7eb86a8aae05d2911b3c987c5",
     "semantic_hash": ""
   },
   "workflows/issue-loop.md": {
-    "mtime": 1785967489.9744618,
-    "ast_hash": "297967d6274da0e277fcd26da83cafb6",
+    "mtime": 1786048610.4345462,
+    "ast_hash": "4130eda273e67a2f568757a57aa2a78e",
+    "semantic_hash": ""
+  },
+  "app/_home/TimeAgo.tsx": {
+    "mtime": 1786048610.4285395,
+    "ast_hash": "1959a7927c566daab7ccc4bed2ef2b02",
     "semantic_hash": ""
   }
 }

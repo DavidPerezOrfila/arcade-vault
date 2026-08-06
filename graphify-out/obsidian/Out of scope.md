@@ -2,7 +2,7 @@
 source_file: "workflows/issue-loop.md"
 type: "document"
 community: "Workflow: issue-loop"
-location: "L49"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED

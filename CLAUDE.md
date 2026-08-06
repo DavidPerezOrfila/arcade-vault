@@ -33,7 +33,7 @@ npm run lint
 # Run E2E tests with Playwright
 npm run test:e2e
 
-# Local Supabase stack — SPEC 04 (scores foundation)
+# Local Supabase stack — OPCIONAL (dev aislado; el app corre contra Supabase remoto por defecto)
 npm run db:start    # docker up + apply migrations (primera vez tarda ~2 min)
 npm run db:status   # imprime URL, anon key, service_role key → .env.local
 npm run db:reset    # drop+recreate DB y reaplica migrations
@@ -48,16 +48,20 @@ Copy `.env.local.example` to `.env.local` and fill in the values. These variable
 
 | Variable                       | Description                                                       | Source                                                       |
 | ------------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------ |
-| `NEXT_PUBLIC_SUPABASE_URL`     | URL pública de la API de Supabase                                 | `npm run db:status` → API URL (default `http://127.0.0.1:54321`) |
-| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`| Clave anónima — cliente y Server Components                  | `npm run db:status` → publishable key                         |
-| `SUPABASE_SERVICE_ROLE_KEY`    | Clave con permisos totales (server-side ONLY, nunca en cliente)   | `npm run db:status` → service_role key                       |
+| `NEXT_PUBLIC_SUPABASE_URL`     | URL pública de la API de Supabase                                 | Proyecto remoto `fqiiurfqabfbwwnmoizy` (default); local `http://127.0.0.1:54321` si se usa `db:start` |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`| Clave anónima — cliente y Server Components                  | Panel de Supabase → API Keys / `db:status`                     |
+| `SUPABASE_SERVICE_ROLE_KEY`    | Clave con permisos totales (server-side ONLY, nunca en cliente)   | Panel de Supabase → API Keys / `db:status`                     |
 | `RESEND_API_KEY`               | API key de Resend (formulario de contacto)                        | Cuenta Resend                                                |
 | `RESEND_FROM_EMAIL`            | Remitente verificado en Resend                                    | `hola@arcade-vault.gg`                                       |
 | `CONTACT_EMAIL`                | Destinatario del mensaje                                          | `tu-email@example.com`                                       |
 
 Las tres primeras (`NEXT_PUBLIC_SUPABASE_*` + `SUPABASE_SERVICE_ROLE_KEY`) son
-obligatorias: sin ellas, Home, `/salon` y `/detalle/[id]` fallan al consultar
-`getScores`.
+obligatorias: sin ellas, Home, `/salon`, `/detalle/[id]`, `/games` y
+`/games/asteroids` fallan al consultar `getScores`/`getGames`.
+
+> **Configuración (2026-08-06):** el app NO depende de Docker para ejecutar los
+> juegos. `.env.local` apunta al Supabase **remoto**; el stack local
+> (`npm run db:start`) queda solo como opción de desarrollo aislada.
 
 ## Project structure
 

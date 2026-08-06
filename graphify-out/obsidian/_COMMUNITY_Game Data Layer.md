@@ -1,11 +1,11 @@
 ---
 type: community
-members: 77
+members: 79
 ---
 
 # Game Data Layer
 
-**Members:** 77 nodes
+**Members:** 79 nodes
 
 ## Members
 - [[AsteroidsGame()]] - code - components/games/asteroids/AsteroidsGame.tsx
@@ -47,6 +47,8 @@ members: 77
 - [[SaveScoreResult]] - code - app/data/actions.ts
 - [[ScoreEntryInputParsed]] - code - app/data/schema.ts
 - [[SubmitScoreResult]] - code - app/games/asteroids/actions.ts
+- [[TimeAgo()]] - code - app/_home/TimeAgo.tsx
+- [[TimeAgo.tsx]] - code - app/_home/TimeAgo.tsx
 - [[actions.ts_1]] - code - app/data/actions.ts
 - [[actions.ts_2]] - code - app/games/asteroids/actions.ts
 - [[client.ts]] - code - lib/supabase/client.ts
@@ -73,7 +75,7 @@ members: 77
 - [[page.tsx_6]] - code - app/player/[id]/page.tsx
 - [[page.tsx_7]] - code - app/salon/page.tsx
 - [[parseFormData()]] - code - app/data/actions.ts
-- [[relativeTime()]] - code - app/_home/RecentActivity.tsx
+- [[relativeTime()]] - code - app/_home/TimeAgo.tsx
 - [[route.ts]] - code - app/api/leaderboard/asteroids/route.ts
 - [[rowToEntry()]] - code - app/data/scores.ts
 - [[saveScore()]] - code - app/data/scores.ts
@@ -101,5 +103,5 @@ SORT file.name ASC
 - [[games.ts]] - degree 17, connects to 1 community
 - [[scores.ts]] - degree 14, connects to 1 community
 - [[actions.ts_2]] - degree 14, connects to 1 community
-- [[page.tsx_5]] - degree 12, connects to 1 community
+- [[page.tsx_5]] - degree 11, connects to 1 community
 - [[PlayerClient.tsx]] - degree 7, connects to 1 community

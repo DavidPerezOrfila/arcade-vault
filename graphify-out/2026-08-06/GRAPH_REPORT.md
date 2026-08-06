@@ -1,16 +1,16 @@
-# Graph Report - 05-arcade-vault  (2026-08-05)
+# Graph Report - 05-arcade-vault  (2026-08-06)
 
 ## Corpus Check
-- 146 files · ~86,108 words
+- 148 files · ~87,170 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1052 nodes · 1286 edges · 76 communities (67 shown, 9 thin omitted)
+- 1075 nodes · 1300 edges · 79 communities (70 shown, 9 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.72)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `83236c36`
+- Built from commit: `4638bfe7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -62,6 +62,9 @@
 - Playwright Config
 - Custom Bundler
 - levels.js
+- detalle.jsx
+- reproductor.jsx
+- Workflow: issue-loop
 - ._02-animacion-explosion-bloques.md
 - 06-games-catalog-salon
 - SKILL.md
@@ -112,7 +115,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (76 total, 9 thin omitted)
+## Communities (79 total, 9 thin omitted)
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -131,8 +134,8 @@ Cohesion: 0.09
 Nodes (32): Playwright Test Report, Arcade Vault Project Overview, Graphify Knowledge Graph System, Server Components Default Pattern, Spec Driven Design Workflow, Tailwind CSS v4 Theme Configuration, Tech Stack (Next.js 16, React 19, TypeScript 5, Tailwind v4, ESLint 9), Arcade Vault Platform Description (+24 more)
 
 ### Community 4 - "Game Data Layer"
-Cohesion: 0.06
-Nodes (49): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, SaveScoreResult, CATS, Game, GameFilter (+41 more)
+Cohesion: 0.05
+Nodes (53): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+45 more)
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
@@ -159,8 +162,8 @@ Cohesion: 0.14
 Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collideAABB(), ctx (+10 more)
 
 ### Community 11 - "Test Generation"
-Cohesion: 0.06
-Nodes (34): AuthPage(), parseFormData(), saveScoreAction(), PLAYERS, seededScores(), clearUser(), getScores(), getUser() (+26 more)
+Cohesion: 0.07
+Nodes (27): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+19 more)
 
 ### Community 12 - "Dev Tooling"
 Cohesion: 0.07
@@ -274,6 +277,18 @@ Nodes (33): Asteroid, attachInput(), Bullet, destroy(), detachInput(), dist(), d
 Cohesion: 0.18
 Nodes (11): sendContactEmail(), HighlightIcon(), HighlightIconKind, HighlightIconProps, AboutPage(), HIGHLIGHTS, initialState, ContactFormData (+3 more)
 
+### Community 52 - "detalle.jsx"
+Cohesion: 0.18
+Nodes (10): Configuración técnica (GitHub Actions), Decisiones documentadas, Flujo, Interfaz con el usuario, Out of scope, Reglas de comportamiento, Resumen, Trigger (+2 more)
+
+### Community 53 - "reproductor.jsx"
+Cohesion: 0.29
+Nodes (6): Contexto del workspace, Herramientas y canales, Loops observados (patrones recurrentes delegables), NOTES.md — mundo del usuario, Pendiente de entrevista, Terminología
+
+### Community 54 - "Workflow: issue-loop"
+Cohesion: 0.22
+Nodes (8): Configuración técnica, Decisiones documentadas, Flujo, Out of scope, Resumen, Trigger, Validación, Workflow: issue-loop
+
 ### Community 73 - "._02-animacion-explosion-bloques.md"
 Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
@@ -331,7 +346,7 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **527 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+522 more)
+- **548 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+543 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -339,11 +354,9 @@ Nodes (3): Boundaries, Refresh policy, Workflow
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AsteroidsGame()` connect `Game Data Layer` to `E2E Test`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `saveScore()` connect `Game Data Layer` to `Test Generation`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
-  _527 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _548 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Sessions` be split into smaller, more focused modules?**
@@ -351,4 +364,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Project Architecture` be split into smaller, more focused modules?**
   _Cohesion score 0.08669354838709678 - nodes in this community are weakly interconnected._
 - **Should `Game Data Layer` be split into smaller, more focused modules?**
-  _Cohesion score 0.05672926447574335 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05297334244702666 - nodes in this community are weakly interconnected._
+- **Should `TypeScript Config` be split into smaller, more focused modules?**
+  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
