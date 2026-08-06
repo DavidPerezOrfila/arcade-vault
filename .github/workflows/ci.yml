@@ -14,7 +14,8 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        # v5 corre en node24; v4 targetea node20 (deprecado en runners)
+        uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm

@@ -20,6 +20,9 @@ jobs:
       contents: write
       pull-requests: write
       issues: write
+      # actions/cache (interno de la action opencode) necesita este scope
+      # para guardar la caché de ~/.opencode/bin; sin él: "cache write denied".
+      actions: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
