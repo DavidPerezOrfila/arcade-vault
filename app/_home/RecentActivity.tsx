@@ -1,18 +1,6 @@
 import { getScores } from '@/app/data/scores';
 import { getGameById } from '@/app/data/games';
-
-function relativeTime(at: number): string {
-  const diff = Date.now() - at;
-  if (diff < 60_000) return 'hace instantes';
-  const mins = Math.floor(diff / 60_000);
-  if (mins < 60) return `hace ${mins} min`;
-  const hours = Math.floor(mins / 60);
-  if (hours < 24) {
-    return `hace ${hours} h`;
-  }
-  const days = Math.floor(hours / 24);
-  return `hace ${days} d`;
-}
+import TimeAgo from './TimeAgo';
 
 // ponytail: tono del marcador (alternancia magenta/cyan/yellow/green)
 // elegida por hash determinista sobre `at` — estable entre renders.
@@ -66,7 +54,7 @@ export default async function RecentActivity() {
             <span className={`tk-p neon-${tone(r.at)}`}>{r.name}</span>
             <span className='tk-mid'>▸ {r.gameLabel}</span>
             <span className='tk-s'>+{r.score.toLocaleString('es-ES')}</span>
-            <span className='tk-t'>{relativeTime(r.at)}</span>
+            <span className='tk-t'><TimeAgo at={r.at} /></span>
           </div>
         ))}
       </div>

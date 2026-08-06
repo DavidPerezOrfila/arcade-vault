@@ -14,12 +14,14 @@ export default function PlayerClient({ game }: PlayerClientProps) {
   const [lives] = useState(3);
   const [paused, setPaused] = useState(false);
   const [over, setOver] = useState(false);
-  const [name, setName] = useState(() => {
-    const u = getUser();
-    return u ? u.name : 'INVITADO';
-  });
+  const [name, setName] = useState('INVITADO');
   const [saved, setSaved] = useState(false);
   const [, startSaveTransition] = useTransition();
+
+  useEffect(() => {
+    const u = getUser();
+    if (u) setName(u.name);
+  }, []);
 
   useEffect(() => {
     if (over || paused) {
