@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from 'react';
 
-const PALETTE = ['magenta', 'yellow', 'green', 'cyan'] as const;
-
 function relativeTime(at: number): string {
   const diff = Date.now() - at;
   if (diff < 60_000) return 'hace instantes';
