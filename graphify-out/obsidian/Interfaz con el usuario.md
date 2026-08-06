@@ -2,7 +2,7 @@
 source_file: "workflows/opencode-loop.md"
 type: "document"
 community: "detalle.jsx"
-location: "L40"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED

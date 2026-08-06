@@ -1,16 +1,16 @@
 # Graph Report - 05-arcade-vault  (2026-08-06)
 
 ## Corpus Check
-- 148 files · ~87,170 words
+- 149 files · ~88,131 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1075 nodes · 1300 edges · 79 communities (70 shown, 9 thin omitted)
+- 1077 nodes · 1302 edges · 79 communities (70 shown, 9 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.72)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4638bfe7`
+- Built from commit: `6d98ad6a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -135,7 +135,7 @@ Nodes (32): Playwright Test Report, Arcade Vault Project Overview, Graphify Know
 
 ### Community 4 - "Game Data Layer"
 Cohesion: 0.05
-Nodes (53): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+45 more)
+Nodes (54): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+46 more)
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
@@ -354,7 +354,9 @@ Nodes (3): Boundaries, Refresh policy, Workflow
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AsteroidsGame()` connect `Game Data Layer` to `E2E Test`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `devDependencies` connect `Dev Tooling` to `Package Dependencies`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
   _548 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**
@@ -364,6 +366,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Project Architecture` be split into smaller, more focused modules?**
   _Cohesion score 0.08669354838709678 - nodes in this community are weakly interconnected._
 - **Should `Game Data Layer` be split into smaller, more focused modules?**
-  _Cohesion score 0.05297334244702666 - nodes in this community are weakly interconnected._
-- **Should `TypeScript Config` be split into smaller, more focused modules?**
-  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.050957481337228175 - nodes in this community are weakly interconnected._
