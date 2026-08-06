@@ -2,13 +2,17 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { clearUser, getUser } from '@/app/data/storage';
 import type { User } from '@/app/data/types';
 
 export default function Nav() {
   const pathname = usePathname();
-  const [user, setUser] = useState<User | null>(() => getUser());
+  const [user, setUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    setUser(getUser());
+  }, []);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const isActive = (href: string) => {
