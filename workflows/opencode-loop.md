@@ -36,8 +36,10 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 - `use_github_token: true` — el action usa el GITHUB_TOKEN del job (evita el OpenCode App token exchange vía OIDC, que requiere App instalada; permite prescindir de `id-token`)
 - `share: false` — no publica enlaces de sesión
 - **Permisos del job**: `contents: write` (rama y commits), `pull-requests: write` (PR), `issues: write` (comentarios). Sin `id-token`
+- **Repo setting obligatoria**: Settings > Actions > General > Workflow permissions > **Allow GitHub Actions to create and approve pull requests** (API: `can_approve_pull_request_reviews`). En repos personales viene desactivada por defecto; sin ella el GITHUB_TOKEN puede pushear la rama pero el `POST /pulls` falla con `403 GitHub Actions is not permitted to create or approve pull requests` aunque el job tenga `pull-requests: write`. Habilitarla vía API: `PUT /repos/{owner}/{repo}/actions/permissions/workflow` con `{"default_workflow_permissions":"read","can_approve_pull_request_reviews":true}`
 - Checkout **sin** `persist-credentials: false` (default `true`): con `use_github_token: true` el action salta su `configureGit` (que añadiría el extraheader de auth) y el push de opencode depende del token que checkout deja en `.git/config`. Con `persist-credentials: false` el push falla (`could not read Username`)
 - **Identidad git**: el action hace `git commit`/`git push`; sin `user.name`/`user.email` el commit falla (`Author identity unknown`) y no se crea el PR. El workflow configura `github-actions[bot]` como identidad global antes de correr la action
+- **Concurrencia**: el job usa `concurrency` agrupado por issue/PR con `cancel-in-progress: true` — un `/oc` nuevo cancela el job anterior del mismo issue (evita carreras por la misma rama/PR). Nota: como con el timeout, un job cancelado no deja comentario de fallo en el issue (aparece como cancelado en Actions)
 
 ## Interfaz con el usuario
 

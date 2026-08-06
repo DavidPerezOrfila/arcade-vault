@@ -7,15 +7,19 @@ on:
 
 jobs:
   check:
+    # Mínimo privilegio: el job solo hace checkout + lint/tsc/build, no necesita
+    # token con permisos de escritura aunque el repo tenga default read/write.
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        # v5 corre en node24; v4 targetea node20 (deprecado en runners)
-        uses: actions/setup-node@v5
+        # v7 es la versión actual; v4 targeteaba node20 (deprecado en runners)
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm

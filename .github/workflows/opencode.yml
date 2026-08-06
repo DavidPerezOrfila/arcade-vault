@@ -9,14 +9,20 @@ on:
 jobs:
   opencode:
     # Solo owner/miembros (protege NVIDIA_API_KEY) y solo si el comentario
-    # contiene /oc o /opencode. Ver workflows/opencode-loop.md.
-    # startsWith('/oc') cubre también '/opencode'; solo owner/miembros.
+    # contiene /oc o /opencode como palabra completa (entre espacios): no
+    # matchea prefijos tipo /oculta. Ver workflows/opencode-loop.md.
     # IMPORTANTE: un `/oc` a secas hace que el action nativo resuma el hilo
     # ("Summarize this thread") sin editar nada. Para implementar hay que dar
     # instrucciones tras /oc, p.ej. `/oc implementa este issue`.
     if: |
       (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER') &&
-      (startsWith(github.event.comment.body, '/oc') || contains(github.event.comment.body, ' /oc'))
+      (contains(format(' {0} ', github.event.comment.body), ' /oc ') || contains(format(' {0} ', github.event.comment.body), ' /opencode '))
+    # Un /oc por issue/PR a la vez: un comentario nuevo cancela el job anterior
+    # del mismo issue (evita carreras por la misma rama/PR). issue.number cubre
+    # issue_comment; pull_request.number cubre pull_request_review_comment.
+    concurrency:
+      group: opencode-${{ github.event.issue.number || github.event.pull_request.number }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -26,13 +32,19 @@ jobs:
       # actions/cache (interno de la action opencode) necesita este scope
       # para guardar la caché de ~/.opencode/bin; sin él: "cache write denied".
       actions: write
+      # Nota: el GITHUB_TOKEN solo puede CREAR PRs si la repo setting
+      # "Allow GitHub Actions to create and approve pull requests" está
+      # activa (Settings > Actions > General > Workflow permissions). En
+      # repos personales viene desactivada; si está apagada, el push de la
+      # rama funciona pero POST /pulls falla con 403
+      # "GitHub Actions is not permitted to create or approve pull requests".
     steps:
       # IMPORTANTE: checkout con credenciales persistidas (default). Con
       # `use_github_token: true` la action salta su configureGit (que añadiría
       # el extraheader de auth) y el push de opencode usa el token que checkout
       # deja en .git/config; con `persist-credentials: false` el push falla.
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       # opencode ejecuta `git commit` al terminar; sin identidad el commit
       # falla ("Author identity unknown") y no se crea el PR.
