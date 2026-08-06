@@ -36,7 +36,7 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 - `use_github_token: true` — el action usa el GITHUB_TOKEN del job (evita el OpenCode App token exchange vía OIDC, que requiere App instalada; permite prescindir de `id-token`)
 - `share: false` — no publica enlaces de sesión
 - **Permisos del job**: `contents: write` (rama y commits), `pull-requests: write` (PR), `issues: write` (comentarios). Sin `id-token`
-- Checkout con `persist-credentials: false` (el action se autentica con el GITHUB_TOKEN del job)
+- Checkout **sin** `persist-credentials: false` (default `true`): con `use_github_token: true` el action salta su `configureGit` (que añadiría el extraheader de auth) y el push de opencode depende del token que checkout deja en `.git/config`. Con `persist-credentials: false` el push falla (`could not read Username`)
 - **Identidad git**: el action hace `git commit`/`git push`; sin `user.name`/`user.email` el commit falla (`Author identity unknown`) y no se crea el PR. El workflow configura `github-actions[bot]` como identidad global antes de correr la action
 
 ## Interfaz con el usuario
