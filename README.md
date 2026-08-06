@@ -61,3 +61,5 @@ Siguiendo las buenas prácticas recomendadas aquí:
 ```bash
 npx skills@latest add Klerith/fernando-skills
 ```
+
+<!-- opencode-test -->
