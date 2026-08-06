@@ -11,6 +11,9 @@ jobs:
     # Solo owner/miembros (protege NVIDIA_API_KEY) y solo si el comentario
     # contiene /oc o /opencode. Ver workflows/opencode-loop.md.
     # startsWith('/oc') cubre también '/opencode'; solo owner/miembros.
+    # IMPORTANTE: un `/oc` a secas hace que el action nativo resuma el hilo
+    # ("Summarize this thread") sin editar nada. Para implementar hay que dar
+    # instrucciones tras /oc, p.ej. `/oc implementa este issue`.
     if: |
       (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER') &&
       (startsWith(github.event.comment.body, '/oc') || contains(github.event.comment.body, ' /oc'))
@@ -28,6 +31,13 @@ jobs:
         uses: actions/checkout@v6
         with:
           persist-credentials: false
+
+      # opencode ejecuta `git commit` al terminar; sin identidad el commit
+      # falla ("Author identity unknown") y no se crea el PR.
+      - name: Configure git identity
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Run opencode
         uses: anomalyco/opencode/github@a3b97d9090ccf4aa9ac32268486283e3131e36b4
