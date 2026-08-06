@@ -53,7 +53,7 @@ persistir puntuaciones. Sin ellas, `app/page.tsx`, `/salon` y
 
 Basado en /spec y /spec-impl
 
-Siguiendo las buenas practicas recomendadas aquí:
+Siguiendo las buenas prácticas recomendadas aquí:
 <https://github.com/Klerith/fernando-skills>
 
 ## Skills usadas
