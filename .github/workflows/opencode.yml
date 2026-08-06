@@ -27,10 +27,12 @@ jobs:
       # para guardar la caché de ~/.opencode/bin; sin él: "cache write denied".
       actions: write
     steps:
+      # IMPORTANTE: checkout con credenciales persistidas (default). Con
+      # `use_github_token: true` la action salta su configureGit (que añadiría
+      # el extraheader de auth) y el push de opencode usa el token que checkout
+      # deja en .git/config; con `persist-credentials: false` el push falla.
       - name: Checkout repository
         uses: actions/checkout@v6
-        with:
-          persist-credentials: false
 
       # opencode ejecuta `git commit` al terminar; sin identidad el commit
       # falla ("Author identity unknown") y no se crea el PR.
