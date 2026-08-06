@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (o `/opencode`) en un issue, opencode implementa y abre un PR; el humano revisa el PR y pide cambios con `/oc` en el review.
+Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (o `/opencode`) **+ instrucciones** en un issue (p.ej. `/oc implementa este issue`), opencode implementa y abre un PR; el humano revisa el PR y pide cambios con `/oc` + feedback en el review.
 
 ## Trigger
 
@@ -14,7 +14,7 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 
 ## Flujo
 
-1. Owner/miembro comenta `/oc` en un issue
+1. Owner/miembro comenta `/oc` + instrucciones en un issue (p.ej. `/oc implementa este issue`)
 2. opencode analiza el issue, implementa en una rama, abre PR vinculado al issue (mensaje del PR: `Closes #<issue>`)
 3. opencode comenta en el issue: arranque de la tarea y, al terminar, enlace al PR
 4. **Checkpoint único**: el humano revisa el PR (push right — todo el trabajo está hecho antes de molestar)
@@ -23,6 +23,7 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 
 ## Reglas de comportamiento
 
+- **Un `/oc` a secas NO implementa**: el action nativo `anomalyco/opencode/github` interpreta un comentario igual a `/oc` como `Summarize this thread` (resume el hilo: no edita archivos ni abre PR). Para implementar, el comentario debe llevar instrucciones tras `/oc` (p.ej. `/oc implementa este issue`).
 - **Un PR por issue**: si el issue ya tiene PR abierto de opencode, un `/oc` nuevo en el issue se ignora (la iteración va por el review del PR)
 - **Fallo**: si opencode no puede implementar, comenta el error/razón en el issue (brief, no silencio)
 - **Timeout del job**: 60 min (limita coste y evita jobs colgados). Nota: si el job muere por timeout, no hay comentario de fallo en el issue — el job aparece rojo en Actions
@@ -39,7 +40,7 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 
 ## Interfaz con el usuario
 
-- Invocar: comentar `/oc` + contexto opcional en el issue
+- Invocar: comentar `/oc` + instrucciones en el issue (obligatorias para implementar), p.ej. `/oc implementa este issue`. Un `/oc` a secas solo resume el hilo
 - Iterar: comentar `/oc` + feedback en el review del PR
 - Cancelar: cerrar el PR o borrar la rama (no hay comando de cancelación; el humano gobierna vía PR)
 - **Ojo con Git Bash en Windows**: al usar `gh issue comment --body '/oc'` desde Git Bash, MSYS convierte `/oc` en `C:/Program Files/Git/oc` y el trigger no matchea. Invocar desde la web de GitHub, o con `MSYS_NO_PATHCONV=1 gh issue comment <n> --body '/oc'`
@@ -59,7 +60,7 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 
 ## Validación
 
-- Prueba manual: crear un issue de prueba con spec mínima, comentar `/oc`, verificar que abre PR y que la rama contiene cambios reales
+- Prueba manual: crear un issue de prueba con spec mínima, comentar `/oc implementa este issue`, verificar que abre PR y que la rama contiene cambios reales
 - Verificar que un comentario de un usuario no-OWNER/MEMBER NO dispara el job
 - Verificar que un segundo `/oc` con PR abierto no crea PR duplicado
 - E2E no aplica (workflow externo al repo); la validación es la observación del job en GitHub Actions

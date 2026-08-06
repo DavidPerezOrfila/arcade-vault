@@ -11,6 +11,9 @@ jobs:
     # Solo owner/miembros (protege NVIDIA_API_KEY) y solo si el comentario
     # contiene /oc o /opencode. Ver workflows/opencode-loop.md.
     # startsWith('/oc') cubre también '/opencode'; solo owner/miembros.
+    # IMPORTANTE: un `/oc` a secas hace que el action nativo resuma el hilo
+    # ("Summarize this thread") sin editar nada. Para implementar hay que dar
+    # instrucciones tras /oc, p.ej. `/oc implementa este issue`.
     if: |
       (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER') &&
       (startsWith(github.event.comment.body, '/oc') || contains(github.event.comment.body, ' /oc'))
