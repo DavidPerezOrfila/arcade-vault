@@ -1503,8 +1503,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "app_data_types_scoreentry",
-      "community": 4,
-      "community_name": "Game Data Layer",
+      "community": 11,
+      "community_name": "Test Generation",
       "norm_label": "scoreentry"
     },
     {
@@ -7853,127 +7853,6 @@
       "community": 179,
       "community_name": "SKILL.md",
       "norm_label": "boundaries"
-    },
-    {
-      "label": "SKILL.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "skill.md"
-    },
-    {
-      "label": "Integrate an Arcade Vault game",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "integrate an arcade vault game"
-    },
-    {
-      "label": "When to use",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_when_to_use",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "when to use"
-    },
-    {
-      "label": "The 8 files",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_the_8_files",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "the 8 files"
-    },
-    {
-      "label": "REUSE, do not modify",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_reuse_do_not_modify",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "reuse, do not modify"
-    },
-    {
-      "label": "WRAP, do not port",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_wrap_do_not_port",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "wrap, do not port"
-    },
-    {
-      "label": "Submit Server Action recipe",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_submit_server_action_recipe",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "submit server action recipe"
-    },
-    {
-      "label": "React component lifecycle",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L90",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_react_component_lifecycle",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "react component lifecycle"
-    },
-    {
-      "label": "Catalog seed",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L112",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_catalog_seed",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "catalog seed"
-    },
-    {
-      "label": "Common mistakes",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L121",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_common_mistakes",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "common mistakes"
-    },
-    {
-      "label": "Verification",
-      "file_type": "document",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L133",
-      "_origin": "ast",
-      "id": "claude_skills_integrate_arcade_game_skill_verification",
-      "community": 57,
-      "community_name": "Integrate an Arcade Vault game",
-      "norm_label": "verification"
     },
     {
       "label": "session-management.md",
@@ -23031,116 +22910,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill",
-      "target": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L112",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_catalog_seed",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L121",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_common_mistakes",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L90",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_react_component_lifecycle",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_reuse_do_not_modify",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L55",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_submit_server_action_recipe",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_the_8_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L133",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_verification",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_when_to_use",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/integrate-arcade-game/SKILL.md",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "claude_skills_integrate_arcade_game_skill_integrate_an_arcade_vault_game",
-      "target": "claude_skills_integrate_arcade_game_skill_wrap_do_not_port",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": ".claude/skills/playwright-cli/references/session-management.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -27007,5 +26776,5 @@
       "source_file": ".agents/skills/spec/SKILL.md"
     }
   ],
-  "built_at_commit": "6d3ec7ee2380664fc515def92905c048e50af557"
+  "built_at_commit": "6d98ad6a0f4af92f60d30b52f8e580bd306820f2"
 }
