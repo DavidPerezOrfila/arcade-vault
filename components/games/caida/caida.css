@@ -1,0 +1,438 @@
+/* CAÍDA (Tetris): estilos de pagina y componente (fuente unica) */
+
+/* ===== Page Layout ===== */
+
+.caida-page {
+  background: #000;
+  color: #fff;
+}
+
+.caida-page-header {
+  margin-bottom: 2rem;
+}
+
+.caida-page-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #d946ef;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.caida-page-description {
+  color: #9ca3af;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  max-width: 60ch;
+}
+
+.caida-page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .caida-page-grid {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.caida-game-wrapper {
+  width: 100%;
+}
+
+/* ===== Sidebar ===== */
+
+.caida-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .caida-sidebar {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+
+.caida-sidebar-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.caida-sidebar-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.caida-sidebar-title--controls {
+  color: #d946ef;
+}
+
+.caida-sidebar-title--scoring {
+  color: #22c55e;
+}
+
+/* Controls List */
+.caida-controls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.caida-control-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.375rem 0;
+}
+
+.caida-control-key {
+  color: #d946ef;
+}
+
+/* Scoring List */
+.caida-scoring-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.caida-scoring-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+.caida-scoring-value {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* ===== Game area: board + side panel ===== */
+
+.caida-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Board: fixed internal 300×600, CSS scales keeping 1:2 */
+.caida-board-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 2;
+}
+
+.caida-board-wrap canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid #1f2937;
+  border-radius: 0.5rem;
+  background: #000;
+  touch-action: none; /* Prevent touch scrolling on canvas */
+}
+
+.caida-board-wrap canvas:focus-visible {
+  outline: 2px solid #d946ef;
+  outline-offset: 2px;
+}
+
+/* ===== Side panel (HUD + next + leaderboard) ===== */
+
+.caida-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 220px;
+}
+
+/* HUD */
+.caida-hud {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.caida-hud-item {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.caida-hud-item span:first-child {
+  display: block;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.caida-hud-item span:last-child {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Next preview */
+.caida-next {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.caida-next-label {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.caida-next canvas {
+  width: 100%;
+  max-width: 120px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin: 0 auto;
+  background: #000;
+}
+
+/* ===== Leaderboard HUD ===== */
+
+.caida-leaderboard {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid #1f2937;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+}
+
+.caida-leaderboard-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #d946ef;
+}
+
+.caida-leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.caida-leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.caida-leaderboard-item--current-user {
+  color: #d946ef;
+}
+
+.caida-leaderboard-rank-player {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.caida-leaderboard-empty {
+  color: #6b7280;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* ===== In-game overlay (PAUSE / GAME OVER) ===== */
+
+.caida-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 0.5rem;
+  z-index: 20;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* El wrapper togglea la clase 'hidden'. Specificity 2 clases: gana a .caida-overlay */
+.caida-overlay.hidden {
+  display: none;
+}
+
+.caida-overlay-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.caida-overlay-score {
+  color: #d946ef;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  min-height: 1.5rem;
+}
+
+.caida-overlay-button {
+  background: #d946ef;
+  color: #000;
+  font-weight: 700;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.caida-overlay-button:hover {
+  background: #c026d3;
+}
+
+/* ===== Auth Prompt Overlay ===== */
+
+.caida-auth-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  padding: 1rem;
+}
+
+.caida-auth-prompt {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.caida-auth-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.caida-auth-message {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.caida-auth-button {
+  display: inline-block;
+  background: #d946ef;
+  color: #000;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.caida-auth-button:hover {
+  background: #c026d3;
+}
+
+.caida-auth-dismiss {
+  margin-left: 1rem;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.caida-auth-dismiss:hover {
+  color: #fff;
+}
+
+/* ===== Loading State ===== */
+
+.caida-loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.5rem;
+  z-index: 5;
+}
+
+/* ===== Reduced motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .caida-board-wrap canvas,
+  .caida-overlay,
+  .caida-auth-overlay,
+  .caida-auth-prompt,
+  .caida-leaderboard {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ===== Mobile adjustments ===== */
+
+@media (max-width: 640px) {
+  .caida-game-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caida-panel {
+    max-width: 300px;
+  }
+
+  .caida-auth-prompt {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .caida-auth-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .caida-auth-dismiss {
+    margin-left: 0;
+  }
+}

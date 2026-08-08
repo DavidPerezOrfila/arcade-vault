@@ -1,16 +1,16 @@
-# Graph Report - 05-arcade-vault  (2026-08-06)
+# Graph Report - 05-arcade-vault  (2026-08-08)
 
 ## Corpus Check
-- 149 files · ~88,131 words
+- 150 files · ~89,070 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1077 nodes · 1302 edges · 79 communities (70 shown, 9 thin omitted)
+- 1088 nodes · 1312 edges · 80 communities (71 shown, 9 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.72)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6d98ad6a`
+- Built from commit: `6d3ec7ee`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -65,6 +65,7 @@
 - detalle.jsx
 - reproductor.jsx
 - Workflow: issue-loop
+- Integrate an Arcade Vault game
 - ._02-animacion-explosion-bloques.md
 - 06-games-catalog-salon
 - SKILL.md
@@ -115,7 +116,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (79 total, 9 thin omitted)
+## Communities (80 total, 9 thin omitted)
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -135,7 +136,7 @@ Nodes (32): Playwright Test Report, Arcade Vault Project Overview, Graphify Know
 
 ### Community 4 - "Game Data Layer"
 Cohesion: 0.05
-Nodes (54): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+46 more)
+Nodes (55): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+47 more)
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
@@ -163,7 +164,7 @@ Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collide
 
 ### Community 11 - "Test Generation"
 Cohesion: 0.07
-Nodes (27): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+19 more)
+Nodes (26): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+18 more)
 
 ### Community 12 - "Dev Tooling"
 Cohesion: 0.07
@@ -289,6 +290,10 @@ Nodes (6): Contexto del workspace, Herramientas y canales, Loops observados (pat
 Cohesion: 0.22
 Nodes (8): Configuración técnica, Decisiones documentadas, Flujo, Out of scope, Resumen, Trigger, Validación, Workflow: issue-loop
 
+### Community 57 - "Integrate an Arcade Vault game"
+Cohesion: 0.18
+Nodes (10): Catalog seed, Common mistakes, Integrate an Arcade Vault game, React component lifecycle, REUSE, do not modify, Submit Server Action recipe, The 8 files, Verification (+2 more)
+
 ### Community 73 - "._02-animacion-explosion-bloques.md"
 Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
@@ -346,7 +351,7 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **548 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+543 more)
+- **557 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+552 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -356,9 +361,9 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `AsteroidsGame()` connect `Game Data Layer` to `E2E Test`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `Dev Tooling` to `Package Dependencies`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
-  _548 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _557 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Sessions` be split into smaller, more focused modules?**
@@ -366,4 +371,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Project Architecture` be split into smaller, more focused modules?**
   _Cohesion score 0.08669354838709678 - nodes in this community are weakly interconnected._
 - **Should `Game Data Layer` be split into smaller, more focused modules?**
-  _Cohesion score 0.050957481337228175 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05031645569620253 - nodes in this community are weakly interconnected._

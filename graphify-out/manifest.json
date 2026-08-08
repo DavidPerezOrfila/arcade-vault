@@ -820,8 +820,48 @@
     "semantic_hash": ""
   },
   ".claude/skills/integrate-arcade-game/SKILL.md": {
-    "mtime": 1786140771.0422034,
-    "ast_hash": "beed36aee19606f3d345ecec7ef4c8d6",
+    "mtime": 1786182410.8056543,
+    "ast_hash": "7317158a1640eb41da1a38f7ac2d05cb",
+    "semantic_hash": ""
+  },
+  "app/api/leaderboard/caida/route.ts": {
+    "mtime": 1786183075.2140925,
+    "ast_hash": "946fd6649e91906e49bbad3b94860b92",
+    "semantic_hash": ""
+  },
+  "app/games/caida/actions.ts": {
+    "mtime": 1786183072.141841,
+    "ast_hash": "054f0cef0aaff2bf7f97c3c9c601f079",
+    "semantic_hash": ""
+  },
+  "app/games/caida/page.tsx": {
+    "mtime": 1786183139.6618166,
+    "ast_hash": "c15fa3873c70ce1999d46a9d7b8f26f4",
+    "semantic_hash": ""
+  },
+  "components/games/caida/CaidaGame.tsx": {
+    "mtime": 1786183439.4743958,
+    "ast_hash": "6a4e020bd503a087e58e0f0a8d3d197c",
+    "semantic_hash": ""
+  },
+  "lib/games/caida/game.esm.js": {
+    "mtime": 1786183067.2962334,
+    "ast_hash": "c31faae154f0ceeac2a5ed9f5de0da00",
+    "semantic_hash": ""
+  },
+  "lib/games/caida/types.ts": {
+    "mtime": 1786183069.6253152,
+    "ast_hash": "493435abeead62658415b416dbb7cde9",
+    "semantic_hash": ""
+  },
+  "tests/e2e/caida.spec.ts": {
+    "mtime": 1786183946.653432,
+    "ast_hash": "d3cf57b8bd24d809acb06441d6df7a91",
+    "semantic_hash": ""
+  },
+  "specs/07-tetris-caida.md": {
+    "mtime": 1786182798.1932433,
+    "ast_hash": "2b120c1c0f1968e16fedbd8184a1d1f2",
     "semantic_hash": ""
   }
 }
