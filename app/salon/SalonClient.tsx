@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getSalonLeaderboard, getUserBestScore } from '@/app/data/actions';
+import { formatDate, formatScore, topRankClass } from '@/lib/format';
 import { createSupabaseBrowserClient } from '@/lib/supabase/client';
 
 interface Game {
@@ -53,11 +54,6 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
     return () => { mounted = false; };
   }, [activeTab, user]);
 
-  function formatDate(ts: number): string {
-    const d = new Date(ts);
-    return `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}/${d.getFullYear()}`;
-  }
-
   const activeGame = initialGames.find((g) => g.id === activeTab) ?? initialGames[0];
 
   return (
@@ -98,7 +94,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
               <div className='podium-slot silver'>
                 <div className='rank-num'>02</div>
                 <div className='name'>{rows[1].name}</div>
-                <div className='score'>{rows[1].score.toLocaleString('es-ES')}</div>
+                <div className='score'>{formatScore(rows[1].score)}</div>
                 <div className='date'>{formatDate(rows[1].at)}</div>
               </div>
             )}
@@ -119,7 +115,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
                 </div>
                 <div className='name'>{rows[0].name}</div>
                 <div className='score' style={{ fontSize: 20 }}>
-                  {rows[0].score.toLocaleString('es-ES')}
+                  {formatScore(rows[0].score)}
                 </div>
                 <div className='date'>{formatDate(rows[0].at)}</div>
               </div>
@@ -128,7 +124,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
               <div className='podium-slot bronze'>
                 <div className='rank-num'>03</div>
                 <div className='name'>{rows[2].name}</div>
-                <div className='score'>{rows[2].score.toLocaleString('es-ES')}</div>
+                <div className='score'>{formatScore(rows[2].score)}</div>
                 <div className='date'>{formatDate(rows[2].at)}</div>
               </div>
             )}
@@ -144,12 +140,12 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
             {rows.map((r, i) => (
               <div
                 key={`${r.name}-${r.at}-${i}`}
-                className={`tr${['top1', 'top2', 'top3'][i] ?? ''}`}
+                className={`tr${topRankClass(i)}`}
                 style={{ animationDelay: `${i * 50}ms` }}
               >
                 <div className='rk'>#{String(i + 1).padStart(2, '0')}</div>
                 <div className='pl'>{r.name}</div>
-                <div className='sc'>{r.score.toLocaleString('es-ES')}</div>
+                <div className='sc'>{formatScore(r.score)}</div>
                 <div className='dt'>{formatDate(r.at)}</div>
               </div>
             ))}
@@ -170,7 +166,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
                       textShadow: '0 0 6px rgba(245,255,0,0.5)'
                     }}
                   >
-                    {userBest.toLocaleString('es-ES')}
+                    {formatScore(userBest)}
                   </div>
                   <div className='dt'>{formatDate(Date.now())}</div>
                 </div>

@@ -2,18 +2,12 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getGameBySlug } from '@/app/data/games';
 import { getScoresByGame } from '@/app/data/scores';
+import { formatDate, formatScore, topRankClass } from '@/lib/format';
 
 export const dynamic = 'force-dynamic';
 
 interface DetailPageProps {
   params: Promise<{ slug: string }>;
-}
-
-function formatDate(at: number): string {
-  const d = new Date(at);
-  const day = String(d.getDate()).padStart(2, '0');
-  const mon = String(d.getMonth() + 1).padStart(2, '0');
-  return `${day}/${mon}/${d.getFullYear()}`;
 }
 
 export default async function DetailPage({ params }: DetailPageProps) {
@@ -52,7 +46,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
                   textShadow: '0 0 6px rgba(255,0,110,0.5)'
                 }}
               >
-                {game.best.toLocaleString('es-ES')}
+                {formatScore(game.best)}
               </div>
             </div>
             <div>
@@ -90,7 +84,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
             rows.map((r, i) => (
               <div
                 key={`${r.name}-${r.at}-${i}`}
-                className={`lb-row${['top1', 'top2', 'top3'][i] ?? ''}`}
+                className={`lb-row${topRankClass(i)}`}
               >
                 <div className='rk'>#{String(i + 1).padStart(2, '0')}</div>
                 <div className='pl'>
@@ -105,7 +99,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
                     {formatDate(r.at)}
                   </div>
                 </div>
-                <div className='sc'>{r.score.toLocaleString('es-ES')}</div>
+                <div className='sc'>{formatScore(r.score)}</div>
               </div>
             ))
           )}
