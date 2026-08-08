@@ -24,8 +24,13 @@ export async function saveScoreAction(
   const parsed = parseFormData(formData);
   if (!parsed.success) return { ok: false, error: 'INVALID_INPUT' };
 
+  // userId SIEMPRE de la sesión — nunca del cliente (anti-spoofing).
+  const supabase = await createSupabaseServerClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { ok: false, error: 'UNAUTHENTICATED' };
+
   try {
-    await saveScore(parsed.data);
+    await saveScore({ ...parsed.data, userId: user.id });
   } catch {
     return { ok: false, error: 'DB_ERROR' };
   }

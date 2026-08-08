@@ -2,12 +2,18 @@
 
 import { revalidatePath, revalidateTag } from 'next/cache';
 import { getScoresByGame, saveScore } from '@/app/data/scores';
+import { scoreEntrySchema } from '@/app/data/schema';
 import type { ScoreEntry } from '@/app/data/types';
 import type { LeaderboardEntry } from '@/lib/games/asteroids/types';
 
 export type SubmitScoreResult = { ok: true } | { ok: false; error: string };
 
 export async function submitAsteroidsScore(score: number): Promise<SubmitScoreResult> {
+  // Validación de bounds antes de escribir — anti-cheat proporcional.
+  if (!scoreEntrySchema.shape.score.safeParse(score).success) {
+    return { ok: false, error: 'INVALID_SCORE' };
+  }
+
   const supabase = await (await import('@/lib/supabase/server')).createSupabaseServerClient();
   const { data: { user } } = await supabase.auth.getUser();
 
