@@ -4,7 +4,7 @@ import { revalidatePath, revalidateTag } from 'next/cache';
 import { getScoresByGame, saveScore } from '@/app/data/scores';
 import { scoreEntrySchema } from '@/app/data/schema';
 import type { ScoreEntry } from '@/app/data/types';
-import type { LeaderboardEntry } from '@/lib/games/caida/types';
+import type { LeaderboardEntry } from '@/lib/games/types';
 
 export type SubmitScoreResult = { ok: true } | { ok: false; error: string };
 

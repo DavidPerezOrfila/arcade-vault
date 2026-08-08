@@ -1,12 +1,7 @@
 // Types para integración Asteroids + Arcade Vault
 
-export interface LeaderboardEntry {
-  rank: number;
-  playerName: string;
-  score: number;
-  createdAt: string;
-  isCurrentUser: boolean;
-}
+export type { LeaderboardEntry } from '@/lib/games/types';
+import type { LeaderboardEntry } from '@/lib/games/types';
 
 export interface AsteroidsGameProps {
   // Leaderboard inicial servido por el Server Component; el componente

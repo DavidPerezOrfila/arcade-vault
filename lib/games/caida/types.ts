@@ -1,12 +1,7 @@
 // Types para integración CAÍDA (Tetris) + Arcade Vault
 
-export interface LeaderboardEntry {
-  rank: number;
-  playerName: string;
-  score: number;
-  createdAt: string;
-  isCurrentUser: boolean;
-}
+export type { LeaderboardEntry } from '@/lib/games/types';
+import type { LeaderboardEntry } from '@/lib/games/types';
 
 export interface CaidaGameProps {
   // Leaderboard inicial servido por el Server Component; el componente
