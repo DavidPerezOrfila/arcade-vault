@@ -1,16 +1,39 @@
 ---
 name: integrate-arcade-game
-description: Use when adding a new game to Arcade Vault — wrapping a vanilla JS canvas game into a leaderboard-backed Next.js page, or registering a game in the Supabase catalog. Triggers on "add game", "integrate game", "new arcade game", "leaderboard for game", "register game in catalog", "port game from resources/started-games".
+description: Use when adding a new game to Arcade Vault. Orchestrates the full workflow — design the game with the /spec method (specs/NN-slug.md), then implement the approved spec with the /spec-impl method, guided by the 8-file recipe below (ES module wrapper → React canvas component → Server Actions → page → API route → catalog seed). Triggers on "add game", "integrate game", "new arcade game", "leaderboard for game", "register game in catalog", "port game from resources/started-games".
 ---
 
 # Integrate an Arcade Vault game
 
-Recipe proven by Asteroids (spec 05) and the games catalog (spec 06): vanilla JS engine → ES module → React canvas component → Server Actions → page → API route → catalog seed. **Reuse scores + catalog infra; never rewrite it.**
+This skill **orchestrates** adding a game end to end, and carries the technical recipe proven by Asteroids (spec 05) and the games catalog (spec 06): vanilla JS engine → ES module → React canvas component → Server Actions → page → API route → catalog seed. **Reuse scores + catalog infra; never rewrite it.**
 
-## When to use
+## Workflow
 
-- Adding/integrating a canvas game into the platform with persisted scores + catalog entry.
-- Not: designing a game (use `/spec`), auto-implementing an approved spec (use `/spec-impl`).
+Every game goes through three phases. Follow them in order.
+
+### Fase A — Planificar (método /spec)
+
+Do not write code yet. Follow the `/spec` skill method (`.claude/skills/spec/SKILL.md`):
+
+1. Read project context (`CLAUDE.md`, `AGENTS.md`) and list `specs/` for numbering + conventions.
+2. Clarify with the user in blocks of 3–5 concrete questions: scope (in/out), data model, integration deps, UX states, risks, closed decisions. Do not assume.
+3. Build the spec section by section (`template.md` shape): Header → Scope → Data model → Implementation plan → Acceptance criteria → Decisions → Risks. Confirm each section before moving on.
+4. Save to `specs/NN-slug.md`, state **Draft**.
+5. **Stop.** Tell the user to review and set the state to `Approved` (or `Aprobado`). Do not implement until approved.
+
+### Fase B — Implementar (método /spec-impl)
+
+Once the spec is `Approved`, follow the `/spec-impl` skill method (`.claude/skills/spec-impl/SKILL.md`):
+
+1. Validate state means "Approved"; else stop with the standard error message.
+2. Create branch `spec-NN-slug` (respect `AutoCreateBranch` in `specs/.spec-config.yml`).
+3. Show spec objective/scope/plan/criteria, get explicit "start with Step 1".
+4. Implement step by step, pausing after each for diff review. One rule above all: **implement what the spec says**; changes go into the spec, not the code by surprise.
+5. On finishing: verify acceptance criteria, set spec state to `Implemented`, final commit.
+
+### Fase C — Receta técnica
+
+The rest of this file is the technical reference that guides Fase B — the 8 files, what to reuse, and how to wrap a vanilla engine.
 
 ## The 8 files
 
