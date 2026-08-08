@@ -3,8 +3,9 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getSalonLeaderboard, getUserBestScore } from '@/app/data/actions';
-import { formatDate, formatScore, topRankClass } from '@/lib/format';
 import { createSupabaseBrowserClient } from '@/lib/supabase/client';
+import { LeaderboardTable } from './LeaderboardTable';
+import { Podium } from './Podium';
 
 interface Game {
   id: string;
@@ -40,18 +41,29 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
   useEffect(() => {
     let mounted = true;
     setLoading(true);
-    getSalonLeaderboard(activeTab).then((data) => {
-      if (mounted) {
-        setRows(data);
-        setLoading(false);
-      }
-    });
-    if (user) {
-      getUserBestScore(activeTab, user.id).then((score) => {
-        if (mounted) setUserBest(score);
+    getSalonLeaderboard(activeTab)
+      .then((data) => {
+        if (mounted) {
+          setRows(data);
+          setLoading(false);
+        }
+      })
+      .catch(() => {
+        if (mounted) setLoading(false);
       });
+    if (user) {
+      getUserBestScore(activeTab, user.id)
+        .then((score) => {
+          if (mounted) setUserBest(score);
+        })
+        .catch(() => {
+          // ponytail: best score no es critico; si falla, userBest se queda
+          // en null y la fila "tu mejor marca" simplemente no aparece.
+        });
     }
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+    };
   }, [activeTab, user]);
 
   const activeGame = initialGames.find((g) => g.id === activeTab) ?? initialGames[0];
@@ -89,90 +101,12 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
 
       {!loading && rows.length > 0 && (
         <>
-          <div className='podium'>
-            {rows[1] && (
-              <div className='podium-slot silver'>
-                <div className='rank-num'>02</div>
-                <div className='name'>{rows[1].name}</div>
-                <div className='score'>{formatScore(rows[1].score)}</div>
-                <div className='date'>{formatDate(rows[1].at)}</div>
-              </div>
-            )}
-            {rows[0] && (
-              <div className='podium-slot gold'>
-                <div
-                  className='pixel'
-                  style={{
-                    fontSize: 9,
-                    color: 'var(--gold)',
-                    letterSpacing: '0.18em'
-                  }}
-                >
-                  CAMPEÓN
-                </div>
-                <div className='rank-num' style={{ fontSize: 36, marginTop: 4 }}>
-                  01
-                </div>
-                <div className='name'>{rows[0].name}</div>
-                <div className='score' style={{ fontSize: 20 }}>
-                  {formatScore(rows[0].score)}
-                </div>
-                <div className='date'>{formatDate(rows[0].at)}</div>
-              </div>
-            )}
-            {rows[2] && (
-              <div className='podium-slot bronze'>
-                <div className='rank-num'>03</div>
-                <div className='name'>{rows[2].name}</div>
-                <div className='score'>{formatScore(rows[2].score)}</div>
-                <div className='date'>{formatDate(rows[2].at)}</div>
-              </div>
-            )}
-          </div>
-
-          <div className='hall-table'>
-            <div className='th'>
-              <div>RANGO</div>
-              <div>JUGADOR</div>
-              <div>PUNTUACIÓN</div>
-              <div>FECHA</div>
-            </div>
-            {rows.map((r, i) => (
-              <div
-                key={`${r.name}-${r.at}-${i}`}
-                className={`tr${topRankClass(i)}`}
-                style={{ animationDelay: `${i * 50}ms` }}
-              >
-                <div className='rk'>#{String(i + 1).padStart(2, '0')}</div>
-                <div className='pl'>{r.name}</div>
-                <div className='sc'>{formatScore(r.score)}</div>
-                <div className='dt'>{formatDate(r.at)}</div>
-              </div>
-            ))}
-            {user && userBest !== null && (
-              <>
-                <div className='tr you-label'>▸ TU MEJOR MARCA EN {activeGame.title}</div>
-                <div className='tr you' style={{ animationDelay: `${rows.length * 50 + 50}ms` }}>
-                  <div className='rk' style={{ color: 'var(--yellow)' }}>
-                    #{String(rows.findIndex((r) => r.score <= userBest) + 1).padStart(2, '0')}
-                  </div>
-                  <div className='pl' style={{ color: 'var(--yellow)' }}>
-                    {user.name}
-                  </div>
-                  <div
-                    className='sc'
-                    style={{
-                      color: 'var(--yellow)',
-                      textShadow: '0 0 6px rgba(245,255,0,0.5)'
-                    }}
-                  >
-                    {formatScore(userBest)}
-                  </div>
-                  <div className='dt'>{formatDate(Date.now())}</div>
-                </div>
-              </>
-            )}
-          </div>
+          <Podium rows={rows} />
+          <LeaderboardTable
+            rows={rows}
+            activeGameTitle={activeGame.title}
+            user={user && userBest !== null ? { name: user.name, bestScore: userBest } : null}
+          />
         </>
       )}
 
