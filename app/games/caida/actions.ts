@@ -1,42 +1,42 @@
-"use server";
+'use server';
 
-import { revalidatePath, revalidateTag } from "next/cache";
-import { getScoresByGame, saveScore } from "@/app/data/scores";
-import type { ScoreEntry } from "@/app/data/types";
-import type { LeaderboardEntry } from "@/lib/games/caida/types";
+import { revalidatePath, revalidateTag } from 'next/cache';
+import { getScoresByGame, saveScore } from '@/app/data/scores';
+import type { ScoreEntry } from '@/app/data/types';
+import type { LeaderboardEntry } from '@/lib/games/caida/types';
 
 export type SubmitScoreResult = { ok: true } | { ok: false; error: string };
 
 export async function submitCaidaScore(
-  score: number,
+  score: number
 ): Promise<SubmitScoreResult> {
   const supabase = await (
-    await import("@/lib/supabase/server")
+    await import('@/lib/supabase/server')
   ).createSupabaseServerClient();
   const {
-    data: { user },
+    data: { user }
   } = await supabase.auth.getUser();
 
   if (!user) {
-    return { ok: false, error: "UNAUTHENTICATED" };
+    return { ok: false, error: 'UNAUTHENTICATED' };
   }
 
   try {
     await saveScore({
-      game: "caida",
+      game: 'caida',
       score,
       name:
-        user.user_metadata?.full_name ?? user.email?.split("@")[0] ?? "Jugador",
+        user.user_metadata?.full_name ?? user.email?.split('@')[0] ?? 'Jugador',
       at: Date.now(),
-      userId: user.id,
+      userId: user.id
     });
   } catch {
-    return { ok: false, error: "DB_ERROR" };
+    return { ok: false, error: 'DB_ERROR' };
   }
 
-  revalidatePath("/games/caida");
-  revalidatePath("/salon");
-  revalidateTag("leaderboard", "max");
+  revalidatePath('/games/caida');
+  revalidatePath('/salon');
+  revalidateTag('leaderboard', 'max');
 
   return { ok: true };
 }
@@ -44,27 +44,27 @@ export async function submitCaidaScore(
 function mapToLeaderboardEntry(
   entry: ScoreEntry,
   index: number,
-  currentUserId: string | null,
+  currentUserId: string | null
 ): LeaderboardEntry {
   return {
     rank: index + 1,
     playerName: entry.name,
     score: entry.score,
     createdAt: new Date(entry.at).toISOString(),
-    isCurrentUser: entry.userId !== null && entry.userId === currentUserId,
+    isCurrentUser: entry.userId !== null && entry.userId === currentUserId
   };
 }
 
 export async function getCaidaLeaderboard(): Promise<LeaderboardEntry[]> {
   const supabase = await (
-    await import("@/lib/supabase/server")
+    await import('@/lib/supabase/server')
   ).createSupabaseServerClient();
   const {
-    data: { user },
+    data: { user }
   } = await supabase.auth.getUser();
   const currentUserId = user?.id ?? null;
 
-  const scores = await getScoresByGame("caida");
+  const scores = await getScoresByGame('caida');
   return scores
     .slice(0, 10)
     .map((entry, index) => mapToLeaderboardEntry(entry, index, currentUserId));
