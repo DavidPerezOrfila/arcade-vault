@@ -1,108 +1,60 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
 import { submitAsteroidsScore } from '@/app/games/asteroids/actions';
-import type { AsteroidsGameProps, LeaderboardEntry } from '@/lib/games/asteroids/types';
+import { AuthPrompt } from '@/components/games/AuthPrompt';
+import { LeaderboardList } from '@/components/games/LeaderboardList';
+import { useArcadeGame } from '@/components/games/useArcadeGame';
+import type { AsteroidsGameProps } from '@/lib/games/asteroids/types';
 import './asteroids.css';
 
-interface GameModule {
-  // eslint-disable-next-line no-unused-vars
-  initGame: (canvas: HTMLCanvasElement, _options?: { onGameOver?: (_score: number) => void }) => void;
-  destroy: () => void;
-  // eslint-disable-next-line no-unused-vars
-  setOnGameOver: (_callback: (_finalScore: number) => void) => void;
-}
+const CANVAS_W = 800;
+const CANVAS_H = 600;
+const LEADERBOARD_TOP_N = 10;
+const MODULE_PATH = '../../../lib/games/asteroids/game.esm.js';
+const API_URL = '/api/leaderboard/asteroids';
 
 export function AsteroidsGame({
   initialLeaderboard = []
 }: AsteroidsGameProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const gameRef = useRef<GameModule | null>(null);
-  const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>(initialLeaderboard);
-  const [showAuthPrompt, setShowAuthPrompt] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-
-  // Load game module dynamically (client-side only)
-  useEffect(() => {
-    import('../../../lib/games/asteroids/game.esm.js').then((mod) => {
-      gameRef.current = {
-        initGame: mod.initGame,
-        destroy: mod.destroy,
-        setOnGameOver: mod.setOnGameOver
-      };
-      setIsLoading(false);
+  const { gameRef, isLoading, leaderboard, showAuthPrompt, setShowAuthPrompt, handleGameOver } =
+    useArcadeGame({
+      modulePath: MODULE_PATH,
+      apiUrl: API_URL,
+      submitScore: submitAsteroidsScore,
+      initialLeaderboard
     });
-  }, []);
 
-  // Refresh leaderboard from the canonical API route
-  const refreshLeaderboard = useCallback(async() => {
-    const response = await fetch('/api/leaderboard/asteroids');
-    if (response.ok) {
-      const data = (await response.json()) as LeaderboardEntry[];
-      setLeaderboard(data);
-    }
-  }, []);
-
-  // Handle game over - submit score once, then refresh or prompt
-  const handleGameOver = useCallback(
-    async(score: number) => {
-      const result = await submitAsteroidsScore(score);
-      if (!result.ok) {
-        setShowAuthPrompt(true);
-        return;
-      }
-      await refreshLeaderboard();
-    },
-    [refreshLeaderboard]
-  );
-
-  // Test hook (solo con ?e2e=1): permite forzar el game over de forma
-  // determinista desde los tests E2E de Playwright.
-  useEffect(() => {
-    if (typeof window === 'undefined') return undefined;
-    const isE2E = new URLSearchParams(window.location.search).get('e2e') === '1';
-    if (!isE2E) return undefined;
-
-    const win = window as unknown as {
-      // eslint-disable-next-line no-unused-vars
-      __forceGameOver?: (_score?: number) => void;
-    };
-    win.__forceGameOver = (_score = 1000) => handleGameOver(_score);
-
-    return () => {
-      delete win.__forceGameOver;
-    };
-  }, [handleGameOver]);
-
-  // Initialize game once the module is loaded and the canvas is ready
+  // Aplica tamaño lógico del canvas, bindea game-over y arranca el módulo.
+  // setOnGameOver antes de initGame — orden importante: el módulo dispara
+  // game over al iniciar, ese callback debe estar bindeado.
   useEffect(() => {
     if (isLoading) return undefined;
     const canvas = canvasRef.current;
     const game = gameRef.current;
     if (!canvas || !game) return undefined;
 
-    const handleResize = () => {
-      // Canvas logical size stays 800x600; CSS handles scaling
-      canvas.width = 800;
-      canvas.height = 600;
+    const applyCanvasSize = () => {
+      canvas.width = CANVAS_W;
+      canvas.height = CANVAS_H;
     };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
+    applyCanvasSize();
+    window.addEventListener('resize', applyCanvasSize);
 
     game.setOnGameOver(handleGameOver);
     game.initGame(canvas);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', applyCanvasSize);
       game.destroy();
     };
-  }, [isLoading, handleGameOver]);
+  }, [isLoading, gameRef, handleGameOver]);
 
   if (isLoading) {
     return (
       <div className='asteroids-game-container'>
-        <canvas ref={canvasRef} width={800} height={600} />
+        <canvas ref={canvasRef} width={CANVAS_W} height={CANVAS_H} />
         <div className='asteroids-loading-overlay'>Cargando...</div>
       </div>
     );
@@ -112,50 +64,29 @@ export function AsteroidsGame({
     <div className='asteroids-game-container'>
       <canvas
         ref={canvasRef}
-        width={800}
-        height={600}
+        width={CANVAS_W}
+        height={CANVAS_H}
         aria-label='Juego Asteroids'
       />
 
-      {/* External HUD / Leaderboard */}
       <div className='asteroids-leaderboard-hud'>
-        <div className='asteroids-leaderboard-title'>TOP 10</div>
-        <ol className='asteroids-leaderboard-list'>
-          {leaderboard.slice(0, 10).map((entry) => (
-            <li
-              key={`${entry.playerName}-${entry.score}`}
-              className={`asteroids-leaderboard-item ${entry.isCurrentUser ? 'asteroids-leaderboard-item--current-user' : ''}`}
-            >
-              <span className='asteroids-leaderboard-rank-player'>#{entry.rank} {entry.playerName}</span>
-              <span>{entry.score.toLocaleString()}</span>
-            </li>
-          ))}
-          {leaderboard.length === 0 && (
-            <li className='asteroids-leaderboard-empty'>Sin puntuaciones aún</li>
-          )}
-        </ol>
+        <div className='asteroids-leaderboard-title'>TOP {LEADERBOARD_TOP_N}</div>
+        <LeaderboardList
+          classPrefix='asteroids'
+          entries={leaderboard}
+          maxRows={LEADERBOARD_TOP_N}
+          emptyText='Sin puntuaciones aún'
+        />
       </div>
 
-      {/* Auth prompt overlay */}
       {showAuthPrompt && (
-        <div className='asteroids-auth-overlay'>
-          <div className='asteroids-auth-prompt'>
-            <h3 className='asteroids-auth-title'>¡Partida terminada!</h3>
-            <p className='asteroids-auth-message'>Inicia sesión para guardar tu puntuación en el ranking global.</p>
-            <a
-              href='/auth?redirect=/games/asteroids'
-              className='asteroids-auth-button'
-            >
-              Iniciar sesión
-            </a>
-            <button
-              onClick={() => setShowAuthPrompt(false)}
-              className='asteroids-auth-dismiss'
-            >
-              Ahora no
-            </button>
-          </div>
-        </div>
+        <AuthPrompt
+          classPrefix='asteroids'
+          gamePath='/games/asteroids'
+          title='¡Partida terminada!'
+          message='Inicia sesión para guardar tu puntuación en el ranking global.'
+          onDismiss={() => setShowAuthPrompt(false)}
+        />
       )}
     </div>
   );
