@@ -1,19 +1,6 @@
 import { createSupabaseServerClient } from '@/lib/supabase/server';
-import type { GameCategory } from './types';
-
-export interface Game {
-  id: string;
-  title: string;
-  short: string;
-  long: string;
-  cat: GameCategory;
-  cover: string;
-  color: 'cyan' | 'magenta' | 'green' | 'yellow';
-  best: number;
-  plays: string;
-}
-
-export type GameFilter = 'TODOS' | 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS';
+import type { Game, GameFilter } from './types';
+export { CATS } from './types';
 
 export async function getGames(): Promise<Game[]> {
   const supabase = await createSupabaseServerClient();
@@ -68,11 +55,3 @@ export async function getGamesByCategory(cat: GameFilter): Promise<Game[]> {
 
   return (data ?? []) as Game[];
 }
-
-export const CATS: readonly GameFilter[] = [
-  'TODOS',
-  'ARCADE',
-  'PUZZLE',
-  'SHOOTER',
-  'VERSUS'
-] as const;

@@ -1,17 +1,18 @@
 import { createSupabaseServerClient } from '@/lib/supabase/server';
-import type { ScoreEntry } from './types';
+import type { ScoreEntry, ScoreRowDb } from './types';
 import type { ScoreEntryInputParsed } from './schema';
 
+const TABLE = 'scores';
 const SELECT_COLUMNS = 'game, score, name, at, user_id';
 const TOP_LIMIT = 100;
 
-function rowToEntry(row: {
-  game: string;
-  score: number;
-  name: string;
-  at: string;
-  user_id: string | null;
-}): ScoreEntry {
+// Fila como la devuelve el `.select(SELECT_COLUMNS)` — subset de ScoreRowDb.
+type ScoreRowSelected = Pick<
+  ScoreRowDb,
+  'game' | 'score' | 'name' | 'at' | 'user_id'
+>;
+
+function rowToEntry(row: ScoreRowSelected): ScoreEntry {
   return {
     game: row.game,
     score: row.score,
@@ -21,16 +22,26 @@ function rowToEntry(row: {
   };
 }
 
+// Privado: sin `game` devuelve top global; con `game` filtra y desempata por
+// `at desc` (mismo score gana el más reciente).
+async function fetchScores(game?: string): Promise<ScoreEntry[]> {
+  const supabase = await createSupabaseServerClient();
+  let query = supabase
+    .from(TABLE)
+    .select(SELECT_COLUMNS)
+    .order('score', { ascending: false })
+    .limit(TOP_LIMIT);
+  if (game) {
+    query = query.eq('game', game).order('at', { ascending: false });
+  }
+  const { data, error } = await query;
+  if (error) throw error;
+  return (data ?? []).map(rowToEntry);
+}
+
 export async function getScores(): Promise<ScoreEntry[]> {
   try {
-    const supabase = await createSupabaseServerClient();
-    const { data, error } = await supabase
-      .from('scores')
-      .select(SELECT_COLUMNS)
-      .order('score', { ascending: false })
-      .limit(TOP_LIMIT);
-    if (error) throw error;
-    return (data ?? []).map(rowToEntry);
+    return await fetchScores();
   } catch {
     return [];
   }
@@ -38,16 +49,7 @@ export async function getScores(): Promise<ScoreEntry[]> {
 
 export async function getScoresByGame(game: string): Promise<ScoreEntry[]> {
   try {
-    const supabase = await createSupabaseServerClient();
-    const { data, error } = await supabase
-      .from('scores')
-      .select(SELECT_COLUMNS)
-      .eq('game', game)
-      .order('score', { ascending: false })
-      .order('at', { ascending: false })
-      .limit(TOP_LIMIT);
-    if (error) throw error;
-    return (data ?? []).map(rowToEntry);
+    return await fetchScores(game);
   } catch {
     return [];
   }
@@ -58,13 +60,13 @@ export async function saveScore(
 ): Promise<ScoreEntry> {
   const supabase = await createSupabaseServerClient();
   const { data, error } = await supabase
-    .from('scores')
+    .from(TABLE)
     .insert({
       game: input.game,
       score: input.score,
       name: input.name,
       at: new Date(input.at).toISOString(),
-      ['user_id']: input.userId ?? null
+      user_id: input.userId ?? null
     })
     .select(SELECT_COLUMNS)
     .single();

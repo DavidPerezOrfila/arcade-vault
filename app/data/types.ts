@@ -45,6 +45,8 @@ export type ScoreRowDb = Database['public']['Tables']['scores']['Row'];
 
 // Fila de leaderboard sintética generada por seededScores() para el top-5
 // "Players del día" mientras no haya jugadores reales suficientes.
+// Sintético, solo mock — no confundir con `ScoreEntry` que refleja filas
+// reales de la tabla `public.scores`.
 export interface ScoreRow {
   rank: number;
   name: string;
