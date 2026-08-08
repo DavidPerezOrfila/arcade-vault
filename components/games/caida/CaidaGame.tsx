@@ -5,6 +5,7 @@ import { submitCaidaScore } from '@/app/games/caida/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
+import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
 import type {
   CaidaGameProps,
   CaidaRefs
@@ -17,7 +18,6 @@ const NEXT_W = 120;
 const NEXT_H = 120;
 const MODULE_PATH = '../../../lib/games/caida/game.esm.js';
 const API_URL = '/api/leaderboard/caida';
-const LEADERBOARD_TOP_N = 10;
 
 export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
   const boardRef = useRef<HTMLCanvasElement>(null);

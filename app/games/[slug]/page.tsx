@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { getGameBySlug } from '@/app/data/games';
 import { getScoresByGame } from '@/app/data/scores';
 import { formatDate, formatScore, topRankClass } from '@/lib/format';
+import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
 
 export const dynamic = 'force-dynamic';
 
@@ -15,7 +16,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
   const game = await getGameBySlug(slug);
   if (!game) return notFound();
 
-  const rows = (await getScoresByGame(slug)).slice(0, 10);
+  const rows = (await getScoresByGame(slug)).slice(0, LEADERBOARD_TOP_N);
 
   return (
     <div className='av-detail fade-in'>
@@ -28,7 +29,6 @@ export default async function DetailPage({ params }: DetailPageProps) {
             <span>{game.cat}</span>
             <span>1 JUGADOR</span>
             <span>TECLADO / TÁCTIL</span>
-            <span>RETRO 1985</span>
           </div>
           <h2 className='neon-cyan'>{game.title}</h2>
           <p>{game.long}</p>
@@ -39,27 +39,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
             </div>
             <div>
               <div className='l'>Mejor global</div>
-              <div
-                className='v'
-                style={{
-                  color: 'var(--magenta)',
-                  textShadow: '0 0 6px rgba(255,0,110,0.5)'
-                }}
-              >
-                {formatScore(game.best)}
-              </div>
-            </div>
-            <div>
-              <div className='l'>Dificultad</div>
-              <div
-                className='v'
-                style={{
-                  color: 'var(--yellow)',
-                  textShadow: '0 0 6px rgba(245,255,0,0.5)'
-                }}
-              >
-                ★ ★ ★ ☆ ☆
-              </div>
+              <div className='v neon-magenta'>{formatScore(game.best)}</div>
             </div>
           </div>
           <div className='detail-actions'>

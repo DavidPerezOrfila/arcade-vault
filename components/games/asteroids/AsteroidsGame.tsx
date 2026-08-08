@@ -5,12 +5,12 @@ import { submitAsteroidsScore } from '@/app/games/asteroids/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
+import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
 import type { AsteroidsGameProps } from '@/lib/games/asteroids/types';
 import './asteroids.css';
 
 const CANVAS_W = 800;
 const CANVAS_H = 600;
-const LEADERBOARD_TOP_N = 10;
 const MODULE_PATH = '../../../lib/games/asteroids/game.esm.js';
 const API_URL = '/api/leaderboard/asteroids';
 
