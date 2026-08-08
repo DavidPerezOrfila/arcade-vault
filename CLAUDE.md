@@ -97,6 +97,17 @@ Use `/spec` before starting any large feature. Do not write production code unti
 
 The product is Spanish-language (`es`). The root layout currently sets `lang="en"`; update it to `lang="es"` when localizing the application to match the content in `resources/templates/`.
 
+## Coding guidelines (source: `instructions.md`)
+
+- Responde corto y conciso.
+- Código en inglés — identificadores, funciones, clases, todo.
+- Comentarios en español, solo cuando aporten valor.
+- Prioriza simplicidad: código legible, funciones pequeñas, sin duplicación (DRY).
+- Sigue principios SOLID donde aplique.
+- Sin comentarios superfluos — código auto-documentado en lo posible.
+- Sin magia: evita expresiones crípticas, prefiere claridad.
+- Buenas prácticas de seguridad cuando corresponda.
+
 ## 3-Layer Context Rule (mandatory)
 
 Every task MUST resolve context through these layers before opening any source file:

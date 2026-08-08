@@ -1,16 +1,16 @@
 # Graph Report - 05-arcade-vault  (2026-08-08)
 
 ## Corpus Check
-- 150 files · ~89,070 words
+- 158 files · ~93,437 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1088 nodes · 1312 edges · 80 communities (71 shown, 9 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.72)
+- 1149 nodes · 1433 edges · 84 communities (75 shown, 9 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 31 edges (avg confidence: 0.7)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6d3ec7ee`
+- Built from commit: `d57ff704`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -66,6 +66,9 @@
 - reproductor.jsx
 - Workflow: issue-loop
 - Integrate an Arcade Vault game
+- game.esm.js
+- actions.ts
+- 07-tetris-caida
 - ._02-animacion-explosion-bloques.md
 - 06-games-catalog-salon
 - SKILL.md
@@ -91,9 +94,9 @@
 5. `About Page with Resend Spec (03)` - 14 edges
 6. `Home Page Spec (02)` - 13 edges
 7. `compress_file()` - 12 edges
-8. `update()` - 11 edges
-9. `createSupabaseServerClient()` - 11 edges
-10. `update()` - 11 edges
+8. `getScoresByGame()` - 11 edges
+9. `update()` - 11 edges
+10. `createSupabaseServerClient()` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Playwright CLI Browser Automation Skill (.claude copy)` --conceptually_related_to--> `Browser Automation via CLI`  [INFERRED]
@@ -116,7 +119,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (80 total, 9 thin omitted)
+## Communities (84 total, 9 thin omitted)
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -164,7 +167,7 @@ Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collide
 
 ### Community 11 - "Test Generation"
 Cohesion: 0.07
-Nodes (26): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+18 more)
+Nodes (27): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+19 more)
 
 ### Community 12 - "Dev Tooling"
 Cohesion: 0.07
@@ -291,8 +294,20 @@ Cohesion: 0.22
 Nodes (8): Configuración técnica, Decisiones documentadas, Flujo, Out of scope, Resumen, Trigger, Validación, Workflow: issue-loop
 
 ### Community 57 - "Integrate an Arcade Vault game"
-Cohesion: 0.18
-Nodes (10): Catalog seed, Common mistakes, Integrate an Arcade Vault game, React component lifecycle, REUSE, do not modify, Submit Server Action recipe, The 8 files, Verification (+2 more)
+Cohesion: 0.14
+Nodes (13): Catalog seed, Common mistakes, Fase A — Planificar (método /spec), Fase B — Implementar (método /spec-impl), Fase C — Receta técnica, Integrate an Arcade Vault game, React component lifecycle, REUSE, do not modify (+5 more)
+
+### Community 63 - "game.esm.js"
+Cohesion: 0.16
+Nodes (28): attachInput(), clearLines(), collide(), COLORS, createBoard(), destroy(), detachInput(), draw() (+20 more)
+
+### Community 64 - "actions.ts"
+Cohesion: 0.21
+Nodes (11): GET(), getAsteroidsLeaderboard(), mapToLeaderboardEntry(), submitAsteroidsScore(), SubmitScoreResult, LeaderboardServer(), metadata, AsteroidsGame() (+3 more)
+
+### Community 65 - "07-tetris-caida"
+Cohesion: 0.22
+Nodes (8): 07-tetris-caida, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
 
 ### Community 73 - "._02-animacion-explosion-bloques.md"
 Cohesion: 0.09
@@ -351,24 +366,24 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **557 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+552 more)
+- **571 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+566 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `AsteroidsGame()` connect `Game Data Layer` to `E2E Test`?**
+- **Why does `AsteroidsGame()` connect `actions.ts` to `E2E Test`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `Dev Tooling` to `Package Dependencies`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `submitAsteroidsScore()` connect `actions.ts` to `Game Data Layer`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `CaidaGame()` connect `Game Data Layer` to `game.esm.js`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
-  _557 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _571 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Sessions` be split into smaller, more focused modules?**
   _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
 - **Should `Project Architecture` be split into smaller, more focused modules?**
   _Cohesion score 0.08669354838709678 - nodes in this community are weakly interconnected._
-- **Should `Game Data Layer` be split into smaller, more focused modules?**
-  _Cohesion score 0.05031645569620253 - nodes in this community are weakly interconnected._

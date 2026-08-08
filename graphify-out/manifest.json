@@ -265,13 +265,13 @@
     "semantic_hash": "c1f96e2054a5c24400db3023d9506778"
   },
   "AGENTS.md": {
-    "mtime": 1786054127.913817,
-    "ast_hash": "ea8d1ca91df21690b731484448d0af59",
+    "mtime": 1786197078.2967327,
+    "ast_hash": "adb7d5c8673daa445236930b63d2ac9a",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786054127.916817,
-    "ast_hash": "b936714f7efae925ef9cb6fd0cdbc448",
+    "mtime": 1786197090.2178965,
+    "ast_hash": "43620ead5ea32de6c0f50b6a976b3c2c",
     "semantic_hash": ""
   },
   "README.md": {
@@ -820,48 +820,53 @@
     "semantic_hash": ""
   },
   ".claude/skills/integrate-arcade-game/SKILL.md": {
-    "mtime": 1786182410.8056543,
+    "mtime": 1786196292.612172,
     "ast_hash": "7317158a1640eb41da1a38f7ac2d05cb",
     "semantic_hash": ""
   },
   "app/api/leaderboard/caida/route.ts": {
-    "mtime": 1786183075.2140925,
-    "ast_hash": "946fd6649e91906e49bbad3b94860b92",
+    "mtime": 1786196292.614172,
+    "ast_hash": "70a5e9fefbc33de7c3e0748dce1ad008",
     "semantic_hash": ""
   },
   "app/games/caida/actions.ts": {
-    "mtime": 1786183072.141841,
-    "ast_hash": "054f0cef0aaff2bf7f97c3c9c601f079",
+    "mtime": 1786196292.617174,
+    "ast_hash": "462bfdd67eb89184265298ffef98458c",
     "semantic_hash": ""
   },
   "app/games/caida/page.tsx": {
-    "mtime": 1786183139.6618166,
-    "ast_hash": "c15fa3873c70ce1999d46a9d7b8f26f4",
+    "mtime": 1786196292.6181743,
+    "ast_hash": "7133093f041b4376b916852f08cc5f06",
     "semantic_hash": ""
   },
   "components/games/caida/CaidaGame.tsx": {
-    "mtime": 1786183439.4743958,
-    "ast_hash": "6a4e020bd503a087e58e0f0a8d3d197c",
+    "mtime": 1786196611.2197614,
+    "ast_hash": "b7374836da0d980f81fbda058c962bb2",
     "semantic_hash": ""
   },
   "lib/games/caida/game.esm.js": {
-    "mtime": 1786183067.2962334,
-    "ast_hash": "c31faae154f0ceeac2a5ed9f5de0da00",
+    "mtime": 1786196292.6528406,
+    "ast_hash": "97ff85c00ba4de2bc8944af8aff4b0c7",
     "semantic_hash": ""
   },
   "lib/games/caida/types.ts": {
-    "mtime": 1786183069.6253152,
-    "ast_hash": "493435abeead62658415b416dbb7cde9",
+    "mtime": 1786196292.6548405,
+    "ast_hash": "6ed6cf1708bed1e2d917f5fc71360266",
     "semantic_hash": ""
   },
   "tests/e2e/caida.spec.ts": {
-    "mtime": 1786183946.653432,
-    "ast_hash": "d3cf57b8bd24d809acb06441d6df7a91",
+    "mtime": 1786196292.6578395,
+    "ast_hash": "d5ebc59199470b09807a7230a9567f89",
     "semantic_hash": ""
   },
   "specs/07-tetris-caida.md": {
-    "mtime": 1786182798.1932433,
-    "ast_hash": "2b120c1c0f1968e16fedbd8184a1d1f2",
+    "mtime": 1786196292.6558387,
+    "ast_hash": "4495ff66fe46fe25d76b5f9527a16973",
+    "semantic_hash": ""
+  },
+  "instructions.md": {
+    "mtime": 1785965489.1440227,
+    "ast_hash": "b543c7d8c2038fb2ee0be94c8813bee3",
     "semantic_hash": ""
   }
 }
