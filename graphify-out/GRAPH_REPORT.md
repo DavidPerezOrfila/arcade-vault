@@ -1,16 +1,16 @@
 # Graph Report - 05-arcade-vault  (2026-08-08)
 
 ## Corpus Check
-- 158 files · ~93,437 words
+- 159 files · ~93,751 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1149 nodes · 1433 edges · 84 communities (75 shown, 9 thin omitted)
+- 1151 nodes · 1434 edges · 88 communities (78 shown, 10 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 31 edges (avg confidence: 0.7)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d57ff704`
+- Built from commit: `deb40506`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -69,6 +69,10 @@
 - game.esm.js
 - actions.ts
 - 07-tetris-caida
+- Local Storage
+- Session Storage
+- Storage State
+- instructions.md
 - ._02-animacion-explosion-bloques.md
 - 06-games-catalog-salon
 - SKILL.md
@@ -119,7 +123,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (84 total, 9 thin omitted)
+## Communities (88 total, 10 thin omitted)
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -139,7 +143,7 @@ Nodes (32): Playwright Test Report, Arcade Vault Project Overview, Graphify Know
 
 ### Community 4 - "Game Data Layer"
 Cohesion: 0.05
-Nodes (55): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+47 more)
+Nodes (52): GET(), getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, CATS (+44 more)
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
@@ -154,8 +158,8 @@ Cohesion: 0.04
 Nodes (42): @dietrichgebert/ponytail, ecc-universal, next, dependencies, @dietrichgebert/ponytail, ecc-universal, next, react (+34 more)
 
 ### Community 8 - "Playwright Automation"
-Cohesion: 0.14
-Nodes (14): Browser Automation with playwright-cli, Browser Sessions, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session, Example: Multi-tab workflow, Installation, Open parameters (+6 more)
+Cohesion: 0.08
+Nodes (24): Browser Automation with playwright-cli, Browser Sessions, Commands, Core, DevTools, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session (+16 more)
 
 ### Community 9 - "Playwright Automation"
 Cohesion: 0.08
@@ -167,7 +171,7 @@ Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collide
 
 ### Community 11 - "Test Generation"
 Cohesion: 0.07
-Nodes (27): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+19 more)
+Nodes (29): AuthPage(), PLAYERS, seededScores(), clearUser(), getUser(), setUser(), CATS, Game (+21 more)
 
 ### Community 12 - "Dev Tooling"
 Cohesion: 0.07
@@ -194,8 +198,8 @@ Cohesion: 0.15
 Nodes (12): 01 — MVP jugable de Arkanoid, Alcance, Bloques, Criterios de aceptación, Decisiones tomadas y descartadas, Dentro del MVP, Estado del juego, Fuera del MVP (dejado para specs posteriores) (+4 more)
 
 ### Community 18 - "localStorage Ops"
-Cohesion: 0.06
-Nodes (36): Advanced: Multiple Cookies or Custom Options, Advanced: Multiple Operations, Authentication State Reuse, Clear All Cookies, Clear All localStorage, Clear sessionStorage, Common Patterns, Cookies (+28 more)
+Cohesion: 0.22
+Nodes (9): Advanced: Multiple Cookies or Custom Options, Clear All Cookies, Cookies, Delete a Cookie, Filter Cookies by Domain, Filter Cookies by Path, Get Specific Cookie, List All Cookies (+1 more)
 
 ### Community 19 - "Playwright CLI Skill"
 Cohesion: 0.17
@@ -218,8 +222,8 @@ Cohesion: 0.18
 Nodes (10): Arguments, Command flow, Hard rules, Phase 1 — Understand the context, Phase 2 — Clarify through questions, Phase 3 — Develop the spec section by section, Phase 4 — Save the spec, Philosophy (+2 more)
 
 ### Community 24 - "Cookie Management"
-Cohesion: 0.20
-Nodes (10): Commands, Core, DevTools, Keyboard, Mouse, Navigation, Network, Save as (+2 more)
+Cohesion: 0.21
+Nodes (12): GET(), getCaidaLeaderboard(), mapToLeaderboardEntry(), submitCaidaScore(), SubmitScoreResult, LeaderboardServer(), metadata, CaidaGame() (+4 more)
 
 ### Community 25 - "Spec-Impl Skill"
 Cohesion: 0.22
@@ -302,12 +306,24 @@ Cohesion: 0.16
 Nodes (28): attachInput(), clearLines(), collide(), COLORS, createBoard(), destroy(), detachInput(), draw() (+20 more)
 
 ### Community 64 - "actions.ts"
-Cohesion: 0.21
-Nodes (11): GET(), getAsteroidsLeaderboard(), mapToLeaderboardEntry(), submitAsteroidsScore(), SubmitScoreResult, LeaderboardServer(), metadata, AsteroidsGame() (+3 more)
+Cohesion: 0.22
+Nodes (9): Authentication State Reuse, Common Patterns, Delete Database, IndexedDB, List Databases, Save and Restore Roundtrip, Security Notes, Storage Management (+1 more)
 
 ### Community 65 - "07-tetris-caida"
 Cohesion: 0.22
 Nodes (8): 07-tetris-caida, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
+
+### Community 67 - "Local Storage"
+Cohesion: 0.25
+Nodes (8): Advanced: Multiple Operations, Clear All localStorage, Delete Single Item, Get Single Value, List All localStorage Items, Local Storage, Set JSON Value, Set Value
+
+### Community 68 - "Session Storage"
+Cohesion: 0.33
+Nodes (6): Clear sessionStorage, Delete Single Item, Get Single Value, List All sessionStorage Items, Session Storage, Set Value
+
+### Community 69 - "Storage State"
+Cohesion: 0.50
+Nodes (4): Restore Storage State, Save Storage State, Storage State, Storage State File Format
 
 ### Community 73 - "._02-animacion-explosion-bloques.md"
 Cohesion: 0.09
@@ -366,24 +382,24 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **571 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+566 more)
+- **572 isolated node(s):** `PALETTE`, `HighlightIconKind`, `HighlightIconProps`, `initialState`, `HIGHLIGHTS` (+567 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `AsteroidsGame()` connect `actions.ts` to `E2E Test`?**
+- **Why does `AsteroidsGame()` connect `Game Data Layer` to `E2E Test`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `submitAsteroidsScore()` connect `actions.ts` to `Game Data Layer`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `CaidaGame()` connect `Game Data Layer` to `game.esm.js`?**
+- **Why does `CaidaGame()` connect `Cookie Management` to `game.esm.js`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `PALETTE`, `HighlightIconKind`, `HighlightIconProps` to the rest of the system?**
-  _571 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _572 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Sessions` be split into smaller, more focused modules?**
   _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
 - **Should `Project Architecture` be split into smaller, more focused modules?**
   _Cohesion score 0.08669354838709678 - nodes in this community are weakly interconnected._
+- **Should `Game Data Layer` be split into smaller, more focused modules?**
+  _Cohesion score 0.052982456140350874 - nodes in this community are weakly interconnected._
