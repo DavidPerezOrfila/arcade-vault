@@ -11,6 +11,7 @@ import './caida.css';
 
 interface GameModule {
    
+  // eslint-disable-next-line no-unused-vars -- shape declared for the game module impl
   initGame: (
     refs: CaidaRefs,
     _options?: { onGameOver?: (_score: number) => void },
