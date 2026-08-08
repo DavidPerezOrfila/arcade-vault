@@ -2,25 +2,19 @@ import Link from 'next/link';
 import { getGames } from '@/app/data/games';
 import { FeatureIcon } from '@/app/_home/FeatureIcon';
 import { FloatingSilhouettes } from '@/app/_home/FloatingSilhouettes';
+import {
+  FEATURES,
+  MiniCard,
+  PREVIEW_GAMES_COUNT,
+  STATS,
+  STAGGER_FEATURE_MS,
+  STAGGER_STAT_MS
+} from '@/app/_home/homeData';
 import RecentActivity from '@/app/_home/RecentActivity';
 import TopPlayersToday from '@/app/_home/TopPlayersToday';
 import HomeEnhancer from '@/app/_home/HomeEnhancer';
 
 export const dynamic = 'force-dynamic';
-
-function MiniCard({ game }: { game: Awaited<ReturnType<typeof getGames>>[0] }) {
-  return (
-    <Link href={`/games/${game.id}`} className='mini-card'>
-      <div className='mini-cover'>
-        <div className={`cover-bg ${game.cover}`} />
-      </div>
-      <div className='mini-meta'>
-        <div className='mini-title'>{game.title}</div>
-        <div className='mini-cat'>{game.cat}</div>
-      </div>
-    </Link>
-  );
-}
 
 export default async function Home() {
   const games = await getGames();
@@ -65,40 +59,15 @@ export default async function Home() {
           <div className='section-rule' />
         </div>
         <div className='feature-grid'>
-          {[
-            {
-              i: 'GAMEPAD',
-              t: 'JUEGOS CLÁSICOS',
-              d: 'Arkanoid, Tetris, Snake y muchos más. Los mejores arcades de todos los tiempos en un solo lugar.',
-              c: 'cyan'
-            },
-            {
-              i: 'FREE',
-              t: '100% GRATIS',
-              d: 'Sin suscripciones, sin pagos ocultos. Todos los juegos disponibles de forma gratuita.',
-              c: 'yellow'
-            },
-            {
-              i: 'TROPHY',
-              t: 'LADDER BOARDS',
-              d: 'Compite con jugadores de todo el mundo. Escala el ranking y demuestra quién es el mejor.',
-              c: 'magenta'
-            },
-            {
-              i: 'ROCKET',
-              t: 'SIEMPRE CRECIENDO',
-              d: 'Agregamos nuevos juegos constantemente. Vuelve seguido, siempre habrá algo nuevo que jugar.',
-              c: 'green'
-            }
-          ].map((f, i) => (
+          {FEATURES.map((f, i) => (
             <div
-              key={i}
-              className={`feature-card ${f.c}`}
-              style={{ transitionDelay: `${i * 80}ms` }}
+              key={f.id}
+              className={`feature-card ${f.color}`}
+              style={{ transitionDelay: `${i * STAGGER_FEATURE_MS}ms` }}
             >
-              <FeatureIcon kind={f.i as 'GAMEPAD' | 'FREE' | 'TROPHY' | 'ROCKET'} />
-              <div className='ft-title pixel'>{f.t}</div>
-              <div className='ft-desc'>{f.d}</div>
+              <FeatureIcon kind={f.id} />
+              <div className='ft-title pixel'>{f.title}</div>
+              <div className='ft-desc'>{f.desc}</div>
             </div>
           ))}
         </div>
@@ -111,7 +80,7 @@ export default async function Home() {
           <div className='section-rule' />
         </div>
         <div className='mini-rail'>
-          {games.slice(0, 6).map((g) => (
+          {games.slice(0, PREVIEW_GAMES_COUNT).map((g) => (
             <MiniCard key={g.id} game={g} />
           ))}
         </div>
@@ -124,19 +93,15 @@ export default async function Home() {
 
       <section className='home-stats reveal'>
         <div className='stats-inner'>
-          {[
-            { n: '12+', u: 'JUEGOS', s: 'Y CONTANDO' },
-            { n: 'MILES', u: 'DE PARTIDAS', s: 'JUGADAS CADA DÍA' },
-            { n: 'GLOBAL', u: 'RANKING', s: 'COMPITE CON EL MUNDO' }
-          ].map((st, i) => (
+          {STATS.map((st, i) => (
             <div
-              key={i}
+              key={st.value + st.unit}
               className='stat-block'
-              style={{ transitionDelay: `${i * 90}ms` }}
+              style={{ transitionDelay: `${i * STAGGER_STAT_MS}ms` }}
             >
-              <div className='stat-n neon-yellow'>{st.n}</div>
-              <div className='stat-u pixel'>{st.u}</div>
-              <div className='stat-s'>{st.s}</div>
+              <div className='stat-n neon-yellow'>{st.value}</div>
+              <div className='stat-u pixel'>{st.unit}</div>
+              <div className='stat-s'>{st.sub}</div>
             </div>
           ))}
         </div>
