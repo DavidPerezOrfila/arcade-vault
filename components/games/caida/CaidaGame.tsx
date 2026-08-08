@@ -11,11 +11,12 @@ import './caida.css';
 
 interface GameModule {
    
-  // eslint-disable-next-line no-unused-vars -- shape declared for the game module impl
+  /* eslint-disable no-unused-vars -- interface params are the game module's runtime contract */
   initGame: (
     refs: CaidaRefs,
     _options?: { onGameOver?: (_score: number) => void },
   ) => void;
+  /* eslint-enable no-unused-vars */
   destroy: () => void;
   // eslint-disable-next-line no-unused-vars
   setOnGameOver: (_callback: (_finalScore: number) => void) => void;
