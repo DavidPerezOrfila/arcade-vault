@@ -10,7 +10,6 @@ export async function getGames(): Promise<Game[]> {
     .order('title');
 
   if (error) {
-    console.error('Error fetching games:', error);
     return [];
   }
 
@@ -26,7 +25,6 @@ export async function getGameById(id: string): Promise<Game | null> {
     .single();
 
   if (error) {
-    console.error(`Error fetching game ${id}:`, error);
     return null;
   }
 
@@ -49,7 +47,6 @@ export async function getGamesByCategory(cat: GameFilter): Promise<Game[]> {
     .order('title');
 
   if (error) {
-    console.error(`Error fetching games for category ${cat}:`, error);
     return [];
   }
 

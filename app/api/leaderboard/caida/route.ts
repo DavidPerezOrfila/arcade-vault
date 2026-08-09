@@ -5,8 +5,7 @@ export async function GET() {
   try {
     const leaderboard = await getCaidaLeaderboard();
     return NextResponse.json(leaderboard);
-  } catch (error) {
-    console.error('Failed to fetch leaderboard:', error);
+  } catch {
     return NextResponse.json(
       { error: 'Failed to fetch leaderboard' },
       { status: 500 }
