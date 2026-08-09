@@ -15,6 +15,7 @@ tags:
 - [[PlayerClient()]] - `calls` [EXTRACTED]
 - [[PlayerClient.tsx]] - `imports` [EXTRACTED]
 - [[actions.ts_1]] - `contains` [EXTRACTED]
+- [[createSupabaseServerClient()]] - `calls` [EXTRACTED]
 - [[parseFormData()]] - `calls` [EXTRACTED]
 - [[saveScore()]] - `calls` [EXTRACTED]
 

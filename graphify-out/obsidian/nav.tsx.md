@@ -12,9 +12,12 @@ tags:
 # nav.tsx
 
 ## Connections
+- [[NAV_LINKS]] - `contains` [EXTRACTED]
 - [[Nav()]] - `contains` [EXTRACTED]
 - [[User]] - `imports` [EXTRACTED]
 - [[clearUser()]] - `imports` [EXTRACTED]
+- [[client.ts]] - `imports_from` [EXTRACTED]
+- [[createSupabaseBrowserClient()]] - `imports` [EXTRACTED]
 - [[getUser()]] - `imports` [EXTRACTED]
 - [[layout.tsx]] - `imports_from` [EXTRACTED]
 - [[storage.ts]] - `imports_from` [EXTRACTED]

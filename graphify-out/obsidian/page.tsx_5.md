@@ -1,27 +1,20 @@
 ---
-source_file: "app/page.tsx"
+source_file: "app/games/page.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "Session Storage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Session_Storage
 ---
 
 # page.tsx
 
 ## Connections
-- [[FeatureIcon()]] - `contains` [EXTRACTED]
-- [[FloatingSilhouettes()]] - `contains` [EXTRACTED]
-- [[Home()]] - `contains` [EXTRACTED]
-- [[HomeEnhancer()]] - `imports` [EXTRACTED]
-- [[HomeEnhancer.tsx]] - `imports_from` [EXTRACTED]
-- [[MiniCard()]] - `contains` [EXTRACTED]
-- [[RecentActivity.tsx]] - `imports_from` [EXTRACTED]
-- [[TopPlayersToday()]] - `imports` [EXTRACTED]
-- [[TopPlayersToday.tsx]] - `imports_from` [EXTRACTED]
+- [[GamesClient.tsx]] - `imports_from` [EXTRACTED]
+- [[GamesPage()]] - `contains` [EXTRACTED]
 - [[games.ts]] - `imports_from` [EXTRACTED]
 - [[getGames()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Session_Storage

@@ -17,7 +17,7 @@ members: 11
 - [[Phase 3 — Develop the spec section by section]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md
 - [[Phase 4 — Save the spec]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md
 - [[Philosophy]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md
-- [[SKILL_11]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md
+- [[SKILL_13]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md
 - [[Tone when asking questions]] - document - resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md
 
 ## Live Query (requires Dataview plugin)

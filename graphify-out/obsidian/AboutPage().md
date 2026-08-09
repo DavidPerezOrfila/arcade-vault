@@ -2,10 +2,10 @@
 source_file: "app/about/page.tsx"
 type: "code"
 community: "Playwright Config"
-location: "L29"
+location: "L13"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Playwright_Config
 ---
 
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[page.tsx]] - `contains` [EXTRACTED]
 - [[sendContactEmail()]] - `indirect_call` [INFERRED]
+- [[useReveal()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/Playwright_Config

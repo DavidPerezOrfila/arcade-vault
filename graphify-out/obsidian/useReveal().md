@@ -1,18 +1,19 @@
 ---
-source_file: "resources/templates/home-about/home.jsx"
+source_file: "app/about/useReveal.ts"
 type: "code"
-community: "Home Page UI"
-location: "L5"
+community: "Playwright Config"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_UI
+  - community/Playwright_Config
 ---
 
 # useReveal()
 
 ## Connections
-- [[Home()_1]] - `calls` [EXTRACTED]
-- [[home.jsx]] - `contains` [EXTRACTED]
+- [[AboutPage()]] - `calls` [EXTRACTED]
+- [[page.tsx]] - `imports` [EXTRACTED]
+- [[useReveal.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_UI
+#graphify/code #graphify/EXTRACTED #community/Playwright_Config

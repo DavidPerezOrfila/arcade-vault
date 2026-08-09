@@ -1,18 +1,18 @@
 ---
 source_file: "lib/supabase/types.ts"
 type: "code"
-community: "Test Generation"
+community: "types.ts"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/typests
 ---
 
 # Database
 
 ## Connections
 - [[types.ts_1]] - `imports` [EXTRACTED]
-- [[types.ts_3]] - `contains` [EXTRACTED]
+- [[types.ts_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/typests

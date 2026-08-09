@@ -1,22 +1,26 @@
 ---
 type: community
-members: 9
+members: 13
 ---
 
 # Storage State
 
-**Members:** 9 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Debugging Playwright Tests]] - document - .agents/skills/playwright-cli/references/playwright-tests.md
-- [[Examples_2]] - document - .agents/skills/playwright-cli/references/element-attributes.md
-- [[Inspecting Element Attributes]] - document - .agents/skills/playwright-cli/references/element-attributes.md
-- [[Running Playwright Tests]] - document - .agents/skills/playwright-cli/references/playwright-tests.md
-- [[SKILL_8]] - document - .agents/skills/playwright-cli/SKILL.md
-- [[element-attributes]] - document - .agents/skills/playwright-cli/references/element-attributes.md
-- [[playwright-tests]] - document - .agents/skills/playwright-cli/references/playwright-tests.md
-- [[storage-state]] - document - .agents/skills/playwright-cli/references/storage-state.md
-- [[video-recording]] - document - .agents/skills/playwright-cli/references/video-recording.md
+- [[CATS]] - code - app/data/types.ts
+- [[Game]] - code - app/data/types.ts
+- [[GameCard()]] - code - app/games/GamesClient.tsx
+- [[GameCategory]] - code - app/data/types.ts
+- [[GameColor]] - code - app/data/types.ts
+- [[GameFilter]] - code - app/data/types.ts
+- [[GamesClient()]] - code - app/games/GamesClient.tsx
+- [[GamesClient.tsx]] - code - app/games/GamesClient.tsx
+- [[GamesClientProps]] - code - app/games/GamesClient.tsx
+- [[PLAYERS]] - code - app/data/players.ts
+- [[ScoreRow]] - code - app/data/types.ts
+- [[players.ts]] - code - app/data/players.ts
+- [[types.ts_1]] - code - app/data/types.ts
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,12 +30,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Playwright CLI Reference_1]]
-- 1 edge to [[_COMMUNITY_Playwright Automation_1]]
-- 1 edge to [[_COMMUNITY_localStorage Ops]]
-- 1 edge to [[_COMMUNITY_Root Layout]]
+- 5 edges to [[_COMMUNITY_Session Storage]]
+- 4 edges to [[_COMMUNITY_Game Data Layer]]
+- 3 edges to [[_COMMUNITY_Test Generation]]
+- 2 edges to [[_COMMUNITY_actions.ts]]
+- 2 edges to [[_COMMUNITY_types.ts]]
 
 ## Top bridge nodes
-- [[SKILL_8]] - degree 6, connects to 2 communities
-- [[storage-state]] - degree 2, connects to 1 community
-- [[video-recording]] - degree 2, connects to 1 community
+- [[types.ts_1]] - degree 18, connects to 4 communities
+- [[GamesClient.tsx]] - degree 7, connects to 1 community
+- [[players.ts]] - degree 5, connects to 1 community
+- [[Game]] - degree 4, connects to 1 community
+- [[CATS]] - degree 3, connects to 1 community

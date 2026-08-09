@@ -12,7 +12,7 @@ tags:
 # data.jsx
 
 ## Connections
-- [[CATS_2]] - `contains` [EXTRACTED]
+- [[CATS_1]] - `contains` [EXTRACTED]
 - [[GAMES]] - `contains` [EXTRACTED]
 - [[PLAYERS_1]] - `contains` [EXTRACTED]
 - [[seededScores()_1]] - `contains` [EXTRACTED]

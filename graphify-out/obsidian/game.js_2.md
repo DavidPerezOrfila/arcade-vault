@@ -20,7 +20,7 @@ tags:
 - [[canvas_2]] - `contains` [EXTRACTED]
 - [[collideAABB()]] - `contains` [EXTRACTED]
 - [[ctx_2]] - `contains` [EXTRACTED]
-- [[draw()_3]] - `contains` [EXTRACTED]
+- [[draw()_4]] - `contains` [EXTRACTED]
 - [[drawOverlay()_2]] - `contains` [EXTRACTED]
 - [[drawPauseOverlay()]] - `contains` [EXTRACTED]
 - [[explosions]] - `contains` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[initPaddle()]] - `contains` [EXTRACTED]
 - [[keys_2]] - `contains` [EXTRACTED]
 - [[loadLevel()]] - `contains` [EXTRACTED]
-- [[loop()_3]] - `contains` [EXTRACTED]
+- [[loop()_4]] - `contains` [EXTRACTED]
 - [[paddle]] - `contains` [EXTRACTED]
 - [[update()_2]] - `contains` [EXTRACTED]
 

@@ -12,11 +12,11 @@ tags:
 # init()
 
 ## Connections
-- [[createBoard()]] - `calls` [EXTRACTED]
+- [[createBoard()_1]] - `calls` [EXTRACTED]
 - [[game.js_1]] - `indirect_call` [INFERRED]
-- [[loop()_2]] - `indirect_call` [INFERRED]
-- [[randomPiece()]] - `calls` [EXTRACTED]
-- [[spawn()]] - `calls` [EXTRACTED]
-- [[updateHUD()]] - `calls` [EXTRACTED]
+- [[loop()_3]] - `indirect_call` [INFERRED]
+- [[randomPiece()_1]] - `calls` [EXTRACTED]
+- [[spawn()_1]] - `calls` [EXTRACTED]
+- [[updateHUD()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Playwright_Automation

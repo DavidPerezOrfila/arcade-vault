@@ -1,12 +1,12 @@
 ---
 source_file: "app/games/GamesClient.tsx"
 type: "code"
-community: "Test Generation"
+community: "Storage State"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/Storage_State
 ---
 
 # GamesClient()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GamesClient.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/Storage_State

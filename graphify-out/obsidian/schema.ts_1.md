@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[ScoreEntryInputParsed]] - `contains` [EXTRACTED]
 - [[actions.ts_1]] - `imports_from` [EXTRACTED]
+- [[leaderboard.ts]] - `imports_from` [EXTRACTED]
 - [[scoreEntrySchema]] - `contains` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
 

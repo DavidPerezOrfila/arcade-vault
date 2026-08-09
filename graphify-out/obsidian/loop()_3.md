@@ -1,19 +1,22 @@
 ---
-source_file: "resources/started-games/04-arkanoid/game.js"
+source_file: "resources/started-games/03-tetris/game.js"
 type: "code"
-community: "Test Generation"
-location: "L304"
+community: "Playwright Automation"
+location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/Playwright_Automation
 ---
 
 # loop()
 
 ## Connections
+- [[collide()_1]] - `calls` [EXTRACTED]
 - [[draw()_3]] - `calls` [EXTRACTED]
-- [[game.js_2]] - `contains` [EXTRACTED]
-- [[update()_2]] - `calls` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
+- [[init()]] - `indirect_call` [INFERRED]
+- [[lockPiece()_1]] - `calls` [EXTRACTED]
+- [[togglePause()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/Playwright_Automation

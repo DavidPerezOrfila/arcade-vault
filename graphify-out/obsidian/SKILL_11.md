@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md"
+source_file: ".claude/skills/integrate-arcade-game/SKILL.md"
 type: "document"
-community: "MVP Spec"
+community: "Integrate an Arcade Vault game"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MVP_Spec
+  - community/Integrate_an_Arcade_Vault_game
 ---
 
 # SKILL.md
 
 ## Connections
-- [[spec — Guided spec designer]] - `contains` [EXTRACTED]
+- [[Integrate an Arcade Vault game]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MVP_Spec
+#graphify/document #graphify/EXTRACTED #community/Integrate_an_Arcade_Vault_game

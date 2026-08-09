@@ -1,20 +1,22 @@
 ---
-source_file: "app/games/page.tsx"
+source_file: "app/games/caida/page.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "Cookie Management"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Cookie_Management
 ---
 
 # page.tsx
 
 ## Connections
-- [[GamesClient.tsx]] - `imports_from` [EXTRACTED]
-- [[GamesPage()]] - `contains` [EXTRACTED]
-- [[games.ts]] - `imports_from` [EXTRACTED]
-- [[getGames()]] - `imports` [EXTRACTED]
+- [[CaidaGame()]] - `imports` [EXTRACTED]
+- [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
+- [[CaidaPage()]] - `contains` [EXTRACTED]
+- [[LeaderboardServer()_1]] - `contains` [EXTRACTED]
+- [[actions.ts_3]] - `imports_from` [EXTRACTED]
+- [[metadata_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Cookie_Management

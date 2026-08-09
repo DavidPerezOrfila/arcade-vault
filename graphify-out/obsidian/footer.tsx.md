@@ -1,12 +1,12 @@
 ---
 source_file: "app/footer.tsx"
 type: "code"
-community: "Test Generation"
+community: "layout.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/layouttsx
 ---
 
 # footer.tsx
@@ -15,4 +15,4 @@ tags:
 - [[Footer()]] - `contains` [EXTRACTED]
 - [[layout.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/layouttsx

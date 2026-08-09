@@ -1,18 +1,20 @@
 ---
-source_file: "app/data/games.ts"
+source_file: "app/data/types.ts"
 type: "code"
-community: "Game Data Layer"
-location: "L4"
+community: "Storage State"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Storage_State
 ---
 
 # Game
 
 ## Connections
-- [[GameCategory]] - `references` [EXTRACTED]
-- [[games.ts]] - `contains` [EXTRACTED]
+- [[GamesClient.tsx]] - `imports` [EXTRACTED]
+- [[GamesClientProps]] - `references` [EXTRACTED]
+- [[games.ts]] - `imports` [EXTRACTED]
+- [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Storage_State

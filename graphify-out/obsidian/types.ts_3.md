@@ -1,27 +1,21 @@
 ---
-source_file: "lib/supabase/types.ts"
+source_file: "lib/games/caida/types.ts"
 type: "code"
-community: "Test Generation"
+community: "Cookie Management"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/Cookie_Management
 ---
 
 # types.ts
 
 ## Connections
-- [[CompositeTypes]] - `contains` [EXTRACTED]
-- [[Constants]] - `contains` [EXTRACTED]
-- [[Database]] - `contains` [EXTRACTED]
-- [[DatabaseWithoutInternals]] - `contains` [EXTRACTED]
-- [[DefaultSchema]] - `contains` [EXTRACTED]
-- [[Enums]] - `contains` [EXTRACTED]
-- [[Json]] - `contains` [EXTRACTED]
-- [[Tables]] - `contains` [EXTRACTED]
-- [[TablesInsert]] - `contains` [EXTRACTED]
-- [[TablesUpdate]] - `contains` [EXTRACTED]
-- [[types.ts_1]] - `imports_from` [EXTRACTED]
+- [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
+- [[CaidaGameProps]] - `contains` [EXTRACTED]
+- [[CaidaRefs]] - `contains` [EXTRACTED]
+- [[LeaderboardEntry]] - `re_exports` [EXTRACTED]
+- [[types.ts_4]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/Cookie_Management

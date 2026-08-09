@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Storage State]]
+- 1 edge to [[_COMMUNITY_Storage State_1]]
 
 ## Top bridge nodes
 - [[request-mocking]] - degree 2, connects to 1 community

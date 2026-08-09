@@ -12,7 +12,7 @@ tags:
 # drawHUD()
 
 ## Connections
-- [[draw()_1]] - `calls` [EXTRACTED]
+- [[draw()_2]] - `calls` [EXTRACTED]
 - [[drawLifeIcon()_1]] - `calls` [EXTRACTED]
 - [[game.js]] - `contains` [EXTRACTED]
 

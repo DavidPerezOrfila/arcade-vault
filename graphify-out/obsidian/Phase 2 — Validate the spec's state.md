@@ -12,6 +12,6 @@ tags:
 # Phase 2 — Validate the spec's state
 
 ## Connections
-- [[Instructions]] - `contains` [EXTRACTED]
+- [[Instructions_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Cookie_Management

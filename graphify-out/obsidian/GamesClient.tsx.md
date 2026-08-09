@@ -1,23 +1,23 @@
 ---
 source_file: "app/games/GamesClient.tsx"
 type: "code"
-community: "Test Generation"
+community: "Storage State"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/Storage_State
 ---
 
 # GamesClient.tsx
 
 ## Connections
-- [[CATS_1]] - `imports` [EXTRACTED]
-- [[Game_1]] - `imports` [EXTRACTED]
+- [[CATS]] - `imports` [EXTRACTED]
+- [[Game]] - `imports` [EXTRACTED]
 - [[GameCard()]] - `contains` [EXTRACTED]
 - [[GamesClient()]] - `contains` [EXTRACTED]
 - [[GamesClientProps]] - `contains` [EXTRACTED]
-- [[page.tsx_4]] - `imports_from` [EXTRACTED]
+- [[page.tsx_5]] - `imports_from` [EXTRACTED]
 - [[types.ts_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/Storage_State

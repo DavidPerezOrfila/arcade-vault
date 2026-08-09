@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Asteroid]] - `contains` [EXTRACTED]
-- [[AsteroidsGame()]] - `imports_from` [EXTRACTED]
 - [[Bullet]] - `contains` [EXTRACTED]
 - [[POINTS]] - `contains` [EXTRACTED]
 - [[Particle]] - `contains` [EXTRACTED]

@@ -8,7 +8,7 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[CATS_2]] - code - resources/templates/data.jsx
+- [[CATS_1]] - code - resources/templates/data.jsx
 - [[FeatureIcon()_1]] - code - resources/templates/home-about/home.jsx
 - [[FloatingSilhouettes()_1]] - code - resources/templates/home-about/home.jsx
 - [[GAMES]] - code - resources/templates/data.jsx
@@ -24,7 +24,7 @@ members: 17
 - [[reproductor.jsx]] - code - resources/templates/reproductor.jsx
 - [[salon.jsx]] - code - resources/templates/salon.jsx
 - [[seededScores()_1]] - code - resources/templates/data.jsx
-- [[useReveal()]] - code - resources/templates/home-about/home.jsx
+- [[useReveal()_1]] - code - resources/templates/home-about/home.jsx
 
 ## Live Query (requires Dataview plugin)
 

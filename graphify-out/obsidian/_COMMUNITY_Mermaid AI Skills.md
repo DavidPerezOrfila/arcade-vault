@@ -19,7 +19,7 @@ members: 13
 - [[Review Mermaid Sync]] - document - .github/instructions/mermaid.instructions.md
 - [[Rules_3]] - document - .github/instructions/mermaid.instructions.md
 - [[VS Code Commands]] - document - .github/instructions/mermaid.instructions.md
-- [[Workflow_2]] - document - .github/instructions/mermaid.instructions.md
+- [[Workflow_3]] - document - .github/instructions/mermaid.instructions.md
 - [[mermaid.instructions]] - document - .github/instructions/mermaid.instructions.md
 
 ## Live Query (requires Dataview plugin)

@@ -69,9 +69,3 @@ members: 54
 TABLE source_file, type FROM #community/E2E_Test
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Game Data Layer]]
-
-## Top bridge nodes
-- [[game.esm.js]] - degree 36, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "lib/supabase/client.ts"
 type: "code"
-community: "Game Data Layer"
+community: "._game.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/_gamejs
 ---
 
 # client.ts
@@ -14,5 +14,8 @@ tags:
 ## Connections
 - [[SalonClient.tsx]] - `imports_from` [EXTRACTED]
 - [[createSupabaseBrowserClient()]] - `contains` [EXTRACTED]
+- [[env.ts]] - `imports_from` [EXTRACTED]
+- [[nav.tsx]] - `imports_from` [EXTRACTED]
+- [[requireEnv()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/_gamejs

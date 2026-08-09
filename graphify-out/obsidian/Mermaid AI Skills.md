@@ -17,7 +17,7 @@ tags:
 - [[LM Tools — call these for every diagram interaction]] - `contains` [EXTRACTED]
 - [[Rules_3]] - `contains` [EXTRACTED]
 - [[VS Code Commands]] - `contains` [EXTRACTED]
-- [[Workflow_2]] - `contains` [EXTRACTED]
+- [[Workflow_3]] - `contains` [EXTRACTED]
 - [[mermaid.instructions]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mermaid_AI_Skills

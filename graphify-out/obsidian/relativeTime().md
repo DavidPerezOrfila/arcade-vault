@@ -1,12 +1,12 @@
 ---
 source_file: "app/_home/TimeAgo.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "RecentActivity.tsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/RecentActivitytsx
 ---
 
 # relativeTime()
@@ -15,4 +15,4 @@ tags:
 - [[TimeAgo()]] - `calls` [EXTRACTED]
 - [[TimeAgo.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/RecentActivitytsx

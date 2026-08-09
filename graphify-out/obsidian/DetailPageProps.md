@@ -1,12 +1,12 @@
 ---
 source_file: "app/games/[slug]/page.tsx"
 type: "code"
-community: "Game Data Layer"
-location: "L8"
+community: "actions.ts"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/actionsts
 ---
 
 # DetailPageProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[page.tsx_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/actionsts

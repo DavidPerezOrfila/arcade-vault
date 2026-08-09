@@ -18,9 +18,9 @@ tags:
 - [[dist()_1]] - `calls` [EXTRACTED]
 - [[explode()_1]] - `calls` [EXTRACTED]
 - [[game.js]] - `contains` [EXTRACTED]
-- [[initGame()_1]] - `calls` [EXTRACTED]
+- [[initGame()_2]] - `calls` [EXTRACTED]
 - [[killShip()_1]] - `calls` [EXTRACTED]
-- [[loop()_1]] - `calls` [EXTRACTED]
+- [[loop()_2]] - `calls` [EXTRACTED]
 - [[nextLevel()_1]] - `calls` [EXTRACTED]
 - [[pressed()_1]] - `calls` [EXTRACTED]
 

@@ -1,19 +1,17 @@
 ---
-source_file: "app/data/types.ts"
+source_file: "app/salon/SalonClient.tsx"
 type: "code"
-community: "Test Generation"
-location: "L18"
+community: "actions.ts"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/actionsts
 ---
 
 # Game
 
 ## Connections
-- [[GamesClient.tsx]] - `imports` [EXTRACTED]
-- [[GamesClientProps]] - `references` [EXTRACTED]
-- [[types.ts_1]] - `contains` [EXTRACTED]
+- [[SalonClient.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/actionsts

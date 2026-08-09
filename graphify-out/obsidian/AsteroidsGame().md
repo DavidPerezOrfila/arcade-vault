@@ -1,20 +1,19 @@
 ---
 source_file: "components/games/asteroids/AsteroidsGame.tsx"
 type: "code"
-community: "Game Data Layer"
-location: "L16"
+community: "Cookie Management"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Cookie_Management
 ---
 
 # AsteroidsGame()
 
 ## Connections
 - [[AsteroidsGame.tsx]] - `contains` [EXTRACTED]
-- [[game.esm.js]] - `imports_from` [EXTRACTED]
 - [[page.tsx_3]] - `imports` [EXTRACTED]
-- [[submitAsteroidsScore()]] - `calls` [EXTRACTED]
+- [[useArcadeGame()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Cookie_Management

@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/04-arkanoid/.agents/skills/spec-impl/SKILL.md"
+source_file: ".claude/skills/graft/SKILL.md"
 type: "document"
-community: "Cookie Management"
+community: "The tools"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/The_tools
 ---
 
 # SKILL.md
 
 ## Connections
-- [[spec-impl — Implementer of approved specs]] - `contains` [EXTRACTED]
+- [[graft]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Cookie_Management
+#graphify/document #graphify/EXTRACTED #community/The_tools
