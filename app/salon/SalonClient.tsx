@@ -84,7 +84,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
       {!loading && rows.length > 0 && (
         <>
           <Podium rows={rows} />
-          <LeaderboardTable rows={rows} activeGameTitle={activeGame.title} />
+          <LeaderboardTable rows={rows} />
         </>
       )}
 
