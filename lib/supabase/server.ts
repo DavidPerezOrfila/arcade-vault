@@ -21,9 +21,8 @@ export async function createSupabaseServerClient() {
             cookieStore.set(name, value, options)
           );
         } catch {
-          // The `setAll` method was called from a Server Component.
-          // This can be ignored if you have middleware refreshing
-          // user sessions.
+          // `setAll` se invocó desde un Server Component — ignorable si hay
+          // middleware refrescando la sesión.
         }
       }
     }

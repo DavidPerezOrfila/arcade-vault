@@ -1,5 +1,3 @@
-// === Tipos compartidos de Arcade Vault ===
-
 import type { Database } from '@/lib/supabase/types';
 
 export type GameCategory = 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS';

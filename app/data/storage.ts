@@ -5,8 +5,9 @@ const USER_KEY = 'av_user';
 // ponytail: guard SSR — App Router renderiza en servidor donde localStorage no
 // existe. Los componentes cliente se hidratan y releen en el navegador; los
 // getters devuelven null durante el pase del servidor (sin flash de datos).
-// Las puntuaciones viven en Supabase (app/data/scores.ts); aquí solo queda la
-// identidad por nombre hasta que exista el flujo real de Supabase Auth.
+// Las puntuaciones viven en Supabase (app/data/scores.ts); aquí queda solo la
+// identidad por nombre — Supabase Auth se integra por partes (nav ya hace
+// supabase.auth.signOut en handleSignOut).
 
 export function getUser(): User | null {
   if (typeof window === 'undefined') return null;
