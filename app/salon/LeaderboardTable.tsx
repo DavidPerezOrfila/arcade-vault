@@ -7,24 +7,13 @@ interface LeaderboardRow {
   at: number;
 }
 
-interface UserBadge {
-  name: string;
-  bestScore: number;
-}
-
 interface LeaderboardTableProps {
   rows: readonly LeaderboardRow[];
-  user: UserBadge | null;
-  activeGameTitle: string;
 }
 
 const ROW_STAGGER_MS = 50;
 
-export function LeaderboardTable({
-  rows,
-  user,
-  activeGameTitle
-}: LeaderboardTableProps) {
+export function LeaderboardTable({ rows }: LeaderboardTableProps) {
   return (
     <div className='hall-table'>
       <div className='th'>
@@ -45,26 +34,6 @@ export function LeaderboardTable({
           <div className='dt'>{formatDate(r.at)}</div>
         </div>
       ))}
-      {user && (
-        <>
-          <div className='tr you-label'>
-            ▸ TU MEJOR MARCA EN {activeGameTitle}
-          </div>
-          <div
-            className='tr you'
-            style={{
-              animationDelay: `${rows.length * ROW_STAGGER_MS + ROW_STAGGER_MS}ms`
-            }}
-          >
-            <div className='rk neon-yellow'>
-              #{String(rows.findIndex((r) => r.score <= user.bestScore) + 1).padStart(2, '0')}
-            </div>
-            <div className='pl neon-yellow'>{user.name}</div>
-            <div className='sc neon-yellow'>{formatScore(user.bestScore)}</div>
-            <div className='dt'>{formatDate(Date.now())}</div>
-          </div>
-        </>
-      )}
     </div>
   );
 }

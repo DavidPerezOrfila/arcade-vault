@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { getSalonLeaderboard, getUserBestScore } from '@/app/data/actions';
-import { createSupabaseBrowserClient } from '@/lib/supabase/client';
+import { getSalonLeaderboard } from '@/app/data/actions';
 import { LeaderboardTable } from './LeaderboardTable';
 import { Podium } from './Podium';
 
@@ -27,16 +26,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
   const firstGameId = initialGames[0]?.id ?? '';
   const [activeTab, setActiveTab] = useState(firstGameId);
   const [rows, setRows] = useState<LeaderboardRow[]>([]);
-  const [userBest, setUserBest] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState<{ id: string; name: string } | null>(null);
-
-  useEffect(() => {
-    const supabase = createSupabaseBrowserClient();
-    supabase.auth.getUser().then(({ data }) => {
-      if (data.user) setUser({ id: data.user.id, name: data.user.email?.split('@')[0] ?? 'Jugador' });
-    });
-  }, []);
 
   useEffect(() => {
     let mounted = true;
@@ -51,21 +41,13 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
       .catch(() => {
         if (mounted) setLoading(false);
       });
-    if (user) {
-      getUserBestScore(activeTab, user.id)
-        .then((score) => {
-          if (mounted) setUserBest(score);
-        })
-        .catch(() => {
-          // ponytail: best score no es critico; si falla, userBest se queda
-          // en null y la fila "tu mejor marca" simplemente no aparece.
-        });
-    }
     return () => {
       mounted = false;
     };
-  }, [activeTab, user]);
+  }, [activeTab]);
 
+  // ponytail: "tu mejor marca" queda fuera hasta que Supabase Auth real asigne
+  // user_id; el User de storage no lo tiene y getUserBestScore era dead path.
   const activeGame = initialGames.find((g) => g.id === activeTab) ?? initialGames[0];
 
   return (
@@ -102,11 +84,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
       {!loading && rows.length > 0 && (
         <>
           <Podium rows={rows} />
-          <LeaderboardTable
-            rows={rows}
-            activeGameTitle={activeGame.title}
-            user={user && userBest !== null ? { name: user.name, bestScore: userBest } : null}
-          />
+          <LeaderboardTable rows={rows} activeGameTitle={activeGame.title} />
         </>
       )}
 

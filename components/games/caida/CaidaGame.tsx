@@ -16,7 +16,6 @@ const BOARD_W = 300;
 const BOARD_H = 600;
 const NEXT_W = 120;
 const NEXT_H = 120;
-const MODULE_PATH = '../../../lib/games/caida/game.esm.js';
 const API_URL = '/api/leaderboard/caida';
 
 export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
@@ -37,7 +36,7 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
     setShowAuthPrompt,
     handleGameOver
   } = useArcadeGame({
-    modulePath: MODULE_PATH,
+    loadModule: () => import('@/lib/games/caida/game.esm.js'),
     apiUrl: API_URL,
     submitScore: submitCaidaScore,
     initialLeaderboard

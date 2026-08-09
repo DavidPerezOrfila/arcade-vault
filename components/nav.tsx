@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
-import { clearUser, getUser } from '@/app/data/storage';
-import { createSupabaseBrowserClient } from '@/lib/supabase/client';
-import type { User } from '@/app/data/types';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
+import { clearUser, getUser } from "@/app/data/storage";
+import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import type { User } from "@/app/data/types";
 
 // Fuente única de links del nav: desktop (mayúsculas) y panel mobile comparten
 // el mismo href; isActive cubre el prefijo /games y /player.
 const NAV_LINKS = [
-  { href: '/', desktopLabel: 'INICIO', mobileLabel: 'Inicio' },
-  { href: '/games', desktopLabel: 'BIBLIOTECA', mobileLabel: 'Biblioteca' },
-  { href: '/salon', desktopLabel: 'SALÓN', mobileLabel: 'Salón de la Fama' },
-  { href: '/about', desktopLabel: 'ACERCA DE', mobileLabel: 'Acerca de' }
+  { href: "/", desktopLabel: "INICIO", mobileLabel: "Inicio" },
+  { href: "/games", desktopLabel: "BIBLIOTECA", mobileLabel: "Biblioteca" },
+  { href: "/salon", desktopLabel: "SALÓN", mobileLabel: "Salón de la Fama" },
+  { href: "/about", desktopLabel: "ACERCA DE", mobileLabel: "Acerca de" },
 ] as const;
 
 export default function Nav() {
@@ -26,14 +26,14 @@ export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const isActive = (href: string) => {
-    if (href === '/') {
-      return pathname === '/';
+    if (href === "/") {
+      return pathname === "/";
     }
-    if (href === '/games') {
+    if (href === "/games") {
       return (
-        pathname === '/games' ||
-        pathname.startsWith('/games/') ||
-        pathname.startsWith('/player')
+        pathname === "/games" ||
+        pathname.startsWith("/games/") ||
+        pathname.startsWith("/player")
       );
     }
     return pathname === href || pathname.startsWith(`${href}/`);
@@ -49,72 +49,72 @@ export default function Nav() {
 
   return (
     <>
-      <nav className='av-nav'>
-        <Link href='/' className='logo'>
-          <span className='logo-mark' aria-hidden />
-          <span className='logo-text neon-cyan'>
-            ARCADE <span className='neon-magenta'>VAULT</span>
+      <nav className="av-nav">
+        <Link href="/" className="logo">
+          <span className="logo-mark" aria-hidden />
+          <span className="logo-text neon-cyan">
+            ARCADE <span className="neon-magenta">VAULT</span>
           </span>
         </Link>
-        <div className='links'>
+        <div className="links">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={isActive(link.href) ? 'active' : ''}
+              className={isActive(link.href) ? "active" : ""}
             >
               {link.desktopLabel}
             </Link>
           ))}
         </div>
-        <div className='spacer' />
-        <div className='coin-counter'>
-          <span className='coin' aria-hidden />
+        <div className="spacer" />
+        <div className="coin-counter">
+          <span className="coin" aria-hidden />
           <span>CRÉDITOS · 03</span>
         </div>
         {user ? (
-          <button className='btn ghost auth-btn' onClick={handleSignOut}>
+          <button className="btn ghost auth-btn" onClick={handleSignOut}>
             {user.name} ▾
           </button>
         ) : (
-          <Link href='/auth' className='btn auth-btn'>
+          <Link href="/auth" className="btn auth-btn">
             Iniciar Sesión
           </Link>
         )}
         <button
-          className='btn ghost hamburger'
+          className="btn ghost hamburger"
           onClick={() => setMobileOpen(true)}
-          aria-label='Menú'
+          aria-label="Menú"
         >
           ≡
         </button>
       </nav>
 
       <div
-        className={`av-mobile-backdrop${mobileOpen ? 'open' : ''}`}
+        className={`av-mobile-backdrop${mobileOpen ? "open" : ""}`}
         onClick={() => setMobileOpen(false)}
       />
-      <aside className={`av-mobile-panel${mobileOpen ? 'open' : ''}`}>
-        <div className='pixel neon-cyan text-[11px] mb-4'>MENÚ</div>
+      <aside className={`av-mobile-panel${mobileOpen ? "open" : ""}`}>
+        <div className="pixel neon-cyan mb-4 text-[11px]">MENÚ</div>
         {NAV_LINKS.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className={isActive(link.href) ? 'active' : ''}
+            className={isActive(link.href) ? "active" : ""}
             onClick={() => setMobileOpen(false)}
           >
             {link.mobileLabel}
           </Link>
         ))}
         <Link
-          href='/auth'
-          className={isActive('/auth') ? 'active' : ''}
+          href="/auth"
+          className={isActive("/auth") ? "active" : ""}
           onClick={() => setMobileOpen(false)}
         >
-          {user ? 'Cuenta' : 'Iniciar Sesión'}
+          {user ? "Cuenta" : "Iniciar Sesión"}
         </Link>
-        <div className='flex-1' />
-        <div className='pixel text-[9px] tracking-[0.16em] text-ink-faint'>
+        <div className="flex-1" />
+        <div className="pixel text-ink-faint text-[9px] tracking-[0.16em]">
           CRÉDITOS · 03
         </div>
       </aside>

@@ -1,15 +1,15 @@
-import { createSupabaseServerClient } from '@/lib/supabase/server';
-import type { ScoreEntry, ScoreRowDb } from './types';
-import type { ScoreEntryInputParsed } from './schema';
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+import type { ScoreEntry, ScoreRowDb } from "./types";
+import type { ScoreEntryInputParsed } from "./schema";
 
-const TABLE = 'scores';
-const SELECT_COLUMNS = 'game, score, name, at, user_id';
+const TABLE = "scores";
+const SELECT_COLUMNS = "game, score, name, at, user_id";
 const TOP_LIMIT = 100;
 
 // Fila como la devuelve el `.select(SELECT_COLUMNS)` — subset de ScoreRowDb.
 type ScoreRowSelected = Pick<
   ScoreRowDb,
-  'game' | 'score' | 'name' | 'at' | 'user_id'
+  "game" | "score" | "name" | "at" | "user_id"
 >;
 
 function rowToEntry(row: ScoreRowSelected): ScoreEntry {
@@ -18,7 +18,7 @@ function rowToEntry(row: ScoreRowSelected): ScoreEntry {
     score: row.score,
     name: row.name,
     at: new Date(row.at).getTime(),
-    userId: row.user_id
+    userId: row.user_id,
   };
 }
 
@@ -29,10 +29,10 @@ async function fetchScores(game?: string): Promise<ScoreEntry[]> {
   let query = supabase
     .from(TABLE)
     .select(SELECT_COLUMNS)
-    .order('score', { ascending: false })
+    .order("score", { ascending: false })
     .limit(TOP_LIMIT);
   if (game) {
-    query = query.eq('game', game).order('at', { ascending: false });
+    query = query.eq("game", game).order("at", { ascending: false });
   }
   const { data, error } = await query;
   if (error) throw error;
@@ -56,7 +56,7 @@ export async function getScoresByGame(game: string): Promise<ScoreEntry[]> {
 }
 
 export async function saveScore(
-  input: ScoreEntryInputParsed
+  input: ScoreEntryInputParsed,
 ): Promise<ScoreEntry> {
   const supabase = await createSupabaseServerClient();
   const { data, error } = await supabase
@@ -68,7 +68,7 @@ export async function saveScore(
       at: new Date(input.at).toISOString(),
       // user_id es la columna en la DB (snake_case) — contrato externo.
       // eslint-disable-next-line camelcase
-      user_id: input.userId ?? null
+      user_id: input.userId ?? null,
     })
     .select(SELECT_COLUMNS)
     .single();

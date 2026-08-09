@@ -65,25 +65,3 @@ export async function getSalonLeaderboard(
     return [];
   }
 }
-
-export async function getUserBestScore(
-  gameId: string,
-  userId: string
-): Promise<number | null> {
-  try {
-    const supabase = await createSupabaseServerClient();
-    const { data, error } = await supabase
-      .from('scores')
-      .select('score')
-      .eq('game', gameId)
-      .eq('user_id', userId)
-      .order('score', { ascending: false })
-      .limit(1)
-      .maybeSingle();
-
-    if (error) throw error;
-    return data?.score ?? null;
-  } catch {
-    return null;
-  }
-}

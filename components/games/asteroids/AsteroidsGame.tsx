@@ -11,7 +11,6 @@ import './asteroids.css';
 
 const CANVAS_W = 800;
 const CANVAS_H = 600;
-const MODULE_PATH = '../../../lib/games/asteroids/game.esm.js';
 const API_URL = '/api/leaderboard/asteroids';
 
 export function AsteroidsGame({
@@ -20,7 +19,7 @@ export function AsteroidsGame({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { gameRef, isLoading, leaderboard, showAuthPrompt, setShowAuthPrompt, handleGameOver } =
     useArcadeGame({
-      modulePath: MODULE_PATH,
+      loadModule: () => import('@/lib/games/asteroids/game.esm.js'),
       apiUrl: API_URL,
       submitScore: submitAsteroidsScore,
       initialLeaderboard

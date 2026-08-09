@@ -16,7 +16,7 @@ export interface ArcadeGameModule {
 }
 
 export interface UseArcadeGameParams {
-  modulePath: string;
+  loadModule: () => Promise<unknown>;
   apiUrl: string;
   submitScore: (score: number) => Promise<SubmitScoreResult>;
   initialLeaderboard?: LeaderboardEntry[];
@@ -34,7 +34,7 @@ export interface UseArcadeGameResult {
 /* eslint-enable no-unused-vars */
 
 export function useArcadeGame({
-  modulePath,
+  loadModule,
   apiUrl,
   submitScore,
   initialLeaderboard = []
@@ -47,7 +47,7 @@ export function useArcadeGame({
 
   useEffect(() => {
     let mounted = true;
-    import(/* webpackIgnore: true */ modulePath).then((mod) => {
+    loadModule().then((mod) => {
       if (mounted) {
         gameRef.current = mod as unknown as ArcadeGameModule;
         setIsLoading(false);
@@ -56,7 +56,7 @@ export function useArcadeGame({
     return () => {
       mounted = false;
     };
-  }, [modulePath]);
+  }, [loadModule]);
 
   const refreshLeaderboard = useCallback(async() => {
     const response = await fetch(apiUrl);
