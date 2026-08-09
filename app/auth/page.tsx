@@ -4,6 +4,10 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { setUser, clearUser } from '@/app/data/storage';
 
+// ponytail: auth simulada — pass/email no se validan; setUser guarda solo el
+// nombre en localStorage hasta el flujo real de Supabase Auth.
+const APP_VERSION = 'v2.6';
+
 export default function AuthPage() {
   const router = useRouter();
   const [tab, setTab] = useState<'in' | 'up'>('in');
@@ -29,16 +33,8 @@ export default function AuthPage() {
         <div className='auth-header'>
           <div className='mark' />
           <h2 className='neon-cyan'>ARCADE VAULT</h2>
-          <div
-            className='mono'
-            style={{
-              fontSize: 11,
-              color: 'var(--ink-faint)',
-              letterSpacing: '0.16em',
-              marginTop: 6
-            }}
-          >
-            ACCESO AL SISTEMA · v2.6
+          <div className='mono text-[11px] tracking-[0.16em] text-ink-faint mt-1.5'>
+            ACCESO AL SISTEMA · {APP_VERSION}
           </div>
         </div>
 
@@ -104,25 +100,7 @@ export default function AuthPage() {
           JUGAR COMO INVITADO
         </button>
 
-        <div className='auth-divider'>O CONTINÚA CON</div>
-        <div className='social'>
-          <button className='btn ghost' type='button'>
-            ◆ GOOGLE
-          </button>
-          <button className='btn ghost' type='button'>
-            ▣ GITHUB
-          </button>
-        </div>
-
-        <div
-          style={{
-            marginTop: 18,
-            textAlign: 'center',
-            fontSize: 11,
-            color: 'var(--ink-faint)',
-            letterSpacing: '0.1em'
-          }}
-        >
+        <div className='mt-[18px] text-center text-[11px] tracking-[0.1em] text-ink-faint'>
           AL ENTRAR ACEPTAS LOS TÉRMINOS DEL SALÓN ARCADE
         </div>
       </div>
