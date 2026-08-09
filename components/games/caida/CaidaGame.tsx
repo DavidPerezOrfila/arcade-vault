@@ -58,15 +58,15 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
       overlayTitleRef.current &&
       overlayScoreRef.current
         ? {
-            board: boardRef.current,
-            nextCanvas: nextRef.current,
-            scoreEl: scoreRef.current,
-            linesEl: linesRef.current,
-            levelEl: levelRef.current,
-            overlay: overlayRef.current,
-            overlayTitle: overlayTitleRef.current,
-            overlayScore: overlayScoreRef.current
-          }
+          board: boardRef.current,
+          nextCanvas: nextRef.current,
+          scoreEl: scoreRef.current,
+          linesEl: linesRef.current,
+          levelEl: levelRef.current,
+          overlay: overlayRef.current,
+          overlayTitle: overlayTitleRef.current,
+          overlayScore: overlayScoreRef.current
+        }
         : null;
     if (!refs) return;
 

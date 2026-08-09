@@ -66,6 +66,8 @@ export async function saveScore(
       score: input.score,
       name: input.name,
       at: new Date(input.at).toISOString(),
+      // user_id es la columna en la DB (snake_case) — contrato externo.
+      // eslint-disable-next-line camelcase
       user_id: input.userId ?? null
     })
     .select(SELECT_COLUMNS)

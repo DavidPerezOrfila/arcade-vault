@@ -4,6 +4,9 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import type { LeaderboardEntry } from '@/lib/games/types';
 import type { SubmitScoreResult } from '@/lib/games/leaderboard';
 
+// Nombres de parámetros en firmas de tipos documentan el contrato — no son
+// vars reales; el lint de base los marca como no usados.
+/* eslint-disable no-unused-vars */
 export interface ArcadeGameModule {
   // Firma varía por juego (Caida: refs + options; Asteroids: canvas). El
   // caller hace el cast concreto en su propio useEffect.
@@ -28,6 +31,7 @@ export interface UseArcadeGameResult {
   handleGameOver: (score: number) => Promise<void>;
   refreshLeaderboard: () => Promise<void>;
 }
+/* eslint-enable no-unused-vars */
 
 export function useArcadeGame({
   modulePath,
@@ -54,7 +58,7 @@ export function useArcadeGame({
     };
   }, [modulePath]);
 
-  const refreshLeaderboard = useCallback(async () => {
+  const refreshLeaderboard = useCallback(async() => {
     const response = await fetch(apiUrl);
     if (response.ok) {
       const data = (await response.json()) as LeaderboardEntry[];
@@ -63,7 +67,7 @@ export function useArcadeGame({
   }, [apiUrl]);
 
   const handleGameOver = useCallback(
-    async (score: number) => {
+    async(score: number) => {
       const result = await submitScore(score);
       if (!result.ok) {
         setShowAuthPrompt(true);
@@ -84,6 +88,8 @@ export function useArcadeGame({
     if (!isE2E) return undefined;
 
     const win = window as unknown as {
+      // Firma del hook E2E — el nombre del parámetro es parte del contrato.
+      // eslint-disable-next-line no-unused-vars
       __forceGameOver?: (score?: number) => void;
     };
     win.__forceGameOver = (score = 1000) => {
