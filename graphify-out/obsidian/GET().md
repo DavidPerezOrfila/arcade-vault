@@ -1,18 +1,17 @@
 ---
 source_file: "app/api/leaderboard/asteroids/route.ts"
 type: "code"
-community: "Game Data Layer"
+community: "Cookie Management"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Cookie_Management
 ---
 
 # GET()
 
 ## Connections
-- [[getAsteroidsLeaderboard()]] - `calls` [EXTRACTED]
 - [[route.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Cookie_Management

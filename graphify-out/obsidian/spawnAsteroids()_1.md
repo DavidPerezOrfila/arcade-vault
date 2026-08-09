@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[game.js]] - `contains` [EXTRACTED]
-- [[initGame()_1]] - `calls` [EXTRACTED]
+- [[initGame()_2]] - `calls` [EXTRACTED]
 - [[nextLevel()_1]] - `calls` [EXTRACTED]
 - [[rand()_1]] - `calls` [EXTRACTED]
 

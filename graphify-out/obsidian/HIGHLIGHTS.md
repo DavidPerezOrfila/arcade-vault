@@ -1,8 +1,8 @@
 ---
-source_file: "app/about/page.tsx"
+source_file: "app/about/HeroSection.tsx"
 type: "code"
 community: "Playwright Config"
-location: "L11"
+location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # HIGHLIGHTS
 
 ## Connections
-- [[page.tsx]] - `contains` [EXTRACTED]
+- [[HeroSection.tsx]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Playwright_Config

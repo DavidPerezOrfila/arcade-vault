@@ -2,7 +2,7 @@
 source_file: "app/data/scores.ts"
 type: "code"
 community: "Game Data Layer"
-location: "L8"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,7 @@ tags:
 # rowToEntry()
 
 ## Connections
-- [[getScores()]] - `indirect_call` [INFERRED]
-- [[getScoresByGame()]] - `indirect_call` [INFERRED]
+- [[fetchScores()]] - `indirect_call` [INFERRED]
 - [[saveScore()]] - `calls` [EXTRACTED]
 - [[scores.ts]] - `contains` [EXTRACTED]
 

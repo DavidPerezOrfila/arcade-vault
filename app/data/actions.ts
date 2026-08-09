@@ -24,8 +24,13 @@ export async function saveScoreAction(
   const parsed = parseFormData(formData);
   if (!parsed.success) return { ok: false, error: 'INVALID_INPUT' };
 
+  // userId SIEMPRE de la sesión — nunca del cliente (anti-spoofing).
+  const supabase = await createSupabaseServerClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { ok: false, error: 'UNAUTHENTICATED' };
+
   try {
-    await saveScore(parsed.data);
+    await saveScore({ ...parsed.data, userId: user.id });
   } catch {
     return { ok: false, error: 'DB_ERROR' };
   }
@@ -58,27 +63,5 @@ export async function getSalonLeaderboard(
     }));
   } catch {
     return [];
-  }
-}
-
-export async function getUserBestScore(
-  gameId: string,
-  userId: string
-): Promise<number | null> {
-  try {
-    const supabase = await createSupabaseServerClient();
-    const { data, error } = await supabase
-      .from('scores')
-      .select('score')
-      .eq('game', gameId)
-      .eq('user_id', userId)
-      .order('score', { ascending: false })
-      .limit(1)
-      .maybeSingle();
-
-    if (error) throw error;
-    return data?.score ?? null;
-  } catch {
-    return null;
   }
 }

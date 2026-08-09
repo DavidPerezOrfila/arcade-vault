@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getGameBySlug } from '@/app/data/games';
 import { getScoresByGame } from '@/app/data/scores';
+import { formatDate, formatScore, topRankClass } from '@/lib/format';
+import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
 
 export const dynamic = 'force-dynamic';
 
@@ -9,19 +11,12 @@ interface DetailPageProps {
   params: Promise<{ slug: string }>;
 }
 
-function formatDate(at: number): string {
-  const d = new Date(at);
-  const day = String(d.getDate()).padStart(2, '0');
-  const mon = String(d.getMonth() + 1).padStart(2, '0');
-  return `${day}/${mon}/${d.getFullYear()}`;
-}
-
 export default async function DetailPage({ params }: DetailPageProps) {
   const { slug } = await params;
   const game = await getGameBySlug(slug);
   if (!game) return notFound();
 
-  const rows = (await getScoresByGame(slug)).slice(0, 10);
+  const rows = (await getScoresByGame(slug)).slice(0, LEADERBOARD_TOP_N);
 
   return (
     <div className='av-detail fade-in'>
@@ -34,7 +29,6 @@ export default async function DetailPage({ params }: DetailPageProps) {
             <span>{game.cat}</span>
             <span>1 JUGADOR</span>
             <span>TECLADO / TÁCTIL</span>
-            <span>RETRO 1985</span>
           </div>
           <h2 className='neon-cyan'>{game.title}</h2>
           <p>{game.long}</p>
@@ -45,27 +39,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
             </div>
             <div>
               <div className='l'>Mejor global</div>
-              <div
-                className='v'
-                style={{
-                  color: 'var(--magenta)',
-                  textShadow: '0 0 6px rgba(255,0,110,0.5)'
-                }}
-              >
-                {game.best.toLocaleString('es-ES')}
-              </div>
-            </div>
-            <div>
-              <div className='l'>Dificultad</div>
-              <div
-                className='v'
-                style={{
-                  color: 'var(--yellow)',
-                  textShadow: '0 0 6px rgba(245,255,0,0.5)'
-                }}
-              >
-                ★ ★ ★ ☆ ☆
-              </div>
+              <div className='v neon-magenta'>{formatScore(game.best)}</div>
             </div>
           </div>
           <div className='detail-actions'>
@@ -90,7 +64,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
             rows.map((r, i) => (
               <div
                 key={`${r.name}-${r.at}-${i}`}
-                className={`lb-row${['top1', 'top2', 'top3'][i] ?? ''}`}
+                className={`lb-row${topRankClass(i)}`}
               >
                 <div className='rk'>#{String(i + 1).padStart(2, '0')}</div>
                 <div className='pl'>
@@ -105,7 +79,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
                     {formatDate(r.at)}
                   </div>
                 </div>
-                <div className='sc'>{r.score.toLocaleString('es-ES')}</div>
+                <div className='sc'>{formatScore(r.score)}</div>
               </div>
             ))
           )}

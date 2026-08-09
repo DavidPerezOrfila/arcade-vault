@@ -1,12 +1,12 @@
 ---
 source_file: "lib/supabase/server.ts"
 type: "code"
-community: "Game Data Layer"
+community: "._game.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/_gamejs
 ---
 
 # server.ts
@@ -14,9 +14,10 @@ tags:
 ## Connections
 - [[actions.ts_1]] - `imports_from` [EXTRACTED]
 - [[createSupabaseServerClient()]] - `contains` [EXTRACTED]
+- [[env.ts]] - `imports_from` [EXTRACTED]
 - [[games.ts]] - `imports_from` [EXTRACTED]
-- [[getAsteroidsLeaderboard()]] - `imports_from` [EXTRACTED]
+- [[leaderboard.ts]] - `imports_from` [EXTRACTED]
+- [[requireEnv()]] - `imports` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
-- [[submitAsteroidsScore()]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/_gamejs

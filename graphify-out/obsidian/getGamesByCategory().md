@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/games.ts"
 type: "code"
-community: "Game Data Layer"
-location: "L54"
+community: "Session Storage"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Session_Storage
 ---
 
 # getGamesByCategory()
@@ -16,4 +16,4 @@ tags:
 - [[games.ts]] - `contains` [EXTRACTED]
 - [[getGames()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Session_Storage

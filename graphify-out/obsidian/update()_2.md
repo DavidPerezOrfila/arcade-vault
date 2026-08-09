@@ -16,6 +16,6 @@ tags:
 - [[game.js_2]] - `contains` [EXTRACTED]
 - [[initBall()]] - `calls` [EXTRACTED]
 - [[loadLevel()]] - `calls` [EXTRACTED]
-- [[loop()_3]] - `calls` [EXTRACTED]
+- [[loop()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Test_Generation

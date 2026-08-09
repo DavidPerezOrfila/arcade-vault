@@ -12,6 +12,7 @@ tags:
 # types.ts
 
 ## Connections
+- [[ContactForm.tsx]] - `imports_from` [EXTRACTED]
 - [[ContactFormInput]] - `contains` [EXTRACTED]
 - [[ContactFormState]] - `contains` [EXTRACTED]
 - [[actions.ts]] - `imports_from` [EXTRACTED]

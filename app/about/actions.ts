@@ -4,6 +4,10 @@ import { Resend } from 'resend';
 import { contactSchema } from './schema';
 import type { ContactFormState } from './types';
 
+// Bypass: si RESEND_API_KEY === 'test' no envia el correo, devuelve OK.
+// Util para CI / E2E donde no hay una API key real configurada.
+const TEST_MODE = 'test';
+
 export async function sendContactEmail(
   _prevState: ContactFormState,
   formData: FormData
@@ -21,7 +25,7 @@ export async function sendContactEmail(
 
   const { name, email, message } = parsed.data;
 
-  if (process.env.RESEND_API_KEY === 'test') {
+  if (process.env.RESEND_API_KEY === TEST_MODE) {
     return { success: true };
   }
 
@@ -30,7 +34,10 @@ export async function sendContactEmail(
   const contactEmail = process.env.CONTACT_EMAIL;
 
   if (!apiKey || !fromEmail || !contactEmail) {
-    return { success: false, error: 'Servicio de correo no configurado correctamente en el servidor.' };
+    return {
+      success: false,
+      error: 'Servicio de correo no configurado correctamente en el servidor.'
+    };
   }
 
   try {
@@ -49,7 +56,10 @@ export async function sendContactEmail(
 
     return { success: true };
   } catch (err) {
-    const errorMessage = err instanceof Error ? err.message : 'No se pudo enviar el mensaje. Inténtalo de nuevo.';
+    const errorMessage =
+      err instanceof Error
+        ? err.message
+        : 'No se pudo enviar el mensaje. Inténtalo de nuevo.';
     return { success: false, error: errorMessage };
   }
 }

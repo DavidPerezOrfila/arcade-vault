@@ -1,18 +1,23 @@
 ---
-source_file: "app/games/[slug]/page.tsx"
+source_file: "lib/format.ts"
 type: "code"
-community: "Game Data Layer"
-location: "L12"
+community: "actions.ts"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/actionsts
 ---
 
 # formatDate()
 
 ## Connections
 - [[DetailPage()]] - `calls` [EXTRACTED]
-- [[page.tsx_2]] - `contains` [EXTRACTED]
+- [[LeaderboardTable()]] - `calls` [EXTRACTED]
+- [[LeaderboardTable.tsx]] - `imports` [EXTRACTED]
+- [[Podium()]] - `calls` [EXTRACTED]
+- [[Podium.tsx]] - `imports` [EXTRACTED]
+- [[format.ts]] - `contains` [EXTRACTED]
+- [[page.tsx_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/actionsts

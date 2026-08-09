@@ -1,18 +1,18 @@
 ---
-source_file: "resources/started-games/03-tetris/game.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "Playwright Automation"
-location: "L47"
+community: "game.esm.js"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Automation
+  - community/gameesmjs
 ---
 
 # createBoard()
 
 ## Connections
-- [[game.js_1]] - `contains` [EXTRACTED]
-- [[init()]] - `calls` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[initGame()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Automation
+#graphify/code #graphify/EXTRACTED #community/gameesmjs

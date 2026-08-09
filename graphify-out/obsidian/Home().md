@@ -1,18 +1,18 @@
 ---
 source_file: "app/page.tsx"
 type: "code"
-community: "Game Data Layer"
-location: "L201"
+community: "Session Storage"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Session_Storage
 ---
 
 # Home()
 
 ## Connections
 - [[getGames()]] - `calls` [EXTRACTED]
-- [[page.tsx_5]] - `contains` [EXTRACTED]
+- [[page.tsx_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Session_Storage

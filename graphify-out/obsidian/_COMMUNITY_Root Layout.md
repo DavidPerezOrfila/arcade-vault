@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Storage State]]
+- 1 edge to [[_COMMUNITY_Storage State_1]]
 
 ## Top bridge nodes
 - [[Video Recording]] - degree 5, connects to 1 community

@@ -1,8 +1,8 @@
 ---
-source_file: "app/games/asteroids/actions.ts"
+source_file: "lib/games/leaderboard.ts"
 type: "code"
 community: "Game Data Layer"
-location: "L37"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # mapToLeaderboardEntry()
 
 ## Connections
-- [[actions.ts_2]] - `contains` [EXTRACTED]
-- [[getAsteroidsLeaderboard()]] - `calls` [EXTRACTED]
+- [[leaderboard.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

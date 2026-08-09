@@ -2,7 +2,7 @@
 source_file: "lib/supabase/server.ts"
 type: "code"
 community: "Game Data Layer"
-location: "L4"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,14 +13,16 @@ tags:
 
 ## Connections
 - [[actions.ts_1]] - `imports` [EXTRACTED]
+- [[fetchScores()]] - `calls` [EXTRACTED]
 - [[games.ts]] - `imports` [EXTRACTED]
 - [[getGameById()]] - `calls` [EXTRACTED]
 - [[getGames()]] - `calls` [EXTRACTED]
 - [[getGamesByCategory()]] - `calls` [EXTRACTED]
-- [[getScores()]] - `calls` [EXTRACTED]
-- [[getScoresByGame()]] - `calls` [EXTRACTED]
 - [[getUserBestScore()]] - `calls` [EXTRACTED]
+- [[leaderboard.ts]] - `imports` [EXTRACTED]
+- [[requireEnv()]] - `calls` [EXTRACTED]
 - [[saveScore()]] - `calls` [EXTRACTED]
+- [[saveScoreAction()]] - `calls` [EXTRACTED]
 - [[scores.ts]] - `imports` [EXTRACTED]
 - [[server.ts]] - `contains` [EXTRACTED]
 

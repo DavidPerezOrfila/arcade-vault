@@ -16,7 +16,7 @@ members: 20
 - [[canvas_2]] - code - resources/started-games/04-arkanoid/game.js
 - [[collideAABB()]] - code - resources/started-games/04-arkanoid/game.js
 - [[ctx_2]] - code - resources/started-games/04-arkanoid/game.js
-- [[draw()_3]] - code - resources/started-games/04-arkanoid/game.js
+- [[draw()_4]] - code - resources/started-games/04-arkanoid/game.js
 - [[drawOverlay()_2]] - code - resources/started-games/04-arkanoid/game.js
 - [[drawPauseOverlay()]] - code - resources/started-games/04-arkanoid/game.js
 - [[explosions]] - code - resources/started-games/04-arkanoid/game.js
@@ -25,7 +25,7 @@ members: 20
 - [[initPaddle()]] - code - resources/started-games/04-arkanoid/game.js
 - [[keys_2]] - code - resources/started-games/04-arkanoid/game.js
 - [[loadLevel()]] - code - resources/started-games/04-arkanoid/game.js
-- [[loop()_3]] - code - resources/started-games/04-arkanoid/game.js
+- [[loop()_4]] - code - resources/started-games/04-arkanoid/game.js
 - [[paddle]] - code - resources/started-games/04-arkanoid/game.js
 - [[update()_2]] - code - resources/started-games/04-arkanoid/game.js
 

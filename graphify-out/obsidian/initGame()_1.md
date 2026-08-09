@@ -1,19 +1,23 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L313"
+community: "game.esm.js"
+location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/gameesmjs
 ---
 
 # initGame()
 
 ## Connections
-- [[game.js]] - `contains` [EXTRACTED]
-- [[spawnAsteroids()_1]] - `calls` [EXTRACTED]
-- [[update()_1]] - `calls` [EXTRACTED]
+- [[attachInput()_1]] - `calls` [EXTRACTED]
+- [[createBoard()]] - `calls` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[loop()_1]] - `indirect_call` [INFERRED]
+- [[randomPiece()]] - `calls` [EXTRACTED]
+- [[spawn()]] - `calls` [EXTRACTED]
+- [[updateHUD()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/gameesmjs

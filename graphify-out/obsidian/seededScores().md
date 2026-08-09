@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/players.ts"
 type: "code"
-community: "Test Generation"
-location: "L12"
+community: "actions.ts"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/actionsts
 ---
 
 # seededScores()
@@ -16,4 +16,4 @@ tags:
 - [[TopPlayersToday.tsx]] - `imports` [EXTRACTED]
 - [[players.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/actionsts

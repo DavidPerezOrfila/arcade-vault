@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/03-tetris/game.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "Playwright Automation"
-location: "L7"
+community: "game.esm.js"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Automation
+  - community/gameesmjs
 ---
 
 # COLORS
 
 ## Connections
-- [[game.js_1]] - `contains` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Automation
+#graphify/code #graphify/EXTRACTED #community/gameesmjs

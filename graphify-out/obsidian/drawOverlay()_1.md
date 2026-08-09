@@ -12,7 +12,7 @@ tags:
 # drawOverlay()
 
 ## Connections
-- [[draw()_1]] - `calls` [EXTRACTED]
+- [[draw()_2]] - `calls` [EXTRACTED]
 - [[game.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference

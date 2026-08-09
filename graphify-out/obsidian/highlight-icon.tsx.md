@@ -12,9 +12,9 @@ tags:
 # highlight-icon.tsx
 
 ## Connections
+- [[HeroSection.tsx]] - `imports_from` [EXTRACTED]
 - [[HighlightIcon()]] - `contains` [EXTRACTED]
 - [[HighlightIconKind]] - `contains` [EXTRACTED]
 - [[HighlightIconProps]] - `contains` [EXTRACTED]
-- [[page.tsx]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Playwright_Config

@@ -12,7 +12,7 @@ tags:
 # drawOverlay()
 
 ## Connections
-- [[draw()_3]] - `calls` [EXTRACTED]
+- [[draw()_4]] - `calls` [EXTRACTED]
 - [[game.js_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Test_Generation

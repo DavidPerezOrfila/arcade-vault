@@ -1,20 +1,21 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L480"
+community: "game.esm.js"
+location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/gameesmjs
 ---
 
 # draw()
 
 ## Connections
-- [[drawHUD()_1]] - `calls` [EXTRACTED]
-- [[drawOverlay()_1]] - `calls` [EXTRACTED]
-- [[game.js]] - `contains` [EXTRACTED]
+- [[drawBlock()]] - `calls` [EXTRACTED]
+- [[drawGrid()]] - `calls` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[ghostY()]] - `calls` [EXTRACTED]
 - [[loop()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/gameesmjs

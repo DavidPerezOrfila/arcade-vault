@@ -12,7 +12,7 @@ tags:
 # HighlightIcon()
 
 ## Connections
+- [[HeroSection.tsx]] - `imports` [EXTRACTED]
 - [[highlight-icon.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Playwright_Config

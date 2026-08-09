@@ -1,17 +1,18 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "Test Generation"
-location: "L44"
+community: "Game Data Layer"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/Game_Data_Layer
 ---
 
 # ScoreRowDb
 
 ## Connections
+- [[scores.ts]] - `imports` [EXTRACTED]
 - [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer

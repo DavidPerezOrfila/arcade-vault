@@ -1,209 +1,26 @@
 import Link from 'next/link';
 import { getGames } from '@/app/data/games';
+import { FeatureIcon } from '@/app/_home/FeatureIcon';
+import { FloatingSilhouettes } from '@/app/_home/FloatingSilhouettes';
+import {
+  FEATURES,
+  MiniCard,
+  PREVIEW_GAMES_COUNT,
+  STATS,
+  STAGGER_FEATURE_MS,
+  STAGGER_STAT_MS
+} from '@/app/_home/homeData';
 import RecentActivity from '@/app/_home/RecentActivity';
 import TopPlayersToday from '@/app/_home/TopPlayersToday';
 import HomeEnhancer from '@/app/_home/HomeEnhancer';
 
 export const dynamic = 'force-dynamic';
 
-function FloatingSilhouettes() {
-  return (
-    <div className='home-silos' aria-hidden='true'>
-      <svg className='silo s1' viewBox='0 0 40 32'>
-        <g fill='#00f5ff'>
-          <rect x='6' y='4' width='4' height='4' />
-          <rect x='30' y='4' width='4' height='4' />
-          <rect x='2' y='8' width='36' height='4' />
-          <rect x='2' y='12' width='4' height='4' />
-          <rect x='14' y='12' width='4' height='4' />
-          <rect x='22' y='12' width='4' height='4' />
-          <rect x='34' y='12' width='4' height='4' />
-          <rect x='2' y='16' width='36' height='4' />
-          <rect x='6' y='20' width='4' height='4' />
-          <rect x='30' y='20' width='4' height='4' />
-        </g>
-      </svg>
-      <svg className='silo s2' viewBox='0 0 32 32'>
-        <g fill='#ff006e'>
-          <rect x='8' y='0' width='16' height='4' />
-          <rect x='4' y='4' width='24' height='4' />
-          <rect x='0' y='8' width='32' height='12' />
-          <rect x='0' y='20' width='6' height='6' />
-          <rect x='10' y='20' width='4' height='6' />
-          <rect x='18' y='20' width='4' height='6' />
-          <rect x='26' y='20' width='6' height='6' />
-        </g>
-      </svg>
-      <svg className='silo s3' viewBox='0 0 32 32'>
-        <g fill='#f5ff00'>
-          <rect x='10' y='2' width='12' height='4' />
-          <rect x='6' y='6' width='20' height='4' />
-          <rect x='4' y='10' width='6' height='6' />
-          <rect x='22' y='10' width='6' height='6' />
-          <rect x='2' y='14' width='28' height='10' />
-          <rect x='6' y='24' width='4' height='4' />
-          <rect x='14' y='24' width='4' height='4' />
-          <rect x='22' y='24' width='4' height='4' />
-        </g>
-      </svg>
-      <svg className='silo s4' viewBox='0 0 24 24'>
-        <g fill='#00ff88'>
-          <rect x='10' y='0' width='4' height='24' />
-          <rect x='0' y='10' width='24' height='4' />
-          <rect
-            x='6'
-            y='6'
-            width='12'
-            height='12'
-            fill='none'
-            stroke='#00ff88'
-            strokeWidth='2'
-          />
-        </g>
-      </svg>
-      <svg className='silo s5' viewBox='0 0 36 24'>
-        <g fill='#aa00ff'>
-          <rect x='14' y='2' width='8' height='4' />
-          <rect x='10' y='6' width='16' height='4' />
-          <rect x='4' y='10' width='28' height='4' />
-          <rect x='0' y='14' width='36' height='4' />
-          <rect x='6' y='18' width='4' height='2' />
-          <rect x='16' y='18' width='4' height='2' />
-          <rect x='26' y='18' width='4' height='2' />
-        </g>
-      </svg>
-      <svg className='silo s6' viewBox='0 0 20 20'>
-        <g fill='#ffcf3a'>
-          <rect x='6' y='0' width='8' height='2' />
-          <rect x='2' y='2' width='16' height='2' />
-          <rect x='0' y='4' width='20' height='12' />
-          <rect x='2' y='16' width='16' height='2' />
-          <rect x='6' y='18' width='8' height='2' />
-          <rect x='8' y='4' width='4' height='12' fill='#0a0a0f' />
-        </g>
-      </svg>
-      <svg className='silo s7' viewBox='0 0 24 22'>
-        <g fill='#ff3060'>
-          <rect x='2' y='2' width='6' height='2' />
-          <rect x='16' y='2' width='6' height='2' />
-          <rect x='0' y='4' width='10' height='4' />
-          <rect x='14' y='4' width='10' height='4' />
-          <rect x='0' y='8' width='24' height='4' />
-          <rect x='2' y='12' width='20' height='2' />
-          <rect x='4' y='14' width='16' height='2' />
-          <rect x='6' y='16' width='12' height='2' />
-          <rect x='8' y='18' width='8' height='2' />
-          <rect x='10' y='20' width='4' height='2' />
-        </g>
-      </svg>
-      <svg className='silo s8' viewBox='0 0 24 24'>
-        <g fill='#00d4ff'>
-          <rect x='8' y='2' width='8' height='6' />
-          <rect x='2' y='8' width='20' height='8' />
-          <rect x='8' y='16' width='8' height='6' />
-          <rect x='11' y='6' width='2' height='2' fill='#0a0a0f' />
-          <rect x='11' y='16' width='2' height='2' fill='#0a0a0f' />
-          <rect x='4' y='11' width='2' height='2' fill='#0a0a0f' />
-          <rect x='18' y='11' width='2' height='2' fill='#0a0a0f' />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function FeatureIcon({ kind }: { kind: string }) {
-  const C = 'currentColor';
-  if (kind === 'GAMEPAD') {
-    return (
-      <svg className='ft-icon' viewBox='0 0 16 16'>
-        <g fill={C}>
-          <rect x='2' y='6' width='12' height='6' />
-          <rect x='0' y='8' width='2' height='4' />
-          <rect x='14' y='8' width='2' height='4' />
-          <rect x='3' y='8' width='2' height='2' />
-          <rect x='2' y='9' width='4' height='0.5' />
-          <rect x='11' y='7' width='1.5' height='1.5' />
-          <rect x='11' y='10' width='1.5' height='1.5' />
-        </g>
-      </svg>
-    );
-  }
-  if (kind === 'FREE') {
-    return (
-      <svg className='ft-icon' viewBox='0 0 16 16'>
-        <g fill={C}>
-          <rect
-            x='3'
-            y='3'
-            width='10'
-            height='10'
-            fill='none'
-            stroke={C}
-            strokeWidth='1.5'
-          />
-          <rect x='5' y='6' width='1.5' height='4' />
-          <rect x='5' y='6' width='4' height='1.5' />
-          <rect x='5' y='8' width='3' height='1' />
-          <rect x='10' y='6' width='1.5' height='4' />
-        </g>
-      </svg>
-    );
-  }
-  if (kind === 'TROPHY') {
-    return (
-      <svg className='ft-icon' viewBox='0 0 16 16'>
-        <g fill={C}>
-          <rect x='3' y='2' width='10' height='2' />
-          <rect x='3' y='2' width='2' height='6' />
-          <rect x='11' y='2' width='2' height='6' />
-          <rect x='5' y='8' width='6' height='2' />
-          <rect x='7' y='10' width='2' height='3' />
-          <rect x='5' y='13' width='6' height='1.5' />
-          <rect x='1' y='3' width='2' height='3' />
-          <rect x='13' y='3' width='2' height='3' />
-        </g>
-      </svg>
-    );
-  }
-  if (kind === 'ROCKET') {
-    return (
-      <svg className='ft-icon' viewBox='0 0 16 16'>
-        <g fill={C}>
-          <rect x='7' y='1' width='2' height='2' />
-          <rect x='6' y='3' width='4' height='2' />
-          <rect x='5' y='5' width='6' height='6' />
-          <rect x='4' y='11' width='2' height='2' />
-          <rect x='10' y='11' width='2' height='2' />
-          <rect x='7' y='6' width='2' height='2' fill='#0a0a0f' />
-          <rect x='6' y='13' width='1' height='2' />
-          <rect x='9' y='13' width='1' height='2' />
-        </g>
-      </svg>
-    );
-  }
-  return null;
-}
-
-function MiniCard({ game }: { game: Awaited<ReturnType<typeof getGames>>[0] }) {
-  return (
-    <Link href={`/games/${game.id}`} className='mini-card'>
-      <div className='mini-cover'>
-        <div className={`cover-bg ${game.cover}`} />
-      </div>
-      <div className='mini-meta'>
-        <div className='mini-title'>{game.title}</div>
-        <div className='mini-cat'>{game.cat}</div>
-      </div>
-    </Link>
-  );
-}
-
 export default async function Home() {
   const games = await getGames();
 
   return (
     <div className='home fade-in'>
-      {/* HERO */}
       <section className='home-hero'>
         <FloatingSilhouettes />
         <div className='home-hero-inner'>
@@ -235,7 +52,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* WHY */}
       <section className='home-section reveal'>
         <div className='section-head'>
           <div className='kicker pixel neon-magenta'>{'// 01'}</div>
@@ -243,46 +59,20 @@ export default async function Home() {
           <div className='section-rule' />
         </div>
         <div className='feature-grid'>
-          {[
-            {
-              i: 'GAMEPAD',
-              t: 'JUEGOS CLÁSICOS',
-              d: 'Arkanoid, Tetris, Snake y muchos más. Los mejores arcades de todos los tiempos en un solo lugar.',
-              c: 'cyan'
-            },
-            {
-              i: 'FREE',
-              t: '100% GRATIS',
-              d: 'Sin suscripciones, sin pagos ocultos. Todos los juegos disponibles de forma gratuita.',
-              c: 'yellow'
-            },
-            {
-              i: 'TROPHY',
-              t: 'LADDER BOARDS',
-              d: 'Compite con jugadores de todo el mundo. Escala el ranking y demuestra quién es el mejor.',
-              c: 'magenta'
-            },
-            {
-              i: 'ROCKET',
-              t: 'SIEMPRE CRECIENDO',
-              d: 'Agregamos nuevos juegos constantemente. Vuelve seguido, siempre habrá algo nuevo que jugar.',
-              c: 'green'
-            }
-          ].map((f, i) => (
+          {FEATURES.map((f, i) => (
             <div
-              key={i}
-              className={`feature-card ${f.c}`}
-              style={{ transitionDelay: `${i * 80}ms` }}
+              key={f.id}
+              className={`feature-card ${f.color}`}
+              style={{ transitionDelay: `${i * STAGGER_FEATURE_MS}ms` }}
             >
-              <FeatureIcon kind={f.i} />
-              <div className='ft-title pixel'>{f.t}</div>
-              <div className='ft-desc'>{f.d}</div>
+              <FeatureIcon kind={f.id} />
+              <div className='ft-title pixel'>{f.title}</div>
+              <div className='ft-desc'>{f.desc}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* GAMES PREVIEW */}
       <section className='home-section reveal'>
         <div className='section-head'>
           <div className='kicker pixel neon-cyan'>{'// 02'}</div>
@@ -290,7 +80,7 @@ export default async function Home() {
           <div className='section-rule' />
         </div>
         <div className='mini-rail'>
-          {games.slice(0, 6).map((g) => (
+          {games.slice(0, PREVIEW_GAMES_COUNT).map((g) => (
             <MiniCard key={g.id} game={g} />
           ))}
         </div>
@@ -301,28 +91,22 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* STATS */}
       <section className='home-stats reveal'>
         <div className='stats-inner'>
-          {[
-            { n: '12+', u: 'JUEGOS', s: 'Y CONTANDO' },
-            { n: 'MILES', u: 'DE PARTIDAS', s: 'JUGADAS CADA DÍA' },
-            { n: 'GLOBAL', u: 'RANKING', s: 'COMPITE CON EL MUNDO' }
-          ].map((st, i) => (
+          {STATS.map((st, i) => (
             <div
-              key={i}
+              key={st.value + st.unit}
               className='stat-block'
-              style={{ transitionDelay: `${i * 90}ms` }}
+              style={{ transitionDelay: `${i * STAGGER_STAT_MS}ms` }}
             >
-              <div className='stat-n neon-yellow'>{st.n}</div>
-              <div className='stat-u pixel'>{st.u}</div>
-              <div className='stat-s'>{st.s}</div>
+              <div className='stat-n neon-yellow'>{st.value}</div>
+              <div className='stat-u pixel'>{st.unit}</div>
+              <div className='stat-s'>{st.sub}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* RECENT ACTIVITY / LEADERBOARD */}
       <section className='home-section reveal'>
         <div className='section-head'>
           <div className='kicker pixel neon-yellow'>{'// 03'}</div>
@@ -335,7 +119,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* PRICING */}
       <section className='home-section reveal'>
         <div className='section-head'>
           <div className='kicker pixel neon-green'>{'// 04'}</div>
@@ -401,7 +184,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
       <section className='home-final reveal'>
         <h2 className='final-title pixel'>¿LISTO PARA JUGAR</h2>
         <Link href='/games' className='btn xl pulse final-cta'>

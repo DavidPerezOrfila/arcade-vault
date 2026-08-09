@@ -1,19 +1,21 @@
 ---
 source_file: "app/_home/TopPlayersToday.tsx"
 type: "code"
-community: "Test Generation"
-location: "L9"
+community: "actions.ts"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/actionsts
 ---
 
 # TopPlayersToday()
 
 ## Connections
 - [[TopPlayersToday.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx_5]] - `imports` [EXTRACTED]
+- [[formatScore()]] - `calls` [EXTRACTED]
+- [[page.tsx_6]] - `imports` [EXTRACTED]
 - [[seededScores()]] - `calls` [EXTRACTED]
+- [[topRankClass()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/actionsts

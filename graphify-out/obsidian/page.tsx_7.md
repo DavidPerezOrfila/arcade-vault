@@ -1,20 +1,21 @@
 ---
-source_file: "app/salon/page.tsx"
+source_file: "app/player/[id]/page.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "Session Storage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Session_Storage
 ---
 
 # page.tsx
 
 ## Connections
-- [[SalonClient.tsx]] - `imports_from` [EXTRACTED]
-- [[SalonPage()]] - `contains` [EXTRACTED]
+- [[PlayerClient.tsx]] - `imports_from` [EXTRACTED]
+- [[PlayerPage()]] - `contains` [EXTRACTED]
+- [[PlayerPageProps]] - `contains` [EXTRACTED]
 - [[games.ts]] - `imports_from` [EXTRACTED]
-- [[getGames()]] - `imports` [EXTRACTED]
+- [[getGameById()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Session_Storage

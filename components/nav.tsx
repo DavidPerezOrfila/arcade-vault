@@ -4,7 +4,17 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { clearUser, getUser } from '@/app/data/storage';
+import { createSupabaseBrowserClient } from '@/lib/supabase/client';
 import type { User } from '@/app/data/types';
+
+// Fuente única de links del nav: desktop (mayúsculas) y panel mobile comparten
+// el mismo href; isActive cubre el prefijo /games y /player.
+const NAV_LINKS = [
+  { href: '/', desktopLabel: 'INICIO', mobileLabel: 'Inicio' },
+  { href: '/games', desktopLabel: 'BIBLIOTECA', mobileLabel: 'Biblioteca' },
+  { href: '/salon', desktopLabel: 'SALÓN', mobileLabel: 'Salón de la Fama' },
+  { href: '/about', desktopLabel: 'ACERCA DE', mobileLabel: 'Acerca de' }
+] as const;
 
 export default function Nav() {
   const pathname = usePathname();
@@ -30,6 +40,9 @@ export default function Nav() {
   };
 
   const handleSignOut = () => {
+    // La sesión real de Supabase Auth llega con el flujo de auth; hoy signOut
+    // es idempotente (sin sesión no-op) y clearUser limpia localStorage.
+    void createSupabaseBrowserClient().auth.signOut();
     clearUser();
     setUser(null);
   };
@@ -44,18 +57,15 @@ export default function Nav() {
           </span>
         </Link>
         <div className='links'>
-          <Link href='/' className={isActive('/') ? 'active' : ''}>
-            INICIO
-          </Link>
-          <Link href='/games' className={isActive('/games') ? 'active' : ''}>
-            BIBLIOTECA
-          </Link>
-          <Link href='/salon' className={isActive('/salon') ? 'active' : ''}>
-            SALÓN
-          </Link>
-          <Link href='/about' className={isActive('/about') ? 'active' : ''}>
-            ACERCA DE
-          </Link>
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={isActive(link.href) ? 'active' : ''}
+            >
+              {link.desktopLabel}
+            </Link>
+          ))}
         </div>
         <div className='spacer' />
         <div className='coin-counter'>
@@ -85,40 +95,17 @@ export default function Nav() {
         onClick={() => setMobileOpen(false)}
       />
       <aside className={`av-mobile-panel${mobileOpen ? 'open' : ''}`}>
-        <div
-          className='pixel neon-cyan'
-          style={{ fontSize: 11, marginBottom: 16 }}
-        >
-          MENÚ
-        </div>
-        <Link
-          href='/'
-          className={isActive('/') ? 'active' : ''}
-          onClick={() => setMobileOpen(false)}
-        >
-          Inicio
-        </Link>
-        <Link
-          href='/games'
-          className={isActive('/games') ? 'active' : ''}
-          onClick={() => setMobileOpen(false)}
-        >
-          Biblioteca
-        </Link>
-        <Link
-          href='/salon'
-          className={isActive('/salon') ? 'active' : ''}
-          onClick={() => setMobileOpen(false)}
-        >
-          Salón de la Fama
-        </Link>
-        <Link
-          href='/about'
-          className={isActive('/about') ? 'active' : ''}
-          onClick={() => setMobileOpen(false)}
-        >
-          Acerca de
-        </Link>
+        <div className='pixel neon-cyan mb-4 text-[11px]'>MENÚ</div>
+        {NAV_LINKS.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={isActive(link.href) ? 'active' : ''}
+            onClick={() => setMobileOpen(false)}
+          >
+            {link.mobileLabel}
+          </Link>
+        ))}
         <Link
           href='/auth'
           className={isActive('/auth') ? 'active' : ''}
@@ -126,15 +113,8 @@ export default function Nav() {
         >
           {user ? 'Cuenta' : 'Iniciar Sesión'}
         </Link>
-        <div style={{ flex: 1 }} />
-        <div
-          className='pixel'
-          style={{
-            fontSize: 9,
-            color: 'var(--ink-faint)',
-            letterSpacing: '0.16em'
-          }}
-        >
+        <div className='flex-1' />
+        <div className='pixel text-ink-faint text-[9px] tracking-[0.16em]'>
           CRÉDITOS · 03
         </div>
       </aside>

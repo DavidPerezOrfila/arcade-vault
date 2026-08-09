@@ -2,7 +2,7 @@
 source_file: "app/about/page.tsx"
 type: "code"
 community: "Playwright Config"
-location: "L9"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED

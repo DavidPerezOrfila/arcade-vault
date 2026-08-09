@@ -2,7 +2,7 @@
 source_file: "app/auth/page.tsx"
 type: "code"
 community: "Test Generation"
-location: "L7"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED

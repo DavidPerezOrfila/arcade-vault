@@ -1,12 +1,12 @@
 ---
 source_file: "app/_home/RecentActivity.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "RecentActivity.tsx"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/RecentActivitytsx
 ---
 
 # tone()
@@ -15,4 +15,4 @@ tags:
 - [[RecentActivity()]] - `calls` [EXTRACTED]
 - [[RecentActivity.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/RecentActivitytsx

@@ -1,17 +1,18 @@
 ---
-source_file: "app/page.tsx"
+source_file: "app/_home/homeData.tsx"
 type: "code"
-community: "Game Data Layer"
-location: "L187"
+community: "Local Storage"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/Local_Storage
 ---
 
 # MiniCard()
 
 ## Connections
-- [[page.tsx_5]] - `contains` [EXTRACTED]
+- [[homeData.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_6]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/Local_Storage

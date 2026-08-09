@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[GAMES]] - `references` [EXTRACTED]
 - [[home.jsx]] - `contains` [EXTRACTED]
-- [[useReveal()]] - `calls` [EXTRACTED]
+- [[useReveal()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Home_Page_UI

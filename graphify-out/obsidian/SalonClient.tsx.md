@@ -1,19 +1,23 @@
 ---
 source_file: "app/salon/SalonClient.tsx"
 type: "code"
-community: "Game Data Layer"
+community: "actions.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/actionsts
 ---
 
 # SalonClient.tsx
 
 ## Connections
-- [[Game_2]] - `contains` [EXTRACTED]
-- [[LeaderboardRow_1]] - `contains` [EXTRACTED]
+- [[Game_1]] - `contains` [EXTRACTED]
+- [[LeaderboardRow_3]] - `contains` [EXTRACTED]
+- [[LeaderboardTable()]] - `imports` [EXTRACTED]
+- [[LeaderboardTable.tsx]] - `imports_from` [EXTRACTED]
+- [[Podium()]] - `imports` [EXTRACTED]
+- [[Podium.tsx]] - `imports_from` [EXTRACTED]
 - [[SalonClient()]] - `contains` [EXTRACTED]
 - [[SalonClientProps]] - `contains` [EXTRACTED]
 - [[actions.ts_1]] - `imports_from` [EXTRACTED]
@@ -21,6 +25,6 @@ tags:
 - [[createSupabaseBrowserClient()]] - `imports` [EXTRACTED]
 - [[getSalonLeaderboard()]] - `imports` [EXTRACTED]
 - [[getUserBestScore()]] - `imports` [EXTRACTED]
-- [[page.tsx_7]] - `imports_from` [EXTRACTED]
+- [[page.tsx_8]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/actionsts

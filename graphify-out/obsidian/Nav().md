@@ -2,7 +2,7 @@
 source_file: "components/nav.tsx"
 type: "code"
 community: "Test Generation"
-location: "L9"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[clearUser()]] - `calls` [EXTRACTED]
+- [[createSupabaseBrowserClient()]] - `calls` [EXTRACTED]
 - [[getUser()]] - `calls` [EXTRACTED]
 - [[nav.tsx]] - `contains` [EXTRACTED]
 - [[setUser()]] - `calls` [EXTRACTED]
