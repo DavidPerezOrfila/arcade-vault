@@ -1,18 +1,18 @@
 ---
 source_file: "app/about/RevealDivider.tsx"
 type: "code"
-community: "Playwright Config"
+community: "about/page.tsx"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Config
+  - community/about/pagetsx
 ---
 
 # RevealDivider()
 
 ## Connections
 - [[RevealDivider.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx]] - `imports` [EXTRACTED]
+- [[aboutpage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/about/pagetsx

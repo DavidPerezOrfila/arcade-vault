@@ -1,11 +1,11 @@
 ---
 source_file: "specs/03-about-page-resend.md"
 type: "document"
-community: "Project Architecture"
+community: "About Page with Resend Spec (03)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Architecture
+  - community/About_Page_with_Resend_Spec_03
 ---
 
 # About Page with Resend Spec (03)
@@ -26,4 +26,4 @@ tags:
 - [[Zod Dual Validation Decision]] - `rationale_for` [EXTRACTED]
 - [[useReveal Hook (IntersectionObserver Animations)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Architecture
+#graphify/document #graphify/EXTRACTED #community/About_Page_with_Resend_Spec_03

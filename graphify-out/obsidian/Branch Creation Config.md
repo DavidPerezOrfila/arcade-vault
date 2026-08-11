@@ -1,11 +1,11 @@
 ---
 source_file: "specs/.spec-config.yml"
 type: "document"
-community: "Spec Skills Config"
+community: "/spec-impl Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec_Skills_Config
+  - community//spec-impl_Skill
 ---
 
 # Branch Creation Config
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[spec-impl Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec_Skills_Config
+#graphify/document #graphify/EXTRACTED #community//spec-impl_Skill

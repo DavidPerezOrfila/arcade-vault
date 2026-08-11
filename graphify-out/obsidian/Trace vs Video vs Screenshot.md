@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/tracing.md"
 type: "document"
-community: "Playwright Tracing"
+community: "Tracing"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Tracing
+  - community/Tracing
 ---
 
 # Trace vs Video vs Screenshot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tracing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing
+#graphify/document #graphify/EXTRACTED #community/Tracing

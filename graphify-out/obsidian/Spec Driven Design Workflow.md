@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "concept"
-community: "Project Architecture"
+community: "About Page with Resend Spec (03)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Project_Architecture
+  - community/About_Page_with_Resend_Spec_03
 ---
 
 # Spec Driven Design Workflow
@@ -15,4 +15,4 @@ tags:
 - [[Home Page Spec (02)]] - `references` [INFERRED]
 - [[Klerithfernando-skills Reference]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Project_Architecture
+#graphify/concept #graphify/INFERRED #community/About_Page_with_Resend_Spec_03

@@ -1,14 +1,14 @@
 ---
 source_file: "eslint.config.mjs"
 type: "code"
-community: "ESLint Config"
+community: "eslint.config.mjs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESLint_Config
+  - community/eslintconfigmjs
 ---
 
 # eslint.config.mjs
 
-#graphify/code #graphify/EXTRACTED #community/ESLint_Config
+#graphify/code #graphify/EXTRACTED #community/eslintconfigmjs

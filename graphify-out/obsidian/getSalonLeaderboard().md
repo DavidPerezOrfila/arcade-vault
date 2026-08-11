@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/actions.ts"
 type: "code"
-community: "Game Data Layer"
+community: "app/page.tsx"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/app/pagetsx
 ---
 
 # getSalonLeaderboard()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SalonClient()]] - `calls` [EXTRACTED]
 - [[SalonClient.tsx]] - `imports` [EXTRACTED]
-- [[actions.ts_1]] - `contains` [EXTRACTED]
+- [[dataactions.ts]] - `contains` [EXTRACTED]
 - [[getScoresByGame()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

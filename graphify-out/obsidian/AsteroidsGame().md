@@ -1,19 +1,20 @@
 ---
 source_file: "components/games/asteroids/AsteroidsGame.tsx"
 type: "code"
-community: "Cookie Management"
-location: "L17"
+community: "CaidaGame.tsx"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # AsteroidsGame()
 
 ## Connections
 - [[AsteroidsGame.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx_3]] - `imports` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `imports_from` [EXTRACTED]
+- [[asteroidspage.tsx]] - `imports` [EXTRACTED]
 - [[useArcadeGame()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

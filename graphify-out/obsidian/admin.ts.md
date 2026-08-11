@@ -1,12 +1,12 @@
 ---
 source_file: "lib/supabase/admin.ts"
 type: "code"
-community: "._game.js"
+community: "leaderboard.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_gamejs
+  - community/leaderboardts
 ---
 
 # admin.ts
@@ -16,4 +16,4 @@ tags:
 - [[env.ts]] - `imports_from` [EXTRACTED]
 - [[requireEnv()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_gamejs
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

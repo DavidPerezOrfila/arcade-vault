@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/auth.jsx"
 type: "code"
-community: "Auth Template"
+community: "auth.jsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth_Template
+  - community/authjsx
 ---
 
 # Auth()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth_Template
+#graphify/code #graphify/EXTRACTED #community/authjsx

@@ -1,12 +1,12 @@
 ---
 source_file: "tsconfig.json"
 type: "code"
-community: "TypeScript Config"
+community: "compilerOptions"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Config
+  - community/compilerOptions
 ---
 
 # lib
@@ -17,4 +17,4 @@ tags:
 - [[dom.iterable]] - `extends` [EXTRACTED]
 - [[esnext]] - `extends` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

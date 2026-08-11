@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "About Page & Contact"
+community: "validate.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/validatepy
 ---
 
 # Path
@@ -14,4 +14,4 @@ tags:
 - [[benchmark_pair()]] - `references` [EXTRACTED]
 - [[main()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/validatepy

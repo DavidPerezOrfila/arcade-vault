@@ -1,0 +1,32 @@
+---
+type: community
+members: 15
+---
+
+# Arquitectura
+
+**Members:** 15 nodes
+
+## Members
+- [[04-arkanoidCLAUDE]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[04-arkanoidCLAUDE_1]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[API de `spritesheet.js`]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Archivos principales]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Arquitectura]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Assets]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Ciclo de vida de una spec]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Comandos]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Desarrollo]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Estado del juego (en `game.js`)]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Estructura de una spec (`specsNN-slug.md`)]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Flujo de trabajo spec-driven]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Proyecto]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Specs existentes]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[Sprites disponibles]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Arquitectura
+SORT file.name ASC
+```

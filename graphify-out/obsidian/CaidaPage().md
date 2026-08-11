@@ -1,17 +1,17 @@
 ---
 source_file: "app/games/caida/page.tsx"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # CaidaPage()
 
 ## Connections
-- [[page.tsx_4]] - `contains` [EXTRACTED]
+- [[caidapage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

@@ -1,17 +1,20 @@
 ---
-source_file: ".github/instructions/mermaid.instructions.md"
+source_file: ".claude/skills/integrate-arcade-game/SKILL.md"
 type: "document"
-community: "Mermaid AI Skills"
-location: "L9"
+community: "Integrate an Arcade Vault game"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mermaid_AI_Skills
+  - community/Integrate_an_Arcade_Vault_game
 ---
 
 # Workflow
 
 ## Connections
-- [[Mermaid AI Skills]] - `contains` [EXTRACTED]
+- [[Fase A — Planificar (método spec)]] - `contains` [EXTRACTED]
+- [[Fase B — Implementar (método spec-impl)]] - `contains` [EXTRACTED]
+- [[Fase C — Receta técnica]] - `contains` [EXTRACTED]
+- [[Integrate an Arcade Vault game]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mermaid_AI_Skills
+#graphify/document #graphify/EXTRACTED #community/Integrate_an_Arcade_Vault_game

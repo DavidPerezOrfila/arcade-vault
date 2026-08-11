@@ -1,21 +1,27 @@
 ---
-source_file: "resources/started-games/04-arkanoid/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "Test Generation"
-location: "L117"
+community: "asteroids/game.esm.js"
+location: "L373"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/asteroids/gameesmjs
 ---
 
 # update()
 
 ## Connections
-- [[collideAABB()]] - `calls` [EXTRACTED]
-- [[game.js_2]] - `contains` [EXTRACTED]
-- [[initBall()]] - `calls` [EXTRACTED]
-- [[loadLevel()]] - `calls` [EXTRACTED]
-- [[loop()_4]] - `calls` [EXTRACTED]
+- [[dot-reset()_1]] - `calls` [EXTRACTED]
+- [[dot-split()_1]] - `calls` [EXTRACTED]
+- [[dot-tryShoot()_1]] - `calls` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
+- [[dist()_1]] - `calls` [EXTRACTED]
+- [[explode()_1]] - `calls` [EXTRACTED]
+- [[initGameState()]] - `calls` [EXTRACTED]
+- [[killShip()_1]] - `calls` [EXTRACTED]
+- [[loop()_2]] - `calls` [EXTRACTED]
+- [[nextLevel()_1]] - `calls` [EXTRACTED]
+- [[pressed()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

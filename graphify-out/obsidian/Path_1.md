@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "Games Page"
+community: "validate.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/validatepy
 ---
 
 # Path
 
 ## Connections
-- [[backup_dir_for()]] - `references` [EXTRACTED]
-- [[compress_file()]] - `references` [EXTRACTED]
-- [[is_sensitive_path()]] - `references` [EXTRACTED]
+- [[read_file()]] - `references` [EXTRACTED]
+- [[validate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/validatepy

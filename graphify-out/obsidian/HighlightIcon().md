@@ -1,18 +1,17 @@
 ---
-source_file: "app/about/highlight-icon.tsx"
+source_file: "resources/templates/home-about/about.jsx"
 type: "code"
-community: "Playwright Config"
-location: "L7"
+community: "about.jsx"
+location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Config
+  - community/aboutjsx
 ---
 
 # HighlightIcon()
 
 ## Connections
-- [[HeroSection.tsx]] - `imports` [EXTRACTED]
-- [[highlight-icon.tsx]] - `contains` [EXTRACTED]
+- [[about.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/aboutjsx

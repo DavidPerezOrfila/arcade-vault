@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/ContactForm.tsx"
 type: "code"
-community: "Playwright Config"
+community: "about/page.tsx"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Config
+  - community/about/pagetsx
 ---
 
 # FormFields
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContactForm.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/about/pagetsx

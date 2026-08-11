@@ -1,17 +1,17 @@
 ---
 source_file: "graft/resources/started-games/03-tetris/game.md"
 type: "document"
-community: "game.md"
+community: "03-tetris/game.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gamemd
+  - community/03-tetris/gamemd
 ---
 
 # resources/started-games/03-tetris/game.js
 
 ## Connections
-- [[game_3]] - `contains` [EXTRACTED]
+- [[03-tetrisgame]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gamemd
+#graphify/document #graphify/EXTRACTED #community/03-tetris/gamemd

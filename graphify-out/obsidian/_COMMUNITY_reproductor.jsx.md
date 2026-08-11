@@ -1,20 +1,15 @@
 ---
 type: community
-members: 7
+members: 2
 ---
 
 # reproductor.jsx
 
-**Members:** 7 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Contexto del workspace]] - document - NOTES.md
-- [[Herramientas y canales]] - document - NOTES.md
-- [[Loops observados (patrones recurrentes delegables)]] - document - NOTES.md
-- [[NOTES]] - document - NOTES.md
-- [[NOTES.md — mundo del usuario]] - document - NOTES.md
-- [[Pendiente de entrevista]] - document - NOTES.md
-- [[Terminología]] - document - NOTES.md
+- [[GamePlayer()]] - code - resources/templates/reproductor.jsx
+- [[reproductor.jsx]] - code - resources/templates/reproductor.jsx
 
 ## Live Query (requires Dataview plugin)
 

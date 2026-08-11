@@ -1,17 +1,17 @@
 ---
 source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "E2E Test"
-location: "L11"
+community: "asteroids/game.esm.js"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/E2E_Test
+  - community/asteroids/gameesmjs
 ---
 
 # gameState
 
 ## Connections
-- [[game.esm.js]] - `contains` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/E2E_Test
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

@@ -1,20 +1,20 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L38"
+community: "asteroids/game.esm.js"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/asteroids/gameesmjs
 ---
 
 # Bullet
 
 ## Connections
-- [[.constructor()_5]] - `method` [EXTRACTED]
-- [[.draw()_5]] - `method` [EXTRACTED]
-- [[.update()_5]] - `method` [EXTRACTED]
-- [[game.js]] - `contains` [EXTRACTED]
+- [[dot-constructor()_6]] - `method` [EXTRACTED]
+- [[dot-draw()_6]] - `method` [EXTRACTED]
+- [[dot-update()_6]] - `method` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

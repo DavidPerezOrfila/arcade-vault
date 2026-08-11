@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/benchmark.py"
 type: "code"
-community: "About Page & Contact"
+community: "validate.py"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/validatepy
 ---
 
 # count_tokens()
@@ -15,4 +15,4 @@ tags:
 - [[benchmark.py]] - `contains` [EXTRACTED]
 - [[benchmark_pair()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/validatepy

@@ -12,6 +12,6 @@ tags:
 # resources/started-games/04-arkanoid/levels.js
 
 ## Connections
-- [[levels_1]] - `contains` [EXTRACTED]
+- [[levels]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/levelsmd

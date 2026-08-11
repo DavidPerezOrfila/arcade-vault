@@ -1,12 +1,12 @@
 ---
 source_file: "resources/started-games/04-arkanoid/.agents/skills/spec/SKILL.md"
 type: "document"
-community: "MVP Spec"
+community: "/spec — Guided spec designer"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MVP_Spec
+  - community//spec__Guided_spec_designer
 ---
 
 # Command flow
@@ -18,4 +18,4 @@ tags:
 - [[Phase 3 — Develop the spec section by section]] - `contains` [EXTRACTED]
 - [[Phase 4 — Save the spec]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MVP_Spec
+#graphify/document #graphify/EXTRACTED #community//spec__Guided_spec_designer

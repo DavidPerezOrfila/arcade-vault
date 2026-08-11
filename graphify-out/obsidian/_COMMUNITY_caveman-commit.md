@@ -8,17 +8,17 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[Auto-Clarity]] - document - .agents/skills/caveman-commit/SKILL.md
-- [[Boundaries]] - document - .agents/skills/caveman-commit/SKILL.md
-- [[Example output]] - document - .agents/skills/caveman-commit/README.md
+- [[Auto-Clarity_1]] - document - .agents/skills/caveman-commit/SKILL.md
+- [[Boundaries_2]] - document - .agents/skills/caveman-commit/SKILL.md
+- [[Example output_2]] - document - .agents/skills/caveman-commit/README.md
 - [[Examples]] - document - .agents/skills/caveman-commit/SKILL.md
-- [[How to invoke_1]] - document - .agents/skills/caveman-commit/README.md
-- [[README_1]] - document - .agents/skills/caveman-commit/README.md
-- [[Rules]] - document - .agents/skills/caveman-commit/SKILL.md
-- [[SKILL_1]] - document - .agents/skills/caveman-commit/SKILL.md
-- [[See also_1]] - document - .agents/skills/caveman-commit/README.md
-- [[What it does_1]] - document - .agents/skills/caveman-commit/README.md
+- [[How to invoke_3]] - document - .agents/skills/caveman-commit/README.md
+- [[Rules_2]] - document - .agents/skills/caveman-commit/SKILL.md
+- [[See also_3]] - document - .agents/skills/caveman-commit/README.md
+- [[What it does_3]] - document - .agents/skills/caveman-commit/README.md
 - [[caveman-commit]] - document - .agents/skills/caveman-commit/README.md
+- [[caveman-commitREADME]] - document - .agents/skills/caveman-commit/README.md
+- [[caveman-commitSKILL]] - document - .agents/skills/caveman-commit/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

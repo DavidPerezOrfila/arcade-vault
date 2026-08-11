@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/caveman-compress/SECURITY.md"
 type: "document"
-community: "._02-animacion-explosion-bloques.md"
+community: "caveman-compress/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_02-animacion-explosion-bloquesmd
+  - community/caveman-compress/READMEmd
 ---
 
 # Security
 
 ## Connections
-- [[SECURITY_1]] - `contains` [EXTRACTED]
 - [[Snyk High Risk Rating]] - `contains` [EXTRACTED]
+- [[caveman-compressSECURITY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_02-animacion-explosion-bloquesmd
+#graphify/document #graphify/EXTRACTED #community/caveman-compress/READMEmd

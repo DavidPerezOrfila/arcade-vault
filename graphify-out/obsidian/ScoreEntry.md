@@ -1,19 +1,19 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "Game Data Layer"
+community: "leaderboard.ts"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/leaderboardts
 ---
 
 # ScoreEntry
 
 ## Connections
+- [[datatypes.ts]] - `contains` [EXTRACTED]
 - [[leaderboard.ts]] - `imports` [EXTRACTED]
 - [[scores.ts]] - `imports` [EXTRACTED]
-- [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

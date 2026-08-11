@@ -1,12 +1,12 @@
 ---
 source_file: "resources/started-games/03-tetris/README.md"
 type: "document"
-community: "Playwright Tracing"
+community: "Tetris"
 location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Tracing
+  - community/Tetris
 ---
 
 # Estructura del proyecto
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tetris]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing
+#graphify/document #graphify/EXTRACTED #community/Tetris

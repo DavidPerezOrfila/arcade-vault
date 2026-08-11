@@ -1,17 +1,17 @@
 ---
 source_file: "graft/app/data/schema.md"
 type: "document"
-community: "schema.md"
+community: "data/schema.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/schemamd
+  - community/data/schemamd
 ---
 
 # app/data/schema.ts
 
 ## Connections
-- [[schema_1]] - `contains` [EXTRACTED]
+- [[dataschema]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/schemamd
+#graphify/document #graphify/EXTRACTED #community/data/schemamd

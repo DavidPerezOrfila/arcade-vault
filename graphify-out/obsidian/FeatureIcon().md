@@ -1,18 +1,17 @@
 ---
-source_file: "app/_home/FeatureIcon.tsx"
+source_file: "resources/templates/home-about/home.jsx"
 type: "code"
-community: "Local Storage"
-location: "L3"
+community: "home.jsx"
+location: "L493"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local_Storage
+  - community/homejsx
 ---
 
 # FeatureIcon()
 
 ## Connections
-- [[FeatureIcon.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx_6]] - `imports` [EXTRACTED]
+- [[home.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local_Storage
+#graphify/code #graphify/EXTRACTED #community/homejsx

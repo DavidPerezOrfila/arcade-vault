@@ -12,6 +12,6 @@ tags:
 # Examples
 
 ## Connections
-- [[SKILL_1]] - `contains` [EXTRACTED]
+- [[caveman-commitSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman-commit

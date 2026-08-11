@@ -1,19 +1,19 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L451"
+community: "asteroids/game.esm.js"
+location: "L476"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/asteroids/gameesmjs
 ---
 
 # drawHUD()
 
 ## Connections
-- [[draw()_2]] - `calls` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
+- [[draw()_3]] - `calls` [EXTRACTED]
 - [[drawLifeIcon()_1]] - `calls` [EXTRACTED]
-- [[game.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/test-generation.md"
 type: "document"
-community: "Playwright Summaries"
+community: "Playwright CLI Browser Automation Skill (.claude copy)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Summaries
+  - community/Playwright_CLI_Browser_Automation_Skill_claude_copy
 ---
 
 # Test Generation Reference (Plan/Generate/Heal)
@@ -17,4 +17,4 @@ tags:
 - [[Request Mocking Reference (.claude copy)]] - `references` [EXTRACTED]
 - [[Test Generation Workflow (PlanGenerateHeal)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Summaries
+#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Browser_Automation_Skill_claude_copy

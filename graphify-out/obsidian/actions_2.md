@@ -1,17 +1,17 @@
 ---
-source_file: "graft/app/about/actions.md"
-type: "document"
-community: "actions.md"
-location: "L1"
+source_file: "app/games/serpentina/actions.ts"
+type: "code"
+community: "serpentina/game.esm.js"
+location: "L5"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/actionsmd
+  - community/serpentina/gameesmjs
 ---
 
-# actions.md
+# actions
 
 ## Connections
-- [[appaboutactions.ts]] - `contains` [EXTRACTED]
+- [[serpentinaactions.ts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/actionsmd
+#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs

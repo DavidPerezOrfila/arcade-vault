@@ -1,17 +1,17 @@
 ---
 source_file: ".claude/skills/consult-graph/SKILL.md"
 type: "document"
-community: "SKILL.md"
+community: ".claude/skills/consult-graph/SKILL.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SKILLmd
+  - community/claude/skills/consult-graph/SKILLmd
 ---
 
 # Boundaries
 
 ## Connections
-- [[SKILL_9]] - `contains` [EXTRACTED]
+- [[dot-claudeskillsconsult-graphSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/claude/skills/consult-graph/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "app/salon/Podium.tsx"
 type: "code"
-community: "actions.ts"
+community: "app/page.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/actionsts
+  - community/app/pagetsx
 ---
 
 # Podium.tsx
@@ -19,4 +19,4 @@ tags:
 - [[formatDate()]] - `imports` [EXTRACTED]
 - [[formatScore()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/actionsts
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

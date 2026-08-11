@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/spec/SKILL.md"
 type: "concept"
-community: "Spec-Driven Dev"
+community: "Spec Design Skill"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Spec-Driven_Dev
+  - community/Spec_Design_Skill
 ---
 
 # Spec-Driven Development
@@ -14,4 +14,4 @@ tags:
 - [[Spec Design Skill]] - `conceptually_related_to` [INFERRED]
 - [[Spec Implementation Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Spec-Driven_Dev
+#graphify/concept #graphify/INFERRED #community/Spec_Design_Skill

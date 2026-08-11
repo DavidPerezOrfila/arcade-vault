@@ -1,17 +1,17 @@
 ---
-source_file: "specs/06-games-catalog-salon.md"
+source_file: "specs/08-serpentina-game.md"
 type: "document"
-community: "06-games-catalog-salon"
-location: "L142"
+community: "08-serpentina-game"
+location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/06-games-catalog-salon
+  - community/08-serpentina-game
 ---
 
 # Decisions Taken & Discarded
 
 ## Connections
-- [[06-games-catalog-salon_1]] - `contains` [EXTRACTED]
+- [[08-serpentina-game_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/06-games-catalog-salon
+#graphify/document #graphify/EXTRACTED #community/08-serpentina-game

@@ -1,19 +1,19 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "IndexedDB Ops"
+community: "Security Policy"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IndexedDB_Ops
+  - community/Security_Policy
 ---
 
 # Security Policy
 
 ## Connections
-- [[Reporting a Vulnerability_1]] - `contains` [EXTRACTED]
-- [[SECURITY_3]] - `contains` [EXTRACTED]
+- [[Reporting a Vulnerability]] - `contains` [EXTRACTED]
+- [[SECURITY]] - `contains` [EXTRACTED]
 - [[Supported Versions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IndexedDB_Ops
+#graphify/document #graphify/EXTRACTED #community/Security_Policy

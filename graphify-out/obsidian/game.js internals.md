@@ -1,17 +1,17 @@
 ---
 source_file: "resources/started-games/03-tetris/CLAUDE.md"
 type: "document"
-community: "Storage State API"
+community: "03-tetris/CLAUDE.md"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Storage_State_API
+  - community/03-tetris/CLAUDEmd
 ---
 
 # game.js internals
 
 ## Connections
-- [[Architecture_1]] - `contains` [EXTRACTED]
+- [[Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Storage_State_API
+#graphify/document #graphify/EXTRACTED #community/03-tetris/CLAUDEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Package Dependencies"
+community: "scripts"
 location: "L27"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Package_Dependencies
+  - community/scripts
 ---
 
 # ecc-universal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ecc-universal]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Package_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/scripts

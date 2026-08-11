@@ -16,11 +16,11 @@ tags:
 - [[Common mistakes]] - `contains` [EXTRACTED]
 - [[REUSE, do not modify]] - `contains` [EXTRACTED]
 - [[React component lifecycle]] - `contains` [EXTRACTED]
-- [[SKILL_11]] - `contains` [EXTRACTED]
 - [[Submit Server Action recipe]] - `contains` [EXTRACTED]
 - [[The 8 files]] - `contains` [EXTRACTED]
 - [[Verification]] - `contains` [EXTRACTED]
 - [[WRAP, do not port]] - `contains` [EXTRACTED]
-- [[Workflow_2]] - `contains` [EXTRACTED]
+- [[Workflow_3]] - `contains` [EXTRACTED]
+- [[integrate-arcade-gameSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Integrate_an_Arcade_Vault_game

@@ -1,23 +1,23 @@
 ---
-source_file: "lib/games/asteroids/game.esm.js"
+source_file: "resources/started-games/02-asteroids/game.js"
 type: "code"
-community: "E2E Test"
-location: "L63"
+community: "02-asteroids/game.js"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/E2E_Test
+  - community/02-asteroids/gamejs
 ---
 
 # rand()
 
 ## Connections
-- [[.constructor()_1]] - `calls` [EXTRACTED]
-- [[.constructor()_4]] - `calls` [EXTRACTED]
-- [[.constructor()_2]] - `calls` [EXTRACTED]
-- [[.draw()_3]] - `calls` [EXTRACTED]
-- [[game.esm.js]] - `contains` [EXTRACTED]
+- [[dot-constructor()]] - `calls` [EXTRACTED]
+- [[dot-constructor()_2]] - `calls` [EXTRACTED]
+- [[dot-constructor()_3]] - `calls` [EXTRACTED]
+- [[dot-draw()_4]] - `calls` [EXTRACTED]
+- [[02-asteroidsgame.js]] - `contains` [EXTRACTED]
 - [[randInt()]] - `calls` [EXTRACTED]
 - [[spawnAsteroids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/E2E_Test
+#graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs

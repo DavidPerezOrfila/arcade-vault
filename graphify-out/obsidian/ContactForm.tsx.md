@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/ContactForm.tsx"
 type: "code"
-community: "Playwright Config"
+community: "about/page.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Config
+  - community/about/pagetsx
 ---
 
 # ContactForm.tsx
@@ -19,7 +19,7 @@ tags:
 - [[FormFields]] - `contains` [EXTRACTED]
 - [[SuccessTerminal()]] - `imports` [EXTRACTED]
 - [[SuccessTerminal.tsx]] - `imports_from` [EXTRACTED]
-- [[page.tsx]] - `imports_from` [EXTRACTED]
-- [[types.ts]] - `imports_from` [EXTRACTED]
+- [[aboutpage.tsx]] - `imports_from` [EXTRACTED]
+- [[abouttypes.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/about/pagetsx

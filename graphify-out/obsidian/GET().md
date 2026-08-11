@@ -1,17 +1,18 @@
 ---
 source_file: "app/api/leaderboard/asteroids/route.ts"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # GET()
 
 ## Connections
-- [[route.ts]] - `contains` [EXTRACTED]
+- [[asteroidsroute.ts]] - `contains` [EXTRACTED]
+- [[getAsteroidsLeaderboard]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

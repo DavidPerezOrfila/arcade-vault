@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/playwright-cli/references/video-recording.md"
+source_file: ".claude/skills/playwright-cli/references/video-recording.md"
 type: "document"
-community: "Root Layout"
+community: "Tracing"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Root_Layout
+  - community/Tracing
 ---
 
 # Overlay API Summary
 
 ## Connections
-- [[Best Practices]] - `contains` [EXTRACTED]
+- [[Best Practices_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Root_Layout
+#graphify/document #graphify/EXTRACTED #community/Tracing

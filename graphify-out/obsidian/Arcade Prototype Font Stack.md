@@ -1,11 +1,11 @@
 ---
 source_file: "resources/templates/Arcade Vault.html"
 type: "concept"
-community: "Project Architecture"
+community: "About Page with Resend Spec (03)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Project_Architecture
+  - community/About_Page_with_Resend_Spec_03
 ---
 
 # Arcade Prototype Font Stack
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Arcade Vault Main HTML Template]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Project_Architecture
+#graphify/concept #graphify/EXTRACTED #community/About_Page_with_Resend_Spec_03

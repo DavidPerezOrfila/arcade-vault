@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/session-management.md"
 type: "document"
-community: "Browser Sessions"
+community: "Browser Session Management"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Sessions
+  - community/Browser_Session_Management
 ---
 
 # Attach via browser extension
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Attaching to a Running Browser]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Sessions
+#graphify/document #graphify/EXTRACTED #community/Browser_Session_Management

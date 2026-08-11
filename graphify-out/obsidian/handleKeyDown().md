@@ -1,19 +1,19 @@
 ---
 source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "E2E Test"
-location: "L34"
+community: "asteroids/game.esm.js"
+location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/E2E_Test
+  - community/asteroids/gameesmjs
 ---
 
 # handleKeyDown()
 
 ## Connections
-- [[attachInput()]] - `indirect_call` [INFERRED]
-- [[detachInput()]] - `indirect_call` [INFERRED]
-- [[game.esm.js]] - `contains` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
+- [[attachInput()_1]] - `indirect_call` [INFERRED]
+- [[detachInput()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/E2E_Test
+#graphify/code #graphify/INFERRED #community/asteroids/gameesmjs

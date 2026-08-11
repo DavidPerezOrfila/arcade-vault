@@ -1,12 +1,12 @@
 ---
 source_file: "app/player/[id]/PlayerClient.tsx"
 type: "code"
-community: "Test Generation"
+community: "leaderboard.ts"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/leaderboardts
 ---
 
 # PlayerClientProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PlayerClient.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

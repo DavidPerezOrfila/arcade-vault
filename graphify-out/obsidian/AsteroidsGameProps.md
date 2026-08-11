@@ -1,12 +1,12 @@
 ---
 source_file: "lib/games/asteroids/types.ts"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # AsteroidsGameProps
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AsteroidsGame.tsx]] - `imports` [EXTRACTED]
 - [[LeaderboardEntry]] - `references` [EXTRACTED]
-- [[types.ts_2]] - `contains` [EXTRACTED]
+- [[asteroidstypes.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

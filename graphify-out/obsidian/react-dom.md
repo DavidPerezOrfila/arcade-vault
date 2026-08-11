@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Package Dependencies"
+community: "scripts"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_Dependencies
+  - community/scripts
 ---
 
 # react-dom
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[react-dom_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_Dependencies
+#graphify/code #graphify/EXTRACTED #community/scripts

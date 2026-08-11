@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/playwright-tests.md"
 type: "document"
-community: "Storage State"
+community: "playwright-cli/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Storage_State
+  - community/playwright-cli/SKILLmd
 ---
 
 # playwright-tests.md
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Debugging Playwright Tests]] - `contains` [EXTRACTED]
 - [[Running Playwright Tests]] - `contains` [EXTRACTED]
-- [[SKILL_8]] - `references` [EXTRACTED]
+- [[playwright-cliSKILL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Storage_State
+#graphify/document #graphify/EXTRACTED #community/playwright-cli/SKILLmd

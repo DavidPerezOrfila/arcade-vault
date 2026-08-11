@@ -1,357 +1,357 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/Playwright_CLI_Reference",
+      "query": "tag:#community/02-asteroids/game.js",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Playwright_CLI_Reference",
+      "query": "tag:#community/Advanced_Mocking_with_run-code",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Browser_Sessions",
+      "query": "tag:#community/Browser_Session_Management",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Project_Architecture",
+      "query": "tag:#community/About_Page_with_Resend_Spec_(03)",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Game_Data_Layer",
+      "query": "tag:#community/serpentina/game.esm.js",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/TypeScript_Config",
+      "query": "tag:#community/compilerOptions",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Home_Page_UI",
+      "query": "tag:#community/home.jsx",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Package_Dependencies",
+      "query": "tag:#community/scripts",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Playwright_Automation",
+      "query": "tag:#community/Browser_Automation_with_playwright-cli",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Playwright_Automation",
+      "query": "tag:#community/03-tetris/game.js",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Test_Generation",
+      "query": "tag:#community/04-arkanoid/game.js",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Test_Generation",
+      "query": "tag:#community/leaderboard.ts",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Dev_Tooling",
+      "query": "tag:#community/devDependencies",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/About_Page_&_Contact",
+      "query": "tag:#community/validate.py",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Playwright_Tracing",
+      "query": "tag:#community/Tetris",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Playwright_Tracing",
+      "query": "tag:#community/Tracing",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Spec_Template",
+      "query": "tag:#community/Arquitectura",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Spec_Template",
+      "query": "tag:#community/01_\u2014_MVP_jugable_de_Arkanoid",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/localStorage_Ops",
+      "query": "tag:#community/Cookies",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Playwright_CLI_Skill",
+      "query": "tag:#community/Template_for_a_useful_spec",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/localStorage_Ops",
+      "query": "tag:#community/Cookies",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Playwright_CLI_Skill",
+      "query": "tag:#community/03_\u2014_Sonidos_y_niveles",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Playwright_Summaries",
+      "query": "tag:#community/Playwright_CLI_Browser_Automation_Skill_(.claude_copy)",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/MVP_Spec",
+      "query": "tag:#community//spec_\u2014_Guided_spec_designer",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Cookie_Management",
+      "query": "tag:#community/CaidaGame.tsx",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Spec-Impl_Skill",
+      "query": "tag:#community/Asteroids",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Cookie_Management",
+      "query": "tag:#community/Instructions",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Spec-Impl_Skill",
+      "query": "tag:#community/02_\u2014_Animaci\u00f3n_de_explosi\u00f3n_al_romper_bloques",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Storage_State",
+      "query": "tag:#community/playwright-cli/SKILL.md",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Root_Layout",
+      "query": "tag:#community/Video_Recording",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Spec-Driven_Dev",
+      "query": "tag:#community/Spec_Design_Skill",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Storage_State_API",
+      "query": "tag:#community/Arkanoid",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Storage_State_API",
+      "query": "tag:#community/03-tetris/CLAUDE.md",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Spec_Skills_Config",
+      "query": "tag:#community//spec-impl_Skill",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/IndexedDB_Ops",
+      "query": "tag:#community/spritesheet.js",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Games_Page",
+      "query": "tag:#community/compress.py",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Auth_State_Patterns",
+      "query": "tag:#community/02-asteroids/CLAUDE.md",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/IndexedDB_Ops",
+      "query": "tag:#community/Security_Policy",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/App_Shell",
+      "query": "tag:#community/app.jsx",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/About_Template",
+      "query": "tag:#community/about.jsx",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Game_Data_Model",
+      "query": "tag:#community/MVP_Arcade_Vault_Spec",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Next.js_16_Warning",
+      "query": "tag:#community/Next.js_16_Breaking_Changes_Warning",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/ESLint_Config",
+      "query": "tag:#community/eslint.config.mjs",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Next_Config",
+      "query": "tag:#community/next.config.mjs",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/PostCSS_Config",
+      "query": "tag:#community/postcss.config.mjs",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Auth_Template",
+      "query": "tag:#community/auth.jsx",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Nav_Template",
+      "query": "tag:#community/home-about/nav.jsx",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Nav_Template",
+      "query": "tag:#community/templates/nav.jsx",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/E2E_Test",
+      "query": "tag:#community/asteroids/game.esm.js",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Playwright_Config",
+      "query": "tag:#community/about/page.tsx",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Custom_Bundler",
+      "query": "tag:#community/Custom_Bundler_Asset_Unpacking_System",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -365,14 +365,14 @@
       }
     },
     {
-      "query": "tag:#community/detalle.jsx",
+      "query": "tag:#community/Workflow:_opencode-loop",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/reproductor.jsx",
+      "query": "tag:#community/NOTES.md_\u2014_mundo_del_usuario",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -407,49 +407,49 @@
       }
     },
     {
-      "query": "tag:#community/._game.js",
+      "query": "tag:#community/08-serpentina-game",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/._README.md",
+      "query": "tag:#community/about.spec.ts",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/._CLAUDE.md",
+      "query": "tag:#community/playwright.config.ts",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/._clima.md",
+      "query": "tag:#community/asteroids.spec.ts",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/._game.js",
+      "query": "tag:#community/salon.spec.ts",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/game.esm.js",
+      "query": "tag:#community/caida/game.esm.js",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/actions.ts",
+      "query": "tag:#community/app/page.tsx",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -470,21 +470,21 @@
       }
     },
     {
-      "query": "tag:#community/Local_Storage",
+      "query": "tag:#community/Juegos_catalogados_(no_jugables_todav\u00eda)",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Session_Storage",
+      "query": "tag:#community/sprites.js",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Storage_State",
+      "query": "tag:#community/data.jsx",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -512,14 +512,14 @@
       }
     },
     {
-      "query": "tag:#community/._02-animacion-explosion-bloques.md",
+      "query": "tag:#community/caveman-compress/README.md",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/types.ts",
+      "query": "tag:#community/biblioteca.jsx",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -540,21 +540,21 @@
       }
     },
     {
-      "query": "tag:#community/RecentActivity.tsx",
+      "query": "tag:#community/detalle.jsx",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/layout.tsx",
+      "query": "tag:#community/reproductor.jsx",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/actions.md",
+      "query": "tag:#community/about/actions.md",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -568,49 +568,49 @@
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/about/page.md",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/schema.md",
+      "query": "tag:#community/about/schema.md",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/types.md",
+      "query": "tag:#community/about/types.md",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/route.md",
+      "query": "tag:#community/asteroids/route.md",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/route.md",
+      "query": "tag:#community/caida/route.md",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/auth/page.md",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/actions.md",
+      "query": "tag:#community/data/actions.md",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -631,7 +631,7 @@
       }
     },
     {
-      "query": "tag:#community/schema.md",
+      "query": "tag:#community/data/schema.md",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -652,7 +652,7 @@
       }
     },
     {
-      "query": "tag:#community/types.md",
+      "query": "tag:#community/data/types.md",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -666,21 +666,21 @@
       }
     },
     {
-      "query": "tag:#community/actions.md",
+      "query": "tag:#community/asteroids/actions.md",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/asteroids/page.md",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/actions.md",
+      "query": "tag:#community/caida/actions.md",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -694,7 +694,7 @@
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/caida/page.md",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -708,14 +708,14 @@
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/games/page.md",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/SKILL.md",
+      "query": "tag:#community/cavecrew/SKILL.md",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -729,7 +729,7 @@
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/[slug]/page.md",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -785,21 +785,21 @@
       }
     },
     {
-      "query": "tag:#community/SKILL.md",
+      "query": "tag:#community/caveman/SKILL.md",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/app/page.md",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/[id]/page.md",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -827,7 +827,7 @@
       }
     },
     {
-      "query": "tag:#community/page.md",
+      "query": "tag:#community/salon/page.md",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -855,7 +855,7 @@
       }
     },
     {
-      "query": "tag:#community/nav.md",
+      "query": "tag:#community/components/nav.md",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -869,28 +869,28 @@
       }
     },
     {
-      "query": "tag:#community/game.esm.md",
+      "query": "tag:#community/asteroids/game.esm.md",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/types.md",
+      "query": "tag:#community/asteroids/types.md",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/game.esm.md",
+      "query": "tag:#community/caida/game.esm.md",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/types.md",
+      "query": "tag:#community/caida/types.md",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -918,21 +918,21 @@
       }
     },
     {
-      "query": "tag:#community/types.md",
+      "query": "tag:#community/supabase/types.md",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/game.md",
+      "query": "tag:#community/02-asteroids/game.md",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/game.md",
+      "query": "tag:#community/03-tetris/game.md",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -967,7 +967,7 @@
       }
     },
     {
-      "query": "tag:#community/game.md",
+      "query": "tag:#community/04-arkanoid/game.md",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -1030,14 +1030,14 @@
       }
     },
     {
-      "query": "tag:#community/nav.md",
+      "query": "tag:#community/home-about/nav.md",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/nav.md",
+      "query": "tag:#community/templates/nav.md",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -1079,14 +1079,42 @@
       }
     },
     {
-      "query": "tag:#community/SKILL.md",
+      "query": "tag:#community/salon.jsx",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/eslint",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/next",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/serpentina.spec.ts",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/.agents/skills/consult-graph/SKILL.md",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/SKILL.md",
+      "query": "tag:#community/.claude/skills/consult-graph/SKILL.md",
       "color": {
         "a": 1,
         "rgb": 12234924

@@ -1,18 +1,18 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "Storage State"
+community: "leaderboard.ts"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Storage_State
+  - community/leaderboardts
 ---
 
 # ScoreRow
 
 ## Connections
+- [[datatypes.ts]] - `contains` [EXTRACTED]
 - [[players.ts]] - `imports` [EXTRACTED]
-- [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Storage_State
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

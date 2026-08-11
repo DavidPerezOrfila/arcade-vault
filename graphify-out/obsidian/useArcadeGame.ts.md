@@ -1,12 +1,12 @@
 ---
 source_file: "components/games/useArcadeGame.ts"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # useArcadeGame.ts
@@ -16,11 +16,12 @@ tags:
 - [[AsteroidsGame.tsx]] - `imports_from` [EXTRACTED]
 - [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
 - [[LeaderboardEntry]] - `imports` [EXTRACTED]
+- [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
 - [[SubmitScoreResult]] - `imports` [EXTRACTED]
 - [[UseArcadeGameParams]] - `contains` [EXTRACTED]
 - [[UseArcadeGameResult]] - `contains` [EXTRACTED]
+- [[gamestypes.ts]] - `imports_from` [EXTRACTED]
 - [[leaderboard.ts]] - `imports_from` [EXTRACTED]
-- [[types.ts_4]] - `imports_from` [EXTRACTED]
 - [[useArcadeGame()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

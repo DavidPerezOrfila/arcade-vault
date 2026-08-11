@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Project Architecture"
+community: "About Page with Resend Spec (03)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Project_Architecture
+  - community/About_Page_with_Resend_Spec_03
 ---
 
 # Tech Stack (Next.js 16, React 19, TypeScript 5, Tailwind v4, ESLint 9)
@@ -15,4 +15,4 @@ tags:
 - [[Arcade Vault Project Overview]] - `references` [EXTRACTED]
 - [[Home Page Spec (02)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Project_Architecture
+#graphify/document #graphify/INFERRED #community/About_Page_with_Resend_Spec_03

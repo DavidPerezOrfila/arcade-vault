@@ -1,18 +1,18 @@
 ---
 source_file: "app/salon/page.tsx"
 type: "code"
-community: "Session Storage"
+community: "app/page.tsx"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Storage
+  - community/app/pagetsx
 ---
 
 # SalonPage()
 
 ## Connections
 - [[getGames()]] - `calls` [EXTRACTED]
-- [[page.tsx_8]] - `contains` [EXTRACTED]
+- [[salonpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Storage
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

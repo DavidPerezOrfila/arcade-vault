@@ -1,12 +1,12 @@
 ---
 source_file: "lib/format.ts"
 type: "code"
-community: "actions.ts"
+community: "app/page.tsx"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/actionsts
+  - community/app/pagetsx
 ---
 
 # formatDate()
@@ -17,7 +17,7 @@ tags:
 - [[LeaderboardTable.tsx]] - `imports` [EXTRACTED]
 - [[Podium()]] - `calls` [EXTRACTED]
 - [[Podium.tsx]] - `imports` [EXTRACTED]
+- [[slugpage.tsx]] - `imports` [EXTRACTED]
 - [[format.ts]] - `contains` [EXTRACTED]
-- [[page.tsx_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/actionsts
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Next.js 16 Warning"
+community: "Next.js 16 Breaking Changes Warning"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Nextjs_16_Warning
+  - community/Nextjs_16_Breaking_Changes_Warning
 ---
 
 # Next.js 16 Breaking Changes Warning
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Next.js 16 Documentation Reference]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Nextjs_16_Warning
+#graphify/document #graphify/EXTRACTED #community/Nextjs_16_Breaking_Changes_Warning

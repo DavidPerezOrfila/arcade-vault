@@ -1,18 +1,17 @@
 ---
 source_file: "resources/templates/reproductor.jsx"
 type: "code"
-community: "Home Page UI"
+community: "reproductor.jsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_UI
+  - community/reproductorjsx
 ---
 
 # GamePlayer()
 
 ## Connections
-- [[GAMES]] - `references` [EXTRACTED]
 - [[reproductor.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_UI
+#graphify/code #graphify/EXTRACTED #community/reproductorjsx

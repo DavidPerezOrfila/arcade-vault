@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md"
+source_file: "resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md"
 type: "document"
-community: "Spec-Impl Skill"
-location: "L82"
+community: "01 — MVP jugable de Arkanoid"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Impl_Skill
+  - community/01__MVP_jugable_de_Arkanoid
 ---
 
 # Decisiones tomadas y descartadas
 
 ## Connections
-- [[02 — Animación de explosión al romper bloques]] - `contains` [EXTRACTED]
+- [[01 — MVP jugable de Arkanoid]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Impl_Skill
+#graphify/document #graphify/EXTRACTED #community/01__MVP_jugable_de_Arkanoid

@@ -1,17 +1,17 @@
 ---
 source_file: "graft/lib/games/asteroids/types.md"
 type: "document"
-community: "types.md"
+community: "asteroids/types.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/typesmd
+  - community/asteroids/typesmd
 ---
 
 # lib/games/asteroids/types.ts
 
 ## Connections
-- [[types_2]] - `contains` [EXTRACTED]
+- [[asteroidstypes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/typesmd
+#graphify/document #graphify/EXTRACTED #community/asteroids/typesmd

@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/skills/spec/template.md"
 type: "document"
-community: "Spec Skills Config"
+community: "/spec-impl Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec_Skills_Config
+  - community//spec-impl_Skill
 ---
 
 # Spec Template
@@ -14,4 +14,4 @@ tags:
 - [[spec Skill]] - `references` [EXTRACTED]
 - [[spec-impl Skill]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec_Skills_Config
+#graphify/document #graphify/EXTRACTED #community//spec-impl_Skill

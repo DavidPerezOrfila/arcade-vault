@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/request-mocking.md"
 type: "document"
-community: "Playwright CLI Reference"
+community: "Advanced Mocking with run-code"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/Advanced_Mocking_with_run-code
 ---
 
 # CLI Route Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Request Mocking]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/document #graphify/EXTRACTED #community/Advanced_Mocking_with_run-code

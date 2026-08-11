@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/validate.py"
 type: "code"
-community: "About Page & Contact"
+community: "validate.py"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/validatepy
 ---
 
 # validate()
 
 ## Connections
-- [[Path_3]] - `references` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[ValidationResult]] - `references` [EXTRACTED]
 - [[benchmark.py]] - `imports` [EXTRACTED]
 - [[benchmark_pair()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[validate_paths()]] - `calls` [EXTRACTED]
 - [[validate_urls()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/validatepy

@@ -1,18 +1,18 @@
 ---
-source_file: "app/page.tsx"
+source_file: "resources/templates/home-about/home.jsx"
 type: "code"
-community: "Session Storage"
-location: "L19"
+community: "home.jsx"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Storage
+  - community/homejsx
 ---
 
 # Home()
 
 ## Connections
-- [[getGames()]] - `calls` [EXTRACTED]
-- [[page.tsx_6]] - `contains` [EXTRACTED]
+- [[home.jsx]] - `contains` [EXTRACTED]
+- [[useReveal()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Storage
+#graphify/code #graphify/EXTRACTED #community/homejsx

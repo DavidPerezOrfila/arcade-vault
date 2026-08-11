@@ -1,27 +1,21 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "resources/started-games/04-arkanoid/game.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L356"
+community: "04-arkanoid/game.js"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/04-arkanoid/gamejs
 ---
 
 # update()
 
 ## Connections
-- [[.reset()_1]] - `calls` [EXTRACTED]
-- [[.split()_1]] - `calls` [EXTRACTED]
-- [[.tryShoot()_1]] - `calls` [EXTRACTED]
-- [[dist()_1]] - `calls` [EXTRACTED]
-- [[explode()_1]] - `calls` [EXTRACTED]
-- [[game.js]] - `contains` [EXTRACTED]
-- [[initGame()_2]] - `calls` [EXTRACTED]
-- [[killShip()_1]] - `calls` [EXTRACTED]
-- [[loop()_2]] - `calls` [EXTRACTED]
-- [[nextLevel()_1]] - `calls` [EXTRACTED]
-- [[pressed()_1]] - `calls` [EXTRACTED]
+- [[04-arkanoidgame.js]] - `contains` [EXTRACTED]
+- [[collideAABB()]] - `calls` [EXTRACTED]
+- [[initBall()]] - `calls` [EXTRACTED]
+- [[loadLevel()]] - `calls` [EXTRACTED]
+- [[loop()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs

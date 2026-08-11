@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/compress.py"
 type: "rationale"
-community: "Games Page"
+community: "compress.py"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/compresspy
 ---
 
 # Strip outer ```markdown ... ``` fence when it wraps the entire output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[strip_llm_wrapper()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Games_Page
+#graphify/rationale #graphify/EXTRACTED #community/compresspy

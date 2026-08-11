@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Dev Tooling"
+community: "devDependencies"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dev_Tooling
+  - community/devDependencies
 ---
 
 # @types/react
@@ -15,4 +15,4 @@ tags:
 - [[@typesreact_1]] - `imports` [EXTRACTED]
 - [[devDependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dev_Tooling
+#graphify/code #graphify/EXTRACTED #community/devDependencies

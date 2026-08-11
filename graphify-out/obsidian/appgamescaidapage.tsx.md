@@ -1,17 +1,17 @@
 ---
 source_file: "graft/app/games/caida/page.md"
 type: "document"
-community: "page.md"
+community: "caida/page.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pagemd
+  - community/caida/pagemd
 ---
 
 # app/games/caida/page.tsx
 
 ## Connections
-- [[page_4]] - `contains` [EXTRACTED]
+- [[caidapage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pagemd
+#graphify/document #graphify/EXTRACTED #community/caida/pagemd

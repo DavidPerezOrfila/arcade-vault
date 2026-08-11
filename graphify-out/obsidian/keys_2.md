@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/04-arkanoid/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "Test Generation"
-location: "L30"
+community: "asteroids/game.esm.js"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/asteroids/gameesmjs
 ---
 
 # keys
 
 ## Connections
-- [[game.js_2]] - `contains` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

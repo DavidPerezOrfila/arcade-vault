@@ -1,12 +1,12 @@
 ---
 source_file: "tsconfig.json"
 type: "code"
-community: "TypeScript Config"
+community: "compilerOptions"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Config
+  - community/compilerOptions
 ---
 
 # resolveJsonModule
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compilerOptions]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

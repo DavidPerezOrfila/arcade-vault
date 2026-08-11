@@ -15,9 +15,9 @@ tags:
 - [[@mermaid-chart slash commands]] - `contains` [EXTRACTED]
 - [[Docs]] - `contains` [EXTRACTED]
 - [[LM Tools — call these for every diagram interaction]] - `contains` [EXTRACTED]
-- [[Rules_3]] - `contains` [EXTRACTED]
+- [[Rules]] - `contains` [EXTRACTED]
 - [[VS Code Commands]] - `contains` [EXTRACTED]
-- [[Workflow_3]] - `contains` [EXTRACTED]
+- [[Workflow]] - `contains` [EXTRACTED]
 - [[mermaid.instructions]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mermaid_AI_Skills

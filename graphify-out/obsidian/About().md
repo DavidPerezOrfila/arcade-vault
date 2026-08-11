@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/home-about/about.jsx"
 type: "code"
-community: "About Template"
+community: "about.jsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Template
+  - community/aboutjsx
 ---
 
 # About()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[about.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Template
+#graphify/code #graphify/EXTRACTED #community/aboutjsx

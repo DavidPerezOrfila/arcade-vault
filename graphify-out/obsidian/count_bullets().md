@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/validate.py"
 type: "code"
-community: "About Page & Contact"
+community: "validate.py"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/validatepy
 ---
 
 # count_bullets()
@@ -15,4 +15,4 @@ tags:
 - [[validate.py]] - `contains` [EXTRACTED]
 - [[validate_bullets()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/validatepy

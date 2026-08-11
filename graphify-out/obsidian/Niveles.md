@@ -1,12 +1,12 @@
 ---
 source_file: "resources/started-games/04-arkanoid/README.md"
 type: "document"
-community: "Storage State API"
+community: "Arkanoid"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Storage_State_API
+  - community/Arkanoid
 ---
 
 # Niveles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Arkanoid]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Storage_State_API
+#graphify/document #graphify/EXTRACTED #community/Arkanoid

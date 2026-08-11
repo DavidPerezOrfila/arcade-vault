@@ -1,18 +1,18 @@
 ---
 source_file: "app/player/[id]/page.tsx"
 type: "code"
-community: "Session Storage"
+community: "app/page.tsx"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Storage
+  - community/app/pagetsx
 ---
 
 # PlayerPage()
 
 ## Connections
+- [[idpage.tsx]] - `contains` [EXTRACTED]
 - [[getGameById()]] - `calls` [EXTRACTED]
-- [[page.tsx_7]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Storage
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

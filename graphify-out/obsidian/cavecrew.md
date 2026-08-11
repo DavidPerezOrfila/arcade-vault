@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/cavecrew/README.md"
 type: "document"
-community: "SKILL.md"
+community: "cavecrew/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SKILLmd
+  - community/cavecrew/SKILLmd
 ---
 
 # cavecrew
@@ -15,8 +15,8 @@ tags:
 - [[Example chaining]] - `contains` [EXTRACTED]
 - [[How to invoke]] - `contains` [EXTRACTED]
 - [[Model overrides]] - `contains` [EXTRACTED]
-- [[README]] - `contains` [EXTRACTED]
 - [[See also]] - `contains` [EXTRACTED]
 - [[What it does]] - `contains` [EXTRACTED]
+- [[cavecrewREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

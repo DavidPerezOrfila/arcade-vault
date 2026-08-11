@@ -1,20 +1,20 @@
 ---
 source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "game.esm.js"
-location: "L137"
+community: "caida/game.esm.js"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gameesmjs
+  - community/caida/gameesmjs
 ---
 
 # tryRotate()
 
 ## Connections
+- [[caidagame.esm.js]] - `contains` [EXTRACTED]
 - [[collide()]] - `calls` [EXTRACTED]
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
-- [[onKeyDown()]] - `calls` [EXTRACTED]
+- [[onKeyDown()_1]] - `calls` [EXTRACTED]
 - [[rotateCW()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

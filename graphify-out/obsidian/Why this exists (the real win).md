@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/cavecrew/SKILL.md"
 type: "document"
-community: "SKILL.md"
+community: "cavecrew/SKILL.md"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SKILLmd
+  - community/cavecrew/SKILLmd
 ---
 
 # Why this exists (the real win)
 
 ## Connections
-- [[SKILL]] - `contains` [EXTRACTED]
+- [[cavecrewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

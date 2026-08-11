@@ -9,12 +9,12 @@ members: 9
 
 ## Members
 - [[Configuración técnica]] - document - workflows/issue-loop.md
-- [[Decisiones documentadas]] - document - workflows/issue-loop.md
-- [[Flujo]] - document - workflows/issue-loop.md
-- [[Out of scope]] - document - workflows/issue-loop.md
-- [[Resumen]] - document - workflows/issue-loop.md
-- [[Trigger_1]] - document - workflows/issue-loop.md
-- [[Validación]] - document - workflows/issue-loop.md
+- [[Decisiones documentadas_1]] - document - workflows/issue-loop.md
+- [[Flujo_1]] - document - workflows/issue-loop.md
+- [[Out of scope_1]] - document - workflows/issue-loop.md
+- [[Resumen_1]] - document - workflows/issue-loop.md
+- [[Trigger_2]] - document - workflows/issue-loop.md
+- [[Validación_1]] - document - workflows/issue-loop.md
 - [[Workflow issue-loop]] - document - workflows/issue-loop.md
 - [[issue-loop]] - document - workflows/issue-loop.md
 

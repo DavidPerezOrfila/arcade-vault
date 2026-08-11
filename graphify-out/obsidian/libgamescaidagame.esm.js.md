@@ -1,17 +1,17 @@
 ---
 source_file: "graft/lib/games/caida/game.esm.md"
 type: "document"
-community: "game.esm.md"
+community: "caida/game.esm.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gameesmmd
+  - community/caida/gameesmmd
 ---
 
 # lib/games/caida/game.esm.js
 
 ## Connections
-- [[game.esm_1]] - `contains` [EXTRACTED]
+- [[caidagame.esm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gameesmmd
+#graphify/document #graphify/EXTRACTED #community/caida/gameesmmd

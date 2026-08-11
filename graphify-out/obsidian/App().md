@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/app.jsx"
 type: "code"
-community: "App Shell"
+community: "app.jsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Shell
+  - community/appjsx
 ---
 
 # App()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[app.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Shell
+#graphify/code #graphify/EXTRACTED #community/appjsx

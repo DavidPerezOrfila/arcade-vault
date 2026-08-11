@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/detect.py"
 type: "rationale"
-community: "Games Page"
+community: "compress.py"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/compresspy
 ---
 
 # Heuristic: check if content looks like YAML.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_yaml_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Games_Page
+#graphify/rationale #graphify/EXTRACTED #community/compresspy

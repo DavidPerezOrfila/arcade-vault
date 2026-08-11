@@ -16,7 +16,7 @@ members: 9
 - [[Identified Risks_3]] - document - specs/07-tetris-caida.md
 - [[Implementation Plan_3]] - document - specs/07-tetris-caida.md
 - [[Scope_3]] - document - specs/07-tetris-caida.md
-- [[What is not in this spec]] - document - specs/07-tetris-caida.md
+- [[What is not in this spec_1]] - document - specs/07-tetris-caida.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,14 +1,14 @@
 ---
 source_file: "playwright.config.ts"
 type: "code"
-community: "._CLAUDE.md"
+community: "playwright.config.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_CLAUDEmd
+  - community/playwrightconfigts
 ---
 
 # playwright.config.ts
 
-#graphify/code #graphify/EXTRACTED #community/_CLAUDEmd
+#graphify/code #graphify/EXTRACTED #community/playwrightconfigts

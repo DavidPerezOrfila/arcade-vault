@@ -1,12 +1,12 @@
 ---
 source_file: "lib/games/types.ts"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # LeaderboardEntry
@@ -16,12 +16,14 @@ tags:
 - [[CaidaGameProps]] - `references` [EXTRACTED]
 - [[LeaderboardList.tsx]] - `imports` [EXTRACTED]
 - [[LeaderboardListProps]] - `references` [EXTRACTED]
+- [[SerpentinaGameProps]] - `references` [EXTRACTED]
 - [[UseArcadeGameParams]] - `references` [EXTRACTED]
 - [[UseArcadeGameResult]] - `references` [EXTRACTED]
+- [[asteroidstypes.ts]] - `re_exports` [EXTRACTED]
+- [[caidatypes.ts]] - `re_exports` [EXTRACTED]
+- [[gamestypes.ts]] - `contains` [EXTRACTED]
 - [[leaderboard.ts]] - `imports` [EXTRACTED]
-- [[types.ts_2]] - `re_exports` [EXTRACTED]
-- [[types.ts_3]] - `re_exports` [EXTRACTED]
-- [[types.ts_4]] - `contains` [EXTRACTED]
+- [[serpentinatypes.ts]] - `imports` [EXTRACTED]
 - [[useArcadeGame.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

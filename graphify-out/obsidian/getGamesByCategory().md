@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/games.ts"
 type: "code"
-community: "Session Storage"
+community: "app/page.tsx"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Storage
+  - community/app/pagetsx
 ---
 
 # getGamesByCategory()
@@ -16,4 +16,4 @@ tags:
 - [[games.ts]] - `contains` [EXTRACTED]
 - [[getGames()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Storage
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

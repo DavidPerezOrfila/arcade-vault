@@ -1,11 +1,11 @@
 ---
 source_file: "specs/01-mvp-arcade-vault.md"
 type: "document"
-community: "Game Data Model"
+community: "MVP Arcade Vault Spec"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Game_Data_Model
+  - community/MVP_Arcade_Vault_Spec
 ---
 
 # MVP Arcade Vault Spec
@@ -14,4 +14,4 @@ tags:
 - [[Game Data Model]] - `references` [EXTRACTED]
 - [[localStorage Persistence Model]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Game_Data_Model
+#graphify/document #graphify/EXTRACTED #community/MVP_Arcade_Vault_Spec

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/spec/template.md"
 type: "document"
-community: "Spec-Driven Dev"
+community: "Spec Design Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Driven_Dev
+  - community/Spec_Design_Skill
 ---
 
 # Spec Template
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Spec Design Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Driven_Dev
+#graphify/document #graphify/EXTRACTED #community/Spec_Design_Skill

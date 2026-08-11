@@ -1,17 +1,17 @@
 ---
 source_file: "resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md"
 type: "document"
-community: "Playwright CLI Skill"
+community: "03 — Sonidos y niveles"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Skill
+  - community/03__Sonidos_y_niveles
 ---
 
 # Definición de niveles
 
 ## Connections
-- [[Modelo de datos_2]] - `contains` [EXTRACTED]
+- [[Modelo de datos_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Skill
+#graphify/document #graphify/EXTRACTED #community/03__Sonidos_y_niveles

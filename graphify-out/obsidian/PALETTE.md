@@ -1,12 +1,12 @@
 ---
 source_file: "app/_home/RecentActivity.tsx"
 type: "code"
-community: "RecentActivity.tsx"
+community: "app/page.tsx"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RecentActivitytsx
+  - community/app/pagetsx
 ---
 
 # PALETTE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RecentActivity.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RecentActivitytsx
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

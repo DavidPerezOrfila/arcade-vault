@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Dev Tooling"
+community: "devDependencies"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dev_Tooling
+  - community/devDependencies
 ---
 
 # devDependencies
@@ -28,4 +28,4 @@ tags:
 - [[typescript]] - `contains` [EXTRACTED]
 - [[typescript-eslint]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dev_Tooling
+#graphify/code #graphify/EXTRACTED #community/devDependencies

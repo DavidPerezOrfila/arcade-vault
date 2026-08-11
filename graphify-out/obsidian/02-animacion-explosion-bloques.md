@@ -1,12 +1,12 @@
 ---
 source_file: "resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md"
 type: "document"
-community: "Spec-Impl Skill"
+community: "02 — Animación de explosión al romper bloques"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Impl_Skill
+  - community/02__Animacin_de_explosin_al_romper_bloques
 ---
 
 # 02-animacion-explosion-bloques.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[02 — Animación de explosión al romper bloques]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Impl_Skill
+#graphify/document #graphify/EXTRACTED #community/02__Animacin_de_explosin_al_romper_bloques

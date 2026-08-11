@@ -1,21 +1,21 @@
 ---
-source_file: "lib/games/asteroids/game.esm.js"
+source_file: "resources/started-games/02-asteroids/game.js"
 type: "code"
-community: "E2E Test"
-location: "L102"
+community: "02-asteroids/game.js"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/E2E_Test
+  - community/02-asteroids/gamejs
 ---
 
 # Asteroid
 
 ## Connections
-- [[.constructor()_1]] - `method` [EXTRACTED]
-- [[.draw()_1]] - `method` [EXTRACTED]
-- [[.split()]] - `method` [EXTRACTED]
-- [[.update()_1]] - `method` [EXTRACTED]
-- [[game.esm.js]] - `contains` [EXTRACTED]
+- [[dot-constructor()]] - `method` [EXTRACTED]
+- [[dot-draw()]] - `method` [EXTRACTED]
+- [[dot-split()]] - `method` [EXTRACTED]
+- [[dot-update()]] - `method` [EXTRACTED]
+- [[02-asteroidsgame.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/E2E_Test
+#graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs

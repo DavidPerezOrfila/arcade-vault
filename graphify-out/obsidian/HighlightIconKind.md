@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/highlight-icon.tsx"
 type: "code"
-community: "Playwright Config"
+community: "about/page.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Config
+  - community/about/pagetsx
 ---
 
 # HighlightIconKind
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[highlight-icon.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/about/pagetsx

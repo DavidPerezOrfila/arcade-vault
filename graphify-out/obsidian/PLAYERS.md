@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/players.ts"
 type: "code"
-community: "Storage State"
+community: "leaderboard.ts"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Storage_State
+  - community/leaderboardts
 ---
 
 # PLAYERS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[players.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Storage_State
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

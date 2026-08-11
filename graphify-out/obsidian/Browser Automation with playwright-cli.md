@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/SKILL.md"
 type: "document"
-community: "Playwright Automation"
+community: "Browser Automation with playwright-cli"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Automation
+  - community/Browser_Automation_with_playwright-cli
 ---
 
 # Browser Automation with playwright-cli
@@ -22,10 +22,10 @@ tags:
 - [[Open parameters]] - `contains` [EXTRACTED]
 - [[Quick start]] - `contains` [EXTRACTED]
 - [[Raw output]] - `contains` [EXTRACTED]
-- [[SKILL_8]] - `contains` [EXTRACTED]
 - [[Snapshots]] - `contains` [EXTRACTED]
 - [[Specific tasks]] - `contains` [EXTRACTED]
 - [[Targeting elements]] - `contains` [EXTRACTED]
 - [[URLs with `&` on Windows]] - `contains` [EXTRACTED]
+- [[playwright-cliSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Automation
+#graphify/document #graphify/EXTRACTED #community/Browser_Automation_with_playwright-cli

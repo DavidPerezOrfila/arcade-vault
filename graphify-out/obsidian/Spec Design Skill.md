@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/spec/SKILL.md"
 type: "document"
-community: "Spec-Driven Dev"
+community: "Spec Design Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Driven_Dev
+  - community/Spec_Design_Skill
 ---
 
 # Spec Design Skill
@@ -15,4 +15,4 @@ tags:
 - [[Spec Template]] - `references` [EXTRACTED]
 - [[Spec-Driven Development]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Driven_Dev
+#graphify/document #graphify/EXTRACTED #community/Spec_Design_Skill

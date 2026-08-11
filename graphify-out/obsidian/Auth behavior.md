@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/SECURITY.md"
 type: "document"
-community: "._02-animacion-explosion-bloques.md"
+community: "caveman-compress/README.md"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_02-animacion-explosion-bloquesmd
+  - community/caveman-compress/READMEmd
 ---
 
 # Auth behavior
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Snyk High Risk Rating]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_02-animacion-explosion-bloquesmd
+#graphify/document #graphify/EXTRACTED #community/caveman-compress/READMEmd
