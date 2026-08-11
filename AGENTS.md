@@ -32,3 +32,10 @@ Before exploring the source code of an unfamiliar module, check whether the proj
 - No superfluous comments — self-documenting code where possible.
 - No magic: avoid cryptic expressions, prefer clarity.
 - Good security practices when relevant.
+
+## Line endings (CRLF vs LF)
+
+- `npm run lint` enforces **LF** line endings (`linebreak-style`); CRLF files fail with hundreds of `Expected linebreaks to be 'LF'` errors.
+- The repo stores LF: `.gitattributes` has `* text=auto eol=lf`. Never commit CRLF.
+- On Windows, `core.autocrlf=true` (or OneDrive placeholders) can leave CRLF in the working tree for files checked out before normalization. Git may report them clean while eslint fails — the lint error is the source of truth.
+- Always write/edit files with LF endings. If `npm run lint` suddenly fails with CRLF errors, normalize the working tree back to LF instead of committing CRLF (e.g. `git add --renormalize .` in a dedicated commit, or convert the affected files to LF).

@@ -1,0 +1,413 @@
+/* SERPENTINA (Snake): estilos de pagina y componente (fuente unica) */
+
+/* ===== Page Layout ===== */
+
+.serpentina-page {
+  background: #000;
+  color: #fff;
+}
+
+.serpentina-page-header {
+  margin-bottom: 2rem;
+}
+
+.serpentina-page-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #22c55e;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.serpentina-page-description {
+  color: #9ca3af;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  max-width: 60ch;
+}
+
+.serpentina-page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .serpentina-page-grid {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.serpentina-game-wrapper {
+  width: 100%;
+}
+
+/* ===== Sidebar ===== */
+
+.serpentina-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .serpentina-sidebar {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+
+.serpentina-sidebar-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.serpentina-sidebar-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.serpentina-sidebar-title--controls {
+  color: #22c55e;
+}
+
+.serpentina-sidebar-title--scoring {
+  color: #22c55e;
+}
+
+/* Controls List */
+.serpentina-controls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.serpentina-control-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.375rem 0;
+}
+
+.serpentina-control-key {
+  color: #22c55e;
+}
+
+/* Scoring List */
+.serpentina-scoring-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.serpentina-scoring-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+.serpentina-scoring-value {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* ===== Game area: board + side panel ===== */
+
+.serpentina-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+
+/* Board: fixed internal 600×600, CSS scales keeping 1:1 */
+.serpentina-board-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+}
+
+.serpentina-board-wrap canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid #1f2937;
+  border-radius: 0.5rem;
+  background: #000;
+  touch-action: none; /* Prevent touch scrolling on canvas */
+}
+
+.serpentina-board-wrap canvas:focus-visible {
+  outline: 2px solid #22c55e;
+  outline-offset: 2px;
+}
+
+/* ===== Side panel (HUD + leaderboard) ===== */
+
+.serpentina-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 220px;
+}
+
+/* HUD */
+.serpentina-hud {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5rem;
+}
+
+.serpentina-hud-item {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.serpentina-hud-item span:first-child {
+  display: block;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.serpentina-hud-item span:last-child {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ===== Leaderboard HUD ===== */
+
+.serpentina-leaderboard {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid #1f2937;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+}
+
+.serpentina-leaderboard-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #22c55e;
+}
+
+.serpentina-leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.serpentina-leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.serpentina-leaderboard-item--current-user {
+  color: #22c55e;
+}
+
+.serpentina-leaderboard-rank-player {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.serpentina-leaderboard-empty {
+  color: #6b7280;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* ===== In-game overlay (GAME OVER) ===== */
+
+.serpentina-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 0.5rem;
+  z-index: 20;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* El wrapper togglea la clase 'hidden'. Specificity 2 clases: gana a .serpentina-overlay */
+.serpentina-overlay.hidden {
+  display: none;
+}
+
+.serpentina-overlay-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.serpentina-overlay-score {
+  color: #22c55e;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  min-height: 1.5rem;
+}
+
+.serpentina-overlay-button {
+  background: #22c55e;
+  color: #000;
+  font-weight: 700;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.serpentina-overlay-button:hover {
+  background: #16a34a;
+}
+
+/* ===== Auth Prompt Overlay ===== */
+
+.serpentina-auth-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  padding: 1rem;
+}
+
+.serpentina-auth-prompt {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.serpentina-auth-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.serpentina-auth-message {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.serpentina-auth-button {
+  display: inline-block;
+  background: #22c55e;
+  color: #000;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.serpentina-auth-button:hover {
+  background: #16a34a;
+}
+
+.serpentina-auth-dismiss {
+  margin-left: 1rem;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.serpentina-auth-dismiss:hover {
+  color: #fff;
+}
+
+/* ===== Loading State ===== */
+
+.serpentina-loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.5rem;
+  z-index: 5;
+}
+
+/* ===== Reduced motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .serpentina-board-wrap canvas,
+  .serpentina-overlay,
+  .serpentina-auth-overlay,
+  .serpentina-auth-prompt,
+  .serpentina-leaderboard {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ===== Mobile adjustments ===== */
+
+@media (max-width: 640px) {
+  .serpentina-game-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serpentina-panel {
+    max-width: 300px;
+  }
+
+  .serpentina-auth-prompt {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .serpentina-auth-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .serpentina-auth-dismiss {
+    margin-left: 0;
+  }
+}
