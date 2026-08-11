@@ -82,6 +82,18 @@ test.describe("CAÍDA Game", () => {
     await expect(board).toBeVisible();
   });
 
+  test("la pieza cae sola (el loop del juego corre)", async ({ page }) => {
+    // Sin input, la pieza debe caer una fila cada ~1s (dropInterval 1000ms).
+    // Dos capturas del canvas separadas 1.3s: si el loop corre, la pieza y el
+    // ghost cambian de posición y los píxeles difieren. Un loop congelado
+    // (RAF estrangulado en headless WebKit) deja el canvas idéntico → fail.
+    const board = page.locator(".caida-board-wrap canvas");
+    const shot1 = await board.screenshot();
+    await page.waitForTimeout(1300);
+    const shot2 = await board.screenshot();
+    expect(shot1.equals(shot2)).toBe(false);
+  });
+
   test("game over shows auth prompt for unauthenticated user", async ({
     page,
   }) => {
