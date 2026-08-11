@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/caveman/SKILL.md"
+source_file: ".agents/skills/caveman-commit/SKILL.md"
 type: "document"
-community: "SKILL.md"
-location: "L19"
+community: "caveman-commit"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SKILLmd
+  - community/caveman-commit
 ---
 
 # Rules
 
 ## Connections
-- [[SKILL_6]] - `contains` [EXTRACTED]
+- [[caveman-commitSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/caveman-commit

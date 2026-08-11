@@ -1,17 +1,17 @@
 ---
-source_file: ".claude/skills/consult-graph/SKILL.md"
+source_file: ".agents/skills/consult-graph/SKILL.md"
 type: "document"
-community: "SKILL.md"
+community: ".agents/skills/consult-graph/SKILL.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SKILLmd
+  - community/agents/skills/consult-graph/SKILLmd
 ---
 
 # Workflow
 
 ## Connections
-- [[SKILL_9]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsconsult-graphSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/agents/skills/consult-graph/SKILLmd

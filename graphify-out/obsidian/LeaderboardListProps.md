@@ -1,12 +1,12 @@
 ---
 source_file: "components/games/LeaderboardList.tsx"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # LeaderboardListProps
@@ -15,4 +15,4 @@ tags:
 - [[LeaderboardEntry]] - `references` [EXTRACTED]
 - [[LeaderboardList.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

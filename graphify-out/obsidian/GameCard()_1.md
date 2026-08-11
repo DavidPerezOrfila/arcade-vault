@@ -1,18 +1,17 @@
 ---
 source_file: "resources/templates/biblioteca.jsx"
 type: "code"
-community: "Package Dependencies"
+community: "biblioteca.jsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_Dependencies
+  - community/bibliotecajsx
 ---
 
 # GameCard()
 
 ## Connections
 - [[biblioteca.jsx]] - `contains` [EXTRACTED]
-- [[react]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_Dependencies
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

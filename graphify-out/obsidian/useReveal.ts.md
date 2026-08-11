@@ -1,18 +1,18 @@
 ---
 source_file: "app/about/useReveal.ts"
 type: "code"
-community: "Playwright Config"
+community: "about/page.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Config
+  - community/about/pagetsx
 ---
 
 # useReveal.ts
 
 ## Connections
-- [[page.tsx]] - `imports_from` [EXTRACTED]
+- [[aboutpage.tsx]] - `imports_from` [EXTRACTED]
 - [[useReveal()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/about/pagetsx

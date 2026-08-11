@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/skills/playwright-cli/SKILL.md"
 type: "document"
-community: "Playwright Summaries"
+community: "Playwright CLI Browser Automation Skill (.claude copy)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Summaries
+  - community/Playwright_CLI_Browser_Automation_Skill_claude_copy
 ---
 
 # Playwright CLI Browser Automation Skill (.claude copy)
@@ -20,4 +20,4 @@ tags:
 - [[Test Generation Reference (PlanGenerateHeal)]] - `references` [EXTRACTED]
 - [[Tracing Reference]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Summaries
+#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Browser_Automation_Skill_claude_copy

@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Project Architecture"
+community: "About Page with Resend Spec (03)"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Project_Architecture
+  - graphify/EXTRACTED
+  - community/About_Page_with_Resend_Spec_03
 ---
 
 # Arcade Vault Platform Description
@@ -14,4 +14,4 @@ tags:
 - [[Arcade Vault Project Overview]] - `references` [INFERRED]
 - [[Klerithfernando-skills Reference]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Project_Architecture
+#graphify/document #graphify/EXTRACTED #community/About_Page_with_Resend_Spec_03

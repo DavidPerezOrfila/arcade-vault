@@ -1,12 +1,12 @@
 ---
 source_file: "app/salon/SalonClient.tsx"
 type: "code"
-community: "actions.ts"
+community: "app/page.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/actionsts
+  - community/app/pagetsx
 ---
 
 # SalonClient.tsx
@@ -20,11 +20,8 @@ tags:
 - [[Podium.tsx]] - `imports_from` [EXTRACTED]
 - [[SalonClient()]] - `contains` [EXTRACTED]
 - [[SalonClientProps]] - `contains` [EXTRACTED]
-- [[actions.ts_1]] - `imports_from` [EXTRACTED]
-- [[client.ts]] - `imports_from` [EXTRACTED]
-- [[createSupabaseBrowserClient()]] - `imports` [EXTRACTED]
+- [[dataactions.ts]] - `imports_from` [EXTRACTED]
 - [[getSalonLeaderboard()]] - `imports` [EXTRACTED]
-- [[getUserBestScore()]] - `imports` [EXTRACTED]
-- [[page.tsx_8]] - `imports_from` [EXTRACTED]
+- [[salonpage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/actionsts
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

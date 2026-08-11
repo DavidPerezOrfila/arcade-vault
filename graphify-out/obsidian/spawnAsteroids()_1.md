@@ -1,20 +1,20 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L301"
+community: "asteroids/game.esm.js"
+location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/asteroids/gameesmjs
 ---
 
 # spawnAsteroids()
 
 ## Connections
-- [[game.js]] - `contains` [EXTRACTED]
-- [[initGame()_2]] - `calls` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
+- [[initGameState()]] - `calls` [EXTRACTED]
 - [[nextLevel()_1]] - `calls` [EXTRACTED]
 - [[rand()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

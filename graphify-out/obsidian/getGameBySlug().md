@@ -1,20 +1,20 @@
 ---
 source_file: "app/data/games.ts"
 type: "code"
-community: "Session Storage"
+community: "app/page.tsx"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Storage
+  - community/app/pagetsx
 ---
 
 # getGameBySlug()
 
 ## Connections
 - [[DetailPage()]] - `calls` [EXTRACTED]
+- [[slugpage.tsx]] - `imports` [EXTRACTED]
 - [[games.ts]] - `contains` [EXTRACTED]
 - [[getGameById()]] - `calls` [EXTRACTED]
-- [[page.tsx_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Storage
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Package Dependencies"
+community: "scripts"
 location: "L29"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Package_Dependencies
+  - community/scripts
 ---
 
 # react
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[react]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Package_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/scripts

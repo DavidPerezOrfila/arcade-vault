@@ -1,19 +1,19 @@
 ---
 source_file: "app/_home/FeatureIcon.tsx"
 type: "code"
-community: "Local Storage"
+community: "app/page.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local_Storage
+  - community/app/pagetsx
 ---
 
 # FeatureIcon.tsx
 
 ## Connections
-- [[FeatureIcon()]] - `contains` [EXTRACTED]
+- [[FeatureIcon()_1]] - `contains` [EXTRACTED]
 - [[FeatureIconKind]] - `contains` [EXTRACTED]
-- [[page.tsx_6]] - `imports_from` [EXTRACTED]
+- [[apppage.tsx_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local_Storage
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

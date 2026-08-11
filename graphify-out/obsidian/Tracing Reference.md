@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/tracing.md"
 type: "document"
-community: "Playwright Summaries"
+community: "Playwright CLI Browser Automation Skill (.claude copy)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Summaries
+  - community/Playwright_CLI_Browser_Automation_Skill_claude_copy
 ---
 
 # Tracing Reference
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Playwright CLI Browser Automation Skill (.claude copy)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Summaries
+#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Browser_Automation_Skill_claude_copy

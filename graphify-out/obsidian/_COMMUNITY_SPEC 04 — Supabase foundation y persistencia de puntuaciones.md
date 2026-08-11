@@ -11,7 +11,7 @@ members: 8
 - [[04-supabase-scores-foundation]] - document - specs/04-supabase-scores-foundation.md
 - [[Acceptance criteria]] - document - specs/04-supabase-scores-foundation.md
 - [[Data model]] - document - specs/04-supabase-scores-foundation.md
-- [[Decisiones tomadas y descartadas_3]] - document - specs/04-supabase-scores-foundation.md
+- [[Decisiones tomadas y descartadas]] - document - specs/04-supabase-scores-foundation.md
 - [[Identified risks]] - document - specs/04-supabase-scores-foundation.md
 - [[Implementation plan]] - document - specs/04-supabase-scores-foundation.md
 - [[SPEC 04 — Supabase foundation y persistencia de puntuaciones]] - document - specs/04-supabase-scores-foundation.md

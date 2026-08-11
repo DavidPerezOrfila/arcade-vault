@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/actions.ts"
 type: "code"
-community: "Game Data Layer"
+community: "leaderboard.ts"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Game_Data_Layer
+  - community/leaderboardts
 ---
 
 # saveScoreAction()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[PlayerClient()]] - `calls` [EXTRACTED]
 - [[PlayerClient.tsx]] - `imports` [EXTRACTED]
-- [[actions.ts_1]] - `contains` [EXTRACTED]
 - [[createSupabaseServerClient()]] - `calls` [EXTRACTED]
+- [[dataactions.ts]] - `contains` [EXTRACTED]
 - [[parseFormData()]] - `calls` [EXTRACTED]
 - [[saveScore()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Game_Data_Layer
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

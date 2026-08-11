@@ -1,12 +1,12 @@
 ---
 source_file: "app/_home/TimeAgo.tsx"
 type: "code"
-community: "RecentActivity.tsx"
+community: "app/page.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RecentActivitytsx
+  - community/app/pagetsx
 ---
 
 # TimeAgo.tsx
@@ -16,4 +16,4 @@ tags:
 - [[TimeAgo()]] - `contains` [EXTRACTED]
 - [[relativeTime()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RecentActivitytsx
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

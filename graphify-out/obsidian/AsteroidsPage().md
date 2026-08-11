@@ -1,17 +1,17 @@
 ---
 source_file: "app/games/asteroids/page.tsx"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # AsteroidsPage()
 
 ## Connections
-- [[page.tsx_3]] - `contains` [EXTRACTED]
+- [[asteroidspage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

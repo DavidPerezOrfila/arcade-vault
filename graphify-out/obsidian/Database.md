@@ -1,18 +1,18 @@
 ---
 source_file: "lib/supabase/types.ts"
 type: "code"
-community: "types.ts"
+community: "leaderboard.ts"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/typests
+  - community/leaderboardts
 ---
 
 # Database
 
 ## Connections
-- [[types.ts_1]] - `imports` [EXTRACTED]
-- [[types.ts_5]] - `contains` [EXTRACTED]
+- [[datatypes.ts]] - `imports` [EXTRACTED]
+- [[supabasetypes.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/typests
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

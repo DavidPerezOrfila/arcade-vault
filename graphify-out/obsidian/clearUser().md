@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/storage.ts"
 type: "code"
-community: "Test Generation"
+community: "leaderboard.ts"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/leaderboardts
 ---
 
 # clearUser()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[AuthPage()]] - `calls` [EXTRACTED]
 - [[Nav()]] - `calls` [EXTRACTED]
+- [[authpage.tsx]] - `imports` [EXTRACTED]
 - [[nav.tsx]] - `imports` [EXTRACTED]
-- [[page.tsx_1]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

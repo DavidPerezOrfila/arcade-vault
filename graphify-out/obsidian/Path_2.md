@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "Games Page"
+community: "compress.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/compresspy
 ---
 
 # Path
 
 ## Connections
-- [[detect_file_type()]] - `references` [EXTRACTED]
-- [[should_compress()]] - `references` [EXTRACTED]
+- [[backup_dir_for()]] - `references` [EXTRACTED]
+- [[compress_file()]] - `references` [EXTRACTED]
+- [[is_sensitive_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/compresspy

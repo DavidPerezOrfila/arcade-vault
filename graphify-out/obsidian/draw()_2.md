@@ -1,20 +1,19 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/serpentina/game.esm.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L480"
+community: "serpentina/game.esm.js"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/serpentina/gameesmjs
 ---
 
 # draw()
 
 ## Connections
-- [[drawHUD()_1]] - `calls` [EXTRACTED]
-- [[drawOverlay()_1]] - `calls` [EXTRACTED]
-- [[game.js]] - `contains` [EXTRACTED]
-- [[loop()_2]] - `calls` [EXTRACTED]
+- [[initGame()_1]] - `calls` [EXTRACTED]
+- [[serpentinagame.esm.js]] - `contains` [EXTRACTED]
+- [[tick()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs

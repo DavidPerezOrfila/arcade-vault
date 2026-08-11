@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "resources/started-games/04-arkanoid/game.js"
 type: "code"
-community: "Playwright CLI Reference"
-location: "L10"
+community: "04-arkanoid/game.js"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Reference
+  - community/04-arkanoid/gamejs
 ---
 
 # keys
 
 ## Connections
-- [[game.js]] - `contains` [EXTRACTED]
+- [[04-arkanoidgame.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_CLI_Reference
+#graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs

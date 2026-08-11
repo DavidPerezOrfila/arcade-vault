@@ -1,12 +1,12 @@
 ---
 source_file: "components/games/AuthPrompt.tsx"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # AuthPrompt.tsx
@@ -16,5 +16,6 @@ tags:
 - [[AuthPrompt()]] - `contains` [EXTRACTED]
 - [[AuthPromptProps]] - `contains` [EXTRACTED]
 - [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
+- [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

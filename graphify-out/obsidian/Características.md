@@ -1,12 +1,12 @@
 ---
 source_file: "resources/started-games/02-asteroids/README.md"
 type: "document"
-community: "Spec-Impl Skill"
+community: "Asteroids"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Impl_Skill
+  - community/Asteroids
 ---
 
 # Características
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Asteroids]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Impl_Skill
+#graphify/document #graphify/EXTRACTED #community/Asteroids

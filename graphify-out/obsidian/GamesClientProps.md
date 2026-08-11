@@ -1,12 +1,12 @@
 ---
 source_file: "app/games/GamesClient.tsx"
 type: "code"
-community: "Storage State"
+community: "app/page.tsx"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Storage_State
+  - community/app/pagetsx
 ---
 
 # GamesClientProps
@@ -15,4 +15,4 @@ tags:
 - [[Game]] - `references` [EXTRACTED]
 - [[GamesClient.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Storage_State
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

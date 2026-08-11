@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/03-tetris/README.md"
+source_file: "resources/started-games/02-asteroids/README.md"
 type: "document"
-community: "Playwright Tracing"
-location: "L79"
+community: "Asteroids"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Tracing
+  - community/Asteroids
 ---
 
 # Controles
 
 ## Connections
-- [[Tetris]] - `contains` [EXTRACTED]
+- [[Asteroids]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing
+#graphify/document #graphify/EXTRACTED #community/Asteroids

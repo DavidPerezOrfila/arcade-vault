@@ -1,12 +1,12 @@
 ---
 source_file: "resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md"
 type: "document"
-community: "Spec Template"
+community: "01 — MVP jugable de Arkanoid"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec_Template
+  - community/01__MVP_jugable_de_Arkanoid
 ---
 
 # Alcance
@@ -16,4 +16,4 @@ tags:
 - [[Dentro del MVP]] - `contains` [EXTRACTED]
 - [[Fuera del MVP (dejado para specs posteriores)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec_Template
+#graphify/document #graphify/EXTRACTED #community/01__MVP_jugable_de_Arkanoid

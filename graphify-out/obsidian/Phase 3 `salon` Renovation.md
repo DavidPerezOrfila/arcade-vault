@@ -12,6 +12,6 @@ tags:
 # Phase 3: `/salon` Renovation
 
 ## Connections
-- [[Implementation Plan_2]] - `contains` [EXTRACTED]
+- [[Implementation Plan_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/06-games-catalog-salon

@@ -1,17 +1,17 @@
 ---
 source_file: "lib/supabase/types.ts"
 type: "code"
-community: "types.ts"
+community: "leaderboard.ts"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/typests
+  - community/leaderboardts
 ---
 
 # CompositeTypes
 
 ## Connections
-- [[types.ts_5]] - `contains` [EXTRACTED]
+- [[supabasetypes.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/typests
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

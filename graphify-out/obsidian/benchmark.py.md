@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/benchmark.py"
 type: "code"
-community: "About Page & Contact"
+community: "validate.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/validatepy
 ---
 
 # benchmark.py
@@ -19,4 +19,4 @@ tags:
 - [[validate()]] - `imports` [EXTRACTED]
 - [[validate.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/validatepy

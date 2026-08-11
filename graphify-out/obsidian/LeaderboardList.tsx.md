@@ -1,12 +1,12 @@
 ---
 source_file: "components/games/LeaderboardList.tsx"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # LeaderboardList.tsx
@@ -17,6 +17,7 @@ tags:
 - [[LeaderboardEntry]] - `imports` [EXTRACTED]
 - [[LeaderboardList()]] - `contains` [EXTRACTED]
 - [[LeaderboardListProps]] - `contains` [EXTRACTED]
-- [[types.ts_4]] - `imports_from` [EXTRACTED]
+- [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
+- [[gamestypes.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

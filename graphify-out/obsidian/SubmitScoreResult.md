@@ -1,12 +1,12 @@
 ---
 source_file: "lib/games/leaderboard.ts"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # SubmitScoreResult
@@ -16,4 +16,4 @@ tags:
 - [[leaderboard.ts]] - `contains` [EXTRACTED]
 - [[useArcadeGame.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

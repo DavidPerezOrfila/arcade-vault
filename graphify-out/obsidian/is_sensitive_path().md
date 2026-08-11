@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/compress.py"
 type: "code"
-community: "Games Page"
+community: "compress.py"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/compresspy
 ---
 
 # is_sensitive_path()
 
 ## Connections
 - [[Heuristic denylist for files that must never be shipped to a third-party API.]] - `rationale_for` [EXTRACTED]
-- [[Path_1]] - `references` [EXTRACTED]
+- [[Path_2]] - `references` [EXTRACTED]
 - [[compress.py]] - `contains` [EXTRACTED]
 - [[compress_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/compresspy

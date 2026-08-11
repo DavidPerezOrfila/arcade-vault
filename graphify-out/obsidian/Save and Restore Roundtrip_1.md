@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "localStorage Ops"
+community: "Cookies"
 location: "L251"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/localStorage_Ops
+  - community/Cookies
 ---
 
 # Save and Restore Roundtrip
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Patterns_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/localStorage_Ops
+#graphify/document #graphify/EXTRACTED #community/Cookies

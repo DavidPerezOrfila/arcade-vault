@@ -1,21 +1,21 @@
 ---
 source_file: "resources/templates/home-about/home.jsx"
 type: "code"
-community: "Home Page UI"
+community: "home.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_UI
+  - community/homejsx
 ---
 
 # home.jsx
 
 ## Connections
-- [[FeatureIcon()_1]] - `contains` [EXTRACTED]
-- [[FloatingSilhouettes()_1]] - `contains` [EXTRACTED]
-- [[Home()_1]] - `contains` [EXTRACTED]
-- [[MiniCard()_1]] - `contains` [EXTRACTED]
+- [[FeatureIcon()]] - `contains` [EXTRACTED]
+- [[FloatingSilhouettes()]] - `contains` [EXTRACTED]
+- [[Home()]] - `contains` [EXTRACTED]
+- [[MiniCard()]] - `contains` [EXTRACTED]
 - [[useReveal()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_UI
+#graphify/code #graphify/EXTRACTED #community/homejsx

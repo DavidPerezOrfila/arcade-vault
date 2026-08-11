@@ -1,0 +1,19 @@
+---
+type: community
+members: 2
+---
+
+# [id]/page.md
+
+**Members:** 2 nodes
+
+## Members
+- [[idpage]] - document - graft/app/player/[id]/page.md
+- [[appplayeridpage.tsx]] - document - graft/app/player/[id]/page.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/id/pagemd
+SORT file.name ASC
+```

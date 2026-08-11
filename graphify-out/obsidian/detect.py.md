@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/detect.py"
 type: "code"
-community: "Games Page"
+community: "compress.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/compresspy
 ---
 
 # detect.py
@@ -20,4 +20,4 @@ tags:
 - [[detect_file_type()]] - `contains` [EXTRACTED]
 - [[should_compress()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/compresspy

@@ -1,19 +1,17 @@
 ---
-source_file: "resources/started-games/03-tetris/CLAUDE.md"
+source_file: "resources/started-games/02-asteroids/CLAUDE.md"
 type: "document"
-community: "Storage State API"
-location: "L14"
+community: "02-asteroids/CLAUDE.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Storage_State_API
+  - community/02-asteroids/CLAUDEmd
 ---
 
 # Architecture
 
 ## Connections
-- [[CLAUDE_3]] - `contains` [EXTRACTED]
-- [[Game flow]] - `contains` [EXTRACTED]
-- [[game.js internals]] - `contains` [EXTRACTED]
+- [[02-asteroidsCLAUDE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Storage_State_API
+#graphify/document #graphify/EXTRACTED #community/02-asteroids/CLAUDEmd

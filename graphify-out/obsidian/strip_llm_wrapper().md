@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/compress.py"
 type: "code"
-community: "Games Page"
+community: "compress.py"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/compresspy
 ---
 
 # strip_llm_wrapper()
@@ -16,4 +16,4 @@ tags:
 - [[call_claude()]] - `calls` [EXTRACTED]
 - [[compress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/compresspy

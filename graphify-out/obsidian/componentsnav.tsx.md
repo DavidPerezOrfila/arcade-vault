@@ -1,17 +1,17 @@
 ---
 source_file: "graft/components/nav.md"
 type: "document"
-community: "nav.md"
+community: "components/nav.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/navmd
+  - community/components/navmd
 ---
 
 # components/nav.tsx
 
 ## Connections
-- [[nav]] - `contains` [EXTRACTED]
+- [[componentsnav]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/navmd
+#graphify/document #graphify/EXTRACTED #community/components/navmd

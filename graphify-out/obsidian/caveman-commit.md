@@ -12,10 +12,10 @@ tags:
 # caveman-commit
 
 ## Connections
-- [[Example output]] - `contains` [EXTRACTED]
-- [[How to invoke_1]] - `contains` [EXTRACTED]
-- [[README_1]] - `contains` [EXTRACTED]
-- [[See also_1]] - `contains` [EXTRACTED]
-- [[What it does_1]] - `contains` [EXTRACTED]
+- [[Example output_2]] - `contains` [EXTRACTED]
+- [[How to invoke_3]] - `contains` [EXTRACTED]
+- [[See also_3]] - `contains` [EXTRACTED]
+- [[What it does_3]] - `contains` [EXTRACTED]
+- [[caveman-commitREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman-commit

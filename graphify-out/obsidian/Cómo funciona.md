@@ -1,12 +1,12 @@
 ---
 source_file: "resources/started-games/03-tetris/README.md"
 type: "document"
-community: "Playwright Tracing"
+community: "Tetris"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Tracing
+  - community/Tetris
 ---
 
 # Cómo funciona
@@ -18,4 +18,4 @@ tags:
 - [[Flujo del juego]] - `contains` [EXTRACTED]
 - [[Tetris]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing
+#graphify/document #graphify/EXTRACTED #community/Tetris

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "localStorage Ops"
+community: "Cookies"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/localStorage_Ops
+  - community/Cookies
 ---
 
 # Cookies
@@ -22,4 +22,4 @@ tags:
 - [[Set a Cookie]] - `contains` [EXTRACTED]
 - [[Storage Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/localStorage_Ops
+#graphify/document #graphify/EXTRACTED #community/Cookies

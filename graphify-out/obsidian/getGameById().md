@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/games.ts"
 type: "code"
-community: "Session Storage"
+community: "app/page.tsx"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Storage
+  - community/app/pagetsx
 ---
 
 # getGameById()
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[PlayerPage()]] - `calls` [EXTRACTED]
 - [[RecentActivity.tsx]] - `imports` [EXTRACTED]
+- [[idpage.tsx]] - `imports` [EXTRACTED]
 - [[createSupabaseServerClient()]] - `calls` [EXTRACTED]
 - [[gameLabel()]] - `calls` [EXTRACTED]
 - [[games.ts]] - `contains` [EXTRACTED]
 - [[getGameBySlug()]] - `calls` [EXTRACTED]
-- [[page.tsx_7]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Storage
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

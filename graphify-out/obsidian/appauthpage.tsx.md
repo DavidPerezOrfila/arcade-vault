@@ -1,17 +1,17 @@
 ---
 source_file: "graft/app/auth/page.md"
 type: "document"
-community: "page.md"
+community: "auth/page.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pagemd
+  - community/auth/pagemd
 ---
 
 # app/auth/page.tsx
 
 ## Connections
-- [[page_1]] - `contains` [EXTRACTED]
+- [[authpage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pagemd
+#graphify/document #graphify/EXTRACTED #community/auth/pagemd

@@ -1,12 +1,12 @@
 ---
-source_file: ".claude/skills/playwright-cli/references/video-recording.md"
+source_file: ".agents/skills/playwright-cli/references/video-recording.md"
 type: "document"
-community: "Playwright Tracing"
+community: "Video Recording"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Tracing
+  - community/Video_Recording
 ---
 
 # Basic Recording
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Video Recording_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing
+#graphify/document #graphify/EXTRACTED #community/Video_Recording

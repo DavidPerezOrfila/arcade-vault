@@ -1,12 +1,12 @@
 ---
 source_file: "app/salon/LeaderboardTable.tsx"
 type: "code"
-community: "actions.ts"
-location: "L23"
+community: "app/page.tsx"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/actionsts
+  - community/app/pagetsx
 ---
 
 # LeaderboardTable()
@@ -18,4 +18,4 @@ tags:
 - [[formatScore()]] - `calls` [EXTRACTED]
 - [[topRankClass()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/actionsts
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

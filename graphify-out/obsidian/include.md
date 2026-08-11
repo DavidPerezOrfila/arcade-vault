@@ -1,23 +1,23 @@
 ---
 source_file: "tsconfig.json"
 type: "code"
-community: "TypeScript Config"
+community: "compilerOptions"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Config
+  - community/compilerOptions
 ---
 
 # include
 
 ## Connections
-- [[.mts]] - `extends` [EXTRACTED]
-- [[.ts]] - `extends` [EXTRACTED]
-- [[.tsx]] - `extends` [EXTRACTED]
-- [[.nextdevtypes.ts]] - `extends` [EXTRACTED]
-- [[.nexttypes.ts]] - `extends` [EXTRACTED]
+- [[dot-mts]] - `extends` [EXTRACTED]
+- [[dot-ts]] - `extends` [EXTRACTED]
+- [[dot-tsx]] - `extends` [EXTRACTED]
+- [[dot-nextdevtypes.ts]] - `extends` [EXTRACTED]
+- [[dot-nexttypes.ts]] - `extends` [EXTRACTED]
 - [[next-env.d.ts]] - `extends` [EXTRACTED]
 - [[tsconfig.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Config
+#graphify/code #graphify/EXTRACTED #community/compilerOptions

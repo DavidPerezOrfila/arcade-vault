@@ -16,12 +16,12 @@ members: 14
 - [[Integrate an Arcade Vault game]] - document - .claude/skills/integrate-arcade-game/SKILL.md
 - [[REUSE, do not modify]] - document - .claude/skills/integrate-arcade-game/SKILL.md
 - [[React component lifecycle]] - document - .claude/skills/integrate-arcade-game/SKILL.md
-- [[SKILL_11]] - document - .claude/skills/integrate-arcade-game/SKILL.md
 - [[Submit Server Action recipe]] - document - .claude/skills/integrate-arcade-game/SKILL.md
 - [[The 8 files]] - document - .claude/skills/integrate-arcade-game/SKILL.md
 - [[Verification]] - document - .claude/skills/integrate-arcade-game/SKILL.md
 - [[WRAP, do not port]] - document - .claude/skills/integrate-arcade-game/SKILL.md
-- [[Workflow_2]] - document - .claude/skills/integrate-arcade-game/SKILL.md
+- [[Workflow_3]] - document - .claude/skills/integrate-arcade-game/SKILL.md
+- [[integrate-arcade-gameSKILL]] - document - .claude/skills/integrate-arcade-game/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

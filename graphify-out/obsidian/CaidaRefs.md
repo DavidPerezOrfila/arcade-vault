@@ -1,18 +1,18 @@
 ---
 source_file: "lib/games/caida/types.ts"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # CaidaRefs
 
 ## Connections
 - [[CaidaGame.tsx]] - `imports` [EXTRACTED]
-- [[types.ts_3]] - `contains` [EXTRACTED]
+- [[caidatypes.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

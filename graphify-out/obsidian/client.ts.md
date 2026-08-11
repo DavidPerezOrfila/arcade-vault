@@ -1,21 +1,20 @@
 ---
 source_file: "lib/supabase/client.ts"
 type: "code"
-community: "._game.js"
+community: "leaderboard.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_gamejs
+  - community/leaderboardts
 ---
 
 # client.ts
 
 ## Connections
-- [[SalonClient.tsx]] - `imports_from` [EXTRACTED]
 - [[createSupabaseBrowserClient()]] - `contains` [EXTRACTED]
 - [[env.ts]] - `imports_from` [EXTRACTED]
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
 - [[requireEnv()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_gamejs
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

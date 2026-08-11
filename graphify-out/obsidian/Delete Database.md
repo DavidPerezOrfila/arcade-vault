@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/storage-state.md"
 type: "document"
-community: "localStorage Ops"
+community: "Cookies"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/localStorage_Ops
+  - community/Cookies
 ---
 
 # Delete Database
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IndexedDB]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/localStorage_Ops
+#graphify/document #graphify/EXTRACTED #community/Cookies

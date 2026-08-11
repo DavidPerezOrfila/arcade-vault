@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/04-arkanoid/game.js"
+source_file: "resources/started-games/03-tetris/game.js"
 type: "code"
-community: "Test Generation"
-location: "L3"
+community: "03-tetris/game.js"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_Generation
+  - community/03-tetris/gamejs
 ---
 
 # ctx
 
 ## Connections
-- [[game.js_2]] - `contains` [EXTRACTED]
+- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_Generation
+#graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs

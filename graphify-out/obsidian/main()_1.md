@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/cli.py"
 type: "code"
-community: "Games Page"
+community: "compress.py"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/compresspy
 ---
 
 # main()
@@ -20,4 +20,4 @@ tags:
 - [[print_usage()]] - `calls` [EXTRACTED]
 - [[should_compress()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/compresspy

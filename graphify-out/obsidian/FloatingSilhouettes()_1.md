@@ -1,17 +1,18 @@
 ---
-source_file: "resources/templates/home-about/home.jsx"
+source_file: "app/_home/FloatingSilhouettes.tsx"
 type: "code"
-community: "Home Page UI"
-location: "L24"
+community: "app/page.tsx"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_UI
+  - community/app/pagetsx
 ---
 
 # FloatingSilhouettes()
 
 ## Connections
-- [[home.jsx]] - `contains` [EXTRACTED]
+- [[FloatingSilhouettes.tsx]] - `contains` [EXTRACTED]
+- [[apppage.tsx_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_UI
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

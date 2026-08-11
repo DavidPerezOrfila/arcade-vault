@@ -1,12 +1,12 @@
 ---
-source_file: "resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md"
+source_file: "resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md"
 type: "document"
-community: "Playwright CLI Skill"
+community: "02 — Animación de explosión al romper bloques"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_CLI_Skill
+  - community/02__Animacin_de_explosin_al_romper_bloques
 ---
 
 # Dentro del spec
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Alcance_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_CLI_Skill
+#graphify/document #graphify/EXTRACTED #community/02__Animacin_de_explosin_al_romper_bloques

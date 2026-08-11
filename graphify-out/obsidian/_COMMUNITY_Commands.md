@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Playwright Automation_1]]
+- 1 edge to [[_COMMUNITY_Browser Automation with playwright-cli]]
 
 ## Top bridge nodes
 - [[Commands]] - degree 10, connects to 1 community

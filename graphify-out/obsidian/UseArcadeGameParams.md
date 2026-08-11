@@ -1,12 +1,12 @@
 ---
 source_file: "components/games/useArcadeGame.ts"
 type: "code"
-community: "Cookie Management"
+community: "CaidaGame.tsx"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cookie_Management
+  - community/CaidaGametsx
 ---
 
 # UseArcadeGameParams
@@ -16,4 +16,4 @@ tags:
 - [[SubmitScoreResult]] - `references` [EXTRACTED]
 - [[useArcadeGame.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cookie_Management
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

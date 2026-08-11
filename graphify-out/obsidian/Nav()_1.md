@@ -1,17 +1,17 @@
 ---
 source_file: "resources/templates/home-about/nav.jsx"
 type: "code"
-community: "Nav Template"
+community: "home-about/nav.jsx"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Nav_Template
+  - community/home-about/navjsx
 ---
 
 # Nav()
 
 ## Connections
-- [[nav.jsx]] - `contains` [EXTRACTED]
+- [[home-aboutnav.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Nav_Template
+#graphify/code #graphify/EXTRACTED #community/home-about/navjsx

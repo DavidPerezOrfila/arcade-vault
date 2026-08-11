@@ -1,17 +1,17 @@
 ---
 source_file: "graft/resources/templates/nav.md"
 type: "document"
-community: "nav.md"
+community: "templates/nav.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/navmd
+  - community/templates/navmd
 ---
 
 # resources/templates/nav.jsx
 
 ## Connections
-- [[nav_2]] - `contains` [EXTRACTED]
+- [[templatesnav]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/navmd
+#graphify/document #graphify/EXTRACTED #community/templates/navmd

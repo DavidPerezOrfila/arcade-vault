@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/compress.py"
 type: "code"
-community: "Games Page"
+community: "compress.py"
 location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Games_Page
+  - community/compresspy
 ---
 
 # compress_file()
 
 ## Connections
-- [[Path_1]] - `references` [EXTRACTED]
+- [[Path_2]] - `references` [EXTRACTED]
 - [[backup_dir_for()]] - `calls` [EXTRACTED]
 - [[build_compress_prompt()]] - `calls` [EXTRACTED]
 - [[build_fix_prompt()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[split_frontmatter()]] - `calls` [EXTRACTED]
 - [[validate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Games_Page
+#graphify/code #graphify/EXTRACTED #community/compresspy

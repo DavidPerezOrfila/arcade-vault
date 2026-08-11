@@ -1,12 +1,12 @@
 ---
 source_file: "app/about/SuccessTerminal.tsx"
 type: "code"
-community: "Playwright Config"
+community: "about/page.tsx"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Config
+  - community/about/pagetsx
 ---
 
 # SuccessTerminal()
@@ -15,4 +15,4 @@ tags:
 - [[ContactForm.tsx]] - `imports` [EXTRACTED]
 - [[SuccessTerminal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/about/pagetsx

@@ -1,17 +1,17 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "Storage State"
+community: "leaderboard.ts"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Storage_State
+  - community/leaderboardts
 ---
 
 # GameColor
 
 ## Connections
-- [[types.ts_1]] - `contains` [EXTRACTED]
+- [[datatypes.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Storage_State
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

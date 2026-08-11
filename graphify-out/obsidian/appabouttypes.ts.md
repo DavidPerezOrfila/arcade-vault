@@ -1,17 +1,17 @@
 ---
 source_file: "graft/app/about/types.md"
 type: "document"
-community: "types.md"
+community: "about/types.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/typesmd
+  - community/about/typesmd
 ---
 
 # app/about/types.ts
 
 ## Connections
-- [[types]] - `contains` [EXTRACTED]
+- [[abouttypes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/typesmd
+#graphify/document #graphify/EXTRACTED #community/about/typesmd

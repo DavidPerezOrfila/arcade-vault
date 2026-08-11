@@ -1,21 +1,20 @@
 ---
-source_file: "resources/started-games/03-tetris/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "Playwright Automation"
-location: "L191"
+community: "asteroids/game.esm.js"
+location: "L505"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Automation
+  - community/asteroids/gameesmjs
 ---
 
 # draw()
 
 ## Connections
-- [[drawBlock()_1]] - `calls` [EXTRACTED]
-- [[drawGrid()_1]] - `calls` [EXTRACTED]
-- [[game.js_1]] - `contains` [EXTRACTED]
-- [[ghostY()_1]] - `calls` [EXTRACTED]
-- [[loop()_3]] - `calls` [EXTRACTED]
+- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
+- [[drawHUD()_1]] - `calls` [EXTRACTED]
+- [[drawOverlay()_2]] - `calls` [EXTRACTED]
+- [[loop()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Automation
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

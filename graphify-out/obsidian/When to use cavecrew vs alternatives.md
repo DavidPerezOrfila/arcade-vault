@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/cavecrew/SKILL.md"
 type: "document"
-community: "SKILL.md"
+community: "cavecrew/SKILL.md"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SKILLmd
+  - community/cavecrew/SKILLmd
 ---
 
 # When to use cavecrew vs alternatives
 
 ## Connections
-- [[SKILL]] - `contains` [EXTRACTED]
+- [[cavecrewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

@@ -1,16 +1,16 @@
-# Graph Report - 05-arcade-vault  (2026-08-09)
+# Graph Report - 05-arcade-vault  (2026-08-11)
 
 ## Corpus Check
-- 248 files · ~117,084 words
+- 251 files · ~145,808 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1348 nodes · 1620 edges · 158 communities (84 shown, 74 thin omitted)
+- 1356 nodes · 1622 edges · 157 communities (83 shown, 74 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 30 edges (avg confidence: 0.71)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ea989ebf`
+- Built from commit: `7a2919dd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -71,13 +71,11 @@
 - actions.ts
 - 07-tetris-caida
 - Local Storage
-- Session Storage
 - Storage State
 - instructions.md
 - The tools
 - INDEX.md
 - ._02-animacion-explosion-bloques.md
-- types.ts
 - Commands
 - RecentActivity.tsx
 - actions.md
@@ -166,9 +164,9 @@
 3. `Browser Automation with playwright-cli` - 15 edges
 4. `validate()` - 14 edges
 5. `About Page with Resend Spec (03)` - 14 edges
-6. `createSupabaseServerClient()` - 13 edges
-7. `Home Page Spec (02)` - 13 edges
-8. `compress_file()` - 12 edges
+6. `Home Page Spec (02)` - 13 edges
+7. `compress_file()` - 12 edges
+8. `createSupabaseServerClient()` - 12 edges
 9. `update()` - 11 edges
 10. `LeaderboardEntry` - 11 edges
 
@@ -193,7 +191,7 @@
 - **Home Page Implementation Components** — specs_02_home_page_homepagespec, specs_02_home_page_sevensections, specs_02_home_page_usereveal, specs_02_home_page_floatingsilhouettes, specs_02_home_page_featureicon, specs_02_home_page_minicard [EXTRACTED 1.00]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (158 total, 74 thin omitted)
+## Communities (157 total, 74 thin omitted)
 
 ### Community 0 - "Playwright CLI Reference"
 Cohesion: 0.07
@@ -212,8 +210,8 @@ Cohesion: 0.09
 Nodes (32): Playwright Test Report, Arcade Vault Project Overview, Graphify Knowledge Graph System, Server Components Default Pattern, Spec Driven Design Workflow, Tailwind CSS v4 Theme Configuration, Tech Stack (Next.js 16, React 19, TypeScript 5, Tailwind v4, ESLint 9), Arcade Vault Platform Description (+24 more)
 
 ### Community 4 - "Game Data Layer"
-Cohesion: 0.18
-Nodes (18): getSalonLeaderboard(), getUserBestScore(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, ScoreEntryInputParsed, scoreEntrySchema (+10 more)
+Cohesion: 0.20
+Nodes (16): getSalonLeaderboard(), LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, ScoreEntryInputParsed, scoreEntrySchema, fetchScores() (+8 more)
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
@@ -240,8 +238,8 @@ Cohesion: 0.14
 Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collideAABB(), ctx (+10 more)
 
 ### Community 11 - "Test Generation"
-Cohesion: 0.31
-Nodes (9): AuthPage(), clearUser(), getUser(), setUser(), User, PlayerClient(), PlayerClientProps, Nav() (+1 more)
+Cohesion: 0.20
+Nodes (12): AuthPage(), clearUser(), getUser(), setUser(), User, PlayerClient(), PlayerClientProps, Nav() (+4 more)
 
 ### Community 12 - "Dev Tooling"
 Cohesion: 0.07
@@ -372,32 +370,28 @@ Cohesion: 0.14
 Nodes (13): Catalog seed, Common mistakes, Fase A — Planificar (método /spec), Fase B — Implementar (método /spec-impl), Fase C — Receta técnica, Integrate an Arcade Vault game, React component lifecycle, REUSE, do not modify (+5 more)
 
 ### Community 58 - "._game.js"
-Cohesion: 0.52
-Nodes (3): requireEnv(), createSupabaseAdminClient(), createSupabaseBrowserClient()
+Cohesion: 0.22
+Nodes (8): 08-serpentina-game, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
 
 ### Community 63 - "game.esm.js"
 Cohesion: 0.16
 Nodes (28): attachInput(), clearLines(), collide(), COLORS, createBoard(), destroy(), detachInput(), draw() (+20 more)
 
 ### Community 64 - "actions.ts"
-Cohesion: 0.19
-Nodes (16): seededScores(), DetailPage(), DetailPageProps, TopPlayersToday(), LeaderboardRow, LeaderboardTable(), LeaderboardTableProps, UserBadge (+8 more)
+Cohesion: 0.20
+Nodes (16): getGameBySlug(), seededScores(), DetailPage(), DetailPageProps, TopPlayersToday(), LeaderboardRow, LeaderboardTable(), LeaderboardTableProps (+8 more)
 
 ### Community 65 - "07-tetris-caida"
 Cohesion: 0.22
 Nodes (8): 07-tetris-caida, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
 
 ### Community 67 - "Local Storage"
-Cohesion: 0.21
-Nodes (9): FeatureIcon(), FeatureIconKind, FloatingSilhouettes(), FeatureItem, FEATURES, MiniCard(), StatItem, STATS (+1 more)
-
-### Community 68 - "Session Storage"
-Cohesion: 0.26
-Nodes (9): getGameById(), getGameBySlug(), getGames(), getGamesByCategory(), GamesPage(), Home(), PlayerPage(), PlayerPageProps (+1 more)
+Cohesion: 0.16
+Nodes (14): getGames(), getGamesByCategory(), GamesPage(), FeatureIcon(), FeatureIconKind, FloatingSilhouettes(), FeatureItem, FEATURES (+6 more)
 
 ### Community 69 - "Storage State"
-Cohesion: 0.21
-Nodes (8): PLAYERS, CATS, Game, GameCategory, GameColor, GameFilter, ScoreRow, GamesClientProps
+Cohesion: 0.10
+Nodes (19): PLAYERS, CATS, Game, GameCategory, GameColor, GameFilter, ScoreRow, ScoreRowDb (+11 more)
 
 ### Community 71 - "The tools"
 Cohesion: 0.15
@@ -411,17 +405,13 @@ Nodes (7): eslint.config.mjs, Concepts, Files, graft — repo map, next.config.m
 Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
 
-### Community 74 - "types.ts"
-Cohesion: 0.18
-Nodes (10): CompositeTypes, Constants, Database, DatabaseWithoutInternals, DefaultSchema, Enums, Json, Tables (+2 more)
-
 ### Community 76 - "Commands"
 Cohesion: 0.20
 Nodes (10): Commands, Core, DevTools, Keyboard, Mouse, Navigation, Network, Save as (+2 more)
 
 ### Community 77 - "RecentActivity.tsx"
-Cohesion: 0.36
-Nodes (7): getScores(), gameLabel(), PALETTE, RecentActivity(), tone(), relativeTime(), TimeAgo()
+Cohesion: 0.24
+Nodes (10): getGameById(), getScores(), gameLabel(), PALETTE, RecentActivity(), tone(), relativeTime(), TimeAgo() (+2 more)
 
 ### Community 98 - "06-games-catalog-salon"
 Cohesion: 0.12
@@ -476,21 +466,21 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **663 isolated node(s):** `FeatureIconKind`, `PALETTE`, `FeatureItem`, `StatItem`, `FormFields` (+658 more)
+- **669 isolated node(s):** `FeatureIconKind`, `PALETTE`, `FeatureItem`, `StatItem`, `FormFields` (+664 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **74 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `AsteroidsGame()` connect `Cookie Management` to `E2E Test`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `CaidaGame()` connect `Cookie Management` to `game.esm.js`?**
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `Storage Management` connect `localStorage Ops` to `Storage State`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Browser Automation with playwright-cli` connect `Playwright Automation` to `Storage State`, `Commands`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `createSupabaseServerClient()` connect `Game Data Layer` to `._game.js`, `Session Storage`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `FeatureIconKind`, `PALETTE`, `FeatureItem` to the rest of the system?**
-  _663 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _669 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Playwright CLI Reference` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Sessions` be split into smaller, more focused modules?**

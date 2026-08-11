@@ -1,18 +1,18 @@
 ---
 source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "game.esm.js"
-location: "L97"
+community: "caida/game.esm.js"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gameesmjs
+  - community/caida/gameesmjs
 ---
 
 # createBoard()
 
 ## Connections
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
-- [[initGame()_1]] - `calls` [EXTRACTED]
+- [[caidagame.esm.js]] - `contains` [EXTRACTED]
+- [[initGame()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

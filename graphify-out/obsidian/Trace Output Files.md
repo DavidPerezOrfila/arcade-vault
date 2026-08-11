@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/tracing.md"
 type: "document"
-community: "Playwright Tracing"
+community: "Tracing"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Tracing
+  - community/Tracing
 ---
 
 # Trace Output Files
@@ -17,4 +17,4 @@ tags:
 - [[`trace-{timestamp}.network`]] - `contains` [EXTRACTED]
 - [[`trace-{timestamp}.trace`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Tracing
+#graphify/document #graphify/EXTRACTED #community/Tracing

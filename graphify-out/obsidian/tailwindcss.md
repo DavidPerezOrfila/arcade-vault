@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Dev Tooling"
+community: "devDependencies"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dev_Tooling
+  - community/devDependencies
 ---
 
 # tailwindcss
@@ -15,4 +15,4 @@ tags:
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[tailwindcss_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dev_Tooling
+#graphify/code #graphify/EXTRACTED #community/devDependencies

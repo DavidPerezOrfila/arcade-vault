@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/caveman-review/SKILL.md"
+source_file: ".agents/skills/caveman/SKILL.md"
 type: "document"
-community: "caveman-review"
-location: "L12"
+community: "caveman/SKILL.md"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/caveman-review
+  - community/caveman/SKILLmd
 ---
 
 # Rules
 
 ## Connections
-- [[SKILL_4]] - `contains` [EXTRACTED]
+- [[cavemanSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/caveman-review
+#graphify/document #graphify/EXTRACTED #community/caveman/SKILLmd

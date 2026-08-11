@@ -1,17 +1,17 @@
 ---
-source_file: ".github/instructions/mermaid.instructions.md"
+source_file: ".agents/skills/caveman-review/SKILL.md"
 type: "document"
-community: "Mermaid AI Skills"
-location: "L73"
+community: "caveman-review"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mermaid_AI_Skills
+  - community/caveman-review
 ---
 
 # Rules
 
 ## Connections
-- [[Mermaid AI Skills]] - `contains` [EXTRACTED]
+- [[caveman-reviewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mermaid_AI_Skills
+#graphify/document #graphify/EXTRACTED #community/caveman-review

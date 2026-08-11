@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/references/element-attributes.md"
 type: "document"
-community: "Storage State"
+community: "playwright-cli/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Storage_State
+  - community/playwright-cli/SKILLmd
 ---
 
 # Inspecting Element Attributes
@@ -15,4 +15,4 @@ tags:
 - [[Examples_2]] - `contains` [EXTRACTED]
 - [[element-attributes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Storage_State
+#graphify/document #graphify/EXTRACTED #community/playwright-cli/SKILLmd

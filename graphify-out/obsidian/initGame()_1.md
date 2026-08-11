@@ -1,23 +1,21 @@
 ---
-source_file: "lib/games/caida/game.esm.js"
+source_file: "lib/games/serpentina/game.esm.js"
 type: "code"
-community: "game.esm.js"
-location: "L374"
+community: "serpentina/game.esm.js"
+location: "L237"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gameesmjs
+  - community/serpentina/gameesmjs
 ---
 
 # initGame()
 
 ## Connections
-- [[attachInput()_1]] - `calls` [EXTRACTED]
-- [[createBoard()]] - `calls` [EXTRACTED]
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
-- [[loop()_1]] - `indirect_call` [INFERRED]
-- [[randomPiece()]] - `calls` [EXTRACTED]
-- [[spawn()]] - `calls` [EXTRACTED]
-- [[updateHUD()]] - `calls` [EXTRACTED]
+- [[attachInput()]] - `calls` [EXTRACTED]
+- [[draw()_2]] - `calls` [EXTRACTED]
+- [[reset()]] - `calls` [EXTRACTED]
+- [[scheduleTick()]] - `calls` [EXTRACTED]
+- [[serpentinagame.esm.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs

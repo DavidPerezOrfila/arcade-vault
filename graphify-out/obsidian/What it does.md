@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/cavecrew/README.md"
 type: "document"
-community: "SKILL.md"
+community: "cavecrew/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SKILLmd
+  - community/cavecrew/SKILLmd
 ---
 
 # What it does
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cavecrew]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

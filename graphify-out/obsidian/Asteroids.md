@@ -1,24 +1,24 @@
 ---
 source_file: "resources/started-games/02-asteroids/README.md"
 type: "document"
-community: "Spec-Impl Skill"
+community: "Asteroids"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec-Impl_Skill
+  - community/Asteroids
 ---
 
 # Asteroids
 
 ## Connections
+- [[02-asteroidsREADME]] - `contains` [EXTRACTED]
 - [[Características]] - `contains` [EXTRACTED]
-- [[Controles]] - `contains` [EXTRACTED]
+- [[Controles_1]] - `contains` [EXTRACTED]
 - [[Cómo correr]] - `contains` [EXTRACTED]
 - [[Demo]] - `contains` [EXTRACTED]
 - [[Descripción]] - `contains` [EXTRACTED]
 - [[Puntuación]] - `contains` [EXTRACTED]
-- [[README_7]] - `contains` [EXTRACTED]
-- [[Tecnologías]] - `contains` [EXTRACTED]
+- [[Tecnologías_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec-Impl_Skill
+#graphify/document #graphify/EXTRACTED #community/Asteroids

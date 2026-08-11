@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "About Page & Contact"
+community: "compress.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Contact
+  - community/compresspy
 ---
 
 # Path
 
 ## Connections
-- [[read_file()]] - `references` [EXTRACTED]
-- [[validate()]] - `references` [EXTRACTED]
+- [[detect_file_type()]] - `references` [EXTRACTED]
+- [[should_compress()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Contact
+#graphify/code #graphify/EXTRACTED #community/compresspy

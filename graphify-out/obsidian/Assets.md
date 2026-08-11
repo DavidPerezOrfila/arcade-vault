@@ -1,12 +1,12 @@
 ---
 source_file: "resources/started-games/04-arkanoid/CLAUDE.md"
 type: "document"
-community: "Spec Template"
+community: "Arquitectura"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Spec_Template
+  - community/Arquitectura
 ---
 
 # Assets
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Arquitectura]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec_Template
+#graphify/document #graphify/EXTRACTED #community/Arquitectura

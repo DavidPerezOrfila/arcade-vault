@@ -1,12 +1,12 @@
 ---
 source_file: "app/layout.tsx"
 type: "code"
-community: "layout.tsx"
+community: "leaderboard.ts"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/layouttsx
+  - community/leaderboardts
 ---
 
 # RootLayout()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[layout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/layouttsx
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

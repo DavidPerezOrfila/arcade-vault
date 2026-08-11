@@ -1,12 +1,12 @@
 ---
 source_file: "app/salon/LeaderboardTable.tsx"
 type: "code"
-community: "actions.ts"
+community: "app/page.tsx"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/actionsts
+  - community/app/pagetsx
 ---
 
 # LeaderboardRow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LeaderboardTable.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/actionsts
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

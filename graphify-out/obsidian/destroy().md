@@ -1,18 +1,18 @@
 ---
-source_file: "lib/games/asteroids/game.esm.js"
+source_file: "lib/games/serpentina/game.esm.js"
 type: "code"
-community: "E2E Test"
-location: "L528"
+community: "serpentina/game.esm.js"
+location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/E2E_Test
+  - community/serpentina/gameesmjs
 ---
 
 # destroy()
 
 ## Connections
 - [[detachInput()]] - `calls` [EXTRACTED]
-- [[game.esm.js]] - `contains` [EXTRACTED]
+- [[serpentinagame.esm.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/E2E_Test
+#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs

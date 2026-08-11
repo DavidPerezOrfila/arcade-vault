@@ -1,12 +1,12 @@
 ---
 source_file: "app/salon/SalonClient.tsx"
 type: "code"
-community: "actions.ts"
-location: "L22"
+community: "app/page.tsx"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/actionsts
+  - community/app/pagetsx
 ---
 
 # SalonClientProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SalonClient.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/actionsts
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

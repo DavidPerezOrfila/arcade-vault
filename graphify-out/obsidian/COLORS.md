@@ -1,17 +1,17 @@
 ---
 source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "game.esm.js"
-location: "L12"
+community: "caida/game.esm.js"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gameesmjs
+  - community/caida/gameesmjs
 ---
 
 # COLORS
 
 ## Connections
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[caidagame.esm.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

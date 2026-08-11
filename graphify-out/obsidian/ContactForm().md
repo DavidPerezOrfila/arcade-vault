@@ -1,18 +1,18 @@
 ---
 source_file: "app/about/ContactForm.tsx"
 type: "code"
-community: "Playwright Config"
+community: "about/page.tsx"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playwright_Config
+  - community/about/pagetsx
 ---
 
 # ContactForm()
 
 ## Connections
 - [[ContactForm.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx]] - `imports` [EXTRACTED]
+- [[aboutpage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playwright_Config
+#graphify/code #graphify/EXTRACTED #community/about/pagetsx

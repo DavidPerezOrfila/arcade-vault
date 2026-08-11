@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/playwright-cli/SKILL.md"
 type: "document"
-community: "Playwright Automation"
+community: "Browser Automation with playwright-cli"
 location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright_Automation
+  - community/Browser_Automation_with_playwright-cli
 ---
 
 # Example: Debugging with DevTools
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser Automation with playwright-cli]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright_Automation
+#graphify/document #graphify/EXTRACTED #community/Browser_Automation_with_playwright-cli

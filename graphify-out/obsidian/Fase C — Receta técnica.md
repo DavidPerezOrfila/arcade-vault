@@ -12,6 +12,6 @@ tags:
 # Fase C — Receta técnica
 
 ## Connections
-- [[Workflow_2]] - `contains` [EXTRACTED]
+- [[Workflow_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Integrate_an_Arcade_Vault_game

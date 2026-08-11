@@ -1,18 +1,18 @@
 ---
 source_file: "app/_home/homeData.tsx"
 type: "code"
-community: "Local Storage"
+community: "app/page.tsx"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local_Storage
+  - community/app/pagetsx
 ---
 
 # STATS
 
 ## Connections
+- [[apppage.tsx_1]] - `imports` [EXTRACTED]
 - [[homeData.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx_6]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local_Storage
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

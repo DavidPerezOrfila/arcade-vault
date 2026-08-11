@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/skills/playwright-cli/references/test-generation.md"
 type: "document"
-community: "Browser Sessions"
+community: "Browser Session Management"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Sessions
+  - community/Browser_Session_Management
 ---
 
 # Explore before recording
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[0. How generation works]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Sessions
+#graphify/document #graphify/EXTRACTED #community/Browser_Session_Management
