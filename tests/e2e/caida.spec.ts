@@ -82,6 +82,23 @@ test.describe("CAÍDA Game", () => {
     await expect(board).toBeVisible();
   });
 
+  test("las flechas no desplazan la página (no scroll)", async ({ page }) => {
+    // Viewport pequeño para que la página sea scrolleable; si las flechas no
+    // hacen preventDefault, window.scrollY cambia y el test falla.
+    await page.setViewportSize({ width: 400, height: 500 });
+    await page.waitForTimeout(200);
+    await page.locator(".caida-board-wrap canvas").scrollIntoViewIfNeeded();
+    const before = await page.evaluate(() => window.scrollY);
+    await page.keyboard.press("ArrowDown");
+    await page.keyboard.press("ArrowUp");
+    await page.keyboard.press("ArrowLeft");
+    await page.keyboard.press("ArrowRight");
+    await page.keyboard.press("Space");
+    await page.waitForTimeout(100);
+    const after = await page.evaluate(() => window.scrollY);
+    expect(after).toBe(before);
+  });
+
   test("la pieza cae sola (el loop del juego corre)", async ({ page }) => {
     // Sin input, la pieza debe caer una fila cada ~1s (dropInterval 1000ms).
     // Dos capturas del canvas separadas 1.3s: si el loop corre, la pieza y el
