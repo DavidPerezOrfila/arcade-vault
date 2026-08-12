@@ -88,6 +88,10 @@ obligatorias: sin ellas, Home, `/salon`, `/detalle/[id]`, `/games` y
 
 Usa siempre /frontend-design para diseñar la interfaz de usuario.
 
+## Agents
+
+- **`game-planner`** (`.claude/agents/game-planner.md`) — decide qué juego encaja con la plataforma como siguiente a implementar. Prioriza los 5 slugs catalogados sin motor (bloque-buster, gloton, invasores, ranaria, duelo-pixel); si ninguno encaja o se agotan, propone juegos retro nuevos. Mantiene memoria persistente en `resources/game-suggestions-todo.md`. Solo recomienda — nunca lanza `/spec` ni escribe código. Usar cuando se pregunte "what game next", "qué juego construimos", "plan next game", o para roadmap del catálogo.
+
 ## Architecture notes
 
 - This is a **Next.js App Router** application. Server Components are the default; add `"use client"` only when a component uses state, effects, refs, browser APIs, or event handlers.
