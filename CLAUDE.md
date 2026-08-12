@@ -91,6 +91,7 @@ Usa siempre /frontend-design para diseñar la interfaz de usuario.
 ## Agents
 
 - **`game-planner`** (`.claude/agents/game-planner.md`) — decide qué juego encaja con la plataforma como siguiente a implementar. Prioriza los 5 slugs catalogados sin motor (bloque-buster, gloton, invasores, ranaria, duelo-pixel); si ninguno encaja o se agotan, propone juegos retro nuevos. Mantiene memoria persistente en `resources/game-suggestions-todo.md`. Solo recomienda — nunca lanza `/spec` ni escribe código. Usar cuando se pregunte "what game next", "qué juego construimos", "plan next game", o para roadmap del catálogo.
+- **`game-jam`** (`.claude/agents/game-jam.md`) — dado un tema, inventa un juego retro y escribe DOS specs con enfoques técnicos alternativos del mismo juego en `specs/game-jam/<slug>/` (`spec-a.md` + `spec-b.md`, `state: Draft`), siguiendo el formato de specs 07/08 y el engine contract (loop `setTimeout`, `initGame`/`destroy`, 8-file recipe, factory `createLeaderboardActions`). Solo genera specs — nunca implementa ni toca `lib/`, `components/` o `app/`. Usar cuando se pida "game jam", "inventa un juego con tema X", "spec desde un tema", o brainstorm de catálogo con tema como input.
 
 ## Architecture notes
 
