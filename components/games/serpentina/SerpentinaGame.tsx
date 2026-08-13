@@ -8,14 +8,16 @@ import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
 import type {
   SerpentinaGameProps,
-  SerpentinaRefs
+  SerpentinaRefs,
 } from '@/lib/games/serpentina/types';
 import './serpentina.css';
 
 const BOARD_SIZE = 600;
 const API_URL = '/api/leaderboard/serpentina';
 
-export function SerpentinaGame({ initialLeaderboard = [] }: SerpentinaGameProps) {
+export function SerpentinaGame({
+  initialLeaderboard = [],
+}: SerpentinaGameProps) {
   const boardRef = useRef<HTMLCanvasElement>(null);
   const scoreRef = useRef<HTMLSpanElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
@@ -28,12 +30,12 @@ export function SerpentinaGame({ initialLeaderboard = [] }: SerpentinaGameProps)
     leaderboard,
     showAuthPrompt,
     setShowAuthPrompt,
-    handleGameOver
+    handleGameOver,
   } = useArcadeGame({
     loadModule: () => import('@/lib/games/serpentina/game.esm.js'),
     apiUrl: API_URL,
     submitScore: submitSerpentinaScore,
-    initialLeaderboard
+    initialLeaderboard,
   });
 
   // Recoge refs y arranca el módulo. setOnGameOver antes de initGame — el
@@ -48,12 +50,12 @@ export function SerpentinaGame({ initialLeaderboard = [] }: SerpentinaGameProps)
       overlayTitleRef.current &&
       overlayScoreRef.current
         ? {
-          board: boardRef.current,
-          scoreEl: scoreRef.current,
-          overlay: overlayRef.current,
-          overlayTitle: overlayTitleRef.current,
-          overlayScore: overlayScoreRef.current
-        }
+            board: boardRef.current,
+            scoreEl: scoreRef.current,
+            overlay: overlayRef.current,
+            overlayTitle: overlayTitleRef.current,
+            overlayScore: overlayScoreRef.current,
+          }
         : null;
     if (!refs) return;
 

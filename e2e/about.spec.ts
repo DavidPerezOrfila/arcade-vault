@@ -36,11 +36,15 @@ test.describe('/about', () => {
 
     await page.locator('input#name').fill('Jugador Test');
     await page.locator('input#email').fill('test@arcade-vault.gg');
-    await page.locator('textarea#message').fill('Mensaje de prueba desde Playwright.');
+    await page
+      .locator('textarea#message')
+      .fill('Mensaje de prueba desde Playwright.');
 
     await page.locator('form.contact-form button[type="submit"]').click();
 
     await expect(page.locator('.terminal-success')).toBeVisible();
-    await expect(page.locator('.term-body .success')).toContainText('JUGADOR TEST');
+    await expect(page.locator('.term-body .success')).toContainText(
+      'JUGADOR TEST'
+    );
   });
 });

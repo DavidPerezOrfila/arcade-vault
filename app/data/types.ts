@@ -10,7 +10,7 @@ export const CATS: readonly GameFilter[] = [
   'ARCADE',
   'PUZZLE',
   'SHOOTER',
-  'VERSUS'
+  'VERSUS',
 ] as const;
 
 export interface Game {

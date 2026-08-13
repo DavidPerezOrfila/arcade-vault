@@ -21,18 +21,18 @@ Three files, no framework, no bundler:
 
 ### game.js internals
 
-| Concern | Key identifiers |
-|---|---|
-| Board state | `board` — `ROWS×COLS` matrix; `0` = empty, `1–7` = piece color index |
-| Piece representation | `{ type, shape, x, y }` where `shape` is a 2-D matrix |
-| Rotation | `rotateCW(shape)` — transpose + reverse; `tryRotate()` applies wall kicks `[0,±1,±2]` |
-| Collision | `collide(shape, ox, oy)` — checks bounds and board occupancy |
-| Game loop | `loop(ts)` via `requestAnimationFrame`; `dropAccum` tracks elapsed ms against `dropInterval` |
-| Line clear | `clearLines()` — iterates board bottom-up, splices full rows, prepends empty row |
-| Scoring | `LINE_SCORES = [0,100,300,500,800]` × `level`; hard drop +2/cell, soft drop +1/row |
-| Speed | `dropInterval = max(100, 1000 − (level−1) × 90)` ms; level = `floor(lines/10) + 1` |
-| Ghost piece | `ghostY()` — projects current piece down until collision; drawn at `globalAlpha = 0.2` |
-| State flags | `paused`, `gameOver`, `animId` (RAF handle) |
+| Concern              | Key identifiers                                                                              |
+| -------------------- | -------------------------------------------------------------------------------------------- |
+| Board state          | `board` — `ROWS×COLS` matrix; `0` = empty, `1–7` = piece color index                         |
+| Piece representation | `{ type, shape, x, y }` where `shape` is a 2-D matrix                                        |
+| Rotation             | `rotateCW(shape)` — transpose + reverse; `tryRotate()` applies wall kicks `[0,±1,±2]`        |
+| Collision            | `collide(shape, ox, oy)` — checks bounds and board occupancy                                 |
+| Game loop            | `loop(ts)` via `requestAnimationFrame`; `dropAccum` tracks elapsed ms against `dropInterval` |
+| Line clear           | `clearLines()` — iterates board bottom-up, splices full rows, prepends empty row             |
+| Scoring              | `LINE_SCORES = [0,100,300,500,800]` × `level`; hard drop +2/cell, soft drop +1/row           |
+| Speed                | `dropInterval = max(100, 1000 − (level−1) × 90)` ms; level = `floor(lines/10) + 1`           |
+| Ghost piece          | `ghostY()` — projects current piece down until collision; drawn at `globalAlpha = 0.2`       |
+| State flags          | `paused`, `gameOver`, `animId` (RAF handle)                                                  |
 
 ### Game flow
 

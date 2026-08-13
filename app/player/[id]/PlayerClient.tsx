@@ -122,7 +122,7 @@ export default function PlayerClient({ game }: PlayerClientProps) {
                     fontSize: 11,
                     color: 'var(--ink-dim)',
                     marginTop: 10,
-                    letterSpacing: '0.16em'
+                    letterSpacing: '0.16em',
                   }}
                 >
                   PULSA REANUDAR PARA CONTINUAR

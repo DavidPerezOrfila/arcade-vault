@@ -13,19 +13,51 @@ const COLORS = [
   '#e57373', // Z - red
   '#90caf9', // J - pale blue
   '#ffb74d', // L - orange
-  '#9e9e9e' // N - tuerca (gris metálico)
+  '#9e9e9e', // N - tuerca (gris metálico)
 ];
 
 const PIECES = [
   null,
-  [[0, 0, 0, 0], [1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], // I
-  [[2, 2], [2, 2]], // O
-  [[0, 3, 0], [3, 3, 3], [0, 0, 0]], // T
-  [[0, 4, 4], [4, 4, 0], [0, 0, 0]], // S
-  [[5, 5, 0], [0, 5, 5], [0, 0, 0]], // Z
-  [[6, 0, 0], [6, 6, 6], [0, 0, 0]], // J
-  [[0, 0, 7], [7, 7, 7], [0, 0, 0]], // L
-  [[8, 8, 8], [8, 0, 8], [8, 8, 8]] // N (tuerca)
+  [
+    [0, 0, 0, 0],
+    [1, 1, 1, 1],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+  ], // I
+  [
+    [2, 2],
+    [2, 2],
+  ], // O
+  [
+    [0, 3, 0],
+    [3, 3, 3],
+    [0, 0, 0],
+  ], // T
+  [
+    [0, 4, 4],
+    [4, 4, 0],
+    [0, 0, 0],
+  ], // S
+  [
+    [5, 5, 0],
+    [0, 5, 5],
+    [0, 0, 0],
+  ], // Z
+  [
+    [6, 0, 0],
+    [6, 6, 6],
+    [0, 0, 0],
+  ], // J
+  [
+    [0, 0, 7],
+    [7, 7, 7],
+    [0, 0, 0],
+  ], // L
+  [
+    [8, 8, 8],
+    [8, 0, 8],
+    [8, 8, 8],
+  ], // N (tuerca)
 ];
 
 const LINE_SCORES = [0, 100, 300, 500, 800];
@@ -42,7 +74,18 @@ const overlayTitle = document.getElementById('overlay-title');
 const overlayScore = document.getElementById('overlay-score');
 const restartBtn = document.getElementById('restart-btn');
 
-let board, current, next, score, lines, level, paused, gameOver, lastTime, dropAccum, dropInterval, animId;
+let board,
+  current,
+  next,
+  score,
+  lines,
+  level,
+  paused,
+  gameOver,
+  lastTime,
+  dropAccum,
+  dropInterval,
+  animId;
 
 function createBoard() {
   return Array.from({ length: ROWS }, () => new Array(COLS).fill(0));
@@ -50,8 +93,13 @@ function createBoard() {
 
 function randomPiece() {
   const type = Math.floor(Math.random() * 8) + 1;
-  const shape = PIECES[type].map(row => [...row]);
-  return { type, shape, x: Math.floor(COLS / 2) - Math.floor(shape[0].length / 2), y: 0 };
+  const shape = PIECES[type].map((row) => [...row]);
+  return {
+    type,
+    shape,
+    x: Math.floor(COLS / 2) - Math.floor(shape[0].length / 2),
+    y: 0,
+  };
 }
 
 function collide(shape, ox, oy) {
@@ -68,10 +116,13 @@ function collide(shape, ox, oy) {
 }
 
 function rotateCW(shape) {
-  const rows = shape.length, cols = shape[0].length;
+  const rows = shape.length,
+    cols = shape[0].length;
   const result = Array.from({ length: cols }, () => new Array(rows).fill(0));
   for (let r = 0; r < rows; r++) {
-    for (let c = 0; c < cols; c++) {result[c][rows - 1 - r] = shape[r][c];}
+    for (let c = 0; c < cols; c++) {
+      result[c][rows - 1 - r] = shape[r][c];
+    }
   }
   return result;
 }
@@ -91,7 +142,9 @@ function tryRotate() {
 function merge() {
   for (let r = 0; r < current.shape.length; r++) {
     for (let c = 0; c < current.shape[r].length; c++) {
-      if (current.shape[r][c]) {board[current.y + r][current.x + c] = current.shape[r][c];}
+      if (current.shape[r][c]) {
+        board[current.y + r][current.x + c] = current.shape[r][c];
+      }
     }
   }
 }
@@ -99,7 +152,7 @@ function merge() {
 function clearLines() {
   let cleared = 0;
   for (let r = ROWS - 1; r >= 0; r--) {
-    if (board[r].every(v => v !== 0)) {
+    if (board[r].every((v) => v !== 0)) {
       board.splice(r, 1);
       board.unshift(new Array(COLS).fill(0));
       cleared++;
@@ -172,7 +225,9 @@ function drawBlock(context, x, y, colorIndex, size, alpha) {
 }
 
 function drawGrid() {
-  ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--grid-line').trim();
+  ctx.strokeStyle = getComputedStyle(document.body)
+    .getPropertyValue('--grid-line')
+    .trim();
   ctx.lineWidth = 0.5;
   for (let c = 1; c < COLS; c++) {
     ctx.beginPath();
@@ -194,20 +249,26 @@ function draw() {
 
   // board
   for (let r = 0; r < ROWS; r++) {
-    for (let c = 0; c < COLS; c++) {drawBlock(ctx, c, r, board[r][c], BLOCK);}
+    for (let c = 0; c < COLS; c++) {
+      drawBlock(ctx, c, r, board[r][c], BLOCK);
+    }
   }
 
   // ghost
   const gy = ghostY();
   for (let r = 0; r < current.shape.length; r++) {
     for (let c = 0; c < current.shape[r].length; c++) {
-      if (current.shape[r][c]) {drawBlock(ctx, current.x + c, gy + r, current.shape[r][c], BLOCK, 0.2);}
+      if (current.shape[r][c]) {
+        drawBlock(ctx, current.x + c, gy + r, current.shape[r][c], BLOCK, 0.2);
+      }
     }
   }
 
   // current piece
   for (let r = 0; r < current.shape.length; r++) {
-    for (let c = 0; c < current.shape[r].length; c++) {drawBlock(ctx, current.x + c, current.y + r, current.shape[r][c], BLOCK);}
+    for (let c = 0; c < current.shape[r].length; c++) {
+      drawBlock(ctx, current.x + c, current.y + r, current.shape[r][c], BLOCK);
+    }
   }
 }
 
@@ -218,7 +279,9 @@ function drawNext() {
   const offX = Math.floor((4 - shape[0].length) / 2);
   const offY = Math.floor((4 - shape.length) / 2);
   for (let r = 0; r < shape.length; r++) {
-    for (let c = 0; c < shape[r].length; c++) {drawBlock(nextCtx, offX + c, offY + r, shape[r][c], NB);}
+    for (let c = 0; c < shape[r].length; c++) {
+      drawBlock(nextCtx, offX + c, offY + r, shape[r][c], NB);
+    }
   }
 }
 
@@ -279,8 +342,11 @@ function init() {
   animId = requestAnimationFrame(loop);
 }
 
-document.addEventListener('keydown', e => {
-  if (e.code === 'KeyP') { togglePause(); return; }
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'KeyP') {
+    togglePause();
+    return;
+  }
   if (paused || gameOver) return;
   switch (e.code) {
     case 'ArrowLeft':

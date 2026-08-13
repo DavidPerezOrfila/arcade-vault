@@ -3,19 +3,12 @@
     "version": 1,
     "nodeCount": 366,
     "edgeCount": 620,
-    "languages": [
-      "javascript",
-      "jsx",
-      "tsx",
-      "typescript"
-    ],
+    "languages": ["javascript", "jsx", "tsx", "typescript"],
     "scopes": [
       {
         "prefix": "",
         "label": "",
-        "markers": [
-          "package.json"
-        ]
+        "markers": ["package.json"]
       }
     ]
   },

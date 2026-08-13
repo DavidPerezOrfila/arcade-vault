@@ -1,8 +1,9 @@
 ---
 state: Implemented
-dependencies: ["04-supabase-scores-foundation", "06-games-catalog-salon"]
+dependencies: ['04-supabase-scores-foundation', '06-games-catalog-salon']
 date: 2026-08-08
 ---
+
 # 07-tetris-caida
 
 Integrar Tetris como segundo juego jugable de Arcade Vault en `/games/caida`, con puntuaciones persistidas en Supabase y leaderboard, reutilizando el catálogo existente (`caida`) y la infraestructura de scores.
@@ -41,15 +42,15 @@ No introduce nuevas tablas — reusa el esquema de **spec 04** (`scores`) y el c
 
 ```typescript
 interface LeaderboardEntry {
-  rank: number
-  playerName: string
-  score: number
-  createdAt: string
-  isCurrentUser: boolean
+  rank: number;
+  playerName: string;
+  score: number;
+  createdAt: string;
+  isCurrentUser: boolean;
 }
 
 interface CaidaGameProps {
-  initialLeaderboard?: LeaderboardEntry[]
+  initialLeaderboard?: LeaderboardEntry[];
 }
 ```
 
@@ -57,14 +58,14 @@ interface CaidaGameProps {
 
 ```typescript
 interface CaidaRefs {
-  board: HTMLCanvasElement        // 300×600 playfield
-  nextCanvas: HTMLCanvasElement   // 120×120 preview
-  scoreEl: HTMLElement            // HUD
-  linesEl: HTMLElement            // HUD
-  levelEl: HTMLElement            // HUD
-  overlay: HTMLElement            // PAUSE / GAME OVER
-  overlayTitle: HTMLElement
-  overlayScore: HTMLElement
+  board: HTMLCanvasElement; // 300×600 playfield
+  nextCanvas: HTMLCanvasElement; // 120×120 preview
+  scoreEl: HTMLElement; // HUD
+  linesEl: HTMLElement; // HUD
+  levelEl: HTMLElement; // HUD
+  overlay: HTMLElement; // PAUSE / GAME OVER
+  overlayTitle: HTMLElement;
+  overlayScore: HTMLElement;
 }
 ```
 
@@ -108,26 +109,26 @@ interface CaidaRefs {
 
 ## Decisions Taken & Discarded
 
-| Decisión                                   | Justificación                                                                                                               |
-| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| **Wrapper ES module + `game.js` adaptado** | Mínima refactor, cero riesgo de romper lógica probada. Port a TS sería semanas para el mismo resultado jugable.             |
-| **Slug = `caida`**                         | Fila ya seedeada en catálogo (spec 06). `id` del catálogo DEBE igualar el string `game` de `saveScore` (sin FK, por convención). |
+| Decisión                                   | Justificación                                                                                                                            |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Wrapper ES module + `game.js` adaptado** | Mínima refactor, cero riesgo de romper lógica probada. Port a TS sería semanas para el mismo resultado jugable.                          |
+| **Slug = `caida`**                         | Fila ya seedeada en catálogo (spec 06). `id` del catálogo DEBE igualar el string `game` de `saveScore` (sin FK, por convención).         |
 | **Refs multi-elemento inyectados**         | Tetris usa board + next + HUD + overlay. El wrapper recibe objeto de elementos desde React, elimina `document.getElementById` top-level. |
-| **Sin theme-toggle / localStorage**        | La plataforma ownse el theming (dark retro `app/globals.css`). Vanilla theme-toggle se descarta.                              |
-| **No nueva migration de catálogo**         | `caida` ya existe con cover `cover-tetro` en `globals.css`. Solo se añade el juego jugable.                                  |
-| **`onGameOver` callback en wrapper**       | Desacopla juego de UI/React. Wrapper no sabe de Supabase, auth ni leaderboard.                                               |
-| **Hard drop +2/celda, soft drop +1/fila**  | Scoring del vanilla preservado tal cual.                                                                                    |
+| **Sin theme-toggle / localStorage**        | La plataforma ownse el theming (dark retro `app/globals.css`). Vanilla theme-toggle se descarta.                                         |
+| **No nueva migration de catálogo**         | `caida` ya existe con cover `cover-tetro` en `globals.css`. Solo se añade el juego jugable.                                              |
+| **`onGameOver` callback en wrapper**       | Desacopla juego de UI/React. Wrapper no sabe de Supabase, auth ni leaderboard.                                                           |
+| **Hard drop +2/celda, soft drop +1/fila**  | Scoring del vanilla preservado tal cual.                                                                                                 |
 
 ## Identified Risks
 
-| Riesgo                                                                  | Impacto                         | Mitigación                                                                                                          |
-| ----------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **`game.js` usa `document.getElementById` top-level y `window`**         | Falla en SSR                    | `initGame(refs)` recibe elementos ya montados; código solo corre en `useEffect` cliente.                            |
-| **`getComputedStyle(document.body)` para `--grid-line`**                 | Dibuja grid con color vacío     | Leer CSS var en `init` con fallback (hex de grid-line o gris por defecto).                                          |
-| **Game loop `requestAnimationFrame` global**                             | Memory leak si cleanup falla    | Handle RAF module-scoped; `destroy()` lo cancela + desadjunta keydown. `useEffect` cleanup obligatorio.            |
-| **Game over spam al hacer submit**                                       | Score duplicado                 | `onGameOver` fire una vez (guard en `endGame`).                                                                      |
-| **Leaderboard SSR + Client hydration mismatch**                          | Hydration warning               | Server render initial leaderboard; Client actualiza tras submit.                                                    |
-| **Catálogo `id` ≠ score `game` string**                                  | Leaderboard devuelve vacío      | `saveScore` con `game: 'caida'` literal, idéntico al id del catálogo.                                               |
+| Riesgo                                                           | Impacto                      | Mitigación                                                                                              |
+| ---------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **`game.js` usa `document.getElementById` top-level y `window`** | Falla en SSR                 | `initGame(refs)` recibe elementos ya montados; código solo corre en `useEffect` cliente.                |
+| **`getComputedStyle(document.body)` para `--grid-line`**         | Dibuja grid con color vacío  | Leer CSS var en `init` con fallback (hex de grid-line o gris por defecto).                              |
+| **Game loop `requestAnimationFrame` global**                     | Memory leak si cleanup falla | Handle RAF module-scoped; `destroy()` lo cancela + desadjunta keydown. `useEffect` cleanup obligatorio. |
+| **Game over spam al hacer submit**                               | Score duplicado              | `onGameOver` fire una vez (guard en `endGame`).                                                         |
+| **Leaderboard SSR + Client hydration mismatch**                  | Hydration warning            | Server render initial leaderboard; Client actualiza tras submit.                                        |
+| **Catálogo `id` ≠ score `game` string**                          | Leaderboard devuelve vacío   | `saveScore` con `game: 'caida'` literal, idéntico al id del catálogo.                                   |
 
 ## What is **not** in this spec
 

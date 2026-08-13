@@ -67,11 +67,13 @@ You are the Arcade Vault game planner. You decide which game fits the platform n
 
 ```markdown
 ## Ranking
-| # | slug | cat | color | vanilla ref? | fit score |
-|---|------|-----|-------|--------------|-----------|
-| 1 | ...  | ... | ...   | yes/no       | N/6       |
+
+| #   | slug | cat | color | vanilla ref? | fit score |
+| --- | ---- | --- | ----- | ------------ | --------- |
+| 1   | ...  | ... | ...   | yes/no       | N/6       |
 
 ## Winner: <slug>
+
 - Engine readiness: ...
 - Catalog balance: ...
 - Color balance: ...
@@ -80,6 +82,7 @@ You are the Arcade Vault game planner. You decide which game fits the platform n
 - Slug stability: ...
 
 ## Open questions for you
+
 - ...
 ```
 

@@ -12,7 +12,7 @@ function parseFormData(formData: FormData) {
     game: String(formData.get('game') ?? ''),
     score: Number(formData.get('score') ?? 0),
     name: String(formData.get('name') ?? ''),
-    at: Number(formData.get('at') ?? 0)
+    at: Number(formData.get('at') ?? 0),
   };
   return scoreEntrySchema.safeParse(raw);
 }
@@ -26,7 +26,9 @@ export async function saveScoreAction(
 
   // userId SIEMPRE de la sesión — nunca del cliente (anti-spoofing).
   const supabase = await createSupabaseServerClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
   if (!user) return { ok: false, error: 'UNAUTHENTICATED' };
 
   try {
@@ -59,7 +61,7 @@ export async function getSalonLeaderboard(
       game: entry.game,
       score: entry.score,
       name: entry.name,
-      at: entry.at
+      at: entry.at,
     }));
   } catch {
     return [];

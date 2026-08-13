@@ -93,7 +93,7 @@ export default function GamesClient({ initialGames }: GamesClientProps) {
           {CATS.map((c) => (
             <button
               key={c}
-              className={`chip${cat === c ? ' active' : ''}`}
+              className={`chip${cat === c ? 'active' : ''}`}
               onClick={() => setCat(c)}
             >
               {c}
@@ -112,7 +112,7 @@ export default function GamesClient({ initialGames }: GamesClientProps) {
               gridColumn: '1 / -1',
               textAlign: 'center',
               padding: 80,
-              color: 'var(--ink-faint)'
+              color: 'var(--ink-faint)',
             }}
           >
             <div
@@ -120,7 +120,7 @@ export default function GamesClient({ initialGames }: GamesClientProps) {
               style={{
                 fontSize: 14,
                 color: 'var(--magenta)',
-                marginBottom: 12
+                marginBottom: 12,
               }}
             >
               NO HAY RESULTADOS

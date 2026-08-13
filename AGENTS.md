@@ -19,6 +19,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 <!-- END:nextjs-agent-rules -->
 
 <!-- BEGIN:graphify-reminder -->
+
 Before exploring the source code of an unfamiliar module, check whether the project's knowledge graph in `graphify-out/obsidian/` already answers the question. Invoke the `consult-graph` skill to read `index.md` and the relevant community pages. Fall back to the source only when the graph is silent or stale.
 <!-- END:graphify-reminder -->
 

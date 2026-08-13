@@ -10,7 +10,7 @@ export default function Footer() {
         color: 'var(--ink-faint)',
         fontFamily: 'var(--mono)',
         fontSize: 11,
-        letterSpacing: '0.16em'
+        letterSpacing: '0.16em',
       }}
     >
       © 2026 ARCADE VAULT · HECHO CON PIXELES Y NEÓN · v2.6.0

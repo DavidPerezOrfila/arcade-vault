@@ -7,7 +7,7 @@ export const scoreEntrySchema = z.object({
   at: z.number().int().positive(),
   // Opcional: la capa server la rellena con la sesión; los clientes
   // legacy (formulario spec-06) no la envían.
-  userId: z.string().uuid().nullable().optional()
+  userId: z.string().uuid().nullable().optional(),
 });
 
 export type ScoreEntryInputParsed = z.infer<typeof scoreEntrySchema>;

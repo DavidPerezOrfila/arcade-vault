@@ -15,7 +15,7 @@ export function LeaderboardList({
   classPrefix,
   entries,
   maxRows,
-  emptyText
+  emptyText,
 }: LeaderboardListProps) {
   const visible = entries.slice(0, maxRows);
   return (

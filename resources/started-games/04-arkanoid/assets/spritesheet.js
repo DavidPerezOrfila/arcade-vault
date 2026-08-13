@@ -74,17 +74,17 @@ function loadSpritesheet(cb) {
 
   const rawImg = new Image();
   rawImg.onload = () => {
-    const oc = document.createElement("canvas");
+    const oc = document.createElement('canvas');
     oc.width = rawImg.width;
     oc.height = rawImg.height;
-    const octx = oc.getContext("2d");
+    const octx = oc.getContext('2d');
     octx.drawImage(rawImg, 0, 0);
     ssImg = oc;
     ssLoaded = true;
     ssCallbacks.forEach((f) => f());
   };
-  rawImg.onerror = () => console.error("Failed to load spritesheet");
-  rawImg.src = "assets/spritesheet-breakout.png";
+  rawImg.onerror = () => console.error('Failed to load spritesheet');
+  rawImg.src = 'assets/spritesheet-breakout.png';
 }
 
 function drawFrame(ctx, frame, x, y, w, h) {
@@ -95,7 +95,7 @@ function drawFrame(ctx, frame, x, y, w, h) {
 function drawSprite(ctx, name, x, y, w, h) {
   if (!ssLoaded) return;
   let sp;
-  if (name.startsWith("block_")) {
+  if (name.startsWith('block_')) {
     sp = SPRITES.blocks[name.slice(6)];
   } else {
     sp = SPRITES[name];

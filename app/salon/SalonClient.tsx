@@ -48,7 +48,8 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
 
   // ponytail: "tu mejor marca" queda fuera hasta que Supabase Auth real asigne
   // user_id; el User de storage no lo tiene y getUserBestScore era dead path.
-  const activeGame = initialGames.find((g) => g.id === activeTab) ?? initialGames[0];
+  const activeGame =
+    initialGames.find((g) => g.id === activeTab) ?? initialGames[0];
 
   return (
     <div className='av-hall fade-in'>
@@ -63,7 +64,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
         {initialGames.map((g) => (
           <button
             key={g.id}
-            className={`chip${activeTab === g.id ? ' active' : ''}`}
+            className={`chip${activeTab === g.id ? 'active' : ''}`}
             onClick={() => setActiveTab(g.id)}
           >
             {g.title}

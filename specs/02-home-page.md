@@ -4,7 +4,8 @@ date: 2026-07-14
 implemented: 2026-07-16
 dependencies:
   - 01-mvp-arcade-vault
-objective: Implementar la página de inicio (Home) como landing page de Arcade Vault,
+objective:
+  Implementar la página de inicio (Home) como landing page de Arcade Vault,
   reemplazando la ruta `/` y moviendo la Biblioteca a `/games`.
 ---
 

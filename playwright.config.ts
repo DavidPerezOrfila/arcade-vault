@@ -10,14 +10,14 @@ export default defineConfig({
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
     { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
-    { name: 'webkit', use: { ...devices['Desktop Safari'] } }
+    { name: 'webkit', use: { ...devices['Desktop Safari'] } },
   ],
   use: {
     baseURL: 'http://localhost:3000',
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',
     video: 'retain-on-failure',
-    navigationTimeout: 60000
+    navigationTimeout: 60000,
   },
   reporter: [['html', { outputFolder: '.playwright-report' }], ['list']],
   webServer: {
@@ -28,7 +28,7 @@ export default defineConfig({
     env: {
       RESEND_API_KEY: 'test',
       RESEND_FROM_EMAIL: 'test@arcade-vault.gg',
-      CONTACT_EMAIL: 'test@arcade-vault.gg'
-    }
-  }
+      CONTACT_EMAIL: 'test@arcade-vault.gg',
+    },
+  },
 });

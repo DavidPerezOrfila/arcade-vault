@@ -14,12 +14,12 @@ No hay paso de build ni servidor requerido. Para probar cambios: `open index.htm
 
 ### Archivos principales
 
-| Archivo | Rol |
-|---|---|
-| `index.html` | Punto de entrada; carga scripts y el `<canvas>` de 800×600 px |
-| `game.js` | Toda la lógica del juego (estado, loop, físicas, render, HUD, overlays) |
-| `levels.js` | Define `LEVELS`: array de 5 niveles con `blocks[]` y `ballSpeedMultiplier` |
-| `assets/spritesheet.js` | Carga el spritesheet y expone helpers de dibujo |
+| Archivo                 | Rol                                                                        |
+| ----------------------- | -------------------------------------------------------------------------- |
+| `index.html`            | Punto de entrada; carga scripts y el `<canvas>` de 800×600 px              |
+| `game.js`               | Toda la lógica del juego (estado, loop, físicas, render, HUD, overlays)    |
+| `levels.js`             | Define `LEVELS`: array de 5 niveles con `blocks[]` y `ballSpeedMultiplier` |
+| `assets/spritesheet.js` | Carga el spritesheet y expone helpers de dibujo                            |
 
 ### Assets
 
@@ -29,19 +29,19 @@ No hay paso de build ni servidor requerido. Para probar cambios: `open index.htm
 ### API de `spritesheet.js`
 
 ```js
-loadSpritesheet(cb)                        // carga la imagen; llama cb al terminar
-drawSprite(ctx, name, x, y, w, h)          // dibuja un sprite por nombre
-drawFrame(ctx, frame, x, y, w, h)          // dibuja un frame de animación
+loadSpritesheet(cb); // carga la imagen; llama cb al terminar
+drawSprite(ctx, name, x, y, w, h); // dibuja un sprite por nombre
+drawFrame(ctx, frame, x, y, w, h); // dibuja un frame de animación
 // Constantes exportadas: SPRITES, EXPLOSION_FRAMES, EXPLOSION_DURATION
 ```
 
 ### Sprites disponibles
 
-| Nombre | Descripción |
-|---|---|
-| `paddle` | Paleta (162×14 px) |
-| `ball` | Pelota (16×16 px) |
-| `block_gray`, `block_red`, `block_yellow`, `block_cyan`, `block_magenta`, `block_hotpink`, `block_green` | Bloques por color |
+| Nombre                                                                                                   | Descripción        |
+| -------------------------------------------------------------------------------------------------------- | ------------------ |
+| `paddle`                                                                                                 | Paleta (162×14 px) |
+| `ball`                                                                                                   | Pelota (16×16 px)  |
+| `block_gray`, `block_red`, `block_yellow`, `block_cyan`, `block_magenta`, `block_hotpink`, `block_green` | Bloques por color  |
 
 Las explosiones usan `EXPLOSION_FRAMES[color]` (4 frames) y duran `EXPLOSION_DURATION` ms.
 
@@ -64,10 +64,10 @@ Este proyecto usa desarrollo guiado por specs. **No escribir código sin spec ap
 
 ### Comandos
 
-| Comando | Acción |
-|---|---|
+| Comando               | Acción                                                                                             |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
 | `/spec [descripción]` | Diseña una spec nueva haciendo preguntas primero. Guarda en `specs/NN-slug.md` con estado `Draft`. |
-| `/spec-impl NN-slug` | Implementa la spec aprobada paso a paso, creando rama `spec-NN-slug` y pausando tras cada paso. |
+| `/spec-impl NN-slug`  | Implementa la spec aprobada paso a paso, creando rama `spec-NN-slug` y pausando tras cada paso.    |
 
 ### Ciclo de vida de una spec
 
@@ -89,10 +89,15 @@ El estado se cambia **manualmente** antes de ejecutar `/spec-impl`. Nunca implem
 - **Objetivo:** una sola frase
 
 ## Alcance
+
 ## Modelo de datos
-## Plan de implementación   ← pasos numerados, cada uno commiteable
-## Criterios de aceptación  ← checklist booleano
-## Decisiones               ← qué se consideró y por qué
+
+## Plan de implementación ← pasos numerados, cada uno commiteable
+
+## Criterios de aceptación ← checklist booleano
+
+## Decisiones ← qué se consideró y por qué
+
 ## Qué NO incluye este spec
 ```
 
@@ -100,10 +105,10 @@ La referencia completa está en `.agents/skills/spec/template.md`.
 
 ### Specs existentes
 
-| # | Slug | Estado |
-|---|---|---|
-| 01 | `mvp-arkanoid` | Implementado |
-| 02 | `animacion-explosion-bloques` | Implementado |
-| 03 | `sonidos-y-niveles` | Implementado |
+| #   | Slug                          | Estado       |
+| --- | ----------------------------- | ------------ |
+| 01  | `mvp-arkanoid`                | Implementado |
+| 02  | `animacion-explosion-bloques` | Implementado |
+| 03  | `sonidos-y-niveles`           | Implementado |
 
 El próximo spec será `04-...`.

@@ -1,9 +1,24 @@
 import type { ScoreRow } from './types';
 
 export const PLAYERS: readonly string[] = [
-  'PX_KAI', 'NEONFOX', 'Z3R0COOL', 'M00NRYU', 'VAULT_07', 'GLITCHA',
-  'ATARI_KID', 'CYBER_LU', 'MAGENTA88', 'SCANLINE', 'BIT_LORD', 'ARKADYA',
-  'DROID_X', 'RGB_QUEEN', 'PIXEL_DAD', 'RETROVIRA', 'VECTORX', 'JOY_STK'
+  'PX_KAI',
+  'NEONFOX',
+  'Z3R0COOL',
+  'M00NRYU',
+  'VAULT_07',
+  'GLITCHA',
+  'ATARI_KID',
+  'CYBER_LU',
+  'MAGENTA88',
+  'SCANLINE',
+  'BIT_LORD',
+  'ARKADYA',
+  'DROID_X',
+  'RGB_QUEEN',
+  'PIXEL_DAD',
+  'RETROVIRA',
+  'VECTORX',
+  'JOY_STK',
 ];
 
 // LCG (Numerical Recipes). Constantes con valores fijos — no datos aleatorios
@@ -40,7 +55,12 @@ export function seededScores(seed: number, count = 12): ScoreRow[] {
     const score = base - i * Math.floor(STEP_MIN + rand() * STEP_RANGE);
     const day = String(1 + Math.floor(rand() * MAX_DAY)).padStart(2, '0');
     const mon = String(1 + Math.floor(rand() * MAX_MONTH)).padStart(2, '0');
-    rows.push({ rank: i + 1, name, score: Math.max(score, MIN_SCORE), date: `${day}/${mon}/${MOCK_YEAR}` });
+    rows.push({
+      rank: i + 1,
+      name,
+      score: Math.max(score, MIN_SCORE),
+      date: `${day}/${mon}/${MOCK_YEAR}`,
+    });
   }
   return rows
     .sort((a, b) => b.score - a.score)

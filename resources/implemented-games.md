@@ -14,15 +14,15 @@ La plataforma distingue dos estados por juego:
 
 ## Resumen
 
-| #   | id (slug)       | Título        | Categoría | Color   | Resumen                                                                 | Best    | Estado         |
-| --- | --------------- | ------------- | --------- | ------- | ----------------------------------------------------------------------- | ------- | -------------- |
+| #   | id (slug)       | Título        | Categoría | Color   | Resumen                                                                 | Best    | Estado          |
+| --- | --------------- | ------------- | --------- | ------- | ----------------------------------------------------------------------- | ------- | --------------- |
 | 1   | `asteroids`     | ASTEROIDS     | SHOOTER   | yellow  | Nave triangular dispara y rota para dividir rocas; OVNIs hostiles.      | 41 200  | ✅ Implementado |
-| 2   | `bloque-buster` | BLOQUE BUSTER | ARCADE    | cyan    | Arkanoid: la paleta rebota el núcleo de plasma para pulverizar bloques. | 28 450  | 🗂 Catalogado   |
+| 2   | `bloque-buster` | BLOQUE BUSTER | ARCADE    | cyan    | Arkanoid: la paleta rebota el núcleo de plasma para pulverizar bloques. | 28 450  | 🗂 Catalogado    |
 | 3   | `caida`         | CAÍDA         | PUZZLE    | magenta | Tetris: encaja piezas; la velocidad escala cada 10 líneas.              | 184 220 | ✅ Implementado |
-| 4   | `duelo-pixel`   | DUELO PIXEL   | VERSUS    | cyan    | Pong a dos paletas: contra CPU o dos jugadores locales.                 | 24      | 🗂 Catalogado   |
-| 5   | `gloton`        | GLOTÓN        | ARCADE    | yellow  | Laberinto con puntos y 4 fantasmas; la píldora invierte la persecución. | 96 400  | 🗂 Catalogado   |
-| 6   | `invasores`     | INVASORES     | SHOOTER   | green   | Canon horizontal contra filas alienígenas descendentes.                 | 54 190  | 🗂 Catalogado   |
-| 7   | `ranaria`       | RANARIA       | ARCADE    | green   | Frogger: cruza autopista y río sobre troncos a la deriva.               | 18 900  | 🗂 Catalogado   |
+| 4   | `duelo-pixel`   | DUELO PIXEL   | VERSUS    | cyan    | Pong a dos paletas: contra CPU o dos jugadores locales.                 | 24      | 🗂 Catalogado    |
+| 5   | `gloton`        | GLOTÓN        | ARCADE    | yellow  | Laberinto con puntos y 4 fantasmas; la píldora invierte la persecución. | 96 400  | 🗂 Catalogado    |
+| 6   | `invasores`     | INVASORES     | SHOOTER   | green   | Canon horizontal contra filas alienígenas descendentes.                 | 54 190  | 🗂 Catalogado    |
+| 7   | `ranaria`       | RANARIA       | ARCADE    | green   | Frogger: cruza autopista y río sobre troncos a la deriva.               | 18 900  | 🗂 Catalogado    |
 | 8   | `serpentina`    | SERPENTINA    | ARCADE    | green   | Snake de luz en grilla; cada núcleo alarga la serpiente y acelera.      | 7 820   | ✅ Implementado |
 
 8 juegos en catálogo, 3 jugables, 5 pendientes de implementar.

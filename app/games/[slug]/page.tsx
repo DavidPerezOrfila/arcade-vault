@@ -73,7 +73,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
                     style={{
                       fontSize: 10,
                       color: 'var(--ink-faint)',
-                      letterSpacing: '0.1em'
+                      letterSpacing: '0.1em',
                     }}
                   >
                     {formatDate(r.at)}

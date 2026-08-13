@@ -22,9 +22,9 @@ export function ContactForm({ state, isPending }: ContactFormProps) {
 
   const handleChange =
     (field: keyof FormFields) =>
-      (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setForm((current) => ({ ...current, [field]: event.target.value }));
-      };
+    (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setForm((current) => ({ ...current, [field]: event.target.value }));
+    };
 
   const handleReset = () => {
     setForm(EMPTY_FORM);

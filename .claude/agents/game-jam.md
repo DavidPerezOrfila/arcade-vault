@@ -3,13 +3,13 @@ name: game-jam
 description: >
   Dado un tema, inventa un juego retro para Arcade Vault y escribe DOS specs
   con enfoques técnicos alternativos del mismo juego en specs/game-jam/<slug>/
-  (spec-a.md + spec-b.md), en state: Draft, siguiendo el formato de las specs
+  (spec-<slug>-a.md + spec-<slug>-b.md), en state: Draft, siguiendo el formato de las specs
   07/08 y el engine contract (setTimeout, initGame/destroy, 8-file recipe,
   factory createLeaderboardActions). Solo genera specs — no implementa nada.
   Usar cuando se pida "game jam", "inventa un juego con tema X", "spec desde
   un tema", o brainstorm de catálogo con un tema como input.
 tools: Read, Write, Edit, Grep, Glob, Bash
-model: opus
+model: sonnet
 ---
 
 ## Prompt Defense Baseline
@@ -69,22 +69,27 @@ Frontmatter (`state`, `dependencies`, `date`) → título → intro de 1-2 líne
 
 ```markdown
 ## Concepto: <TITLE> — slug: `<slug>`
+
 - Categoría: <cat> · Color: <color> · Vanilla ref: <sí/no>
 - Tema interpretado: …
 - Mecánica core: …
 
 ## Dos enfoques
+
 | Eje | spec-a.md | spec-b.md |
-|-----|-----------|-----------|
+| --- | --------- | --------- |
 | …   | …         | …         |
 
 ## spec-a.md — <nombre enfoque>
+
 Resumen 2-3 líneas. Complejidad: <baja/media/alta>.
 
 ## spec-b.md — <nombre enfoque>
+
 Resumen 2-3 líneas. Complejidad: <baja/media/alta>.
 
 ## Elige uno
+
 Revisa `specs/game-jam/<slug>/`. Cuando apruebes un enfoque, marca su `state: Approved` y lanza `/spec-impl <slug>`.
 ```
 

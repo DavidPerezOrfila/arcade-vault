@@ -4,7 +4,7 @@ import { createLeaderboardActions } from '@/lib/games/leaderboard';
 
 const actions = createLeaderboardActions({
   gameId: 'serpentina',
-  gamePath: '/games/serpentina'
+  gamePath: '/games/serpentina',
 });
 
 export const submitSerpentinaScore = actions.submitScore;

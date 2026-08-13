@@ -43,26 +43,26 @@ dependencies: Ninguna
 // === Tipos compartidos ===
 
 interface Game {
-  id: string
-  title: string
-  short: string
-  long: string
-  cat: 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS'
-  cover: string
-  color: 'cyan' | 'magenta' | 'yellow' | 'green'
-  best: number
-  plays: string
+  id: string;
+  title: string;
+  short: string;
+  long: string;
+  cat: 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS';
+  cover: string;
+  color: 'cyan' | 'magenta' | 'yellow' | 'green';
+  best: number;
+  plays: string;
 }
 
 interface ScoreEntry {
-  game: string
-  score: number
-  name: string
-  at: number
+  game: string;
+  score: number;
+  name: string;
+  at: number;
 }
 
 interface User {
-  name: string
+  name: string;
 }
 ```
 

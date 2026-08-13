@@ -13,17 +13,21 @@ const CANVAS_W = 800;
 const CANVAS_H = 600;
 const API_URL = '/api/leaderboard/asteroids';
 
-export function AsteroidsGame({
-  initialLeaderboard = []
-}: AsteroidsGameProps) {
+export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const { gameRef, isLoading, leaderboard, showAuthPrompt, setShowAuthPrompt, handleGameOver } =
-    useArcadeGame({
-      loadModule: () => import('@/lib/games/asteroids/game.esm.js'),
-      apiUrl: API_URL,
-      submitScore: submitAsteroidsScore,
-      initialLeaderboard
-    });
+  const {
+    gameRef,
+    isLoading,
+    leaderboard,
+    showAuthPrompt,
+    setShowAuthPrompt,
+    handleGameOver,
+  } = useArcadeGame({
+    loadModule: () => import('@/lib/games/asteroids/game.esm.js'),
+    apiUrl: API_URL,
+    submitScore: submitAsteroidsScore,
+    initialLeaderboard,
+  });
 
   // Aplica tamaño lógico del canvas, bindea game-over y arranca el módulo.
   // setOnGameOver antes de initGame — orden importante: el módulo dispara
@@ -69,7 +73,9 @@ export function AsteroidsGame({
       />
 
       <div className='asteroids-leaderboard-hud'>
-        <div className='asteroids-leaderboard-title'>TOP {LEADERBOARD_TOP_N}</div>
+        <div className='asteroids-leaderboard-title'>
+          TOP {LEADERBOARD_TOP_N}
+        </div>
         <LeaderboardList
           classPrefix='asteroids'
           entries={leaderboard}

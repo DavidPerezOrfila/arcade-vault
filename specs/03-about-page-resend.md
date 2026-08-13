@@ -56,12 +56,18 @@ export interface ContactFormState {
 ```typescript
 // === app/about/schema.ts ===
 
-import { z } from "zod";
+import { z } from 'zod';
 
 export const contactSchema = z.object({
-  name: z.string().min(1, "El nombre es obligatorio").max(100, "Máximo 100 caracteres"),
-  email: z.string().email("Email inválido").max(254, "Email demasiado largo"),
-  message: z.string().min(1, "El mensaje es obligatorio").max(2000, "Máximo 2000 caracteres"),
+  name: z
+    .string()
+    .min(1, 'El nombre es obligatorio')
+    .max(100, 'Máximo 100 caracteres'),
+  email: z.string().email('Email inválido').max(254, 'Email demasiado largo'),
+  message: z
+    .string()
+    .min(1, 'El mensaje es obligatorio')
+    .max(2000, 'Máximo 2000 caracteres'),
 });
 
 export type ContactFormData = z.infer<typeof contactSchema>;
@@ -76,6 +82,7 @@ export type ContactFormData = z.infer<typeof contactSchema>;
 | `CONTACT_EMAIL`     | Destinatario del mensaje       | tu email de GitHub     |
 
 **Notas:**
+
 - No se añade persistencia de mensajes; solo envío vía Resend.
 - El estado del formulario se maneja con `useActionState` (React 19) o la API equivalente que Next.js 16 exponga.
 

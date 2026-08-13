@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     title: 'SERPENTINA | Arcade Vault',
     description:
       'Clásico Snake. Come frutas, crece sin morderte la propia cola y aguanta la velocidad creciente para batir el récord.',
-    type: 'website'
-  }
+    type: 'website',
+  },
 };
 
 async function LeaderboardServer() {

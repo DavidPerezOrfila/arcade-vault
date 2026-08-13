@@ -6,10 +6,7 @@ import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
-import type {
-  CaidaGameProps,
-  CaidaRefs
-} from '@/lib/games/caida/types';
+import type { CaidaGameProps, CaidaRefs } from '@/lib/games/caida/types';
 import './caida.css';
 
 const BOARD_W = 300;
@@ -34,12 +31,12 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
     leaderboard,
     showAuthPrompt,
     setShowAuthPrompt,
-    handleGameOver
+    handleGameOver,
   } = useArcadeGame({
     loadModule: () => import('@/lib/games/caida/game.esm.js'),
     apiUrl: API_URL,
     submitScore: submitCaidaScore,
-    initialLeaderboard
+    initialLeaderboard,
   });
 
   // Recoge refs y arranca el módulo. setOnGameOver antes de initGame — el
@@ -57,15 +54,15 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
       overlayTitleRef.current &&
       overlayScoreRef.current
         ? {
-          board: boardRef.current,
-          nextCanvas: nextRef.current,
-          scoreEl: scoreRef.current,
-          linesEl: linesRef.current,
-          levelEl: levelRef.current,
-          overlay: overlayRef.current,
-          overlayTitle: overlayTitleRef.current,
-          overlayScore: overlayScoreRef.current
-        }
+            board: boardRef.current,
+            nextCanvas: nextRef.current,
+            scoreEl: scoreRef.current,
+            linesEl: linesRef.current,
+            levelEl: levelRef.current,
+            overlay: overlayRef.current,
+            overlayTitle: overlayTitleRef.current,
+            overlayScore: overlayScoreRef.current,
+          }
         : null;
     if (!refs) return;
 
@@ -140,7 +137,12 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
 
         <div className='caida-next'>
           <div className='caida-next-label'>SIGUIENTE</div>
-          <canvas ref={nextRef} width={NEXT_W} height={NEXT_H} aria-hidden='true' />
+          <canvas
+            ref={nextRef}
+            width={NEXT_W}
+            height={NEXT_H}
+            aria-hidden='true'
+          />
         </div>
 
         <div className='caida-leaderboard'>

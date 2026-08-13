@@ -50,16 +50,16 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 
 ## Decisiones documentadas
 
-| Pregunta | Decisión |
-|---|---|
-| Alcance | Implementación completa + PR (sin aprobación de plan previa) |
-| Checkpoint | Revisión del PR (único, tardío) |
-| Quién invoca | Solo OWNER/MEMBER |
-| Requisito de spec | Ninguno — cualquier issue |
-| PR duplicado | Ignorar `/oc` si ya hay PR abierto |
-| Vinculación | `Closes #<issue>` en el PR |
-| Modelo | `minimax-m3` (NVIDIA) |
-| Timeout | 60 min |
+| Pregunta          | Decisión                                                     |
+| ----------------- | ------------------------------------------------------------ |
+| Alcance           | Implementación completa + PR (sin aprobación de plan previa) |
+| Checkpoint        | Revisión del PR (único, tardío)                              |
+| Quién invoca      | Solo OWNER/MEMBER                                            |
+| Requisito de spec | Ninguno — cualquier issue                                    |
+| PR duplicado      | Ignorar `/oc` si ya hay PR abierto                           |
+| Vinculación       | `Closes #<issue>` en el PR                                   |
+| Modelo            | `minimax-m3` (NVIDIA)                                        |
+| Timeout           | 60 min                                                       |
 
 ## Validación
 
@@ -74,5 +74,3 @@ Delegar la implementación de issues a opencode: quien lo invoca comenta `/oc` (
 - Control de coste por ejecución (solo timeout)
 - Comandos de cancelación
 - Despliegue u otras acciones post-merge
-
-

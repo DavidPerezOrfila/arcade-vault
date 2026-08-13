@@ -15,7 +15,7 @@ export async function sendContactEmail(
   const parsed = contactSchema.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),
-    message: formData.get('message')
+    message: formData.get('message'),
   });
 
   if (!parsed.success) {
@@ -36,7 +36,7 @@ export async function sendContactEmail(
   if (!apiKey || !fromEmail || !contactEmail) {
     return {
       success: false,
-      error: 'Servicio de correo no configurado correctamente en el servidor.'
+      error: 'Servicio de correo no configurado correctamente en el servidor.',
     };
   }
 
@@ -47,7 +47,7 @@ export async function sendContactEmail(
       to: contactEmail,
       subject: `Nuevo mensaje de ${name}`,
       text: `De: ${name} <${email}>\n\n${message}`,
-      replyTo: email
+      replyTo: email,
     });
 
     if (error) {

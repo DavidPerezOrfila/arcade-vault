@@ -37,7 +37,7 @@ export function useArcadeGame({
   loadModule,
   apiUrl,
   submitScore,
-  initialLeaderboard = []
+  initialLeaderboard = [],
 }: UseArcadeGameParams): UseArcadeGameResult {
   const gameRef = useRef<ArcadeGameModule | null>(null);
   const [leaderboard, setLeaderboard] =
@@ -108,6 +108,6 @@ export function useArcadeGame({
     showAuthPrompt,
     setShowAuthPrompt,
     handleGameOver,
-    refreshLeaderboard
+    refreshLeaderboard,
   };
 }

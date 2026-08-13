@@ -29,7 +29,7 @@ export function Podium({ rows }: { rows: readonly LeaderboardRow[] }) {
             style={{
               fontSize: 9,
               color: 'var(--gold)',
-              letterSpacing: '0.18em'
+              letterSpacing: '0.18em',
             }}
           >
             CAMPEÓN

@@ -33,14 +33,14 @@ Flujo completo de resolución de issues, de punta a punta: el humano inicia, ope
 
 ## Decisiones documentadas
 
-| Pregunta | Decisión |
-|---|---|
-| Alcance | Flujo completo issue → PR, humano como gate del merge |
-| Relación con opencode-loop | Absorbe: un solo workflow |
-| Trigger | Comentario del owner (`/oc` o `resuelve #X`) |
-| Validación | lint + tsc + build en CI (sin Docker) |
-| Merge | Manual, por el humano |
-| Duplicados | Un PR por issue; `/oc` extra ignorado |
+| Pregunta                   | Decisión                                              |
+| -------------------------- | ----------------------------------------------------- |
+| Alcance                    | Flujo completo issue → PR, humano como gate del merge |
+| Relación con opencode-loop | Absorbe: un solo workflow                             |
+| Trigger                    | Comentario del owner (`/oc` o `resuelve #X`)          |
+| Validación                 | lint + tsc + build en CI (sin Docker)                 |
+| Merge                      | Manual, por el humano                                 |
+| Duplicados                 | Un PR por issue; `/oc` extra ignorado                 |
 
 ## Validación
 
