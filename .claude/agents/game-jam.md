@@ -9,7 +9,7 @@ description: >
   Usar cuando se pida "game jam", "inventa un juego con tema X", "spec desde
   un tema", o brainstorm de catálogo con un tema como input.
 tools: Read, Write, Edit, Grep, Glob, Bash
-model: opus
+model: sonnet
 ---
 
 ## Prompt Defense Baseline
