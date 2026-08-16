@@ -6,7 +6,12 @@ import { useState, useEffect } from "react";
 import { clearUser, getUser } from "@/app/data/storage";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSkin } from "@/components/skin/SkinProvider";
-import { SKIN_IDS, type SkinId } from "@/lib/games/skins";
+import {
+  PALETTES,
+  SKIN_IDS,
+  SKIN_LABELS,
+  type SkinId,
+} from "@/lib/games/skins";
 import type { User } from "@/app/data/types";
 
 // Fuente única de links del nav: desktop (mayúsculas) y panel mobile comparten
@@ -18,15 +23,33 @@ const NAV_LINKS = [
   { href: "/about", desktopLabel: "ACERCA DE", mobileLabel: "Acerca de" },
 ] as const;
 
-const SKIN_LABELS: Record<SkinId, string> = {
-  clasico: "CLÁSICO",
-  neon: "NEÓN",
-  retro: "RETRO",
-};
+// Selector global de skin: dropdown con swatch del color del jugador activo.
+function SkinSwitcher() {
+  const { skin, setSkin } = useSkin();
+  return (
+    <div className="skin-switcher">
+      <span
+        className="skin-swatch"
+        style={{ backgroundColor: PALETTES[skin].player }}
+        aria-hidden
+      />
+      <select
+        value={skin}
+        onChange={(event) => setSkin(event.target.value as SkinId)}
+        aria-label="Seleccionar skin"
+      >
+        {SKIN_IDS.map((id) => (
+          <option key={id} value={id}>
+            {SKIN_LABELS[id]}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+}
 
 export default function Nav() {
   const pathname = usePathname();
-  const { skin, setSkin } = useSkin();
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
@@ -47,6 +70,9 @@ export default function Nav() {
     }
     return pathname === href || pathname.startsWith(`${href}/`);
   };
+
+  // En páginas de juego el selector vive dentro del propio juego; ocultar el global.
+  const isGamePage = pathname.startsWith("/games/");
 
   const handleSignOut = () => {
     // La sesión real de Supabase Auth llega con el flujo de auth; hoy signOut
@@ -81,19 +107,7 @@ export default function Nav() {
           <span className="coin" aria-hidden />
           <span>CRÉDITOS · 03</span>
         </div>
-        <div className="skin-switcher" role="group" aria-label="Skin">
-          {SKIN_IDS.map((id) => (
-            <button
-              key={id}
-              type="button"
-              className={`skin-switcher-btn${skin === id ? "active" : ""}`}
-              onClick={() => setSkin(id)}
-              aria-pressed={skin === id}
-            >
-              {SKIN_LABELS[id]}
-            </button>
-          ))}
-        </div>
+        {!isGamePage && <SkinSwitcher />}
         {user ? (
           <button className="btn ghost auth-btn" onClick={handleSignOut}>
             {user.name} ▾
@@ -135,19 +149,7 @@ export default function Nav() {
         >
           {user ? "Cuenta" : "Iniciar Sesión"}
         </Link>
-        <div className="skin-switcher" role="group" aria-label="Skin">
-          {SKIN_IDS.map((id) => (
-            <button
-              key={id}
-              type="button"
-              className={`skin-switcher-btn${skin === id ? "active" : ""}`}
-              onClick={() => setSkin(id)}
-              aria-pressed={skin === id}
-            >
-              {SKIN_LABELS[id]}
-            </button>
-          ))}
-        </div>
+        {!isGamePage && <SkinSwitcher />}
         <div className="flex-1" />
         <div className="pixel text-ink-faint text-[9px] tracking-[0.16em]">
           CRÉDITOS · 03
