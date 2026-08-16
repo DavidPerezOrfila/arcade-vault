@@ -6,7 +6,7 @@ import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { useSkin } from '@/components/skin/SkinProvider';
-import { SKIN_IDS, SKIN_LABELS, type SkinId } from '@/lib/games/skins';
+import { SkinSelect } from '@/components/skin/SkinSelect';
 import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
 import type { AsteroidsGameProps } from '@/lib/games/asteroids/types';
 import './asteroids.css';
@@ -17,7 +17,7 @@ const API_URL = '/api/leaderboard/asteroids';
 
 export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const { skin, setSkin } = useSkin();
+  const { skin } = useSkin();
   const {
     gameRef,
     isLoading,
@@ -70,22 +70,7 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
     <div className='asteroids-game-layout'>
       <div className='asteroids-game-wrapper'>
         <div className='asteroids-game-shell'>
-          <div className='asteroids-skin-bar'>
-            <label className='asteroids-skin-select'>
-              <span>SKIN</span>
-              <select
-                value={skin}
-                onChange={(event) => setSkin(event.target.value as SkinId)}
-                aria-label='Seleccionar skin'
-              >
-                {SKIN_IDS.map((id) => (
-                  <option key={id} value={id}>
-                    {SKIN_LABELS[id]}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </div>
+          <SkinSelect classPrefix='asteroids' />
 
           <div className='asteroids-game-container'>
             <canvas

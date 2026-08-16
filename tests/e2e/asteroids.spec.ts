@@ -124,8 +124,8 @@ test.describe("Asteroids Game", () => {
   });
 
   test("leaderboard displays", async ({ page }) => {
-    // Check leaderboard HUD is visible
-    const leaderboard = page.locator(".asteroids-leaderboard-hud");
+    // Check leaderboard card is visible
+    const leaderboard = page.locator(".asteroids-leaderboard-card");
     await expect(leaderboard).toBeVisible();
 
     // Check title

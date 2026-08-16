@@ -5,6 +5,8 @@ import { submitCaidaScore } from '@/app/games/caida/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
+import { useSkin } from '@/components/skin/SkinProvider';
+import { SkinSelect } from '@/components/skin/SkinSelect';
 import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
 import type {
   CaidaGameProps,
@@ -27,6 +29,7 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
   const overlayRef = useRef<HTMLDivElement>(null);
   const overlayTitleRef = useRef<HTMLHeadingElement>(null);
   const overlayScoreRef = useRef<HTMLParagraphElement>(null);
+  const { skin } = useSkin();
 
   const {
     gameRef,
@@ -44,6 +47,7 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
 
   // Recoge refs y arranca el módulo. setOnGameOver antes de initGame — el
   // módulo dispara game over al iniciar, ese callback debe estar bindeado.
+  // skin en deps: cambiar de skin reinicia la partida (igual que Asteroids).
   const startGame = useCallback(() => {
     const game = gameRef.current;
     if (!game) return;
@@ -71,8 +75,8 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
 
     setShowAuthPrompt(false);
     game.setOnGameOver(handleGameOver);
-    game.initGame(refs, { onGameOver: handleGameOver });
-  }, [gameRef, handleGameOver, setShowAuthPrompt]);
+    game.initGame(refs, { onGameOver: handleGameOver, skin });
+  }, [gameRef, handleGameOver, setShowAuthPrompt, skin]);
 
   useEffect(() => {
     if (isLoading) return undefined;
@@ -91,66 +95,70 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
   }
 
   return (
-    <div className='caida-game-container'>
-      <div className='caida-board-wrap'>
-        <canvas
-          ref={boardRef}
-          width={BOARD_W}
-          height={BOARD_H}
-          aria-label='Juego CAÍDA'
-        />
+    <div className='caida-game-layout'>
+      <SkinSelect classPrefix='caida' />
 
-        {/* Overlay compartido: PAUSA / GAME OVER. El wrapper togglea la clase 'hidden'. */}
-        <div className='caida-overlay hidden' ref={overlayRef}>
-          <h3 className='caida-overlay-title' ref={overlayTitleRef}>
-            PAUSA
-          </h3>
-          <p className='caida-overlay-score' ref={overlayScoreRef}></p>
-          <button onClick={startGame} className='caida-overlay-button'>
-            Jugar de nuevo
-          </button>
-        </div>
-
-        {showAuthPrompt && (
-          <AuthPrompt
-            classPrefix='caida'
-            gamePath='/games/caida'
-            title='¡Partida terminada!'
-            message='Inicia sesión para guardar tu puntuación en el ranking global.'
-            onDismiss={() => setShowAuthPrompt(false)}
+      <div className='caida-game-container'>
+        <div className='caida-board-wrap'>
+          <canvas
+            ref={boardRef}
+            width={BOARD_W}
+            height={BOARD_H}
+            aria-label='Juego CAÍDA'
           />
-        )}
-      </div>
 
-      <div className='caida-panel'>
-        <div className='caida-hud'>
-          <div className='caida-hud-item'>
-            <span>PUNTOS</span>
-            <span ref={scoreRef}>0</span>
+          {/* Overlay compartido: PAUSA / GAME OVER. El wrapper togglea la clase 'hidden'. */}
+          <div className='caida-overlay hidden' ref={overlayRef}>
+            <h3 className='caida-overlay-title' ref={overlayTitleRef}>
+              PAUSA
+            </h3>
+            <p className='caida-overlay-score' ref={overlayScoreRef}></p>
+            <button onClick={startGame} className='caida-overlay-button'>
+              Jugar de nuevo
+            </button>
           </div>
-          <div className='caida-hud-item'>
-            <span>LÍNEAS</span>
-            <span ref={linesRef}>0</span>
-          </div>
-          <div className='caida-hud-item'>
-            <span>NIVEL</span>
-            <span ref={levelRef}>1</span>
-          </div>
+
+          {showAuthPrompt && (
+            <AuthPrompt
+              classPrefix='caida'
+              gamePath='/games/caida'
+              title='¡Partida terminada!'
+              message='Inicia sesión para guardar tu puntuación en el ranking global.'
+              onDismiss={() => setShowAuthPrompt(false)}
+            />
+          )}
         </div>
 
-        <div className='caida-next'>
-          <div className='caida-next-label'>SIGUIENTE</div>
-          <canvas ref={nextRef} width={NEXT_W} height={NEXT_H} aria-hidden='true' />
-        </div>
+        <div className='caida-panel'>
+          <div className='caida-hud'>
+            <div className='caida-hud-item'>
+              <span>PUNTOS</span>
+              <span ref={scoreRef}>0</span>
+            </div>
+            <div className='caida-hud-item'>
+              <span>LÍNEAS</span>
+              <span ref={linesRef}>0</span>
+            </div>
+            <div className='caida-hud-item'>
+              <span>NIVEL</span>
+              <span ref={levelRef}>1</span>
+            </div>
+          </div>
 
-        <div className='caida-leaderboard'>
-          <div className='caida-leaderboard-title'>TOP {LEADERBOARD_TOP_N}</div>
-          <LeaderboardList
-            classPrefix='caida'
-            entries={leaderboard}
-            maxRows={LEADERBOARD_TOP_N}
-            emptyText='Sin puntuaciones aún'
-          />
+          <div className='caida-next'>
+            <div className='caida-next-label'>SIGUIENTE</div>
+            <canvas ref={nextRef} width={NEXT_W} height={NEXT_H} aria-hidden='true' />
+          </div>
+
+          <div className='caida-leaderboard'>
+            <div className='caida-leaderboard-title'>TOP {LEADERBOARD_TOP_N}</div>
+            <LeaderboardList
+              classPrefix='caida'
+              entries={leaderboard}
+              maxRows={LEADERBOARD_TOP_N}
+              emptyText='Sin puntuaciones aún'
+            />
+          </div>
         </div>
       </div>
     </div>
