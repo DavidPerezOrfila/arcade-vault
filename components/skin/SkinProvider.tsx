@@ -1,26 +1,26 @@
-"use client";
+'use client';
 
 import {
   createContext,
   useCallback,
   useContext,
   useSyncExternalStore,
-  type ReactNode,
-} from "react";
+  type ReactNode
+} from 'react';
 import {
   DEFAULT_SKIN,
   SKIN_STORAGE_KEY,
   isSkinId,
   readStoredSkin,
-  type SkinId,
-} from "@/lib/games/skins";
+  type SkinId
+} from '@/lib/games/skins';
 
 type Listener = () => void;
 
 const listeners = new Set<Listener>();
 
 function getSnapshot(): SkinId {
-  if (typeof document === "undefined") return DEFAULT_SKIN;
+  if (typeof document === 'undefined') return DEFAULT_SKIN;
   const value = document.documentElement.dataset.skin;
   return isSkinId(value) ? value : readStoredSkin();
 }
@@ -74,7 +74,7 @@ export function SkinProvider({ children }: { children: ReactNode }) {
 export function useSkin(): SkinContextValue {
   const value = useContext(SkinContext);
   if (!value) {
-    throw new Error("useSkin debe usarse dentro de <SkinProvider>");
+    throw new Error('useSkin debe usarse dentro de <SkinProvider>');
   }
   return value;
 }
