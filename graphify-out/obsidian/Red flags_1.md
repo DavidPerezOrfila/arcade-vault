@@ -2,7 +2,7 @@
 source_file: ".claude/agents/game-planner.md"
 type: "document"
 community: "salon.jsx"
-location: "L86"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED

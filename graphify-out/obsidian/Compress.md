@@ -2,7 +2,7 @@
 source_file: ".agents/skills/caveman-compress/SKILL.md"
 type: "document"
 community: "Caveman Compress"
-location: "L66"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED

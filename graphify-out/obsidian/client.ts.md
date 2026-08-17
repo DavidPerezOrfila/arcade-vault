@@ -1,12 +1,12 @@
 ---
 source_file: "lib/supabase/client.ts"
 type: "code"
-community: "requireEnv"
+community: "leaderboard.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/requireEnv
+  - community/leaderboardts
 ---
 
 # client.ts
@@ -17,4 +17,4 @@ tags:
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
 - [[requireEnv()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/requireEnv
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

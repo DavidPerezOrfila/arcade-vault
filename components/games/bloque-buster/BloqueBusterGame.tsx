@@ -1,9 +1,11 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { submitBloqueBusterScore } from '@/app/games/bloque-buster/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
+import { TouchControls, dispatchKey } from '@/components/games/TouchControls';
+import type { TouchButton } from '@/components/games/TouchControls';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { useSkin } from '@/components/skin/SkinProvider';
 import { SkinSelect } from '@/components/skin/SkinSelect';
@@ -14,6 +16,13 @@ import './bloque-buster.css';
 const CANVAS_W = 800;
 const CANVAS_H = 600;
 const API_URL = '/api/leaderboard/bloque-buster';
+
+// La pelota arranca sola; solo paleta (hold) + pausa (tap).
+const TOUCH_BUTTONS: TouchButton[] = [
+  { action: 'left', label: '◀', mode: 'hold' },
+  { action: 'right', label: '▶', mode: 'hold' },
+  { action: 'pause', label: 'PAUSA' },
+];
 
 export function BloqueBusterGame({
   initialLeaderboard = [],
@@ -59,6 +68,26 @@ export function BloqueBusterGame({
     };
   }, [isLoading, gameRef, handleGameOver, skin]);
 
+  // Paleta lee e.key (ArrowLeft/ArrowRight) y pausa e.code KeyP con key 'p'.
+  const handleDown = useCallback((action: string) => {
+    switch (action) {
+      case 'left':
+        dispatchKey('ArrowLeft', 'keydown');
+        break;
+      case 'right':
+        dispatchKey('ArrowRight', 'keydown');
+        break;
+      case 'pause':
+        dispatchKey('KeyP', 'keydown', 'p');
+        break;
+    }
+  }, []);
+
+  const handleUp = useCallback((action: string) => {
+    if (action === 'left') dispatchKey('ArrowLeft', 'keyup');
+    if (action === 'right') dispatchKey('ArrowRight', 'keyup');
+  }, []);
+
   if (isLoading) {
     return (
       <div className='bloque-buster-game-container'>
@@ -92,6 +121,13 @@ export function BloqueBusterGame({
               />
             )}
           </div>
+
+          <TouchControls
+            classPrefix='bloque-buster'
+            buttons={TOUCH_BUTTONS}
+            onDown={handleDown}
+            onUp={handleUp}
+          />
         </div>
       </div>
 

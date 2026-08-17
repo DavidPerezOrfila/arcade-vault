@@ -12,9 +12,9 @@ tags:
 # collide()
 
 ## Connections
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 - [[ghostY()]] - `calls` [EXTRACTED]
-- [[loop()_1]] - `calls` [EXTRACTED]
+- [[loop()_2]] - `calls` [EXTRACTED]
 - [[onKeyDown()]] - `calls` [EXTRACTED]
 - [[softDrop()]] - `calls` [EXTRACTED]
 - [[spawn()]] - `calls` [EXTRACTED]

@@ -2,7 +2,7 @@
 source_file: ".claude/skills/playwright-cli/references/video-recording.md"
 type: "document"
 community: "Tracing"
-location: "L131"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED

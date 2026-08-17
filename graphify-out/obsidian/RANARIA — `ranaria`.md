@@ -2,7 +2,7 @@
 source_file: "resources/implemented-games.md"
 type: "document"
 community: "Juegos catalogados (no jugables todavía)"
-location: "L128"
+location: "L136"
 tags:
   - graphify/document
   - graphify/EXTRACTED

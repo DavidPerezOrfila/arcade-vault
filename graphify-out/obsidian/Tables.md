@@ -12,6 +12,6 @@ tags:
 # Tables
 
 ## Connections
-- [[types.ts_6]] - `contains` [EXTRACTED]
+- [[types.ts_7]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/detallejsx

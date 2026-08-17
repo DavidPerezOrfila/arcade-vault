@@ -1,32 +1,22 @@
 ---
-source_file: "app/page.tsx"
+source_file: "app/games/serpentina/page.tsx"
 type: "code"
-community: "biblioteca.jsx"
+community: "CaidaGame.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/bibliotecajsx
+  - community/CaidaGametsx
 ---
 
 # page.tsx
 
 ## Connections
-- [[FEATURES]] - `imports` [EXTRACTED]
-- [[FeatureIcon()]] - `imports` [EXTRACTED]
-- [[FeatureIcon.tsx]] - `imports_from` [EXTRACTED]
-- [[FloatingSilhouettes()]] - `imports` [EXTRACTED]
-- [[FloatingSilhouettes.tsx]] - `imports_from` [EXTRACTED]
-- [[Home()]] - `contains` [EXTRACTED]
-- [[HomeEnhancer()]] - `imports` [EXTRACTED]
-- [[HomeEnhancer.tsx]] - `imports_from` [EXTRACTED]
-- [[MiniCard()]] - `imports` [EXTRACTED]
-- [[RecentActivity.tsx]] - `imports_from` [EXTRACTED]
-- [[STATS]] - `imports` [EXTRACTED]
-- [[TopPlayersToday()]] - `imports` [EXTRACTED]
-- [[TopPlayersToday.tsx]] - `imports_from` [EXTRACTED]
-- [[games.ts]] - `imports_from` [EXTRACTED]
-- [[getGames()]] - `imports` [EXTRACTED]
-- [[homeData.tsx]] - `imports_from` [EXTRACTED]
+- [[LeaderboardServer()_3]] - `contains` [EXTRACTED]
+- [[SerpentinaGame()]] - `imports` [EXTRACTED]
+- [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
+- [[SerpentinaPage()]] - `contains` [EXTRACTED]
+- [[actions.ts_5]] - `imports_from` [EXTRACTED]
+- [[metadata_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/bibliotecajsx
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

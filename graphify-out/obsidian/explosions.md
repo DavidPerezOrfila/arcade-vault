@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/04-arkanoid/game.js"
+source_file: "lib/games/bloque-buster/game.esm.js"
 type: "code"
-community: "04-arkanoid/game.js"
-location: "L23"
+community: "serpentina/game.esm.js"
+location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/04-arkanoid/gamejs
+  - community/serpentina/gameesmjs
 ---
 
 # explosions
 
 ## Connections
-- [[game.js_2]] - `contains` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs
+#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs

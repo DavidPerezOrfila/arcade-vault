@@ -2,7 +2,7 @@
 source_file: "graft/eslint.config.md"
 type: "document"
 community: "INDEX.md"
-location: "L4"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED

@@ -12,7 +12,7 @@ tags:
 # hardDrop()
 
 ## Connections
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 - [[ghostY()]] - `calls` [EXTRACTED]
 - [[lockPiece()]] - `calls` [EXTRACTED]
 - [[onKeyDown()]] - `calls` [EXTRACTED]

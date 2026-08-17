@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[AsteroidsGame.tsx]] - `imports` [EXTRACTED]
 - [[AuthPrompt.tsx]] - `contains` [EXTRACTED]
+- [[BloqueBusterGame.tsx]] - `imports` [EXTRACTED]
 - [[CaidaGame.tsx]] - `imports` [EXTRACTED]
 - [[SerpentinaGame.tsx]] - `imports` [EXTRACTED]
 

@@ -15,6 +15,7 @@ tags:
 - [[game.esm.js]] - `imports` [EXTRACTED]
 - [[game.esm.js_1]] - `imports` [EXTRACTED]
 - [[game.esm.js_2]] - `imports` [EXTRACTED]
+- [[game.esm.js_3]] - `imports` [EXTRACTED]
 - [[nav.tsx]] - `imports` [EXTRACTED]
 - [[skins.ts]] - `contains` [EXTRACTED]
 

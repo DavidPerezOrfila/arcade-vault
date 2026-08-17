@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/players.ts"
 type: "code"
-community: "validate.py"
+community: "app/page.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validatepy
+  - community/app/pagetsx
 ---
 
 # players.ts
@@ -18,4 +18,4 @@ tags:
 - [[seededScores()]] - `contains` [EXTRACTED]
 - [[types.ts_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validatepy
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

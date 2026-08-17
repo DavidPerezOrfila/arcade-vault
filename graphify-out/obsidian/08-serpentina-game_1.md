@@ -2,7 +2,7 @@
 source_file: "specs/08-serpentina-game.md"
 type: "document"
 community: "08-serpentina-game"
-location: "L6"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED

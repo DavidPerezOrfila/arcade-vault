@@ -2,7 +2,7 @@
 source_file: "app/about/schema.ts"
 type: "code"
 community: "about/page.tsx"
-location: "L9"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED

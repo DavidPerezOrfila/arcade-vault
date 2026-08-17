@@ -1,12 +1,12 @@
 ---
 source_file: "app/games/asteroids/actions.ts"
 type: "code"
-community: "SalonClient.tsx"
+community: "validate.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SalonClienttsx
+  - community/validatepy
 ---
 
 # actions.ts
@@ -19,4 +19,4 @@ tags:
 - [[page.tsx_3]] - `imports_from` [EXTRACTED]
 - [[route.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SalonClienttsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

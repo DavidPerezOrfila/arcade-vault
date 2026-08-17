@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[clearLines()]] - `calls` [EXTRACTED]
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 - [[hardDrop()]] - `calls` [EXTRACTED]
-- [[loop()_1]] - `calls` [EXTRACTED]
+- [[loop()_2]] - `calls` [EXTRACTED]
 - [[merge()]] - `calls` [EXTRACTED]
 - [[softDrop()]] - `calls` [EXTRACTED]
 - [[spawn()]] - `calls` [EXTRACTED]

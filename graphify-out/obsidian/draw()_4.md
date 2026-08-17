@@ -1,21 +1,20 @@
 ---
-source_file: "resources/started-games/03-tetris/game.js"
+source_file: "resources/started-games/02-asteroids/game.js"
 type: "code"
-community: "03-tetris/game.js"
-location: "L191"
+community: "02-asteroids/game.js"
+location: "L490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/03-tetris/gamejs
+  - community/02-asteroids/gamejs
 ---
 
 # draw()
 
 ## Connections
-- [[drawBlock()_1]] - `calls` [EXTRACTED]
-- [[drawGrid()_1]] - `calls` [EXTRACTED]
-- [[game.js_1]] - `contains` [EXTRACTED]
-- [[ghostY()_1]] - `calls` [EXTRACTED]
+- [[drawHUD()_2]] - `calls` [EXTRACTED]
+- [[drawOverlay()_2]] - `calls` [EXTRACTED]
+- [[game.js]] - `contains` [EXTRACTED]
 - [[loop()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs
+#graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs

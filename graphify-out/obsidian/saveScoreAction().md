@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/actions.ts"
 type: "code"
-community: "serpentina/game.esm.js"
+community: "data.jsx"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serpentina/gameesmjs
+  - community/datajsx
 ---
 
 # saveScoreAction()
@@ -19,4 +19,4 @@ tags:
 - [[parseFormData()]] - `calls` [EXTRACTED]
 - [[saveScore()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/datajsx

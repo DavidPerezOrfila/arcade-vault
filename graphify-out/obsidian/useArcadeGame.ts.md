@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[ArcadeGameModule]] - `contains` [EXTRACTED]
 - [[AsteroidsGame.tsx]] - `imports_from` [EXTRACTED]
+- [[BloqueBusterGame.tsx]] - `imports_from` [EXTRACTED]
 - [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
 - [[LeaderboardEntry]] - `imports` [EXTRACTED]
 - [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
@@ -21,7 +22,7 @@ tags:
 - [[UseArcadeGameParams]] - `contains` [EXTRACTED]
 - [[UseArcadeGameResult]] - `contains` [EXTRACTED]
 - [[leaderboard.ts]] - `imports_from` [EXTRACTED]
-- [[types.ts_5]] - `imports_from` [EXTRACTED]
+- [[types.ts_6]] - `imports_from` [EXTRACTED]
 - [[useArcadeGame()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

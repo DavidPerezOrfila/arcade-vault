@@ -1,18 +1,19 @@
 ---
-source_file: "resources/started-games/03-tetris/game.js"
+source_file: "lib/games/serpentina/game.esm.js"
 type: "code"
-community: "03-tetris/game.js"
-location: "L225"
+community: "leaderboard.ts"
+location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/03-tetris/gamejs
+  - community/leaderboardts
 ---
 
 # endGame()
 
 ## Connections
-- [[game.js_1]] - `contains` [EXTRACTED]
-- [[spawn()_1]] - `calls` [EXTRACTED]
+- [[game.esm.js_3]] - `contains` [EXTRACTED]
+- [[spawnFood()]] - `calls` [EXTRACTED]
+- [[step()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

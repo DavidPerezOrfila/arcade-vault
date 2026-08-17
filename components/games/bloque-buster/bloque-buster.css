@@ -336,3 +336,41 @@ html[data-skin='neon'] .bloque-buster-game-container canvas {
     margin-left: 0;
   }
 }
+
+/* ===== Touch controls ===== */
+
+.bloque-buster-touch-controls {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  justify-content: center;
+}
+
+.bloque-buster-touch-controls:empty {
+  display: none;
+}
+
+.bloque-buster-touch-button {
+  flex: 0 1 auto;
+  min-width: 3.5rem;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  color: var(--ink);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.bloque-buster-touch-button:active {
+  background: var(--yellow);
+  color: var(--bg);
+}

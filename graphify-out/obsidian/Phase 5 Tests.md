@@ -2,7 +2,7 @@
 source_file: "specs/06-games-catalog-salon.md"
 type: "document"
 community: "06-games-catalog-salon"
-location: "L125"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED

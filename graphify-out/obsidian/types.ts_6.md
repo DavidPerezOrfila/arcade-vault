@@ -1,27 +1,24 @@
 ---
-source_file: "lib/supabase/types.ts"
+source_file: "lib/games/types.ts"
 type: "code"
-community: "detalle.jsx"
+community: "CaidaGame.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detallejsx
+  - community/CaidaGametsx
 ---
 
 # types.ts
 
 ## Connections
-- [[CompositeTypes]] - `contains` [EXTRACTED]
-- [[Constants]] - `contains` [EXTRACTED]
-- [[Database]] - `contains` [EXTRACTED]
-- [[DatabaseWithoutInternals]] - `contains` [EXTRACTED]
-- [[DefaultSchema]] - `contains` [EXTRACTED]
-- [[Enums]] - `contains` [EXTRACTED]
-- [[Json]] - `contains` [EXTRACTED]
-- [[Tables]] - `contains` [EXTRACTED]
-- [[TablesInsert]] - `contains` [EXTRACTED]
-- [[TablesUpdate]] - `contains` [EXTRACTED]
-- [[types.ts_1]] - `imports_from` [EXTRACTED]
+- [[LeaderboardEntry]] - `contains` [EXTRACTED]
+- [[LeaderboardList.tsx]] - `imports_from` [EXTRACTED]
+- [[leaderboard.ts]] - `imports_from` [EXTRACTED]
+- [[types.ts_2]] - `re_exports` [EXTRACTED]
+- [[types.ts_3]] - `re_exports` [EXTRACTED]
+- [[types.ts_4]] - `re_exports` [EXTRACTED]
+- [[types.ts_5]] - `imports_from` [EXTRACTED]
+- [[useArcadeGame.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detallejsx
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

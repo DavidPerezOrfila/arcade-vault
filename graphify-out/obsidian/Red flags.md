@@ -2,7 +2,7 @@
 source_file: ".claude/agents/game-jam.md"
 type: "document"
 community: "game-jam.md"
-location: "L91"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED

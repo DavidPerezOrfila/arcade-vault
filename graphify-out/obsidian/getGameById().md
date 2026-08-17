@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/games.ts"
 type: "code"
-community: "reproductor.jsx"
+community: "biblioteca.jsx"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/reproductorjsx
+  - community/bibliotecajsx
 ---
 
 # getGameById()
@@ -18,6 +18,6 @@ tags:
 - [[gameLabel()]] - `calls` [EXTRACTED]
 - [[games.ts]] - `contains` [EXTRACTED]
 - [[getGameBySlug()]] - `calls` [EXTRACTED]
-- [[page.tsx_8]] - `imports` [EXTRACTED]
+- [[page.tsx_9]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/reproductorjsx
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

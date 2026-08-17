@@ -1,12 +1,12 @@
 ---
 source_file: "lib/supabase/admin.ts"
 type: "code"
-community: "requireEnv"
+community: "leaderboard.ts"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/requireEnv
+  - community/leaderboardts
 ---
 
 # createSupabaseAdminClient()
@@ -15,4 +15,4 @@ tags:
 - [[admin.ts]] - `contains` [EXTRACTED]
 - [[requireEnv()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/requireEnv
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

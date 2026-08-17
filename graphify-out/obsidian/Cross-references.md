@@ -2,7 +2,7 @@
 source_file: ".claude/skills/playwright-cli/references/test-generation.md"
 type: "document"
 community: "Browser Session Management"
-location: "L427"
+location: "L435"
 tags:
   - graphify/document
   - graphify/EXTRACTED

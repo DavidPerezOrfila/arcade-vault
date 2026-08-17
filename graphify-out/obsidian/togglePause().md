@@ -12,8 +12,8 @@ tags:
 # togglePause()
 
 ## Connections
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 - [[onKeyDown()]] - `calls` [EXTRACTED]
-- [[scheduleTick()_1]] - `calls` [EXTRACTED]
+- [[scheduleTick()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

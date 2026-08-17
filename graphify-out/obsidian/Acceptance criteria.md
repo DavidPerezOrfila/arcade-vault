@@ -2,7 +2,7 @@
 source_file: "specs/04-supabase-scores-foundation.md"
 type: "document"
 community: "SPEC 04 — Supabase: foundation y persistencia de puntuaciones"
-location: "L285"
+location: "L306"
 tags:
   - graphify/document
   - graphify/EXTRACTED

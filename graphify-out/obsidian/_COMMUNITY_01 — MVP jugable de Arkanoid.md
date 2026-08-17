@@ -18,7 +18,7 @@ members: 13
 - [[Estado del juego]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Fuera del MVP (dejado para specs posteriores)]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Modelo de datos]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
-- [[Paddle_1]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Paddle_2]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Pelota]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Plan de implementación]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 

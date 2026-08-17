@@ -1,19 +1,21 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "02-asteroids/game.js"
-location: "L498"
+community: "caida/game.esm.js"
+location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/02-asteroids/gamejs
+  - community/caida/gameesmjs
 ---
 
 # loop()
 
 ## Connections
-- [[draw()_3]] - `calls` [EXTRACTED]
-- [[game.js]] - `indirect_call` [INFERRED]
-- [[update()_1]] - `calls` [EXTRACTED]
+- [[collide()]] - `calls` [EXTRACTED]
+- [[draw()_2]] - `calls` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
+- [[lockPiece()]] - `calls` [EXTRACTED]
+- [[scheduleTick()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

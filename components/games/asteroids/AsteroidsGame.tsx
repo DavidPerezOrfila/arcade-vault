@@ -1,9 +1,11 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { submitAsteroidsScore } from '@/app/games/asteroids/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
+import { TouchControls, dispatchKey } from '@/components/games/TouchControls';
+import type { TouchButton } from '@/components/games/TouchControls';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { useSkin } from '@/components/skin/SkinProvider';
 import { SkinSelect } from '@/components/skin/SkinSelect';
@@ -15,6 +17,13 @@ const CANVAS_W = 800;
 const CANVAS_H = 600;
 const API_URL = '/api/leaderboard/asteroids';
 
+const TOUCH_BUTTONS: TouchButton[] = [
+  { action: 'left', label: '◀', mode: 'hold' },
+  { action: 'right', label: '▶', mode: 'hold' },
+  { action: 'thrust', label: '▲', mode: 'hold' },
+  { action: 'fire', label: 'FIRE' },
+];
+
 export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { skin } = useSkin();
@@ -24,12 +33,12 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
     leaderboard,
     showAuthPrompt,
     setShowAuthPrompt,
-    handleGameOver
+    handleGameOver,
   } = useArcadeGame({
     loadModule: () => import('@/lib/games/asteroids/game.esm.js'),
     apiUrl: API_URL,
     submitScore: submitAsteroidsScore,
-    initialLeaderboard
+    initialLeaderboard,
   });
 
   // Aplica tamaño lógico del canvas, bindea game-over y arranca el módulo.
@@ -56,6 +65,27 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
       game.destroy();
     };
   }, [isLoading, gameRef, handleGameOver, skin]);
+
+  // Mapea botones tactiles a teclas sintetizadas. hold necesita keyup en el
+  // release para soltar el latch keys del engine; fire (tap) solo keydown.
+  const handleDown = useCallback((action: string) => {
+    const key: Record<string, string> = {
+      left: 'ArrowLeft',
+      right: 'ArrowRight',
+      thrust: 'ArrowUp',
+      fire: 'Space',
+    };
+    dispatchKey(key[action] ?? action, 'keydown');
+  }, []);
+
+  const handleUp = useCallback((action: string) => {
+    const key: Record<string, string> = {
+      left: 'ArrowLeft',
+      right: 'ArrowRight',
+      thrust: 'ArrowUp',
+    };
+    dispatchKey(key[action] ?? action, 'keyup');
+  }, []);
 
   if (isLoading) {
     return (
@@ -90,12 +120,21 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
               />
             )}
           </div>
+
+          <TouchControls
+            classPrefix='asteroids'
+            buttons={TOUCH_BUTTONS}
+            onDown={handleDown}
+            onUp={handleUp}
+          />
         </div>
       </div>
 
       <aside className='asteroids-game-sidebar'>
         <div className='asteroids-leaderboard-card'>
-          <div className='asteroids-leaderboard-title'>TOP {LEADERBOARD_TOP_N}</div>
+          <div className='asteroids-leaderboard-title'>
+            TOP {LEADERBOARD_TOP_N}
+          </div>
           <LeaderboardList
             classPrefix='asteroids'
             entries={leaderboard}
@@ -118,7 +157,9 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
               <dd>Rotar</dd>
             </div>
             <div className='asteroids-control-item'>
-              <dt><span className='asteroids-control-key'>ESPACIO</span></dt>
+              <dt>
+                <span className='asteroids-control-key'>ESPACIO</span>
+              </dt>
               <dd>Disparar</dd>
             </div>
           </dl>

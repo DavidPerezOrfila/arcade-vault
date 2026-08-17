@@ -1,20 +1,22 @@
 ---
-source_file: "lib/games/serpentina/game.esm.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "leaderboard.ts"
-location: "L147"
+community: "caida/game.esm.js"
+location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/caida/gameesmjs
 ---
 
 # draw()
 
 ## Connections
+- [[drawBlock()]] - `calls` [EXTRACTED]
+- [[drawGrid()]] - `calls` [EXTRACTED]
 - [[game.esm.js_2]] - `contains` [EXTRACTED]
-- [[hexToRgba()_1]] - `calls` [EXTRACTED]
+- [[ghostY()]] - `calls` [EXTRACTED]
 - [[initGame()_2]] - `calls` [EXTRACTED]
-- [[tick()]] - `calls` [EXTRACTED]
+- [[loop()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

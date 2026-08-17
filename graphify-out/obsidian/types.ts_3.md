@@ -1,5 +1,5 @@
 ---
-source_file: "lib/games/caida/types.ts"
+source_file: "lib/games/bloque-buster/types.ts"
 type: "code"
 community: "CaidaGame.tsx"
 location: "L1"
@@ -12,10 +12,9 @@ tags:
 # types.ts
 
 ## Connections
-- [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
-- [[CaidaGameProps]] - `contains` [EXTRACTED]
-- [[CaidaRefs]] - `contains` [EXTRACTED]
+- [[BloqueBusterGame.tsx]] - `imports_from` [EXTRACTED]
+- [[BloqueBusterGameProps]] - `contains` [EXTRACTED]
 - [[LeaderboardEntry]] - `re_exports` [EXTRACTED]
-- [[types.ts_5]] - `re_exports` [EXTRACTED]
+- [[types.ts_6]] - `re_exports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

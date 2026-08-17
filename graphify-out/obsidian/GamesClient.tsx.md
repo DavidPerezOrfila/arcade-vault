@@ -1,12 +1,12 @@
 ---
 source_file: "app/games/GamesClient.tsx"
 type: "code"
-community: "validate.py"
+community: "detalle.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validatepy
+  - community/detallejsx
 ---
 
 # GamesClient.tsx
@@ -17,7 +17,7 @@ tags:
 - [[GameCard()]] - `contains` [EXTRACTED]
 - [[GamesClient()]] - `contains` [EXTRACTED]
 - [[GamesClientProps]] - `contains` [EXTRACTED]
-- [[page.tsx_5]] - `imports_from` [EXTRACTED]
+- [[page.tsx_6]] - `imports_from` [EXTRACTED]
 - [[types.ts_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validatepy
+#graphify/code #graphify/EXTRACTED #community/detallejsx

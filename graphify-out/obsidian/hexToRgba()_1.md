@@ -12,7 +12,7 @@ tags:
 # hexToRgba()
 
 ## Connections
-- [[draw()_2]] - `calls` [EXTRACTED]
-- [[game.esm.js_2]] - `contains` [EXTRACTED]
+- [[draw()_3]] - `calls` [EXTRACTED]
+- [[game.esm.js_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/leaderboardts

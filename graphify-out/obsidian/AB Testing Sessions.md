@@ -2,7 +2,7 @@
 source_file: ".claude/skills/playwright-cli/references/session-management.md"
 type: "document"
 community: "Browser Session Management"
-location: "L84"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED

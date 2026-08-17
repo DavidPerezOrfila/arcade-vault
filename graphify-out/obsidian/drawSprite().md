@@ -1,17 +1,19 @@
 ---
-source_file: "resources/started-games/04-arkanoid/assets/spritesheet.js"
+source_file: "lib/games/bloque-buster/game.esm.js"
 type: "code"
-community: "spritesheet.js"
-location: "L95"
+community: "serpentina/game.esm.js"
+location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/spritesheetjs
+  - community/serpentina/gameesmjs
 ---
 
 # drawSprite()
 
 ## Connections
-- [[spritesheet.js]] - `contains` [EXTRACTED]
+- [[draw()_1]] - `calls` [EXTRACTED]
+- [[drawHUD()_1]] - `calls` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/spritesheetjs
+#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs

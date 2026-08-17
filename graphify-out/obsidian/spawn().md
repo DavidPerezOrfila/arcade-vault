@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[collide()]] - `calls` [EXTRACTED]
 - [[drawNext()]] - `calls` [EXTRACTED]
-- [[endGame()]] - `calls` [EXTRACTED]
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
-- [[initGame()_1]] - `calls` [EXTRACTED]
+- [[endGame()_1]] - `calls` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
+- [[initGame()_2]] - `calls` [EXTRACTED]
 - [[lockPiece()]] - `calls` [EXTRACTED]
 - [[randomPiece()]] - `calls` [EXTRACTED]
 

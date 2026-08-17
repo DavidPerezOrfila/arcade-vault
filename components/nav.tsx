@@ -10,7 +10,7 @@ import {
   PALETTES,
   SKIN_IDS,
   SKIN_LABELS,
-  type SkinId
+  type SkinId,
 } from '@/lib/games/skins';
 import type { User } from '@/app/data/types';
 
@@ -56,6 +56,14 @@ export default function Nav() {
     setUser(getUser());
   }, []);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // Bloquea el scroll del body mientras el panel móvil está abierto.
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
 
   const isActive = (href: string) => {
     if (href === '/') {
@@ -121,6 +129,7 @@ export default function Nav() {
           className='btn ghost hamburger'
           onClick={() => setMobileOpen(true)}
           aria-label='Menú'
+          aria-expanded={mobileOpen}
         >
           ≡
         </button>
@@ -130,7 +139,11 @@ export default function Nav() {
         className={`av-mobile-backdrop${mobileOpen ? 'open' : ''}`}
         onClick={() => setMobileOpen(false)}
       />
-      <aside className={`av-mobile-panel${mobileOpen ? 'open' : ''}`}>
+      <aside
+        className={`av-mobile-panel${mobileOpen ? 'open' : ''}`}
+        aria-hidden={!mobileOpen}
+        inert={!mobileOpen}
+      >
         <div className='pixel neon-cyan mb-4 text-[11px]'>MENÚ</div>
         {NAV_LINKS.map((link) => (
           <Link

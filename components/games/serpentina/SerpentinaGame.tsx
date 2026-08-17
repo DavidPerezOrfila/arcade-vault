@@ -1,9 +1,12 @@
 'use client';
 
 import { useCallback, useEffect, useRef } from 'react';
+import type { TouchEvent as ReactTouchEvent } from 'react';
 import { submitSerpentinaScore } from '@/app/games/serpentina/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
+import { TouchControls, dispatchKey } from '@/components/games/TouchControls';
+import type { TouchButton } from '@/components/games/TouchControls';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { useSkin } from '@/components/skin/SkinProvider';
 import { SkinSelect } from '@/components/skin/SkinSelect';
@@ -16,6 +19,17 @@ import './serpentina.css';
 
 const BOARD_SIZE = 600;
 const API_URL = '/api/leaderboard/serpentina';
+const SWIPE_THRESHOLD = 24;
+
+const TOUCH_BUTTONS: TouchButton[] = [{ action: 'pause', label: 'PAUSA' }];
+
+// Eje dominante del swipe: horizontal si |dx| > |dy|, luego dirección del signo.
+function arrowFromSwipe(dx: number, dy: number): string {
+  if (Math.abs(dx) > Math.abs(dy)) {
+    return dx > 0 ? 'ArrowRight' : 'ArrowLeft';
+  }
+  return dy > 0 ? 'ArrowDown' : 'ArrowUp';
+}
 
 export function SerpentinaGame({
   initialLeaderboard = [],
@@ -25,6 +39,7 @@ export function SerpentinaGame({
   const overlayRef = useRef<HTMLDivElement>(null);
   const overlayTitleRef = useRef<HTMLHeadingElement>(null);
   const overlayScoreRef = useRef<HTMLParagraphElement>(null);
+  const swipeStartRef = useRef<{ x: number; y: number } | null>(null);
   const { skin } = useSkin();
 
   const {
@@ -76,6 +91,40 @@ export function SerpentinaGame({
     };
   }, [isLoading, startGame, gameRef]);
 
+  const handleDown = useCallback((action: string) => {
+    if (action === 'pause') {
+      dispatchKey('KeyP', 'keydown', 'p');
+    }
+  }, []);
+
+  const handleUp = useCallback(() => undefined, []);
+
+  // Swipe sobre el board: cada trayectoria supera ~24px en un eje, emite la
+  // flecha correspondiente y reinicia el origen para swipes encadenados.
+  const handleTouchStart = useCallback((e: ReactTouchEvent) => {
+    const t = e.touches[0];
+    if (!t) return;
+    swipeStartRef.current = { x: t.clientX, y: t.clientY };
+  }, []);
+
+  const handleTouchMove = useCallback((e: ReactTouchEvent) => {
+    const start = swipeStartRef.current;
+    const t = e.touches[0];
+    if (!start || !t) return;
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    if (Math.abs(dx) < SWIPE_THRESHOLD && Math.abs(dy) < SWIPE_THRESHOLD) {
+      return;
+    }
+    e.preventDefault();
+    dispatchKey(arrowFromSwipe(dx, dy), 'keydown');
+    swipeStartRef.current = { x: t.clientX, y: t.clientY };
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    swipeStartRef.current = null;
+  }, []);
+
   if (isLoading) {
     return (
       <div className='serpentina-game-container'>
@@ -95,6 +144,9 @@ export function SerpentinaGame({
             width={BOARD_SIZE}
             height={BOARD_SIZE}
             aria-label='Juego SERPENTINA'
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           />
 
           {/* Overlay compartido: GAME OVER. El wrapper togglea la clase 'hidden'. */}
@@ -140,6 +192,13 @@ export function SerpentinaGame({
           </div>
         </div>
       </div>
+
+      <TouchControls
+        classPrefix='serpentina'
+        buttons={TOUCH_BUTTONS}
+        onDown={handleDown}
+        onUp={handleUp}
+      />
     </div>
   );
 }

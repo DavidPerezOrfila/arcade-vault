@@ -2,7 +2,7 @@
 source_file: ".agents/skills/cavecrew/SKILL.md"
 type: "document"
 community: "cavecrew/SKILL.md"
-location: "L80"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED

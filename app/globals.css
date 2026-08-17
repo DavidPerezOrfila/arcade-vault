@@ -91,6 +91,10 @@ html, body, #root {
   margin: 0;
 }
 
+/* clip (no hidden): evita que el panel mobile off-canvas (translateX) y otros
+   fijos desborden el root creando scroll horizontal, sin romper sticky. */
+html { overflow-x: clip; }
+
 body {
   background: var(--bg);
   color: var(--ink);
@@ -323,6 +327,26 @@ a { color: inherit; text-decoration: none; }
   opacity: 0; pointer-events: none; transition: opacity 180ms;
 }
 .av-mobile-backdrop.open { opacity: 1; pointer-events: auto; }
+
+/* ===== touch targets (pointer: coarse) ===== */
+/* Dispositivos táctiles: sube el área de toque a >= 44px sin alterar la
+   disposición (solo min-height / padding vertical, no afecta columnas). */
+@media (pointer: coarse) {
+  .av-nav .links a {
+    min-height: 44px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .av-mobile-panel a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .chip { min-height: 44px; }
+  .btn { min-height: 44px; padding-top: 13px; padding-bottom: 13px; }
+  .btn.lg { padding-top: 17px; padding-bottom: 17px; }
+  .btn.xl { padding-top: 21px; padding-bottom: 21px; }
+}
 
 /* ===== generic neon button ===== */
 .btn {

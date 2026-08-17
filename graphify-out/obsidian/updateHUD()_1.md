@@ -2,7 +2,7 @@
 source_file: "lib/games/serpentina/game.esm.js"
 type: "code"
 community: "leaderboard.ts"
-location: "L110"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # updateHUD()
 
 ## Connections
-- [[game.esm.js_2]] - `contains` [EXTRACTED]
+- [[game.esm.js_3]] - `contains` [EXTRACTED]
 - [[reset()]] - `calls` [EXTRACTED]
 - [[step()]] - `calls` [EXTRACTED]
 

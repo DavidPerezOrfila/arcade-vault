@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[AsteroidsGame()]] - `calls` [EXTRACTED]
 - [[AsteroidsGame.tsx]] - `imports` [EXTRACTED]
+- [[BloqueBusterGame()]] - `calls` [EXTRACTED]
+- [[BloqueBusterGame.tsx]] - `imports` [EXTRACTED]
 - [[CaidaGame()]] - `calls` [EXTRACTED]
 - [[CaidaGame.tsx]] - `imports` [EXTRACTED]
 - [[SerpentinaGame()]] - `calls` [EXTRACTED]

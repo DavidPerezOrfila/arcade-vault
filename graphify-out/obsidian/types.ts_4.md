@@ -1,5 +1,5 @@
 ---
-source_file: "lib/games/serpentina/types.ts"
+source_file: "lib/games/caida/types.ts"
 type: "code"
 community: "CaidaGame.tsx"
 location: "L1"
@@ -12,10 +12,10 @@ tags:
 # types.ts
 
 ## Connections
-- [[LeaderboardEntry]] - `imports` [EXTRACTED]
-- [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
-- [[SerpentinaGameProps]] - `contains` [EXTRACTED]
-- [[SerpentinaRefs]] - `contains` [EXTRACTED]
-- [[types.ts_5]] - `imports_from` [EXTRACTED]
+- [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
+- [[CaidaGameProps]] - `contains` [EXTRACTED]
+- [[CaidaRefs]] - `contains` [EXTRACTED]
+- [[LeaderboardEntry]] - `re_exports` [EXTRACTED]
+- [[types.ts_6]] - `re_exports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

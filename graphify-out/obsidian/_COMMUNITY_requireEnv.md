@@ -1,19 +1,23 @@
 ---
 type: community
-members: 6
+members: 10
 ---
 
 # requireEnv
 
-**Members:** 6 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[admin.ts]] - code - lib/supabase/admin.ts
-- [[client.ts]] - code - lib/supabase/client.ts
-- [[createSupabaseAdminClient()]] - code - lib/supabase/admin.ts
-- [[createSupabaseBrowserClient()]] - code - lib/supabase/client.ts
-- [[env.ts]] - code - lib/env.ts
-- [[requireEnv()]] - code - lib/env.ts
+- [[Acceptance Criteria_5]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[Addendum — implementación (2026-08-17)]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[Data Model_5]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[Decisions Taken & Discarded_4]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[Identified Risks_5]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[Implementation Plan_5]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[Scope_5]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[What is not in this spec_2]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[bloque-buster spec-a — Port del vanilla ref (single-canvas + sprites)]] - document - specs/game-jam/bloque-buster/spec-a.md
+- [[spec-a]] - document - specs/game-jam/bloque-buster/spec-a.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,14 +25,3 @@ members: 6
 TABLE source_file, type FROM #community/requireEnv
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_data.jsx]]
-- 2 edges to [[_COMMUNITY_leaderboard.ts]]
-- 1 edge to [[_COMMUNITY_serpentinagame.esm.js]]
-
-## Top bridge nodes
-- [[createSupabaseBrowserClient()]] - degree 4, connects to 2 communities
-- [[requireEnv()]] - degree 7, connects to 1 community
-- [[env.ts]] - degree 4, connects to 1 community
-- [[client.ts]] - degree 4, connects to 1 community

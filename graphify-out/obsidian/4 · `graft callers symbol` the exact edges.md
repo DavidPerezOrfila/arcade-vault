@@ -2,7 +2,7 @@
 source_file: ".claude/skills/graft/SKILL.md"
 type: "document"
 community: "The tools"
-location: "L56"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED

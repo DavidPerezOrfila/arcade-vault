@@ -22,6 +22,6 @@ tags:
 - [[SalonClientProps]] - `contains` [EXTRACTED]
 - [[actions.ts_1]] - `imports_from` [EXTRACTED]
 - [[getSalonLeaderboard()]] - `imports` [EXTRACTED]
-- [[page.tsx_9]] - `imports_from` [EXTRACTED]
+- [[page.tsx_10]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx

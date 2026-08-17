@@ -12,7 +12,7 @@ tags:
 # clearLines()
 
 ## Connections
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 - [[lockPiece()]] - `calls` [EXTRACTED]
 - [[updateHUD()]] - `calls` [EXTRACTED]
 

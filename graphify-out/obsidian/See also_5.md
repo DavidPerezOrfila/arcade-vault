@@ -2,7 +2,7 @@
 source_file: ".agents/skills/caveman/README.md"
 type: "document"
 community: "caveman/SKILL.md"
-location: "L45"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED

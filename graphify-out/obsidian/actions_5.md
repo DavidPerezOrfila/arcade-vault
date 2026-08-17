@@ -1,17 +1,17 @@
 ---
-source_file: "graft/app/games/asteroids/actions.md"
+source_file: "graft/app/data/actions.md"
 type: "document"
-community: "asteroids/actions.md"
+community: "data/actions.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/asteroids/actionsmd
+  - community/data/actionsmd
 ---
 
 # actions.md
 
 ## Connections
-- [[appgamesasteroidsactions.ts]] - `contains` [EXTRACTED]
+- [[appdataactions.ts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/asteroids/actionsmd
+#graphify/document #graphify/EXTRACTED #community/data/actionsmd

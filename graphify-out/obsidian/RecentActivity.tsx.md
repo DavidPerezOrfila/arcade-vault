@@ -20,7 +20,7 @@ tags:
 - [[games.ts]] - `imports_from` [EXTRACTED]
 - [[getGameById()]] - `imports` [EXTRACTED]
 - [[getScores()]] - `imports` [EXTRACTED]
-- [[page.tsx_7]] - `imports_from` [EXTRACTED]
+- [[page.tsx_8]] - `imports_from` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
 - [[tone()]] - `contains` [EXTRACTED]
 

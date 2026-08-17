@@ -12,8 +12,8 @@ tags:
 # spawnFood()
 
 ## Connections
-- [[endGame()_1]] - `calls` [EXTRACTED]
-- [[game.esm.js_2]] - `contains` [EXTRACTED]
+- [[endGame()_2]] - `calls` [EXTRACTED]
+- [[game.esm.js_3]] - `contains` [EXTRACTED]
 - [[reset()]] - `calls` [EXTRACTED]
 - [[step()]] - `calls` [EXTRACTED]
 

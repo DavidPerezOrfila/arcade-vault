@@ -2,7 +2,7 @@
 source_file: "app/data/players.ts"
 type: "code"
 community: "app/page.tsx"
-location: "L28"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED

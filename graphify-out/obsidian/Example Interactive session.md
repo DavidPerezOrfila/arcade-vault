@@ -2,7 +2,7 @@
 source_file: ".agents/skills/playwright-cli/SKILL.md"
 type: "document"
 community: "Browser Automation with playwright-cli"
-location: "L401"
+location: "L403"
 tags:
   - graphify/document
   - graphify/EXTRACTED

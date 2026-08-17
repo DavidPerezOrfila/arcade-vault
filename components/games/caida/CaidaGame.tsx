@@ -4,14 +4,13 @@ import { useCallback, useEffect, useRef } from 'react';
 import { submitCaidaScore } from '@/app/games/caida/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
+import { TouchControls, dispatchKey } from '@/components/games/TouchControls';
+import type { TouchButton } from '@/components/games/TouchControls';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { useSkin } from '@/components/skin/SkinProvider';
 import { SkinSelect } from '@/components/skin/SkinSelect';
 import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
-import type {
-  CaidaGameProps,
-  CaidaRefs
-} from '@/lib/games/caida/types';
+import type { CaidaGameProps, CaidaRefs } from '@/lib/games/caida/types';
 import './caida.css';
 
 const BOARD_W = 300;
@@ -19,6 +18,15 @@ const BOARD_H = 600;
 const NEXT_W = 120;
 const NEXT_H = 120;
 const API_URL = '/api/leaderboard/caida';
+
+// caida es edge-triggered (sin keyup en el engine): repeat para mover
+// manteniendo; rotate/drop son taps puntuales.
+const TOUCH_BUTTONS: TouchButton[] = [
+  { action: 'left', label: '◀', mode: 'repeat' },
+  { action: 'right', label: '▶', mode: 'repeat' },
+  { action: 'rotate', label: '⟳' },
+  { action: 'drop', label: '⤓' },
+];
 
 export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
   const boardRef = useRef<HTMLCanvasElement>(null);
@@ -37,12 +45,12 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
     leaderboard,
     showAuthPrompt,
     setShowAuthPrompt,
-    handleGameOver
+    handleGameOver,
   } = useArcadeGame({
     loadModule: () => import('@/lib/games/caida/game.esm.js'),
     apiUrl: API_URL,
     submitScore: submitCaidaScore,
-    initialLeaderboard
+    initialLeaderboard,
   });
 
   // Recoge refs y arranca el módulo. setOnGameOver antes de initGame — el
@@ -61,15 +69,15 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
       overlayTitleRef.current &&
       overlayScoreRef.current
         ? {
-          board: boardRef.current,
-          nextCanvas: nextRef.current,
-          scoreEl: scoreRef.current,
-          linesEl: linesRef.current,
-          levelEl: levelRef.current,
-          overlay: overlayRef.current,
-          overlayTitle: overlayTitleRef.current,
-          overlayScore: overlayScoreRef.current
-        }
+            board: boardRef.current,
+            nextCanvas: nextRef.current,
+            scoreEl: scoreRef.current,
+            linesEl: linesRef.current,
+            levelEl: levelRef.current,
+            overlay: overlayRef.current,
+            overlayTitle: overlayTitleRef.current,
+            overlayScore: overlayScoreRef.current,
+          }
         : null;
     if (!refs) return;
 
@@ -85,6 +93,20 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
       gameRef.current?.destroy();
     };
   }, [isLoading, startGame, gameRef]);
+
+  // Edge-triggered: repeat emite keydown cada ~90ms (TouchControls); el engine
+  // no escucha keyup, asi que onUp no hace falta.
+  const handleDown = useCallback((action: string) => {
+    const key: Record<string, string> = {
+      left: 'ArrowLeft',
+      right: 'ArrowRight',
+      rotate: 'ArrowUp',
+      drop: 'Space',
+    };
+    dispatchKey(key[action] ?? action, 'keydown');
+  }, []);
+
+  const handleUp = useCallback(() => undefined, []);
 
   if (isLoading) {
     return (
@@ -147,11 +169,18 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
 
           <div className='caida-next'>
             <div className='caida-next-label'>SIGUIENTE</div>
-            <canvas ref={nextRef} width={NEXT_W} height={NEXT_H} aria-hidden='true' />
+            <canvas
+              ref={nextRef}
+              width={NEXT_W}
+              height={NEXT_H}
+              aria-hidden='true'
+            />
           </div>
 
           <div className='caida-leaderboard'>
-            <div className='caida-leaderboard-title'>TOP {LEADERBOARD_TOP_N}</div>
+            <div className='caida-leaderboard-title'>
+              TOP {LEADERBOARD_TOP_N}
+            </div>
             <LeaderboardList
               classPrefix='caida'
               entries={leaderboard}
@@ -161,6 +190,13 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
           </div>
         </div>
       </div>
+
+      <TouchControls
+        classPrefix='caida'
+        buttons={TOUCH_BUTTONS}
+        onDown={handleDown}
+        onUp={handleUp}
+      />
     </div>
   );
 }

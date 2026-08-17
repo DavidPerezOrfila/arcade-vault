@@ -22,6 +22,7 @@ tags:
 - [[game.esm.js]] - `imports_from` [EXTRACTED]
 - [[game.esm.js_1]] - `imports_from` [EXTRACTED]
 - [[game.esm.js_2]] - `imports_from` [EXTRACTED]
+- [[game.esm.js_3]] - `imports_from` [EXTRACTED]
 - [[isSkinId()]] - `contains` [EXTRACTED]
 - [[layout.tsx]] - `imports_from` [EXTRACTED]
 - [[nav.tsx]] - `imports_from` [EXTRACTED]

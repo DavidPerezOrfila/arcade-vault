@@ -19,6 +19,6 @@ tags:
 - [[StatItem]] - `contains` [EXTRACTED]
 - [[games.ts]] - `imports_from` [EXTRACTED]
 - [[getGames()]] - `imports` [EXTRACTED]
-- [[page.tsx_7]] - `imports_from` [EXTRACTED]
+- [[page.tsx_8]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/bibliotecajsx

@@ -1,12 +1,12 @@
 ---
-source_file: "app/api/leaderboard/caida/route.ts"
+source_file: "app/api/leaderboard/bloque-buster/route.ts"
 type: "code"
-community: "CaidaGame.tsx"
+community: "validate.py"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CaidaGametsx
+  - community/validatepy
 ---
 
 # GET()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[route.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CaidaGametsx
+#graphify/code #graphify/EXTRACTED #community/validatepy
