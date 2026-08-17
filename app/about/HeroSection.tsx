@@ -4,18 +4,18 @@ const HIGHLIGHTS = [
   {
     kind: 'HEART' as const,
     title: 'HECHO CON ❤️ PARA JUGADORES',
-    color: 'magenta'
+    color: 'magenta',
   },
   {
     kind: 'BROWSER' as const,
     title: 'JUEGOS EN HTML — CORREN EN CUALQUIER NAVEGADOR',
-    color: 'cyan'
+    color: 'cyan',
   },
   {
     kind: 'PLANT' as const,
     title: 'PROYECTO EN CONSTANTE CRECIMIENTO',
-    color: 'green'
-  }
+    color: 'green',
+  },
 ] as const;
 
 const STAGGER_MS = 80;

@@ -12,9 +12,8 @@
  *                      dx, dy, dw, dh);
  */
 window.SPRITE_ATLAS = {
-
   sources: {
-    fruits: 'snake-assets/fruits.png',  // bg transparente
+    fruits: 'snake-assets/fruits.png', // bg transparente
   },
 
   // ── Frutas (fila mediana de fruits.png) ─────────────────────────────────

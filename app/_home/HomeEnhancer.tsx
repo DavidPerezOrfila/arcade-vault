@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 // async (`RecentActivity`, `TopPlayersToday`).
 export default function HomeEnhancer() {
   useEffect(() => {
-    const els = document.querySelectorAll < HTMLDivElement >('.reveal');
+    const els = document.querySelectorAll<HTMLDivElement>('.reveal');
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {

@@ -35,7 +35,7 @@ export default async function RecentActivity() {
   const rowsWithLabels = await Promise.all(
     scores.map(async(r) => ({
       ...r,
-      gameLabel: await gameLabel(r.game)
+      gameLabel: await gameLabel(r.game),
     }))
   );
 
@@ -54,7 +54,9 @@ export default async function RecentActivity() {
             <span className={`tk-p neon-${tone(r.at)}`}>{r.name}</span>
             <span className='tk-mid'>▸ {r.gameLabel}</span>
             <span className='tk-s'>+{r.score.toLocaleString('es-ES')}</span>
-            <span className='tk-t'><TimeAgo at={r.at} /></span>
+            <span className='tk-t'>
+              <TimeAgo at={r.at} />
+            </span>
           </div>
         ))}
       </div>

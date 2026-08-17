@@ -11,6 +11,7 @@ dropdown (`<select>` en `AsteroidsGame.tsx`); la persistencia usa
 | `asteroids`  | ✅       | ✅    | ✅     | ✅         | Completo  |
 | `caida`      | —       | —    | —     | —         | Pendiente |
 | `serpentina` | —       | —    | —     | —         | Pendiente |
+| `bloque-buster` | ✅    | ✅    | ✅     | ✅         | Completo  |
 
 ## Notas
 
@@ -19,3 +20,7 @@ dropdown (`<select>` en `AsteroidsGame.tsx`); la persistencia usa
   `retro` añade scanlines por CSS; `neon` usa colores saturados + halo sutil.
 - `caida` y `serpentina`: motores aún con colores propios; pendientes de
   mapear sus entidades a los mismos tokens.
+- `bloque-buster`: engine consume `PALETTES` para background, HUD y overlays
+  (gameover/pausa/win). Bloques, paleta y pelota son sprites del spritesheet
+  `/arkanoid-assets/spritesheet-breakout.png` (fidelidad del port), no tokens
+  de paleta; `retro` añade scanlines por CSS, `neon` halo al canvas.

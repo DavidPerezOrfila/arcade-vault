@@ -1,8 +1,9 @@
 ---
 state: Implementado
-dependencies: ["04-scores-foundation", "05-asteroids-game"]
+dependencies: ['04-scores-foundation', '05-asteroids-game']
 date: 2026-07-28
 ---
+
 # 06-games-catalog-salon
 
 Migrar catálogo de juegos estático a Supabase (`games` table), renovar `/salon` con pestañas de leaderboard por juego (client-side), y consolidar routing `/games/[slug]`.
@@ -72,18 +73,18 @@ insert into public.games (id, title, short, long, cat, cover, color, best, plays
 
 ```typescript
 interface Game {
-  id: string
-  title: string
-  short: string
-  long: string
-  cat: GameFilter
-  cover: string
-  color: 'cyan' | 'magenta' | 'green' | 'yellow'
-  best: number
-  plays: string
+  id: string;
+  title: string;
+  short: string;
+  long: string;
+  cat: GameFilter;
+  cover: string;
+  color: 'cyan' | 'magenta' | 'green' | 'yellow';
+  best: number;
+  plays: string;
 }
 
-type GameFilter = 'TODOS' | 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS'
+type GameFilter = 'TODOS' | 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS';
 ```
 
 ## Implementation Plan
@@ -141,24 +142,24 @@ type GameFilter = 'TODOS' | 'ARCADE' | 'PUZZLE' | 'SHOOTER' | 'VERSUS'
 
 ## Decisions Taken & Discarded
 
-| Decisión | Justificación |
-|----------|---------------|
-| **Mirror static `GAMES` schema 1:1** | Zero mapping layer, simple migration, template (`salon.jsx`, `biblioteca.jsx`) uses same field names |
-| **`id` = slug (text PK)** | Keeps routing simple `/games/[slug]`, no extra column, matches existing static `id` values |
-| **`plays` as text** | Formatted strings like `'12.4K'` are display-only; no arithmetic needed |
-| **Client-side tabs on `/salon`** | Template uses `useState` tabs; avoids SSR hydration mismatch, enables instant switch |
-| **Server Action for leaderboard** | Reuses `getScoresByGame` from spec 04; keeps data fetching server-side |
-| **RLS: public select, service_role write** | Games catalog is read-only for public; admin writes via service role (future CMS) |
+| Decisión                                   | Justificación                                                                                        |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Mirror static `GAMES` schema 1:1**       | Zero mapping layer, simple migration, template (`salon.jsx`, `biblioteca.jsx`) uses same field names |
+| **`id` = slug (text PK)**                  | Keeps routing simple `/games/[slug]`, no extra column, matches existing static `id` values           |
+| **`plays` as text**                        | Formatted strings like `'12.4K'` are display-only; no arithmetic needed                              |
+| **Client-side tabs on `/salon`**           | Template uses `useState` tabs; avoids SSR hydration mismatch, enables instant switch                 |
+| **Server Action for leaderboard**          | Reuses `getScoresByGame` from spec 04; keeps data fetching server-side                               |
+| **RLS: public select, service_role write** | Games catalog is read-only for public; admin writes via service role (future CMS)                    |
 
 ## Identified Risks
 
-| Riesgo | Impacto | Mitigación |
-|--------|---------|------------|
-| **Supabase local not running** | Migration fails | `npm run db:status` verifies; `npm run db:start` if needed |
-| **Hydration mismatch on `/salon`** | Client tabs vs SSR | Page is Client Component; data passed as prop from parent→no searchParams |
-| **Auth "TU MEJOR MARCA" row** | Requires `getUser()` | Use existing auth helper from spec 04; fallback gracefully if no user |
-| **Cover images missing** | Visual regression | Covers referenced by key; ensure `public/covers/` has all 8 files |
-| **RLS blocking seed** | Migration fails | Seed runs as `service_role` (migration role) — use `auth.role() = 'service_role'` policy |
+| Riesgo                             | Impacto              | Mitigación                                                                               |
+| ---------------------------------- | -------------------- | ---------------------------------------------------------------------------------------- |
+| **Supabase local not running**     | Migration fails      | `npm run db:status` verifies; `npm run db:start` if needed                               |
+| **Hydration mismatch on `/salon`** | Client tabs vs SSR   | Page is Client Component; data passed as prop from parent→no searchParams                |
+| **Auth "TU MEJOR MARCA" row**      | Requires `getUser()` | Use existing auth helper from spec 04; fallback gracefully if no user                    |
+| **Cover images missing**           | Visual regression    | Covers referenced by key; ensure `public/covers/` has all 8 files                        |
+| **RLS blocking seed**              | Migration fails      | Seed runs as `service_role` (migration role) — use `auth.role() = 'service_role'` policy |
 
 ---
 

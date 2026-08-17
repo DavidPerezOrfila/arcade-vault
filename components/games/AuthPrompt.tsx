@@ -5,7 +5,7 @@ import type { ReactNode } from 'react';
 interface AuthPromptProps {
   // Prefijo CSS por juego (caida/asteroids) — el componente solo compone
   // clases; el styling vive en el CSS por juego.
-  classPrefix: 'caida' | 'asteroids' | 'serpentina';
+  classPrefix: 'caida' | 'asteroids' | 'serpentina' | 'bloque-buster';
   gamePath: string;
   title: string;
   message: ReactNode;
@@ -21,7 +21,7 @@ export function AuthPrompt({
   message,
   onDismiss,
   signInLabel = 'Iniciar sesión',
-  dismissLabel = 'Ahora no'
+  dismissLabel = 'Ahora no',
 }: AuthPromptProps) {
   return (
     <div className={`${classPrefix}-auth-overlay`}>
@@ -34,10 +34,7 @@ export function AuthPrompt({
         >
           {signInLabel}
         </a>
-        <button
-          onClick={onDismiss}
-          className={`${classPrefix}-auth-dismiss`}
-        >
+        <button onClick={onDismiss} className={`${classPrefix}-auth-dismiss`}>
           {dismissLabel}
         </button>
       </div>

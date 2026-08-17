@@ -1,0 +1,338 @@
+/* Bloque Buster: estilos de pagina y componente (fuente unica) */
+
+/* ===== Page Layout ===== */
+
+.bloque-buster-page {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.bloque-buster-page-header {
+  margin-bottom: 2rem;
+}
+
+.bloque-buster-page-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--yellow);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.bloque-buster-page-description {
+  color: var(--ink-dim);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  max-width: 60ch;
+}
+
+/* ===== Layout ===== */
+
+.bloque-buster-game-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 1rem;
+  align-items: start;
+}
+
+.bloque-buster-game-wrapper {
+  min-width: 0;
+}
+
+.bloque-buster-game-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .bloque-buster-game-sidebar {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+
+.bloque-buster-game-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bloque-buster-skin-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bloque-buster-skin-select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.5rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bloque-buster-skin-select select {
+  background: transparent;
+  color: var(--ink);
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.bloque-buster-skin-select select:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+/* El listbox nativo no hereda --bg-2: sin fondo explícito las opciones salen
+   blancas sobre blanco (texto claro en listbox blanco del SO). */
+.bloque-buster-skin-select select option {
+  background: var(--bg-2);
+  color: var(--ink);
+}
+
+/* ===== Game Canvas ===== */
+
+.bloque-buster-game-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+}
+
+.bloque-buster-game-container canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid var(--line-2);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  touch-action: none; /* Prevent touch scrolling on canvas */
+}
+
+.bloque-buster-game-container canvas:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+/* ===== Sidebar cards ===== */
+
+.bloque-buster-sidebar-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+  padding: 1.5rem;
+}
+
+.bloque-buster-sidebar-title {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bloque-buster-sidebar-title--controls {
+  color: var(--yellow);
+}
+
+.bloque-buster-controls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bloque-buster-control-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.375rem 0;
+}
+
+.bloque-buster-control-key {
+  color: var(--yellow);
+}
+
+/* ===== Leaderboard ===== */
+
+.bloque-buster-leaderboard-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+  padding: 1rem;
+  color: var(--ink);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+}
+
+.bloque-buster-leaderboard-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--yellow);
+}
+
+/* ===== Auth Prompt Overlay ===== */
+
+.bloque-buster-auth-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  padding: 1rem;
+}
+
+.bloque-buster-auth-prompt {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.bloque-buster-auth-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.bloque-buster-auth-message {
+  color: var(--ink-dim);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.bloque-buster-auth-button {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--bg);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: filter 0.2s;
+}
+
+.bloque-buster-auth-button:hover {
+  filter: brightness(0.85);
+}
+
+.bloque-buster-auth-dismiss {
+  margin-left: 1rem;
+  color: var(--ink-dim);
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bloque-buster-auth-dismiss:hover {
+  color: var(--ink);
+}
+
+/* ===== Loading State ===== */
+
+.bloque-buster-loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.5rem;
+  z-index: 5;
+}
+
+/* ===== Skin overlays ===== */
+
+/* Scanlines CRT del skin retro; el neon añade un halo sutil al canvas. */
+.bloque-buster-game-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+html[data-skin='retro'] .bloque-buster-game-container::after {
+  display: block;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.22) 0 2px,
+    transparent 2px 4px
+  );
+  mix-blend-mode: multiply;
+}
+
+html[data-skin='neon'] .bloque-buster-game-container canvas {
+  box-shadow:
+    0 0 22px rgba(255, 0, 110, 0.22),
+    0 0 46px rgba(0, 245, 255, 0.16);
+}
+
+/* ===== Reduced motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .bloque-buster-game-container canvas,
+  .bloque-buster-auth-overlay,
+  .bloque-buster-auth-prompt,
+  .bloque-buster-leaderboard-card {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ===== Mobile adjustments ===== */
+
+@media (max-width: 640px) {
+  .bloque-buster-game-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .bloque-buster-game-sidebar {
+    order: 2;
+  }
+
+  .bloque-buster-leaderboard-card {
+    padding: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .bloque-buster-auth-prompt {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .bloque-buster-auth-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .bloque-buster-auth-dismiss {
+    margin-left: 0;
+  }
+}

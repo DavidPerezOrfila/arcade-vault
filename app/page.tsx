@@ -8,7 +8,7 @@ import {
   PREVIEW_GAMES_COUNT,
   STATS,
   STAGGER_FEATURE_MS,
-  STAGGER_STAT_MS
+  STAGGER_STAT_MS,
 } from '@/app/_home/homeData';
 import RecentActivity from '@/app/_home/RecentActivity';
 import TopPlayersToday from '@/app/_home/TopPlayersToday';
@@ -162,8 +162,7 @@ export default async function Home() {
               <div className='faq-q pixel'>¿REALMENTE ES GRATIS</div>
               <div className='faq-a'>
                 Sí. Arcade Vault es un proyecto sin fines de lucro hecho por
-                amor a los clásicos. No hay versión premium
-                escondida.
+                amor a los clásicos. No hay versión premium escondida.
               </div>
             </div>
             <div className='faq-item'>

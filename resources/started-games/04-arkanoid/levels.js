@@ -1,8 +1,8 @@
 /* eslint-disable */
 const LEVELS = (() => {
-  const rowColors1 = ["red", "yellow", "cyan", "magenta", "hotpink", "green"];
-  const rowColors2 = ["gray", "cyan", "hotpink", "yellow", "magenta", "green"];
-  const rowColors4 = ["cyan", "magenta", "green", "yellow", "hotpink", "red"];
+  const rowColors1 = ['red', 'yellow', 'cyan', 'magenta', 'hotpink', 'green'];
+  const rowColors2 = ['gray', 'cyan', 'hotpink', 'yellow', 'magenta', 'green'];
+  const rowColors4 = ['cyan', 'magenta', 'green', 'yellow', 'hotpink', 'red'];
 
   const l1 = [];
   for (let row = 0; row < 6; row++) {
@@ -24,7 +24,7 @@ const LEVELS = (() => {
   for (let row = 0; row < 6; row++) {
     for (let col = 0; col < 10; col++) {
       if ((col + row) % 2 === 0) {
-        l3.push({ col, row, color: row < 3 ? "yellow" : "magenta" });
+        l3.push({ col, row, color: row < 3 ? 'yellow' : 'magenta' });
       }
     }
   }
@@ -52,7 +52,7 @@ const LEVELS = (() => {
       const isFrame = col === 0 || col === 9 || row === 0 || row === 5;
       const isCross = col === 4 || row === 2;
       if (isFrame || isCross) {
-        l5.push({ col, row, color: isCross && !isFrame ? "hotpink" : "cyan" });
+        l5.push({ col, row, color: isCross && !isFrame ? 'hotpink' : 'cyan' });
       }
     }
   }

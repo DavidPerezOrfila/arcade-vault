@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -41,13 +43,18 @@ body.light-mode {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   user-select: none;
-  transition: background 0.25s, color 0.25s;
+  transition:
+    background 0.25s,
+    color 0.25s;
 }
 
 .wrapper {
@@ -73,7 +80,10 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: background 0.25s, color 0.25s, border-color 0.25s;
+  transition:
+    background 0.25s,
+    color 0.25s,
+    border-color 0.25s;
   letter-spacing: 1px;
 }
 
@@ -109,7 +119,9 @@ body {
   background: var(--canvas-bg);
   border-radius: 4px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
-  transition: background 0.25s, border-color 0.25s;
+  transition:
+    background 0.25s,
+    border-color 0.25s;
 }
 
 /* ---- Panel lateral ---- */
@@ -148,7 +160,9 @@ body {
   border: 1px solid var(--border);
   background: var(--canvas-bg);
   border-radius: 4px;
-  transition: background 0.25s, border-color 0.25s;
+  transition:
+    background 0.25s,
+    border-color 0.25s;
 }
 
 /* ---- Controles ---- */
@@ -176,7 +190,10 @@ kbd {
   font-size: 11px;
   font-family: inherit;
   color: var(--kbd-text);
-  transition: background 0.25s, color 0.25s, border-color 0.25s;
+  transition:
+    background 0.25s,
+    color 0.25s,
+    border-color 0.25s;
 }
 
 /* ---- Overlay ---- */

@@ -9,14 +9,14 @@ function GamePlayer({ id, user, navigate, onSaveScore }) {
   const [level, setLevel] = useStateP(1);
   const [paused, setPaused] = useStateP(false);
   const [over, setOver] = useStateP(false);
-  const [name, setName] = useStateP(user ? user.name : "INVITADO");
+  const [name, setName] = useStateP(user ? user.name : 'INVITADO');
   const [saved, setSaved] = useStateP(false);
 
   useEffectP(() => {
     if (over || paused) return;
     const t = setInterval(
       () => setScore((s) => s + Math.floor(10 + Math.random() * 90)),
-      220,
+      220
     );
     return () => clearInterval(t);
   }, [over, paused]);
@@ -36,69 +36,69 @@ function GamePlayer({ id, user, navigate, onSaveScore }) {
   };
 
   return (
-    <div className="av-player fade-in">
-      <div className="player-hud">
-        <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
-          <div className="hud-stat">
-            <div className="l">Jugador</div>
-            <div className="v" style={{ color: "var(--ink)" }}>
+    <div className='av-player fade-in'>
+      <div className='player-hud'>
+        <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+          <div className='hud-stat'>
+            <div className='l'>Jugador</div>
+            <div className='v' style={{ color: 'var(--ink)' }}>
               {name}
             </div>
           </div>
-          <div className="hud-stat">
-            <div className="l">Puntuación</div>
-            <div className="v">{score.toLocaleString("es-ES")}</div>
+          <div className='hud-stat'>
+            <div className='l'>Puntuación</div>
+            <div className='v'>{score.toLocaleString('es-ES')}</div>
           </div>
-          <div className="hud-stat lives">
-            <div className="l">Vidas</div>
-            <div className="v">{"♥ ".repeat(lives).trim() || "—"}</div>
+          <div className='hud-stat lives'>
+            <div className='l'>Vidas</div>
+            <div className='v'>{'♥ '.repeat(lives).trim() || '—'}</div>
           </div>
-          <div className="hud-stat level">
-            <div className="l">Nivel</div>
-            <div className="v">{String(level).padStart(2, "0")}</div>
+          <div className='hud-stat level'>
+            <div className='l'>Nivel</div>
+            <div className='v'>{String(level).padStart(2, '0')}</div>
           </div>
         </div>
-        <div className="hud-actions">
-          <button className="btn yellow" onClick={() => setPaused((p) => !p)}>
-            {paused ? "REANUDAR" : "PAUSA"}
+        <div className='hud-actions'>
+          <button className='btn yellow' onClick={() => setPaused((p) => !p)}>
+            {paused ? 'REANUDAR' : 'PAUSA'}
           </button>
-          <button className="btn magenta" onClick={endGame}>
+          <button className='btn magenta' onClick={endGame}>
             FIN
           </button>
           <button
-            className="btn ghost"
-            onClick={() => navigate({ name: "detalle", id: game.id })}
+            className='btn ghost'
+            onClick={() => navigate({ name: 'detalle', id: game.id })}
           >
             SALIR
           </button>
         </div>
       </div>
 
-      <div className="crt">
-        <div className="crt-screen">
-          <div className="game-arena">
-            <div className="grid-floor"></div>
-            <div className="enemy e1"></div>
-            <div className="enemy e2"></div>
-            <div className="enemy e3"></div>
-            <div className="player-ship"></div>
+      <div className='crt'>
+        <div className='crt-screen'>
+          <div className='game-arena'>
+            <div className='grid-floor'></div>
+            <div className='enemy e1'></div>
+            <div className='enemy e2'></div>
+            <div className='enemy e3'></div>
+            <div className='player-ship'></div>
           </div>
           {paused && (
             <div
-              className="crt-content"
-              style={{ background: "rgba(0,0,0,0.6)", zIndex: 5 }}
+              className='crt-content'
+              style={{ background: 'rgba(0,0,0,0.6)', zIndex: 5 }}
             >
               <div>
-                <div className="pixel neon-yellow" style={{ fontSize: 22 }}>
+                <div className='pixel neon-yellow' style={{ fontSize: 22 }}>
                   EN PAUSA
                 </div>
                 <div
-                  className="mono"
+                  className='mono'
                   style={{
                     fontSize: 11,
-                    color: "var(--ink-dim)",
+                    color: 'var(--ink-dim)',
                     marginTop: 10,
-                    letterSpacing: "0.16em",
+                    letterSpacing: '0.16em',
                   }}
                 >
                   PULSA REANUDAR PARA CONTINUAR
@@ -107,31 +107,31 @@ function GamePlayer({ id, user, navigate, onSaveScore }) {
             </div>
           )}
         </div>
-        <div className="crt-bottom">
-          <span className="led">SEÑAL OK</span>
+        <div className='crt-bottom'>
+          <span className='led'>SEÑAL OK</span>
           <span>{game.title} · CRT-83 · 60 HZ</span>
           <span>CARGA · 1MB</span>
         </div>
       </div>
 
       {over && (
-        <div className="modal-bd" onClick={() => {}}>
-          <div className="modal">
+        <div className='modal-bd' onClick={() => {}}>
+          <div className='modal'>
             <h2>FIN DEL JUEGO</h2>
-            <div className="final-label">PUNTUACIÓN FINAL</div>
-            <div className="final">{score.toLocaleString("es-ES")}</div>
+            <div className='final-label'>PUNTUACIÓN FINAL</div>
+            <div className='final'>{score.toLocaleString('es-ES')}</div>
             {!saved ? (
               <React.Fragment>
-                <div className="input-row">
+                <div className='input-row'>
                   <input
                     value={name}
                     onChange={(e) =>
                       setName(e.target.value.toUpperCase().slice(0, 10))
                     }
-                    placeholder="TUS INICIALES"
+                    placeholder='TUS INICIALES'
                   />
                   <button
-                    className="btn yellow"
+                    className='btn yellow'
                     onClick={() => {
                       onSaveScore &&
                         onSaveScore({ game: game.id, score, name });
@@ -143,15 +143,15 @@ function GamePlayer({ id, user, navigate, onSaveScore }) {
                 </div>
               </React.Fragment>
             ) : (
-              <div className="toast-saved">▸ PUNTUACIÓN GUARDADA_</div>
+              <div className='toast-saved'>▸ PUNTUACIÓN GUARDADA_</div>
             )}
-            <div className="actions">
-              <button className="btn" onClick={restart}>
+            <div className='actions'>
+              <button className='btn' onClick={restart}>
                 JUGAR DE NUEVO
               </button>
               <button
-                className="btn magenta"
-                onClick={() => navigate({ name: "biblioteca" })}
+                className='btn magenta'
+                onClick={() => navigate({ name: 'biblioteca' })}
               >
                 VOLVER AL VAULT
               </button>

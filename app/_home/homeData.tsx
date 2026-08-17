@@ -19,36 +19,36 @@ export const FEATURES: readonly FeatureItem[] = [
     id: 'GAMEPAD',
     title: 'JUEGOS CLÁSICOS',
     desc: 'Arkanoid, Tetris, Snake y muchos más. Los mejores arcades de todos los tiempos en un solo lugar.',
-    color: 'cyan'
+    color: 'cyan',
   },
   {
     id: 'FREE',
     title: '100% GRATIS',
     desc: 'Sin suscripciones, sin pagos ocultos. Todos los juegos disponibles de forma gratuita.',
-    color: 'yellow'
+    color: 'yellow',
   },
   {
     id: 'TROPHY',
     title: 'LADDER BOARDS',
     desc: 'Compite con jugadores de todo el mundo. Escala el ranking y demuestra quién es el mejor.',
-    color: 'magenta'
+    color: 'magenta',
   },
   {
     id: 'ROCKET',
     title: 'SIEMPRE CRECIENDO',
     desc: 'Agregamos nuevos juegos constantemente. Vuelve seguido, siempre habrá algo nuevo que jugar.',
-    color: 'green'
-  }
+    color: 'green',
+  },
 ] as const;
 
 export const STATS: readonly StatItem[] = [
   { value: '12+', unit: 'JUEGOS', sub: 'Y CONTANDO' },
   { value: 'MILES', unit: 'DE PARTIDAS', sub: 'JUGADAS CADA DÍA' },
-  { value: 'GLOBAL', unit: 'RANKING', sub: 'COMPITE CON EL MUNDO' }
+  { value: 'GLOBAL', unit: 'RANKING', sub: 'COMPITE CON EL MUNDO' },
 ] as const;
 
 export function MiniCard({
-  game
+  game,
 }: {
   game: Awaited<ReturnType<typeof getGames>>[0];
 }) {

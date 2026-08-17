@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     title: 'CAÍDA | Arcade Vault',
     description:
       'Juega al clásico Tetris. Encaja las piezas, completa líneas y aguanta el descenso para conseguir la máxima puntuación.',
-    type: 'website'
-  }
+    type: 'website',
+  },
 };
 
 async function LeaderboardServer() {

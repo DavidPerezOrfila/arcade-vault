@@ -4,7 +4,7 @@ import { createLeaderboardActions } from '@/lib/games/leaderboard';
 
 const actions = createLeaderboardActions({
   gameId: 'caida',
-  gamePath: '/games/caida'
+  gamePath: '/games/caida',
 });
 
 export const submitCaidaScore = actions.submitScore;

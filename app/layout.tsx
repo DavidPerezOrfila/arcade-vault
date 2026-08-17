@@ -11,7 +11,7 @@ import { DEFAULT_SKIN, SKIN_IDS, SKIN_STORAGE_KEY } from '@/lib/games/skins';
 const SKIN_BOOTSTRAP = `(function(){try{var s=localStorage.getItem('${SKIN_STORAGE_KEY}');var v=[${SKIN_IDS.map((id) => `'${id}'`).join(',')}];document.documentElement.dataset.skin=v.indexOf(s)>=0?s:'${DEFAULT_SKIN}';}catch(e){document.documentElement.dataset.skin='${DEFAULT_SKIN}';}})();`;
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {

@@ -1,8 +1,9 @@
 ---
 state: Approved
-dependencies: ["04-supabase-scores-foundation", "06-games-catalog-salon"]
+dependencies: ['04-supabase-scores-foundation', '06-games-catalog-salon']
 date: 2026-08-11
 ---
+
 # 08-serpentina-game
 
 Integrar el juego Snake como cuarto juego jugable de Arcade Vault en `/games/serpentina`, con puntuaciones persistidas en Supabase y leaderboard, reutilizando la fila `serpentina` ya seedeada en el catálogo (spec 06) y la infraestructura de scores (spec 04).
@@ -64,13 +65,13 @@ interface SerpentinaGameProps {
 
 **Refs del juego (inyectados desde React al wrapper):**
 
-| Refs | Elemento |
-| ---- | -------- |
-| `board` | canvas 600×600 playfield |
-| `scoreEl` | HUD puntos |
-| `overlay` | overlay PAUSA / GAME OVER |
-| `overlayTitle` | título overlay |
-| `overlayScore` | texto overlay |
+| Refs           | Elemento                  |
+| -------------- | ------------------------- |
+| `board`        | canvas 600×600 playfield  |
+| `scoreEl`      | HUD puntos                |
+| `overlay`      | overlay PAUSA / GAME OVER |
+| `overlayTitle` | título overlay            |
+| `overlayScore` | texto overlay             |
 
 ## Implementation Plan
 
@@ -112,30 +113,30 @@ interface SerpentinaGameProps {
 
 ## Decisions Taken & Discarded
 
-| Decisión                                  | Justificación                                                                                                              |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Decisión                                    | Justificación                                                                                                                                                                              |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Motor escrito desde cero como ES module** | La plantilla solo trae assets (fruits.png + sprites.js), no hay `game.js`. El wrapper sigue el patrón de caida/asteroids (initGame(refs), RAF module-scoped, destroy, onGameOver una vez). |
-| **Slug = `serpentina`**                    | Fila ya seedeada en catálogo (spec 06) con cover `cover-snake`. `id` del catálogo DEBE igualar el string `game` de `saveScore` (sin FK, por convención). No crear duplicado `snake`. |
-| **Render comida = sprites `fruits.png`**   | Decisión explícita de usuario. El atlas trae 22 frutas; el sprite se dibuja con `drawImage` (solo si `imgReady`), fallback fillRect si la imagen no carga. |
-| **Cuerpo serpiente = fillRect**            | No hay sprite snake en el atlas. Geométrico verde con highlight, cabeza más brillante.                                      |
-| **Pared = game over clásico**              | Decisión explícita de usuario (recomendada). Coincide con descripción del catálogo.                                         |
-| **Velocidad escala por comida**            | Decisión explícita de usuario (recomendada). Encaja con «la hace más veloz» del catálogo.                                   |
-| **Fachada `createLeaderboardActions`**     | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod. Recipe inline del skill quedó obsoleta. |
-| **Refs multi-elemento inyectados**         | Canvas + HUD + overlay. El wrapper recibe objeto de elementos desde React, elimina `document.getElementById` top-level.     |
-| **`onGameOver` callback en wrapper**       | Desacopla juego de UI/React. Wrapper no sabe de Supabase, auth ni leaderboard.                                             |
-| **No nueva migration de catálogo**         | `serpentina` ya existe con cover `cover-snake` en `globals.css`. Solo se añade el juego jugable + asset `fruits.png`.      |
+| **Slug = `serpentina`**                     | Fila ya seedeada en catálogo (spec 06) con cover `cover-snake`. `id` del catálogo DEBE igualar el string `game` de `saveScore` (sin FK, por convención). No crear duplicado `snake`.       |
+| **Render comida = sprites `fruits.png`**    | Decisión explícita de usuario. El atlas trae 22 frutas; el sprite se dibuja con `drawImage` (solo si `imgReady`), fallback fillRect si la imagen no carga.                                 |
+| **Cuerpo serpiente = fillRect**             | No hay sprite snake en el atlas. Geométrico verde con highlight, cabeza más brillante.                                                                                                     |
+| **Pared = game over clásico**               | Decisión explícita de usuario (recomendada). Coincide con descripción del catálogo.                                                                                                        |
+| **Velocidad escala por comida**             | Decisión explícita de usuario (recomendada). Encaja con «la hace más veloz» del catálogo.                                                                                                  |
+| **Fachada `createLeaderboardActions`**      | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod. Recipe inline del skill quedó obsoleta.                                 |
+| **Refs multi-elemento inyectados**          | Canvas + HUD + overlay. El wrapper recibe objeto de elementos desde React, elimina `document.getElementById` top-level.                                                                    |
+| **`onGameOver` callback en wrapper**        | Desacopla juego de UI/React. Wrapper no sabe de Supabase, auth ni leaderboard.                                                                                                             |
+| **No nueva migration de catálogo**          | `serpentina` ya existe con cover `cover-snake` en `globals.css`. Solo se añade el juego jugable + asset `fruits.png`.                                                                      |
 
 ## Identified Risks
 
-| Riesgo                                                         | Impacto                      | Mitigación                                                                                                  |
-| -------------------------------------------------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Snake escrito desde cero (sin motor probado)**                | Bugs de lógica nueva         | Mantener el motor mínimo y legible; dt clamp 0.05s; anti-reverse con buffer `nextDir`; colisión pared/cola explícita. |
-| **Imagen `fruits.png` no carga a tiempo**                      | Comida invisible             | `Image.onload` → `imgReady`; solo `drawImage` si `imgReady`, re-draw al cargar; fallback fillRect.           |
-| **Atlas inline (22 entradas) derivado de `sprites.js`**        | Coordenadas desincronizadas  | Copiar coordenadas 1:1 de `sprites.js` con comentario de origen; single source of truth documentado.        |
-| **Game loop `requestAnimationFrame` global**                   | Memory leak si cleanup falla | Handle RAF module-scoped; `destroy()` lo cancela + desadjunta keydown. `useEffect` cleanup obligatorio.      |
-| **Game over spam al hacer submit**                             | Score duplicado              | `onGameOver` fire una vez (guard `gameOverFired`).                                                            |
-| **Leaderboard SSR + Client hydration mismatch**                | Hydration warning            | Server render initial leaderboard; Client actualiza tras submit.                                             |
-| **Catálogo `id` ≠ score `game` string**                        | Leaderboard devuelve vacío   | `saveScore` con `game: 'serpentina'` literal, idéntico al id del catálogo.                                   |
+| Riesgo                                                  | Impacto                      | Mitigación                                                                                                            |
+| ------------------------------------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Snake escrito desde cero (sin motor probado)**        | Bugs de lógica nueva         | Mantener el motor mínimo y legible; dt clamp 0.05s; anti-reverse con buffer `nextDir`; colisión pared/cola explícita. |
+| **Imagen `fruits.png` no carga a tiempo**               | Comida invisible             | `Image.onload` → `imgReady`; solo `drawImage` si `imgReady`, re-draw al cargar; fallback fillRect.                    |
+| **Atlas inline (22 entradas) derivado de `sprites.js`** | Coordenadas desincronizadas  | Copiar coordenadas 1:1 de `sprites.js` con comentario de origen; single source of truth documentado.                  |
+| **Game loop `requestAnimationFrame` global**            | Memory leak si cleanup falla | Handle RAF module-scoped; `destroy()` lo cancela + desadjunta keydown. `useEffect` cleanup obligatorio.               |
+| **Game over spam al hacer submit**                      | Score duplicado              | `onGameOver` fire una vez (guard `gameOverFired`).                                                                    |
+| **Leaderboard SSR + Client hydration mismatch**         | Hydration warning            | Server render initial leaderboard; Client actualiza tras submit.                                                      |
+| **Catálogo `id` ≠ score `game` string**                 | Leaderboard devuelve vacío   | `saveScore` con `game: 'serpentina'` literal, idéntico al id del catálogo.                                            |
 
 ## What is **not** in this spec
 

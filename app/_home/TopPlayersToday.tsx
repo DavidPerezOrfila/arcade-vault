@@ -20,10 +20,7 @@ export default function TopPlayersToday() {
       </div>
       <div className='top-list'>
         {rows.map((r, i) => (
-          <div
-            key={`${r.name}-${i}`}
-            className={`top-row${topRankClass(i)}`}
-          >
+          <div key={`${r.name}-${i}`} className={`top-row${topRankClass(i)}`}>
             <span className='tp-rk'>#{String(r.rank).padStart(2, '0')}</span>
             <span className='tp-bar'>
               <span className='tp-fill' style={{ width: `${100 - i * 16}%` }} />

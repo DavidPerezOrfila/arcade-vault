@@ -24,13 +24,13 @@ function mapToLeaderboardEntry(
     playerName: entry.name,
     score: entry.score,
     createdAt: new Date(entry.at).toISOString(),
-    isCurrentUser: entry.userId !== null && entry.userId === currentUserId
+    isCurrentUser: entry.userId !== null && entry.userId === currentUserId,
   };
 }
 
 export function createLeaderboardActions({
   gameId,
-  gamePath
+  gamePath,
 }: CreateLeaderboardActionsParams) {
   async function submitScore(score: number): Promise<SubmitScoreResult> {
     // Validación de bounds antes de escribir — anti-cheat proporcional.
@@ -39,7 +39,9 @@ export function createLeaderboardActions({
     }
 
     const supabase = await createSupabaseServerClient();
-    const { data: { user } } = await supabase.auth.getUser();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
 
     if (!user) {
       return { ok: false, error: 'UNAUTHENTICATED' };
@@ -49,9 +51,12 @@ export function createLeaderboardActions({
       await saveScore({
         game: gameId,
         score,
-        name: user.user_metadata?.full_name ?? user.email?.split('@')[0] ?? 'Jugador',
+        name:
+          user.user_metadata?.full_name ??
+          user.email?.split('@')[0] ??
+          'Jugador',
         at: Date.now(),
-        userId: user.id
+        userId: user.id,
       });
     } catch {
       return { ok: false, error: 'DB_ERROR' };
@@ -66,13 +71,17 @@ export function createLeaderboardActions({
 
   async function getLeaderboard(): Promise<LeaderboardEntry[]> {
     const supabase = await createSupabaseServerClient();
-    const { data: { user } } = await supabase.auth.getUser();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
     const currentUserId = user?.id ?? null;
 
     const scores = await getScoresByGame(gameId);
     return scores
       .slice(0, LEADERBOARD_TOP_N)
-      .map((entry, index) => mapToLeaderboardEntry(entry, index, currentUserId));
+      .map((entry, index) =>
+        mapToLeaderboardEntry(entry, index, currentUserId)
+      );
   }
 
   return { submitScore, getLeaderboard };

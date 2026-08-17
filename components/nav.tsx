@@ -20,7 +20,7 @@ const NAV_LINKS = [
   { href: '/', desktopLabel: 'INICIO', mobileLabel: 'Inicio' },
   { href: '/games', desktopLabel: 'BIBLIOTECA', mobileLabel: 'Biblioteca' },
   { href: '/salon', desktopLabel: 'SALÓN', mobileLabel: 'Salón de la Fama' },
-  { href: '/about', desktopLabel: 'ACERCA DE', mobileLabel: 'Acerca de' }
+  { href: '/about', desktopLabel: 'ACERCA DE', mobileLabel: 'Acerca de' },
 ] as const;
 
 // Selector global de skin: dropdown con swatch del color del jugador activo.

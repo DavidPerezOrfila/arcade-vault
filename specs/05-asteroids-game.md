@@ -1,8 +1,9 @@
 ---
 state: Implemented
-dependencies: ["04-scores-foundation"]
+dependencies: ['04-scores-foundation']
 date: 2026-07-27
 ---
+
 # 05-asteroids-game
 
 Implementar Asteroids como primer juego jugable en Arcade Vault: página completa en `/juegos/asteroids` (detail page del juego) y componente embebible reutilizable, con puntuaciones persistidas en Supabase y leaderboard integrado.
@@ -37,25 +38,25 @@ No introduce nuevas tablas — reusa esquema de **spec 04** (`scores`, `profiles
 
 ```typescript
 interface AsteroidsGameState {
-  score: number
-  lives: number
-  level: number
-  state: 'playing' | 'dead' | 'gameover'
+  score: number;
+  lives: number;
+  level: number;
+  state: 'playing' | 'dead' | 'gameover';
 }
 
 interface AsteroidsConfig {
-  canvasWidth: number   // 800
-  canvasHeight: number  // 600
-  maxWidth: number      // responsive cap
-  maxHeight: number
+  canvasWidth: number; // 800
+  canvasHeight: number; // 600
+  maxWidth: number; // responsive cap
+  maxHeight: number;
 }
 
 interface LeaderboardEntry {
-  rank: number
-  playerName: string
-  score: number
-  createdAt: string
-  isCurrentUser: boolean
+  rank: number;
+  playerName: string;
+  score: number;
+  createdAt: string;
+  isCurrentUser: boolean;
 }
 ```
 
@@ -63,10 +64,10 @@ interface LeaderboardEntry {
 
 ```typescript
 interface AsteroidsGameProps {
-  onScoreSubmit?: (score: number) => Promise<void>
-  onGameOver?: (finalScore: number) => void
-  initialConfig?: Partial<AsteroidsConfig>
-  embedMode?: boolean  // oculta HUD externo si true
+  onScoreSubmit?: (score: number) => Promise<void>;
+  onGameOver?: (finalScore: number) => void;
+  initialConfig?: Partial<AsteroidsConfig>;
+  embedMode?: boolean; // oculta HUD externo si true
 }
 ```
 

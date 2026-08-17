@@ -15,36 +15,36 @@ function GameCard({ game, onSelect }) {
   const onLeave = () => {
     const el = tiltRef.current;
     if (!el) return;
-    el.style.transform = "";
+    el.style.transform = '';
   };
   return (
     <div
       ref={tiltRef}
-      className="card"
+      className='card'
       onMouseMove={onMove}
       onMouseLeave={onLeave}
       onClick={() => onSelect(game)}
     >
-      <div className="cover">
-        <div className={"cover-bg " + game.cover}></div>
-        <div className="label">{game.cat}</div>
+      <div className='cover'>
+        <div className={'cover-bg ' + game.cover}></div>
+        <div className='label'>{game.cat}</div>
       </div>
-      <div className="meta">
-        <div className="title">{game.title}</div>
-        <div className="desc">{game.short}</div>
-        <div className="row">
-          <div className="score-badge">
+      <div className='meta'>
+        <div className='title'>{game.title}</div>
+        <div className='desc'>{game.short}</div>
+        <div className='row'>
+          <div className='score-badge'>
             <span>MEJOR PUNTUACIÓN</span>
-            <b>{game.best.toLocaleString("es-ES")}</b>
+            <b>{game.best.toLocaleString('es-ES')}</b>
           </div>
           <button
             className={
-              "btn " +
-              (game.color === "magenta"
-                ? "magenta"
-                : game.color === "yellow"
-                  ? "yellow"
-                  : "")
+              'btn ' +
+              (game.color === 'magenta'
+                ? 'magenta'
+                : game.color === 'yellow'
+                  ? 'yellow'
+                  : '')
             }
             onClick={(e) => {
               e.stopPropagation();
@@ -60,40 +60,40 @@ function GameCard({ game, onSelect }) {
 }
 
 function Library({ navigate }) {
-  const [q, setQ] = useStateB("");
-  const [cat, setCat] = useStateB("TODOS");
+  const [q, setQ] = useStateB('');
+  const [cat, setCat] = useStateB('TODOS');
 
   const filtered = useMemoB(() => {
     return GAMES.filter(
       (g) =>
-        (cat === "TODOS" || g.cat === cat) &&
-        g.title.toLowerCase().includes(q.toLowerCase()),
+        (cat === 'TODOS' || g.cat === cat) &&
+        g.title.toLowerCase().includes(q.toLowerCase())
     );
   }, [q, cat]);
 
   return (
-    <div className="fade-in">
-      <section className="av-hero">
-        <h1 className="flicker">ARCADE VAULT</h1>
-        <div className="sub">
-          INSERTA UNA MONEDA PARA JUGAR <span className="blink">_</span>
+    <div className='fade-in'>
+      <section className='av-hero'>
+        <h1 className='flicker'>ARCADE VAULT</h1>
+        <div className='sub'>
+          INSERTA UNA MONEDA PARA JUGAR <span className='blink'>_</span>
         </div>
       </section>
 
-      <div className="av-filters">
-        <div className="av-search">
-          <span className="ico">⌕</span>
+      <div className='av-filters'>
+        <div className='av-search'>
+          <span className='ico'>⌕</span>
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Buscar un juego por nombre…"
+            placeholder='Buscar un juego por nombre…'
           />
         </div>
-        <div className="av-chips">
+        <div className='av-chips'>
           {CATS.map((c) => (
             <button
               key={c}
-              className={"chip" + (cat === c ? " active" : "")}
+              className={'chip' + (cat === c ? ' active' : '')}
               onClick={() => setCat(c)}
             >
               {c}
@@ -102,28 +102,28 @@ function Library({ navigate }) {
         </div>
       </div>
 
-      <div className="av-grid">
+      <div className='av-grid'>
         {filtered.map((g) => (
           <GameCard
             key={g.id}
             game={g}
-            onSelect={(game) => navigate({ name: "detalle", id: game.id })}
+            onSelect={(game) => navigate({ name: 'detalle', id: game.id })}
           />
         ))}
         {filtered.length === 0 && (
           <div
             style={{
-              gridColumn: "1 / -1",
-              textAlign: "center",
+              gridColumn: '1 / -1',
+              textAlign: 'center',
               padding: 80,
-              color: "var(--ink-faint)",
+              color: 'var(--ink-faint)',
             }}
           >
             <div
-              className="pixel"
+              className='pixel'
               style={{
                 fontSize: 14,
-                color: "var(--magenta)",
+                color: 'var(--magenta)',
                 marginBottom: 12,
               }}
             >

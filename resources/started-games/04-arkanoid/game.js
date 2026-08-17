@@ -1,13 +1,13 @@
 /* eslint-disable */
-const canvas = document.getElementById("game");
-const ctx = canvas.getContext("2d");
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
 
 const PADDLE_SPEED = 400;
 const BLOCK_COLS = 10;
 const BLOCK_ROWS = 6;
 const BLOCK_W = 64;
 const BLOCK_H = 24;
-const BLOCK_COLORS = ["red", "yellow", "cyan", "magenta", "hotpink", "green"];
+const BLOCK_COLORS = ['red', 'yellow', 'cyan', 'magenta', 'hotpink', 'green'];
 const BLOCKS_ORIGIN_X = (800 - BLOCK_COLS * BLOCK_W) / 2;
 const BLOCKS_ORIGIN_Y = 80;
 const BASE_BALL_VX = 200;
@@ -16,14 +16,14 @@ const BASE_BALL_VY = -300;
 const paddle = { x: 0, y: 560, w: 81, h: 14 };
 const ball = { x: 0, y: 0, w: 16, h: 16, vx: 200, vy: -300 };
 
-const bounceSound = new Audio("assets/sounds/ball-bounce.mp3");
-const breakSound = new Audio("assets/sounds/break-sound.mp3");
+const bounceSound = new Audio('assets/sounds/ball-bounce.mp3');
+const breakSound = new Audio('assets/sounds/break-sound.mp3');
 
 let blocks = [];
 let explosions = [];
 let lives = 3;
 let score = 0;
-let gameState = "playing";
+let gameState = 'playing';
 let currentLevel = 1;
 let isPaused = false;
 
@@ -68,7 +68,7 @@ function collideAABB(block) {
   );
 }
 
-canvas.addEventListener("click", (e) => {
+canvas.addEventListener('click', (e) => {
   if (!isPaused) return;
   const rect = canvas.getBoundingClientRect();
   const scaleX = canvas.width / rect.width;
@@ -90,32 +90,32 @@ canvas.addEventListener("click", (e) => {
   }
 });
 
-canvas.addEventListener("mousemove", (e) => {
+canvas.addEventListener('mousemove', (e) => {
   const rect = canvas.getBoundingClientRect();
   const scaleX = canvas.width / rect.width;
   const mouseX = (e.clientX - rect.left) * scaleX;
   paddle.x = Math.max(
     0,
-    Math.min(canvas.width - paddle.w, mouseX - paddle.w / 2),
+    Math.min(canvas.width - paddle.w, mouseX - paddle.w / 2)
   );
 });
 
-document.addEventListener("keydown", (e) => {
+document.addEventListener('keydown', (e) => {
   if (e.key in keys) keys[e.key] = true;
   if (
-    (e.key === "p" || e.key === "P" || e.key === "Escape") &&
-    gameState === "playing"
+    (e.key === 'p' || e.key === 'P' || e.key === 'Escape') &&
+    gameState === 'playing'
   ) {
     isPaused = !isPaused;
   }
 });
 
-document.addEventListener("keyup", (e) => {
+document.addEventListener('keyup', (e) => {
   if (e.key in keys) keys[e.key] = false;
 });
 
 function update(dt) {
-  if (gameState !== "playing") return;
+  if (gameState !== 'playing') return;
 
   // Paddle
   if (keys.ArrowLeft) paddle.x = Math.max(0, paddle.x - PADDLE_SPEED * dt);
@@ -174,7 +174,7 @@ function update(dt) {
       breakSound.cloneNode().play();
       if (blocks.every((b) => !b.alive)) {
         if (currentLevel < 5) loadLevel(currentLevel + 1);
-        else gameState = "win";
+        else gameState = 'win';
       }
       break; // one block per frame
     }
@@ -189,7 +189,7 @@ function update(dt) {
     lives--;
     if (lives <= 0) {
       lives = 0;
-      gameState = "gameover";
+      gameState = 'gameover';
     } else {
       initBall();
     }
@@ -197,12 +197,12 @@ function update(dt) {
 }
 
 function drawOverlay(message) {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "#fff";
-  ctx.font = "bold 64px monospace";
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 64px monospace';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
   ctx.fillText(message, canvas.width / 2, canvas.height / 2);
 }
 
@@ -214,56 +214,56 @@ const PAUSE_BTN_ROW_X =
   (canvas.width - (5 * PAUSE_BTN_W + 4 * PAUSE_BTN_GAP)) / 2;
 
 function drawPauseOverlay() {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.65)";
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.65)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = "#fff";
-  ctx.font = "bold 56px monospace";
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-  ctx.fillText("PAUSA", canvas.width / 2, 260);
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 56px monospace';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('PAUSA', canvas.width / 2, 260);
 
-  ctx.font = "bold 16px monospace";
-  ctx.fillText("Saltar al nivel:", canvas.width / 2, 310);
+  ctx.font = 'bold 16px monospace';
+  ctx.fillText('Saltar al nivel:', canvas.width / 2, 310);
 
   for (let i = 0; i < 5; i++) {
     const bx = PAUSE_BTN_ROW_X + i * (PAUSE_BTN_W + PAUSE_BTN_GAP);
     const isActive = i + 1 === currentLevel;
-    ctx.fillStyle = isActive ? "#f0c040" : "#444";
-    ctx.strokeStyle = "#fff";
+    ctx.fillStyle = isActive ? '#f0c040' : '#444';
+    ctx.strokeStyle = '#fff';
     ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.roundRect(bx, PAUSE_BTN_Y, PAUSE_BTN_W, PAUSE_BTN_H, 6);
     ctx.fill();
     ctx.stroke();
-    ctx.fillStyle = isActive ? "#000" : "#fff";
-    ctx.font = "bold 20px monospace";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
+    ctx.fillStyle = isActive ? '#000' : '#fff';
+    ctx.font = 'bold 20px monospace';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
     ctx.fillText(i + 1, bx + PAUSE_BTN_W / 2, PAUSE_BTN_Y + PAUSE_BTN_H / 2);
   }
 }
 
 function draw() {
-  ctx.fillStyle = "#000";
+  ctx.fillStyle = '#000';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   for (const block of blocks) {
     if (block.alive)
       drawSprite(
         ctx,
-        "block_" + block.color,
+        'block_' + block.color,
         block.x,
         block.y,
         block.w,
-        block.h,
+        block.h
       );
   }
 
   for (const exp of explosions) {
     const frameIndex = Math.min(
       Math.floor((exp.elapsed / EXPLOSION_DURATION) * 4),
-      3,
+      3
     );
     drawFrame(
       ctx,
@@ -271,31 +271,31 @@ function draw() {
       exp.x,
       exp.y,
       exp.w,
-      exp.h,
+      exp.h
     );
   }
 
-  drawSprite(ctx, "paddle", paddle.x, paddle.y, paddle.w, paddle.h);
-  drawSprite(ctx, "ball", ball.x, ball.y, ball.w, ball.h);
+  drawSprite(ctx, 'paddle', paddle.x, paddle.y, paddle.w, paddle.h);
+  drawSprite(ctx, 'ball', ball.x, ball.y, ball.w, ball.h);
 
-  if (gameState === "playing") {
-    ctx.fillStyle = "#fff";
-    ctx.font = "bold 18px monospace";
-    ctx.textAlign = "left";
-    ctx.textBaseline = "top";
-    ctx.fillText("Score: " + score, 10, 10);
-    ctx.textAlign = "center";
-    ctx.fillText("Nivel: " + currentLevel, canvas.width / 2, 10);
+  if (gameState === 'playing') {
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 18px monospace';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.fillText('Score: ' + score, 10, 10);
+    ctx.textAlign = 'center';
+    ctx.fillText('Nivel: ' + currentLevel, canvas.width / 2, 10);
     const ballSize = 16;
     const ballSpacing = 4;
     for (let i = 0; i < lives; i++) {
       const bx = canvas.width - 10 - (lives - i) * (ballSize + ballSpacing);
-      drawSprite(ctx, "ball", bx, 10, ballSize, ballSize);
+      drawSprite(ctx, 'ball', bx, 10, ballSize, ballSize);
     }
   }
 
-  if (gameState === "gameover") drawOverlay("GAME OVER");
-  if (gameState === "win") drawOverlay("¡Completaste el juego!");
+  if (gameState === 'gameover') drawOverlay('GAME OVER');
+  if (gameState === 'win') drawOverlay('¡Completaste el juego!');
   if (isPaused) drawPauseOverlay();
 }
 

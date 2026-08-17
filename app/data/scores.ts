@@ -18,7 +18,7 @@ function rowToEntry(row: ScoreRowSelected): ScoreEntry {
     score: row.score,
     name: row.name,
     at: new Date(row.at).getTime(),
-    userId: row.user_id
+    userId: row.user_id,
   };
 }
 
@@ -68,7 +68,7 @@ export async function saveScore(
       at: new Date(input.at).toISOString(),
       // user_id es la columna en la DB (snake_case) — contrato externo.
       // eslint-disable-next-line camelcase
-      user_id: input.userId ?? null
+      user_id: input.userId ?? null,
     })
     .select(SELECT_COLUMNS)
     .single();

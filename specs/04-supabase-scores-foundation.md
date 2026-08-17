@@ -109,9 +109,30 @@ export interface Database {
   public: {
     Tables: {
       scores: {
-        Row: { id: string; game: string; score: number; name: string; user_id: string | null; at: string };
-        Insert: { id?: string; game: string; score: number; name: string; user_id?: string | null; at?: string };
-        Update: { id?: string; game?: string; score?: number; name?: string; user_id?: string | null; at?: string };
+        Row: {
+          id: string;
+          game: string;
+          score: number;
+          name: string;
+          user_id: string | null;
+          at: string;
+        };
+        Insert: {
+          id?: string;
+          game: string;
+          score: number;
+          name: string;
+          user_id?: string | null;
+          at?: string;
+        };
+        Update: {
+          id?: string;
+          game?: string;
+          score?: number;
+          name?: string;
+          user_id?: string | null;
+          at?: string;
+        };
         Relationships: [];
       };
     };
@@ -126,7 +147,7 @@ export interface Database {
 **Tipos de dominio (`app/data/types.ts`, ampliado sobre la versión de SPEC 01):**
 
 ```typescript
-import type { Database } from "@/lib/supabase/types";
+import type { Database } from '@/lib/supabase/types';
 
 // Lo que consume la UI. Se mantiene idéntico al de SPEC 01.
 export interface ScoreEntry {
@@ -146,19 +167,19 @@ export interface ScoreEntryInput {
 
 // Helper de mapeo fila DB → dominio. Vive en `app/data/scores.ts`,
 // no aquí, para mantener la separación "persistido" vs "lo que ve la UI".
-export type ScoreRowDb = Database["public"]["Tables"]["scores"]["Row"];
+export type ScoreRowDb = Database['public']['Tables']['scores']['Row'];
 ```
 
 **Schema Zod (`app/data/schema.ts`, nuevo):**
 
 ```typescript
-import { z } from "zod";
+import { z } from 'zod';
 
 export const scoreEntrySchema = z.object({
-  game:  z.string().min(1).max(64),
+  game: z.string().min(1).max(64),
   score: z.number().int().nonnegative().max(1_000_000_000),
-  name:  z.string().min(1).max(40),
-  at:    z.number().int().positive(), // epoch ms
+  name: z.string().min(1).max(40),
+  at: z.number().int().positive(), // epoch ms
 });
 
 export type ScoreEntryInputParsed = z.infer<typeof scoreEntrySchema>;

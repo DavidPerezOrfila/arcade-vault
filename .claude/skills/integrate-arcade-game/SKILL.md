@@ -39,16 +39,16 @@ The rest of this file is the technical reference that guides Fase B — the 8 fi
 
 Real paths from `app/games/asteroids/` — copy that shape. `<slug>` = catalog id (kebab-case), NOT the English/display name. If the game is already seeded in the catalog (e.g. tetris → `caida`), the slug is that id.
 
-| # | File | Role |
-|---|------|------|
-| 1 | `lib/games/<slug>/game.esm.js` | Vanilla engine → ES module |
-| 2 | `lib/games/<slug>/types.ts` | `LeaderboardEntry` + `<Game>GameProps` |
-| 3 | `components/games/<slug>/<Game>Game.tsx` | `'use client'` canvas component |
-| 4 | `components/games/<slug>/<slug>.css` | Styles, prefix `<slug>-`, `aspect-ratio`, `@media (prefers-reduced-motion)` |
-| 5 | `app/games/<slug>/page.tsx` | Server Component: `Metadata`, `LeaderboardServer` in `<Suspense>` |
-| 6 | `app/games/<slug>/actions.ts` | `submit<Game>Score` + `get<Game>Leaderboard` |
-| 7 | `app/api/leaderboard/<slug>/route.ts` | `GET` → `get<Game>Leaderboard()` |
-| 8 | catalog seed | `INSERT` row into `public.games` migration |
+| #   | File                                     | Role                                                                        |
+| --- | ---------------------------------------- | --------------------------------------------------------------------------- |
+| 1   | `lib/games/<slug>/game.esm.js`           | Vanilla engine → ES module                                                  |
+| 2   | `lib/games/<slug>/types.ts`              | `LeaderboardEntry` + `<Game>GameProps`                                      |
+| 3   | `components/games/<slug>/<Game>Game.tsx` | `'use client'` canvas component                                             |
+| 4   | `components/games/<slug>/<slug>.css`     | Styles, prefix `<slug>-`, `aspect-ratio`, `@media (prefers-reduced-motion)` |
+| 5   | `app/games/<slug>/page.tsx`              | Server Component: `Metadata`, `LeaderboardServer` in `<Suspense>`           |
+| 6   | `app/games/<slug>/actions.ts`            | `submit<Game>Score` + `get<Game>Leaderboard`                                |
+| 7   | `app/api/leaderboard/<slug>/route.ts`    | `GET` → `get<Game>Leaderboard()`                                            |
+| 8   | catalog seed                             | `INSERT` row into `public.games` migration                                  |
 
 ## REUSE, do not modify
 
@@ -120,10 +120,10 @@ useEffect(() => {
   let game: GameModule | null = null;
   import('../../../lib/games/<slug>/game.esm.js').then((m) => {
     game = m;
-    m.setOnGameOver(handleGameOver);   // wire BEFORE init
+    m.setOnGameOver(handleGameOver); // wire BEFORE init
     m.initGame(canvasRef.current!, options);
   });
-  return () => game?.destroy();        // cleanup REQUIRED: cancels RAF + detaches listeners
+  return () => game?.destroy(); // cleanup REQUIRED: cancels RAF + detaches listeners
 }, []);
 ```
 
@@ -143,15 +143,15 @@ useEffect(() => {
 
 ## Common mistakes
 
-| Mistake | Fix |
-|---------|-----|
-| `/juegos/<slug>` (spec 05 text) | Real routing is `/games/<slug>` |
-| Sync `import` of engine | Dynamic `import()` in useEffect (SSR-safe) |
-| No `destroy()` in cleanup | RAF + listeners leak across navigations |
-| `onGameOver` wired after `initGame` | Wire BEFORE init |
-| Rewriting `scores.ts`/`schema.ts` | Game-agnostic already; reuse, don't touch |
-| Catalog `id` ≠ score `game` string | Leaderboard returns nothing (no FK, silent) |
-| Loosening `scoreEntrySchema` | Never |
+| Mistake                             | Fix                                         |
+| ----------------------------------- | ------------------------------------------- |
+| `/juegos/<slug>` (spec 05 text)     | Real routing is `/games/<slug>`             |
+| Sync `import` of engine             | Dynamic `import()` in useEffect (SSR-safe)  |
+| No `destroy()` in cleanup           | RAF + listeners leak across navigations     |
+| `onGameOver` wired after `initGame` | Wire BEFORE init                            |
+| Rewriting `scores.ts`/`schema.ts`   | Game-agnostic already; reuse, don't touch   |
+| Catalog `id` ≠ score `game` string  | Leaderboard returns nothing (no FK, silent) |
+| Loosening `scoreEntrySchema`        | Never                                       |
 
 ## Verification
 
