@@ -5,7 +5,7 @@ import type { ReactNode } from 'react';
 interface AuthPromptProps {
   // Prefijo CSS por juego (caida/asteroids) — el componente solo compone
   // clases; el styling vive en el CSS por juego.
-  classPrefix: 'caida' | 'asteroids' | 'serpentina';
+  classPrefix: 'caida' | 'asteroids' | 'serpentina' | 'bloque-buster';
   gamePath: string;
   title: string;
   message: ReactNode;

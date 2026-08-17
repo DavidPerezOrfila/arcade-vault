@@ -1,7 +1,9 @@
 ---
-state: Draft
+state: Implemented
 dependencies: ['04-supabase-scores-foundation', '06-games-catalog-salon']
 date: 2026-08-13
+implemented: 2026-08-17
+worktree: spec-blogue-buster
 ---
 
 # bloque-buster spec-a — Port del vanilla ref (single-canvas + sprites)
@@ -165,3 +167,36 @@ interface BloqueBusterPaddle { x: number; y: number; w: number; h: number; }
 - Modo dos jugadores / CPU.
 
 Cada uno de esos, si llega, va en su propia spec.
+
+## Addendum — implementación (2026-08-17)
+
+La rama `spec-blogue-buster` arrancó de `main` post-merge del sistema de
+skins (spec skin-design), así que el port se implementó ya con el contrato
+del wrapper moderno:
+
+- El motor es `lib/games/bloque-buster/game.esm.js` con exports
+  `initGame(canvas, { skin, onGameOver })`, `destroy()`, `setOnGameOver()`,
+  y `options.skin` mapeado a `PALETTES[isSkinId(options.skin) ? options.skin : DEFAULT_SKIN]` (`@/lib/games/skins`). El background, HUD y overlays usan
+  tokens de paleta; bloques/paleta/pelota son sprites del spritesheet
+  (fidelidad del ref, no tokens).
+- El componente usa `useArcadeGame` (`components/games/useArcadeGame.ts`),
+  no el lifecycle de la recipe inline: `setOnGameOver(handleGameOver)` se
+  cablea ANTES de `initGame(canvas, { skin })`, `skin` en los deps del
+  `useEffect` (cambio de skin = teardown + restart), y `?e2e=1` expone
+  `window.__forceGameOver`.
+- **Desviación aceptada:** el punto de scope "Botón 'Jugar de nuevo' /
+  overlay reinicia partida sin recargar" se resolvió en-canvas: el engine
+  dibuja el overlay de GAME OVER/WIN y reinicia con `Espacio`/`Enter`/`R`
+  (mismo patrón que asteroids, "ESPACIO PARA REINICIAR"). No hay botón DOM
+  adicional; `useArcadeGame` igualmente muestra AuthPrompt en game over.
+- Assets portados a rutas absolutas `/arkanoid-assets/...`
+  (`spritesheet-breakout.png`, `sounds/ball-bounce.mp3`,
+  `sounds/break-sound.mp3`).
+- Se eliminó el selector de salto de nivel del overlay de pausa (como dice
+  el scope), quedando solo toggle pausa/reanudar.
+- Skins: fila `bloque-buster` añadida a `resources/skins-todo.md` (Completo).
+- Docs: `resources/implemented-games.md` mueve `bloque-buster` a
+  Implementado (4 jugables, 4 pendientes).
+
+Criterios de aceptación verificados: dev carga sin errores, build + lint
+verdes, `npx playwright test tests/e2e/bloque-buster.spec.ts` pasa.

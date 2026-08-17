@@ -5,7 +5,7 @@ import type { LeaderboardEntry } from '@/lib/games/types';
 interface LeaderboardListProps {
   // Prefijo CSS por juego (caida/asteroids) — el componente solo compone
   // clases; el styling vive en el CSS por juego.
-  classPrefix: 'caida' | 'asteroids' | 'serpentina';
+  classPrefix: 'caida' | 'asteroids' | 'serpentina' | 'bloque-buster';
   entries: LeaderboardEntry[];
   maxRows: number;
   emptyText: string;
