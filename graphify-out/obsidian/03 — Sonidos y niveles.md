@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[03-sonidos-y-niveles]] - `contains` [EXTRACTED]
-- [[Alcance_1]] - `contains` [EXTRACTED]
-- [[Criterios de aceptación_1]] - `contains` [EXTRACTED]
+- [[Alcance_2]] - `contains` [EXTRACTED]
+- [[Criterios de aceptación_2]] - `contains` [EXTRACTED]
 - [[Decisiones tomadas y descartadas_2]] - `contains` [EXTRACTED]
-- [[Modelo de datos_1]] - `contains` [EXTRACTED]
-- [[Plan de implementación_1]] - `contains` [EXTRACTED]
+- [[Modelo de datos_2]] - `contains` [EXTRACTED]
+- [[Plan de implementación_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/03__Sonidos_y_niveles

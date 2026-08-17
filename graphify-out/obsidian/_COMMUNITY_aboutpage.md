@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[aboutpage]] - document - graft/app/about/page.md
 - [[appaboutpage.tsx]] - document - graft/app/about/page.md
+- [[page]] - document - graft/app/about/page.md
 
 ## Live Query (requires Dataview plugin)
 

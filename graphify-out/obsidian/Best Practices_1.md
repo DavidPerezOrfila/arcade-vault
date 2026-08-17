@@ -1,20 +1,20 @@
 ---
-source_file: ".claude/skills/playwright-cli/references/video-recording.md"
+source_file: ".claude/skills/playwright-cli/references/session-management.md"
 type: "document"
-community: "Tracing"
-location: "L30"
+community: "Browser Session Management"
+location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Tracing
+  - community/Browser_Session_Management
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Use Descriptive Filenames]] - `contains` [EXTRACTED]
-- [[2. Record entire hero scripts.]] - `contains` [EXTRACTED]
-- [[Overlay API Summary]] - `contains` [EXTRACTED]
-- [[Video Recording]] - `contains` [EXTRACTED]
+- [[1. Name Browser Sessions Semantically]] - `contains` [EXTRACTED]
+- [[2. Always Clean Up]] - `contains` [EXTRACTED]
+- [[3. Delete Stale Browser Data]] - `contains` [EXTRACTED]
+- [[Browser Session Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Tracing
+#graphify/document #graphify/EXTRACTED #community/Browser_Session_Management

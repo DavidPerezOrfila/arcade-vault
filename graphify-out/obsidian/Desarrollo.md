@@ -12,6 +12,6 @@ tags:
 # Desarrollo
 
 ## Connections
-- [[04-arkanoidCLAUDE_1]] - `contains` [EXTRACTED]
+- [[CLAUDE_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Arquitectura

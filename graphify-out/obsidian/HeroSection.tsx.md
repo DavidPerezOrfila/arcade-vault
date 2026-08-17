@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[HIGHLIGHTS]] - `contains` [EXTRACTED]
 - [[HeroSection()]] - `contains` [EXTRACTED]
-- [[HighlightIcon()_1]] - `imports` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports_from` [EXTRACTED]
+- [[HighlightIcon()]] - `imports` [EXTRACTED]
 - [[highlight-icon.tsx]] - `imports_from` [EXTRACTED]
+- [[page.tsx]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

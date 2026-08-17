@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/scores.ts"
 type: "code"
-community: "app/page.tsx"
+community: "reproductor.jsx"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/reproductorjsx
 ---
 
 # getScores()
@@ -17,4 +17,4 @@ tags:
 - [[fetchScores()]] - `calls` [EXTRACTED]
 - [[scores.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/reproductorjsx

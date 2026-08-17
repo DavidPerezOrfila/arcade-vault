@@ -12,7 +12,7 @@ tags:
 # rotateCW()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 - [[tryRotate()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs

@@ -12,12 +12,12 @@ tags:
 # Caveman Compress
 
 ## Connections
-- [[Boundaries]] - `contains` [EXTRACTED]
+- [[Boundaries_1]] - `contains` [EXTRACTED]
 - [[Compression Rules]] - `contains` [EXTRACTED]
 - [[Pattern]] - `contains` [EXTRACTED]
 - [[Process]] - `contains` [EXTRACTED]
 - [[Purpose]] - `contains` [EXTRACTED]
+- [[SKILL_2]] - `contains` [EXTRACTED]
 - [[Trigger]] - `contains` [EXTRACTED]
-- [[caveman-compressSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Caveman_Compress

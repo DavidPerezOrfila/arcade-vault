@@ -12,8 +12,8 @@ tags:
 # tryRotate()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
 - [[collide()_1]] - `calls` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 - [[rotateCW()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs

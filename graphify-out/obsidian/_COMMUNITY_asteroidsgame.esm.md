@@ -8,7 +8,7 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[asteroidsgame.esm]] - document - graft/lib/games/asteroids/game.esm.md
+- [[game.esm]] - document - graft/lib/games/asteroids/game.esm.md
 - [[libgamesasteroidsgame.esm.js]] - document - graft/lib/games/asteroids/game.esm.md
 
 ## Live Query (requires Dataview plugin)

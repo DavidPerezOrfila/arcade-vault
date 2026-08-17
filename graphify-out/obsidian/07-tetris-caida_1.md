@@ -19,6 +19,6 @@ tags:
 - [[Identified Risks_3]] - `contains` [EXTRACTED]
 - [[Implementation Plan_3]] - `contains` [EXTRACTED]
 - [[Scope_3]] - `contains` [EXTRACTED]
-- [[What is not in this spec_1]] - `contains` [EXTRACTED]
+- [[What is not in this spec]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/07-tetris-caida

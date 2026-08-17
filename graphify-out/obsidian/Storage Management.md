@@ -12,7 +12,6 @@ tags:
 # Storage Management
 
 ## Connections
-- [[dot-agentsskillsplaywright-clireferencesstorage-state]] - `contains` [EXTRACTED]
 - [[Common Patterns]] - `contains` [EXTRACTED]
 - [[Cookies]] - `contains` [EXTRACTED]
 - [[IndexedDB]] - `contains` [EXTRACTED]
@@ -21,5 +20,6 @@ tags:
 - [[Security Notes]] - `contains` [EXTRACTED]
 - [[Session Storage]] - `contains` [EXTRACTED]
 - [[Storage State]] - `contains` [EXTRACTED]
+- [[storage-state]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Cookies

@@ -1,12 +1,12 @@
 ---
 source_file: "app/games/GamesClient.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "validate.py"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/validatepy
 ---
 
 # GameCard()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GamesClient.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

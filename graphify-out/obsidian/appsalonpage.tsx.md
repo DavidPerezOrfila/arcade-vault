@@ -12,6 +12,6 @@ tags:
 # app/salon/page.tsx
 
 ## Connections
-- [[salonpage]] - `contains` [EXTRACTED]
+- [[page_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/salon/pagemd

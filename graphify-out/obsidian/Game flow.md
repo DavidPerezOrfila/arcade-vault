@@ -12,6 +12,6 @@ tags:
 # Game flow
 
 ## Connections
-- [[Architecture]] - `contains` [EXTRACTED]
+- [[Architecture_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/03-tetris/CLAUDEmd

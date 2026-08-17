@@ -1,17 +1,17 @@
 ---
-source_file: "specs/04-supabase-scores-foundation.md"
+source_file: "resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md"
 type: "document"
-community: "SPEC 04 — Supabase: foundation y persistencia de puntuaciones"
-location: "L325"
+community: "01 — MVP jugable de Arkanoid"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SPEC_04__Supabase_foundation_y_persistencia_de_puntuaciones
+  - community/01__MVP_jugable_de_Arkanoid
 ---
 
 # Decisiones tomadas y descartadas
 
 ## Connections
-- [[SPEC 04 — Supabase foundation y persistencia de puntuaciones]] - `contains` [EXTRACTED]
+- [[01 — MVP jugable de Arkanoid]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SPEC_04__Supabase_foundation_y_persistencia_de_puntuaciones
+#graphify/document #graphify/EXTRACTED #community/01__MVP_jugable_de_Arkanoid

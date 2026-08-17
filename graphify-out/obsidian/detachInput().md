@@ -1,19 +1,20 @@
 ---
-source_file: "lib/games/serpentina/game.esm.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "serpentina/game.esm.js"
-location: "L232"
+community: "asteroids/game.esm.js"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serpentina/gameesmjs
+  - community/asteroids/gameesmjs
 ---
 
 # detachInput()
 
 ## Connections
 - [[destroy()]] - `calls` [EXTRACTED]
-- [[onKeyDown()]] - `indirect_call` [INFERRED]
-- [[serpentinagame.esm.js]] - `contains` [EXTRACTED]
+- [[game.esm.js]] - `contains` [EXTRACTED]
+- [[handleKeyDown()]] - `indirect_call` [INFERRED]
+- [[handleKeyUp()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

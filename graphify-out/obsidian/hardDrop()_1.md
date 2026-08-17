@@ -12,7 +12,7 @@ tags:
 # hardDrop()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 - [[ghostY()_1]] - `calls` [EXTRACTED]
 - [[lockPiece()_1]] - `calls` [EXTRACTED]
 

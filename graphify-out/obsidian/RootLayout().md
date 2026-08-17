@@ -2,7 +2,7 @@
 source_file: "app/layout.tsx"
 type: "code"
 community: "leaderboard.ts"
-location: "L7"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED

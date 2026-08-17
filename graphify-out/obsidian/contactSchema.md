@@ -12,7 +12,7 @@ tags:
 # contactSchema
 
 ## Connections
-- [[aboutactions.ts]] - `imports` [EXTRACTED]
-- [[aboutschema.ts]] - `contains` [EXTRACTED]
+- [[actions.ts]] - `imports` [EXTRACTED]
+- [[schema.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

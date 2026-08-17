@@ -2,7 +2,7 @@
 source_file: "lib/games/caida/game.esm.js"
 type: "code"
 community: "caida/game.esm.js"
-location: "L208"
+location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,11 +12,11 @@ tags:
 # spawn()
 
 ## Connections
-- [[caidagame.esm.js]] - `contains` [EXTRACTED]
 - [[collide()]] - `calls` [EXTRACTED]
 - [[drawNext()]] - `calls` [EXTRACTED]
-- [[endGame()_1]] - `calls` [EXTRACTED]
-- [[initGame()_3]] - `calls` [EXTRACTED]
+- [[endGame()]] - `calls` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[initGame()_1]] - `calls` [EXTRACTED]
 - [[lockPiece()]] - `calls` [EXTRACTED]
 - [[randomPiece()]] - `calls` [EXTRACTED]
 

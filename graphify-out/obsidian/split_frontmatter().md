@@ -12,7 +12,7 @@ tags:
 # split_frontmatter()
 
 ## Connections
-- [[Split YAML frontmatter from body. Returns (frontmatter, body). Memory files…]] - `rationale_for` [EXTRACTED]
+- [[Split YAML frontmatter from body. Returns (frontmatter, body).      Memory fil]] - `rationale_for` [EXTRACTED]
 - [[compress.py]] - `contains` [EXTRACTED]
 - [[compress_file()]] - `calls` [EXTRACTED]
 

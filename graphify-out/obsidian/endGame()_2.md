@@ -12,7 +12,7 @@ tags:
 # endGame()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 - [[spawn()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs

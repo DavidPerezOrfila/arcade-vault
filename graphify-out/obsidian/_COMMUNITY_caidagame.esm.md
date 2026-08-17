@@ -8,7 +8,7 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[caidagame.esm]] - document - graft/lib/games/caida/game.esm.md
+- [[game.esm_1]] - document - graft/lib/games/caida/game.esm.md
 - [[libgamescaidagame.esm.js]] - document - graft/lib/games/caida/game.esm.md
 
 ## Live Query (requires Dataview plugin)

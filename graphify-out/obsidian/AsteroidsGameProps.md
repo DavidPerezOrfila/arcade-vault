@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AsteroidsGame.tsx]] - `imports` [EXTRACTED]
 - [[LeaderboardEntry]] - `references` [EXTRACTED]
-- [[asteroidstypes.ts]] - `contains` [EXTRACTED]
+- [[types.ts_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

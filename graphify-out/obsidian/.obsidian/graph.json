@@ -1107,6 +1107,34 @@
       }
     },
     {
+      "query": "tag:#community/game-jam.md",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/SalonClient.tsx",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Skins_\u2014_cobertura_por_juego",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/requireEnv",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
       "query": "tag:#community/.agents/skills/consult-graph/SKILL.md",
       "color": {
         "a": 1,

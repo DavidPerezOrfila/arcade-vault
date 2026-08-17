@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[02-animacion-explosion-bloques]] - `contains` [EXTRACTED]
-- [[Alcance_2]] - `contains` [EXTRACTED]
-- [[Criterios de aceptación_2]] - `contains` [EXTRACTED]
-- [[Decisiones tomadas y descartadas_3]] - `contains` [EXTRACTED]
-- [[Modelo de datos_2]] - `contains` [EXTRACTED]
-- [[Plan de implementación_2]] - `contains` [EXTRACTED]
+- [[Alcance_1]] - `contains` [EXTRACTED]
+- [[Criterios de aceptación_1]] - `contains` [EXTRACTED]
+- [[Decisiones tomadas y descartadas_1]] - `contains` [EXTRACTED]
+- [[Modelo de datos_1]] - `contains` [EXTRACTED]
+- [[Plan de implementación_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/02__Animacin_de_explosin_al_romper_bloques

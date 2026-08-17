@@ -12,6 +12,6 @@ tags:
 # resources/started-games/03-tetris/game.js
 
 ## Connections
-- [[03-tetrisgame]] - `contains` [EXTRACTED]
+- [[game_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/03-tetris/gamemd

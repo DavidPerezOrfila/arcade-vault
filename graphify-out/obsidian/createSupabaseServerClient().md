@@ -1,19 +1,18 @@
 ---
 source_file: "lib/supabase/server.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # createSupabaseServerClient()
 
 ## Connections
-- [[createLeaderboardActions()]] - `calls` [EXTRACTED]
-- [[dataactions.ts]] - `imports` [EXTRACTED]
+- [[actions.ts_1]] - `imports` [EXTRACTED]
 - [[fetchScores()]] - `calls` [EXTRACTED]
 - [[games.ts]] - `imports` [EXTRACTED]
 - [[getGameById()]] - `calls` [EXTRACTED]
@@ -26,4 +25,4 @@ tags:
 - [[scores.ts]] - `imports` [EXTRACTED]
 - [[server.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

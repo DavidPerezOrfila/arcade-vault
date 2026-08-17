@@ -12,7 +12,7 @@ tags:
 # Security
 
 ## Connections
+- [[SECURITY_1]] - `contains` [EXTRACTED]
 - [[Snyk High Risk Rating]] - `contains` [EXTRACTED]
-- [[caveman-compressSECURITY]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman-compress/READMEmd

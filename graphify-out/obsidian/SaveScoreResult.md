@@ -1,17 +1,17 @@
 ---
 source_file: "app/data/actions.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # SaveScoreResult
 
 ## Connections
-- [[dataactions.ts]] - `contains` [EXTRACTED]
+- [[actions.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

@@ -20,8 +20,8 @@ tags:
 - [[SubmitScoreResult]] - `imports` [EXTRACTED]
 - [[UseArcadeGameParams]] - `contains` [EXTRACTED]
 - [[UseArcadeGameResult]] - `contains` [EXTRACTED]
-- [[gamestypes.ts]] - `imports_from` [EXTRACTED]
 - [[leaderboard.ts]] - `imports_from` [EXTRACTED]
+- [[types.ts_5]] - `imports_from` [EXTRACTED]
 - [[useArcadeGame()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

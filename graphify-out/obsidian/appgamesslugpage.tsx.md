@@ -12,6 +12,6 @@ tags:
 # app/games/[slug]/page.tsx
 
 ## Connections
-- [[slugpage]] - `contains` [EXTRACTED]
+- [[page_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/slug/pagemd

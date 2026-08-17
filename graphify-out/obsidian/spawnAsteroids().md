@@ -1,20 +1,20 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "02-asteroids/game.js"
-location: "L301"
+community: "asteroids/game.esm.js"
+location: "L322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/02-asteroids/gamejs
+  - community/asteroids/gameesmjs
 ---
 
 # spawnAsteroids()
 
 ## Connections
-- [[02-asteroidsgame.js]] - `contains` [EXTRACTED]
-- [[initGame()]] - `calls` [EXTRACTED]
+- [[game.esm.js]] - `contains` [EXTRACTED]
+- [[initGameState()]] - `calls` [EXTRACTED]
 - [[nextLevel()]] - `calls` [EXTRACTED]
 - [[rand()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

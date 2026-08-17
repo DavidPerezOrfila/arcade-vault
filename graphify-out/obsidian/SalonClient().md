@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[SalonClient.tsx]] - `contains` [EXTRACTED]
 - [[getSalonLeaderboard()]] - `calls` [EXTRACTED]
-- [[salonpage.tsx]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx

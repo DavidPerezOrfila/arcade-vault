@@ -12,6 +12,6 @@ tags:
 # resources/templates/nav.jsx
 
 ## Connections
-- [[templatesnav]] - `contains` [EXTRACTED]
+- [[nav_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/templates/navmd

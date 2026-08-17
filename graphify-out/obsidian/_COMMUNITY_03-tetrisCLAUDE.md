@@ -8,9 +8,9 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[03-tetrisCLAUDE]] - document - resources/started-games/03-tetris/CLAUDE.md
-- [[03-tetrisCLAUDE_1]] - document - resources/started-games/03-tetris/CLAUDE.md
-- [[Architecture]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[Architecture_1]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[CLAUDE_2]] - document - resources/started-games/03-tetris/CLAUDE.md
+- [[CLAUDE_3]] - document - resources/started-games/03-tetris/CLAUDE.md
 - [[Game flow]] - document - resources/started-games/03-tetris/CLAUDE.md
 - [[Running the game]] - document - resources/started-games/03-tetris/CLAUDE.md
 - [[Tunable constants (top of game.js)]] - document - resources/started-games/03-tetris/CLAUDE.md

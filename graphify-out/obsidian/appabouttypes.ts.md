@@ -12,6 +12,6 @@ tags:
 # app/about/types.ts
 
 ## Connections
-- [[abouttypes]] - `contains` [EXTRACTED]
+- [[types]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/about/typesmd

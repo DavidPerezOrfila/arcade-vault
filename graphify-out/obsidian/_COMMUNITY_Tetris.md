@@ -8,11 +8,10 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[03-tetrisREADME]] - document - resources/started-games/03-tetris/README.md
 - [[1. `index.html`]] - document - resources/started-games/03-tetris/README.md
 - [[2. `style.css`]] - document - resources/started-games/03-tetris/README.md
 - [[3. `game.js`]] - document - resources/started-games/03-tetris/README.md
-- [[Controles]] - document - resources/started-games/03-tetris/README.md
+- [[Controles_1]] - document - resources/started-games/03-tetris/README.md
 - [[Cómo ejecutar el juego]] - document - resources/started-games/03-tetris/README.md
 - [[Cómo funciona]] - document - resources/started-games/03-tetris/README.md
 - [[Estructura del proyecto]] - document - resources/started-games/03-tetris/README.md
@@ -22,8 +21,9 @@ members: 17
 - [[Opción 2 servidor local (recomendado)]] - document - resources/started-games/03-tetris/README.md
 - [[Personalización]] - document - resources/started-games/03-tetris/README.md
 - [[Qué hace el proyecto]] - document - resources/started-games/03-tetris/README.md
+- [[README_8]] - document - resources/started-games/03-tetris/README.md
 - [[Tabla de contenidos]] - document - resources/started-games/03-tetris/README.md
-- [[Tecnologías]] - document - resources/started-games/03-tetris/README.md
+- [[Tecnologías_1]] - document - resources/started-games/03-tetris/README.md
 - [[Tetris]] - document - resources/started-games/03-tetris/README.md
 
 ## Live Query (requires Dataview plugin)

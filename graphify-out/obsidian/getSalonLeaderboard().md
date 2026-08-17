@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SalonClient()]] - `calls` [EXTRACTED]
 - [[SalonClient.tsx]] - `imports` [EXTRACTED]
-- [[dataactions.ts]] - `contains` [EXTRACTED]
+- [[actions.ts_1]] - `contains` [EXTRACTED]
 - [[getScoresByGame()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx

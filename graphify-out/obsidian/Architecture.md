@@ -1,19 +1,17 @@
 ---
-source_file: "resources/started-games/03-tetris/CLAUDE.md"
+source_file: "resources/started-games/02-asteroids/CLAUDE.md"
 type: "document"
-community: "03-tetris/CLAUDE.md"
-location: "L14"
+community: "02-asteroids/CLAUDE.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03-tetris/CLAUDEmd
+  - community/02-asteroids/CLAUDEmd
 ---
 
 # Architecture
 
 ## Connections
-- [[03-tetrisCLAUDE_1]] - `contains` [EXTRACTED]
-- [[Game flow]] - `contains` [EXTRACTED]
-- [[game.js internals]] - `contains` [EXTRACTED]
+- [[CLAUDE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03-tetris/CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/02-asteroids/CLAUDEmd

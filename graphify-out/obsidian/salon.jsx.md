@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/salon.jsx"
 type: "code"
-community: "salon.jsx"
+community: "home.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/salonjsx
+  - community/homejsx
 ---
 
 # salon.jsx
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HallOfFame()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/salonjsx
+#graphify/code #graphify/EXTRACTED #community/homejsx

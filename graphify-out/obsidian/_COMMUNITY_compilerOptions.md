@@ -8,11 +8,11 @@ members: 29
 **Members:** 29 nodes
 
 ## Members
-- [[dot-mts]] - concept - tsconfig.json
-- [[dot-ts]] - concept - tsconfig.json
-- [[dot-tsx]] - concept - tsconfig.json
-- [[dot-nextdevtypes.ts]] - concept - tsconfig.json
-- [[dot-nexttypes.ts]] - concept - tsconfig.json
+- [[.mts]] - concept - tsconfig.json
+- [[.ts]] - concept - tsconfig.json
+- [[.tsx]] - concept - tsconfig.json
+- [[.nextdevtypes.ts]] - concept - tsconfig.json
+- [[.nexttypes.ts]] - concept - tsconfig.json
 - [[allowJs]] - code - tsconfig.json
 - [[compilerOptions]] - code - tsconfig.json
 - [[dom]] - concept - tsconfig.json

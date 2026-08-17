@@ -12,6 +12,6 @@ tags:
 # app/games/caida/actions.ts
 
 ## Connections
-- [[caidaactions]] - `contains` [EXTRACTED]
+- [[actions_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caida/actionsmd

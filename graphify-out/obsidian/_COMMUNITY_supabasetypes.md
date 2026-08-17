@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[libsupabasetypes.ts]] - document - graft/lib/supabase/types.md
-- [[supabasetypes]] - document - graft/lib/supabase/types.md
+- [[types_4]] - document - graft/lib/supabase/types.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -12,7 +12,7 @@ tags:
 # call_claude()
 
 ## Connections
-- [[Send a prompt to Claude. Prefers the Anthropic SDK when ANTHROPIC_API_KEY is…]] - `rationale_for` [EXTRACTED]
+- [[Send a prompt to Claude.      Prefers the Anthropic SDK when ANTHROPIC_API_KEY]] - `rationale_for` [EXTRACTED]
 - [[compress.py]] - `contains` [EXTRACTED]
 - [[compress_file()]] - `calls` [EXTRACTED]
 - [[strip_llm_wrapper()]] - `calls` [EXTRACTED]

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TopPlayersToday.tsx]] - `contains` [EXTRACTED]
-- [[apppage.tsx_1]] - `imports` [EXTRACTED]
 - [[formatScore()]] - `calls` [EXTRACTED]
+- [[page.tsx_7]] - `imports` [EXTRACTED]
 - [[seededScores()]] - `calls` [EXTRACTED]
 - [[topRankClass()]] - `calls` [EXTRACTED]
 

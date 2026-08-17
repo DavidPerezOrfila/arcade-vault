@@ -1,22 +1,21 @@
 ---
-source_file: "lib/games/caida/game.esm.js"
+source_file: "resources/started-games/03-tetris/game.js"
 type: "code"
-community: "caida/game.esm.js"
-location: "L252"
+community: "03-tetris/game.js"
+location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/caida/gameesmjs
+  - community/03-tetris/gamejs
 ---
 
 # draw()
 
 ## Connections
-- [[caidagame.esm.js]] - `contains` [EXTRACTED]
-- [[drawBlock()]] - `calls` [EXTRACTED]
-- [[drawGrid()]] - `calls` [EXTRACTED]
-- [[ghostY()]] - `calls` [EXTRACTED]
-- [[initGame()_3]] - `calls` [EXTRACTED]
+- [[drawBlock()_1]] - `calls` [EXTRACTED]
+- [[drawGrid()_1]] - `calls` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
+- [[ghostY()_1]] - `calls` [EXTRACTED]
 - [[loop()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs

@@ -12,7 +12,7 @@ tags:
 # useReveal()
 
 ## Connections
-- [[Home()]] - `calls` [EXTRACTED]
+- [[Home()_1]] - `calls` [EXTRACTED]
 - [[home.jsx]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/homejsx

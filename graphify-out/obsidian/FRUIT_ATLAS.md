@@ -1,17 +1,17 @@
 ---
 source_file: "lib/games/serpentina/game.esm.js"
 type: "code"
-community: "serpentina/game.esm.js"
-location: "L21"
+community: "leaderboard.ts"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serpentina/gameesmjs
+  - community/leaderboardts
 ---
 
 # FRUIT_ATLAS
 
 ## Connections
-- [[serpentinagame.esm.js]] - `contains` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

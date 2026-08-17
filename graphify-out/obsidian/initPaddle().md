@@ -12,6 +12,6 @@ tags:
 # initPaddle()
 
 ## Connections
-- [[04-arkanoidgame.js]] - `contains` [EXTRACTED]
+- [[game.js_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs

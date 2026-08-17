@@ -1,18 +1,17 @@
 ---
 source_file: "app/games/GamesClient.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "validate.py"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/validatepy
 ---
 
 # GamesClient()
 
 ## Connections
 - [[GamesClient.tsx]] - `contains` [EXTRACTED]
-- [[gamespage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

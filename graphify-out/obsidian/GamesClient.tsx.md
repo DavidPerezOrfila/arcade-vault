@@ -1,12 +1,12 @@
 ---
 source_file: "app/games/GamesClient.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "validate.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/validatepy
 ---
 
 # GamesClient.tsx
@@ -17,7 +17,7 @@ tags:
 - [[GameCard()]] - `contains` [EXTRACTED]
 - [[GamesClient()]] - `contains` [EXTRACTED]
 - [[GamesClientProps]] - `contains` [EXTRACTED]
-- [[datatypes.ts]] - `imports_from` [EXTRACTED]
-- [[gamespage.tsx]] - `imports_from` [EXTRACTED]
+- [[page.tsx_5]] - `imports_from` [EXTRACTED]
+- [[types.ts_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

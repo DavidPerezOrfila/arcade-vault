@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/caveman-help/README.md"
+source_file: ".agents/skills/caveman-commit/README.md"
 type: "document"
-community: "Caveman Help"
-location: "L9"
+community: "caveman-commit"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Caveman_Help
+  - community/caveman-commit
 ---
 
 # How to invoke
 
 ## Connections
-- [[caveman-help]] - `contains` [EXTRACTED]
+- [[caveman-commit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Caveman_Help
+#graphify/document #graphify/EXTRACTED #community/caveman-commit

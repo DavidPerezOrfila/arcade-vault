@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/caveman-commit/README.md"
+source_file: ".agents/skills/caveman-review/README.md"
 type: "document"
-community: "caveman-commit"
+community: "caveman-review"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/caveman-commit
+  - community/caveman-review
 ---
 
 # What it does
 
 ## Connections
-- [[caveman-commit]] - `contains` [EXTRACTED]
+- [[caveman-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/caveman-commit
+#graphify/document #graphify/EXTRACTED #community/caveman-review

@@ -12,6 +12,6 @@ tags:
 # app/player/[id]/page.tsx
 
 ## Connections
-- [[idpage]] - `contains` [EXTRACTED]
+- [[page_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/id/pagemd

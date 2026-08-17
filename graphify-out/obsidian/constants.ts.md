@@ -14,8 +14,7 @@ tags:
 ## Connections
 - [[AsteroidsGame.tsx]] - `imports_from` [EXTRACTED]
 - [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
-- [[LEADERBOARD_TOP_N]] - `contains` [EXTRACTED]
 - [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
-- [[slugpage.tsx]] - `imports_from` [EXTRACTED]
+- [[page.tsx_2]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

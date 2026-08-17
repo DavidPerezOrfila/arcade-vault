@@ -1,18 +1,17 @@
 ---
 source_file: "app/api/leaderboard/serpentina/route.ts"
 type: "code"
-community: "serpentina/game.esm.js"
+community: "SalonClient.tsx"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serpentina/gameesmjs
+  - community/SalonClienttsx
 ---
 
 # GET()
 
 ## Connections
-- [[getSerpentinaLeaderboard]] - `calls` [EXTRACTED]
-- [[serpentinaroute.ts]] - `contains` [EXTRACTED]
+- [[route.ts_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/SalonClienttsx

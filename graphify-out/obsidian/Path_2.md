@@ -11,8 +11,7 @@ tags:
 # Path
 
 ## Connections
-- [[backup_dir_for()]] - `references` [EXTRACTED]
-- [[compress_file()]] - `references` [EXTRACTED]
-- [[is_sensitive_path()]] - `references` [EXTRACTED]
+- [[detect_file_type()]] - `references` [EXTRACTED]
+- [[should_compress()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/compresspy

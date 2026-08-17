@@ -12,6 +12,6 @@ tags:
 # lib/games/asteroids/types.ts
 
 ## Connections
-- [[asteroidstypes]] - `contains` [EXTRACTED]
+- [[types_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/asteroids/typesmd

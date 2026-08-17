@@ -1,18 +1,18 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "app/page.tsx"
+community: "validate.py"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/validatepy
 ---
 
 # GameFilter
 
 ## Connections
-- [[datatypes.ts]] - `contains` [EXTRACTED]
 - [[games.ts]] - `imports` [EXTRACTED]
+- [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

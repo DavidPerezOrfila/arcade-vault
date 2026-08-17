@@ -76,17 +76,27 @@ obligatorias: sin ellas, Home, `/salon`, `/detalle/[id]`, `/games` y
 - `app/salon/`, `app/about/`, `app/player/[id]/`, `app/auth/` — Feature route segments.
 - `components/games/<slug>/` — `'use client'` canvas component + CSS per game.
 - `components/games/` — Shared hooks (`useArcadeGame.ts`) and UI (`LeaderboardList.tsx`, `AuthPrompt.tsx`).
+- `components/skin/` — Global skin provider (`SkinProvider.tsx`, `useSkin()`) and reusable per-game selector (`SkinSelect.tsx`).
 - `lib/games/<slug>/` — Vanilla JS game engine (`game.esm.js`) + engine types.
+- `lib/games/skins.ts` — Skin ids, persistence key, and per-skin canvas palettes (`PALETTES`). Single source of truth for the three skin styles.
 - `lib/games/leaderboard.ts` — `createLeaderboardActions()` factory.
 - `lib/supabase/` — `server.ts`, `client.ts`, `admin.ts`, generated `types.ts`.
 - `public/` — Static assets served from the root path.
 - `e2e/` — Playwright specs.
 - `resources/templates/` — Reference HTML/JSX prototypes (`Arcade Vault.html`, `app.jsx`, `data.jsx`, `nav.jsx`, `biblioteca.jsx`, `detalle.jsx`, `reproductor.jsx`, `auth.jsx`, `salon.jsx`, `styles.css`). These define the intended screens, game catalog data, and visual style for the Arcade Vault product. Treat them as the design source of truth until formal specs exist.
 - `resources/implemented-games.md` — Source of truth of game status: which slugs are implemented (playable) vs catalogued (no engine yet), with per-game summary, `best` score, category/color, and engine file paths. Consult it before adding or claiming a game is playable.
+- `resources/skins-todo.md` — Rollout ledger for the skin system: per-game clasico/neon/retro coverage table plus run log. Updated by the `skin-designer` agent.
+- `resources/game-suggestions-todo.md` — Pool A/B ranking + run log used by the `game-planner` agent.
 
 ## Skills
 
 Usa siempre /frontend-design para diseñar la interfaz de usuario.
+
+## Agents
+
+- **`game-planner`** (`.claude/agents/game-planner.md`) — decide qué juego encaja con la plataforma como siguiente a implementar. Prioriza los 5 slugs catalogados sin motor (bloque-buster, gloton, invasores, ranaria, duelo-pixel); si ninguno encaja o se agotan, propone juegos retro nuevos. Mantiene memoria persistente en `resources/game-suggestions-todo.md`. Solo recomienda — nunca lanza `/spec` ni escribe código. Usar cuando se pregunte "what game next", "qué juego construimos", "plan next game", o para roadmap del catálogo.
+- **`game-jam`** (`.claude/agents/game-jam.md`) — dado un tema, inventa un juego retro y escribe DOS specs con enfoques técnicos alternativos del mismo juego en `specs/game-jam/<slug>/` (`spec-a.md` + `spec-b.md`, `state: Draft`), siguiendo el formato de specs 07/08 y el engine contract (loop `setTimeout`, `initGame`/`destroy`, 8-file recipe, factory `createLeaderboardActions`). Solo genera specs — nunca implementa ni toca `lib/`, `components/` o `app/`. Usar cuando se pida "game jam", "inventa un juego con tema X", "spec desde un tema", o brainstorm de catálogo con tema como input.
+- **`skin-designer`** (`.claude/agents/skin-designer.md`) — implementa y audita el sistema global de skins. Garantiza que cada juego jugable soporte exactamente los tres skins `clasico` (default), `neon`, `retro` — todos legibles en modo oscuro — con selector global y persistencia en `localStorage`. Mantiene cobertura en `resources/skins-todo.md`. Solo actúa sobre la capa visual (paletas, CSS variables, provider, selector, motores); nunca toca Supabase, scores, auth o leaderboards. Usar cuando se pida crear, revisar, completar o mejorar skins / temas visuales / paletas de un juego.
 
 ## Architecture notes
 
@@ -133,6 +143,29 @@ Engines live in `lib/games/<slug>/game.esm.js` as vanilla ES modules exporting `
 - `destroy()` must be idempotent (guard against null `ctx` after teardown).
 - `onGameOver(score)` fires **once** at terminal state.
 - React loads the engine via dynamic `import()` inside `useEffect` (engine touches `window` — SSR-unsafe).
+
+### Skin system — three styles, global selector, persistence
+
+A typed palette module + a React provider front every playable game with three skin styles — `clasico` (default), `neon`, `retro` — all legible on dark backgrounds. Hard rules, do not regress:
+
+- **Three ids only** (`SkinId = "clasico" | "neon" | "retro"`). No fourth skin, no light mode. `clasico` must reproduce the pre-skin-system appearance of each game.
+- **`lib/games/skins.ts`** is the single source of truth: exports `SKIN_IDS`, `DEFAULT_SKIN`, `SKIN_STORAGE_KEY = "arcade-vault-skin"`, `SKIN_LABELS`, the `SkinPalette` interface (`background | player | enemy | bullet | hudText | accent | particle | thrust | blocks[]`) and the `PALETTES` record. Per-game entities map to these tokens — never hardcode hex inside an engine.
+- **State lives in the DOM** at `<html data-skin="...">`. `<SkinProvider>` (`components/skin/SkinProvider.tsx`, `'use client'`) exposes `useSkin()` via `useSyncExternalStore`; `applySkin()` writes `dataset.skin`, `localStorage`, then notifies listeners (try/catch around `setItem` for incognito).
+- **Anti-FOUC**: `app/layout.tsx` injects a synchronous inline bootstrap `<script>` *before* `<SkinProvider>` that sets `data-skin` from `localStorage` before first paint; invalid values fall back to `clasico`. `<html>` carries `suppressHydrationWarning` to avoid React mismatch warnings on the attribute.
+- **Two selectors, one store**:
+  - Global `<SkinSwitcher>` in `components/nav.tsx`, hidden on `/games/*` via `isGamePage = pathname.startsWith('/games/')` (both desktop nav and mobile aside panel).
+  - Per-game `<SkinSelect classPrefix="<slug>" />` (`components/skin/SkinSelect.tsx`) rendered inside each game's layout. CSS uses the `classPrefix` convention (same as `AuthPrompt` / `LeaderboardList`): each game styles its own bar — no CSS coupling.
+- **Engine contract extension** — engines still expose `initGame(refs, { onGameOver })` and `destroy()`, but `initGame` now also reads `options.skin`:
+
+  ```js
+  import { PALETTES, isSkinId, DEFAULT_SKIN } from '@/lib/games/skins';
+  palette = PALETTES[isSkinId(options.skin) ? options.skin : DEFAULT_SKIN];
+  ```
+
+  React passes `{ skin }` to `initGame` and lists `skin` in `useEffect` deps, so a skin change tears down + restarts the engine (paired `detachInput`, cancelled `setTimeout` handle, idempotent `destroy()`). The chained-`setTimeout` loop, single `onGameOver(score)` fire, and listener pairing from the loop contract above still apply.
+- **CSS layer** — `app/globals.css` defines `:root` (clasico) plus `html[data-skin='neon']` and `html[data-skin='retro']` blocks; per-game CSS adds game-shell wrappers (`{prefix}-skin-bar`, `{prefix}-skin-select`) and any overlay-only treatments (e.g. `repeating-linear-gradient` scanlines for retro Asteroids, `box-shadow` halo for neon canvas). `option { background: var(--bg-2); color: var(--ink); }` is required on every `select` to stop native listboxes rendering white-on-white on dark OS themes.
+
+When adding a new game: copy `<SkinSelect classPrefix="<slug>" />` into its layout, consume `PALETTES[skin]` in the engine, and add a row to `resources/skins-todo.md`. The `skin-designer` agent owns the audit.
 
 ## Spec driven design
 

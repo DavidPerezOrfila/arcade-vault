@@ -1,12 +1,12 @@
 ---
 source_file: "app/_home/RecentActivity.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "reproductor.jsx"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/reproductorjsx
 ---
 
 # gameLabel()
@@ -16,4 +16,4 @@ tags:
 - [[RecentActivity.tsx]] - `contains` [EXTRACTED]
 - [[getGameById()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/reproductorjsx

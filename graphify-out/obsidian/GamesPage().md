@@ -1,18 +1,18 @@
 ---
 source_file: "app/games/page.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "biblioteca.jsx"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/bibliotecajsx
 ---
 
 # GamesPage()
 
 ## Connections
-- [[gamespage.tsx]] - `contains` [EXTRACTED]
 - [[getGames()]] - `calls` [EXTRACTED]
+- [[page.tsx_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

@@ -12,10 +12,10 @@ tags:
 # lockPiece()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
 - [[clearLines()_1]] - `calls` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 - [[hardDrop()_1]] - `calls` [EXTRACTED]
-- [[loop()_4]] - `calls` [EXTRACTED]
+- [[loop()_3]] - `calls` [EXTRACTED]
 - [[merge()_1]] - `calls` [EXTRACTED]
 - [[softDrop()_1]] - `calls` [EXTRACTED]
 - [[spawn()_1]] - `calls` [EXTRACTED]

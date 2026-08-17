@@ -1,20 +1,19 @@
 ---
-source_file: ".claude/skills/playwright-cli/references/session-management.md"
+source_file: ".claude/skills/playwright-cli/references/tracing.md"
 type: "document"
-community: "Browser Session Management"
-location: "L193"
+community: "Tracing"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Session_Management
+  - community/Tracing
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Name Browser Sessions Semantically]] - `contains` [EXTRACTED]
-- [[2. Always Clean Up]] - `contains` [EXTRACTED]
-- [[3. Delete Stale Browser Data]] - `contains` [EXTRACTED]
-- [[Browser Session Management]] - `contains` [EXTRACTED]
+- [[1. Start Tracing Before the Problem]] - `contains` [EXTRACTED]
+- [[2. Clean Up Old Traces]] - `contains` [EXTRACTED]
+- [[Tracing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Session_Management
+#graphify/document #graphify/EXTRACTED #community/Tracing

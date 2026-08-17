@@ -12,7 +12,7 @@ tags:
 # drawGrid()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
-- [[draw()_5]] - `calls` [EXTRACTED]
+- [[draw()_4]] - `calls` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs

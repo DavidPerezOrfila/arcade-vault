@@ -12,6 +12,6 @@ tags:
 # Fase A — Planificar (método /spec)
 
 ## Connections
-- [[Workflow_3]] - `contains` [EXTRACTED]
+- [[Workflow_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Integrate_an_Arcade_Vault_game

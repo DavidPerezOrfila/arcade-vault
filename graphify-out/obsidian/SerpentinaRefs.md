@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[SerpentinaGame.tsx]] - `imports` [EXTRACTED]
-- [[serpentinatypes.ts]] - `contains` [EXTRACTED]
+- [[types.ts_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

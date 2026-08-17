@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appauthpage.tsx]] - document - graft/app/auth/page.md
-- [[authpage]] - document - graft/app/auth/page.md
+- [[page_1]] - document - graft/app/auth/page.md
 
 ## Live Query (requires Dataview plugin)
 

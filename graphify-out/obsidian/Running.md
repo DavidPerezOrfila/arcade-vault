@@ -12,6 +12,6 @@ tags:
 # Running
 
 ## Connections
-- [[02-asteroidsCLAUDE_1]] - `contains` [EXTRACTED]
+- [[CLAUDE_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/02-asteroids/CLAUDEmd

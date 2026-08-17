@@ -1,24 +1,20 @@
 ---
 source_file: "lib/games/leaderboard.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "SalonClient.tsx"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/SalonClienttsx
 ---
 
 # createLeaderboardActions()
 
 ## Connections
-- [[asteroidsactions.ts]] - `imports` [EXTRACTED]
-- [[caidaactions.ts]] - `imports` [EXTRACTED]
-- [[createSupabaseServerClient()]] - `calls` [EXTRACTED]
-- [[getScoresByGame()]] - `calls` [EXTRACTED]
+- [[actions.ts_2]] - `imports` [EXTRACTED]
+- [[actions.ts_3]] - `imports` [EXTRACTED]
+- [[actions.ts_4]] - `imports` [EXTRACTED]
 - [[leaderboard.ts]] - `contains` [EXTRACTED]
-- [[mapToLeaderboardEntry()]] - `calls` [EXTRACTED]
-- [[saveScore()]] - `calls` [EXTRACTED]
-- [[serpentinaactions.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/SalonClienttsx

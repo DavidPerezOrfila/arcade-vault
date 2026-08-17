@@ -8,7 +8,7 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[02-asteroidsgame]] - document - graft/resources/started-games/02-asteroids/game.md
+- [[game_2]] - document - graft/resources/started-games/02-asteroids/game.md
 - [[resourcesstarted-games02-asteroidsgame.js]] - document - graft/resources/started-games/02-asteroids/game.md
 
 ## Live Query (requires Dataview plugin)

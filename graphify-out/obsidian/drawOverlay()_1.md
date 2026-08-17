@@ -1,18 +1,18 @@
 ---
-source_file: "resources/started-games/04-arkanoid/game.js"
+source_file: "resources/started-games/02-asteroids/game.js"
 type: "code"
-community: "04-arkanoid/game.js"
-location: "L199"
+community: "02-asteroids/game.js"
+location: "L470"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/04-arkanoid/gamejs
+  - community/02-asteroids/gamejs
 ---
 
 # drawOverlay()
 
 ## Connections
-- [[04-arkanoidgame.js]] - `contains` [EXTRACTED]
-- [[draw()_1]] - `calls` [EXTRACTED]
+- [[draw()_3]] - `calls` [EXTRACTED]
+- [[game.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs
+#graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs

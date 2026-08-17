@@ -12,10 +12,10 @@ tags:
 # caveman-stats
 
 ## Connections
-- [[Example output_4]] - `contains` [EXTRACTED]
-- [[How to invoke_5]] - `contains` [EXTRACTED]
-- [[See also_5]] - `contains` [EXTRACTED]
-- [[What it does_5]] - `contains` [EXTRACTED]
-- [[caveman-statsREADME]] - `contains` [EXTRACTED]
+- [[Example output_3]] - `contains` [EXTRACTED]
+- [[How to invoke_4]] - `contains` [EXTRACTED]
+- [[README_5]] - `contains` [EXTRACTED]
+- [[See also_4]] - `contains` [EXTRACTED]
+- [[What it does_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman-stats

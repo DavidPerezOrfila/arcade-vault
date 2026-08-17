@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[TopPlayersToday()]] - `contains` [EXTRACTED]
-- [[apppage.tsx_1]] - `imports_from` [EXTRACTED]
 - [[format.ts]] - `imports_from` [EXTRACTED]
 - [[formatScore()]] - `imports` [EXTRACTED]
+- [[page.tsx_7]] - `imports_from` [EXTRACTED]
 - [[players.ts]] - `imports_from` [EXTRACTED]
 - [[seededScores()]] - `imports` [EXTRACTED]
 - [[topRankClass()]] - `imports` [EXTRACTED]

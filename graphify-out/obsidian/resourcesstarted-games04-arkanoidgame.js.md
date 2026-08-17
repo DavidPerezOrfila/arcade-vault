@@ -12,6 +12,6 @@ tags:
 # resources/started-games/04-arkanoid/game.js
 
 ## Connections
-- [[04-arkanoidgame]] - `contains` [EXTRACTED]
+- [[game_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/04-arkanoid/gamemd

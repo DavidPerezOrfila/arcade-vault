@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ContactForm.tsx]] - `imports` [EXTRACTED]
 - [[ContactFormProps]] - `references` [EXTRACTED]
-- [[aboutactions.ts]] - `imports` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports` [EXTRACTED]
-- [[abouttypes.ts]] - `contains` [EXTRACTED]
+- [[actions.ts]] - `imports` [EXTRACTED]
+- [[page.tsx]] - `imports` [EXTRACTED]
+- [[types.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

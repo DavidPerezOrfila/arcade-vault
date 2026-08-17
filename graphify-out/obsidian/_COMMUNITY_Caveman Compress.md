@@ -8,7 +8,7 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Boundaries]] - document - .agents/skills/caveman-compress/SKILL.md
+- [[Boundaries_1]] - document - .agents/skills/caveman-compress/SKILL.md
 - [[Caveman Compress]] - document - .agents/skills/caveman-compress/SKILL.md
 - [[Compress]] - document - .agents/skills/caveman-compress/SKILL.md
 - [[Compression Rules]] - document - .agents/skills/caveman-compress/SKILL.md
@@ -18,8 +18,8 @@ members: 12
 - [[Process]] - document - .agents/skills/caveman-compress/SKILL.md
 - [[Purpose]] - document - .agents/skills/caveman-compress/SKILL.md
 - [[Remove]] - document - .agents/skills/caveman-compress/SKILL.md
+- [[SKILL_2]] - document - .agents/skills/caveman-compress/SKILL.md
 - [[Trigger]] - document - .agents/skills/caveman-compress/SKILL.md
-- [[caveman-compressSKILL]] - document - .agents/skills/caveman-compress/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

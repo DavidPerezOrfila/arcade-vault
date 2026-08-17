@@ -12,6 +12,6 @@ tags:
 # app/about/schema.ts
 
 ## Connections
-- [[aboutschema]] - `contains` [EXTRACTED]
+- [[schema]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/about/schemamd

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[aboutschema]] - document - graft/app/about/schema.md
 - [[appaboutschema.ts]] - document - graft/app/about/schema.md
+- [[schema]] - document - graft/app/about/schema.md
 
 ## Live Query (requires Dataview plugin)
 

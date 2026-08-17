@@ -22,10 +22,10 @@ tags:
 - [[Open parameters]] - `contains` [EXTRACTED]
 - [[Quick start]] - `contains` [EXTRACTED]
 - [[Raw output]] - `contains` [EXTRACTED]
+- [[SKILL_8]] - `contains` [EXTRACTED]
 - [[Snapshots]] - `contains` [EXTRACTED]
 - [[Specific tasks]] - `contains` [EXTRACTED]
 - [[Targeting elements]] - `contains` [EXTRACTED]
 - [[URLs with `&` on Windows]] - `contains` [EXTRACTED]
-- [[playwright-cliSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser_Automation_with_playwright-cli

@@ -12,8 +12,8 @@ tags:
 # Security Policy
 
 ## Connections
-- [[Reporting a Vulnerability]] - `contains` [EXTRACTED]
-- [[SECURITY]] - `contains` [EXTRACTED]
+- [[Reporting a Vulnerability_1]] - `contains` [EXTRACTED]
+- [[SECURITY_3]] - `contains` [EXTRACTED]
 - [[Supported Versions]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Security_Policy

@@ -2,7 +2,7 @@
 source_file: "app/games/asteroids/page.tsx"
 type: "code"
 community: "CaidaGame.tsx"
-location: "L21"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # AsteroidsPage()
 
 ## Connections
-- [[asteroidspage.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

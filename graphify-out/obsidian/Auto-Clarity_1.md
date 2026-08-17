@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/caveman-commit/SKILL.md"
+source_file: ".agents/skills/caveman-review/SKILL.md"
 type: "document"
-community: "caveman-commit"
-location: "L59"
+community: "caveman-review"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/caveman-commit
+  - community/caveman-review
 ---
 
 # Auto-Clarity
 
 ## Connections
-- [[caveman-commitSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/caveman-commit
+#graphify/document #graphify/EXTRACTED #community/caveman-review

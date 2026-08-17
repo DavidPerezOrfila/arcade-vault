@@ -12,7 +12,7 @@ tags:
 # compress_file()
 
 ## Connections
-- [[Path_2]] - `references` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[backup_dir_for()]] - `calls` [EXTRACTED]
 - [[build_compress_prompt()]] - `calls` [EXTRACTED]
 - [[build_fix_prompt()]] - `calls` [EXTRACTED]

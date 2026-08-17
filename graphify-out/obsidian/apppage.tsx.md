@@ -12,6 +12,6 @@ tags:
 # app/page.tsx
 
 ## Connections
-- [[apppage]] - `contains` [EXTRACTED]
+- [[page_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/app/pagemd

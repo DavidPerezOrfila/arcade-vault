@@ -12,6 +12,6 @@ tags:
 # DetailPageProps
 
 ## Connections
-- [[slugpage.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx
