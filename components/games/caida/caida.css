@@ -127,14 +127,16 @@
   width: 100%;
 }
 
+/* Barra a ancho completo: llena la columna del panel (HUD / SIGUIENTE). */
 .caida-skin-bar {
   display: flex;
-  justify-content: flex-end;
 }
 
 .caida-skin-select {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex: 1;
   gap: 0.5rem;
   padding: 0.375rem 0.5rem;
   background: var(--bg-2);

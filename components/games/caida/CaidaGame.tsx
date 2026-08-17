@@ -118,8 +118,6 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
 
   return (
     <div className='caida-game-layout'>
-      <SkinSelect classPrefix='caida' />
-
       <div className='caida-game-container'>
         <div className='caida-board-wrap'>
           <canvas
@@ -152,6 +150,8 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
         </div>
 
         <div className='caida-panel'>
+          <SkinSelect classPrefix='caida' />
+
           <div className='caida-hud'>
             <div className='caida-hud-item'>
               <span>PUNTOS</span>
