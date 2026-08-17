@@ -1,18 +1,18 @@
 ---
-source_file: "lib/games/asteroids/game.esm.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "asteroids/game.esm.js"
-location: "L553"
+community: "caida/game.esm.js"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asteroids/gameesmjs
+  - community/caida/gameesmjs
 ---
 
 # destroy()
 
 ## Connections
-- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
 - [[detachInput()_1]] - `calls` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

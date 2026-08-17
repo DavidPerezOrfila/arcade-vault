@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1786809520.5053682,
-    "ast_hash": "fbc8550e2cdff1efeb2df0a4fa1174e4",
+    "mtime": 1786916494.5103767,
+    "ast_hash": "e2b472609e365f85571c0b4bada156fd",
     "semantic_hash": ""
   },
   "app/page.tsx": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "components/nav.tsx": {
-    "mtime": 1786809552.9476678,
-    "ast_hash": "50da4a0bbc7863841330ecf40d0481cd",
+    "mtime": 1786916494.5103767,
+    "ast_hash": "c280aa4e557c231705aaf8a5ec67419f",
     "semantic_hash": ""
   },
   "eslint.config.mjs": {
@@ -265,8 +265,8 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1786806928.9211845,
-    "ast_hash": "b82fc66f05e030400032c4f98c78e7d8",
+    "mtime": 1786872879.9538026,
+    "ast_hash": "629b36a2211b815166aaabd0024e8231",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -600,8 +600,8 @@
     "semantic_hash": ""
   },
   "app/games/asteroids/page.tsx": {
-    "mtime": 1786809783.8533967,
-    "ast_hash": "e82e7abcade3c026b4886532aab8ec24",
+    "mtime": 1786916494.5103767,
+    "ast_hash": "3a40014ad8680ac6227cf281e023510f",
     "semantic_hash": ""
   },
   "app/player/[id]/PlayerClient.tsx": {
@@ -615,13 +615,13 @@
     "semantic_hash": ""
   },
   "components/games/asteroids/AsteroidsGame.tsx": {
-    "mtime": 1786809705.4826746,
-    "ast_hash": "015389c9cabea6b8147f35c35da86909",
+    "mtime": 1786917078.8889873,
+    "ast_hash": "cbb1285c759e6976dc6af9ba3d803b36",
     "semantic_hash": ""
   },
   "lib/games/asteroids/game.esm.js": {
-    "mtime": 1786809682.8582053,
-    "ast_hash": "bfa8787a03e0a316ea80dc797b328d2e",
+    "mtime": 1786810691.3812337,
+    "ast_hash": "537551e6c155fd33f193be1b9e5a60be",
     "semantic_hash": ""
   },
   "lib/games/asteroids/types.ts": {
@@ -630,18 +630,18 @@
     "semantic_hash": ""
   },
   "lib/supabase/admin.ts": {
-    "mtime": 1786806929.0002177,
-    "ast_hash": "a890efd8204d080bc8a2ef20d02e5ced",
+    "mtime": 1786810691.3812337,
+    "ast_hash": "08fb4eb0763a19769ae3260b7904aa95",
     "semantic_hash": ""
   },
   "lib/supabase/client.ts": {
-    "mtime": 1786806929.0012176,
-    "ast_hash": "b68d56ecf178861ba0fb146ca06447f4",
+    "mtime": 1786810691.3817341,
+    "ast_hash": "492ea4667ac90467249025245aed655e",
     "semantic_hash": ""
   },
   "lib/supabase/server.ts": {
-    "mtime": 1786806929.0022175,
-    "ast_hash": "e6638a9e3f0d23ebf6d5aa1369b90b2a",
+    "mtime": 1786810691.3812337,
+    "ast_hash": "c4a2dc4a160c691df94f04dadd10bd82",
     "semantic_hash": ""
   },
   "lib/supabase/types.ts": {
@@ -665,8 +665,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/asteroids.spec.ts": {
-    "mtime": 1786806929.0752542,
-    "ast_hash": "2d27fea46be9871ac001d84834fed8e9",
+    "mtime": 1786917231.845502,
+    "ast_hash": "631461363117cd33847129ffa333974d",
     "semantic_hash": ""
   },
   "tests/e2e/salon.spec.ts": {
@@ -835,13 +835,13 @@
     "semantic_hash": ""
   },
   "components/games/caida/CaidaGame.tsx": {
-    "mtime": 1786806928.9702177,
-    "ast_hash": "25076fe856c4ff3c40f47baa06af571e",
+    "mtime": 1786917078.878462,
+    "ast_hash": "b1354c73533085d1a427c4797ffca11b",
     "semantic_hash": ""
   },
   "lib/games/caida/game.esm.js": {
-    "mtime": 1786806928.9972177,
-    "ast_hash": "be2c8c860a26b3e432bf617693ae996d",
+    "mtime": 1786917056.2223542,
+    "ast_hash": "18c8e1a9d64dd9b675b7b6c57c4d3c04",
     "semantic_hash": ""
   },
   "lib/games/caida/types.ts": {
@@ -930,8 +930,8 @@
     "semantic_hash": ""
   },
   "graft/.graph/wiring.json": {
-    "mtime": 1786806928.9892175,
-    "ast_hash": "c19ede8259124da0fbd0c509ef46a68c",
+    "mtime": 1786916356.0630991,
+    "ast_hash": "b98f7a37e3a2ea9357572c5b80770a87",
     "semantic_hash": ""
   },
   "lib/env.ts": {
@@ -1350,13 +1350,13 @@
     "semantic_hash": ""
   },
   "components/games/serpentina/SerpentinaGame.tsx": {
-    "mtime": 1786806928.9712186,
-    "ast_hash": "4f7c2b228ab8658b1fa0bb271d77c416",
+    "mtime": 1786917078.8849864,
+    "ast_hash": "35b025f2f333de951a14a3916cd1cccf",
     "semantic_hash": ""
   },
   "lib/games/serpentina/game.esm.js": {
-    "mtime": 1786657422.0869591,
-    "ast_hash": "b015081eff2d49bfd6b1e5b22833477f",
+    "mtime": 1786917056.237392,
+    "ast_hash": "dbf0fb59d13b985b4b36693396740d69",
     "semantic_hash": ""
   },
   "lib/games/serpentina/types.ts": {
@@ -1385,13 +1385,13 @@
     "semantic_hash": ""
   },
   "components/skin/SkinProvider.tsx": {
-    "mtime": 1786810003.7147982,
+    "mtime": 1786916494.5103767,
     "ast_hash": "138543412234378385131c3282f0c87e",
     "semantic_hash": ""
   },
   "lib/games/skins.ts": {
-    "mtime": 1786809502.61084,
-    "ast_hash": "54cf6fbe75d96e051cfde6d73a4bcfb9",
+    "mtime": 1786917056.2153537,
+    "ast_hash": "0d5c373ec48bba8ba0515589672a8b19",
     "semantic_hash": ""
   },
   ".claude/agents/game-jam.md": {
@@ -1405,8 +1405,8 @@
     "semantic_hash": ""
   },
   ".claude/agents/skin-designer.md": {
-    "mtime": 1786808881.624246,
-    "ast_hash": "8dd545767e5b69071823bad9f2847048",
+    "mtime": 1786872072.320148,
+    "ast_hash": "d8230b16061a2f0cc3112a0b81d998a1",
     "semantic_hash": ""
   },
   "resources/game-suggestions-todo.md": {
@@ -1415,8 +1415,13 @@
     "semantic_hash": ""
   },
   "resources/skins-todo.md": {
-    "mtime": 1786809792.725232,
-    "ast_hash": "5efd84a046deff8f2d9998049575f8de",
+    "mtime": 1786872453.7794683,
+    "ast_hash": "bb33e1769f12c664723d47fa5222f68b",
+    "semantic_hash": ""
+  },
+  "components/skin/SkinSelect.tsx": {
+    "mtime": 1786917078.859437,
+    "ast_hash": "a1c4b500bc3eabe31434c9aa550126dd",
     "semantic_hash": ""
   }
 }

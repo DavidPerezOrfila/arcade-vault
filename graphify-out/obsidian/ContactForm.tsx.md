@@ -19,7 +19,7 @@ tags:
 - [[FormFields]] - `contains` [EXTRACTED]
 - [[SuccessTerminal()]] - `imports` [EXTRACTED]
 - [[SuccessTerminal.tsx]] - `imports_from` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports_from` [EXTRACTED]
-- [[abouttypes.ts]] - `imports_from` [EXTRACTED]
+- [[page.tsx]] - `imports_from` [EXTRACTED]
+- [[types.ts]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

@@ -12,10 +12,10 @@ tags:
 # caveman
 
 ## Connections
-- [[Example output_1]] - `contains` [EXTRACTED]
-- [[How to invoke_2]] - `contains` [EXTRACTED]
-- [[See also_2]] - `contains` [EXTRACTED]
-- [[What it does_2]] - `contains` [EXTRACTED]
-- [[cavemanREADME]] - `contains` [EXTRACTED]
+- [[Example output_4]] - `contains` [EXTRACTED]
+- [[How to invoke_5]] - `contains` [EXTRACTED]
+- [[README_6]] - `contains` [EXTRACTED]
+- [[See also_5]] - `contains` [EXTRACTED]
+- [[What it does_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman/SKILLmd

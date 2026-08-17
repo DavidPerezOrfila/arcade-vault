@@ -1,17 +1,17 @@
 ---
-source_file: "workflows/opencode-loop.md"
+source_file: "workflows/issue-loop.md"
 type: "document"
-community: "Workflow: opencode-loop"
-location: "L15"
+community: "Workflow: issue-loop"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_opencode-loop
+  - community/Workflow_issue-loop
 ---
 
 # Flujo
 
 ## Connections
-- [[Workflow opencode-loop]] - `contains` [EXTRACTED]
+- [[Workflow issue-loop]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_opencode-loop
+#graphify/document #graphify/EXTRACTED #community/Workflow_issue-loop

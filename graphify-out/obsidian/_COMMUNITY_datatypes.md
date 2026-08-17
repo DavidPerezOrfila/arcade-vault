@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appdatatypes.ts]] - document - graft/app/data/types.md
-- [[datatypes]] - document - graft/app/data/types.md
+- [[types_1]] - document - graft/app/data/types.md
 
 ## Live Query (requires Dataview plugin)
 

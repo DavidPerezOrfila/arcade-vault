@@ -12,7 +12,7 @@ tags:
 # useReveal.ts
 
 ## Connections
-- [[aboutpage.tsx]] - `imports_from` [EXTRACTED]
+- [[page.tsx]] - `imports_from` [EXTRACTED]
 - [[useReveal()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

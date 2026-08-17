@@ -12,7 +12,7 @@ tags:
 # should_compress()
 
 ## Connections
-- [[Path_3]] - `references` [EXTRACTED]
+- [[Path_2]] - `references` [EXTRACTED]
 - [[Return True if the file is natural language and should be compressed.]] - `rationale_for` [EXTRACTED]
 - [[cli.py]] - `imports` [EXTRACTED]
 - [[compress.py]] - `imports` [EXTRACTED]

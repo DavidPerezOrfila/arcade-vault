@@ -1,13 +1,18 @@
 ---
-source_file: "next"
+source_file: "package.json"
 type: "code"
-community: "next"
+community: "scripts"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/next
+  - community/scripts
 ---
 
 # next
 
-#graphify/code #graphify/EXTRACTED #community/next
+## Connections
+- [[dependencies]] - `contains` [EXTRACTED]
+- [[next_1]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/scripts

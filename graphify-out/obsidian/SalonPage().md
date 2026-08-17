@@ -1,18 +1,18 @@
 ---
 source_file: "app/salon/page.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "biblioteca.jsx"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/bibliotecajsx
 ---
 
 # SalonPage()
 
 ## Connections
 - [[getGames()]] - `calls` [EXTRACTED]
-- [[salonpage.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_9]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

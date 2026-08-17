@@ -12,6 +12,6 @@ tags:
 # Eres un agente de codificación experto en clean code
 
 ## Connections
-- [[instructions_1]] - `contains` [EXTRACTED]
+- [[instructions]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/instructionsmd

@@ -12,6 +12,6 @@ tags:
 # Part of Caveman
 
 ## Connections
-- [[caveman-compressREADME]] - `contains` [EXTRACTED]
+- [[README_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman-compress/READMEmd

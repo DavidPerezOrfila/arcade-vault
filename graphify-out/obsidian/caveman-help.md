@@ -12,10 +12,10 @@ tags:
 # caveman-help
 
 ## Connections
-- [[Example output]] - `contains` [EXTRACTED]
-- [[How to invoke_1]] - `contains` [EXTRACTED]
-- [[See also_1]] - `contains` [EXTRACTED]
-- [[What it does_1]] - `contains` [EXTRACTED]
-- [[caveman-helpREADME]] - `contains` [EXTRACTED]
+- [[Example output_1]] - `contains` [EXTRACTED]
+- [[How to invoke_2]] - `contains` [EXTRACTED]
+- [[README_3]] - `contains` [EXTRACTED]
+- [[See also_2]] - `contains` [EXTRACTED]
+- [[What it does_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Caveman_Help

@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appapileaderboardcaidaroute.ts]] - document - graft/app/api/leaderboard/caida/route.md
-- [[caidaroute]] - document - graft/app/api/leaderboard/caida/route.md
+- [[route_1]] - document - graft/app/api/leaderboard/caida/route.md
 
 ## Live Query (requires Dataview plugin)
 

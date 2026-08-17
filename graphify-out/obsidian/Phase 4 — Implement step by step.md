@@ -12,6 +12,6 @@ tags:
 # Phase 4 — Implement step by step
 
 ## Connections
-- [[Instructions]] - `contains` [EXTRACTED]
+- [[Instructions_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Instructions

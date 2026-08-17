@@ -12,6 +12,6 @@ tags:
 # lib/games/caida/game.esm.js
 
 ## Connections
-- [[caidagame.esm]] - `contains` [EXTRACTED]
+- [[game.esm_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caida/gameesmmd

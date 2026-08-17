@@ -12,6 +12,6 @@ tags:
 # ContactFormInput
 
 ## Connections
-- [[abouttypes.ts]] - `contains` [EXTRACTED]
+- [[types.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

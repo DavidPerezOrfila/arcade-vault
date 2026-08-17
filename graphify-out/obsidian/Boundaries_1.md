@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/caveman/SKILL.md"
+source_file: ".agents/skills/caveman-compress/SKILL.md"
 type: "document"
-community: "caveman/SKILL.md"
-location: "L76"
+community: "Caveman Compress"
+location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/caveman/SKILLmd
+  - community/Caveman_Compress
 ---
 
 # Boundaries
 
 ## Connections
-- [[cavemanSKILL]] - `contains` [EXTRACTED]
+- [[Caveman Compress]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/caveman/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Caveman_Compress

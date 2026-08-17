@@ -4,7 +4,7 @@ type: "document"
 community: "Spec Design Skill"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/Spec_Design_Skill
 ---
 
@@ -14,4 +14,4 @@ tags:
 - [[Spec Design Skill]] - `references` [EXTRACTED]
 - [[Spec-Driven Development]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Spec_Design_Skill
+#graphify/document #graphify/INFERRED #community/Spec_Design_Skill

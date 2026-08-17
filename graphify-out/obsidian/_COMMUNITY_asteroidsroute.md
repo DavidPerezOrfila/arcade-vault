@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appapileaderboardasteroidsroute.ts]] - document - graft/app/api/leaderboard/asteroids/route.md
-- [[asteroidsroute]] - document - graft/app/api/leaderboard/asteroids/route.md
+- [[route]] - document - graft/app/api/leaderboard/asteroids/route.md
 
 ## Live Query (requires Dataview plugin)
 

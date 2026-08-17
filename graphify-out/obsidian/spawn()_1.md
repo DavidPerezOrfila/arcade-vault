@@ -12,10 +12,10 @@ tags:
 # spawn()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
 - [[collide()_1]] - `calls` [EXTRACTED]
 - [[drawNext()_1]] - `calls` [EXTRACTED]
 - [[endGame()_2]] - `calls` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 - [[init()]] - `calls` [EXTRACTED]
 - [[lockPiece()_1]] - `calls` [EXTRACTED]
 - [[randomPiece()_1]] - `calls` [EXTRACTED]

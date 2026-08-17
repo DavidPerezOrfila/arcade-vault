@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/players.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "validate.py"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/validatepy
 ---
 
 # PLAYERS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[players.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/validatepy

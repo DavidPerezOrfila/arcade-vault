@@ -1,19 +1,19 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # ScoreEntry
 
 ## Connections
-- [[datatypes.ts]] - `contains` [EXTRACTED]
 - [[leaderboard.ts]] - `imports` [EXTRACTED]
 - [[scores.ts]] - `imports` [EXTRACTED]
+- [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

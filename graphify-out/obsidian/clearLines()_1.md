@@ -12,7 +12,7 @@ tags:
 # clearLines()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 - [[lockPiece()_1]] - `calls` [EXTRACTED]
 - [[updateHUD()_2]] - `calls` [EXTRACTED]
 

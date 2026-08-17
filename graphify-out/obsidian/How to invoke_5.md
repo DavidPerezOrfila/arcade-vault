@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/caveman-stats/README.md"
+source_file: ".agents/skills/caveman/README.md"
 type: "document"
-community: "caveman-stats"
-location: "L11"
+community: "caveman/SKILL.md"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/caveman-stats
+  - community/caveman/SKILLmd
 ---
 
 # How to invoke
 
 ## Connections
-- [[caveman-stats]] - `contains` [EXTRACTED]
+- [[caveman]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/caveman-stats
+#graphify/document #graphify/EXTRACTED #community/caveman/SKILLmd

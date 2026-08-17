@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
+- [[actions_5]] - document - graft/app/games/asteroids/actions.md
 - [[appgamesasteroidsactions.ts]] - document - graft/app/games/asteroids/actions.md
-- [[asteroidsactions]] - document - graft/app/games/asteroids/actions.md
 
 ## Live Query (requires Dataview plugin)
 

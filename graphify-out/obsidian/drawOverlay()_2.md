@@ -1,18 +1,18 @@
 ---
-source_file: "lib/games/asteroids/game.esm.js"
+source_file: "resources/started-games/04-arkanoid/game.js"
 type: "code"
-community: "asteroids/game.esm.js"
-location: "L495"
+community: "04-arkanoid/game.js"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asteroids/gameesmjs
+  - community/04-arkanoid/gamejs
 ---
 
 # drawOverlay()
 
 ## Connections
-- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
-- [[draw()_3]] - `calls` [EXTRACTED]
+- [[draw()_5]] - `calls` [EXTRACTED]
+- [[game.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs

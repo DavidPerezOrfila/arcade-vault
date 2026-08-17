@@ -15,8 +15,8 @@ tags:
 - [[Example chaining]] - `contains` [EXTRACTED]
 - [[How to invoke]] - `contains` [EXTRACTED]
 - [[Model overrides]] - `contains` [EXTRACTED]
+- [[README]] - `contains` [EXTRACTED]
 - [[See also]] - `contains` [EXTRACTED]
 - [[What it does]] - `contains` [EXTRACTED]
-- [[cavecrewREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

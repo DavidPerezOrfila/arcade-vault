@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[RevealDivider.tsx]] - `contains` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports` [EXTRACTED]
+- [[page.tsx]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

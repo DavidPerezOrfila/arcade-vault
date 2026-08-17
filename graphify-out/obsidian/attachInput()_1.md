@@ -1,20 +1,19 @@
 ---
-source_file: "lib/games/asteroids/game.esm.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "asteroids/game.esm.js"
-location: "L60"
+community: "caida/game.esm.js"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asteroids/gameesmjs
+  - community/caida/gameesmjs
 ---
 
 # attachInput()
 
 ## Connections
-- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
-- [[handleKeyDown()]] - `indirect_call` [INFERRED]
-- [[handleKeyUp()]] - `indirect_call` [INFERRED]
-- [[initGame()_2]] - `calls` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[initGame()_1]] - `calls` [EXTRACTED]
+- [[onKeyDown()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

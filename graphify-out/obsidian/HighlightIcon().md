@@ -1,17 +1,18 @@
 ---
-source_file: "resources/templates/home-about/about.jsx"
+source_file: "app/about/highlight-icon.tsx"
 type: "code"
-community: "about.jsx"
-location: "L190"
+community: "about/page.tsx"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/aboutjsx
+  - community/about/pagetsx
 ---
 
 # HighlightIcon()
 
 ## Connections
-- [[about.jsx]] - `contains` [EXTRACTED]
+- [[HeroSection.tsx]] - `imports` [EXTRACTED]
+- [[highlight-icon.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/aboutjsx
+#graphify/code #graphify/EXTRACTED #community/about/pagetsx

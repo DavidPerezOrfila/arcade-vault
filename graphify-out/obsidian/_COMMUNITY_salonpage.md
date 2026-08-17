@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appsalonpage.tsx]] - document - graft/app/salon/page.md
-- [[salonpage]] - document - graft/app/salon/page.md
+- [[page_8]] - document - graft/app/salon/page.md
 
 ## Live Query (requires Dataview plugin)
 

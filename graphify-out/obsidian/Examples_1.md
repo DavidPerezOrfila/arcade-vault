@@ -12,6 +12,6 @@ tags:
 # Examples
 
 ## Connections
-- [[caveman-reviewSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman-review

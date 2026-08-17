@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/detalle.jsx"
 type: "code"
-community: "detalle.jsx"
+community: "home.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detallejsx
+  - community/homejsx
 ---
 
 # detalle.jsx
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GameDetail()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detallejsx
+#graphify/code #graphify/EXTRACTED #community/homejsx

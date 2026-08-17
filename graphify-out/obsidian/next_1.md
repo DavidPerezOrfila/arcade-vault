@@ -1,10 +1,10 @@
 ---
 source_file: "package.json"
-type: "code"
+type: "concept"
 community: "scripts"
 location: "L28"
 tags:
-  - graphify/code
+  - graphify/concept
   - graphify/EXTRACTED
   - community/scripts
 ---
@@ -12,7 +12,6 @@ tags:
 # next
 
 ## Connections
-- [[dependencies]] - `contains` [EXTRACTED]
-- [[next_2]] - `imports` [EXTRACTED]
+- [[next]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts
+#graphify/concept #graphify/EXTRACTED #community/scripts

@@ -12,13 +12,13 @@ tags:
 # Asteroids
 
 ## Connections
-- [[02-asteroidsREADME]] - `contains` [EXTRACTED]
 - [[Características]] - `contains` [EXTRACTED]
-- [[Controles_1]] - `contains` [EXTRACTED]
+- [[Controles]] - `contains` [EXTRACTED]
 - [[Cómo correr]] - `contains` [EXTRACTED]
 - [[Demo]] - `contains` [EXTRACTED]
 - [[Descripción]] - `contains` [EXTRACTED]
 - [[Puntuación]] - `contains` [EXTRACTED]
-- [[Tecnologías_1]] - `contains` [EXTRACTED]
+- [[README_7]] - `contains` [EXTRACTED]
+- [[Tecnologías]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Asteroids

@@ -12,11 +12,11 @@ tags:
 # DetailPage()
 
 ## Connections
-- [[slugpage.tsx]] - `contains` [EXTRACTED]
 - [[formatDate()]] - `calls` [EXTRACTED]
 - [[formatScore()]] - `calls` [EXTRACTED]
 - [[getGameBySlug()]] - `calls` [EXTRACTED]
 - [[getScoresByGame()]] - `calls` [EXTRACTED]
+- [[page.tsx_2]] - `contains` [EXTRACTED]
 - [[topRankClass()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx

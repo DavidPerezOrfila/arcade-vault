@@ -12,6 +12,6 @@ tags:
 # app/api/leaderboard/caida/route.ts
 
 ## Connections
-- [[caidaroute]] - `contains` [EXTRACTED]
+- [[route_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caida/routemd

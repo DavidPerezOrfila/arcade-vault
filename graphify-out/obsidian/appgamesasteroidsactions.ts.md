@@ -12,6 +12,6 @@ tags:
 # app/games/asteroids/actions.ts
 
 ## Connections
-- [[asteroidsactions]] - `contains` [EXTRACTED]
+- [[actions_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/asteroids/actionsmd

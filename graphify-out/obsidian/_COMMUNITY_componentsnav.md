@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[componentsnav]] - document - graft/components/nav.md
 - [[componentsnav.tsx]] - document - graft/components/nav.md
+- [[nav]] - document - graft/components/nav.md
 
 ## Live Query (requires Dataview plugin)
 

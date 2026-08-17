@@ -1,23 +1,22 @@
 ---
 source_file: "app/data/scores.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # saveScore()
 
 ## Connections
-- [[createLeaderboardActions()]] - `calls` [EXTRACTED]
+- [[actions.ts_1]] - `imports` [EXTRACTED]
 - [[createSupabaseServerClient()]] - `calls` [EXTRACTED]
-- [[dataactions.ts]] - `imports` [EXTRACTED]
 - [[leaderboard.ts]] - `imports` [EXTRACTED]
 - [[rowToEntry()]] - `calls` [EXTRACTED]
 - [[saveScoreAction()]] - `calls` [EXTRACTED]
 - [[scores.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

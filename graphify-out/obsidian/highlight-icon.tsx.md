@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[HeroSection.tsx]] - `imports_from` [EXTRACTED]
-- [[HighlightIcon()_1]] - `contains` [EXTRACTED]
+- [[HighlightIcon()]] - `contains` [EXTRACTED]
 - [[HighlightIconKind]] - `contains` [EXTRACTED]
 - [[HighlightIconProps]] - `contains` [EXTRACTED]
 

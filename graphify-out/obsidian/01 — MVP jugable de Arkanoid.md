@@ -15,7 +15,7 @@ tags:
 - [[01-mvp-arkanoid]] - `contains` [EXTRACTED]
 - [[Alcance]] - `contains` [EXTRACTED]
 - [[Criterios de aceptación]] - `contains` [EXTRACTED]
-- [[Decisiones tomadas y descartadas_1]] - `contains` [EXTRACTED]
+- [[Decisiones tomadas y descartadas]] - `contains` [EXTRACTED]
 - [[Modelo de datos]] - `contains` [EXTRACTED]
 - [[Plan de implementación]] - `contains` [EXTRACTED]
 

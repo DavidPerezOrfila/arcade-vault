@@ -12,7 +12,7 @@ tags:
 # Usage
 
 ## Connections
+- [[README_2]] - `contains` [EXTRACTED]
 - [[What files work]] - `contains` [EXTRACTED]
-- [[caveman-compressREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman-compress/READMEmd

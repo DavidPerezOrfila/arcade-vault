@@ -12,6 +12,6 @@ tags:
 # lib/games/asteroids/game.esm.js
 
 ## Connections
-- [[asteroidsgame.esm]] - `contains` [EXTRACTED]
+- [[game.esm]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/asteroids/gameesmmd

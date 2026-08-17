@@ -1,12 +1,12 @@
 ---
 source_file: "app/_home/RecentActivity.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "reproductor.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/reproductorjsx
 ---
 
 # RecentActivity.tsx
@@ -16,12 +16,12 @@ tags:
 - [[RecentActivity()]] - `contains` [EXTRACTED]
 - [[TimeAgo()]] - `imports` [EXTRACTED]
 - [[TimeAgo.tsx]] - `imports_from` [EXTRACTED]
-- [[apppage.tsx_1]] - `imports_from` [EXTRACTED]
 - [[gameLabel()]] - `contains` [EXTRACTED]
 - [[games.ts]] - `imports_from` [EXTRACTED]
 - [[getGameById()]] - `imports` [EXTRACTED]
 - [[getScores()]] - `imports` [EXTRACTED]
+- [[page.tsx_7]] - `imports_from` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
 - [[tone()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/reproductorjsx

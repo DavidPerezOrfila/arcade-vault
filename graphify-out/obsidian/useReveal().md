@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AboutPage()]] - `calls` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports` [EXTRACTED]
+- [[page.tsx]] - `imports` [EXTRACTED]
 - [[useReveal.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

@@ -12,8 +12,8 @@ tags:
 # detect_file_type()
 
 ## Connections
-- [[Classify a file as 'natural_language', 'code', 'config', or 'unknown'. Returns…]] - `rationale_for` [EXTRACTED]
-- [[Path_3]] - `references` [EXTRACTED]
+- [[Classify a file as 'natural_language', 'code', 'config', or 'unknown'.      Re]] - `rationale_for` [EXTRACTED]
+- [[Path_2]] - `references` [EXTRACTED]
 - [[_is_code_line()]] - `calls` [EXTRACTED]
 - [[_is_json_content()]] - `calls` [EXTRACTED]
 - [[_is_yaml_content()]] - `calls` [EXTRACTED]

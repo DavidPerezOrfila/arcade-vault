@@ -1,19 +1,25 @@
 ---
-source_file: "lib/games/serpentina/game.esm.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "serpentina/game.esm.js"
-location: "L201"
+community: "caida/game.esm.js"
+location: "L338"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/serpentina/gameesmjs
+  - graphify/EXTRACTED
+  - community/caida/gameesmjs
 ---
 
 # onKeyDown()
 
 ## Connections
-- [[attachInput()]] - `indirect_call` [INFERRED]
-- [[detachInput()]] - `indirect_call` [INFERRED]
-- [[serpentinagame.esm.js]] - `contains` [EXTRACTED]
+- [[attachInput()_1]] - `indirect_call` [INFERRED]
+- [[collide()]] - `calls` [EXTRACTED]
+- [[detachInput()_1]] - `indirect_call` [INFERRED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[hardDrop()]] - `calls` [EXTRACTED]
+- [[softDrop()]] - `calls` [EXTRACTED]
+- [[togglePause()]] - `calls` [EXTRACTED]
+- [[tryRotate()]] - `calls` [EXTRACTED]
+- [[updateHUD()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/serpentina/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

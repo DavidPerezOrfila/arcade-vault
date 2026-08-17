@@ -12,7 +12,7 @@ tags:
 # randomPiece()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
 - [[init()]] - `calls` [EXTRACTED]
 - [[spawn()_1]] - `calls` [EXTRACTED]
 

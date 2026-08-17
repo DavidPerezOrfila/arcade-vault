@@ -1,17 +1,17 @@
 ---
 source_file: "lib/supabase/types.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "detalle.jsx"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/detallejsx
 ---
 
 # DatabaseWithoutInternals
 
 ## Connections
-- [[supabasetypes.ts]] - `contains` [EXTRACTED]
+- [[types.ts_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/detallejsx

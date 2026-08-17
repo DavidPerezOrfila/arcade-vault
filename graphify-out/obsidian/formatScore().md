@@ -19,7 +19,7 @@ tags:
 - [[Podium.tsx]] - `imports` [EXTRACTED]
 - [[TopPlayersToday()]] - `calls` [EXTRACTED]
 - [[TopPlayersToday.tsx]] - `imports` [EXTRACTED]
-- [[slugpage.tsx]] - `imports` [EXTRACTED]
 - [[format.ts]] - `contains` [EXTRACTED]
+- [[page.tsx_2]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx

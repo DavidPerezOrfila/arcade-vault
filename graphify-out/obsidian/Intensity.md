@@ -12,6 +12,6 @@ tags:
 # Intensity
 
 ## Connections
-- [[cavemanSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caveman/SKILLmd

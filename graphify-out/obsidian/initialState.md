@@ -12,6 +12,6 @@ tags:
 # initialState
 
 ## Connections
-- [[aboutpage.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

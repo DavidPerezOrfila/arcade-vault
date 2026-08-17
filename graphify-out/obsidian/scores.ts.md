@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/scores.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # scores.ts
@@ -17,17 +17,17 @@ tags:
 - [[ScoreEntryInputParsed]] - `imports` [EXTRACTED]
 - [[ScoreRowDb]] - `imports` [EXTRACTED]
 - [[ScoreRowSelected]] - `contains` [EXTRACTED]
-- [[slugpage.tsx]] - `imports_from` [EXTRACTED]
+- [[actions.ts_1]] - `imports_from` [EXTRACTED]
 - [[createSupabaseServerClient()]] - `imports` [EXTRACTED]
-- [[dataactions.ts]] - `imports_from` [EXTRACTED]
-- [[dataschema.ts]] - `imports_from` [EXTRACTED]
-- [[datatypes.ts]] - `imports_from` [EXTRACTED]
 - [[fetchScores()]] - `contains` [EXTRACTED]
 - [[getScores()]] - `contains` [EXTRACTED]
 - [[getScoresByGame()]] - `contains` [EXTRACTED]
 - [[leaderboard.ts]] - `imports_from` [EXTRACTED]
+- [[page.tsx_2]] - `imports_from` [EXTRACTED]
 - [[rowToEntry()]] - `contains` [EXTRACTED]
 - [[saveScore()]] - `contains` [EXTRACTED]
+- [[schema.ts_1]] - `imports_from` [EXTRACTED]
 - [[server.ts]] - `imports_from` [EXTRACTED]
+- [[types.ts_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

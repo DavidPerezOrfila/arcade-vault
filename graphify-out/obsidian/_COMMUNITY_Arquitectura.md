@@ -8,12 +8,12 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[04-arkanoidCLAUDE]] - document - resources/started-games/04-arkanoid/CLAUDE.md
-- [[04-arkanoidCLAUDE_1]] - document - resources/started-games/04-arkanoid/CLAUDE.md
 - [[API de `spritesheet.js`]] - document - resources/started-games/04-arkanoid/CLAUDE.md
 - [[Archivos principales]] - document - resources/started-games/04-arkanoid/CLAUDE.md
 - [[Arquitectura]] - document - resources/started-games/04-arkanoid/CLAUDE.md
 - [[Assets]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[CLAUDE_4]] - document - resources/started-games/04-arkanoid/CLAUDE.md
+- [[CLAUDE_5]] - document - resources/started-games/04-arkanoid/CLAUDE.md
 - [[Ciclo de vida de una spec]] - document - resources/started-games/04-arkanoid/CLAUDE.md
 - [[Comandos]] - document - resources/started-games/04-arkanoid/CLAUDE.md
 - [[Desarrollo]] - document - resources/started-games/04-arkanoid/CLAUDE.md

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[asteroidstypes]] - document - graft/lib/games/asteroids/types.md
 - [[libgamesasteroidstypes.ts]] - document - graft/lib/games/asteroids/types.md
+- [[types_2]] - document - graft/lib/games/asteroids/types.md
 
 ## Live Query (requires Dataview plugin)
 

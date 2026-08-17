@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/benchmark.py"
 type: "code"
-community: "validate.py"
+community: "compress.py"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validatepy
+  - community/compresspy
 ---
 
 # print_table()
@@ -15,4 +15,4 @@ tags:
 - [[benchmark.py]] - `contains` [EXTRACTED]
 - [[main()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validatepy
+#graphify/code #graphify/EXTRACTED #community/compresspy

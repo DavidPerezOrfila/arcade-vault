@@ -12,6 +12,6 @@ tags:
 # resources/started-games/02-asteroids/game.js
 
 ## Connections
-- [[02-asteroidsgame]] - `contains` [EXTRACTED]
+- [[game_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/02-asteroids/gamemd

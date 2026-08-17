@@ -1,12 +1,12 @@
 ---
-source_file: "resources/started-games/04-arkanoid/specs/03-sonidos-y-niveles.md"
+source_file: "resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md"
 type: "document"
-community: "03 — Sonidos y niveles"
-location: "L28"
+community: "02 — Animación de explosión al romper bloques"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03__Sonidos_y_niveles
+  - community/02__Animacin_de_explosin_al_romper_bloques
 ---
 
 # Fuera del alcance
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Alcance_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03__Sonidos_y_niveles
+#graphify/document #graphify/EXTRACTED #community/02__Animacin_de_explosin_al_romper_bloques

@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "validate.py"
+community: "compress.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validatepy
+  - community/compresspy
 ---
 
 # Path
 
 ## Connections
-- [[read_file()]] - `references` [EXTRACTED]
-- [[validate()]] - `references` [EXTRACTED]
+- [[backup_dir_for()]] - `references` [EXTRACTED]
+- [[compress_file()]] - `references` [EXTRACTED]
+- [[is_sensitive_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validatepy
+#graphify/code #graphify/EXTRACTED #community/compresspy

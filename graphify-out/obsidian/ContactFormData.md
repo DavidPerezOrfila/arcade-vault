@@ -12,6 +12,6 @@ tags:
 # ContactFormData
 
 ## Connections
-- [[aboutschema.ts]] - `contains` [EXTRACTED]
+- [[schema.ts]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/about/pagetsx

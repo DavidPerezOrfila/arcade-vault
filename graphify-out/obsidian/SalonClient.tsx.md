@@ -20,8 +20,8 @@ tags:
 - [[Podium.tsx]] - `imports_from` [EXTRACTED]
 - [[SalonClient()]] - `contains` [EXTRACTED]
 - [[SalonClientProps]] - `contains` [EXTRACTED]
-- [[dataactions.ts]] - `imports_from` [EXTRACTED]
+- [[actions.ts_1]] - `imports_from` [EXTRACTED]
 - [[getSalonLeaderboard()]] - `imports` [EXTRACTED]
-- [[salonpage.tsx]] - `imports_from` [EXTRACTED]
+- [[page.tsx_9]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx

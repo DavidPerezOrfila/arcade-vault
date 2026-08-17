@@ -12,7 +12,7 @@ tags:
 # Flujo de trabajo spec-driven
 
 ## Connections
-- [[04-arkanoidCLAUDE_1]] - `contains` [EXTRACTED]
+- [[CLAUDE_5]] - `contains` [EXTRACTED]
 - [[Ciclo de vida de una spec]] - `contains` [EXTRACTED]
 - [[Comandos]] - `contains` [EXTRACTED]
 - [[Estructura de una spec (`specsNN-slug.md`)]] - `contains` [EXTRACTED]

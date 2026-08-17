@@ -1,12 +1,12 @@
 ---
 source_file: "app/_home/homeData.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "biblioteca.jsx"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/bibliotecajsx
 ---
 
 # StatItem
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[homeData.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

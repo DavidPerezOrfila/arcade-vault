@@ -12,6 +12,6 @@ tags:
 # Nuevas variables de estado en `game.js`
 
 ## Connections
-- [[Modelo de datos_1]] - `contains` [EXTRACTED]
+- [[Modelo de datos_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/03__Sonidos_y_niveles

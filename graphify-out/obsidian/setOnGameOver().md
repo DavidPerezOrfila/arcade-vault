@@ -1,17 +1,17 @@
 ---
-source_file: "lib/games/serpentina/game.esm.js"
+source_file: "lib/games/asteroids/game.esm.js"
 type: "code"
-community: "serpentina/game.esm.js"
-location: "L277"
+community: "asteroids/game.esm.js"
+location: "L582"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serpentina/gameesmjs
+  - community/asteroids/gameesmjs
 ---
 
 # setOnGameOver()
 
 ## Connections
-- [[serpentinagame.esm.js]] - `contains` [EXTRACTED]
+- [[game.esm.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs

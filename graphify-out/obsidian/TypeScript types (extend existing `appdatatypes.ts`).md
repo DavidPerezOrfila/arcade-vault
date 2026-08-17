@@ -12,6 +12,6 @@ tags:
 # TypeScript types (extend existing `app/data/types.ts`)
 
 ## Connections
-- [[Data Model_4]] - `contains` [EXTRACTED]
+- [[Data Model_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/06-games-catalog-salon

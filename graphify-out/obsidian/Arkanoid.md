@@ -12,12 +12,12 @@ tags:
 # Arkanoid
 
 ## Connections
-- [[04-arkanoidREADME]] - `contains` [EXTRACTED]
 - [[Características_1]] - `contains` [EXTRACTED]
 - [[Controles_2]] - `contains` [EXTRACTED]
 - [[Estructura del proyecto_1]] - `contains` [EXTRACTED]
 - [[Jugar]] - `contains` [EXTRACTED]
 - [[Niveles]] - `contains` [EXTRACTED]
+- [[README_9]] - `contains` [EXTRACTED]
 - [[Specs implementadas]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Arkanoid

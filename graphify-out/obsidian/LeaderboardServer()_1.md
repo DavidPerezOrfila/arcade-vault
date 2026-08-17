@@ -12,7 +12,6 @@ tags:
 # LeaderboardServer()
 
 ## Connections
-- [[caidapage.tsx]] - `contains` [EXTRACTED]
-- [[getCaidaLeaderboard]] - `calls` [EXTRACTED]
+- [[page.tsx_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

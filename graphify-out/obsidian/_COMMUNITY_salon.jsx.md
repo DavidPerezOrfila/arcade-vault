@@ -1,15 +1,22 @@
 ---
 type: community
-members: 2
+members: 9
 ---
 
 # salon.jsx
 
-**Members:** 2 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[HallOfFame()]] - code - resources/templates/salon.jsx
-- [[salon.jsx]] - code - resources/templates/salon.jsx
+- [[Candidate pools]] - document - .claude/agents/game-planner.md
+- [[Fit criteria (score every candidate against these)]] - document - .claude/agents/game-planner.md
+- [[Hard constraints_1]] - document - .claude/agents/game-planner.md
+- [[Memory contract — `resourcesgame-suggestions-todo.md`]] - document - .claude/agents/game-planner.md
+- [[Output template_1]] - document - .claude/agents/game-planner.md
+- [[Process_2]] - document - .claude/agents/game-planner.md
+- [[Prompt Defense Baseline_1]] - document - .claude/agents/game-planner.md
+- [[Red flags_1]] - document - .claude/agents/game-planner.md
+- [[game-planner]] - document - .claude/agents/game-planner.md
 
 ## Live Query (requires Dataview plugin)
 

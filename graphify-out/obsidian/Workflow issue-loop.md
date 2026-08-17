@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[Configuración técnica]] - `contains` [EXTRACTED]
-- [[Decisiones documentadas_1]] - `contains` [EXTRACTED]
-- [[Flujo_1]] - `contains` [EXTRACTED]
-- [[Out of scope_1]] - `contains` [EXTRACTED]
+- [[Decisiones documentadas]] - `contains` [EXTRACTED]
+- [[Flujo]] - `contains` [EXTRACTED]
+- [[Out of scope]] - `contains` [EXTRACTED]
 - [[Resumen_1]] - `contains` [EXTRACTED]
-- [[Trigger_2]] - `contains` [EXTRACTED]
-- [[Validación_1]] - `contains` [EXTRACTED]
+- [[Trigger_1]] - `contains` [EXTRACTED]
+- [[Validación]] - `contains` [EXTRACTED]
 - [[issue-loop]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Workflow_issue-loop

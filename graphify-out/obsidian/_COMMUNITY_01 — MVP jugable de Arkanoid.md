@@ -13,7 +13,7 @@ members: 13
 - [[Alcance]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Bloques]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Criterios de aceptación]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
-- [[Decisiones tomadas y descartadas_1]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
+- [[Decisiones tomadas y descartadas]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Dentro del MVP]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Estado del juego]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md
 - [[Fuera del MVP (dejado para specs posteriores)]] - document - resources/started-games/04-arkanoid/specs/01-mvp-arkanoid.md

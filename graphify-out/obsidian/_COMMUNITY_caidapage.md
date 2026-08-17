@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appgamescaidapage.tsx]] - document - graft/app/games/caida/page.md
-- [[caidapage]] - document - graft/app/games/caida/page.md
+- [[page_4]] - document - graft/app/games/caida/page.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -9,7 +9,7 @@ members: 3
 
 ## Members
 - [[About()]] - code - resources/templates/home-about/about.jsx
-- [[HighlightIcon()]] - code - resources/templates/home-about/about.jsx
+- [[HighlightIcon()_1]] - code - resources/templates/home-about/about.jsx
 - [[about.jsx]] - code - resources/templates/home-about/about.jsx
 
 ## Live Query (requires Dataview plugin)

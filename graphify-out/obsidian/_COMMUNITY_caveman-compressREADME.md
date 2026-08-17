@@ -16,8 +16,10 @@ members: 22
 - [[How It Work]] - document - .agents/skills/caveman-compress/README.md
 - [[Install]] - document - .agents/skills/caveman-compress/README.md
 - [[Part of Caveman]] - document - .agents/skills/caveman-compress/README.md
-- [[Reporting a vulnerability_1]] - document - .agents/skills/caveman-compress/SECURITY.md
-- [[Security_1]] - document - .agents/skills/caveman-compress/README.md
+- [[README_2]] - document - .agents/skills/caveman-compress/README.md
+- [[Reporting a vulnerability]] - document - .agents/skills/caveman-compress/SECURITY.md
+- [[SECURITY_1]] - document - .agents/skills/caveman-compress/SECURITY.md
+- [[Security]] - document - .agents/skills/caveman-compress/README.md
 - [[Security_2]] - document - .agents/skills/caveman-compress/SECURITY.md
 - [[Snyk High Risk Rating]] - document - .agents/skills/caveman-compress/SECURITY.md
 - [[Usage]] - document - .agents/skills/caveman-compress/README.md
@@ -27,8 +29,6 @@ members: 22
 - [[What the skill does NOT do]] - document - .agents/skills/caveman-compress/SECURITY.md
 - [[What triggers the rating]] - document - .agents/skills/caveman-compress/SECURITY.md
 - [[Why This Matter]] - document - .agents/skills/caveman-compress/README.md
-- [[caveman-compressREADME]] - document - .agents/skills/caveman-compress/README.md
-- [[caveman-compressSECURITY]] - document - .agents/skills/caveman-compress/SECURITY.md
 - [[📄 Original (706 tokens)]] - document - .agents/skills/caveman-compress/README.md
 
 ## Live Query (requires Dataview plugin)

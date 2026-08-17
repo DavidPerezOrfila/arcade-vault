@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "validate.py"
+community: "compress.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validatepy
+  - community/compresspy
 ---
 
 # Path
@@ -14,4 +14,4 @@ tags:
 - [[benchmark_pair()]] - `references` [EXTRACTED]
 - [[main()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validatepy
+#graphify/code #graphify/EXTRACTED #community/compresspy

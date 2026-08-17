@@ -12,6 +12,6 @@ tags:
 # Auto-clarity (inherited)
 
 ## Connections
-- [[cavecrewSKILL]] - `contains` [EXTRACTED]
+- [[SKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

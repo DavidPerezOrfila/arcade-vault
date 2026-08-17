@@ -2,7 +2,7 @@
 source_file: "components/games/asteroids/AsteroidsGame.tsx"
 type: "code"
 community: "CaidaGame.tsx"
-location: "L16"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,8 +13,9 @@ tags:
 
 ## Connections
 - [[AsteroidsGame.tsx]] - `contains` [EXTRACTED]
-- [[asteroidsgame.esm.js]] - `imports_from` [EXTRACTED]
-- [[asteroidspage.tsx]] - `imports` [EXTRACTED]
+- [[game.esm.js]] - `imports_from` [EXTRACTED]
+- [[page.tsx_3]] - `imports` [EXTRACTED]
 - [[useArcadeGame()]] - `calls` [EXTRACTED]
+- [[useSkin()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

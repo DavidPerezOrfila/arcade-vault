@@ -34,7 +34,7 @@ members: 45
 - [[Attach via CDP endpoint]] - document - .claude/skills/playwright-cli/references/session-management.md
 - [[Attach via browser extension]] - document - .claude/skills/playwright-cli/references/session-management.md
 - [[Attaching to a Running Browser]] - document - .claude/skills/playwright-cli/references/session-management.md
-- [[Best Practices_2]] - document - .claude/skills/playwright-cli/references/session-management.md
+- [[Best Practices_1]] - document - .claude/skills/playwright-cli/references/session-management.md
 - [[Browser Session Commands]] - document - .claude/skills/playwright-cli/references/session-management.md
 - [[Browser Session Configuration]] - document - .claude/skills/playwright-cli/references/session-management.md
 - [[Browser Session Isolation Properties]] - document - .claude/skills/playwright-cli/references/session-management.md

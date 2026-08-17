@@ -12,6 +12,6 @@ tags:
 # lib/games/caida/types.ts
 
 ## Connections
-- [[caidatypes]] - `contains` [EXTRACTED]
+- [[types_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caida/typesmd

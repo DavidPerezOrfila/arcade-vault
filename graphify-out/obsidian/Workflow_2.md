@@ -1,17 +1,20 @@
 ---
-source_file: ".claude/skills/consult-graph/SKILL.md"
+source_file: ".claude/skills/integrate-arcade-game/SKILL.md"
 type: "document"
-community: ".claude/skills/consult-graph/SKILL.md"
-location: "L6"
+community: "Integrate an Arcade Vault game"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/claude/skills/consult-graph/SKILLmd
+  - community/Integrate_an_Arcade_Vault_game
 ---
 
 # Workflow
 
 ## Connections
-- [[dot-claudeskillsconsult-graphSKILL]] - `contains` [EXTRACTED]
+- [[Fase A — Planificar (método spec)]] - `contains` [EXTRACTED]
+- [[Fase B — Implementar (método spec-impl)]] - `contains` [EXTRACTED]
+- [[Fase C — Receta técnica]] - `contains` [EXTRACTED]
+- [[Integrate an Arcade Vault game]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/claude/skills/consult-graph/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Integrate_an_Arcade_Vault_game
