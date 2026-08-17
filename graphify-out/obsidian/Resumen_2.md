@@ -1,17 +1,17 @@
 ---
-source_file: "resources/implemented-games.md"
+source_file: "workflows/opencode-loop.md"
 type: "document"
-community: "Juegos catalogados (no jugables todavía)"
-location: "L15"
+community: "Workflow: opencode-loop"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Juegos_catalogados_no_jugables_todava
+  - community/Workflow_opencode-loop
 ---
 
 # Resumen
 
 ## Connections
-- [[Juegos implementados en Arcade Vault]] - `contains` [EXTRACTED]
+- [[Workflow opencode-loop]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Juegos_catalogados_no_jugables_todava
+#graphify/document #graphify/EXTRACTED #community/Workflow_opencode-loop

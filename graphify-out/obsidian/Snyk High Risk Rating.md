@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Auth behavior]] - `contains` [EXTRACTED]
 - [[File size limit]] - `contains` [EXTRACTED]
-- [[Reporting a vulnerability_1]] - `contains` [EXTRACTED]
+- [[Reporting a vulnerability]] - `contains` [EXTRACTED]
 - [[Security_2]] - `contains` [EXTRACTED]
 - [[What the skill does NOT do]] - `contains` [EXTRACTED]
 - [[What triggers the rating]] - `contains` [EXTRACTED]

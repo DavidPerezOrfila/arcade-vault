@@ -5,6 +5,8 @@ import { submitAsteroidsScore } from '@/app/games/asteroids/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
+import { useSkin } from '@/components/skin/SkinProvider';
+import { SkinSelect } from '@/components/skin/SkinSelect';
 import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
 import type { AsteroidsGameProps } from '@/lib/games/asteroids/types';
 import './asteroids.css';
@@ -15,18 +17,19 @@ const API_URL = '/api/leaderboard/asteroids';
 
 export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const { skin } = useSkin();
   const {
     gameRef,
     isLoading,
     leaderboard,
     showAuthPrompt,
     setShowAuthPrompt,
-    handleGameOver,
+    handleGameOver
   } = useArcadeGame({
     loadModule: () => import('@/lib/games/asteroids/game.esm.js'),
     apiUrl: API_URL,
     submitScore: submitAsteroidsScore,
-    initialLeaderboard,
+    initialLeaderboard
   });
 
   // Aplica tamaño lógico del canvas, bindea game-over y arranca el módulo.
@@ -46,13 +49,13 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
     window.addEventListener('resize', applyCanvasSize);
 
     game.setOnGameOver(handleGameOver);
-    game.initGame(canvas);
+    game.initGame(canvas, { skin });
 
     return () => {
       window.removeEventListener('resize', applyCanvasSize);
       game.destroy();
     };
-  }, [isLoading, gameRef, handleGameOver]);
+  }, [isLoading, gameRef, handleGameOver, skin]);
 
   if (isLoading) {
     return (
@@ -64,35 +67,94 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
   }
 
   return (
-    <div className='asteroids-game-container'>
-      <canvas
-        ref={canvasRef}
-        width={CANVAS_W}
-        height={CANVAS_H}
-        aria-label='Juego Asteroids'
-      />
+    <div className='asteroids-game-layout'>
+      <div className='asteroids-game-wrapper'>
+        <div className='asteroids-game-shell'>
+          <SkinSelect classPrefix='asteroids' />
 
-      <div className='asteroids-leaderboard-hud'>
-        <div className='asteroids-leaderboard-title'>
-          TOP {LEADERBOARD_TOP_N}
+          <div className='asteroids-game-container'>
+            <canvas
+              ref={canvasRef}
+              width={CANVAS_W}
+              height={CANVAS_H}
+              aria-label='Juego Asteroids'
+            />
+
+            {showAuthPrompt && (
+              <AuthPrompt
+                classPrefix='asteroids'
+                gamePath='/games/asteroids'
+                title='¡Partida terminada!'
+                message='Inicia sesión para guardar tu puntuación en el ranking global.'
+                onDismiss={() => setShowAuthPrompt(false)}
+              />
+            )}
+          </div>
         </div>
-        <LeaderboardList
-          classPrefix='asteroids'
-          entries={leaderboard}
-          maxRows={LEADERBOARD_TOP_N}
-          emptyText='Sin puntuaciones aún'
-        />
       </div>
 
-      {showAuthPrompt && (
-        <AuthPrompt
-          classPrefix='asteroids'
-          gamePath='/games/asteroids'
-          title='¡Partida terminada!'
-          message='Inicia sesión para guardar tu puntuación en el ranking global.'
-          onDismiss={() => setShowAuthPrompt(false)}
-        />
-      )}
+      <aside className='asteroids-game-sidebar'>
+        <div className='asteroids-leaderboard-card'>
+          <div className='asteroids-leaderboard-title'>TOP {LEADERBOARD_TOP_N}</div>
+          <LeaderboardList
+            classPrefix='asteroids'
+            entries={leaderboard}
+            maxRows={LEADERBOARD_TOP_N}
+            emptyText='Sin puntuaciones aún'
+          />
+        </div>
+
+        <div className='asteroids-sidebar-card'>
+          <h2 className='asteroids-sidebar-title asteroids-sidebar-title--controls'>
+            CONTROLES
+          </h2>
+          <dl className='asteroids-controls-list'>
+            <div className='asteroids-control-item'>
+              <dt>↑</dt>
+              <dd>Impulsar</dd>
+            </div>
+            <div className='asteroids-control-item'>
+              <dt>← →</dt>
+              <dd>Rotar</dd>
+            </div>
+            <div className='asteroids-control-item'>
+              <dt><span className='asteroids-control-key'>ESPACIO</span></dt>
+              <dd>Disparar</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div className='asteroids-sidebar-card'>
+          <h2 className='asteroids-sidebar-title asteroids-sidebar-title--powerup'>
+            POWER-UP
+          </h2>
+          <p className='asteroids-powerup-info'>
+            Destruye asteroides para conseguir el power-up{' '}
+            <span className='asteroids-powerup-highlight'>3x</span> (triple
+            disparo). Duración: 5s.
+          </p>
+        </div>
+
+        <div className='asteroids-sidebar-card'>
+          <h2 className='asteroids-sidebar-title asteroids-sidebar-title--scoring'>
+            PUNTUACIÓN
+          </h2>
+          <dl className='asteroids-scoring-list'>
+            <div className='asteroids-scoring-item'>
+              <dt>Asteroide grande</dt>
+              <dd className='asteroids-scoring-value'>20 pts</dd>
+            </div>
+            <div className='asteroids-scoring-item'>
+              <dt>Asteroide mediano</dt>
+              <dd className='asteroids-scoring-value'>50 pts</dd>
+            </div>
+            <div className='asteroids-scoring-item'>
+              <dt>Asteroide pequeño</dt>
+              <dd className='asteroids-scoring-value'>100 pts</dd>
+            </div>
+          </dl>
+        </div>
+      </aside>
     </div>
   );
 }

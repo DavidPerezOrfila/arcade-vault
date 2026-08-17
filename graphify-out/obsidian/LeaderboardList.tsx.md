@@ -18,6 +18,6 @@ tags:
 - [[LeaderboardList()]] - `contains` [EXTRACTED]
 - [[LeaderboardListProps]] - `contains` [EXTRACTED]
 - [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
-- [[gamestypes.ts]] - `imports_from` [EXTRACTED]
+- [[types.ts_5]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

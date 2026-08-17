@@ -12,6 +12,6 @@ tags:
 # app/games/page.tsx
 
 ## Connections
-- [[gamespage]] - `contains` [EXTRACTED]
+- [[page_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/games/pagemd

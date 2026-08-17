@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[About()]] - `contains` [EXTRACTED]
-- [[HighlightIcon()]] - `contains` [EXTRACTED]
+- [[HighlightIcon()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/aboutjsx

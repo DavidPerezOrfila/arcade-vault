@@ -2,7 +2,7 @@
 source_file: "components/games/caida/CaidaGame.tsx"
 type: "code"
 community: "CaidaGame.tsx"
-location: "L21"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,8 +13,9 @@ tags:
 
 ## Connections
 - [[CaidaGame.tsx]] - `contains` [EXTRACTED]
-- [[caidagame.esm.js]] - `imports_from` [EXTRACTED]
-- [[caidapage.tsx]] - `imports` [EXTRACTED]
+- [[game.esm.js_1]] - `imports_from` [EXTRACTED]
+- [[page.tsx_4]] - `imports` [EXTRACTED]
 - [[useArcadeGame()]] - `calls` [EXTRACTED]
+- [[useSkin()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

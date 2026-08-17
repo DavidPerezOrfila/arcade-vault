@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/04-arkanoid/specs/02-animacion-explosion-bloques.md"
+source_file: "specs/04-supabase-scores-foundation.md"
 type: "document"
-community: "02 — Animación de explosión al romper bloques"
-location: "L82"
+community: "SPEC 04 — Supabase: foundation y persistencia de puntuaciones"
+location: "L325"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02__Animacin_de_explosin_al_romper_bloques
+  - community/SPEC_04__Supabase_foundation_y_persistencia_de_puntuaciones
 ---
 
 # Decisiones tomadas y descartadas
 
 ## Connections
-- [[02 — Animación de explosión al romper bloques]] - `contains` [EXTRACTED]
+- [[SPEC 04 — Supabase foundation y persistencia de puntuaciones]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02__Animacin_de_explosin_al_romper_bloques
+#graphify/document #graphify/EXTRACTED #community/SPEC_04__Supabase_foundation_y_persistencia_de_puntuaciones

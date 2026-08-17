@@ -12,6 +12,6 @@ tags:
 # app/api/leaderboard/asteroids/route.ts
 
 ## Connections
-- [[asteroidsroute]] - `contains` [EXTRACTED]
+- [[route]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/asteroids/routemd

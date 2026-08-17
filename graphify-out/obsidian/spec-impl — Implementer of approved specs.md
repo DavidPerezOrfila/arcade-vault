@@ -12,9 +12,9 @@ tags:
 # /spec-impl — Implementer of approved specs
 
 ## Connections
-- [[Instructions]] - `contains` [EXTRACTED]
+- [[Instructions_1]] - `contains` [EXTRACTED]
+- [[SKILL_12]] - `contains` [EXTRACTED]
 - [[Session context]] - `contains` [EXTRACTED]
 - [[Summary of expected behavior]] - `contains` [EXTRACTED]
-- [[spec-implSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Instructions

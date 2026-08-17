@@ -11,7 +11,7 @@ tags:
 # Path
 
 ## Connections
-- [[detect_file_type()]] - `references` [EXTRACTED]
-- [[should_compress()]] - `references` [EXTRACTED]
+- [[read_file()]] - `references` [EXTRACTED]
+- [[validate()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/compresspy

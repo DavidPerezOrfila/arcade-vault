@@ -17,9 +17,9 @@ members: 13
 - [[Mermaid AI Skills]] - document - .github/instructions/mermaid.instructions.md
 - [[Mermaid Chart cloud]] - document - .github/instructions/mermaid.instructions.md
 - [[Review Mermaid Sync]] - document - .github/instructions/mermaid.instructions.md
-- [[Rules]] - document - .github/instructions/mermaid.instructions.md
+- [[Rules_3]] - document - .github/instructions/mermaid.instructions.md
 - [[VS Code Commands]] - document - .github/instructions/mermaid.instructions.md
-- [[Workflow]] - document - .github/instructions/mermaid.instructions.md
+- [[Workflow_3]] - document - .github/instructions/mermaid.instructions.md
 - [[mermaid.instructions]] - document - .github/instructions/mermaid.instructions.md
 
 ## Live Query (requires Dataview plugin)

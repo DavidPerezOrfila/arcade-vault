@@ -1,12 +1,12 @@
 ---
 source_file: "lib/games/leaderboard.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # leaderboard.ts
@@ -16,20 +16,20 @@ tags:
 - [[LeaderboardEntry]] - `imports` [EXTRACTED]
 - [[ScoreEntry]] - `imports` [EXTRACTED]
 - [[SubmitScoreResult]] - `contains` [EXTRACTED]
-- [[asteroidsactions.ts]] - `imports_from` [EXTRACTED]
-- [[caidaactions.ts]] - `imports_from` [EXTRACTED]
+- [[actions.ts_2]] - `imports_from` [EXTRACTED]
+- [[actions.ts_3]] - `imports_from` [EXTRACTED]
+- [[actions.ts_4]] - `imports_from` [EXTRACTED]
 - [[createLeaderboardActions()]] - `contains` [EXTRACTED]
 - [[createSupabaseServerClient()]] - `imports` [EXTRACTED]
-- [[dataschema.ts]] - `imports_from` [EXTRACTED]
-- [[datatypes.ts]] - `imports_from` [EXTRACTED]
-- [[gamestypes.ts]] - `imports_from` [EXTRACTED]
 - [[getScoresByGame()]] - `imports` [EXTRACTED]
 - [[mapToLeaderboardEntry()]] - `contains` [EXTRACTED]
 - [[saveScore()]] - `imports` [EXTRACTED]
+- [[schema.ts_1]] - `imports_from` [EXTRACTED]
 - [[scoreEntrySchema]] - `imports` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
-- [[serpentinaactions.ts]] - `imports_from` [EXTRACTED]
 - [[server.ts]] - `imports_from` [EXTRACTED]
+- [[types.ts_1]] - `imports_from` [EXTRACTED]
+- [[types.ts_5]] - `imports_from` [EXTRACTED]
 - [[useArcadeGame.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

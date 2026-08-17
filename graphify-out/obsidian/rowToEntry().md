@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/scores.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # rowToEntry()
@@ -16,4 +16,4 @@ tags:
 - [[saveScore()]] - `calls` [EXTRACTED]
 - [[scores.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

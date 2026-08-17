@@ -8,7 +8,7 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[03-tetrisgame]] - document - graft/resources/started-games/03-tetris/game.md
+- [[game_3]] - document - graft/resources/started-games/03-tetris/game.md
 - [[resourcesstarted-games03-tetrisgame.js]] - document - graft/resources/started-games/03-tetris/game.md
 
 ## Live Query (requires Dataview plugin)

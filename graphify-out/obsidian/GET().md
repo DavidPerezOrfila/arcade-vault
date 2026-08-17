@@ -1,18 +1,17 @@
 ---
 source_file: "app/api/leaderboard/asteroids/route.ts"
 type: "code"
-community: "CaidaGame.tsx"
+community: "SalonClient.tsx"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CaidaGametsx
+  - community/SalonClienttsx
 ---
 
 # GET()
 
 ## Connections
-- [[asteroidsroute.ts]] - `contains` [EXTRACTED]
-- [[getAsteroidsLeaderboard]] - `calls` [EXTRACTED]
+- [[route.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CaidaGametsx
+#graphify/code #graphify/EXTRACTED #community/SalonClienttsx

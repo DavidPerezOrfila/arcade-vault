@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[DetailPage()]] - `calls` [EXTRACTED]
-- [[slugpage.tsx]] - `imports` [EXTRACTED]
 - [[games.ts]] - `contains` [EXTRACTED]
 - [[getGameById()]] - `calls` [EXTRACTED]
+- [[page.tsx_2]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx

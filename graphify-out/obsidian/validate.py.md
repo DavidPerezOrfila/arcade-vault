@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/caveman-compress/scripts/validate.py"
 type: "code"
-community: "validate.py"
+community: "compress.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validatepy
+  - community/compresspy
 ---
 
 # validate.py
@@ -30,4 +30,4 @@ tags:
 - [[validate_paths()]] - `contains` [EXTRACTED]
 - [[validate_urls()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validatepy
+#graphify/code #graphify/EXTRACTED #community/compresspy

@@ -12,6 +12,6 @@ tags:
 # ctx
 
 ## Connections
-- [[02-asteroidsgame.js]] - `contains` [EXTRACTED]
+- [[game.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs

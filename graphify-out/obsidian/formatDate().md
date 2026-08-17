@@ -17,7 +17,7 @@ tags:
 - [[LeaderboardTable.tsx]] - `imports` [EXTRACTED]
 - [[Podium()]] - `calls` [EXTRACTED]
 - [[Podium.tsx]] - `imports` [EXTRACTED]
-- [[slugpage.tsx]] - `imports` [EXTRACTED]
 - [[format.ts]] - `contains` [EXTRACTED]
+- [[page.tsx_2]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app/pagetsx

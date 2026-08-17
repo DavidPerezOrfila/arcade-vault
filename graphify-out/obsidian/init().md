@@ -12,9 +12,9 @@ tags:
 # init()
 
 ## Connections
-- [[03-tetrisgame.js]] - `indirect_call` [INFERRED]
 - [[createBoard()_1]] - `calls` [EXTRACTED]
-- [[loop()_4]] - `indirect_call` [INFERRED]
+- [[game.js_1]] - `indirect_call` [INFERRED]
+- [[loop()_3]] - `indirect_call` [INFERRED]
 - [[randomPiece()_1]] - `calls` [EXTRACTED]
 - [[spawn()_1]] - `calls` [EXTRACTED]
 - [[updateHUD()_2]] - `calls` [EXTRACTED]

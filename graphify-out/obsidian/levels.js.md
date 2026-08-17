@@ -12,6 +12,6 @@ tags:
 # levels.js
 
 ## Connections
-- [[LEVELS_1]] - `contains` [EXTRACTED]
+- [[LEVELS]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/levelsjs

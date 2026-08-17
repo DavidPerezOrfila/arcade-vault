@@ -1,18 +1,18 @@
 ---
 source_file: "app/_home/HomeEnhancer.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "biblioteca.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/bibliotecajsx
 ---
 
 # HomeEnhancer.tsx
 
 ## Connections
 - [[HomeEnhancer()]] - `contains` [EXTRACTED]
-- [[apppage.tsx_1]] - `imports_from` [EXTRACTED]
+- [[page.tsx_7]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

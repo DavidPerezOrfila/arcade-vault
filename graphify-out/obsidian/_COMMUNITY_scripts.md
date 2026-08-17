@@ -1,11 +1,11 @@
 ---
 type: community
-members: 42
+members: 45
 ---
 
 # scripts
 
-**Members:** 42 nodes
+**Members:** 45 nodes
 
 ## Members
 - [[@dietrichgebertponytail]] - code - package.json
@@ -14,6 +14,9 @@ members: 42
 - [[@supabasessr_1]] - concept - package.json
 - [[@supabasesupabase-js]] - code - package.json
 - [[@supabasesupabase-js_1]] - concept - package.json
+- [[GameCard()_1]] - code - resources/templates/biblioteca.jsx
+- [[Library()]] - code - resources/templates/biblioteca.jsx
+- [[biblioteca.jsx]] - code - resources/templates/biblioteca.jsx
 - [[build]] - code - package.json
 - [[dbmigrate]] - code - package.json
 - [[dbreset]] - code - package.json
@@ -32,8 +35,8 @@ members: 42
 - [[lint]] - code - package.json
 - [[lintfix]] - code - package.json
 - [[name]] - code - package.json
-- [[next_1]] - code - package.json
-- [[next_2]] - concept - package.json
+- [[next]] - code - package.json
+- [[next_1]] - concept - package.json
 - [[overrides]] - code - package.json
 - [[package.json]] - code - package.json
 - [[postcss]] - code - package.json

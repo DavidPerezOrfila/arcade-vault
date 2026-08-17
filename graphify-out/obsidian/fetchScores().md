@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/scores.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # fetchScores()
@@ -18,4 +18,4 @@ tags:
 - [[rowToEntry()]] - `indirect_call` [INFERRED]
 - [[scores.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

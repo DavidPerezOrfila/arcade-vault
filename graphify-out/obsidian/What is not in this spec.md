@@ -1,17 +1,17 @@
 ---
-source_file: "specs/08-serpentina-game.md"
+source_file: "specs/07-tetris-caida.md"
 type: "document"
-community: "08-serpentina-game"
-location: "L140"
+community: "07-tetris-caida"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/08-serpentina-game
+  - community/07-tetris-caida
 ---
 
 # What is **not** in this spec
 
 ## Connections
-- [[08-serpentina-game_1]] - `contains` [EXTRACTED]
+- [[07-tetris-caida_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/08-serpentina-game
+#graphify/document #graphify/EXTRACTED #community/07-tetris-caida

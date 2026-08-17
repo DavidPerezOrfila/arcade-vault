@@ -1,17 +1,18 @@
 ---
-source_file: "resources/templates/home-about/home.jsx"
+source_file: "app/_home/FloatingSilhouettes.tsx"
 type: "code"
-community: "home.jsx"
-location: "L24"
+community: "biblioteca.jsx"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/homejsx
+  - community/bibliotecajsx
 ---
 
 # FloatingSilhouettes()
 
 ## Connections
-- [[home.jsx]] - `contains` [EXTRACTED]
+- [[FloatingSilhouettes.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_7]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/homejsx
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

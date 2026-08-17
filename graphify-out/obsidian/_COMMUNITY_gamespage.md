@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appgamespage.tsx]] - document - graft/app/games/page.md
-- [[gamespage]] - document - graft/app/games/page.md
+- [[page_5]] - document - graft/app/games/page.md
 
 ## Live Query (requires Dataview plugin)
 

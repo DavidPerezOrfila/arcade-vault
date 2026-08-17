@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[caidatypes]] - document - graft/lib/games/caida/types.md
 - [[libgamescaidatypes.ts]] - document - graft/lib/games/caida/types.md
+- [[types_3]] - document - graft/lib/games/caida/types.md
 
 ## Live Query (requires Dataview plugin)
 

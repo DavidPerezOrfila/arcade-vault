@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/caveman/README.md"
+source_file: ".agents/skills/caveman-help/README.md"
 type: "document"
-community: "caveman/SKILL.md"
-location: "L32"
+community: "Caveman Help"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/caveman/SKILLmd
+  - community/Caveman_Help
 ---
 
 # Example output
 
 ## Connections
-- [[caveman]] - `contains` [EXTRACTED]
+- [[caveman-help]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/caveman/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Caveman_Help

@@ -12,6 +12,6 @@ tags:
 # When to use cavecrew vs alternatives
 
 ## Connections
-- [[cavecrewSKILL]] - `contains` [EXTRACTED]
+- [[SKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

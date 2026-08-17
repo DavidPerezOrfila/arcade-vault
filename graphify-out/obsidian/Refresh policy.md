@@ -12,6 +12,6 @@ tags:
 # Refresh policy
 
 ## Connections
-- [[dot-agentsskillsconsult-graphSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/consult-graph/SKILLmd

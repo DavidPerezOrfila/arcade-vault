@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appgamesasteroidspage.tsx]] - document - graft/app/games/asteroids/page.md
-- [[asteroidspage]] - document - graft/app/games/asteroids/page.md
+- [[page_3]] - document - graft/app/games/asteroids/page.md
 
 ## Live Query (requires Dataview plugin)
 

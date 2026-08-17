@@ -17,7 +17,7 @@ tags:
 - [[Language]] - `contains` [EXTRACTED]
 - [[Modes]] - `contains` [EXTRACTED]
 - [[More]] - `contains` [EXTRACTED]
+- [[SKILL_3]] - `contains` [EXTRACTED]
 - [[Skills]] - `contains` [EXTRACTED]
-- [[caveman-helpSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Caveman_Help

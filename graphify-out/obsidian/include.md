@@ -12,11 +12,11 @@ tags:
 # include
 
 ## Connections
-- [[dot-mts]] - `extends` [EXTRACTED]
-- [[dot-ts]] - `extends` [EXTRACTED]
-- [[dot-tsx]] - `extends` [EXTRACTED]
-- [[dot-nextdevtypes.ts]] - `extends` [EXTRACTED]
-- [[dot-nexttypes.ts]] - `extends` [EXTRACTED]
+- [[.mts]] - `extends` [EXTRACTED]
+- [[.ts]] - `extends` [EXTRACTED]
+- [[.tsx]] - `extends` [EXTRACTED]
+- [[.nextdevtypes.ts]] - `extends` [EXTRACTED]
+- [[.nexttypes.ts]] - `extends` [EXTRACTED]
 - [[next-env.d.ts]] - `extends` [EXTRACTED]
 - [[tsconfig.json]] - `contains` [EXTRACTED]
 

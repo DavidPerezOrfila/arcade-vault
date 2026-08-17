@@ -12,6 +12,6 @@ tags:
 # lib/supabase/types.ts
 
 ## Connections
-- [[supabasetypes]] - `contains` [EXTRACTED]
+- [[types_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/supabase/typesmd

@@ -12,6 +12,6 @@ tags:
 # Tunable constants (top of game.js)
 
 ## Connections
-- [[03-tetrisCLAUDE_1]] - `contains` [EXTRACTED]
+- [[CLAUDE_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/03-tetris/CLAUDEmd

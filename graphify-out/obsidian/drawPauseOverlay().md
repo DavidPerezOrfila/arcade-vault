@@ -12,7 +12,7 @@ tags:
 # drawPauseOverlay()
 
 ## Connections
-- [[04-arkanoidgame.js]] - `contains` [EXTRACTED]
-- [[draw()_1]] - `calls` [EXTRACTED]
+- [[draw()_5]] - `calls` [EXTRACTED]
+- [[game.js_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs

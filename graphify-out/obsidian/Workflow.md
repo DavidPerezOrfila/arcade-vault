@@ -1,17 +1,17 @@
 ---
-source_file: ".github/instructions/mermaid.instructions.md"
+source_file: ".agents/skills/consult-graph/SKILL.md"
 type: "document"
-community: "Mermaid AI Skills"
-location: "L9"
+community: ".agents/skills/consult-graph/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mermaid_AI_Skills
+  - community/agents/skills/consult-graph/SKILLmd
 ---
 
 # Workflow
 
 ## Connections
-- [[Mermaid AI Skills]] - `contains` [EXTRACTED]
+- [[SKILL_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mermaid_AI_Skills
+#graphify/document #graphify/EXTRACTED #community/agents/skills/consult-graph/SKILLmd

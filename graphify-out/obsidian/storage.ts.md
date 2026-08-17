@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/storage.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "serpentina/game.esm.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/serpentina/gameesmjs
 ---
 
 # storage.ts
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[PlayerClient.tsx]] - `imports_from` [EXTRACTED]
 - [[User]] - `imports` [EXTRACTED]
-- [[authpage.tsx]] - `imports_from` [EXTRACTED]
 - [[clearUser()]] - `contains` [EXTRACTED]
-- [[datatypes.ts]] - `imports_from` [EXTRACTED]
 - [[getUser()]] - `contains` [EXTRACTED]
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
+- [[page.tsx_1]] - `imports_from` [EXTRACTED]
 - [[setUser()]] - `contains` [EXTRACTED]
+- [[types.ts_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs

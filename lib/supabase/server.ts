@@ -22,7 +22,7 @@ export async function createSupabaseServerClient() {
           // `setAll` se invocó desde un Server Component — ignorable si hay
           // middleware refrescando la sesión.
         }
-      },
-    },
+      }
+    }
   });
 }

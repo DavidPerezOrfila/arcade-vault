@@ -12,10 +12,12 @@ tags:
 # layout.tsx
 
 ## Connections
-- [[Footer()]] - `imports` [EXTRACTED]
-- [[Nav()]] - `imports` [EXTRACTED]
 - [[RootLayout()]] - `contains` [EXTRACTED]
+- [[SKIN_IDS]] - `imports` [EXTRACTED]
+- [[SkinProvider()]] - `imports` [EXTRACTED]
+- [[SkinProvider.tsx]] - `imports_from` [EXTRACTED]
 - [[footer.tsx]] - `imports_from` [EXTRACTED]
 - [[nav.tsx]] - `imports_from` [EXTRACTED]
+- [[skins.ts]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/leaderboardts

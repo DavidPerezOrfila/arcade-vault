@@ -15,7 +15,7 @@ tags:
 - [[04-supabase-scores-foundation]] - `contains` [EXTRACTED]
 - [[Acceptance criteria]] - `contains` [EXTRACTED]
 - [[Data model]] - `contains` [EXTRACTED]
-- [[Decisiones tomadas y descartadas]] - `contains` [EXTRACTED]
+- [[Decisiones tomadas y descartadas_3]] - `contains` [EXTRACTED]
 - [[Identified risks]] - `contains` [EXTRACTED]
 - [[Implementation plan]] - `contains` [EXTRACTED]
 - [[Scope]] - `contains` [EXTRACTED]

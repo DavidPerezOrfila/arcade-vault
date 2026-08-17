@@ -1,17 +1,17 @@
 ---
-source_file: "resources/started-games/02-asteroids/README.md"
+source_file: "resources/started-games/03-tetris/README.md"
 type: "document"
-community: "Asteroids"
-location: "L29"
+community: "Tetris"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Asteroids
+  - community/Tetris
 ---
 
 # Controles
 
 ## Connections
-- [[Asteroids]] - `contains` [EXTRACTED]
+- [[Tetris]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Asteroids
+#graphify/document #graphify/EXTRACTED #community/Tetris

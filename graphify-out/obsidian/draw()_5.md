@@ -1,21 +1,20 @@
 ---
-source_file: "resources/started-games/03-tetris/game.js"
+source_file: "resources/started-games/04-arkanoid/game.js"
 type: "code"
-community: "03-tetris/game.js"
-location: "L191"
+community: "04-arkanoid/game.js"
+location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/03-tetris/gamejs
+  - community/04-arkanoid/gamejs
 ---
 
 # draw()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
-- [[drawBlock()_1]] - `calls` [EXTRACTED]
-- [[drawGrid()_1]] - `calls` [EXTRACTED]
-- [[ghostY()_1]] - `calls` [EXTRACTED]
+- [[drawOverlay()_2]] - `calls` [EXTRACTED]
+- [[drawPauseOverlay()]] - `calls` [EXTRACTED]
+- [[game.js_2]] - `contains` [EXTRACTED]
 - [[loop()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs
+#graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs

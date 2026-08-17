@@ -12,6 +12,6 @@ tags:
 # app/games/asteroids/page.tsx
 
 ## Connections
-- [[asteroidspage]] - `contains` [EXTRACTED]
+- [[page_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/asteroids/pagemd

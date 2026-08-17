@@ -1,12 +1,12 @@
 ---
 source_file: "resources/templates/biblioteca.jsx"
 type: "code"
-community: "biblioteca.jsx"
+community: "scripts"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/bibliotecajsx
+  - community/scripts
 ---
 
 # Library()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[biblioteca.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/bibliotecajsx
+#graphify/code #graphify/EXTRACTED #community/scripts

@@ -1,20 +1,22 @@
 ---
-source_file: "resources/started-games/04-arkanoid/game.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "04-arkanoid/game.js"
+community: "caida/game.esm.js"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/04-arkanoid/gamejs
+  - community/caida/gameesmjs
 ---
 
 # draw()
 
 ## Connections
-- [[04-arkanoidgame.js]] - `contains` [EXTRACTED]
-- [[drawOverlay()_1]] - `calls` [EXTRACTED]
-- [[drawPauseOverlay()]] - `calls` [EXTRACTED]
+- [[drawBlock()]] - `calls` [EXTRACTED]
+- [[drawGrid()]] - `calls` [EXTRACTED]
+- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[ghostY()]] - `calls` [EXTRACTED]
+- [[initGame()_1]] - `calls` [EXTRACTED]
 - [[loop()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/04-arkanoid/gamejs
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

@@ -1,18 +1,17 @@
 ---
 source_file: "app/games/serpentina/page.tsx"
 type: "code"
-community: "serpentina/game.esm.js"
+community: "CaidaGame.tsx"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serpentina/gameesmjs
+  - community/CaidaGametsx
 ---
 
 # LeaderboardServer()
 
 ## Connections
-- [[getSerpentinaLeaderboard]] - `calls` [EXTRACTED]
-- [[serpentinapage.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

@@ -12,6 +12,6 @@ tags:
 # Why this exists (the real win)
 
 ## Connections
-- [[cavecrewSKILL]] - `contains` [EXTRACTED]
+- [[SKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

@@ -12,6 +12,6 @@ tags:
 # Output contracts
 
 ## Connections
-- [[cavecrewSKILL]] - `contains` [EXTRACTED]
+- [[SKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/cavecrew/SKILLmd

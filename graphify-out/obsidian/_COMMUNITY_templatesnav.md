@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
+- [[nav_2]] - document - graft/resources/templates/nav.md
 - [[resourcestemplatesnav.jsx]] - document - graft/resources/templates/nav.md
-- [[templatesnav]] - document - graft/resources/templates/nav.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -12,7 +12,7 @@ tags:
 # togglePause()
 
 ## Connections
-- [[03-tetrisgame.js]] - `contains` [EXTRACTED]
-- [[loop()_4]] - `calls` [EXTRACTED]
+- [[game.js_1]] - `contains` [EXTRACTED]
+- [[loop()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/03-tetris/gamejs

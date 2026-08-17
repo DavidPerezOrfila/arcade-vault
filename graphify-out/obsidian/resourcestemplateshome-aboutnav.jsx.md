@@ -12,6 +12,6 @@ tags:
 # resources/templates/home-about/nav.jsx
 
 ## Connections
-- [[home-aboutnav]] - `contains` [EXTRACTED]
+- [[nav_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/home-about/navmd

@@ -12,6 +12,6 @@ tags:
 # __init__.py
 
 ## Connections
-- [[Caveman compress scripts. This package provides tools to compress natural…]] - `rationale_for` [EXTRACTED]
+- [[Caveman compress scripts.  This package provides tools to compress natural lan]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/__init__py

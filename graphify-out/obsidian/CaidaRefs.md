@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[CaidaGame.tsx]] - `imports` [EXTRACTED]
-- [[caidatypes.ts]] - `contains` [EXTRACTED]
+- [[types.ts_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

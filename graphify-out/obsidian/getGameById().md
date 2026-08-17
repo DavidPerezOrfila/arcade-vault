@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/games.ts"
 type: "code"
-community: "app/page.tsx"
+community: "reproductor.jsx"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/reproductorjsx
 ---
 
 # getGameById()
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[PlayerPage()]] - `calls` [EXTRACTED]
 - [[RecentActivity.tsx]] - `imports` [EXTRACTED]
-- [[idpage.tsx]] - `imports` [EXTRACTED]
 - [[createSupabaseServerClient()]] - `calls` [EXTRACTED]
 - [[gameLabel()]] - `calls` [EXTRACTED]
 - [[games.ts]] - `contains` [EXTRACTED]
 - [[getGameBySlug()]] - `calls` [EXTRACTED]
+- [[page.tsx_8]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/reproductorjsx

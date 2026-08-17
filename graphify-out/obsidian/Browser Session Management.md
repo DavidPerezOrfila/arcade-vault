@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Attaching to a Running Browser]] - `contains` [EXTRACTED]
-- [[Best Practices_2]] - `contains` [EXTRACTED]
+- [[Best Practices_1]] - `contains` [EXTRACTED]
 - [[Browser Session Commands]] - `contains` [EXTRACTED]
 - [[Browser Session Configuration]] - `contains` [EXTRACTED]
 - [[Browser Session Isolation Properties]] - `contains` [EXTRACTED]

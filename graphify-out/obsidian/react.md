@@ -12,6 +12,7 @@ tags:
 # react
 
 ## Connections
+- [[GameCard()_1]] - `references` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[react_1]] - `imports` [EXTRACTED]
 

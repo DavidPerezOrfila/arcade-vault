@@ -12,6 +12,6 @@ tags:
 # app/games/caida/page.tsx
 
 ## Connections
-- [[caidapage]] - `contains` [EXTRACTED]
+- [[page_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/caida/pagemd

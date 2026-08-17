@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[Nav()_1]] - code - resources/templates/home-about/nav.jsx
-- [[home-aboutnav.jsx]] - code - resources/templates/home-about/nav.jsx
+- [[nav.jsx]] - code - resources/templates/home-about/nav.jsx
 
 ## Live Query (requires Dataview plugin)
 

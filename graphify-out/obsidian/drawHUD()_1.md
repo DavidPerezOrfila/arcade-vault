@@ -1,19 +1,19 @@
 ---
-source_file: "lib/games/asteroids/game.esm.js"
+source_file: "resources/started-games/02-asteroids/game.js"
 type: "code"
-community: "asteroids/game.esm.js"
-location: "L476"
+community: "02-asteroids/game.js"
+location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asteroids/gameesmjs
+  - community/02-asteroids/gamejs
 ---
 
 # drawHUD()
 
 ## Connections
-- [[asteroidsgame.esm.js]] - `contains` [EXTRACTED]
 - [[draw()_3]] - `calls` [EXTRACTED]
 - [[drawLifeIcon()_1]] - `calls` [EXTRACTED]
+- [[game.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asteroids/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs

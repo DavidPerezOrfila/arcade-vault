@@ -12,6 +12,6 @@ tags:
 # Phase 4: Routing Verification
 
 ## Connections
-- [[Implementation Plan_4]] - `contains` [EXTRACTED]
+- [[Implementation Plan_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/06-games-catalog-salon

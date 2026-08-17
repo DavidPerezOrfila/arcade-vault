@@ -10,7 +10,7 @@ description: >
   "what game next", "which game should we build", "plan next game", or when
   the user wants to roadmap the arcade catalog.
 tools: Read, Write, Edit, Grep, Glob, Bash
-model: opus
+model: sonnet
 ---
 
 ## Prompt Defense Baseline

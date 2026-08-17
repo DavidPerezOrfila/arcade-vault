@@ -9,7 +9,7 @@ members: 2
 
 ## Members
 - [[appdataschema.ts]] - document - graft/app/data/schema.md
-- [[dataschema]] - document - graft/app/data/schema.md
+- [[schema_1]] - document - graft/app/data/schema.md
 
 ## Live Query (requires Dataview plugin)
 

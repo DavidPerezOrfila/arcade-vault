@@ -1,19 +1,19 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "validate.py"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/validatepy
 ---
 
 # User
 
 ## Connections
-- [[datatypes.ts]] - `contains` [EXTRACTED]
 - [[nav.tsx]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `imports` [EXTRACTED]
+- [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/validatepy

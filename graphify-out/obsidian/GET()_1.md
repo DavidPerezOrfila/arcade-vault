@@ -12,7 +12,6 @@ tags:
 # GET()
 
 ## Connections
-- [[caidaroute.ts]] - `contains` [EXTRACTED]
-- [[getCaidaLeaderboard]] - `calls` [EXTRACTED]
+- [[route.ts_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

@@ -12,6 +12,6 @@ tags:
 # app/auth/page.tsx
 
 ## Connections
-- [[authpage]] - `contains` [EXTRACTED]
+- [[page_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/auth/pagemd

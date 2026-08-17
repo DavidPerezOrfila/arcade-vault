@@ -8,7 +8,7 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Caveman compress scripts. This package provides tools to compress natural…]] - rationale - .agents/skills/caveman-compress/scripts/__init__.py
+- [[Caveman compress scripts.  This package provides tools to compress natural lan]] - rationale - .agents/skills/caveman-compress/scripts/__init__.py
 - [[__init__.py]] - code - .agents/skills/caveman-compress/scripts/__init__.py
 
 ## Live Query (requires Dataview plugin)

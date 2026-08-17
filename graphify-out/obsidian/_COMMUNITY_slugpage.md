@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[slugpage]] - document - graft/app/games/[slug]/page.md
 - [[appgamesslugpage.tsx]] - document - graft/app/games/[slug]/page.md
+- [[page_2]] - document - graft/app/games/[slug]/page.md
 
 ## Live Query (requires Dataview plugin)
 

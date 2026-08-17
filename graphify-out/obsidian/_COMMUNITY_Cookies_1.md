@@ -8,7 +8,6 @@ members: 36
 **Members:** 36 nodes
 
 ## Members
-- [[dot-claudeskillsplaywright-clireferencesstorage-state]] - document - .claude/skills/playwright-cli/references/storage-state.md
 - [[Advanced Multiple Cookies or Custom Options_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
 - [[Advanced Multiple Operations_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
 - [[Authentication State Reuse_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
@@ -44,6 +43,7 @@ members: 36
 - [[Storage Management_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
 - [[Storage State_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
 - [[Storage State File Format_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
+- [[storage-state_1]] - document - .claude/skills/playwright-cli/references/storage-state.md
 
 ## Live Query (requires Dataview plugin)
 

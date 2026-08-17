@@ -12,6 +12,6 @@ tags:
 # metadata
 
 ## Connections
-- [[asteroidspage.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

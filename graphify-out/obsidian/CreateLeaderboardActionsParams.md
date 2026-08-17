@@ -1,12 +1,12 @@
 ---
 source_file: "lib/games/leaderboard.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # CreateLeaderboardActionsParams
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[leaderboard.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx

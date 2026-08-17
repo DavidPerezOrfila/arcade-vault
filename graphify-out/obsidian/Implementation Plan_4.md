@@ -1,22 +1,17 @@
 ---
-source_file: "specs/06-games-catalog-salon.md"
+source_file: "specs/08-serpentina-game.md"
 type: "document"
-community: "06-games-catalog-salon"
-location: "L89"
+community: "08-serpentina-game"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/06-games-catalog-salon
+  - community/08-serpentina-game
 ---
 
 # Implementation Plan
 
 ## Connections
-- [[06-games-catalog-salon_1]] - `contains` [EXTRACTED]
-- [[Phase 1 Supabase Migration (DB)]] - `contains` [EXTRACTED]
-- [[Phase 2 Data Layer (`appdatagames.ts`)]] - `contains` [EXTRACTED]
-- [[Phase 3 `salon` Renovation]] - `contains` [EXTRACTED]
-- [[Phase 4 Routing Verification]] - `contains` [EXTRACTED]
-- [[Phase 5 Tests]] - `contains` [EXTRACTED]
+- [[08-serpentina-game_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/06-games-catalog-salon
+#graphify/document #graphify/EXTRACTED #community/08-serpentina-game

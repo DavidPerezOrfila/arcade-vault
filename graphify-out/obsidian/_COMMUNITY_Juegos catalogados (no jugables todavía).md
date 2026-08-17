@@ -19,7 +19,7 @@ members: 14
 - [[Juegos implementados en Arcade Vault]] - document - resources/implemented-games.md
 - [[Notas técnicas]] - document - resources/implemented-games.md
 - [[RANARIA — `ranaria`]] - document - resources/implemented-games.md
-- [[Resumen_2]] - document - resources/implemented-games.md
+- [[Resumen]] - document - resources/implemented-games.md
 - [[SERPENTINA — `serpentina`]] - document - resources/implemented-games.md
 - [[implemented-games]] - document - resources/implemented-games.md
 

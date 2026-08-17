@@ -12,6 +12,6 @@ tags:
 # app/about/actions.ts
 
 ## Connections
-- [[aboutactions]] - `contains` [EXTRACTED]
+- [[actions_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/about/actionsmd

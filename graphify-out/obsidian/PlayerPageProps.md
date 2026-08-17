@@ -1,17 +1,17 @@
 ---
 source_file: "app/player/[id]/page.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "reproductor.jsx"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/reproductorjsx
 ---
 
 # PlayerPageProps
 
 ## Connections
-- [[idpage.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx_8]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/reproductorjsx

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Heuristic denylist for files that must never be shipped to a third-party API.]] - `rationale_for` [EXTRACTED]
-- [[Path_2]] - `references` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[compress.py]] - `contains` [EXTRACTED]
 - [[compress_file()]] - `calls` [EXTRACTED]
 

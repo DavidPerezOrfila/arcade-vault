@@ -12,10 +12,10 @@ tags:
 # Arquitectura
 
 ## Connections
-- [[04-arkanoidCLAUDE_1]] - `contains` [EXTRACTED]
 - [[API de `spritesheet.js`]] - `contains` [EXTRACTED]
 - [[Archivos principales]] - `contains` [EXTRACTED]
 - [[Assets]] - `contains` [EXTRACTED]
+- [[CLAUDE_5]] - `contains` [EXTRACTED]
 - [[Estado del juego (en `game.js`)]] - `contains` [EXTRACTED]
 - [[Sprites disponibles]] - `contains` [EXTRACTED]
 

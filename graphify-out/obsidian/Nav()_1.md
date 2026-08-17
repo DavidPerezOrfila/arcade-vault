@@ -12,6 +12,6 @@ tags:
 # Nav()
 
 ## Connections
-- [[home-aboutnav.jsx]] - `contains` [EXTRACTED]
+- [[nav.jsx]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/home-about/navjsx

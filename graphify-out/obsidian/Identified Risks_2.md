@@ -1,17 +1,17 @@
 ---
-source_file: "specs/08-serpentina-game.md"
+source_file: "specs/06-games-catalog-salon.md"
 type: "document"
-community: "08-serpentina-game"
-location: "L128"
+community: "06-games-catalog-salon"
+location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/08-serpentina-game
+  - community/06-games-catalog-salon
 ---
 
 # Identified Risks
 
 ## Connections
-- [[08-serpentina-game_1]] - `contains` [EXTRACTED]
+- [[06-games-catalog-salon_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/08-serpentina-game
+#graphify/document #graphify/EXTRACTED #community/06-games-catalog-salon

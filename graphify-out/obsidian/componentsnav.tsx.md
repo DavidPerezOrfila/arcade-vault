@@ -12,6 +12,6 @@ tags:
 # components/nav.tsx
 
 ## Connections
-- [[componentsnav]] - `contains` [EXTRACTED]
+- [[nav]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/components/navmd

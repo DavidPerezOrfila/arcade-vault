@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[abouttypes]] - document - graft/app/about/types.md
 - [[appabouttypes.ts]] - document - graft/app/about/types.md
+- [[types]] - document - graft/app/about/types.md
 
 ## Live Query (requires Dataview plugin)
 

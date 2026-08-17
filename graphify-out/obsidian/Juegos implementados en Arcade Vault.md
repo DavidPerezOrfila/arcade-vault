@@ -15,7 +15,7 @@ tags:
 - [[Juegos catalogados (no jugables todavía)]] - `contains` [EXTRACTED]
 - [[Juegos implementados (jugables)]] - `contains` [EXTRACTED]
 - [[Notas técnicas]] - `contains` [EXTRACTED]
-- [[Resumen_2]] - `contains` [EXTRACTED]
+- [[Resumen]] - `contains` [EXTRACTED]
 - [[implemented-games]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Juegos_catalogados_no_jugables_todava

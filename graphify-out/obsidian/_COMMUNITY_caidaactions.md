@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
+- [[actions_6]] - document - graft/app/games/caida/actions.md
 - [[appgamescaidaactions.ts]] - document - graft/app/games/caida/actions.md
-- [[caidaactions]] - document - graft/app/games/caida/actions.md
 
 ## Live Query (requires Dataview plugin)
 

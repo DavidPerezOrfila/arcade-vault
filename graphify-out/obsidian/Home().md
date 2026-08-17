@@ -1,18 +1,18 @@
 ---
-source_file: "resources/templates/home-about/home.jsx"
+source_file: "app/page.tsx"
 type: "code"
-community: "home.jsx"
-location: "L148"
+community: "biblioteca.jsx"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/homejsx
+  - community/bibliotecajsx
 ---
 
 # Home()
 
 ## Connections
-- [[home.jsx]] - `contains` [EXTRACTED]
-- [[useReveal()_1]] - `calls` [EXTRACTED]
+- [[getGames()]] - `calls` [EXTRACTED]
+- [[page.tsx_7]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/homejsx
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

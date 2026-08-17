@@ -12,7 +12,7 @@ tags:
 # AboutPage()
 
 ## Connections
-- [[aboutpage.tsx]] - `contains` [EXTRACTED]
+- [[page.tsx]] - `contains` [EXTRACTED]
 - [[sendContactEmail()]] - `indirect_call` [INFERRED]
 - [[useReveal()]] - `calls` [EXTRACTED]
 

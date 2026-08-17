@@ -1,18 +1,18 @@
 ---
 source_file: "app/data/schema.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "data.jsx"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/datajsx
 ---
 
 # ScoreEntryInputParsed
 
 ## Connections
-- [[dataschema.ts]] - `contains` [EXTRACTED]
+- [[schema.ts_1]] - `contains` [EXTRACTED]
 - [[scores.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/datajsx
