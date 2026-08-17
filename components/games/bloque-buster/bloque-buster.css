@@ -54,10 +54,15 @@
   }
 }
 
+/* Misma caja centrada que .bloque-buster-game-container: la barra de skin y
+   los controles táctiles comparten columna con el canvas. */
 .bloque-buster-game-shell {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .bloque-buster-skin-bar {

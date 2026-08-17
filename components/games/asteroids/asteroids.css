@@ -176,10 +176,15 @@
   gap: 1rem;
 }
 
+/* Misma caja centrada que .asteroids-game-container: la barra de skin y los
+   controles táctiles comparten columna con el canvas. */
 .asteroids-game-shell {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .asteroids-skin-bar {

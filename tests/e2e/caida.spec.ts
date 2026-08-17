@@ -167,6 +167,20 @@ test.describe('CAÍDA Game', () => {
     expect(aspectRatio).toBeCloseTo(0.5, 1);
   });
 
+  test('el selector de skin comparte columna con el panel', async ({ page }) => {
+    // El borde derecho de la barra de skin debe coincidir con el borde
+    // derecho del panel lateral (la columna de SIGUIENTE). Tolerancia ±2px.
+    const skinBar = page.locator('.caida-skin-bar');
+    const panel = page.locator('.caida-panel');
+    const skinBox = await skinBar.boundingBox();
+    const panelBox = await panel.boundingBox();
+    expect(skinBox).not.toBeNull();
+    expect(panelBox).not.toBeNull();
+    const skinRight = skinBox!.x + skinBox!.width;
+    const panelRight = panelBox!.x + panelBox!.width;
+    expect(Math.abs(skinRight - panelRight)).toBeLessThanOrEqual(2);
+  });
+
   test('SEO metadata present', async ({ page }) => {
     // Check title
     await expect(page).toHaveTitle(/CAÍDA \| Arcade Vault/);

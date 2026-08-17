@@ -155,6 +155,23 @@ test.describe("Asteroids Game", () => {
     expect(aspectRatio).toBeCloseTo(4 / 3, 1);
   });
 
+  test("el selector de skin comparte columna con el canvas", async ({
+    page,
+  }) => {
+    // El borde derecho de la barra de skin debe coincidir con el borde
+    // derecho del canvas (ambos dentro de la misma caja centrada de 800px).
+    // Tolerancia ±2px.
+    const skinBar = page.locator(".asteroids-skin-bar");
+    const canvas = page.locator(".asteroids-game-container canvas");
+    const skinBox = await skinBar.boundingBox();
+    const canvasBox = await canvas.boundingBox();
+    expect(skinBox).not.toBeNull();
+    expect(canvasBox).not.toBeNull();
+    const skinRight = skinBox!.x + skinBox!.width;
+    const canvasRight = canvasBox!.x + canvasBox!.width;
+    expect(Math.abs(skinRight - canvasRight)).toBeLessThanOrEqual(2);
+  });
+
   test("SEO metadata present", async ({ page }) => {
     // Check title
     await expect(page).toHaveTitle(/Asteroids \| Arcade Vault/);

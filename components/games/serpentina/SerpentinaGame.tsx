@@ -135,8 +135,6 @@ export function SerpentinaGame({
 
   return (
     <div className='serpentina-game-layout'>
-      <SkinSelect classPrefix='serpentina' />
-
       <div className='serpentina-game-container'>
         <div className='serpentina-board-wrap'>
           <canvas
@@ -172,6 +170,8 @@ export function SerpentinaGame({
         </div>
 
         <div className='serpentina-panel'>
+          <SkinSelect classPrefix='serpentina' />
+
           <div className='serpentina-hud'>
             <div className='serpentina-hud-item'>
               <span>PUNTOS</span>
