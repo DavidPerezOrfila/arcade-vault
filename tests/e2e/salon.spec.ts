@@ -24,9 +24,12 @@ test.describe('Salón de la Fama (/salon)', () => {
   });
 
   test('estado vacío sin puntuaciones', async ({ page }) => {
-    await expect(page.locator('.hall-empty')).toBeVisible({ timeout: 10000 });
+    // .hall-empty muestra primero "▸ CARGANDO..." hasta que la Server Action
+    // resuelve; la aserción debe esperar el estado final (timeout generoso)
+    // en vez de quedarse con el estado de carga visible.
     await expect(page.locator('.hall-empty')).toContainText(
-      /AÚN NO HAY PUNTUACIONES/
+      /AÚN NO HAY PUNTUACIONES/,
+      { timeout: 15000 }
     );
   });
 
