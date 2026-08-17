@@ -1,17 +1,17 @@
 ---
-source_file: "graft/app/games/caida/actions.md"
+source_file: "graft/app/games/asteroids/actions.md"
 type: "document"
-community: "caida/actions.md"
+community: "asteroids/actions.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/caida/actionsmd
+  - community/asteroids/actionsmd
 ---
 
 # actions.md
 
 ## Connections
-- [[appgamescaidaactions.ts]] - `contains` [EXTRACTED]
+- [[appgamesasteroidsactions.ts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/caida/actionsmd
+#graphify/document #graphify/EXTRACTED #community/asteroids/actionsmd

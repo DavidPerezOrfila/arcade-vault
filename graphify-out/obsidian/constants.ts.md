@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[AsteroidsGame.tsx]] - `imports_from` [EXTRACTED]
+- [[BloqueBusterGame.tsx]] - `imports_from` [EXTRACTED]
 - [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
 - [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
 - [[page.tsx_2]] - `imports_from` [EXTRACTED]

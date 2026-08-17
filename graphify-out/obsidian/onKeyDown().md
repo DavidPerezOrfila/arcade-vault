@@ -12,10 +12,10 @@ tags:
 # onKeyDown()
 
 ## Connections
-- [[attachInput()_1]] - `indirect_call` [INFERRED]
+- [[attachInput()_2]] - `indirect_call` [INFERRED]
 - [[collide()]] - `calls` [EXTRACTED]
-- [[detachInput()_1]] - `indirect_call` [INFERRED]
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[detachInput()_2]] - `indirect_call` [INFERRED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 - [[hardDrop()]] - `calls` [EXTRACTED]
 - [[softDrop()]] - `calls` [EXTRACTED]
 - [[togglePause()]] - `calls` [EXTRACTED]

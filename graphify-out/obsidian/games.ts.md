@@ -22,11 +22,11 @@ tags:
 - [[getGames()]] - `contains` [EXTRACTED]
 - [[getGamesByCategory()]] - `contains` [EXTRACTED]
 - [[homeData.tsx]] - `imports_from` [EXTRACTED]
-- [[page.tsx_5]] - `imports_from` [EXTRACTED]
+- [[page.tsx_6]] - `imports_from` [EXTRACTED]
 - [[page.tsx_2]] - `imports_from` [EXTRACTED]
-- [[page.tsx_7]] - `imports_from` [EXTRACTED]
 - [[page.tsx_8]] - `imports_from` [EXTRACTED]
 - [[page.tsx_9]] - `imports_from` [EXTRACTED]
+- [[page.tsx_10]] - `imports_from` [EXTRACTED]
 - [[server.ts]] - `imports_from` [EXTRACTED]
 - [[types.ts_1]] - `re_exports` [EXTRACTED]
 

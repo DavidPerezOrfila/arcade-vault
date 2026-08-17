@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/leaderboard/asteroids/route.ts"
 type: "code"
-community: "SalonClient.tsx"
+community: "validate.py"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SalonClienttsx
+  - community/validatepy
 ---
 
 # GET()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[route.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SalonClienttsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

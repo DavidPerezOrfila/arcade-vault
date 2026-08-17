@@ -12,6 +12,7 @@ tags:
 # layout.tsx
 
 ## Connections
+- [[Footer()]] - `imports` [EXTRACTED]
 - [[RootLayout()]] - `contains` [EXTRACTED]
 - [[SKIN_IDS]] - `imports` [EXTRACTED]
 - [[SkinProvider()]] - `imports` [EXTRACTED]

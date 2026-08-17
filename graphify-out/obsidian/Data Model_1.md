@@ -2,7 +2,7 @@
 source_file: "specs/05-asteroids-game.md"
 type: "document"
 community: "05-asteroids-game"
-location: "L32"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED

@@ -8,11 +8,11 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[EXPLOSION_FRAMES]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
-- [[SPRITES]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
-- [[drawFrame()]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
-- [[drawSprite()]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
-- [[loadSpritesheet()]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[EXPLOSION_FRAMES_1]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[SPRITES_1]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[drawFrame()_1]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[drawSprite()_1]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
+- [[loadSpritesheet()_1]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
 - [[spritesheet.js]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
 - [[ssCallbacks]] - code - resources/started-games/04-arkanoid/assets/spritesheet.js
 

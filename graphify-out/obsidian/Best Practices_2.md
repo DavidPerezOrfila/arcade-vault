@@ -2,7 +2,7 @@
 source_file: ".claude/skills/playwright-cli/references/tracing.md"
 type: "document"
 community: "Tracing"
-location: "L114"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED

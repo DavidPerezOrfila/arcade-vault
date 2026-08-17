@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[homeData.tsx]] - `contains` [EXTRACTED]
-- [[page.tsx_7]] - `imports` [EXTRACTED]
+- [[page.tsx_8]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/bibliotecajsx

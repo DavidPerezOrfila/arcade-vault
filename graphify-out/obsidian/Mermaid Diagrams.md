@@ -2,7 +2,7 @@
 source_file: ".github/copilot-instructions.md"
 type: "document"
 community: "copilot-instructions.md"
-location: "L2"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED

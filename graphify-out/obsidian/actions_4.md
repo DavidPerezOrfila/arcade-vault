@@ -1,17 +1,17 @@
 ---
-source_file: "graft/app/data/actions.md"
+source_file: "graft/app/about/actions.md"
 type: "document"
-community: "data/actions.md"
+community: "about/actions.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/data/actionsmd
+  - community/about/actionsmd
 ---
 
 # actions.md
 
 ## Connections
-- [[appdataactions.ts]] - `contains` [EXTRACTED]
+- [[appaboutactions.ts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/data/actionsmd
+#graphify/document #graphify/EXTRACTED #community/about/actionsmd

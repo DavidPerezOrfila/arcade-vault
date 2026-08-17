@@ -1,20 +1,22 @@
 ---
-source_file: "app/games/page.tsx"
+source_file: "app/games/caida/page.tsx"
 type: "code"
-community: "biblioteca.jsx"
+community: "CaidaGame.tsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/bibliotecajsx
+  - community/CaidaGametsx
 ---
 
 # page.tsx
 
 ## Connections
-- [[GamesClient.tsx]] - `imports_from` [EXTRACTED]
-- [[GamesPage()]] - `contains` [EXTRACTED]
-- [[games.ts]] - `imports_from` [EXTRACTED]
-- [[getGames()]] - `imports` [EXTRACTED]
+- [[CaidaGame()]] - `imports` [EXTRACTED]
+- [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
+- [[CaidaPage()]] - `contains` [EXTRACTED]
+- [[LeaderboardServer()_2]] - `contains` [EXTRACTED]
+- [[actions.ts_4]] - `imports_from` [EXTRACTED]
+- [[metadata_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/bibliotecajsx
+#graphify/code #graphify/EXTRACTED #community/CaidaGametsx

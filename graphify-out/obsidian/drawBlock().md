@@ -12,8 +12,8 @@ tags:
 # drawBlock()
 
 ## Connections
-- [[draw()_1]] - `calls` [EXTRACTED]
+- [[draw()_2]] - `calls` [EXTRACTED]
 - [[drawNext()]] - `calls` [EXTRACTED]
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

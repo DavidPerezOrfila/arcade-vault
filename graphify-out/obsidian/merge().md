@@ -12,7 +12,7 @@ tags:
 # merge()
 
 ## Connections
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 - [[lockPiece()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

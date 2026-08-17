@@ -2,7 +2,7 @@
 source_file: "specs/07-tetris-caida.md"
 type: "document"
 community: "07-tetris-caida"
-location: "L109"
+location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED

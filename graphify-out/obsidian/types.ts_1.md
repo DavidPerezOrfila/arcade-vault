@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "validate.py"
+community: "detalle.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validatepy
+  - community/detallejsx
 ---
 
 # types.ts
@@ -29,6 +29,6 @@ tags:
 - [[players.ts]] - `imports_from` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
 - [[storage.ts]] - `imports_from` [EXTRACTED]
-- [[types.ts_6]] - `imports_from` [EXTRACTED]
+- [[types.ts_7]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validatepy
+#graphify/code #graphify/EXTRACTED #community/detallejsx

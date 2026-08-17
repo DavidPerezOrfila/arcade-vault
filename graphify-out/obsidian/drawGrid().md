@@ -12,7 +12,7 @@ tags:
 # drawGrid()
 
 ## Connections
-- [[draw()_1]] - `calls` [EXTRACTED]
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
+- [[draw()_2]] - `calls` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

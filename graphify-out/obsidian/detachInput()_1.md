@@ -1,12 +1,12 @@
 ---
-source_file: "lib/games/caida/game.esm.js"
+source_file: "lib/games/bloque-buster/game.esm.js"
 type: "code"
-community: "caida/game.esm.js"
-location: "L385"
+community: "serpentina/game.esm.js"
+location: "L323"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/caida/gameesmjs
+  - graphify/INFERRED
+  - community/serpentina/gameesmjs
 ---
 
 # detachInput()
@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[destroy()_1]] - `calls` [EXTRACTED]
 - [[game.esm.js_1]] - `contains` [EXTRACTED]
-- [[onKeyDown()]] - `indirect_call` [INFERRED]
+- [[handleKeyDown()_1]] - `indirect_call` [INFERRED]
+- [[handleKeyUp()_1]] - `indirect_call` [INFERRED]
+- [[handleMouseMove()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs
+#graphify/code #graphify/INFERRED #community/serpentina/gameesmjs

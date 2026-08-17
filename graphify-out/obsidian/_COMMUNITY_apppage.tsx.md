@@ -1,11 +1,11 @@
 ---
 type: community
-members: 24
+members: 26
 ---
 
 # app/page.tsx
 
-**Members:** 24 nodes
+**Members:** 26 nodes
 
 ## Members
 - [[DetailPage()]] - code - app/games/[slug]/page.tsx
@@ -17,6 +17,7 @@ members: 24
 - [[LeaderboardTable()]] - code - app/salon/LeaderboardTable.tsx
 - [[LeaderboardTable.tsx]] - code - app/salon/LeaderboardTable.tsx
 - [[LeaderboardTableProps]] - code - app/salon/LeaderboardTable.tsx
+- [[PLAYERS]] - code - app/data/players.ts
 - [[Podium()]] - code - app/salon/Podium.tsx
 - [[Podium.tsx]] - code - app/salon/Podium.tsx
 - [[SalonClient()]] - code - app/salon/SalonClient.tsx
@@ -30,6 +31,7 @@ members: 24
 - [[getGameBySlug()]] - code - app/data/games.ts
 - [[getSalonLeaderboard()]] - code - app/data/actions.ts
 - [[page.tsx_2]] - code - app/games/[slug]/page.tsx
+- [[players.ts]] - code - app/data/players.ts
 - [[seededScores()]] - code - app/data/players.ts
 - [[topRankClass()]] - code - lib/format.ts
 
@@ -41,15 +43,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 6 edges to [[_COMMUNITY_biblioteca.jsx]]
 - 6 edges to [[_COMMUNITY_data.jsx]]
-- 5 edges to [[_COMMUNITY_biblioteca.jsx]]
-- 2 edges to [[_COMMUNITY_validate.py]]
-- 1 edge to [[_COMMUNITY_reproductor.jsx]]
+- 2 edges to [[_COMMUNITY_detalle.jsx]]
 - 1 edge to [[_COMMUNITY_CaidaGame.tsx]]
 
 ## Top bridge nodes
 - [[page.tsx_2]] - degree 11, connects to 3 communities
 - [[SalonClient.tsx]] - degree 11, connects to 2 communities
-- [[TopPlayersToday.tsx]] - degree 7, connects to 2 communities
-- [[getGameBySlug()]] - degree 4, connects to 2 communities
+- [[TopPlayersToday.tsx]] - degree 7, connects to 1 community
 - [[DetailPage()]] - degree 6, connects to 1 community
+- [[TopPlayersToday()]] - degree 5, connects to 1 community

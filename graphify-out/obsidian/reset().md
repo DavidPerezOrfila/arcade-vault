@@ -12,8 +12,8 @@ tags:
 # reset()
 
 ## Connections
-- [[game.esm.js_2]] - `contains` [EXTRACTED]
-- [[initGame()_2]] - `calls` [EXTRACTED]
+- [[game.esm.js_3]] - `contains` [EXTRACTED]
+- [[initGame()_3]] - `calls` [EXTRACTED]
 - [[spawnFood()]] - `calls` [EXTRACTED]
 - [[updateHUD()_1]] - `calls` [EXTRACTED]
 

@@ -15,6 +15,6 @@ tags:
 - [[AsteroidsGame.tsx]] - `imports_from` [EXTRACTED]
 - [[AsteroidsGameProps]] - `contains` [EXTRACTED]
 - [[LeaderboardEntry]] - `re_exports` [EXTRACTED]
-- [[types.ts_5]] - `re_exports` [EXTRACTED]
+- [[types.ts_6]] - `re_exports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CaidaGametsx

@@ -1,12 +1,12 @@
 ---
-source_file: "lib/games/serpentina/game.esm.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "leaderboard.ts"
-location: "L251"
+community: "caida/game.esm.js"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/caida/gameesmjs
 ---
 
 # detachInput()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[destroy()_2]] - `calls` [EXTRACTED]
 - [[game.esm.js_2]] - `contains` [EXTRACTED]
-- [[onKeyDown()_1]] - `indirect_call` [INFERRED]
+- [[onKeyDown()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

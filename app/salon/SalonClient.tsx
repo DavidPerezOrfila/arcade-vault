@@ -64,7 +64,7 @@ export default function SalonClient({ initialGames }: SalonClientProps) {
         {initialGames.map((g) => (
           <button
             key={g.id}
-            className={`chip${activeTab === g.id ? 'active' : ''}`}
+            className={`chip${activeTab === g.id ? ' active' : ''}`}
             onClick={() => setActiveTab(g.id)}
           >
             {g.title}

@@ -9,25 +9,25 @@ members: 20
 
 ## Members
 - [[BLOCK_COLORS]] - code - resources/started-games/04-arkanoid/game.js
-- [[ball]] - code - resources/started-games/04-arkanoid/game.js
-- [[blocks]] - code - resources/started-games/04-arkanoid/game.js
+- [[ball_1]] - code - resources/started-games/04-arkanoid/game.js
+- [[blocks_1]] - code - resources/started-games/04-arkanoid/game.js
 - [[bounceSound]] - code - resources/started-games/04-arkanoid/game.js
 - [[breakSound]] - code - resources/started-games/04-arkanoid/game.js
 - [[canvas_2]] - code - resources/started-games/04-arkanoid/game.js
-- [[collideAABB()]] - code - resources/started-games/04-arkanoid/game.js
+- [[collideAABB()_1]] - code - resources/started-games/04-arkanoid/game.js
 - [[ctx_2]] - code - resources/started-games/04-arkanoid/game.js
-- [[draw()_5]] - code - resources/started-games/04-arkanoid/game.js
-- [[drawOverlay()_2]] - code - resources/started-games/04-arkanoid/game.js
-- [[drawPauseOverlay()]] - code - resources/started-games/04-arkanoid/game.js
-- [[explosions]] - code - resources/started-games/04-arkanoid/game.js
+- [[draw()_6]] - code - resources/started-games/04-arkanoid/game.js
+- [[drawOverlay()_3]] - code - resources/started-games/04-arkanoid/game.js
+- [[drawPauseOverlay()_1]] - code - resources/started-games/04-arkanoid/game.js
+- [[explosions_1]] - code - resources/started-games/04-arkanoid/game.js
 - [[game.js_2]] - code - resources/started-games/04-arkanoid/game.js
 - [[initBall()]] - code - resources/started-games/04-arkanoid/game.js
-- [[initPaddle()]] - code - resources/started-games/04-arkanoid/game.js
-- [[keys_2]] - code - resources/started-games/04-arkanoid/game.js
-- [[loadLevel()]] - code - resources/started-games/04-arkanoid/game.js
-- [[loop()_4]] - code - resources/started-games/04-arkanoid/game.js
-- [[paddle]] - code - resources/started-games/04-arkanoid/game.js
-- [[update()_2]] - code - resources/started-games/04-arkanoid/game.js
+- [[initPaddle()_1]] - code - resources/started-games/04-arkanoid/game.js
+- [[keys_3]] - code - resources/started-games/04-arkanoid/game.js
+- [[loadLevel()_1]] - code - resources/started-games/04-arkanoid/game.js
+- [[loop()_5]] - code - resources/started-games/04-arkanoid/game.js
+- [[paddle_1]] - code - resources/started-games/04-arkanoid/game.js
+- [[update()_3]] - code - resources/started-games/04-arkanoid/game.js
 
 ## Live Query (requires Dataview plugin)
 

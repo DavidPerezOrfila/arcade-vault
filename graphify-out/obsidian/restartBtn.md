@@ -2,7 +2,7 @@
 source_file: "resources/started-games/03-tetris/game.js"
 type: "code"
 community: "03-tetris/game.js"
-location: "L43"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED

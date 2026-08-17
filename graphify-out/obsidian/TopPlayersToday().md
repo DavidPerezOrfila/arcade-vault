@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TopPlayersToday.tsx]] - `contains` [EXTRACTED]
 - [[formatScore()]] - `calls` [EXTRACTED]
-- [[page.tsx_7]] - `imports` [EXTRACTED]
+- [[page.tsx_8]] - `imports` [EXTRACTED]
 - [[seededScores()]] - `calls` [EXTRACTED]
 - [[topRankClass()]] - `calls` [EXTRACTED]
 

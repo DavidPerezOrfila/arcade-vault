@@ -2,7 +2,7 @@
 source_file: "resources/started-games/02-asteroids/game.js"
 type: "code"
 community: "02-asteroids/game.js"
-location: "L126"
+location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED

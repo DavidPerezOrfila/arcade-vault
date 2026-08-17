@@ -12,8 +12,8 @@ tags:
 # randomPiece()
 
 ## Connections
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
-- [[initGame()_1]] - `calls` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
+- [[initGame()_2]] - `calls` [EXTRACTED]
 - [[spawn()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[ASTEROIDS — `asteroids`]] - `contains` [EXTRACTED]
+- [[BLOQUE BUSTER — `bloque-buster`]] - `contains` [EXTRACTED]
 - [[CAÍDA — `caida`]] - `contains` [EXTRACTED]
 - [[Juegos implementados en Arcade Vault]] - `contains` [EXTRACTED]
 - [[SERPENTINA — `serpentina`]] - `contains` [EXTRACTED]

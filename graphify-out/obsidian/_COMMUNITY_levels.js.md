@@ -8,7 +8,7 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[LEVELS]] - code - resources/started-games/04-arkanoid/levels.js
+- [[LEVELS_1]] - code - resources/started-games/04-arkanoid/levels.js
 - [[levels.js]] - code - resources/started-games/04-arkanoid/levels.js
 
 ## Live Query (requires Dataview plugin)

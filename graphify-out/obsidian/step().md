@@ -2,7 +2,7 @@
 source_file: "lib/games/serpentina/game.esm.js"
 type: "code"
 community: "leaderboard.ts"
-location: "L114"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,8 @@ tags:
 # step()
 
 ## Connections
-- [[endGame()_1]] - `calls` [EXTRACTED]
-- [[game.esm.js_2]] - `contains` [EXTRACTED]
+- [[endGame()_2]] - `calls` [EXTRACTED]
+- [[game.esm.js_3]] - `contains` [EXTRACTED]
 - [[spawnFood()]] - `calls` [EXTRACTED]
 - [[tick()]] - `calls` [EXTRACTED]
 - [[updateHUD()_1]] - `calls` [EXTRACTED]

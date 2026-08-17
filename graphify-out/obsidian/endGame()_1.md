@@ -1,19 +1,18 @@
 ---
-source_file: "lib/games/serpentina/game.esm.js"
+source_file: "lib/games/caida/game.esm.js"
 type: "code"
-community: "leaderboard.ts"
-location: "L197"
+community: "caida/game.esm.js"
+location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/caida/gameesmjs
 ---
 
 # endGame()
 
 ## Connections
 - [[game.esm.js_2]] - `contains` [EXTRACTED]
-- [[spawnFood()]] - `calls` [EXTRACTED]
-- [[step()]] - `calls` [EXTRACTED]
+- [[spawn()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/caida/gameesmjs

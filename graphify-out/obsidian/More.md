@@ -2,7 +2,7 @@
 source_file: ".agents/skills/caveman-help/SKILL.md"
 type: "document"
 community: "Caveman Help"
-location: "L61"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED

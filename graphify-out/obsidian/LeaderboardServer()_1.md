@@ -1,5 +1,5 @@
 ---
-source_file: "app/games/caida/page.tsx"
+source_file: "app/games/bloque-buster/page.tsx"
 type: "code"
 community: "CaidaGame.tsx"
 location: "L18"

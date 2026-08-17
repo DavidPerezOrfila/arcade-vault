@@ -1,11 +1,11 @@
 ---
 type: community
-members: 9
+members: 14
 ---
 
 # next
 
-**Members:** 9 nodes
+**Members:** 14 nodes
 
 ## Members
 - [[2026-08-12 — Pool B 19 propuestas (4 agentes paralelos; 20 brutas, 1 duplicado descartado)]] - document - resources/game-suggestions-todo.md
@@ -14,6 +14,11 @@ members: 9
 - [[Game Suggestions TODO]] - document - resources/game-suggestions-todo.md
 - [[Implemented (do not re-recommend)]] - document - resources/game-suggestions-todo.md
 - [[New proposals (Pool B)]] - document - resources/game-suggestions-todo.md
+- [[Port 1.55]] - document - resources/game-suggestions-todo.md
+- [[Port 15]] - document - resources/game-suggestions-todo.md
+- [[Port 25]] - document - resources/game-suggestions-todo.md
+- [[Port 35]] - document - resources/game-suggestions-todo.md
+- [[Port 45]] - document - resources/game-suggestions-todo.md
 - [[Run log]] - document - resources/game-suggestions-todo.md
 - [[Status legend]] - document - resources/game-suggestions-todo.md
 - [[game-suggestions-todo]] - document - resources/game-suggestions-todo.md

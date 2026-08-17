@@ -2,7 +2,7 @@
 source_file: "resources/skins-todo.md"
 type: "document"
 community: "Skins — cobertura por juego"
-location: "L15"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED

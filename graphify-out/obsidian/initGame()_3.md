@@ -1,19 +1,23 @@
 ---
-source_file: "resources/started-games/02-asteroids/game.js"
+source_file: "lib/games/serpentina/game.esm.js"
 type: "code"
-community: "02-asteroids/game.js"
-location: "L313"
+community: "leaderboard.ts"
+location: "L262"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/02-asteroids/gamejs
+  - community/leaderboardts
 ---
 
 # initGame()
 
 ## Connections
-- [[game.js]] - `contains` [EXTRACTED]
-- [[spawnAsteroids()_1]] - `calls` [EXTRACTED]
-- [[update()_1]] - `calls` [EXTRACTED]
+- [[attachInput()_3]] - `calls` [EXTRACTED]
+- [[draw()_3]] - `calls` [EXTRACTED]
+- [[game.esm.js_3]] - `contains` [EXTRACTED]
+- [[isSkinId()]] - `calls` [EXTRACTED]
+- [[reset()]] - `calls` [EXTRACTED]
+- [[scheduleTick()_3]] - `calls` [EXTRACTED]
+- [[shade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/02-asteroids/gamejs
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

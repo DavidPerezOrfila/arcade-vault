@@ -2,7 +2,7 @@
 source_file: "resources/game-suggestions-todo.md"
 type: "document"
 community: "next"
-location: "L34"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED

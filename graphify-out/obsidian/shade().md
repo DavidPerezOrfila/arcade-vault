@@ -12,7 +12,7 @@ tags:
 # shade()
 
 ## Connections
-- [[game.esm.js_2]] - `contains` [EXTRACTED]
-- [[initGame()_2]] - `calls` [EXTRACTED]
+- [[game.esm.js_3]] - `contains` [EXTRACTED]
+- [[initGame()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/leaderboardts

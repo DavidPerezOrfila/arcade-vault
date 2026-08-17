@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[clearLines()]] - `calls` [EXTRACTED]
-- [[game.esm.js_1]] - `contains` [EXTRACTED]
-- [[initGame()_1]] - `calls` [EXTRACTED]
+- [[game.esm.js_2]] - `contains` [EXTRACTED]
+- [[initGame()_2]] - `calls` [EXTRACTED]
 - [[onKeyDown()]] - `calls` [EXTRACTED]
 - [[softDrop()]] - `calls` [EXTRACTED]
 

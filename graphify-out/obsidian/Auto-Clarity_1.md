@@ -2,7 +2,7 @@
 source_file: ".agents/skills/caveman-review/SKILL.md"
 type: "document"
 community: "caveman-review"
-location: "L49"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED

@@ -2,7 +2,7 @@
 source_file: ".github/instructions/mermaid.instructions.md"
 type: "document"
 community: "Mermaid AI Skills"
-location: "L41"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED

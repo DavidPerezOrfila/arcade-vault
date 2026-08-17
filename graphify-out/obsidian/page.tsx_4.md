@@ -1,5 +1,5 @@
 ---
-source_file: "app/games/caida/page.tsx"
+source_file: "app/games/bloque-buster/page.tsx"
 type: "code"
 community: "CaidaGame.tsx"
 location: "L1"
@@ -12,9 +12,9 @@ tags:
 # page.tsx
 
 ## Connections
-- [[CaidaGame()]] - `imports` [EXTRACTED]
-- [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
-- [[CaidaPage()]] - `contains` [EXTRACTED]
+- [[BloqueBusterGame()]] - `imports` [EXTRACTED]
+- [[BloqueBusterGame.tsx]] - `imports_from` [EXTRACTED]
+- [[BloqueBusterPage()]] - `contains` [EXTRACTED]
 - [[LeaderboardServer()_1]] - `contains` [EXTRACTED]
 - [[actions.ts_3]] - `imports_from` [EXTRACTED]
 - [[metadata_1]] - `contains` [EXTRACTED]

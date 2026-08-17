@@ -15,7 +15,7 @@ tags:
 - [[01 — MVP jugable de Arkanoid]] - `contains` [EXTRACTED]
 - [[Bloques]] - `contains` [EXTRACTED]
 - [[Estado del juego]] - `contains` [EXTRACTED]
-- [[Paddle_1]] - `contains` [EXTRACTED]
+- [[Paddle_2]] - `contains` [EXTRACTED]
 - [[Pelota]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/01__MVP_jugable_de_Arkanoid

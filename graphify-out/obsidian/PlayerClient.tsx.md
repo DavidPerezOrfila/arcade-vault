@@ -1,12 +1,12 @@
 ---
 source_file: "app/player/[id]/PlayerClient.tsx"
 type: "code"
-community: "serpentina/game.esm.js"
+community: "leaderboard.ts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serpentina/gameesmjs
+  - community/leaderboardts
 ---
 
 # PlayerClient.tsx
@@ -16,8 +16,8 @@ tags:
 - [[PlayerClientProps]] - `contains` [EXTRACTED]
 - [[actions.ts_1]] - `imports_from` [EXTRACTED]
 - [[getUser()]] - `imports` [EXTRACTED]
-- [[page.tsx_8]] - `imports_from` [EXTRACTED]
+- [[page.tsx_9]] - `imports_from` [EXTRACTED]
 - [[saveScoreAction()]] - `imports` [EXTRACTED]
 - [[storage.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serpentina/gameesmjs
+#graphify/code #graphify/EXTRACTED #community/leaderboardts

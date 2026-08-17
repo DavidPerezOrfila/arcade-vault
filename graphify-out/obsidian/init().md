@@ -2,7 +2,7 @@
 source_file: "resources/started-games/03-tetris/game.js"
 type: "code"
 community: "03-tetris/game.js"
-location: "L264"
+location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[createBoard()_1]] - `calls` [EXTRACTED]
 - [[game.js_1]] - `indirect_call` [INFERRED]
-- [[loop()_3]] - `indirect_call` [INFERRED]
+- [[loop()_4]] - `indirect_call` [INFERRED]
 - [[randomPiece()_1]] - `calls` [EXTRACTED]
 - [[spawn()_1]] - `calls` [EXTRACTED]
 - [[updateHUD()_2]] - `calls` [EXTRACTED]

@@ -2,7 +2,7 @@
 source_file: ".agents/skills/caveman-commit/SKILL.md"
 type: "document"
 community: "caveman-commit"
-location: "L63"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED

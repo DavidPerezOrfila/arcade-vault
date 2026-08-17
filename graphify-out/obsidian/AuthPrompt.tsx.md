@@ -15,6 +15,7 @@ tags:
 - [[AsteroidsGame.tsx]] - `imports_from` [EXTRACTED]
 - [[AuthPrompt()]] - `contains` [EXTRACTED]
 - [[AuthPromptProps]] - `contains` [EXTRACTED]
+- [[BloqueBusterGame.tsx]] - `imports_from` [EXTRACTED]
 - [[CaidaGame.tsx]] - `imports_from` [EXTRACTED]
 - [[SerpentinaGame.tsx]] - `imports_from` [EXTRACTED]
 

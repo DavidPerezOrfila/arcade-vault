@@ -2,7 +2,7 @@
 source_file: ".agents/skills/caveman-compress/README.md"
 type: "document"
 community: "caveman-compress/README.md"
-location: "L97"
+location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED

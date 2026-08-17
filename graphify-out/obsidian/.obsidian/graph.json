@@ -1135,6 +1135,27 @@
       }
     },
     {
+      "query": "tag:#community/bloque-buster_spec-b_\u2014_Engine_from_scratch:_f\u00edsica_angular_+_power-ups_+_HUD_DOM",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/TopPlayersToday.tsx",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/bloque-buster.spec.ts",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
       "query": "tag:#community/.agents/skills/consult-graph/SKILL.md",
       "color": {
         "a": 1,

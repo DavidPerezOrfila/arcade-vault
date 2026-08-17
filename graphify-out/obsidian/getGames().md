@@ -19,8 +19,8 @@ tags:
 - [[games.ts]] - `contains` [EXTRACTED]
 - [[getGamesByCategory()]] - `calls` [EXTRACTED]
 - [[homeData.tsx]] - `imports` [EXTRACTED]
-- [[page.tsx_5]] - `imports` [EXTRACTED]
-- [[page.tsx_7]] - `imports` [EXTRACTED]
-- [[page.tsx_9]] - `imports` [EXTRACTED]
+- [[page.tsx_6]] - `imports` [EXTRACTED]
+- [[page.tsx_8]] - `imports` [EXTRACTED]
+- [[page.tsx_10]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/bibliotecajsx

@@ -1,12 +1,12 @@
 ---
-source_file: "app/games/caida/actions.ts"
+source_file: "app/games/bloque-buster/actions.ts"
 type: "code"
-community: "CaidaGame.tsx"
+community: "validate.py"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CaidaGametsx
+  - community/validatepy
 ---
 
 # actions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[actions.ts_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CaidaGametsx
+#graphify/code #graphify/EXTRACTED #community/validatepy
