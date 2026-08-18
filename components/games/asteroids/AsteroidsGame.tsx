@@ -5,7 +5,7 @@ import { submitAsteroidsScore } from '@/app/games/asteroids/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { TouchControls, dispatchKey } from '@/components/games/TouchControls';
-import type { TouchButton } from '@/components/games/TouchControls';
+import type { TouchControlsProps } from '@/components/games/TouchControls';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { useSkin } from '@/components/skin/SkinProvider';
 import { SkinSelect } from '@/components/skin/SkinSelect';
@@ -17,12 +17,17 @@ const CANVAS_W = 800;
 const CANVAS_H = 600;
 const API_URL = '/api/leaderboard/asteroids';
 
-const TOUCH_BUTTONS: TouchButton[] = [
-  { action: 'left', label: '◀', mode: 'hold' },
-  { action: 'right', label: '▶', mode: 'hold' },
-  { action: 'thrust', label: '▲', mode: 'hold' },
-  { action: 'fire', label: 'FIRE' },
-];
+// Mando NES: cruceta (rotar/impulso) + A (fuego) y B (impulso).
+const D_PAD = {
+  up: { action: 'thrust', mode: 'hold' },
+  left: { action: 'left', mode: 'hold' },
+  right: { action: 'right', mode: 'hold' },
+} satisfies TouchControlsProps['dPad'];
+
+const BUTTONS = [
+  { label: 'B', action: 'thrust', mode: 'hold' },
+  { label: 'A', action: 'fire', mode: 'tap' },
+] satisfies TouchControlsProps['buttons'];
 
 export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -118,8 +123,9 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
           </div>
 
           <TouchControls
-            classPrefix='asteroids'
-            buttons={TOUCH_BUTTONS}
+            dPad={D_PAD}
+            buttons={BUTTONS}
+            gameAreaRef={canvasRef}
             onDown={handleDown}
             onUp={handleUp}
           />

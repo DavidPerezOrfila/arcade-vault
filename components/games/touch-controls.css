@@ -1,0 +1,167 @@
+/* ===== Mando táctil estilo NES (compartido por los 4 juegos) =====
+   Overlay fijo abajo: cruceta a la izquierda, A/B a la derecha y pausa
+   centrada. Colores según la skin activa (variables globales). */
+
+.touch-controls {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 12px calc(14px + env(safe-area-inset-bottom, 0px));
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.touch-controls--hidden {
+  display: none;
+}
+
+/* En desktop (puntero fino + hover) el mando nunca se muestra: el teclado
+   cubre todas las acciones. La capa JS ya lo oculta, pero esto lo garantiza
+   ante un touchstart en portátiles híbridos. */
+@media (hover: hover) and (pointer: fine) {
+  .touch-controls {
+    display: none;
+  }
+}
+
+/* ---- Cruceta ---- */
+
+.touch-dpad {
+  position: relative;
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  pointer-events: auto;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Brazos vertical y horizontal superpuestos forman la cruz. */
+.touch-dpad::before,
+.touch-dpad::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: var(--bg-3);
+  background: color-mix(in srgb, var(--bg-3) 82%, transparent);
+  border: 1px solid var(--line-2);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.touch-dpad::before {
+  width: 42px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.touch-dpad::after {
+  width: 100%;
+  height: 42px;
+  transform: translate(-50%, -50%);
+}
+
+.touch-dpad__arrow {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-dim);
+  font-size: 16px;
+  line-height: 1;
+  pointer-events: none;
+  transition: color 80ms ease, text-shadow 80ms ease;
+}
+
+.touch-dpad__up { left: 50%; top: 0; transform: translateX(-50%); }
+.touch-dpad__down { left: 50%; bottom: 0; transform: translateX(-50%); }
+.touch-dpad__left { left: 0; top: 50%; transform: translateY(-50%); }
+.touch-dpad__right { right: 0; top: 50%; transform: translateY(-50%); }
+
+.touch-dpad[data-active='up'] .touch-dpad__up,
+.touch-dpad[data-active='down'] .touch-dpad__down,
+.touch-dpad[data-active='left'] .touch-dpad__left,
+.touch-dpad[data-active='right'] .touch-dpad__right {
+  color: var(--cyan);
+  text-shadow: 0 0 8px var(--cyan);
+}
+
+/* ---- Pausa (centrada, discreta para no pulsarla por error) ---- */
+
+.touch-pause {
+  pointer-events: auto;
+  min-height: 44px;
+  padding: 9px 12px;
+  margin-bottom: 4px;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  background: var(--bg-3);
+  background: color-mix(in srgb, var(--bg-3) 82%, transparent);
+  color: var(--ink-dim);
+  font-family: var(--pixel);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.touch-pause:active {
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+/* ---- Botones A/B ---- */
+
+.touch-actions {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  padding-bottom: 2px;
+}
+
+.touch-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--line-2);
+  background: var(--bg-3);
+  background: color-mix(in srgb, var(--bg-3) 82%, transparent);
+  color: var(--ink);
+  font-family: var(--pixel);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 0 var(--line-2);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.touch-btn:active {
+  background: var(--cyan);
+  color: var(--bg);
+  box-shadow: 0 1px 0 var(--line-2);
+  transform: translateY(2px);
+}
+
+.touch-btn:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

@@ -5,7 +5,7 @@ import { submitBloqueBusterScore } from '@/app/games/bloque-buster/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { TouchControls, dispatchKey } from '@/components/games/TouchControls';
-import type { TouchButton } from '@/components/games/TouchControls';
+import type { TouchControlsProps } from '@/components/games/TouchControls';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { useSkin } from '@/components/skin/SkinProvider';
 import { SkinSelect } from '@/components/skin/SkinSelect';
@@ -17,12 +17,16 @@ const CANVAS_W = 800;
 const CANVAS_H = 600;
 const API_URL = '/api/leaderboard/bloque-buster';
 
-// La pelota arranca sola; solo paleta (hold) + pausa (tap).
-const TOUCH_BUTTONS: TouchButton[] = [
-  { action: 'left', label: '◀', mode: 'hold' },
-  { action: 'right', label: '▶', mode: 'hold' },
-  { action: 'pause', label: 'PAUSA' },
-];
+// Mando NES: cruceta para mover la paleta; A/B sin uso (atenuados).
+const D_PAD = {
+  left: { action: 'left', mode: 'hold' },
+  right: { action: 'right', mode: 'hold' },
+} satisfies TouchControlsProps['dPad'];
+
+const BUTTONS = [
+  { label: 'B', disabled: true },
+  { label: 'A', disabled: true },
+] satisfies TouchControlsProps['buttons'];
 
 export function BloqueBusterGame({
   initialLeaderboard = [],
@@ -123,8 +127,10 @@ export function BloqueBusterGame({
           </div>
 
           <TouchControls
-            classPrefix='bloque-buster'
-            buttons={TOUCH_BUTTONS}
+            dPad={D_PAD}
+            buttons={BUTTONS}
+            pause={{ label: 'PAUSA', action: 'pause' }}
+            gameAreaRef={canvasRef}
             onDown={handleDown}
             onUp={handleUp}
           />
