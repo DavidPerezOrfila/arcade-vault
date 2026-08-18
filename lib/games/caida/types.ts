@@ -1,6 +1,5 @@
 // Types para integración CAÍDA (Tetris) + Arcade Vault
 
-export type { LeaderboardEntry } from '@/lib/games/types';
 import type { LeaderboardEntry } from '@/lib/games/types';
 
 export interface CaidaGameProps {

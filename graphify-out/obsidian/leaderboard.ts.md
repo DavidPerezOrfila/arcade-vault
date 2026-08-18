@@ -1,12 +1,12 @@
 ---
 source_file: "lib/games/leaderboard.ts"
 type: "code"
-community: "data.jsx"
+community: "validate.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/datajsx
+  - community/validatepy
 ---
 
 # leaderboard.ts
@@ -33,4 +33,4 @@ tags:
 - [[types.ts_6]] - `imports_from` [EXTRACTED]
 - [[useArcadeGame.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/datajsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

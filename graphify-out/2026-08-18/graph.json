@@ -920,8 +920,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_home_topplayerstoday",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 64,
+      "community_name": "app/page.tsx",
       "norm_label": "topplayerstoday.tsx"
     },
     {
@@ -931,8 +931,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "app_home_topplayerstoday_topplayerstoday",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 64,
+      "community_name": "app/page.tsx",
       "norm_label": "topplayerstoday()"
     },
     {
@@ -1266,6 +1266,17 @@
       "norm_label": "contactschema"
     },
     {
+      "label": "ContactFormData",
+      "file_type": "code",
+      "source_file": "app/about/schema.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_about_schema_contactformdata",
+      "community": 49,
+      "community_name": "about/page.tsx",
+      "norm_label": "contactformdata"
+    },
+    {
       "label": "types.ts",
       "file_type": "code",
       "source_file": "app/about/types.ts",
@@ -1277,10 +1288,21 @@
       "norm_label": "types.ts"
     },
     {
-      "label": "ContactFormState",
+      "label": "ContactFormInput",
       "file_type": "code",
       "source_file": "app/about/types.ts",
       "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_about_types_contactforminput",
+      "community": 49,
+      "community_name": "about/page.tsx",
+      "norm_label": "contactforminput"
+    },
+    {
+      "label": "ContactFormState",
+      "file_type": "code",
+      "source_file": "app/about/types.ts",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "app_about_types_contactformstate",
       "community": 49,
@@ -1316,8 +1338,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_api_leaderboard_asteroids_route",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "route.ts"
     },
     {
@@ -1327,8 +1349,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "app_api_leaderboard_asteroids_route_get",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "get()"
     },
     {
@@ -1338,8 +1360,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_api_leaderboard_bloque_buster_route",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "route.ts"
     },
     {
@@ -1349,8 +1371,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "app_api_leaderboard_bloque_buster_route_get",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "get()"
     },
     {
@@ -1360,8 +1382,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_api_leaderboard_caida_route",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "route.ts"
     },
     {
@@ -1371,8 +1393,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "app_api_leaderboard_caida_route_get",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "get()"
     },
     {
@@ -1382,8 +1404,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_api_leaderboard_serpentina_route",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "route.ts"
     },
     {
@@ -1393,8 +1415,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "app_api_leaderboard_serpentina_route_get",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "get()"
     },
     {
@@ -1481,8 +1503,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "app_data_actions_getsalonleaderboard",
-      "community": 64,
-      "community_name": "app/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "getsalonleaderboard()"
     },
     {
@@ -1500,7 +1522,7 @@
       "label": "getGames()",
       "file_type": "code",
       "source_file": "app/data/games.ts",
-      "source_location": "L4",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "app_data_games_getgames",
       "community": 74,
@@ -1511,23 +1533,34 @@
       "label": "getGameById()",
       "file_type": "code",
       "source_file": "app/data/games.ts",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "app_data_games_getgamebyid",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 74,
+      "community_name": "biblioteca.jsx",
       "norm_label": "getgamebyid()"
     },
     {
       "label": "getGameBySlug()",
       "file_type": "code",
       "source_file": "app/data/games.ts",
-      "source_location": "L33",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "app_data_games_getgamebyslug",
-      "community": 64,
-      "community_name": "app/page.tsx",
+      "community": 74,
+      "community_name": "biblioteca.jsx",
       "norm_label": "getgamebyslug()"
+    },
+    {
+      "label": "getGamesByCategory()",
+      "file_type": "code",
+      "source_file": "app/data/games.ts",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "app_data_games_getgamesbycategory",
+      "community": 74,
+      "community_name": "biblioteca.jsx",
+      "norm_label": "getgamesbycategory()"
     },
     {
       "label": "players.ts",
@@ -1536,8 +1569,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_data_players",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 64,
+      "community_name": "app/page.tsx",
       "norm_label": "players.ts"
     },
     {
@@ -1547,8 +1580,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "app_data_players_players",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 64,
+      "community_name": "app/page.tsx",
       "norm_label": "players"
     },
     {
@@ -1558,8 +1591,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "app_data_players_seededscores",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 64,
+      "community_name": "app/page.tsx",
       "norm_label": "seededscores()"
     },
     {
@@ -1657,8 +1690,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "app_data_scores_getscoresbygame",
-      "community": 64,
-      "community_name": "app/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "getscoresbygame()"
     },
     {
@@ -1789,8 +1822,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "app_data_types_scoreentry",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "scoreentry"
     },
     {
@@ -1811,8 +1844,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "app_data_types_scorerow",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 64,
+      "community_name": "app/page.tsx",
       "norm_label": "scorerow"
     },
     {
@@ -1822,8 +1855,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "app_data_types_user",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 11,
+      "community_name": "leaderboard.ts",
       "norm_label": "user"
     },
     {
@@ -1932,8 +1965,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_asteroids_actions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "actions.ts"
     },
     {
@@ -1943,8 +1976,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_games_asteroids_actions_actions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "actions"
     },
     {
@@ -1998,8 +2031,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_bloque_buster_actions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "actions.ts"
     },
     {
@@ -2009,8 +2042,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_games_bloque_buster_actions_actions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "actions"
     },
     {
@@ -2064,8 +2097,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_caida_actions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "actions.ts"
     },
     {
@@ -2075,8 +2108,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_games_caida_actions_actions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "actions"
     },
     {
@@ -2152,8 +2185,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_serpentina_actions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "actions.ts"
     },
     {
@@ -2163,8 +2196,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_games_serpentina_actions_actions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "actions"
     },
     {
@@ -2295,8 +2328,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_player_id_page",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 74,
+      "community_name": "biblioteca.jsx",
       "norm_label": "page.tsx"
     },
     {
@@ -2306,8 +2339,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "app_player_id_page_playerpageprops",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 74,
+      "community_name": "biblioteca.jsx",
       "norm_label": "playerpageprops"
     },
     {
@@ -2317,8 +2350,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "app_player_id_page_playerpage",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 74,
+      "community_name": "biblioteca.jsx",
       "norm_label": "playerpage()"
     },
     {
@@ -2405,8 +2438,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_salon_salonclient",
-      "community": 64,
-      "community_name": "app/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "salonclient.tsx"
     },
     {
@@ -2416,8 +2449,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "app_salon_salonclient_game",
-      "community": 64,
-      "community_name": "app/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "game"
     },
     {
@@ -2427,8 +2460,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "app_salon_salonclient_leaderboardrow",
-      "community": 64,
-      "community_name": "app/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "leaderboardrow"
     },
     {
@@ -2438,8 +2471,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "app_salon_salonclient_salonclientprops",
-      "community": 64,
-      "community_name": "app/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "salonclientprops"
     },
     {
@@ -2449,8 +2482,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "app_salon_salonclient_salonclient",
-      "community": 64,
-      "community_name": "app/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "salonclient()"
     },
     {
@@ -3711,7 +3744,7 @@
       "label": "AsteroidsGameProps",
       "file_type": "code",
       "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "lib_games_asteroids_types_asteroidsgameprops",
       "community": 24,
@@ -4129,7 +4162,7 @@
       "label": "BloqueBusterGameProps",
       "file_type": "code",
       "source_file": "lib/games/bloque-buster/types.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "lib_games_bloque_buster_types_bloquebustergameprops",
       "community": 24,
@@ -4503,7 +4536,7 @@
       "label": "CaidaGameProps",
       "file_type": "code",
       "source_file": "lib/games/caida/types.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "lib_games_caida_types_caidagameprops",
       "community": 24,
@@ -4514,7 +4547,7 @@
       "label": "CaidaRefs",
       "file_type": "code",
       "source_file": "lib/games/caida/types.ts",
-      "source_location": "L12",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "lib_games_caida_types_caidarefs",
       "community": 24,
@@ -4539,8 +4572,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_games_leaderboard",
-      "community": 69,
-      "community_name": "data.jsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "leaderboard.ts"
     },
     {
@@ -4561,8 +4594,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "lib_games_leaderboard_createleaderboardactionsparams",
-      "community": 69,
-      "community_name": "data.jsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "createleaderboardactionsparams"
     },
     {
@@ -4572,8 +4605,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "lib_games_leaderboard_maptoleaderboardentry",
-      "community": 69,
-      "community_name": "data.jsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "maptoleaderboardentry()"
     },
     {
@@ -4583,8 +4616,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "lib_games_leaderboard_createleaderboardactions",
-      "community": 24,
-      "community_name": "CaidaGame.tsx",
+      "community": 13,
+      "community_name": "validate.py",
       "norm_label": "createleaderboardactions()"
     },
     {
@@ -5023,8 +5056,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_supabase_types",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "types.ts"
     },
     {
@@ -5034,8 +5067,8 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "lib_supabase_types_json",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "json"
     },
     {
@@ -5045,8 +5078,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "lib_supabase_types_database",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "database"
     },
     {
@@ -5056,8 +5089,8 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "lib_supabase_types_databasewithoutinternals",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "databasewithoutinternals"
     },
     {
@@ -5067,8 +5100,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "lib_supabase_types_defaultschema",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "defaultschema"
     },
     {
@@ -5078,8 +5111,8 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "lib_supabase_types_tables",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "tables"
     },
     {
@@ -5089,8 +5122,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "lib_supabase_types_tablesinsert",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "tablesinsert"
     },
     {
@@ -5100,8 +5133,8 @@
       "source_location": "L180",
       "_origin": "ast",
       "id": "lib_supabase_types_tablesupdate",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "tablesupdate"
     },
     {
@@ -5111,8 +5144,8 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "lib_supabase_types_enums",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "enums"
     },
     {
@@ -5122,8 +5155,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "lib_supabase_types_compositetypes",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "compositetypes"
     },
     {
@@ -5133,8 +5166,8 @@
       "source_location": "L237",
       "_origin": "ast",
       "id": "lib_supabase_types_constants",
-      "community": 13,
-      "community_name": "validate.py",
+      "community": 77,
+      "community_name": "detalle.jsx",
       "norm_label": "constants"
     },
     {
@@ -20030,6 +20063,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/about/schema.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_about_schema",
+      "target": "app_about_schema_contactformdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/about/schema.ts",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
@@ -20042,6 +20086,17 @@
       "confidence": "EXTRACTED",
       "source_file": "app/about/types.ts",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_about_types",
+      "target": "app_about_types_contactforminput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/about/types.ts",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_about_types",
@@ -20485,7 +20540,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/games.ts",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_games",
@@ -20496,7 +20551,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/games.ts",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_games",
@@ -20507,7 +20562,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/games.ts",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_games",
@@ -20515,15 +20570,38 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
+      "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/data/games.ts",
-      "source_location": "L2",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_games",
+      "target": "app_data_games_getgamesbycategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/data/games.ts",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_games",
       "target": "app_data_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "app/data/games.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_games",
+      "target": "app_data_types_cats",
       "confidence_score": 1.0
     },
     {
@@ -20536,6 +20614,18 @@
       "_origin": "ast",
       "source": "app_data_games",
       "target": "app_data_types_game",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/data/games.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_games",
+      "target": "app_data_types_gamefilter",
       "confidence_score": 1.0
     },
     {
@@ -20628,11 +20718,23 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/data/games.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_games_getgames",
       "target": "lib_supabase_server_createsupabaseserverclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/data/games.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_games_getgamesbycategory",
+      "target": "app_data_games_getgames",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -20712,7 +20814,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/data/games.ts",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_games_getgamebyid",
@@ -20723,7 +20825,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/data/games.ts",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_data_games_getgamebyslug",
@@ -20777,6 +20879,18 @@
       "_origin": "ast",
       "source": "app_games_slug_page_detailpage",
       "target": "app_data_games_getgamebyslug"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/data/games.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_data_games_getgamesbycategory",
+      "target": "lib_supabase_server_createsupabaseserverclient"
     },
     {
       "relation": "contains",
@@ -25898,7 +26012,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_asteroids_types",
@@ -25906,8 +26020,8 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
+      "relation": "re_exports",
+      "context": "export",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/asteroids/types.ts",
       "source_location": "L3",
@@ -25918,8 +26032,8 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports",
-      "context": "import",
+      "relation": "re_exports",
+      "context": "re-export",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/asteroids/types.ts",
       "source_location": "L3",
@@ -25934,7 +26048,7 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/asteroids/types.ts",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_asteroids_types_asteroidsgameprops",
@@ -26762,7 +26876,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/bloque-buster/types.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_bloque_buster_types",
@@ -26770,8 +26884,8 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
+      "relation": "re_exports",
+      "context": "export",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/bloque-buster/types.ts",
       "source_location": "L3",
@@ -26782,8 +26896,8 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports",
-      "context": "import",
+      "relation": "re_exports",
+      "context": "re-export",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/bloque-buster/types.ts",
       "source_location": "L3",
@@ -26798,7 +26912,7 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/bloque-buster/types.ts",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_bloque_buster_types_bloquebustergameprops",
@@ -27702,7 +27816,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/caida/types.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_caida_types",
@@ -27713,7 +27827,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/caida/types.ts",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_caida_types",
@@ -27721,8 +27835,8 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
+      "relation": "re_exports",
+      "context": "export",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/caida/types.ts",
       "source_location": "L3",
@@ -27733,8 +27847,8 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports",
-      "context": "import",
+      "relation": "re_exports",
+      "context": "re-export",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/caida/types.ts",
       "source_location": "L3",
@@ -27749,7 +27863,7 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "lib/games/caida/types.ts",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_games_caida_types_caidagameprops",

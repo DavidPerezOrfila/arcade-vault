@@ -1156,6 +1156,20 @@
       }
     },
     {
+      "query": "tag:#community/refactor-skin-layout-issue.md",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/requireEnv",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
       "query": "tag:#community/.agents/skills/consult-graph/SKILL.md",
       "color": {
         "a": 1,

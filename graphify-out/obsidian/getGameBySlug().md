@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/games.ts"
 type: "code"
-community: "app/page.tsx"
+community: "biblioteca.jsx"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/bibliotecajsx
 ---
 
 # getGameBySlug()
@@ -17,4 +17,4 @@ tags:
 - [[getGameById()]] - `calls` [EXTRACTED]
 - [[page.tsx_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/bibliotecajsx

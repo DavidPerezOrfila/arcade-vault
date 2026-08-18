@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "detalle.jsx"
+community: "app/page.tsx"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detallejsx
+  - community/app/pagetsx
 ---
 
 # ScoreRow
@@ -15,4 +15,4 @@ tags:
 - [[players.ts]] - `imports` [EXTRACTED]
 - [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detallejsx
+#graphify/code #graphify/EXTRACTED #community/app/pagetsx

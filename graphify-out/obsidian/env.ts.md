@@ -1,12 +1,12 @@
 ---
 source_file: "lib/env.ts"
 type: "code"
-community: "leaderboard.ts"
+community: "requireEnv"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/leaderboardts
+  - community/requireEnv
 ---
 
 # env.ts
@@ -17,4 +17,4 @@ tags:
 - [[requireEnv()]] - `contains` [EXTRACTED]
 - [[server.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/leaderboardts
+#graphify/code #graphify/EXTRACTED #community/requireEnv

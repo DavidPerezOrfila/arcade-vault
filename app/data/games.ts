@@ -1,6 +1,5 @@
 import { createSupabaseServerClient } from '@/lib/supabase/server';
-import type { Game, GameFilter } from './types';
-export { CATS } from './types';
+import type { Game } from './types';
 
 export async function getGames(): Promise<Game[]> {
   const supabase = await createSupabaseServerClient();
@@ -36,19 +35,3 @@ export async function getGameBySlug(slug: string): Promise<Game | null> {
   return getGameById(slug);
 }
 
-export async function getGamesByCategory(cat: GameFilter): Promise<Game[]> {
-  if (cat === 'TODOS') return getGames();
-
-  const supabase = await createSupabaseServerClient();
-  const { data, error } = await supabase
-    .from('games')
-    .select('*')
-    .eq('cat', cat)
-    .order('title');
-
-  if (error) {
-    return [];
-  }
-
-  return (data ?? []) as Game[];
-}

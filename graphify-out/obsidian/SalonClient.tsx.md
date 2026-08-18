@@ -1,12 +1,12 @@
 ---
 source_file: "app/salon/SalonClient.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "data.jsx"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/datajsx
 ---
 
 # SalonClient.tsx
@@ -24,4 +24,4 @@ tags:
 - [[getSalonLeaderboard()]] - `imports` [EXTRACTED]
 - [[page.tsx_10]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/datajsx
