@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-// Verifica el trabajo responsive + touch de SPEC.md: el overlay de botones
-// tactiles (TouchControls) se monta solo en punteros gruesos y el layout no
+// Verifica el trabajo responsive + touch de SPEC.md: el mando táctil estilo
+// NES (TouchControls) se monta solo en punteros gruesos y el layout no
 // desborda horizontalmente en movil ni en desktop.
 test.describe('desktop keyboard', () => {
   test.beforeEach(async ({ page }) => {
@@ -21,6 +21,10 @@ test.describe('desktop keyboard', () => {
     await page.keyboard.press('ArrowRight');
 
     await expect(canvas).toBeVisible();
+  });
+
+  test('does not render the touch controls on desktop', async ({ page }) => {
+    await expect(page.locator('.touch-controls')).toHaveCount(0);
   });
 
   test('home page has no horizontal overflow on desktop', async ({ page }) => {
@@ -47,36 +51,34 @@ test.describe('mobile touch', () => {
     await page.waitForSelector('.asteroids-game-container canvas', {
       timeout: 10000,
     });
-    await page.waitForSelector('.asteroids-touch-controls', {
+    await page.waitForSelector('.touch-controls', {
       timeout: 10000,
     });
   });
 
-  test('renders touch controls with at least one button on mobile', async ({
+  test('renders the NES touch controls (d-pad + A/B) on mobile', async ({
     page,
   }) => {
-    const controls = page.locator('.asteroids-touch-controls');
+    const controls = page.locator('.touch-controls');
     await expect(controls).toBeVisible();
 
-    const buttonCount = await controls
-      .locator('.asteroids-touch-button')
-      .count();
-    expect(buttonCount).toBeGreaterThanOrEqual(1);
+    await expect(controls.locator('.touch-dpad')).toBeVisible();
+
+    const buttonCount = await controls.locator('.touch-btn').count();
+    expect(buttonCount).toBeGreaterThanOrEqual(2);
   });
 
-  test('tapping the FIRE touch button fires an action and the canvas keeps animating', async ({
+  test('tapping the A (FIRE) button fires an action and the canvas keeps animating', async ({
     page,
   }) => {
     const canvas = page.locator('.asteroids-game-container canvas');
-    const fireButton = page
-      .locator('.asteroids-touch-button')
-      .filter({ hasText: 'FIRE' });
+    const fireButton = page.locator('.touch-btn').filter({ hasText: 'A' });
 
     const before = await canvas.evaluate((c: HTMLCanvasElement) =>
       c.toDataURL()
     );
 
-    await fireButton.click();
+    await fireButton.tap();
     await page.waitForTimeout(400);
 
     const after = await canvas.evaluate((c: HTMLCanvasElement) =>
@@ -84,6 +86,19 @@ test.describe('mobile touch', () => {
     );
 
     expect(after).not.toBe(before);
+  });
+
+  test('tapping the d-pad right direction dispatches input without throwing', async ({
+    page,
+  }) => {
+    const canvas = page.locator('.asteroids-game-container canvas');
+    const dPad = page.locator('.touch-dpad');
+
+    await expect(dPad).toBeVisible();
+    await dPad.tap({ position: { x: 100, y: 60 } });
+    await page.waitForTimeout(200);
+
+    await expect(canvas).toBeVisible();
   });
 
   test('home page has no horizontal overflow on mobile', async ({ page }) => {
@@ -104,11 +119,11 @@ test.describe('mobile touch', () => {
       timeout: 10000,
     });
 
-    const controls = page.locator('.bloque-buster-touch-controls');
+    const controls = page.locator('.touch-controls');
     await expect(controls).toBeVisible();
 
     const pauseButton = controls
-      .locator('.bloque-buster-touch-button')
+      .locator('.touch-pause')
       .filter({ hasText: 'PAUSA' });
     await expect(pauseButton).toBeVisible();
 

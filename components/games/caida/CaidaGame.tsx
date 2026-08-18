@@ -5,7 +5,7 @@ import { submitCaidaScore } from '@/app/games/caida/actions';
 import { AuthPrompt } from '@/components/games/AuthPrompt';
 import { LeaderboardList } from '@/components/games/LeaderboardList';
 import { TouchControls, dispatchKey } from '@/components/games/TouchControls';
-import type { TouchButton } from '@/components/games/TouchControls';
+import type { TouchControlsProps } from '@/components/games/TouchControls';
 import { useArcadeGame } from '@/components/games/useArcadeGame';
 import { useSkin } from '@/components/skin/SkinProvider';
 import { SkinSelect } from '@/components/skin/SkinSelect';
@@ -19,14 +19,19 @@ const NEXT_W = 120;
 const NEXT_H = 120;
 const API_URL = '/api/leaderboard/caida';
 
-// caida es edge-triggered (sin keyup en el engine): repeat para mover
-// manteniendo; rotate/drop son taps puntuales.
-const TOUCH_BUTTONS: TouchButton[] = [
-  { action: 'left', label: '◀', mode: 'repeat' },
-  { action: 'right', label: '▶', mode: 'repeat' },
-  { action: 'rotate', label: '⟳' },
-  { action: 'drop', label: '⤓' },
-];
+// Mando NES: cruceta (mover/soft-drop/rotar) + A (rotar) y B (hard drop).
+// Edge-triggered: repeat emite keydown cada ~90ms; rotate/drop son taps.
+const D_PAD = {
+  up: { action: 'rotate', mode: 'tap' },
+  down: { action: 'down', mode: 'repeat' },
+  left: { action: 'left', mode: 'repeat' },
+  right: { action: 'right', mode: 'repeat' },
+} satisfies TouchControlsProps['dPad'];
+
+const BUTTONS = [
+  { label: 'B', action: 'drop', mode: 'tap' },
+  { label: 'A', action: 'rotate', mode: 'tap' },
+] satisfies TouchControlsProps['buttons'];
 
 export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
   const boardRef = useRef<HTMLCanvasElement>(null);
@@ -97,9 +102,14 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
   // Edge-triggered: repeat emite keydown cada ~90ms (TouchControls); el engine
   // no escucha keyup, asi que onUp no hace falta.
   const handleDown = useCallback((action: string) => {
+    if (action === 'pause') {
+      dispatchKey('KeyP', 'keydown', 'p');
+      return;
+    }
     const key: Record<string, string> = {
       left: 'ArrowLeft',
       right: 'ArrowRight',
+      down: 'ArrowDown',
       rotate: 'ArrowUp',
       drop: 'Space',
     };
@@ -192,8 +202,10 @@ export function CaidaGame({ initialLeaderboard = [] }: CaidaGameProps) {
       </div>
 
       <TouchControls
-        classPrefix='caida'
-        buttons={TOUCH_BUTTONS}
+        dPad={D_PAD}
+        buttons={BUTTONS}
+        pause={{ label: 'PAUSA', action: 'pause' }}
+        gameAreaRef={boardRef}
         onDown={handleDown}
         onUp={handleUp}
       />
