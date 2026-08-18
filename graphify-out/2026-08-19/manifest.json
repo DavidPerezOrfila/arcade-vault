@@ -10,7 +10,7 @@
     "semantic_hash": ""
   },
   "app/data/games.ts": {
-    "mtime": 1787082234.887843,
+    "mtime": 1787079816.5774503,
     "ast_hash": "7d5d8eea9df236361128d09a6152bc11",
     "semantic_hash": ""
   },
@@ -270,7 +270,7 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1787082234.881844,
+    "mtime": 1787006382.0215354,
     "ast_hash": "bc078630e764ed76a57522e33721ced8",
     "semantic_hash": ""
   },
@@ -335,12 +335,12 @@
     "semantic_hash": ""
   },
   "app/about/schema.ts": {
-    "mtime": 1787082234.8838463,
+    "mtime": 1787079920.8300402,
     "ast_hash": "bd70e9c09ae96078aac3c637bd5af2f3",
     "semantic_hash": ""
   },
   "app/about/types.ts": {
-    "mtime": 1787082234.8858447,
+    "mtime": 1787079935.2930021,
     "ast_hash": "9bcd2bd5975d6896800f8163dae88227",
     "semantic_hash": ""
   },
@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "components/games/asteroids/AsteroidsGame.tsx": {
-    "mtime": 1787090973.451862,
-    "ast_hash": "290f472728ec9ea203cd14b8526f86cb",
+    "mtime": 1787004588.1173098,
+    "ast_hash": "b1556967df363f2c9de1e26855ed28f2",
     "semantic_hash": ""
   },
   "lib/games/asteroids/game.esm.js": {
@@ -625,7 +625,7 @@
     "semantic_hash": ""
   },
   "lib/games/asteroids/types.ts": {
-    "mtime": 1787082234.9673176,
+    "mtime": 1787080125.7255783,
     "ast_hash": "44f79f7e8e62f619b04ee7d084014bb9",
     "semantic_hash": ""
   },
@@ -835,8 +835,8 @@
     "semantic_hash": ""
   },
   "components/games/caida/CaidaGame.tsx": {
-    "mtime": 1787090973.4654202,
-    "ast_hash": "df3e1299dcafec18db1c43309c75aa3c",
+    "mtime": 1787003858.0151014,
+    "ast_hash": "616d6d4864cd343409ae1c3299492cc8",
     "semantic_hash": ""
   },
   "lib/games/caida/game.esm.js": {
@@ -845,7 +845,7 @@
     "semantic_hash": ""
   },
   "lib/games/caida/types.ts": {
-    "mtime": 1787082234.9703145,
+    "mtime": 1787080122.457086,
     "ast_hash": "03ab252ef67c20813a3a846afe354128",
     "semantic_hash": ""
   },
@@ -1350,8 +1350,8 @@
     "semantic_hash": ""
   },
   "components/games/serpentina/SerpentinaGame.tsx": {
-    "mtime": 1787090973.4724605,
-    "ast_hash": "0c23d036f7f53725389efac2e60c6af0",
+    "mtime": 1787003858.0191028,
+    "ast_hash": "43cd0a35cbac5fd61938b319ad95868f",
     "semantic_hash": ""
   },
   "lib/games/serpentina/game.esm.js": {
@@ -1380,8 +1380,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1787091726.3566966,
-    "ast_hash": "7758772e1b1de2f8914e6726f1987d98",
+    "mtime": 1787006258.5288484,
+    "ast_hash": "1b3111f86cfc7fa3247dc12f6934182a",
     "semantic_hash": ""
   },
   "components/skin/SkinProvider.tsx": {
@@ -1440,8 +1440,8 @@
     "semantic_hash": ""
   },
   "components/games/bloque-buster/BloqueBusterGame.tsx": {
-    "mtime": 1787090973.4573817,
-    "ast_hash": "1f430aee8181544f65e29c242c6dc442",
+    "mtime": 1787001033.0572314,
+    "ast_hash": "cd970100b6c7bfa6a8ee69d19523668c",
     "semantic_hash": ""
   },
   "lib/games/bloque-buster/game.esm.js": {
@@ -1450,7 +1450,7 @@
     "semantic_hash": ""
   },
   "lib/games/bloque-buster/types.ts": {
-    "mtime": 1787082234.9693146,
+    "mtime": 1787080129.333223,
     "ast_hash": "b4e7b7a0763f8bcbb7d92077f3e19b12",
     "semantic_hash": ""
   },
@@ -1490,13 +1490,13 @@
     "semantic_hash": ""
   },
   "components/games/TouchControls.tsx": {
-    "mtime": 1787090973.4493272,
-    "ast_hash": "13a30e6fb71dd0a93c63e01f6fc8b5c2",
+    "mtime": 1787001033.0497243,
+    "ast_hash": "d189d3871619a86c7d0f0cb874c780df",
     "semantic_hash": ""
   },
   "tests/e2e/mobile-touch.spec.ts": {
-    "mtime": 1787090973.4835045,
-    "ast_hash": "099fe8a707f5bfd1ab4ec88b40c2e9c2",
+    "mtime": 1787001038.9251907,
+    "ast_hash": "ef625d470d6cc74781d3967b66bc315d",
     "semantic_hash": ""
   },
   ".scratch/refactor-skin-layout-issue.md": {
