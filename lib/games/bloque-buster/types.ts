@@ -1,6 +1,5 @@
 // Types para integración Bloque Buster + Arcade Vault
 
-export type { LeaderboardEntry } from '@/lib/games/types';
 import type { LeaderboardEntry } from '@/lib/games/types';
 
 export interface BloqueBusterGameProps {

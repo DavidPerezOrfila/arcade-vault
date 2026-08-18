@@ -1,12 +1,12 @@
 ---
 source_file: "lib/games/leaderboard.ts"
 type: "code"
-community: "data.jsx"
+community: "validate.py"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/datajsx
+  - community/validatepy
 ---
 
 # mapToLeaderboardEntry()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[leaderboard.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/datajsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

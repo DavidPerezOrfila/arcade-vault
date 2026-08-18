@@ -1,12 +1,12 @@
 ---
 source_file: "lib/supabase/server.ts"
 type: "code"
-community: "data.jsx"
+community: "requireEnv"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/datajsx
+  - community/requireEnv
 ---
 
 # server.ts
@@ -20,4 +20,4 @@ tags:
 - [[requireEnv()]] - `imports` [EXTRACTED]
 - [[scores.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/datajsx
+#graphify/code #graphify/EXTRACTED #community/requireEnv

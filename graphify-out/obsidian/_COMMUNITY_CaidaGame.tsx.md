@@ -81,8 +81,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 13 edges to [[_COMMUNITY_leaderboard.ts]]
-- 8 edges to [[_COMMUNITY_validate.py]]
-- 4 edges to [[_COMMUNITY_data.jsx]]
+- 12 edges to [[_COMMUNITY_validate.py]]
 - 1 edge to [[_COMMUNITY_apppage.tsx]]
 - 1 edge to [[_COMMUNITY_asteroidsgame.esm.js]]
 - 1 edge to [[_COMMUNITY_serpentinagame.esm.js]]

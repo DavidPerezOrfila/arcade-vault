@@ -1,11 +1,11 @@
 ---
 type: community
-members: 26
+members: 27
 ---
 
 # biblioteca.jsx
 
-**Members:** 26 nodes
+**Members:** 27 nodes
 
 ## Members
 - [[FEATURES]] - code - app/_home/homeData.tsx
@@ -27,6 +27,7 @@ members: 26
 - [[StatItem]] - code - app/_home/homeData.tsx
 - [[games.ts]] - code - app/data/games.ts
 - [[getGameById()]] - code - app/data/games.ts
+- [[getGameBySlug()]] - code - app/data/games.ts
 - [[getGames()]] - code - app/data/games.ts
 - [[getGamesByCategory()]] - code - app/data/games.ts
 - [[homeData.tsx]] - code - app/_home/homeData.tsx
@@ -43,15 +44,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_apppage.tsx]]
+- 5 edges to [[_COMMUNITY_apppage.tsx]]
 - 5 edges to [[_COMMUNITY_detalle.jsx]]
 - 5 edges to [[_COMMUNITY_data.jsx]]
 - 4 edges to [[_COMMUNITY_reproductor.jsx]]
+- 1 edge to [[_COMMUNITY_requireEnv]]
 - 1 edge to [[_COMMUNITY_leaderboard.ts]]
 
 ## Top bridge nodes
-- [[games.ts]] - degree 17, connects to 4 communities
-- [[getGameById()]] - degree 7, connects to 3 communities
+- [[games.ts]] - degree 17, connects to 5 communities
 - [[page.tsx_8]] - degree 16, connects to 2 communities
+- [[getGameById()]] - degree 7, connects to 2 communities
 - [[getGames()]] - degree 10, connects to 1 community
 - [[page.tsx_9]] - degree 5, connects to 1 community

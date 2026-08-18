@@ -1,12 +1,12 @@
 ---
 source_file: "app/salon/SalonClient.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "data.jsx"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/datajsx
 ---
 
 # LeaderboardRow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SalonClient.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/datajsx

@@ -66,25 +66,21 @@ export function AsteroidsGame({ initialLeaderboard = [] }: AsteroidsGameProps) {
     };
   }, [isLoading, gameRef, handleGameOver, skin]);
 
-  // Mapea botones tactiles a teclas sintetizadas. hold necesita keyup en el
-  // release para soltar el latch keys del engine; fire (tap) solo keydown.
+  // Un solo mapa compartido: evita que keyup omita un action (bug: fire
+  // quedaba pegado en keys['Space'] y solo disparaba una vez).
+  const KEY_MAP: Record<string, string> = {
+    left: 'ArrowLeft',
+    right: 'ArrowRight',
+    thrust: 'ArrowUp',
+    fire: 'Space',
+  };
+
   const handleDown = useCallback((action: string) => {
-    const key: Record<string, string> = {
-      left: 'ArrowLeft',
-      right: 'ArrowRight',
-      thrust: 'ArrowUp',
-      fire: 'Space',
-    };
-    dispatchKey(key[action] ?? action, 'keydown');
+    dispatchKey(KEY_MAP[action] ?? action, 'keydown');
   }, []);
 
   const handleUp = useCallback((action: string) => {
-    const key: Record<string, string> = {
-      left: 'ArrowLeft',
-      right: 'ArrowRight',
-      thrust: 'ArrowUp',
-    };
-    dispatchKey(key[action] ?? action, 'keyup');
+    dispatchKey(KEY_MAP[action] ?? action, 'keyup');
   }, []);
 
   if (isLoading) {

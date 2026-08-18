@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/actions.ts"
 type: "code"
-community: "app/page.tsx"
+community: "data.jsx"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/datajsx
 ---
 
 # getSalonLeaderboard()
@@ -17,4 +17,4 @@ tags:
 - [[actions.ts_1]] - `contains` [EXTRACTED]
 - [[getScoresByGame()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/datajsx

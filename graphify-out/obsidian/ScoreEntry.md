@@ -1,12 +1,12 @@
 ---
 source_file: "app/data/types.ts"
 type: "code"
-community: "data.jsx"
+community: "validate.py"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/datajsx
+  - community/validatepy
 ---
 
 # ScoreEntry
@@ -16,4 +16,4 @@ tags:
 - [[scores.ts]] - `imports` [EXTRACTED]
 - [[types.ts_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/datajsx
+#graphify/code #graphify/EXTRACTED #community/validatepy

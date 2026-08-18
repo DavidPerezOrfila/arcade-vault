@@ -1,12 +1,12 @@
 ---
 source_file: "app/salon/SalonClient.tsx"
 type: "code"
-community: "app/page.tsx"
+community: "data.jsx"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app/pagetsx
+  - community/datajsx
 ---
 
 # SalonClient()
@@ -15,4 +15,4 @@ tags:
 - [[SalonClient.tsx]] - `contains` [EXTRACTED]
 - [[getSalonLeaderboard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app/pagetsx
+#graphify/code #graphify/EXTRACTED #community/datajsx
