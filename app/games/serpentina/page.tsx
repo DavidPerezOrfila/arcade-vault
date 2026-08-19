@@ -23,7 +23,7 @@ async function LeaderboardServer() {
 export default function SerpentinaPage() {
   return (
     <main className='serpentina-page min-h-screen bg-black text-white'>
-      <div className='mx-auto max-w-5xl px-4 py-8'>
+      <div className='game-viewport mx-auto max-w-5xl px-4 py-8'>
         <header className='serpentina-page-header mb-8'>
           <h1 className='serpentina-page-title'>SERPENTINA</h1>
           <p className='serpentina-page-description'>

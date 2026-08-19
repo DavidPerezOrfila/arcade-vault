@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../components/games/game-viewport.css";
 
 /* ===== Tailwind v4 theme tokens (bridged to the bespoke :root palette) =====
    `inline` emits no :root var, so utilities resolve directly to the source

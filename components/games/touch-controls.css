@@ -3,17 +3,13 @@
    centrada. Colores según la skin activa (variables globales). */
 
 .touch-controls {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 40;
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 12px;
   padding: 14px 12px calc(14px + env(safe-area-inset-bottom, 0px));
-  pointer-events: none;
+  flex-shrink: 0;
   background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
 }
 
@@ -37,7 +33,6 @@
   flex: 0 0 auto;
   width: 120px;
   height: 120px;
-  pointer-events: auto;
   touch-action: none;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
@@ -100,7 +95,6 @@
 /* ---- Pausa (centrada, discreta para no pulsarla por error) ---- */
 
 .touch-pause {
-  pointer-events: auto;
   min-height: 44px;
   padding: 9px 12px;
   margin-bottom: 4px;

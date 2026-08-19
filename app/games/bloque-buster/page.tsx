@@ -23,7 +23,7 @@ async function LeaderboardServer() {
 export default function BloqueBusterPage() {
   return (
     <main className='bloque-buster-page min-h-screen'>
-      <div className='mx-auto max-w-5xl px-4 py-8'>
+      <div className='game-viewport mx-auto max-w-5xl px-4 py-8'>
         <header className='bloque-buster-page-header mb-8'>
           <h1 className='bloque-buster-page-title'>BLOQUE BUSTER</h1>
           <p className='bloque-buster-page-description'>

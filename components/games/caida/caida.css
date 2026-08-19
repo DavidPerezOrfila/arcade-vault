@@ -465,9 +465,15 @@
 /* ===== Mobile adjustments ===== */
 
 @media (max-width: 640px) {
+  .caida-game-layout {
+    flex: 1;
+    min-height: 0;
+  }
+
   .caida-game-container {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .caida-panel {

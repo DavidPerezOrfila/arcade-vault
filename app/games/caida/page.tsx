@@ -23,7 +23,7 @@ async function LeaderboardServer() {
 export default function CaidaPage() {
   return (
     <main className='caida-page min-h-screen bg-black text-white'>
-      <div className='mx-auto max-w-5xl px-4 py-8'>
+      <div className='game-viewport mx-auto max-w-5xl px-4 py-8'>
         <header className='caida-page-header mb-8'>
           <h1 className='caida-page-title'>CAÍDA</h1>
           <p className='caida-page-description'>

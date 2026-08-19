@@ -314,11 +314,31 @@ html[data-skin='neon'] .bloque-buster-game-container canvas {
 
 @media (max-width: 640px) {
   .bloque-buster-game-layout {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .bloque-buster-game-sidebar {
     order: 2;
+  }
+
+  .bloque-buster-game-wrapper {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bloque-buster-game-shell {
+    flex: 1;
+    min-height: 0;
+  }
+
+  .bloque-buster-game-container {
+    flex: 1;
+    width: 100%;
+    max-height: calc(100dvh - 200px);
+    margin: 0 auto;
   }
 
   .bloque-buster-leaderboard-card {
