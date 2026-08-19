@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     title: 'Asteroids | Arcade Vault',
     description:
       'Juega al clásico Asteroids. Dispara, esquiva y destruye asteroides para conseguir la máxima puntuación.',
-    type: 'website'
-  }
+    type: 'website',
+  },
 };
 
 async function LeaderboardServer() {
@@ -23,7 +23,7 @@ async function LeaderboardServer() {
 export default function AsteroidsPage() {
   return (
     <main className='asteroids-page min-h-screen'>
-      <div className='mx-auto max-w-5xl px-4 py-8'>
+      <div className='game-viewport mx-auto max-w-5xl px-4 py-8'>
         <header className='asteroids-page-header mb-8'>
           <h1 className='asteroids-page-title'>ASTEROIDS</h1>
           <p className='asteroids-page-description'>

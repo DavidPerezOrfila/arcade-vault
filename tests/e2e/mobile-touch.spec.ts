@@ -133,4 +133,27 @@ test.describe('mobile touch', () => {
       page.locator('.bloque-buster-game-container canvas')
     ).toBeVisible();
   });
+
+  test('game page uses the game-viewport container on mobile', async ({
+    page,
+  }) => {
+    await expect(page.locator('.game-viewport')).toHaveCount(1);
+  });
+
+  test('touch controls do not overlap the canvas', async ({ page }) => {
+    const canvas = page.locator('.asteroids-game-container canvas');
+    const controls = page.locator('.touch-controls');
+
+    await expect(canvas).toBeVisible();
+    await expect(controls).toBeVisible();
+
+    const canvasBox = await canvas.boundingBox();
+    const controlsBox = await controls.boundingBox();
+    expect(canvasBox).not.toBeNull();
+    expect(controlsBox).not.toBeNull();
+
+    expect(controlsBox!.y).toBeGreaterThanOrEqual(
+      canvasBox!.y + canvasBox!.height - 1
+    );
+  });
 });

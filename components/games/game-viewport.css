@@ -1,0 +1,22 @@
+/* Contenedor de página de juego: columna que rellena la altura del viewport
+   (canvas arriba, controles debajo). El contenido crece más allá de 100dvh si
+   no cabe (p. ej. sidebar), y entonces el body scrollea de forma natural. */
+.game-viewport {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.game-viewport > header {
+  flex-shrink: 0;
+}
+
+/* Móvil: sin padding vertical (py-8 del utility) para dar el máximo alto al
+   canvas + controles. El sidebar queda debajo y se accede scrolleando. */
+@media (max-width: 640px) {
+  .game-viewport {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
