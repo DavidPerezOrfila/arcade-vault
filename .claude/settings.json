@@ -26,7 +26,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -Command \"Get-ChildItem -Path .,'C:\\Users\\david.perez\\AppData\\Local\\Temp','C:\\Users\\david.perez\\OneDrive - Timestamp - Sistemas de Informa\u00e7\u00e3o S.A' -Filter 'bash.exe.stackdump' -Recurse -Depth 3 -ErrorAction SilentlyContinue -Force | Remove-Item -Force -ErrorAction SilentlyContinue; exit 0\""
+            "command": "powershell -NoProfile -Command \"Get-ChildItem -Path .,'C:\\Users\\david.perez\\AppData\\Local\\Temp','C:\\Users\\david.perez\\OneDrive - Timestamp - Sistemas de Informação S.A' -Filter 'bash.exe.stackdump' -Recurse -Depth 3 -ErrorAction SilentlyContinue -Force | Remove-Item -Force -ErrorAction SilentlyContinue; exit 0\""
           }
         ]
       },
@@ -36,6 +36,26 @@
           {
             "type": "command",
             "command": "powershell -NoProfile -ExecutionPolicy RemoteSigned -File \".claude/hooks/accumulate-edited.ps1\""
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR:-.}/.claude/helpers/graft-hooks.cjs\" post-edit",
+            "timeout": 10000
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|mcp__graft__",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR:-.}/.claude/helpers/graft-hooks.cjs\" tool-savings",
+            "timeout": 8000
           }
         ]
       }
@@ -49,7 +69,57 @@
             "command": "powershell -NoProfile -ExecutionPolicy RemoteSigned -File \".claude/hooks/format-batch.ps1\""
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR:-.}/.claude/helpers/graft-hooks.cjs\" stop",
+            "timeout": 8000
+          }
+        ]
       }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR:-.}/.claude/helpers/graft-hooks.cjs\" prompt",
+            "timeout": 15000
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR:-.}/.claude/helpers/graft-hooks.cjs\" session-start",
+            "timeout": 8000
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node \"${CLAUDE_PROJECT_DIR:-.}/.claude/helpers/graft-statusline.cjs\""
+  },
+  "subagentStatusLine": {
+    "type": "command",
+    "command": "node \"${CLAUDE_PROJECT_DIR:-.}/.claude/helpers/graft-statusline.cjs\""
+  },
+  "footerLinksRegexes": [
+    "graft/[\\w./-]+\\.md"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(graft:*)",
+      "Bash(npx graft:*)",
+      "Bash(graft-dev:*)",
+      "Bash(node dist/cli.js:*)"
     ]
   }
 }

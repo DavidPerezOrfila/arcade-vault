@@ -1,6 +1,8 @@
 # app/data/scores.ts
 
-- rowToEntry · function · L8-L22 — function rowToEntry(row: { game: string; score: number; name: string; at: string; user_id: string | null; }): ScoreEntry
-- getScores · function · L24-L37 — async function getScores(): Promise<ScoreEntry[]>
-- getScoresByGame · function · L39-L54 — async function getScoresByGame(game: string): Promise<ScoreEntry[]>
-- saveScore · function · L56-L73 — async function saveScore( input: ScoreEntryInputParsed ): Promise<ScoreEntry>
+- ScoreRowSelected · type · L10-L13 — type ScoreRowSelected = Pick< ScoreRowDb, 'game' | 'score' | 'name' | 'at' | 'user_id' >;
+- rowToEntry · function · L15-L23 — function rowToEntry(row: ScoreRowSelected): ScoreEntry
+- fetchScores · function · L27-L40 — async function fetchScores(game?: string): Promise<ScoreEntry[]>
+- getScores · function · L42-L48 — async function getScores(): Promise<ScoreEntry[]>
+- getScoresByGame · function · L50-L56 — async function getScoresByGame(game: string): Promise<ScoreEntry[]>
+- saveScore · function · L58-L77 — async function saveScore( input: ScoreEntryInputParsed ): Promise<ScoreEntry>

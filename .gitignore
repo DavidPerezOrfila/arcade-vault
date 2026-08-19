@@ -54,3 +54,6 @@ next-env.d.ts
 
 # graphify cache (reproducible hash files, no need to commit)
 /graphify-out/cache/
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+graft/

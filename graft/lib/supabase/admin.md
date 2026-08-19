@@ -1,3 +1,3 @@
 # lib/supabase/admin.ts
 
-- createSupabaseAdminClient · function · L3-L15 — function createSupabaseAdminClient()
+- createSupabaseAdminClient · function · L4-L13 — function createSupabaseAdminClient()

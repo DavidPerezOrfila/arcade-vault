@@ -1,3 +1,3 @@
 # lib/supabase/client.ts
 
-- createSupabaseBrowserClient · function · L5-L13 — function createSupabaseBrowserClient()
+- createSupabaseBrowserClient · function · L6-L11 — function createSupabaseBrowserClient()
