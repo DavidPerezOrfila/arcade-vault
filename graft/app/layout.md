@@ -1,3 +1,3 @@
 # app/layout.tsx
 
-- RootLayout · function · L7-L25 — function RootLayout({ children }: { children: React.ReactNode; })
+- RootLayout · function · L13-L34 — function RootLayout({ children, }: { children: React.ReactNode; })
