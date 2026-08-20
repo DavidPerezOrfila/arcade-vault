@@ -1,5 +1,5 @@
 ---
-state: Approved
+state: Implemented
 dependencies: ['05-asteroids-game', '07-tetris-caida', '08-serpentina-game']
 date: 2026-08-19
 ---
