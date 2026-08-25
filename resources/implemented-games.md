@@ -22,7 +22,7 @@ La plataforma distingue dos estados por juego:
 | 4   | `duelo-pixel`   | DUELO PIXEL   | VERSUS    | cyan    | Pong a dos paletas: contra CPU o dos jugadores locales.                 | 24      | 🗂 Catalogado    |
 | 5   | `gloton`        | GLOTÓN        | ARCADE    | yellow  | Laberinto con puntos y 4 fantasmas; la píldora invierte la persecución. | 96 400  | 🗂 Catalogado    |
 | 6   | `invasores`     | INVASORES     | SHOOTER   | green   | Canon horizontal contra filas alienígenas descendentes.                 | 54 190  | 🗂 Catalogado    |
-| 7   | `ranaria`       | RANARIA       | ARCADE    | green   | Frogger: cruza autopista y río sobre troncos a la deriva.               | 18 900  | 🗂 Catalogado    |
+| 7   | `ranaria`       | RANARIA       | ARCADE    | green   | Frogger: cruza autopista y río sobre troncos a la deriva.               | 18 900  | ✅ Implementado |
 | 8   | `serpentina`    | SERPENTINA    | ARCADE    | green   | Snake de luz en grilla; cada núcleo alarga la serpiente y acelera.      | 7 820   | ✅ Implementado |
 
 8 juegos en catálogo, 4 jugables, 4 pendientes de implementar.
@@ -135,11 +135,12 @@ motor en el repositorio.
 
 ### RANARIA — `ranaria`
 
-- **Refs motor vanilla:** no localizado en `resources/started-games/`
+- **Motor:** `lib/games/ranaria/game.esm.js` (construido desde cero, spec
+  `specs/game-jam/frogger/01-frogger-core.md`)
 - **Categoría:** ARCADE · **Color:** green
 
-Frogger. Cruce de autopista y río con troncos a la deriva. Sin motor en el
-repositorio.
+Frogger. Cruce de autopista y río con troncos a la deriva; 5 bocas destino,
+3 vidas, tortugas sumergibles y temporizador por ronda.
 
 ---
 

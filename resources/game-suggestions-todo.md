@@ -14,6 +14,7 @@ Memory of the game-planner agent. Updated each run.
 - [x] asteroids — SHOOTER / yellow — shipped
 - [x] caida — PUZZLE / magenta — shipped
 - [x] serpentina — ARCADE / green — shipped
+- [x] ranaria — ARCADE / green — shipped 2026-08-25 (spec `specs/game-jam/frogger/01-frogger-core.md`, slug catálogo `ranaria`)
 
 ## Catalogued, pending engine
 
@@ -21,7 +22,6 @@ Memory of the game-planner agent. Updated each run.
 - [ ] duelo-pixel — VERSUS / cyan — suggested 2026-08-12 — no vanilla ref, only VERSUS title, 2-player input + AI adds complexity. Fit 4/6. Ranking: #2.
 - [ ] invasores — SHOOTER / green — suggested 2026-08-12 — no vanilla ref, green already shipped. Fit 3/6. Ranking: #3.
 - [ ] gloton — ARCADE / yellow — suggested 2026-08-12 — no vanilla ref, high complexity (AI/pathfinding 4 ghosts + maze).
-- [ ] ranaria — ARCADE / green — suggested 2026-08-12 — no vanilla ref.
 
 ## Run log
 
