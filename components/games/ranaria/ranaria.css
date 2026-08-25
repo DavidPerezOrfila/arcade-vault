@@ -1,0 +1,522 @@
+/* RANARIA (Frogger): estilos de pagina y componente (fuente unica) */
+
+/* ===== Page Layout ===== */
+
+.ranaria-page {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.ranaria-page-header {
+  margin-bottom: 2rem;
+}
+
+.ranaria-page-title {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.ranaria-page-description {
+  color: var(--ink-dim);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  max-width: 60ch;
+}
+
+.ranaria-page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .ranaria-page-grid {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.ranaria-game-wrapper {
+  width: 100%;
+}
+
+/* ===== Sidebar ===== */
+
+.ranaria-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .ranaria-sidebar {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+
+.ranaria-sidebar-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.ranaria-sidebar-title {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ranaria-sidebar-title--controls,
+.ranaria-sidebar-title--scoring {
+  color: var(--cyan);
+}
+
+/* Controls List */
+.ranaria-controls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ranaria-control-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.375rem 0;
+}
+
+.ranaria-control-key {
+  color: var(--cyan);
+}
+
+/* Scoring List */
+.ranaria-scoring-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ranaria-scoring-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+.ranaria-scoring-value {
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+/* ===== Game layout + Skin selector ===== */
+
+.ranaria-game-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.ranaria-skin-bar {
+  display: flex;
+}
+
+.ranaria-skin-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 0.5rem;
+  padding: 0.375rem 0.5rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.7rem;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ranaria-skin-select select {
+  background: transparent;
+  color: var(--ink);
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ranaria-skin-select select:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+/* El listbox nativo no hereda --bg-2: sin fondo explícito las opciones salen
+   blancas sobre blanco. */
+.ranaria-skin-select select option {
+  background: var(--bg-2);
+  color: var(--ink);
+}
+
+/* ===== Game area: board + side panel ===== */
+
+.ranaria-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+
+/* Board: internal 640×560, CSS scales keeping ratio */
+.ranaria-board-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 8 / 7;
+}
+
+.ranaria-board-wrap canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid var(--line-2);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  touch-action: none; /* Prevent touch scrolling on canvas */
+}
+
+.ranaria-board-wrap canvas:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+/* ===== Skin overlays ===== */
+
+/* Scanlines CRT del skin retro; el neon añade un halo sutil al canvas. */
+.ranaria-board-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+html[data-skin='retro'] .ranaria-board-wrap::after {
+  display: block;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.22) 0 2px,
+    transparent 2px 4px
+  );
+  mix-blend-mode: multiply;
+}
+
+html[data-skin='neon'] .ranaria-board-wrap canvas {
+  box-shadow:
+    0 0 22px rgba(255, 0, 110, 0.22),
+    0 0 46px rgba(0, 245, 255, 0.16);
+}
+
+/* ===== Side panel (HUD + leaderboard) ===== */
+
+.ranaria-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 220px;
+}
+
+/* HUD */
+.ranaria-hud {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.ranaria-hud-item {
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+}
+
+.ranaria-hud-item span:first-child {
+  display: block;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-faint);
+}
+
+.ranaria-hud-item span:last-child {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* ===== Leaderboard HUD ===== */
+
+.ranaria-leaderboard {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line-2);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: var(--ink);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.75rem;
+}
+
+.ranaria-leaderboard-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cyan);
+}
+
+.ranaria-leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ranaria-leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ranaria-leaderboard-item--current-user {
+  color: var(--cyan);
+}
+
+.ranaria-leaderboard-rank-player {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ranaria-leaderboard-empty {
+  color: var(--ink-faint);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* ===== In-game overlay (GAME OVER / PAUSA) ===== */
+
+.ranaria-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 0.5rem;
+  z-index: 20;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Specificity 2 clases: gana a .ranaria-overlay */
+.ranaria-overlay.hidden {
+  display: none;
+}
+
+.ranaria-overlay-title {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.ranaria-overlay-score {
+  color: var(--cyan);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  min-height: 1.5rem;
+}
+
+.ranaria-overlay-button {
+  background: var(--cyan);
+  color: var(--bg);
+  font-weight: 700;
+  padding: 0.6rem 1.25rem;
+  min-height: 44px;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: inherit;
+}
+
+.ranaria-overlay-button:hover {
+  filter: brightness(0.85);
+}
+
+/* ===== Auth Prompt Overlay ===== */
+
+.ranaria-auth-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  padding: 1rem;
+}
+
+.ranaria-auth-prompt {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.ranaria-auth-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.ranaria-auth-message {
+  color: var(--ink-dim);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.ranaria-auth-button {
+  display: inline-block;
+  background: var(--cyan);
+  color: var(--bg);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.ranaria-auth-button:hover {
+  filter: brightness(0.85);
+}
+
+.ranaria-auth-dismiss {
+  margin-left: 1rem;
+  color: var(--ink-dim);
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  min-height: 44px;
+  padding: 0.25rem 0.5rem;
+}
+
+.ranaria-auth-dismiss:hover {
+  color: var(--ink);
+}
+
+/* ===== Loading State ===== */
+
+.ranaria-loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 1.5rem;
+  z-index: 5;
+}
+
+/* ===== Reduced motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .ranaria-board-wrap canvas,
+  .ranaria-overlay,
+  .ranaria-auth-overlay,
+  .ranaria-auth-prompt,
+  .ranaria-leaderboard {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ===== Mobile adjustments ===== */
+
+@media (max-width: 640px) {
+  .ranaria-game-layout {
+    flex: 1;
+    min-height: 0;
+  }
+
+  .ranaria-game-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ranaria-board-wrap {
+    width: 100%;
+    max-height: calc(100dvh - 200px);
+    margin: 0 auto;
+  }
+
+  .ranaria-panel {
+    max-width: 300px;
+  }
+
+  .ranaria-auth-prompt {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .ranaria-auth-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .ranaria-auth-dismiss {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ranaria-overlay-title {
+    font-size: 1.35rem;
+  }
+
+  .ranaria-overlay-score {
+    font-size: 0.95rem;
+  }
+
+  .ranaria-hud-item span:last-child {
+    font-size: 1.1rem;
+  }
+}

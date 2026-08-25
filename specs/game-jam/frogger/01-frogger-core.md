@@ -1,6 +1,6 @@
 # SPEC — Frogger: integración core del juego
 
-> **Estado:** Approved
+> **Estado:** Implemented
 > **Depende de:** 08-serpentina-game.md
 > **Fecha:** 2026-05-20
 > **Objetivo:** Integrar Frogger (canvas puro, construido desde cero) como juego jugable en Arcade Vault con ID `frogger`, conectando score, vidas, nivel y game over con el HUD React y la play-page dedicada.
@@ -251,3 +251,20 @@ No se introducen nuevas tablas ni tipos TypeScript — se reutilizan `GameRow` y
 - **No: RLS en este spec** — las tablas quedan abiertas (INSERT y SELECT públicos). Razón: se mitiga en el spec futuro de seguridad.
 
 - **No: Realtime en leaderboards** — los scores se ven al recargar. Razón: la complejidad de subscriptions no aporta valor mientras haya pocos jugadores activos.
+
+## Desviaciones de implementación (2026-08-25)
+
+- **Slug `ranaria` en lugar de `frogger`** — el catálogo ya tenía la fila
+  `ranaria` (ARCADE / green / cover-rana) y era el slug decidido para el juego
+  rana; crear `frogger` duplicaría el título y el INSERT del spec violaba el
+  constraint `color in ('cyan','magenta','green','yellow')`. Sin INSERT: la
+  fila ya existe.
+- **Engine contract de la plataforma, no loop en componente** — el spec asume
+  un `FroggerGame.tsx` con loop interno y props callbacks que ya no existe en
+  el repo. Implementación real sigue el contrato vigente:
+  `lib/games/ranaria/game.esm.js` (vanilla, setTimeout encadenado,
+  `initGame(refs, { onGameOver, skin })` / `destroy`) + wrapper
+  `components/games/ranaria/RanariaGame.tsx` con `useArcadeGame`
+  (leaderboard, AuthPrompt y skins incluidos).
+- **Ruta `/games/ranaria`** en lugar de `/games/frogger/play` — convención
+  real del repo (`app/games/<slug>/page.tsx`).

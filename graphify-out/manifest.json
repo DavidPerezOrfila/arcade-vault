@@ -1,6 +1,6 @@
 {
   ".claude/settings.json": {
-    "mtime": 1787606439.2150521,
+    "mtime": 1787673683.795376,
     "ast_hash": "4de9e2fe53efe7f1a17d0a7db6dd7378",
     "semantic_hash": ""
   },
@@ -915,13 +915,13 @@
     "semantic_hash": ""
   },
   "components/games/AuthPrompt.tsx": {
-    "mtime": 1787604977.8082721,
-    "ast_hash": "b1100ad7732559b2a3928c4213aa0b8c",
+    "mtime": 1787684572.1139197,
+    "ast_hash": "7c5712b4f69eeef5215408e9395d18ed",
     "semantic_hash": ""
   },
   "components/games/LeaderboardList.tsx": {
-    "mtime": 1787604977.8092978,
-    "ast_hash": "32b1004e4bda967664210c3e3e32229d",
+    "mtime": 1787684640.4840474,
+    "ast_hash": "2ffc8f0ddaaa39946ff9aa0fab12296c",
     "semantic_hash": ""
   },
   "components/games/useArcadeGame.ts": {
@@ -1015,8 +1015,8 @@
     "semantic_hash": ""
   },
   "resources/implemented-games.md": {
-    "mtime": 1787604978.786521,
-    "ast_hash": "28f7d0ca9a7d3fa7a0c2c7d51b480ce0",
+    "mtime": 1787689778.750715,
+    "ast_hash": "168b4b5d9a39be17638a86500f395494",
     "semantic_hash": ""
   },
   "public/snake-assets/fruits.png": {
@@ -1050,13 +1050,13 @@
     "semantic_hash": ""
   },
   "resources/game-suggestions-todo.md": {
-    "mtime": 1787604978.786521,
-    "ast_hash": "a98ca99ca2c8e5f1d7b44debc9260870",
+    "mtime": 1787689835.8035192,
+    "ast_hash": "b0f587702fb9a17264244d70cae6b683",
     "semantic_hash": ""
   },
   "resources/skins-todo.md": {
-    "mtime": 1787604978.787521,
-    "ast_hash": "aa65b2ecddabe8f083b7ba37905058f2",
+    "mtime": 1787692537.5080662,
+    "ast_hash": "6a423edecbcd51037ee7d1131a8cb054",
     "semantic_hash": ""
   },
   "components/skin/SkinSelect.tsx": {
@@ -1155,7 +1155,7 @@
     "semantic_hash": ""
   },
   ".claude/skills/spec-impl-game/SKILL.md": {
-    "mtime": 1787608477.0020406,
+    "mtime": 1787673683.798585,
     "ast_hash": "cdde39396d965e9546bd7eb275e16b24",
     "semantic_hash": ""
   },
@@ -1170,8 +1170,38 @@
     "semantic_hash": ""
   },
   "specs/game-jam/frogger/01-frogger-core.md": {
-    "mtime": 1787605804.1317363,
-    "ast_hash": "0645dc410912dd721100e35116bfe0e5",
+    "mtime": 1787692828.3877525,
+    "ast_hash": "42579ec1152c2ba80919622a43f18d43",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1787691666.5053687,
+    "ast_hash": "006c04ba5e78b54165f1dc0f30480a14",
+    "semantic_hash": ""
+  },
+  "app/games/ranaria/actions.ts": {
+    "mtime": 1787684199.2349393,
+    "ast_hash": "e5442a7972128099cd4095185288b430",
+    "semantic_hash": ""
+  },
+  "app/games/ranaria/page.tsx": {
+    "mtime": 1787684406.070187,
+    "ast_hash": "3f162087d723fd1ffa1165ed9770ba65",
+    "semantic_hash": ""
+  },
+  "components/games/ranaria/RanariaGame.tsx": {
+    "mtime": 1787684259.3283508,
+    "ast_hash": "b74d9aa524455d84750bcf8fff4638e2",
+    "semantic_hash": ""
+  },
+  "lib/games/ranaria/game.esm.js": {
+    "mtime": 1787691957.3109732,
+    "ast_hash": "9f78fceedecf786314c74a263947e65e",
+    "semantic_hash": ""
+  },
+  "lib/games/ranaria/types.ts": {
+    "mtime": 1787683974.4705243,
+    "ast_hash": "712ca53cf1df150458e1cd8b7192ad15",
     "semantic_hash": ""
   }
 }

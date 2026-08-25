@@ -1,16 +1,16 @@
 # Graph Report - 05-arcade-vault  (2026-08-25)
 
 ## Corpus Check
-- 214 files · ~174,939 words
+- 220 files · ~178,552 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1456 nodes · 1641 edges · 117 communities (105 shown, 12 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 33 edges (avg confidence: 0.67)
+- 1494 nodes · 1735 edges · 117 communities (105 shown, 12 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 35 edges (avg confidence: 0.66)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d03aeb0b`
+- Built from commit: `4283dae7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -212,8 +212,8 @@ Cohesion: 0.07
 Nodes (29): eslint, eslint-config-next, globals, devDependencies, eslint, eslint-config-next, globals, @playwright/test (+21 more)
 
 ### Community 13 - "validate.py"
-Cohesion: 0.16
-Nodes (22): benchmark_pair(), count_tokens(), main(), print_table(), Path, count_bullets(), extract_code_blocks(), extract_headings() (+14 more)
+Cohesion: 0.14
+Nodes (35): attachInput(), buildColors(), completeRound(), destroy(), detachInput(), draw(), drawEntity(), drawFrog() (+27 more)
 
 ### Community 14 - "Tetris"
 Cohesion: 0.12
@@ -300,8 +300,8 @@ Cohesion: 0.29
 Nodes (3): EXPLOSION_FRAMES, SPRITES, ssCallbacks
 
 ### Community 35 - "compress.py"
-Cohesion: 0.12
-Nodes (27): main(), print_usage(), backup_dir_for(), build_compress_prompt(), build_fix_prompt(), call_claude(), compress_file(), is_sensitive_path() (+19 more)
+Cohesion: 0.07
+Nodes (49): benchmark_pair(), count_tokens(), main(), print_table(), Path, main(), print_usage(), backup_dir_for() (+41 more)
 
 ### Community 37 - "Security Policy"
 Cohesion: 0.50
@@ -432,8 +432,8 @@ Cohesion: 0.22
 Nodes (8): Acceptance criteria, Data model, Decisions taken and discarded, Identified risks, Implementation plan, Incluye, No incluye, Scope
 
 ### Community 85 - "caida/route.md"
-Cohesion: 0.22
-Nodes (8): Acceptance criteria, Data model, Decisions, Implementation plan, INSERT en tabla `games`, Props del componente `FroggerGame`, Scope, SPEC — Frogger: integración core del juego
+Cohesion: 0.20
+Nodes (9): Acceptance criteria, Data model, Decisions, Desviaciones de implementación (2026-08-25), Implementation plan, INSERT en tabla `games`, Props del componente `FroggerGame`, Scope (+1 more)
 
 ### Community 86 - "auth/page.md"
 Cohesion: 0.25
@@ -544,19 +544,19 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **857 isolated node(s):** `gameState`, `keys`, `justPressed`, `RADII`, `SPEEDS` (+852 more)
+- **858 isolated node(s):** `gameState`, `keys`, `justPressed`, `RADII`, `SPEEDS` (+853 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Test generation (plan → generate → heal)` connect `Browser Session Management` to `caida.spec.ts`?**
+- **Why does `Browser Automation with playwright-cli` connect `CaidaGame.tsx` to `caida.spec.ts`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Running Custom Playwright Code` connect `data.jsx` to `caida.spec.ts`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **Why does `Test generation (plan → generate → heal)` connect `about/page.tsx` to `playwright-cli/SKILL.md`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `gameState`, `keys`, `justPressed` to the rest of the system?**
-  _857 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _858 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `02-asteroids/game.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Session Management` be split into smaller, more focused modules?**

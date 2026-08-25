@@ -1,10 +1,9 @@
 # Skins — cobertura por juego
 
 Sistema global de tres skins (`clasico`, `neon`, `retro`) sobre fondos oscuros.
-El selector global vive en `components/nav.tsx` y `asteroids` añade su propio
-dropdown (`<select>` en `AsteroidsGame.tsx`); la persistencia usa
-`localStorage` con clave `arcade-vault-skin` y el estado se refleja en
-`<html data-skin="...">`.
+El selector global vive en `components/nav.tsx` y cada juego integra un
+`<SkinSelect>` local; la persistencia usa `localStorage` con clave
+`arcade-vault-skin` y el estado se refleja en `<html data-skin="...">`.
 
 | Juego        | clasico | neon | retro | dark-safe | Estado    |
 | ------------ | ------- | ---- | ----- | --------- | --------- |
@@ -12,6 +11,7 @@ dropdown (`<select>` en `AsteroidsGame.tsx`); la persistencia usa
 | `caida`      | —       | —    | —     | —         | Pendiente |
 | `serpentina` | —       | —    | —     | —         | Pendiente |
 | `bloque-buster` | ✅    | ✅    | ✅     | ✅         | Completo  |
+| `ranaria`    | ✅       | ✅    | ✅     | ✅         | Completo  |
 
 ## Notas
 
@@ -24,3 +24,6 @@ dropdown (`<select>` en `AsteroidsGame.tsx`); la persistencia usa
   (gameover/pausa/win). Bloques, paleta y pelota son sprites del spritesheet
   `/arkanoid-assets/spritesheet-breakout.png` (fidelidad del port), no tokens
   de paleta; `retro` añade scanlines por CSS, `neon` halo al canvas.
+- `ranaria`: engine consume `PALETTES` para colores de entidades (frog=player,
+  coches=enemy/bullet, troncos=thrust, tortugas=accent). CSS usa variables
+  del sistema de skins; `retro` scanlines, `neon` halo al canvas.
