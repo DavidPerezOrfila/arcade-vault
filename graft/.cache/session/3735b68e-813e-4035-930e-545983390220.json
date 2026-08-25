@@ -1,9 +1,0 @@
-{
-  "lastQuery": "/goal Quiero desinstalar Graft tanto del repositorio como a nivel de usuario. No solamente en Claude Code, sino también en el resto de agentes como Opencode. Solo quiero Utiliza Graphify. Por lo tanto, no deberá quedar ningún rastro de graft en ningún nodo de Graphify. Actualiza el grafo cuando termines.Crea una nueva rama, commit, PR y merge para que la rama main quede totalmente limpia",
-  "perAgentQuery": {},
-  "graftReads": 0,
-  "sourceReads": 0,
-  "savedTokens": 0,
-  "injectedPointers": [],
-  "nudges": 0
-}

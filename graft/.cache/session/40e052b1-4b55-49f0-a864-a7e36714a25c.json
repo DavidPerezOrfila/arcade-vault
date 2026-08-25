@@ -1,9 +1,0 @@
-{
-  "lastQuery": "/goal Quiero desinstalar Graft tanto del repositorio como a nivel de usuario. No solamente en Claude Code, sino también en el resto de agentes como Opencode.",
-  "perAgentQuery": {},
-  "graftReads": 0,
-  "sourceReads": 0,
-  "savedTokens": 0,
-  "injectedPointers": [],
-  "nudges": 0
-}
