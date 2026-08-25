@@ -1,16 +1,16 @@
-# Graph Report - 05-arcade-vault  (2026-08-25)
+# Graph Report - 05-arcade-vault  (2026-08-19)
 
 ## Corpus Check
-- 214 files · ~174,939 words
+- 280 files · ~194,161 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1456 nodes · 1641 edges · 117 communities (105 shown, 12 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 33 edges (avg confidence: 0.67)
+- 1573 nodes · 1994 edges · 172 communities (97 shown, 75 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 38 edges (avg confidence: 0.66)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d03aeb0b`
+- Built from commit: `cda58e88`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -67,14 +67,9 @@
 - Workflow: issue-loop
 - Integrate an Arcade Vault game
 - 08-serpentina-game
-- about.spec.ts
-- playwright.config.ts
-- asteroids.spec.ts
-- salon.spec.ts
 - caida/game.esm.js
 - app/page.tsx
 - 07-tetris-caida
-- caida.spec.ts
 - Juegos catalogados (no jugables todavía)
 - data.jsx
 - instructions.md
@@ -99,17 +94,67 @@
 - data/schema.md
 - scores.md
 - storage.md
+- data/types.md
+- footer.md
+- asteroids/actions.md
+- asteroids/page.md
+- caida/actions.md
 - 06-games-catalog-salon
+- caida/page.md
+- GamesClient.md
+- games/page.md
 - cavecrew/SKILL.md
 - Caveman Help
+- [slug]/page.md
+- HomeEnhancer.md
+- RecentActivity.md
+- TimeAgo.md
+- TopPlayersToday.md
 - Mermaid AI Skills
+- layout.md
 - Caveman Compress
 - caveman/SKILL.md
+- app/page.md
+- [id]/page.md
+- PlayerClient.md
 - caveman-commit
 - caveman-review
+- salon/page.md
+- SalonClient.md
+- AsteroidsGame.md
+- CaidaGame.md
+- components/nav.md
+- about.spec.md
+- asteroids/game.esm.md
+- asteroids/types.md
+- caida/game.esm.md
+- caida/types.md
+- admin.md
+- client.md
+- server.md
+- supabase/types.md
+- 02-asteroids/game.md
+- 03-tetris/game.md
 - SPEC 04 — Supabase: foundation y persistencia de puntuaciones
 - 05-asteroids-game
 - caveman-stats
+- spritesheet.md
+- 04-arkanoid/game.md
+- levels.md
+- app.md
+- auth.md
+- biblioteca.md
+- data.md
+- detalle.md
+- about.md
+- home.md
+- home-about/nav.md
+- templates/nav.md
+- reproductor.md
+- salon.md
+- asteroids.spec.md
+- caida.spec.md
+- salon.spec.md
 - salon.jsx
 - eslint
 - next
@@ -119,6 +164,8 @@
 - requireEnv
 - bloque-buster spec-b — Engine from scratch: física angular + power-ups + HUD DOM
 - refactor-skin-layout-issue.md
+- requireEnv
+- games.ts
 - .agents/skills/consult-graph/SKILL.md
 - .claude/skills/consult-graph/SKILL.md
 - __init__.py
@@ -127,14 +174,14 @@
 ## God Nodes (most connected - your core abstractions)
 1. `scripts` - 17 edges
 2. `compilerOptions` - 16 edges
-3. `Browser Automation with playwright-cli` - 15 edges
+3. `LeaderboardEntry` - 15 edges
 4. `Browser Automation with playwright-cli` - 15 edges
 5. `validate()` - 14 edges
 6. `About Page with Resend Spec (03)` - 14 edges
-7. `Running Custom Playwright Code` - 13 edges
-8. `Running Custom Playwright Code` - 13 edges
-9. `Home Page Spec (02)` - 13 edges
-10. `compress_file()` - 12 edges
+7. `useSkin()` - 13 edges
+8. `Home Page Spec (02)` - 13 edges
+9. `compress_file()` - 12 edges
+10. `isSkinId()` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Playwright CLI Browser Automation Skill (.claude copy)` --conceptually_related_to--> `Browser Automation via CLI`  [INFERRED]
@@ -145,8 +192,8 @@
   specs/03-about-page-resend.md → resources/templates/home-about/arcade-vault-standalone.html
 - `Home Page Spec (02)` --references--> `Tailwind CSS v4 Theme Configuration`  [INFERRED]
   specs/02-home-page.md → CLAUDE.md
-- `Storage Management` --references--> `Run Code`  [EXTRACTED]
-  .agents/skills/playwright-cli/references/storage-state.md → .claude/skills/playwright-cli/references/running-code.md
+- `saveScoreAction()` --calls--> `createSupabaseServerClient()`  [EXTRACTED]
+  app/data/actions.ts → lib/supabase/server.ts
 
 ## Import Cycles
 - None detected.
@@ -157,19 +204,19 @@
 - **Spec Driven Design Workflow (Klerith/fernando-skills)** — claude_specdrivendesign, readme_fernandoskillsreference, specs_02_home_page_homepagespec, specs_03_about_page_resend_aboutpageresendspec [INFERRED 0.90]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (117 total, 12 thin omitted)
+## Communities (172 total, 75 thin omitted)
 
 ### Community 0 - "02-asteroids/game.js"
 Cohesion: 0.07
 Nodes (28): Asteroid, Bullet, canvas, ctx, dist(), draw(), drawHUD(), drawLifeIcon() (+20 more)
 
 ### Community 1 - "Advanced Mocking with run-code"
-Cohesion: 0.25
+Cohesion: 0.22
 Nodes (8): Advanced Mocking with run-code, CLI Route Commands, Conditional Response Based on Request, Delayed Response, Modify Real Response, Request Mocking, Simulate Network Failures, URL Patterns
 
 ### Community 2 - "Browser Session Management"
-Cohesion: 0.09
-Nodes (23): 0. How generation works, 1.1 Prerequisite: workspace, 1.2 Prerequisite: seed test, 1.3 Explore the app, 1.4 Write the spec file, 1. Planning, 2.1 Inputs, 2.2 Generate one scenario (+15 more)
+Cohesion: 0.04
+Nodes (43): 1. Name Browser Sessions Semantically, 2. Always Clean Up, 3. Delete Stale Browser Data, A/B Testing Sessions, Attach by channel name, Attach via browser extension, Attach via CDP endpoint, Attaching to a Running Browser (+35 more)
 
 ### Community 3 - "About Page with Resend Spec (03)"
 Cohesion: 0.09
@@ -192,8 +239,8 @@ Cohesion: 0.04
 Nodes (42): @dietrichgebert/ponytail, ecc-universal, next, dependencies, @dietrichgebert/ponytail, ecc-universal, next, react (+34 more)
 
 ### Community 8 - "Browser Automation with playwright-cli"
-Cohesion: 0.08
-Nodes (24): Browser Automation with playwright-cli, Browser Sessions, Commands, Core, DevTools, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session (+16 more)
+Cohesion: 0.14
+Nodes (14): Browser Automation with playwright-cli, Browser Sessions, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session, Example: Multi-tab workflow, Installation, Open parameters (+6 more)
 
 ### Community 9 - "03-tetris/game.js"
 Cohesion: 0.08
@@ -204,24 +251,24 @@ Cohesion: 0.14
 Nodes (18): ball, BLOCK_COLORS, blocks, bounceSound, breakSound, canvas, collideAABB(), ctx (+10 more)
 
 ### Community 11 - "leaderboard.ts"
-Cohesion: 0.19
-Nodes (18): attachInput(), bodyColor, destroy(), detachInput(), draw(), endGame(), FRUIT_ATLAS, FRUIT_NAMES (+10 more)
+Cohesion: 0.09
+Nodes (36): Footer(), NAV_LINKS, applySkin(), getServerSnapshot(), getSnapshot(), Listener, listeners, SkinContext (+28 more)
 
 ### Community 12 - "devDependencies"
 Cohesion: 0.07
 Nodes (29): eslint, eslint-config-next, globals, devDependencies, eslint, eslint-config-next, globals, @playwright/test (+21 more)
 
 ### Community 13 - "validate.py"
-Cohesion: 0.16
-Nodes (22): benchmark_pair(), count_tokens(), main(), print_table(), Path, count_bullets(), extract_code_blocks(), extract_headings() (+14 more)
+Cohesion: 0.30
+Nodes (9): AuthPage(), parseFormData(), saveScoreAction(), clearUser(), getUser(), setUser(), PlayerClient(), PlayerClientProps (+1 more)
 
 ### Community 14 - "Tetris"
 Cohesion: 0.12
 Nodes (16): 1. `index.html`, 2. `style.css`, 3. `game.js`, Controles, Cómo ejecutar el juego, Cómo funciona, Estructura del proyecto, Flujo del juego (+8 more)
 
 ### Community 15 - "Tracing"
-Cohesion: 0.17
-Nodes (12): 1. Start Tracing Before the Problem, 2. Clean Up Old Traces, Basic Usage, Best Practices, Limitations, `resources/`, Trace Output Files, `trace-{timestamp}.network` (+4 more)
+Cohesion: 0.08
+Nodes (24): 1. Start Tracing Before the Problem, 2. Clean Up Old Traces, Analyzing Performance, Basic Usage, Best Practices, Capturing Evidence, Debugging Failed Actions, Limitations (+16 more)
 
 ### Community 16 - "Arquitectura"
 Cohesion: 0.13
@@ -232,7 +279,7 @@ Cohesion: 0.15
 Nodes (12): 01 — MVP jugable de Arkanoid, Alcance, Bloques, Criterios de aceptación, Decisiones tomadas y descartadas, Dentro del MVP, Estado del juego, Fuera del MVP (dejado para specs posteriores) (+4 more)
 
 ### Community 18 - "Cookies"
-Cohesion: 0.05
+Cohesion: 0.06
 Nodes (36): Advanced: Multiple Cookies or Custom Options, Advanced: Multiple Operations, Authentication State Reuse, Clear All Cookies, Clear All localStorage, Clear sessionStorage, Common Patterns, Cookies (+28 more)
 
 ### Community 19 - "Template for a useful spec"
@@ -256,8 +303,8 @@ Cohesion: 0.18
 Nodes (10): Arguments, Command flow, Hard rules, Phase 1 — Understand the context, Phase 2 — Clarify through questions, Phase 3 — Develop the spec section by section, Phase 4 — Save the spec, Philosophy (+2 more)
 
 ### Community 24 - "CaidaGame.tsx"
-Cohesion: 0.08
-Nodes (24): Browser Automation with playwright-cli, Browser Sessions, Commands, Core, DevTools, Example: Debugging with DevTools, Example: Form submission, Example: Interactive session (+16 more)
+Cohesion: 0.06
+Nodes (39): actions, metadata, actions, metadata, actions, metadata, actions, metadata (+31 more)
 
 ### Community 25 - "Asteroids"
 Cohesion: 0.22
@@ -272,11 +319,11 @@ Cohesion: 0.22
 Nodes (8): 02 — Animación de explosión al romper bloques, Alcance, Criterios de aceptación, Decisiones tomadas y descartadas, Dentro del spec, Fuera del alcance, Modelo de datos, Plan de implementación
 
 ### Community 28 - "playwright-cli/SKILL.md"
-Cohesion: 0.24
+Cohesion: 0.22
 Nodes (4): Examples, Inspecting Element Attributes, Debugging Playwright Tests, Running Playwright Tests
 
 ### Community 29 - "Video Recording"
-Cohesion: 0.22
+Cohesion: 0.25
 Nodes (8): 1. Use Descriptive Filenames, 2. Record entire hero scripts., Basic Recording, Best Practices, Limitations, Overlay API Summary, Tracing vs Video, Video Recording
 
 ### Community 30 - "Spec Design Skill"
@@ -300,8 +347,8 @@ Cohesion: 0.29
 Nodes (3): EXPLOSION_FRAMES, SPRITES, ssCallbacks
 
 ### Community 35 - "compress.py"
-Cohesion: 0.12
-Nodes (27): main(), print_usage(), backup_dir_for(), build_compress_prompt(), build_fix_prompt(), call_claude(), compress_file(), is_sensitive_path() (+19 more)
+Cohesion: 0.07
+Nodes (49): benchmark_pair(), count_tokens(), main(), print_table(), Path, main(), print_usage(), backup_dir_for() (+41 more)
 
 ### Community 37 - "Security Policy"
 Cohesion: 0.50
@@ -316,8 +363,8 @@ Cohesion: 0.06
 Nodes (35): Asteroid, attachInput(), Bullet, destroy(), detachInput(), dist(), draw(), drawHUD() (+27 more)
 
 ### Community 49 - "about/page.tsx"
-Cohesion: 0.09
-Nodes (23): 0. How generation works, 1.1 Prerequisite: workspace, 1.2 Prerequisite: seed test, 1.3 Explore the app, 1.4 Write the spec file, 1. Planning, 2.1 Inputs, 2.2 Generate one scenario (+15 more)
+Cohesion: 0.11
+Nodes (18): sendContactEmail(), ContactForm(), ContactFormProps, EMPTY_FORM, FormFields, HeroSection(), HIGHLIGHTS, HighlightIcon() (+10 more)
 
 ### Community 52 - "Workflow: opencode-loop"
 Cohesion: 0.18
@@ -339,125 +386,53 @@ Nodes (13): Catalog seed, Common mistakes, Fase A — Planificar (método /spec)
 Cohesion: 0.22
 Nodes (8): 08-serpentina-game, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
 
-### Community 59 - "about.spec.ts"
-Cohesion: 0.10
-Nodes (20): 1. Name Browser Sessions Semantically, 2. Always Clean Up, 3. Delete Stale Browser Data, A/B Testing Sessions, Attach by channel name, Attach via browser extension, Attach via CDP endpoint, Attaching to a Running Browser (+12 more)
-
-### Community 60 - "playwright.config.ts"
-Cohesion: 0.10
-Nodes (20): 1. Name Browser Sessions Semantically, 2. Always Clean Up, 3. Delete Stale Browser Data, A/B Testing Sessions, Attach by channel name, Attach via browser extension, Attach via CDP endpoint, Attaching to a Running Browser (+12 more)
-
-### Community 61 - "asteroids.spec.ts"
-Cohesion: 0.15
-Nodes (13): Clipboard, Complex Workflows, Error Handling, File Downloads, Frames and Iframes, Geolocation, JavaScript Execution, Media Emulation (+5 more)
-
-### Community 62 - "salon.spec.ts"
-Cohesion: 0.15
-Nodes (12): 1. Start Tracing Before the Problem, 2. Clean Up Old Traces, Basic Usage, Best Practices, Limitations, `resources/`, Trace Output Files, `trace-{timestamp}.network` (+4 more)
-
 ### Community 63 - "caida/game.esm.js"
 Cohesion: 0.15
 Nodes (30): attachInput(), clearLines(), collide(), createBoard(), destroy(), detachInput(), draw(), drawBlock() (+22 more)
 
 ### Community 64 - "app/page.tsx"
-Cohesion: 0.15
-Nodes (11): App and data, Architecture, Commands, Environment, Game integration, Project, Repository guidance, Repository-specific constraints (+3 more)
+Cohesion: 0.19
+Nodes (17): getSalonLeaderboard(), seededScores(), DetailPage(), DetailPageProps, TopPlayersToday(), LeaderboardRow, LeaderboardTable(), LeaderboardTableProps (+9 more)
 
 ### Community 65 - "07-tetris-caida"
 Cohesion: 0.22
 Nodes (8): 07-tetris-caida, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
-
-### Community 66 - "caida.spec.ts"
-Cohesion: 0.21
-Nodes (4): Examples, Inspecting Element Attributes, Debugging Playwright Tests, Running Playwright Tests
 
 ### Community 67 - "Juegos catalogados (no jugables todavía)"
 Cohesion: 0.14
 Nodes (13): ASTEROIDS — `asteroids`, BLOQUE BUSTER — `bloque-buster`, CAÍDA — `caida`, DUELO PIXEL — `duelo-pixel`, GLOTÓN — `gloton`, INVASORES — `invasores`, Juegos catalogados (no jugables todavía), Juegos implementados en Arcade Vault (+5 more)
 
 ### Community 69 - "data.jsx"
-Cohesion: 0.15
-Nodes (13): Clipboard, Complex Workflows, Error Handling, File Downloads, Frames and Iframes, Geolocation, JavaScript Execution, Media Emulation (+5 more)
+Cohesion: 0.24
+Nodes (12): LeaderboardRow, SaveScoreResult, ScoreEntryInputParsed, scoreEntrySchema, fetchScores(), getScoresByGame(), rowToEntry(), saveScore() (+4 more)
 
 ### Community 71 - "The tools"
 Cohesion: 0.15
-Nodes (12): Instructions, Phase 1 — Identify the spec, Phase 2 — Validate the spec's state, Phase 3 — Create the git branch and switch to it, Phase 4 — Implement step by step, Phase 5 — Post-implementation cascade (skin-designer → mobile-porter), Session context, /spec-impl-game — Implementer of approved specs with post-implementation cascade (+4 more)
+Nodes (12): 1 · `graft ask "<question>" --source`: locate + understand (the default), 2 · `graft grep "<pattern>"`: exhaustive find, 3 · `graft skeleton <file>`: a file's API at a glance, 4 · `graft callers <symbol>`: the exact edges, 5 · `graft map`: orientation for an unfamiliar repo or area, 6 · Lifecycle: `graft build` / `graft check`, graft, Report what graft saved, every turn (+4 more)
 
 ### Community 72 - "INDEX.md"
-Cohesion: 0.15
-Nodes (12): 09-arcade-mobile-layout, Alcance, Archivos críticos, Decisiones clave, Paso 1 — TouchControls de fixed a flow-relative, Paso 2 — Wrapper viewport mobile en cada page.tsx, Paso 3 — Canvas container: altura disponible + aspect-ratio, Paso 4 — Sidebar bajo el fold (+4 more)
+Cohesion: 0.17
+Nodes (7): eslint.config.mjs, Concepts, Files, graft — repo map, next.config.mjs, playwright.config.ts, postcss.config.mjs
 
 ### Community 73 - "caveman-compress/README.md"
 Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
 
 ### Community 74 - "biblioteca.jsx"
-Cohesion: 0.17
-Nodes (11): Final section — What is NOT in (reinforcement), Global rules about the whole document, Header, Section 1 — Why this spec exists (optional), Section 2 — Scope, Section 3 — Data model, Section 4 — Implementation plan, Section 5 — Acceptance criteria (+3 more)
+Cohesion: 0.21
+Nodes (9): FeatureIcon(), FeatureIconKind, FloatingSilhouettes(), FeatureItem, FEATURES, MiniCard(), StatItem, STATS (+1 more)
 
 ### Community 76 - "Commands"
-Cohesion: 0.17
-Nodes (11): Final section — What is NOT in (reinforcement), Global rules about the whole document, Header, Section 1 — Why this spec exists (optional), Section 2 — Scope, Section 3 — Data model, Section 4 — Implementation plan, Section 5 — Acceptance criteria (+3 more)
+Cohesion: 0.20
+Nodes (10): Commands, Core, DevTools, Keyboard, Mouse, Navigation, Network, Save as (+2 more)
 
 ### Community 77 - "detalle.jsx"
-Cohesion: 0.18
-Nodes (10): Arguments, Command flow, Hard rules, Phase 1 — Understand the context, Phase 2 — Clarify through questions, Phase 3 — Develop the spec section by section, Phase 4 — Save the spec, Philosophy (+2 more)
+Cohesion: 0.09
+Nodes (20): PLAYERS, CATS, Game, GameCategory, GameColor, GameFilter, ScoreRow, ScoreRowDb (+12 more)
 
 ### Community 78 - "reproductor.jsx"
-Cohesion: 0.18
-Nodes (10): Arguments, Command flow, Hard rules, Phase 1 — Understand the context, Phase 2 — Clarify through questions, Phase 3 — Develop the spec section by section, Phase 4 — Save the spec, Philosophy (+2 more)
-
-### Community 79 - "about/actions.md"
-Cohesion: 0.20
-Nodes (9): Audit checklist, Hard constraints, Juegos a auditar, Output template, Process, Prompt Defense Baseline, Red flags, Rutas a auditar (+1 more)
-
-### Community 80 - "highlight-icon.md"
-Cohesion: 0.20
-Nodes (9): Acceptance criteria, Data model, Decisions taken and discarded, Identified risks, Implementation plan, Incluye, MVP — Arcade Vault, No incluye (+1 more)
-
-### Community 81 - "about/page.md"
-Cohesion: 0.20
-Nodes (9): About Page con envío de correo vía Resend, Acceptance criteria, Data model, Decisions taken and discarded, Identified risks, Implementation plan, Incluye, No incluye (+1 more)
-
-### Community 82 - "about/schema.md"
-Cohesion: 0.22
-Nodes (8): Instructions, Phase 1 — Identify the spec, Phase 2 — Validate the spec's state, Phase 3 — Create the git branch and switch to it, Phase 4 — Implement step by step, Session context, /spec-impl — Implementer of approved specs, Summary of expected behavior
-
-### Community 83 - "about/types.md"
-Cohesion: 0.22
-Nodes (8): Instructions, Phase 1 — Identify the spec, Phase 2 — Validate the spec's state, Phase 3 — Create the git branch and switch to it, Phase 4 — Implement step by step, Session context, /spec-impl — Implementer of approved specs, Summary of expected behavior
-
-### Community 84 - "asteroids/route.md"
-Cohesion: 0.22
-Nodes (8): Acceptance criteria, Data model, Decisions taken and discarded, Identified risks, Implementation plan, Incluye, No incluye, Scope
-
-### Community 85 - "caida/route.md"
-Cohesion: 0.22
-Nodes (8): Acceptance criteria, Data model, Decisions, Implementation plan, INSERT en tabla `games`, Props del componente `FroggerGame`, Scope, SPEC — Frogger: integración core del juego
-
-### Community 86 - "auth/page.md"
-Cohesion: 0.25
-Nodes (8): Advanced Mocking with run-code, CLI Route Commands, Conditional Response Based on Request, Delayed Response, Modify Real Response, Request Mocking, Simulate Network Failures, URL Patterns
-
-### Community 87 - "data/actions.md"
-Cohesion: 0.25
-Nodes (8): 1. Use Descriptive Filenames, 2. Record entire hero scripts., Basic Recording, Best Practices, Limitations, Overlay API Summary, Tracing vs Video, Video Recording
-
-### Community 88 - "games.md"
-Cohesion: 0.33
-Nodes (5): Arcade Vault, Setup local de la base de datos, Skills usadas, Usa Spec Driven Design, Variables de entorno
-
-### Community 89 - "players.md"
-Cohesion: 0.40
-Nodes (3): Clean code (source: `instructions.md`), Line endings (CRLF vs LF), This is NOT the Next.js you know
-
-### Community 90 - "data/schema.md"
-Cohesion: 0.50
-Nodes (4): Analyzing Performance, Capturing Evidence, Debugging Failed Actions, Use Cases
-
-### Community 91 - "scores.md"
-Cohesion: 0.50
-Nodes (4): Analyzing Performance, Capturing Evidence, Debugging Failed Actions, Use Cases
+Cohesion: 0.36
+Nodes (7): getScores(), gameLabel(), PALETTE, RecentActivity(), tone(), relativeTime(), TimeAgo()
 
 ### Community 98 - "06-games-catalog-salon"
 Cohesion: 0.12
@@ -535,6 +510,14 @@ Nodes (8): Acceptance Criteria, bloque-buster spec-b — Engine from scratch: f�
 Cohesion: 0.25
 Nodes (7): Commits, Decisiones de testing, Documento de decisiones, Fuera de alcance, Notas adicionales, Problema, Solución
 
+### Community 166 - "requireEnv"
+Cohesion: 0.60
+Nodes (3): requireEnv(), createSupabaseAdminClient(), createSupabaseBrowserClient()
+
+### Community 167 - "games.ts"
+Cohesion: 0.27
+Nodes (8): getGameById(), getGameBySlug(), getGames(), GamesPage(), Home(), PlayerPage(), PlayerPageProps, SalonPage()
+
 ### Community 178 - ".agents/skills/consult-graph/SKILL.md"
 Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
@@ -544,24 +527,24 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **857 isolated node(s):** `gameState`, `keys`, `justPressed`, `RADII`, `SPEEDS` (+852 more)
+- **771 isolated node(s):** `FeatureIconKind`, `PALETTE`, `FeatureItem`, `StatItem`, `FormFields` (+766 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **75 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Test generation (plan → generate → heal)` connect `Browser Session Management` to `caida.spec.ts`?**
+- **Why does `PALETTES` connect `leaderboard.ts` to `asteroids/game.esm.js`, `serpentina/game.esm.js`, `caida/game.esm.js`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `AsteroidsGame()` connect `CaidaGame.tsx` to `asteroids/game.esm.js`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Running Custom Playwright Code` connect `data.jsx` to `caida.spec.ts`?**
+- **Why does `BloqueBusterGame()` connect `CaidaGame.tsx` to `serpentina/game.esm.js`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **What connects `gameState`, `keys`, `justPressed` to the rest of the system?**
-  _857 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `FeatureIconKind`, `PALETTE`, `FeatureItem` to the rest of the system?**
+  _771 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `02-asteroids/game.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Session Management` be split into smaller, more focused modules?**
-  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
 - **Should `About Page with Resend Spec (03)` be split into smaller, more focused modules?**
   _Cohesion score 0.09032258064516129 - nodes in this community are weakly interconnected._
-- **Should `serpentina/game.esm.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.10634920634920635 - nodes in this community are weakly interconnected._
