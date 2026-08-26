@@ -620,8 +620,8 @@
     "semantic_hash": ""
   },
   "lib/games/asteroids/game.esm.js": {
-    "mtime": 1787780919.2121217,
-    "ast_hash": "a369405f519e67e957a64f8926c0b6fe",
+    "mtime": 1787604978.754929,
+    "ast_hash": "537551e6c155fd33f193be1b9e5a60be",
     "semantic_hash": ""
   },
   "lib/games/asteroids/types.ts": {
@@ -840,8 +840,8 @@
     "semantic_hash": ""
   },
   "lib/games/caida/game.esm.js": {
-    "mtime": 1787780448.382974,
-    "ast_hash": "597ce9fb9539beefa4b792fe95c5fb9f",
+    "mtime": 1787604978.757931,
+    "ast_hash": "18c8e1a9d64dd9b675b7b6c57c4d3c04",
     "semantic_hash": ""
   },
   "lib/games/caida/types.ts": {
@@ -1000,8 +1000,8 @@
     "semantic_hash": ""
   },
   "lib/games/serpentina/game.esm.js": {
-    "mtime": 1787780564.3631513,
-    "ast_hash": "49b25ffd1da7d01b9a387f7f50452d5e",
+    "mtime": 1787604978.75993,
+    "ast_hash": "f35b2afb03b203b4f31222e098736346",
     "semantic_hash": ""
   },
   "lib/games/serpentina/types.ts": {
@@ -1085,8 +1085,8 @@
     "semantic_hash": ""
   },
   "lib/games/bloque-buster/game.esm.js": {
-    "mtime": 1787780504.0709257,
-    "ast_hash": "df9f46ad331e824b7740f0b5165de189",
+    "mtime": 1787604978.7559302,
+    "ast_hash": "c61e14f51d6122be40ee91a89abe83e8",
     "semantic_hash": ""
   },
   "lib/games/bloque-buster/types.ts": {
@@ -1175,8 +1175,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1787781043.702139,
-    "ast_hash": "9687672ef73606c39b08dc5773bf80cb",
+    "mtime": 1787777344.9052095,
+    "ast_hash": "838bb4f495598ae7f0d08fa77bfe921a",
     "semantic_hash": ""
   },
   "app/games/ranaria/actions.ts": {
