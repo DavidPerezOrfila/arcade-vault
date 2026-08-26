@@ -1,11 +1,11 @@
 # Graph Report - 05-arcade-vault  (2026-08-26)
 
 ## Corpus Check
-- 222 files · ~180,972 words
+- 222 files · ~180,626 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1526 nodes · 1763 edges · 119 communities (107 shown, 12 thin omitted)
+- 1527 nodes · 1765 edges · 119 communities (107 shown, 12 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 35 edges (avg confidence: 0.66)
 - Token cost: 0 input · 0 output
 
@@ -562,8 +562,8 @@ Nodes (3): Boundaries, Refresh policy, Workflow
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Test generation (plan → generate → heal)` connect `about/page.tsx` to `playwright-cli/SKILL.md`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Browser Session Management` connect `playwright.config.ts` to `caida.spec.ts`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **Why does `Browser Session Management` connect `about.spec.ts` to `playwright-cli/SKILL.md`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `gameState`, `keys`, `justPressed` to the rest of the system?**
   _887 weakly-connected nodes found - possible documentation gaps or missing edges._
