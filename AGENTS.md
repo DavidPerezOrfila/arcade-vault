@@ -1,5 +1,9 @@
 # AGENTS.md
 
+Arcade Vault: plataforma arcade retro en español. Next.js App Router + motores de juego vanilla (canvas) envueltos en componentes React client. Reglas válidas para cualquier agente/harness; el detalle completo para Claude Code vive en `CLAUDE.md`.
+
+## Engineering principles
+
 - Do not preserve backward compatibility. Remove obsolete paths instead of adding compatibility layers, fallbacks, or migrations.
 - Choose the simplest implementation that fully meets the current requirements. Avoid speculative abstractions, configuration, and indirection.
 - Grow the system in layers. Start from the smallest version that works end to end, and add each new capability on top of a product that already works. Never trade a working product for unfinished complexity.
@@ -10,7 +14,7 @@
 
 <!-- BEGIN:nextjs-agent-rules -->
 
-# This is NOT the Next.js you know
+## This is NOT the Next.js you know
 
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
 
@@ -20,8 +24,20 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- BEGIN:graphify-reminder -->
 
+## Graphify Reminder
+
 Before exploring the source code of an unfamiliar module, check whether the project's knowledge graph in `graphify-out/obsidian/` already answers the question. Invoke the `consult-graph` skill to read `index.md` and the relevant community pages. Fall back to the source only when the graph is silent or stale.
 <!-- END:graphify-reminder -->
+
+## Arcade Vault specifics
+
+- **Engine contract:** los motores (`lib/games/<slug>/game.esm.js`) son vanilla JS, sin globals de navegador en el scope del módulo. Exportan `initGame(refs, options)` y `destroy()` idempotente. Loop con `setTimeout` encadenado, nunca `requestAnimationFrame` (RAF se estrangula en headless WebKit/CI); cancela el timer en `destroy()`. Cada listener de input (teclado y pointer/touch) lleva su cleanup. `onGameOver(score)` se dispara una sola vez.
+- **Leaderboards:** no hand-roll las acciones. Usa la factory `createLeaderboardActions({ gameId, gamePath })` de `lib/games/leaderboard.ts`; ejemplo canónico en `app/games/asteroids/actions.ts`. `scores` no tiene FK a `games.id`: el enlace es por slug string.
+- **Juegos nuevos:** receta de 8 archivos documentada en `resources/implemented-games.md` (motor, wrapper, CSS, página, actions, route API, spec e2e, entrada de catálogo). Actualiza ese fichero en el mismo cambio que entrega el juego.
+- **Skins:** exactamente tres IDs — `clasico` (default), `neon`, `retro` — definidos en `lib/games/skins.ts`. Los motores resuelven colores vía `PALETTES`; nada de colores hardcodeados por entidad.
+- **Specs:** funcionalidades grandes pasan por Spec Driven Design (`specs/NN-slug.md`); nada de código de producción hasta estado `Approved`/`Aprobado`.
+- **Idioma:** identificadores y código en inglés; copy de producto en español.
+- **graphify:** tras cambios de código, `graphify update .` para mantener los artefactos del grafo al día.
 
 ## Clean code (source: `instructions.md`)
 

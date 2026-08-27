@@ -1,12 +1,12 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project
 
 Arcade Vault is a Spanish-language retro arcade platform. Users play browser games and submit high scores to Supabase. The UI is a Next.js App Router application; each game uses a vanilla JavaScript canvas engine wrapped by a React client component.
 
-Reference prototypes in `resources/templates/` define the intended catalog, screens, and visual style. `resources/implemented-games.md` is the source of truth for playable versus catalog-only games.
+Reference prototypes in `resources/templates/` define the intended catalog, screens, and visual style. `resources/implemented-games.md` is the source of truth for playable versus catalog-only games; update it in the same change that ships a game.
 
 ## Stack
 
@@ -46,7 +46,7 @@ npm run db:types
 npm run db:stop
 ```
 
-Playwright specs live in `tests/e2e/` and match `testDir` in `playwright.config.ts`, so `npm run test:e2e` runs them. (`e2e/about.spec.ts` is orphaned outside `testDir` and is not run by the default config.) Playwright starts `npm run start`, so build first and provide required Supabase environment variables.
+Playwright specs live in `tests/e2e/` and match `testDir` in `playwright.config.ts`. (`e2e/about.spec.ts` is orphaned outside `testDir` and is not run by the default config.) Playwright starts `npm run start`, so build first and provide required Supabase environment variables.
 
 ## Environment
 
@@ -88,12 +88,14 @@ Copy `app/games/asteroids/actions.ts` for a new game's actions. Do not use older
 
 ### Game integration
 
+New games follow the 8-file recipe documented in `resources/implemented-games.md`: engine, React wrapper, game CSS, page, Server Actions, API route, e2e spec, and catalog entry.
+
 - `lib/games/<slug>/game.esm.js` is a browser-only vanilla engine.
 - `components/games/<slug>/` contains the `'use client'` React wrapper and game CSS.
 - React dynamically imports engines inside `useEffect`; engines must not touch browser globals at module scope.
 - Engines export `initGame(refs, options)` and `destroy()`.
-- Use chained `setTimeout`, not `requestAnimationFrame`; cancel the timer in `destroy()`.
-- Pair every input listener with cleanup. Make `destroy()` idempotent. Fire `onGameOver(score)` once.
+- Use chained `setTimeout`, not `requestAnimationFrame`: RAF throttles in headless WebKit/CI. Cancel the timer in `destroy()`.
+- Pair every input listener (keyboard and pointer/touch) with cleanup. Make `destroy()` idempotent. Fire `onGameOver(score)` once.
 - Shared game UI and hooks live in `components/games/`.
 
 ### Skins
@@ -110,7 +112,15 @@ Large features follow Spec Driven Design:
 2. Do not write production code until spec state is `Approved` or `Aprobado`.
 3. `/spec-impl <NN-slug>` implements the approved spec on its `spec-NN-slug` branch.
 
-Use `game-planner` for catalog recommendations, `game-jam` for draft alternative game specs, and `skin-designer` only for skin-layer work.
+Game-jam drafts live under `specs/game-jam/<slug>/` as two alternative specs of the same game (`spec-<slug>-a.md` / `spec-<slug>-b.md`).
+
+## Project agents
+
+- `game-planner` — decides the next game; reads/updates `resources/game-suggestions-todo.md`. Recommendation only, never writes code.
+- `game-jam` — drafts two alternative specs for a themed game. Specs only, no implementation.
+- `skin-designer` — skin-layer work only; coverage tracked in `resources/skins-todo.md`.
+- `mobile-porter` — responsive/mobile audits and CSS fixes at 320/375/414px; reports to `resources/mobile-audit.md`.
+- `optimize-arcade-game` — engine performance and difficulty balance against the P1-P7 checklist.
 
 ## Repository-specific constraints
 
@@ -124,4 +134,4 @@ Use `game-planner` for catalog recommendations, `game-jam` for draft alternative
 
 ## Repository guidance
 
-`AGENTS.md` contains additional project rules, including the Next.js 16 warning, graphify reminder, and line-ending requirements. `.github/copilot-instructions.md` only adds Mermaid instructions: when editing or creating diagrams, follow `.github/instructions/mermaid.instructions.md`.
+`AGENTS.md` carries the cross-harness rules (engineering principles, engine contract, clean code, line endings, Next.js 16 and graphify reminders). `.github/copilot-instructions.md` only adds Mermaid instructions: when editing or creating diagrams, follow `.github/instructions/mermaid.instructions.md`.
