@@ -457,7 +457,7 @@ Nodes (12): 09-arcade-mobile-layout, Alcance, Archivos críticos, Decisiones cla
 ### Community 73 - "caveman-compress/README.md"
 
 Cohesion: 0.09
-Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
+Nodes (20): Before / After, Benchmarks, How It Work, Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
 
 ### Community 74 - "biblioteca.jsx"
 
