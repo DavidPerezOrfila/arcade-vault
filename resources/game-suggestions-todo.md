@@ -25,6 +25,24 @@ Memory of the game-planner agent. Updated each run.
 
 ## Run log
 
+### 2026-08-28 — Ranking de Pool A (tras 2 nuevos shipped)
+
+Pool A reducido de 5 a 3: `bloque-buster` y `ranaria` pasaron a shipped. Ninguno de los
+3 restantes tiene vanilla ref — los 4 refs de `resources/started-games/` ya están portados.
+
+Estado catálogo: ARCADE 3 (serpentina, ranaria, bloque-buster) · SHOOTER 1 (asteroids) ·
+PUZZLE 1 (caida) · **VERSUS 0**. Colores: yellow 1 · magenta 1 · green 2 · cyan 1.
+
+Winner: **duelo-pixel** (fit 4/6). Runner-up: invasores (3/6), gloton (2/6).
+Rationale: VERSUS es la única categoría sin ningún juego shipped; abrirla compensa la
+saturación de ARCADE (3). Pong es el motor más simple de los tres — un canvas, una
+pelota, mínima colisión; el único delta real sobre el patrón probado (setTimeout
+encadenado + attach/detach pareados) es input 2P + CPU trivial. Cyan 1→2 equilibra
+colores (y/m/g/c = 1/1/2/2). Slug ya en catálogo, sin colisión. Invasores pesa menos:
+verde sería el 3º de ese color y SHOOTER ya tiene asteroids. Glotón descartado: ARCADE
+saturado + AI/pathfinding de 4 fantasmas (anti-patrón). Recomendación pendiente de
+confirmación del usuario — no pasar a implementación sin su OK.
+
 ### 2026-08-12 — Ranking de Pool A
 
 Winner: **bloque-buster** (fit 5/6). Runner-up: duelo-pixel (4/6), invasores (3/6).
