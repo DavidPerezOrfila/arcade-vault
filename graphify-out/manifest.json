@@ -1045,8 +1045,8 @@
     "semantic_hash": ""
   },
   "resources/game-suggestions-todo.md": {
-    "mtime": 1787936616.0232832,
-    "ast_hash": "e1e5b98ba9860adc4acf629f06423641",
+    "mtime": 1787949508.7450547,
+    "ast_hash": "0aa172c4a78e0a865118fbc639e8447f",
     "semantic_hash": ""
   },
   "resources/skins-todo.md": {
@@ -1215,8 +1215,8 @@
     "semantic_hash": ""
   },
   "app/auth/AuthForm.tsx": {
-    "mtime": 1787948420.0265164,
-    "ast_hash": "65fe7c6536dd563b75893e9a8b119c01",
+    "mtime": 1787953587.3241148,
+    "ast_hash": "2ac8be3fcbb5a2d3b644779a8c48f720",
     "semantic_hash": ""
   },
   "app/auth/OAuthButtons.tsx": {
@@ -1240,13 +1240,13 @@
     "semantic_hash": ""
   },
   "app/auth/reset/page.tsx": {
-    "mtime": 1787948838.9913485,
-    "ast_hash": "01fe5eff033a770dc908d597d89fd592",
+    "mtime": 1787953614.4301226,
+    "ast_hash": "5044546e7fd0dc18a58cf9fc4569f2a2",
     "semantic_hash": ""
   },
   "app/cuenta/ProfileForm.tsx": {
-    "mtime": 1787949194.502318,
-    "ast_hash": "a93cc7d4a81d6b74d7f5c71d289f99e7",
+    "mtime": 1787953630.3385744,
+    "ast_hash": "06e9d3a2b24ab2ee5f8412fbd484d973",
     "semantic_hash": ""
   },
   "app/cuenta/page.tsx": {
@@ -1270,8 +1270,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/auth.spec.ts": {
-    "mtime": 1787949221.9814606,
-    "ast_hash": "3ecece29517986f56b38992892102381",
+    "mtime": 1787949442.3019886,
+    "ast_hash": "e5629acbda1a382e2299bd8a3a8724ba",
     "semantic_hash": ""
   },
   "tests/e2e/ranaria.spec.ts": {
