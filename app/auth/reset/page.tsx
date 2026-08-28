@@ -80,8 +80,9 @@ function ResetContent() {
           </div>
           <form action={updateAction}>
             <div className='field'>
-              <label>Contraseña nueva</label>
+              <label htmlFor='reset-password'>Contraseña nueva</label>
               <input
+                id='reset-password'
                 name='password'
                 type='password'
                 autoComplete='new-password'
@@ -123,8 +124,9 @@ function ResetContent() {
         </div>
         <form action={resetAction}>
           <div className='field'>
-            <label>Correo electrónico</label>
+            <label htmlFor='reset-email'>Correo electrónico</label>
             <input
+              id='reset-email'
               name='email'
               type='email'
               autoComplete='email'

@@ -9,7 +9,7 @@ const PASSWORD = 'clave-secreta-123';
 const USERNAME = `px_${unique}`;
 
 test.describe('Auth', () => {
-  test('registro crea sesión y el nav muestra el username', async({
+  test('registro crea sesión y el nav muestra el username', async ({
     page,
   }) => {
     await page.goto(`/auth?redirect=/`);
@@ -27,7 +27,7 @@ test.describe('Auth', () => {
     await expect(page.locator('.av-nav')).toContainText(USERNAME);
   });
 
-  test('login con credenciales correctas muestra el username', async({
+  test('login con credenciales correctas muestra el username', async ({
     page,
   }) => {
     await page.goto('/auth');
@@ -41,7 +41,7 @@ test.describe('Auth', () => {
     await expect(page.locator('.av-nav')).toContainText(USERNAME);
   });
 
-  test('login con contraseña incorrecta muestra error', async({ page }) => {
+  test('login con contraseña incorrecta muestra error', async ({ page }) => {
     await page.goto('/auth');
 
     await page.getByLabel('Correo electrónico').fill(EMAIL);
@@ -54,7 +54,7 @@ test.describe('Auth', () => {
     ).toBeVisible();
   });
 
-  test('logout devuelve el nav a Iniciar Sesión', async({ page }) => {
+  test('logout devuelve el nav a Iniciar Sesión', async ({ page }) => {
     await page.goto('/auth');
 
     await page.getByLabel('Correo electrónico').fill(EMAIL);
@@ -70,7 +70,7 @@ test.describe('Auth', () => {
     await expect(page.locator('.av-nav')).toContainText('Iniciar Sesión');
   });
 
-  test('?redirect= tras login devuelve al juego', async({ page }) => {
+  test('?redirect= tras login devuelve al juego', async ({ page }) => {
     await page.goto('/auth?redirect=/games/asteroids');
 
     await page.getByLabel('Correo electrónico').fill(EMAIL);
@@ -80,7 +80,7 @@ test.describe('Auth', () => {
     await expect(page).toHaveURL('/games/asteroids');
   });
 
-  test('/cuenta sin sesión redirige a /auth', async({ page }) => {
+  test('/cuenta sin sesión redirige a /auth', async ({ page }) => {
     await page.goto('/cuenta');
 
     await expect(page).toHaveURL(/\/auth\?redirect=%2Fcuenta/);

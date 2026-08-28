@@ -56,8 +56,9 @@ export default function ProfileForm({ currentUsername }: ProfileFormProps) {
   return (
     <form action={action}>
       <div className='field'>
-        <label>Nombre de usuario</label>
+        <label htmlFor='profile-username'>Nombre de usuario</label>
         <input
+          id='profile-username'
           name='username'
           defaultValue={currentUsername}
           autoComplete='username'

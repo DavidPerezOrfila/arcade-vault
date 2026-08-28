@@ -67,8 +67,9 @@ export default function AuthForm({ redirect }: AuthFormProps) {
           <input type='hidden' name='redirect' value={redirect} />
           {tab === 'up' && (
             <div className='field slide-in'>
-              <label>Nombre de usuario</label>
+              <label htmlFor='auth-username'>Nombre de usuario</label>
               <input
+                id='auth-username'
                 name='username'
                 placeholder='px_kai'
                 autoComplete='username'
@@ -80,8 +81,9 @@ export default function AuthForm({ redirect }: AuthFormProps) {
             </div>
           )}
           <div className='field'>
-            <label>Correo electrónico</label>
+            <label htmlFor='auth-email'>Correo electrónico</label>
             <input
+              id='auth-email'
               name='email'
               type='email'
               placeholder='jugador@vault.gg'
@@ -90,8 +92,9 @@ export default function AuthForm({ redirect }: AuthFormProps) {
             />
           </div>
           <div className='field'>
-            <label>Contraseña</label>
+            <label htmlFor='auth-password'>Contraseña</label>
             <input
+              id='auth-password'
               name='password'
               type='password'
               placeholder='••••••••'
