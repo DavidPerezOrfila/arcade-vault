@@ -1,22 +1,22 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('SERPENTINA Game', () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto('/games/serpentina?e2e=1');
+test.describe('RANARIA Game', () => {
+  test.beforeEach(async({ page }) => {
+    await page.goto('/games/ranaria?e2e=1');
     // Wait for the board canvas to be ready
-    await page.waitForSelector('.serpentina-board-wrap canvas', {
+    await page.waitForSelector('.ranaria-board-wrap canvas', {
       timeout: 10000,
     });
     // Give the game a moment to initialize
     await page.waitForTimeout(1000);
   });
 
-  test('loads without errors', async ({ page }) => {
+  test('loads without errors', async({ page }) => {
     // Check page title
-    await expect(page).toHaveTitle(/SERPENTINA \| Arcade Vault/);
+    await expect(page).toHaveTitle(/RANARIA \| Arcade Vault/);
 
     // Check board canvas is visible
-    const board = page.locator('.serpentina-board-wrap canvas');
+    const board = page.locator('.ranaria-board-wrap canvas');
     await expect(board).toBeVisible();
 
     // Check HUD renders
@@ -39,7 +39,7 @@ test.describe('SERPENTINA Game', () => {
     ).toBe(0);
   });
 
-  test('shows game controls sidebar', async ({ page }) => {
+  test('shows game controls sidebar', async({ page }) => {
     // Check for controls section
     await expect(page.locator('text=CONTROLES')).toBeVisible();
     await expect(page.locator('text=↑ ↓ ← →')).toBeVisible(); // Arrows
@@ -47,14 +47,14 @@ test.describe('SERPENTINA Game', () => {
 
     // Check for scoring info
     await expect(
-      page.locator('h2.serpentina-sidebar-title--scoring')
+      page.locator('h2.ranaria-sidebar-title--scoring')
     ).toBeVisible();
-    await expect(page.locator('text=Fruta')).toBeVisible();
+    await expect(page.locator('text=Nenúfar')).toBeVisible();
     await expect(page.locator('text=+10')).toBeVisible();
   });
 
-  test('game is playable - can move with arrows and WASD', async ({ page }) => {
-    const board = page.locator('.serpentina-board-wrap canvas');
+  test('game is playable - can move with arrows and WASD', async({ page }) => {
+    const board = page.locator('.ranaria-board-wrap canvas');
 
     // Arrows
     await page.keyboard.down('ArrowUp');
@@ -87,87 +87,48 @@ test.describe('SERPENTINA Game', () => {
     await expect(board).toBeVisible();
   });
 
-  test('game over shows auth prompt for unauthenticated user', async ({
+  test('game over shows auth prompt for unauthenticated user', async({
     page,
   }) => {
     // The game over is forced via the test hook (?e2e=1). As an unauthenticated
-    // user, submitSerpentinaScore returns UNAUTHENTICATED, so the auth prompt
+    // user, submitRanariaScore returns UNAUTHENTICATED, so the auth prompt
     // must appear.
-    const board = page.locator('.serpentina-board-wrap canvas');
+    const board = page.locator('.ranaria-board-wrap canvas');
     await expect(board).toBeVisible();
 
     await page.evaluate(() => {
       (window as { __forceGameOver?: () => void }).__forceGameOver?.();
     });
 
-    const overlay = page.locator('.serpentina-auth-overlay');
+    const overlay = page.locator('.ranaria-auth-overlay');
     await expect(overlay).toBeVisible();
-    await expect(overlay.locator('.serpentina-auth-title')).toHaveText(
+    await expect(overlay.locator('.ranaria-auth-title')).toHaveText(
       '¡Partida terminada!'
     );
-    await expect(overlay.locator('.serpentina-auth-button')).toHaveAttribute(
+    await expect(overlay.locator('.ranaria-auth-button')).toHaveAttribute(
       'href',
-      '/auth?redirect=/games/serpentina'
+      '/auth?redirect=/games/ranaria'
     );
   });
 
-  test('wall collision triggers game over and restart button works', async ({
-    page,
-  }) => {
-    // La serpiente empieza en (11,12) moviéndose a la derecha sin input:
-    // choca con la pared derecha (~1.7s) y dispara GAME OVER real.
-    const overlay = page.locator('.serpentina-overlay:not(.hidden)');
-    await expect(overlay).toBeVisible({ timeout: 10000 });
-    await expect(overlay.locator('.serpentina-overlay-title')).toHaveText(
-      'GAME OVER'
-    );
-
-    // Usuario no autenticado: el submit dispara el prompt de auth.
-    const auth = page.locator('.serpentina-auth-overlay');
-    await expect(auth).toBeVisible();
-    await auth.locator('.serpentina-auth-dismiss').click();
-
-    // Reiniciar sin recargar: el overlay desaparece y el juego corre de nuevo.
-    await overlay.locator('.serpentina-overlay-button').click();
-    await expect(page.locator('.serpentina-overlay')).toHaveClass(/hidden/);
-    await expect(page.locator('.serpentina-board-wrap canvas')).toBeVisible();
-  });
-
-  test('snake eats food, grows and score increases by 10', async ({ page }) => {
-    // Pin de Math.random ANTES de cargar el juego: spawnFood usa
-    // empty[floor(random*empty.length)] en orden row-major; con 0.5236 la
-    // comida cae en (12,12) — justo delante de la cabeza (11,12) que avanza
-    // a la derecha. Un tick (~130ms) → come → score 10.
-    await page.addInitScript(() => {
-      Math.random = () => 0.5236;
-    });
-    await page.goto('/games/serpentina?e2e=1');
-    await page.waitForSelector('.serpentina-board-wrap canvas', {
-      timeout: 10000,
-    });
-
-    const score = page.locator('.serpentina-hud-item span:last-child');
-    await expect(score).toHaveText('10', { timeout: 5000 });
-  });
-
-  test('leaderboard displays', async ({ page }) => {
+  test('leaderboard displays', async({ page }) => {
     // Check leaderboard HUD is visible
-    const leaderboard = page.locator('.serpentina-leaderboard');
+    const leaderboard = page.locator('.ranaria-leaderboard');
     await expect(leaderboard).toBeVisible();
 
     // Check title
-    await expect(page.locator('.serpentina-leaderboard-title')).toContainText(
+    await expect(page.locator('.ranaria-leaderboard-title')).toContainText(
       'TOP 10'
     );
   });
 
-  test('responsive canvas scales correctly', async ({ page }) => {
-    const board = page.locator('.serpentina-board-wrap canvas');
+  test('responsive canvas scales correctly', async({ page }) => {
+    const board = page.locator('.ranaria-board-wrap canvas');
 
     // Get initial size on desktop
     const desktopBox = await board.boundingBox();
     expect(desktopBox).not.toBeNull();
-    expect(desktopBox!.width).toBeLessThanOrEqual(600);
+    expect(desktopBox!.width).toBeLessThanOrEqual(640);
 
     // Resize to mobile viewport
     await page.setViewportSize({ width: 375, height: 667 });
@@ -177,18 +138,18 @@ test.describe('SERPENTINA Game', () => {
     expect(mobileBox).not.toBeNull();
     expect(mobileBox!.width).toBeLessThanOrEqual(375);
 
-    // Aspect ratio should be maintained (1:1)
+    // Aspect ratio should be maintained (640:560 = 8:7)
     const aspectRatio = mobileBox!.width / mobileBox!.height;
-    expect(aspectRatio).toBeCloseTo(1, 1);
+    expect(aspectRatio).toBeCloseTo(8 / 7, 1);
   });
 
-  test('el selector de skin comparte columna con el panel', async ({
+  test('el selector de skin comparte columna con el panel', async({
     page,
   }) => {
     // El borde derecho de la barra de skin debe coincidir con el borde
     // derecho del panel lateral. Tolerancia ±2px.
-    const skinBar = page.locator('.serpentina-skin-bar');
-    const panel = page.locator('.serpentina-panel');
+    const skinBar = page.locator('.ranaria-skin-bar');
+    const panel = page.locator('.ranaria-panel');
     const skinBox = await skinBar.boundingBox();
     const panelBox = await panel.boundingBox();
     expect(skinBox).not.toBeNull();
@@ -198,20 +159,20 @@ test.describe('SERPENTINA Game', () => {
     expect(Math.abs(skinRight - panelRight)).toBeLessThanOrEqual(2);
   });
 
-  test('SEO metadata present', async ({ page }) => {
+  test('SEO metadata present', async({ page }) => {
     // Check title
-    await expect(page).toHaveTitle(/SERPENTINA \| Arcade Vault/);
+    await expect(page).toHaveTitle(/RANARIA \| Arcade Vault/);
 
     // Check meta description
     const metaDescription = page.locator('meta[name="description"]');
-    await expect(metaDescription).toHaveAttribute('content', /Clásico Snake/);
+    await expect(metaDescription).toHaveAttribute('content', /autopista/);
 
     // Check Open Graph tags
     const ogTitle = page.locator('meta[property="og:title"]');
-    await expect(ogTitle).toHaveAttribute('content', /SERPENTINA/);
+    await expect(ogTitle).toHaveAttribute('content', /RANARIA/);
 
     const ogDescription = page.locator('meta[property="og:description"]');
-    await expect(ogDescription).toHaveAttribute('content', /Clásico Snake/);
+    await expect(ogDescription).toHaveAttribute('content', /autopista/);
 
     const ogType = page.locator('meta[property="og:type"]');
     await expect(ogType).toHaveAttribute('content', 'website');

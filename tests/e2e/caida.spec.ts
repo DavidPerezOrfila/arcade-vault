@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('CAÍDA Game', () => {
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async({ page }) => {
     await page.goto('/games/caida?e2e=1');
     // Wait for the board canvas to be ready (next canvas follows)
     await page.waitForSelector('.caida-board-wrap canvas', {
@@ -11,7 +11,7 @@ test.describe('CAÍDA Game', () => {
     await page.waitForTimeout(1000);
   });
 
-  test('loads without errors', async ({ page }) => {
+  test('loads without errors', async({ page }) => {
     // Check page title
     await expect(page).toHaveTitle(/CAÍDA \| Arcade Vault/);
 
@@ -43,7 +43,7 @@ test.describe('CAÍDA Game', () => {
     ).toBe(0);
   });
 
-  test('shows game controls sidebar', async ({ page }) => {
+  test('shows game controls sidebar', async({ page }) => {
     // Check for controls section
     await expect(page.locator('text=CONTROLES')).toBeVisible();
     await expect(page.locator('text=← →')).toBeVisible(); // Move
@@ -55,7 +55,7 @@ test.describe('CAÍDA Game', () => {
     await expect(page.locator('text=1 línea')).toBeVisible();
   });
 
-  test('game is playable - can move, rotate, and hard drop', async ({
+  test('game is playable - can move, rotate, and hard drop', async({
     page,
   }) => {
     const board = page.locator('.caida-board-wrap canvas');
@@ -82,7 +82,7 @@ test.describe('CAÍDA Game', () => {
     await expect(board).toBeVisible();
   });
 
-  test('las flechas no desplazan la página (no scroll)', async ({ page }) => {
+  test('las flechas no desplazan la página (no scroll)', async({ page }) => {
     // Viewport pequeño para que la página sea scrolleable; si las flechas no
     // hacen preventDefault, window.scrollY cambia y el test falla.
     await page.setViewportSize({ width: 400, height: 500 });
@@ -99,7 +99,7 @@ test.describe('CAÍDA Game', () => {
     expect(after).toBe(before);
   });
 
-  test('la pieza cae sola (el loop del juego corre)', async ({ page }) => {
+  test('la pieza cae sola (el loop del juego corre)', async({ page }) => {
     // Sin input, la pieza debe caer una fila cada ~1s (dropInterval 1000ms).
     // Dos capturas del canvas separadas 1.3s: si el loop corre, la pieza y el
     // ghost cambian de posición y los píxeles difieren. Un loop congelado
@@ -111,7 +111,7 @@ test.describe('CAÍDA Game', () => {
     expect(shot1.equals(shot2)).toBe(false);
   });
 
-  test('game over shows auth prompt for unauthenticated user', async ({
+  test('game over shows auth prompt for unauthenticated user', async({
     page,
   }) => {
     // The game over is forced via the test hook (?e2e=1). As an unauthenticated
@@ -135,7 +135,7 @@ test.describe('CAÍDA Game', () => {
     );
   });
 
-  test('leaderboard displays', async ({ page }) => {
+  test('leaderboard displays', async({ page }) => {
     // Check leaderboard HUD is visible
     const leaderboard = page.locator('.caida-leaderboard');
     await expect(leaderboard).toBeVisible();
@@ -146,7 +146,7 @@ test.describe('CAÍDA Game', () => {
     );
   });
 
-  test('responsive canvas scales correctly', async ({ page }) => {
+  test('responsive canvas scales correctly', async({ page }) => {
     const board = page.locator('.caida-board-wrap canvas');
 
     // Get initial size on desktop
@@ -167,7 +167,7 @@ test.describe('CAÍDA Game', () => {
     expect(aspectRatio).toBeCloseTo(0.5, 1);
   });
 
-  test('el selector de skin comparte columna con el panel', async ({ page }) => {
+  test('el selector de skin comparte columna con el panel', async({ page }) => {
     // El borde derecho de la barra de skin debe coincidir con el borde
     // derecho del panel lateral (la columna de SIGUIENTE). Tolerancia ±2px.
     const skinBar = page.locator('.caida-skin-bar');
@@ -181,7 +181,7 @@ test.describe('CAÍDA Game', () => {
     expect(Math.abs(skinRight - panelRight)).toBeLessThanOrEqual(2);
   });
 
-  test('SEO metadata present', async ({ page }) => {
+  test('SEO metadata present', async({ page }) => {
     // Check title
     await expect(page).toHaveTitle(/CAÍDA \| Arcade Vault/);
 
