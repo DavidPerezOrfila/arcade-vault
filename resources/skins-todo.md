@@ -8,8 +8,8 @@ El selector global vive en `components/nav.tsx` y cada juego integra un
 | Juego        | clasico | neon | retro | dark-safe | Estado    |
 | ------------ | ------- | ---- | ----- | --------- | --------- |
 | `asteroids`  | ✅       | ✅    | ✅     | ✅         | Completo  |
-| `caida`      | —       | —    | —     | —         | Pendiente |
-| `serpentina` | —       | —    | —     | —         | Pendiente |
+| `caida`      | ✅       | ✅    | ✅     | ✅         | Completo  |
+| `serpentina` | ✅       | ✅    | ✅     | ✅         | Completo  |
 | `bloque-buster` | ✅    | ✅    | ✅     | ✅         | Completo  |
 | `ranaria`    | ✅       | ✅    | ✅     | ✅         | Completo  |
 
@@ -18,8 +18,14 @@ El selector global vive en `components/nav.tsx` y cada juego integra un
 - `asteroids`: engine consume `PALETTES` de `lib/games/skins.ts`; `clasico`
   reproduce la apariencia original (blanco sobre negro, power-up cyan).
   `retro` añade scanlines por CSS; `neon` usa colores saturados + halo sutil.
-- `caida` y `serpentina`: motores aún con colores propios; pendientes de
-  mapear sus entidades a los mismos tokens.
+- `caida`: engine consume `PALETTES` (background, blocks por pieza, accent,
+  player, hudText). CSS usa variables del sistema de skins (magenta como
+  `--magenta`, superficies `--bg-2`/`--line-2`); `retro` scanlines por CSS,
+  `neon` halo al canvas.
+- `serpentina`: engine consume `PALETTES` (background, accent, player,
+  hudText). CSS usa variables del sistema de skins (verde como `--green`,
+  superficies `--bg-2`/`--line-2`); `retro` scanlines por CSS, `neon` halo al
+  canvas.
 - `bloque-buster`: engine consume `PALETTES` para background, HUD y overlays
   (gameover/pausa/win). Bloques, paleta y pelota son sprites del spritesheet
   `/arkanoid-assets/spritesheet-breakout.png` (fidelidad del port), no tokens
@@ -27,3 +33,5 @@ El selector global vive en `components/nav.tsx` y cada juego integra un
 - `ranaria`: engine consume `PALETTES` para colores de entidades (frog=player,
   coches=enemy/bullet, troncos=thrust, tortugas=accent). CSS usa variables
   del sistema de skins; `retro` scanlines, `neon` halo al canvas.
+
+Los 5 juegos jugables tienen cobertura completa de skins.

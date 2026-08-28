@@ -2,9 +2,11 @@
 
 /* ===== Page Layout ===== */
 
-.serpentina-page {
-  background: #000;
-  color: #fff;
+/* `[class]` sube specificity sobre las utilities Tailwind de la página
+   (bg-black/text-white en page.tsx) para que el skin mande en el fondo. */
+.serpentina-page[class] {
+  background: var(--bg);
+  color: var(--ink);
 }
 
 .serpentina-page-header {
@@ -15,13 +17,13 @@
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
-  color: #22c55e;
+  color: var(--green);
   margin-bottom: 0.5rem;
   line-height: 1.1;
 }
 
 .serpentina-page-description {
-  color: #9ca3af;
+  color: var(--ink-dim);
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   max-width: 60ch;
 }
@@ -60,8 +62,8 @@
 }
 
 .serpentina-sidebar-card {
-  background: #111827;
-  border: 1px solid #1f2937;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
   border-radius: 0.75rem;
   padding: 1.5rem;
 }
@@ -76,11 +78,11 @@
 }
 
 .serpentina-sidebar-title--controls {
-  color: #22c55e;
+  color: var(--green);
 }
 
 .serpentina-sidebar-title--scoring {
-  color: #22c55e;
+  color: var(--green);
 }
 
 /* Controls List */
@@ -97,7 +99,7 @@
 }
 
 .serpentina-control-key {
-  color: #22c55e;
+  color: var(--green);
 }
 
 /* Scoring List */
@@ -114,7 +116,7 @@
 }
 
 .serpentina-scoring-value {
-  color: #22c55e;
+  color: var(--green);
   font-weight: 600;
 }
 
@@ -127,7 +129,7 @@
   width: 100%;
 }
 
-/* Barra a ancho completo: llena la columna del panel (HUD / leaderboard). */
+/* Barra a ancho completo: llena la columna del panel (HUD / LEADERBOARD). */
 .serpentina-skin-bar {
   display: flex;
 }
@@ -179,7 +181,6 @@
   align-items: flex-start;
   gap: 1.5rem;
   width: 100%;
-  position: relative;
 }
 
 /* Board: fixed internal 600×600, CSS scales keeping 1:1 */
@@ -194,14 +195,14 @@
   width: 100%;
   height: 100%;
   display: block;
-  border: 1px solid #1f2937;
+  border: 1px solid var(--line-2);
   border-radius: 0.5rem;
-  background: #000;
+  background: var(--bg);
   touch-action: none; /* Prevent touch scrolling on canvas */
 }
 
 .serpentina-board-wrap canvas:focus-visible {
-  outline: 2px solid #22c55e;
+  outline: 2px solid var(--green);
   outline-offset: 2px;
 }
 
@@ -218,13 +219,13 @@
 /* HUD */
 .serpentina-hud {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.5rem;
 }
 
 .serpentina-hud-item {
-  background: #111827;
-  border: 1px solid #1f2937;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
   border-radius: 0.5rem;
   padding: 0.5rem 0.75rem;
   text-align: center;
@@ -236,14 +237,14 @@
   font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #6b7280;
+  color: var(--ink-dim);
 }
 
 .serpentina-hud-item span:last-child {
   display: block;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--ink);
 }
 
 /* ===== Leaderboard HUD ===== */
@@ -251,10 +252,10 @@
 .serpentina-leaderboard {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
-  border: 1px solid #1f2937;
+  border: 1px solid var(--line-2);
   border-radius: 0.75rem;
   padding: 0.75rem 1rem;
-  color: #fff;
+  color: var(--ink);
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 0.75rem;
 }
@@ -264,7 +265,7 @@
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #22c55e;
+  color: var(--green);
 }
 
 .serpentina-leaderboard-list {
@@ -280,7 +281,7 @@
 }
 
 .serpentina-leaderboard-item--current-user {
-  color: #22c55e;
+  color: var(--green);
 }
 
 .serpentina-leaderboard-rank-player {
@@ -290,12 +291,12 @@
 }
 
 .serpentina-leaderboard-empty {
-  color: #6b7280;
+  color: var(--ink-faint);
   text-align: center;
   padding: 0.5rem;
 }
 
-/* ===== In-game overlay (GAME OVER) ===== */
+/* ===== In-game overlay (PAUSE / GAME OVER) ===== */
 
 .serpentina-overlay {
   position: absolute;
@@ -321,28 +322,28 @@
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 1.75rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--ink);
 }
 
 .serpentina-overlay-score {
-  color: #22c55e;
+  color: var(--green);
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   min-height: 1.5rem;
 }
 
 .serpentina-overlay-button {
-  background: #22c55e;
-  color: #000;
+  background: var(--green);
+  color: var(--bg);
   font-weight: 700;
   padding: 0.6rem 1.25rem;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: filter 0.2s;
 }
 
 .serpentina-overlay-button:hover {
-  background: #16a34a;
+  filter: brightness(0.85);
 }
 
 /* ===== Auth Prompt Overlay ===== */
@@ -359,8 +360,8 @@
 }
 
 .serpentina-auth-prompt {
-  background: #111827;
-  border: 1px solid #374151;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
   border-radius: 1rem;
   padding: 2rem;
   max-width: 400px;
@@ -372,33 +373,33 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: var(--ink);
 }
 
 .serpentina-auth-message {
-  color: #d1d5db;
+  color: var(--ink-dim);
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
 
 .serpentina-auth-button {
   display: inline-block;
-  background: #22c55e;
-  color: #000;
+  background: var(--green);
+  color: var(--bg);
   font-weight: 700;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: filter 0.2s;
 }
 
 .serpentina-auth-button:hover {
-  background: #16a34a;
+  filter: brightness(0.85);
 }
 
 .serpentina-auth-dismiss {
   margin-left: 1rem;
-  color: #9ca3af;
+  color: var(--ink-dim);
   font-size: 0.875rem;
   background: none;
   border: none;
@@ -406,7 +407,7 @@
 }
 
 .serpentina-auth-dismiss:hover {
-  color: #fff;
+  color: var(--ink);
 }
 
 /* ===== Loading State ===== */
@@ -417,11 +418,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
-  color: #fff;
+  background: var(--bg);
+  color: var(--ink);
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 1.5rem;
   z-index: 5;
+}
+
+/* ===== Skin overlays ===== */
+
+/* Scanlines CRT del skin retro; el neon añade un halo sutil al canvas. */
+.serpentina-board-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+html[data-skin='retro'] .serpentina-board-wrap::after {
+  display: block;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.22) 0 2px,
+    transparent 2px 4px
+  );
+  mix-blend-mode: multiply;
+}
+
+html[data-skin='neon'] .serpentina-board-wrap canvas {
+  box-shadow:
+    0 0 22px rgba(255, 0, 110, 0.22),
+    0 0 46px rgba(0, 245, 255, 0.16);
 }
 
 /* ===== Reduced motion ===== */
@@ -451,14 +481,8 @@
     width: 100%;
   }
 
-  .serpentina-board-wrap {
-    width: 100%;
-    max-height: calc(100dvh - 200px);
-    margin: 0 auto;
-  }
-
   .serpentina-panel {
-    max-width: 300px;
+    max-width: 600px;
   }
 
   .serpentina-auth-prompt {
@@ -476,4 +500,3 @@
     margin-left: 0;
   }
 }
-
