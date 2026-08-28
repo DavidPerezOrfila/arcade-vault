@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "app/auth/page.tsx": {
-    "mtime": 1786657418.782971,
-    "ast_hash": "a52dd174d9b90c571ded67bbe7dfb6e5",
+    "mtime": 1787948420.0518925,
+    "ast_hash": "75fbecfac20964cb40e36f9dd6f1fbd6",
     "semantic_hash": ""
   },
   "app/data/games.ts": {
@@ -19,19 +19,14 @@
     "ast_hash": "a5fa6ae3ee7775d1a3f3107db55cb62d",
     "semantic_hash": ""
   },
-  "app/data/storage.ts": {
-    "mtime": 1786657418.938631,
-    "ast_hash": "1ca741dca6a59c5ef9390d7278aea3b7",
-    "semantic_hash": ""
-  },
   "app/data/types.ts": {
-    "mtime": 1786988485.415917,
-    "ast_hash": "f5c281cd7019cb9682330af213d4852c",
+    "mtime": 1787947924.930017,
+    "ast_hash": "e4bd0e4b7a975d081babb9d24e0df1a2",
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1786988485.435526,
-    "ast_hash": "adf5e962ee960450b80c2f0837f312ec",
+    "mtime": 1787948570.3422756,
+    "ast_hash": "7d267e6d399fe2fbc1194385ef43897e",
     "semantic_hash": ""
   },
   "app/page.tsx": {
@@ -50,8 +45,8 @@
     "semantic_hash": ""
   },
   "components/nav.tsx": {
-    "mtime": 1787001033.070314,
-    "ast_hash": "d58c759a733b126dbf73f9e5c34c0e10",
+    "mtime": 1787948420.2672956,
+    "ast_hash": "c21cfb9db80a9b1e6190ceec41a11361",
     "semantic_hash": ""
   },
   "eslint.config.mjs": {
@@ -270,13 +265,13 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1787865679.5093539,
-    "ast_hash": "7e16b56609d0665dcbfff90fa6e95920",
+    "mtime": 1787948146.4238,
+    "ast_hash": "9a6622b87d64eaaff3af7ca2b56720ec",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786988485.389314,
-    "ast_hash": "2d8a55be3d216112ebb2218f33c146ab",
+    "mtime": 1787948119.7326355,
+    "ast_hash": "2b624fe1a9ff74ddf68a0e1ed16b78bc",
     "semantic_hash": ""
   },
   "resources/templates/Arcade Vault.html": {
@@ -570,8 +565,8 @@
     "semantic_hash": ""
   },
   "app/data/schema.ts": {
-    "mtime": 1786988485.412917,
-    "ast_hash": "e8eeca1aab61e39bb339e9ab8633ae2f",
+    "mtime": 1787947919.1650558,
+    "ast_hash": "8aa4dab79c803f132f9a4b74e23ed9a7",
     "semantic_hash": ""
   },
   "app/data/scores.ts": {
@@ -605,8 +600,8 @@
     "semantic_hash": ""
   },
   "app/player/[id]/PlayerClient.tsx": {
-    "mtime": 1786988485.4390337,
-    "ast_hash": "aaf639da7b55dc2bffa115e85c7e615a",
+    "mtime": 1787948622.5433273,
+    "ast_hash": "622d368d727bce82671436a99b786675",
     "semantic_hash": ""
   },
   "app/salon/SalonClient.tsx": {
@@ -645,8 +640,8 @@
     "semantic_hash": ""
   },
   "lib/supabase/types.ts": {
-    "mtime": 1786988485.4920907,
-    "ast_hash": "cb35e24a4f45274c004863a22005e62c",
+    "mtime": 1787948419.7926404,
+    "ast_hash": "14491ee0b2e37a3ce823ab88697e249a",
     "semantic_hash": ""
   },
   "next.config.mjs": {
@@ -665,13 +660,13 @@
     "semantic_hash": ""
   },
   "tests/e2e/asteroids.spec.ts": {
-    "mtime": 1787003858.0231118,
-    "ast_hash": "c439218bfe776d2e1ba1000bde6bbdd9",
+    "mtime": 1787947016.8713195,
+    "ast_hash": "fbeeae4b5ec4b15c8940f95f67f5ec3e",
     "semantic_hash": ""
   },
   "tests/e2e/salon.spec.ts": {
-    "mtime": 1787003858.0281093,
-    "ast_hash": "8cdef07a8d2938634e9de1d402de0d23",
+    "mtime": 1787946755.3953588,
+    "ast_hash": "aa5dbf2a7b41bb0f5bf44c7987763bb0",
     "semantic_hash": ""
   },
   ".agents/skills/cavecrew/README.md": {
@@ -850,8 +845,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/caida.spec.ts": {
-    "mtime": 1787003858.0261066,
-    "ast_hash": "8a591a7a4e568c2cc6af06a2ea432082",
+    "mtime": 1787946755.3948548,
+    "ast_hash": "594c455a408411ae1167d3cad9ff9ca1",
     "semantic_hash": ""
   },
   "specs/07-tetris-caida.md": {
@@ -945,8 +940,8 @@
     "semantic_hash": ""
   },
   "lib/games/leaderboard.ts": {
-    "mtime": 1786988485.490091,
-    "ast_hash": "63e9de361b1e1c4fd42d3f0ddaa38dc6",
+    "mtime": 1787948060.6080952,
+    "ast_hash": "492069fcf79dbb9b482a17b29d6cc3f2",
     "semantic_hash": ""
   },
   "lib/games/types.ts": {
@@ -1010,8 +1005,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/serpentina.spec.ts": {
-    "mtime": 1787003858.0301068,
-    "ast_hash": "ede978134ed0144a97b2d8fd93f0f9e2",
+    "mtime": 1787947017.1195958,
+    "ast_hash": "b9f79f2a3e86f8f75c692d801f86e585",
     "semantic_hash": ""
   },
   "resources/implemented-games.md": {
@@ -1095,8 +1090,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/bloque-buster.spec.ts": {
-    "mtime": 1787003858.0241084,
-    "ast_hash": "b544622b897fe6fe9aa8d18ffef8498a",
+    "mtime": 1787946755.3948548,
+    "ast_hash": "0c3e37298514584aa881e3dca6f4e5eb",
     "semantic_hash": ""
   },
   "SPEC.md": {
@@ -1135,8 +1130,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/mobile-touch.spec.ts": {
-    "mtime": 1787169366.6720579,
-    "ast_hash": "765f81b6c5dcea4a48600eb8802457d6",
+    "mtime": 1787946755.3948548,
+    "ast_hash": "02e3d770f022e5903fe534d342c70274",
     "semantic_hash": ""
   },
   ".scratch/refactor-skin-layout-issue.md": {
@@ -1212,6 +1207,76 @@
   "specs/10-auth-supabase.md": {
     "mtime": 1787867678.5605347,
     "ast_hash": "15eeabaa44cbd1b8c596cb21c75c8c78",
+    "semantic_hash": ""
+  },
+  "app/api/leaderboard/ranaria/route.ts": {
+    "mtime": 1787945862.8562005,
+    "ast_hash": "4f5ecffefff708d06cb3f5be254368de",
+    "semantic_hash": ""
+  },
+  "app/auth/AuthForm.tsx": {
+    "mtime": 1787948420.0265164,
+    "ast_hash": "65fe7c6536dd563b75893e9a8b119c01",
+    "semantic_hash": ""
+  },
+  "app/auth/OAuthButtons.tsx": {
+    "mtime": 1787948622.5433273,
+    "ast_hash": "3d593b7d480d333192ba4ac3bb2e359f",
+    "semantic_hash": ""
+  },
+  "app/auth/actions.ts": {
+    "mtime": 1787948419.8788414,
+    "ast_hash": "fbc0ef726fd3660ffaeedd0e8d4bc474",
+    "semantic_hash": ""
+  },
+  "app/auth/callback/route.ts": {
+    "mtime": 1787948420.085803,
+    "ast_hash": "e95ea4607e48a9626bf4027a441dda3f",
+    "semantic_hash": ""
+  },
+  "app/auth/redirect.ts": {
+    "mtime": 1787948420.1108558,
+    "ast_hash": "112fc515c99e1f562fe067b63211513b",
+    "semantic_hash": ""
+  },
+  "app/auth/reset/page.tsx": {
+    "mtime": 1787948838.9913485,
+    "ast_hash": "01fe5eff033a770dc908d597d89fd592",
+    "semantic_hash": ""
+  },
+  "app/cuenta/ProfileForm.tsx": {
+    "mtime": 1787949194.502318,
+    "ast_hash": "a93cc7d4a81d6b74d7f5c71d289f99e7",
+    "semantic_hash": ""
+  },
+  "app/cuenta/page.tsx": {
+    "mtime": 1787948420.3905015,
+    "ast_hash": "ecad141e60b97b7a11e4585d56a99ebc",
+    "semantic_hash": ""
+  },
+  "components/nav-client.tsx": {
+    "mtime": 1787948622.5433273,
+    "ast_hash": "edc745edda260c7dc5cec5b01b54ae72",
+    "semantic_hash": ""
+  },
+  "proxy.ts": {
+    "mtime": 1787948420.198447,
+    "ast_hash": "3c69ebe6684a1a490099dfcef6aa2d31",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/20260828000001_auth_profiles.sql": {
+    "mtime": 1787947912.5756319,
+    "ast_hash": "e74937d735107b8840c6e54211ffca20",
+    "semantic_hash": ""
+  },
+  "tests/e2e/auth.spec.ts": {
+    "mtime": 1787949221.9814606,
+    "ast_hash": "3ecece29517986f56b38992892102381",
+    "semantic_hash": ""
+  },
+  "tests/e2e/ranaria.spec.ts": {
+    "mtime": 1787947074.425871,
+    "ast_hash": "c314dfa0fa645bdf7360b42dfe2c6a08",
     "semantic_hash": ""
   }
 }

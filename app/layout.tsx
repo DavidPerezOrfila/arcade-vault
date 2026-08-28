@@ -1,5 +1,3 @@
-'use client';
-
 import '@/app/globals.css';
 import Nav from '@/components/nav';
 import Footer from './footer';

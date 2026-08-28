@@ -1,16 +1,16 @@
 # Graph Report - 05-arcade-vault  (2026-08-28)
 
 ## Corpus Check
-- 222 files · ~183,931 words
+- 235 files · ~187,215 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1554 nodes · 2119 edges · 113 communities (102 shown, 11 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 40 edges (avg confidence: 0.65)
+- 1600 nodes · 2198 edges · 122 communities (109 shown, 13 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 45 edges (avg confidence: 0.67)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2afe76dd`
+- Built from commit: `d771eeb9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -74,6 +74,7 @@
 - caida/game.esm.js
 - app/page.tsx
 - 07-tetris-caida
+- SkinProvider.tsx
 - Juegos catalogados (no jugables todavía)
 - data.jsx
 - instructions.md
@@ -81,12 +82,19 @@
 - INDEX.md
 - caveman-compress/README.md
 - biblioteca.jsx
+- BloqueBusterGame.tsx
+- leaderboard.ts
+- SerpentinaGame.tsx
 - about/actions.md
 - highlight-icon.md
 - caida/route.md
 - data/schema.md
 - scores.md
+- actions.ts
 - validate.py
+- TopPlayersToday.tsx
+- proxy.ts
+- auth.spec.ts
 - 06-games-catalog-salon
 - cavecrew/SKILL.md
 - Caveman Help
@@ -113,18 +121,20 @@
 - copilot-instructions.md
 
 ## God Nodes (most connected - your core abstractions)
-1. `LeaderboardEntry` - 17 edges
-2. `scripts` - 17 edges
-3. `compilerOptions` - 16 edges
-4. `useSkin()` - 15 edges
-5. `Browser Automation with playwright-cli` - 15 edges
-6. `validate()` - 14 edges
-7. `isSkinId()` - 14 edges
-8. `About Page with Resend Spec (03)` - 14 edges
-9. `Home Page Spec (02)` - 13 edges
-10. `compress_file()` - 12 edges
+1. `createSupabaseServerClient()` - 22 edges
+2. `LeaderboardEntry` - 17 edges
+3. `scripts` - 17 edges
+4. `compilerOptions` - 16 edges
+5. `useSkin()` - 15 edges
+6. `Browser Automation with playwright-cli` - 15 edges
+7. `validate()` - 14 edges
+8. `isSkinId()` - 14 edges
+9. `About Page with Resend Spec (03)` - 14 edges
+10. `Home Page Spec (02)` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `LeaderboardListProps` --references--> `LeaderboardEntry`  [EXTRACTED]
+  components/games/LeaderboardList.tsx → lib/games/types.ts
 - `Playwright CLI Browser Automation Skill (.claude copy)` --conceptually_related_to--> `Browser Automation via CLI`  [INFERRED]
   .claude/skills/playwright-cli/SKILL.md → .agents/skills/playwright-cli/SKILL.md
 - `Arcade Vault Platform Description` --references--> `Arcade Vault Project Overview`  [INFERRED]
@@ -133,8 +143,6 @@
   specs/03-about-page-resend.md → resources/templates/home-about/arcade-vault-standalone.html
 - `Home Page Spec (02)` --references--> `Tailwind CSS v4 Theme Configuration`  [INFERRED]
   specs/02-home-page.md → CLAUDE.md
-- `getGames()` --calls--> `createSupabaseServerClient()`  [EXTRACTED]
-  app/data/games.ts → lib/supabase/server.ts
 
 ## Import Cycles
 - None detected.
@@ -145,7 +153,7 @@
 - **Spec Driven Design Workflow (Klerith/fernando-skills)** — claude_specdrivendesign, readme_fernandoskillsreference, specs_02_home_page_homepagespec, specs_03_about_page_resend_aboutpageresendspec [INFERRED 0.90]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (113 total, 11 thin omitted)
+## Communities (122 total, 13 thin omitted)
 
 ### Community 0 - "02-asteroids/game.js"
 Cohesion: 0.07
@@ -304,8 +312,8 @@ Cohesion: 0.06
 Nodes (35): Asteroid, attachInput(), Bullet, destroy(), detachInput(), dist(), draw(), drawHUD() (+27 more)
 
 ### Community 49 - "about/page.tsx"
-Cohesion: 0.11
-Nodes (6): actions, actions, actions, actions, actions, createLeaderboardActions()
+Cohesion: 0.12
+Nodes (5): actions, metadata, actions, metadata, createLeaderboardActions()
 
 ### Community 52 - "Workflow: opencode-loop"
 Cohesion: 0.18
@@ -328,40 +336,44 @@ Cohesion: 0.22
 Nodes (8): 08-serpentina-game, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
 
 ### Community 59 - "about.spec.ts"
-Cohesion: 0.08
-Nodes (37): metadata, metadata, metadata, metadata, metadata, AsteroidsGame(), AuthPrompt(), AuthPromptProps (+29 more)
+Cohesion: 0.20
+Nodes (12): AuthPrompt(), AuthPromptProps, LeaderboardList(), LeaderboardListProps, Direction, PadDirection, TouchButton, TouchControls() (+4 more)
 
 ### Community 60 - "playwright.config.ts"
 Cohesion: 0.19
-Nodes (17): getSalonLeaderboard(), seededScores(), DetailPage(), DetailPageProps, TopPlayersToday(), LeaderboardRow, LeaderboardTable(), LeaderboardTableProps (+9 more)
+Nodes (17): getSalonLeaderboard(), getGameBySlug(), getScoresByGame(), DetailPage(), DetailPageProps, LeaderboardRow, LeaderboardTable(), LeaderboardTableProps (+9 more)
 
 ### Community 61 - "asteroids.spec.ts"
-Cohesion: 0.07
-Nodes (44): AuthPage(), clearUser(), getUser(), setUser(), Footer(), PlayerClient(), PlayerClientProps, Nav() (+36 more)
+Cohesion: 0.19
+Nodes (18): attachInput(), bodyColor, destroy(), detachInput(), draw(), endGame(), FRUIT_ATLAS, FRUIT_NAMES (+10 more)
 
 ### Community 62 - "salon.spec.ts"
-Cohesion: 0.09
-Nodes (20): PLAYERS, CATS, Game, GameCategory, GameColor, GameFilter, ScoreRow, ScoreRowDb (+12 more)
+Cohesion: 0.14
+Nodes (14): ScoreEntryInputParsed, fetchScores(), rowToEntry(), ScoreRowSelected, CATS, Game, GameCategory, GameColor (+6 more)
 
 ### Community 63 - "caida/game.esm.js"
 Cohesion: 0.15
 Nodes (30): attachInput(), clearLines(), collide(), createBoard(), destroy(), detachInput(), draw(), drawBlock() (+22 more)
 
 ### Community 64 - "app/page.tsx"
-Cohesion: 0.15
+Cohesion: 0.16
 Nodes (13): getGames(), GamesPage(), FeatureIcon(), FeatureIconKind, FloatingSilhouettes(), FeatureItem, FEATURES, MiniCard() (+5 more)
 
 ### Community 65 - "07-tetris-caida"
 Cohesion: 0.22
 Nodes (8): 07-tetris-caida, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
 
+### Community 66 - "SkinProvider.tsx"
+Cohesion: 0.15
+Nodes (21): signOutAction(), NAV_LINKS, NavClient(), NavClientProps, SkinSwitcher(), applySkin(), getServerSnapshot(), getSnapshot() (+13 more)
+
 ### Community 67 - "Juegos catalogados (no jugables todavía)"
 Cohesion: 0.14
 Nodes (13): ASTEROIDS — `asteroids`, BLOQUE BUSTER — `bloque-buster`, CAÍDA — `caida`, DUELO PIXEL — `duelo-pixel`, GLOTÓN — `gloton`, INVASORES — `invasores`, Juegos catalogados (no jugables todavía), Juegos implementados en Arcade Vault (+5 more)
 
 ### Community 69 - "data.jsx"
-Cohesion: 0.22
-Nodes (14): LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, ScoreEntryInputParsed, scoreEntrySchema, fetchScores(), getScoresByGame() (+6 more)
+Cohesion: 0.06
+Nodes (41): AuthActionResult, invalid(), resetPasswordAction(), signInAction(), signUpAction(), updatePasswordAction(), updateUsernameAction(), AuthForm() (+33 more)
 
 ### Community 71 - "The tools"
 Cohesion: 0.15
@@ -376,16 +388,28 @@ Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
 
 ### Community 74 - "biblioteca.jsx"
-Cohesion: 0.23
-Nodes (11): getGameById(), getGameBySlug(), getScores(), gameLabel(), PALETTE, RecentActivity(), tone(), relativeTime() (+3 more)
+Cohesion: 0.24
+Nodes (10): getGameById(), getScores(), gameLabel(), PALETTE, RecentActivity(), tone(), relativeTime(), TimeAgo() (+2 more)
+
+### Community 76 - "BloqueBusterGame.tsx"
+Cohesion: 0.20
+Nodes (11): actions, metadata, AsteroidsGame(), BloqueBusterGame(), CaidaGame(), RanariaGame(), SerpentinaGame(), dispatchKey() (+3 more)
+
+### Community 77 - "leaderboard.ts"
+Cohesion: 0.21
+Nodes (10): ArcadeGameModule, UseArcadeGameParams, UseArcadeGameResult, BloqueBusterGameProps, CaidaGameProps, CaidaRefs, CreateLeaderboardActionsParams, SubmitScoreResult (+2 more)
+
+### Community 78 - "SerpentinaGame.tsx"
+Cohesion: 0.21
+Nodes (4): actions, metadata, SerpentinaGameProps, SerpentinaRefs
 
 ### Community 79 - "about/actions.md"
 Cohesion: 0.20
 Nodes (9): Audit checklist, Hard constraints, Juegos a auditar, Output template, Process, Prompt Defense Baseline, Red flags, Rutas a auditar (+1 more)
 
 ### Community 80 - "highlight-icon.md"
-Cohesion: 0.60
-Nodes (3): requireEnv(), createSupabaseAdminClient(), createSupabaseBrowserClient()
+Cohesion: 0.18
+Nodes (10): CompositeTypes, Constants, Database, DatabaseWithoutInternals, DefaultSchema, Enums, Json, Tables (+2 more)
 
 ### Community 85 - "caida/route.md"
 Cohesion: 0.20
@@ -402,6 +426,14 @@ Nodes (14): Balance rules, Checklist P1-P7, Optimize an Arcade Vault game, P1 �
 ### Community 93 - "validate.py"
 Cohesion: 0.20
 Nodes (10): Commands, Core, DevTools, Keyboard, Mouse, Navigation, Network, Save as (+2 more)
+
+### Community 94 - "TopPlayersToday.tsx"
+Cohesion: 0.60
+Nodes (3): PLAYERS, seededScores(), TopPlayersToday()
+
+### Community 95 - "proxy.ts"
+Cohesion: 0.67
+Nodes (3): config, PROTECTED, proxy()
 
 ### Community 98 - "06-games-catalog-salon"
 Cohesion: 0.12
@@ -488,21 +520,21 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Refresh policy, Workflow
 
 ## Knowledge Gaps
-- **764 isolated node(s):** `FeatureIconKind`, `PALETTE`, `FeatureItem`, `StatItem`, `FormFields` (+759 more)
+- **778 isolated node(s):** `FeatureIconKind`, `PALETTE`, `FeatureItem`, `StatItem`, `FormFields` (+773 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PALETTES` connect `asteroids.spec.ts` to `asteroids/game.esm.js`, `serpentina/game.esm.js`, `validate.py`, `caida/game.esm.js`?**
+- **Why does `createSupabaseServerClient()` connect `data.jsx` to `app/page.tsx`, `SkinProvider.tsx`, `biblioteca.jsx`, `leaderboard.ts`, `salon.spec.ts`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `isSkinId()` connect `asteroids.spec.ts` to `asteroids/game.esm.js`, `serpentina/game.esm.js`, `validate.py`, `caida/game.esm.js`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **Why does `RanariaGame()` connect `about.spec.ts` to `validate.py`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+- **Why does `PALETTES` connect `SkinProvider.tsx` to `serpentina/game.esm.js`, `validate.py`, `asteroids/game.esm.js`, `asteroids.spec.ts`, `caida/game.esm.js`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `AsteroidsGame()` connect `BloqueBusterGame.tsx` to `asteroids/game.esm.js`, `about/page.tsx`, `about.spec.ts`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `FeatureIconKind`, `PALETTE`, `FeatureItem` to the rest of the system?**
-  _764 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _778 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `02-asteroids/game.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07030527289546716 - nodes in this community are weakly interconnected._
 - **Should `Browser Session Management` be split into smaller, more focused modules?**

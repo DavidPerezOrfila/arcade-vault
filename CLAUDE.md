@@ -67,8 +67,11 @@ Contact email flow also uses `RESEND_API_KEY`, `RESEND_FROM_EMAIL`, and `CONTACT
 - `app/` contains route segments, layouts, Server Components, Server Actions, and public leaderboard routes.
 - `app/data/` is the only application data-access layer for Supabase. Use its schemas and types rather than querying from components.
 - `lib/supabase/server.ts` creates the cookie-aware user client for Server Components and Server Actions; `client.ts` is browser-scoped; `admin.ts` is server-only and bypasses RLS.
-- `lib/supabase/types.ts` is generated from the database schema.
+- `lib/supabase/types.ts` is generated from the database schema (plus the hand-added `profiles` entry).
 - `app/api/leaderboard/<slug>/route.ts` exposes public read endpoints.
+- `app/auth/` holds the login/register UI and Server Actions (`actions.ts`); the shared `redirect.ts` sanitizer keeps `?redirect=` to internal paths. OAuth bounces through `app/auth/callback/route.ts`.
+- `proxy.ts` at the repo root is the Next.js 16 session Proxy (the old `middleware`), refreshing the Supabase session cookie and protecting `/cuenta` and `/auth/reset`.
+- `public.profiles` (see `supabase/migrations/*_auth_profiles.sql`) is the trigger-driven source of the visible player name: `app/auth/actions.ts` handles auth, `components/nav.tsx` (Server Component) reads `profiles.username` into `NavClient`, and `lib/games/leaderboard.ts` uses it as `scores.name` when saving.
 
 Scores link to games by matching string slug; `scores` has no foreign key to `games.id`. Validate score payloads with `app/data/schema.ts` and reuse `lib/games/leaderboard.ts` for game actions:
 
