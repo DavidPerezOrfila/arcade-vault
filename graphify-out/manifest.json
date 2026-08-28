@@ -265,8 +265,8 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1787865706.6899052,
-    "ast_hash": "052da822b477d0c091696e1fdc6d137e",
+    "mtime": 1787867772.9671085,
+    "ast_hash": "2b3e69f87667759b89882c2a4ff304a7",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -965,8 +965,8 @@
     "semantic_hash": ""
   },
   "specs/08-serpentina-game.md": {
-    "mtime": 1786988485.5683155,
-    "ast_hash": "d6dc170f783be0f9a275f5dc128da688",
+    "mtime": 1787936599.0951312,
+    "ast_hash": "94273da3938a75ef0bc0afe5d56934ba",
     "semantic_hash": ""
   },
   ".scratch/asteroids-game.png": {
@@ -1015,8 +1015,8 @@
     "semantic_hash": ""
   },
   "resources/implemented-games.md": {
-    "mtime": 1787852754.8980734,
-    "ast_hash": "168b4b5d9a39be17638a86500f395494",
+    "mtime": 1787936775.6142464,
+    "ast_hash": "7b071bfa1582b62ef030b7479ce03363",
     "semantic_hash": ""
   },
   "public/snake-assets/fruits.png": {
@@ -1050,13 +1050,13 @@
     "semantic_hash": ""
   },
   "resources/game-suggestions-todo.md": {
-    "mtime": 1787852754.8960648,
-    "ast_hash": "b0f587702fb9a17264244d70cae6b683",
+    "mtime": 1787936616.0232832,
+    "ast_hash": "e1e5b98ba9860adc4acf629f06423641",
     "semantic_hash": ""
   },
   "resources/skins-todo.md": {
-    "mtime": 1787852754.8990734,
-    "ast_hash": "6a423edecbcd51037ee7d1131a8cb054",
+    "mtime": 1787937204.3895736,
+    "ast_hash": "cab01f702124cc4922d757d8195f43a0",
     "semantic_hash": ""
   },
   "components/skin/SkinSelect.tsx": {
@@ -1170,8 +1170,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1787860389.5066154,
-    "ast_hash": "ab831c6c000418da7a090d3569c0b6c4",
+    "mtime": 1787934433.3692842,
+    "ast_hash": "392e7123933fe3b3aab85f93ed158a9e",
     "semantic_hash": ""
   },
   "app/games/ranaria/actions.ts": {
@@ -1207,6 +1207,11 @@
   ".claude/skills/optimize-arcade-game/SKILL.md": {
     "mtime": 1787852754.8395085,
     "ast_hash": "7f2974d66e7f8a17e68bdd3e4552c149",
+    "semantic_hash": ""
+  },
+  "specs/10-auth-supabase.md": {
+    "mtime": 1787867678.5605347,
+    "ast_hash": "15eeabaa44cbd1b8c596cb21c75c8c78",
     "semantic_hash": ""
   }
 }

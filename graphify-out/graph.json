@@ -1316,8 +1316,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_api_leaderboard_asteroids_route",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 49,
+      "community_name": "about/page.tsx",
       "norm_label": "route.ts"
     },
     {
@@ -1327,8 +1327,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "app_api_leaderboard_asteroids_route_get",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 49,
+      "community_name": "about/page.tsx",
       "norm_label": "get()"
     },
     {
@@ -1360,8 +1360,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_api_leaderboard_caida_route",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 49,
+      "community_name": "about/page.tsx",
       "norm_label": "route.ts"
     },
     {
@@ -1371,8 +1371,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "app_api_leaderboard_caida_route_get",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 49,
+      "community_name": "about/page.tsx",
       "norm_label": "get()"
     },
     {
@@ -1404,8 +1404,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_auth_page",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "page.tsx"
     },
     {
@@ -1415,8 +1415,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "app_auth_page_authpage",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "authpage()"
     },
     {
@@ -1536,8 +1536,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_data_players",
-      "community": 60,
-      "community_name": "playwright.config.ts",
+      "community": 62,
+      "community_name": "salon.spec.ts",
       "norm_label": "players.ts"
     },
     {
@@ -1547,8 +1547,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "app_data_players_players",
-      "community": 60,
-      "community_name": "playwright.config.ts",
+      "community": 62,
+      "community_name": "salon.spec.ts",
       "norm_label": "players"
     },
     {
@@ -1657,8 +1657,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "app_data_scores_getscoresbygame",
-      "community": 60,
-      "community_name": "playwright.config.ts",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "getscoresbygame()"
     },
     {
@@ -1679,8 +1679,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_data_storage",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "storage.ts"
     },
     {
@@ -1690,8 +1690,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_data_storage_getuser",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "getuser()"
     },
     {
@@ -1701,8 +1701,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "app_data_storage_setuser",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "setuser()"
     },
     {
@@ -1712,8 +1712,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "app_data_storage_clearuser",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "clearuser()"
     },
     {
@@ -1789,8 +1789,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "app_data_types_scoreentry",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "scoreentry"
     },
     {
@@ -1800,8 +1800,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "app_data_types_scorerowdb",
-      "community": 69,
-      "community_name": "data.jsx",
+      "community": 62,
+      "community_name": "salon.spec.ts",
       "norm_label": "scorerowdb"
     },
     {
@@ -1932,8 +1932,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_asteroids_actions",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 49,
+      "community_name": "about/page.tsx",
       "norm_label": "actions.ts"
     },
     {
@@ -1943,8 +1943,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_games_asteroids_actions_actions",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 49,
+      "community_name": "about/page.tsx",
       "norm_label": "actions"
     },
     {
@@ -1954,8 +1954,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_asteroids_page",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "page.tsx"
     },
     {
@@ -1965,8 +1965,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "app_games_asteroids_page_metadata",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "metadata"
     },
     {
@@ -1976,8 +1976,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "app_games_asteroids_page_leaderboardserver",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "leaderboardserver()"
     },
     {
@@ -1987,8 +1987,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "app_games_asteroids_page_asteroidspage",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "asteroidspage()"
     },
     {
@@ -2020,8 +2020,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_bloque_buster_page",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "page.tsx"
     },
     {
@@ -2031,8 +2031,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "app_games_bloque_buster_page_metadata",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "metadata"
     },
     {
@@ -2042,8 +2042,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "app_games_bloque_buster_page_leaderboardserver",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "leaderboardserver()"
     },
     {
@@ -2053,8 +2053,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "app_games_bloque_buster_page_bloquebusterpage",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "bloquebusterpage()"
     },
     {
@@ -2064,8 +2064,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_caida_actions",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 49,
+      "community_name": "about/page.tsx",
       "norm_label": "actions.ts"
     },
     {
@@ -2075,8 +2075,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_games_caida_actions_actions",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 49,
+      "community_name": "about/page.tsx",
       "norm_label": "actions"
     },
     {
@@ -2086,8 +2086,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_caida_page",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "page.tsx"
     },
     {
@@ -2097,8 +2097,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "app_games_caida_page_metadata",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "metadata"
     },
     {
@@ -2108,8 +2108,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "app_games_caida_page_leaderboardserver",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "leaderboardserver()"
     },
     {
@@ -2119,8 +2119,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "app_games_caida_page_caidapage",
-      "community": 78,
-      "community_name": "reproductor.jsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "caidapage()"
     },
     {
@@ -2174,8 +2174,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_ranaria_page",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "page.tsx"
     },
     {
@@ -2185,8 +2185,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "app_games_ranaria_page_metadata",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "metadata"
     },
     {
@@ -2196,8 +2196,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "app_games_ranaria_page_leaderboardserver",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "leaderboardserver()"
     },
     {
@@ -2207,8 +2207,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "app_games_ranaria_page_ranariapage",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "ranariapage()"
     },
     {
@@ -2240,8 +2240,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_games_serpentina_page",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "page.tsx"
     },
     {
@@ -2251,8 +2251,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "app_games_serpentina_page_metadata",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "metadata"
     },
     {
@@ -2262,8 +2262,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "app_games_serpentina_page_leaderboardserver",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "leaderboardserver()"
     },
     {
@@ -2273,8 +2273,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "app_games_serpentina_page_serpentinapage",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "serpentinapage()"
     },
     {
@@ -2328,8 +2328,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_player_id_playerclient",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "playerclient.tsx"
     },
     {
@@ -2339,8 +2339,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "app_player_id_playerclient_playerclientprops",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "playerclientprops"
     },
     {
@@ -2350,8 +2350,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_player_id_playerclient_playerclient",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "playerclient()"
     },
     {
@@ -2614,8 +2614,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_games_touchcontrols",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "touchcontrols.tsx"
     },
     {
@@ -2625,8 +2625,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_games_touchcontrols_dispatchkey",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "dispatchkey()"
     },
     {
@@ -2636,8 +2636,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "components_games_touchcontrols_direction",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "direction"
     },
     {
@@ -2647,8 +2647,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "components_games_touchcontrols_triggermode",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "triggermode"
     },
     {
@@ -2658,8 +2658,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "components_games_touchcontrols_paddirection",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "paddirection"
     },
     {
@@ -2669,8 +2669,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "components_games_touchcontrols_touchbutton",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "touchbutton"
     },
     {
@@ -2680,8 +2680,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "components_games_touchcontrols_touchcontrolsprops",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "touchcontrolsprops"
     },
     {
@@ -2691,8 +2691,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "components_games_touchcontrols_touchcontrols",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "touchcontrols()"
     },
     {
@@ -2702,8 +2702,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_games_asteroids_asteroidsgame",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "asteroidsgame.tsx"
     },
     {
@@ -2713,8 +2713,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "components_games_asteroids_asteroidsgame_asteroidsgame",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "asteroidsgame()"
     },
     {
@@ -2735,8 +2735,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "components_games_bloque_buster_bloquebustergame_bloquebustergame",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "bloquebustergame()"
     },
     {
@@ -2746,8 +2746,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_games_caida_caidagame",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "caidagame.tsx"
     },
     {
@@ -2757,8 +2757,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "components_games_caida_caidagame_caidagame",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "caidagame()"
     },
     {
@@ -2779,8 +2779,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "components_games_ranaria_ranariagame_ranariagame",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "ranariagame()"
     },
     {
@@ -2801,8 +2801,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "components_games_serpentina_serpentinagame_serpentinagame",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "serpentinagame()"
     },
     {
@@ -2856,8 +2856,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "components_games_usearcadegame_usearcadegame",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "usearcadegame()"
     },
     {
@@ -2900,8 +2900,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "components_nav_nav",
-      "community": 77,
-      "community_name": "detalle.jsx",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "nav()"
     },
     {
@@ -3021,8 +3021,8 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "components_skin_skinprovider_useskin",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "useskin()"
     },
     {
@@ -3032,8 +3032,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_skin_skinselect",
-      "community": 61,
-      "community_name": "asteroids.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "skinselect.tsx"
     },
     {
@@ -3043,8 +3043,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_skin_skinselect_skinselect",
-      "community": 66,
-      "community_name": "caida.spec.ts",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "skinselect()"
     },
     {
@@ -4539,8 +4539,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_games_caida_types",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "types.ts"
     },
     {
@@ -4550,8 +4550,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "lib_games_caida_types_caidagameprops",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "caidagameprops"
     },
     {
@@ -4561,8 +4561,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "lib_games_caida_types_caidarefs",
-      "community": 76,
-      "community_name": "Commands",
+      "community": 59,
+      "community_name": "about.spec.ts",
       "norm_label": "caidarefs"
     },
     {
@@ -4583,8 +4583,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_games_leaderboard",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "leaderboard.ts"
     },
     {
@@ -4605,8 +4605,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "lib_games_leaderboard_createleaderboardactionsparams",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "createleaderboardactionsparams"
     },
     {
@@ -4616,8 +4616,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "lib_games_leaderboard_maptoleaderboardentry",
-      "community": 49,
-      "community_name": "about/page.tsx",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "maptoleaderboardentry()"
     },
     {
@@ -5089,8 +5089,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "game.esm.js"
     },
     {
@@ -5100,8 +5100,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_fruit_atlas",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "fruit_atlas"
     },
     {
@@ -5111,8 +5111,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_fruit_names",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "fruit_names"
     },
     {
@@ -5122,8 +5122,8 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_bodycolor",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "bodycolor"
     },
     {
@@ -5133,8 +5133,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_hextorgba",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "hextorgba()"
     },
     {
@@ -5144,8 +5144,8 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_shade",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "shade()"
     },
     {
@@ -5155,8 +5155,8 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_spawnfood",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "spawnfood()"
     },
     {
@@ -5166,8 +5166,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_reset",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "reset()"
     },
     {
@@ -5177,8 +5177,8 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_updatehud",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "updatehud()"
     },
     {
@@ -5188,8 +5188,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_step",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "step()"
     },
     {
@@ -5199,8 +5199,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_draw",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "draw()"
     },
     {
@@ -5210,8 +5210,8 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_endgame",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "endgame()"
     },
     {
@@ -5221,8 +5221,8 @@
       "source_location": "L213",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_scheduletick",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "scheduletick()"
     },
     {
@@ -5232,8 +5232,8 @@
       "source_location": "L217",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_tick",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "tick()"
     },
     {
@@ -5243,8 +5243,8 @@
       "source_location": "L226",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_onkeydown",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "onkeydown()"
     },
     {
@@ -5254,8 +5254,8 @@
       "source_location": "L255",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_attachinput",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "attachinput()"
     },
     {
@@ -5265,8 +5265,8 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_detachinput",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "detachinput()"
     },
     {
@@ -5276,8 +5276,8 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_initgame",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "initgame()"
     },
     {
@@ -5287,8 +5287,8 @@
       "source_location": "L297",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_destroy",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "destroy()"
     },
     {
@@ -5298,8 +5298,8 @@
       "source_location": "L311",
       "_origin": "ast",
       "id": "lib_games_serpentina_game_esm_setongameover",
-      "community": 11,
-      "community_name": "leaderboard.ts",
+      "community": 61,
+      "community_name": "asteroids.spec.ts",
       "norm_label": "setongameover()"
     },
     {
@@ -5496,8 +5496,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_supabase_server",
-      "community": 80,
-      "community_name": "highlight-icon.md",
+      "community": 69,
+      "community_name": "data.jsx",
       "norm_label": "server.ts"
     },
     {
@@ -13534,7 +13534,7 @@
       "label": "Catalogued, pending engine",
       "file_type": "document",
       "source_file": "resources/game-suggestions-todo.md",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "resources_game_suggestions_todo_catalogued_pending_engine",
       "community": 156,
@@ -13729,10 +13729,21 @@
       "norm_label": "bloque buster \u2014 `bloque-buster`"
     },
     {
+      "label": "RANARIA \u2014 `ranaria`",
+      "file_type": "document",
+      "source_file": "resources/implemented-games.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "resources_implemented_games_ranaria_ranaria",
+      "community": 67,
+      "community_name": "Juegos catalogados (no jugables todav\u00eda)",
+      "norm_label": "ranaria \u2014 `ranaria`"
+    },
+    {
       "label": "Juegos catalogados (no jugables todav\u00eda)",
       "file_type": "document",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L104",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "resources_implemented_games_juegos_catalogados_no_jugables_todav\u00eda",
       "community": 67,
@@ -13743,7 +13754,7 @@
       "label": "DUELO PIXEL \u2014 `duelo-pixel`",
       "file_type": "document",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L112",
+      "source_location": "L127",
       "_origin": "ast",
       "id": "resources_implemented_games_duelo_pixel_duelo_pixel",
       "community": 67,
@@ -13754,7 +13765,7 @@
       "label": "GLOT\u00d3N \u2014 `gloton`",
       "file_type": "document",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L120",
+      "source_location": "L135",
       "_origin": "ast",
       "id": "resources_implemented_games_glot\u00f3n_gloton",
       "community": 67,
@@ -13765,7 +13776,7 @@
       "label": "INVASORES \u2014 `invasores`",
       "file_type": "document",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L128",
+      "source_location": "L143",
       "_origin": "ast",
       "id": "resources_implemented_games_invasores_invasores",
       "community": 67,
@@ -13773,21 +13784,10 @@
       "norm_label": "invasores \u2014 `invasores`"
     },
     {
-      "label": "RANARIA \u2014 `ranaria`",
-      "file_type": "document",
-      "source_file": "resources/implemented-games.md",
-      "source_location": "L136",
-      "_origin": "ast",
-      "id": "resources_implemented_games_ranaria_ranaria",
-      "community": 67,
-      "community_name": "Juegos catalogados (no jugables todav\u00eda)",
-      "norm_label": "ranaria \u2014 `ranaria`"
-    },
-    {
       "label": "Notas t\u00e9cnicas",
       "file_type": "document",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L147",
+      "source_location": "L153",
       "_origin": "ast",
       "id": "resources_implemented_games_notas_t\u00e9cnicas",
       "community": 67,
@@ -15916,6 +15916,94 @@
       "community": 72,
       "community_name": "INDEX.md",
       "norm_label": "verificacion"
+    },
+    {
+      "label": "10-auth-supabase.md",
+      "file_type": "document",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_10_auth_supabase",
+      "community": 11,
+      "community_name": "leaderboard.ts",
+      "norm_label": "10-auth-supabase.md"
+    },
+    {
+      "label": "SPEC 10 \u2014 Auth: registro, login y autenticaci\u00f3n con Supabase",
+      "file_type": "document",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "specs_10_auth_supabase_spec_10_auth_registro_login_y_autenticaci\u00f3n_con_supabase",
+      "community": 11,
+      "community_name": "leaderboard.ts",
+      "norm_label": "spec 10 \u2014 auth: registro, login y autenticacion con supabase"
+    },
+    {
+      "label": "Scope",
+      "file_type": "document",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "specs_10_auth_supabase_scope",
+      "community": 11,
+      "community_name": "leaderboard.ts",
+      "norm_label": "scope"
+    },
+    {
+      "label": "Data model",
+      "file_type": "document",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "specs_10_auth_supabase_data_model",
+      "community": 11,
+      "community_name": "leaderboard.ts",
+      "norm_label": "data model"
+    },
+    {
+      "label": "Implementation plan",
+      "file_type": "document",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "specs_10_auth_supabase_implementation_plan",
+      "community": 11,
+      "community_name": "leaderboard.ts",
+      "norm_label": "implementation plan"
+    },
+    {
+      "label": "Acceptance criteria",
+      "file_type": "document",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L228",
+      "_origin": "ast",
+      "id": "specs_10_auth_supabase_acceptance_criteria",
+      "community": 11,
+      "community_name": "leaderboard.ts",
+      "norm_label": "acceptance criteria"
+    },
+    {
+      "label": "Decisiones tomadas y descartadas",
+      "file_type": "document",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L258",
+      "_origin": "ast",
+      "id": "specs_10_auth_supabase_decisiones_tomadas_y_descartadas",
+      "community": 11,
+      "community_name": "leaderboard.ts",
+      "norm_label": "decisiones tomadas y descartadas"
+    },
+    {
+      "label": "Identified risks",
+      "file_type": "document",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L279",
+      "_origin": "ast",
+      "id": "specs_10_auth_supabase_identified_risks",
+      "community": 11,
+      "community_name": "leaderboard.ts",
+      "norm_label": "identified risks"
     },
     {
       "label": "spec-a.md",
@@ -37953,7 +38041,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "resources/game-suggestions-todo.md",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "resources_game_suggestions_todo_game_suggestions_todo",
@@ -38096,7 +38184,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L104",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast",
       "source": "resources_implemented_games_juegos_implementados_en_arcade_vault",
@@ -38118,7 +38206,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L147",
+      "source_location": "L153",
       "weight": 1.0,
       "_origin": "ast",
       "source": "resources_implemented_games_juegos_implementados_en_arcade_vault",
@@ -38173,6 +38261,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "resources/implemented-games.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "resources_implemented_games_juegos_implementados_jugables",
+      "target": "resources_implemented_games_ranaria_ranaria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "resources/implemented-games.md",
       "source_location": "L70",
       "weight": 1.0,
       "_origin": "ast",
@@ -38184,7 +38283,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L112",
+      "source_location": "L127",
       "weight": 1.0,
       "_origin": "ast",
       "source": "resources_implemented_games_juegos_catalogados_no_jugables_todav\u00eda",
@@ -38195,7 +38294,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L120",
+      "source_location": "L135",
       "weight": 1.0,
       "_origin": "ast",
       "source": "resources_implemented_games_juegos_catalogados_no_jugables_todav\u00eda",
@@ -38206,22 +38305,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "resources/implemented-games.md",
-      "source_location": "L128",
+      "source_location": "L143",
       "weight": 1.0,
       "_origin": "ast",
       "source": "resources_implemented_games_juegos_catalogados_no_jugables_todav\u00eda",
       "target": "resources_implemented_games_invasores_invasores",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "resources/implemented-games.md",
-      "source_location": "L136",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "resources_implemented_games_juegos_catalogados_no_jugables_todav\u00eda",
-      "target": "resources_implemented_games_ranaria_ranaria",
       "confidence_score": 1.0
     },
     {
@@ -40130,6 +40218,83 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specs_10_auth_supabase",
+      "target": "specs_10_auth_supabase_spec_10_auth_registro_login_y_autenticaci\u00f3n_con_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L228",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specs_10_auth_supabase_spec_10_auth_registro_login_y_autenticaci\u00f3n_con_supabase",
+      "target": "specs_10_auth_supabase_acceptance_criteria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specs_10_auth_supabase_spec_10_auth_registro_login_y_autenticaci\u00f3n_con_supabase",
+      "target": "specs_10_auth_supabase_data_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L258",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specs_10_auth_supabase_spec_10_auth_registro_login_y_autenticaci\u00f3n_con_supabase",
+      "target": "specs_10_auth_supabase_decisiones_tomadas_y_descartadas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L279",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specs_10_auth_supabase_spec_10_auth_registro_login_y_autenticaci\u00f3n_con_supabase",
+      "target": "specs_10_auth_supabase_identified_risks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specs_10_auth_supabase_spec_10_auth_registro_login_y_autenticaci\u00f3n_con_supabase",
+      "target": "specs_10_auth_supabase_implementation_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/10-auth-supabase.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specs_10_auth_supabase_spec_10_auth_registro_login_y_autenticaci\u00f3n_con_supabase",
+      "target": "specs_10_auth_supabase_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "specs/game-jam/bloque-buster/spec-a.md",
       "source_location": "L9",
       "weight": 1.0,
@@ -41378,5 +41543,5 @@
       "source_file": ".agents/skills/spec/SKILL.md"
     }
   ],
-  "built_at_commit": "c7f938379321c3224e34229988b8c8b0c388bdd4"
+  "built_at_commit": "2afe76ddb0341dc3ea3adf37493d3ca20dcb9334"
 }

@@ -25,13 +25,13 @@ La plataforma distingue dos estados por juego:
 | 7   | `ranaria`       | RANARIA       | ARCADE    | green   | Frogger: cruza autopista y río sobre troncos a la deriva.               | 18 900  | ✅ Implementado |
 | 8   | `serpentina`    | SERPENTINA    | ARCADE    | green   | Snake de luz en grilla; cada núcleo alarga la serpiente y acelera.      | 7 820   | ✅ Implementado |
 
-8 juegos en catálogo, 4 jugables, 4 pendientes de implementar.
+8 juegos en catálogo, 5 jugables, 3 pendientes de implementar.
 
 ---
 
 ## Juegos implementados (jugables)
 
-Estos cuatro siguen la receta de 8 archivos de la skill `integrate-arcade-game`
+Estos cinco siguen la receta de 8 archivos de la skill `integrate-arcade-game`
 y usan la factory `createLeaderboardActions` (`lib/games/leaderboard.ts`).
 
 ### ASTEROIDS — `asteroids`
@@ -99,6 +99,21 @@ Arkanoid rebautizado. Port 1:1 del vanilla: spritesheet
 `setTimeout` encadenado, `attachInput`/`detachInput` pareados (teclado +
 mousemove sobre el canvas), `destroy()` cancela el timer.
 
+### RANARIA — `ranaria`
+
+- **Motor:** `lib/games/ranaria/game.esm.js`
+- **Componente:** `components/games/ranaria/RanariaGame.tsx` + `ranaria.css`
+- **Página:** `app/games/ranaria/page.tsx`
+- **Server Actions:** `app/games/ranaria/actions.ts`
+- **API:** `app/api/leaderboard/ranaria/route.ts` (`GET`)
+- **Especificación:** `specs/game-jam/frogger/01-frogger-core.md`
+- **Categoría:** ARCADE · **Color:** green
+
+Frogger. Cruce de autopista y río con troncos a la deriva; 5 bocas
+destino, 3 vidas, tortugas sumergibles y temporizador por ronda. Loop
+por `setTimeout` encadenado, `attachInput`/`detachInput` pareados,
+`destroy()` cancela el timer.
+
 ---
 
 ## Juegos catalogados (no jugables todavía)
@@ -107,7 +122,7 @@ Fila en `public.games` con descripción y portada, pero **sin** motor ni
 página propia. El navegador dinámico `app/games/[slug]/page.tsx` los
 resuelve y muestra la ficha; el botón de jugar debe verificar que el slug
 esté entre los implementados (`asteroids`, `caida`, `serpentina`,
-`bloque-buster`) antes de ofrecer partida real.
+`bloque-buster`, `ranaria`) antes de ofrecer partida real.
 
 ### DUELO PIXEL — `duelo-pixel`
 
@@ -133,15 +148,6 @@ motor en el repositorio.
 Space Invaders. Canon horizontal contra filas alienígenas descendentes. Sin
 motor en el repositorio.
 
-### RANARIA — `ranaria`
-
-- **Motor:** `lib/games/ranaria/game.esm.js` (construido desde cero, spec
-  `specs/game-jam/frogger/01-frogger-core.md`)
-- **Categoría:** ARCADE · **Color:** green
-
-Frogger. Cruce de autopista y río con troncos a la deriva; 5 bocas destino,
-3 vidas, tortugas sumergibles y temporizador por ronda.
-
 ---
 
 ## Notas técnicas
@@ -149,11 +155,11 @@ Frogger. Cruce de autopista y río con troncos a la deriva; 5 bocas destino,
 - **Puntuaciones:** la tabla `public.scores` **no tiene** FK a `games.id`.
   El enlace es por convención (slug string coincidente). Los Server Actions
   usan `gameId: '<slug>'` al insertar.
-- **Leaderboard:** los cuatro juegos implementados delegan submit/get a
+- **Leaderboard:** los cinco juegos implementados delegan submit/get a
   `createLeaderboardActions({ gameId, gamePath })` en
   `lib/games/leaderboard.ts` — no hand-roll las acciones. Ver
   `app/games/asteroids/actions.ts` como ejemplo canónico.
-- **Loop de motor:** los cuatro juegos implementados usan `setTimeout`
+- **Loop de motor:** los cinco juegos implementados usan `setTimeout`
   encadenado en lugar de `requestAnimationFrame` (RAF se estrangula en
   WebKit headless/CI). No regredir a RAF.
 - **Portadas:** la columna `cover` referencia assets en `public/`

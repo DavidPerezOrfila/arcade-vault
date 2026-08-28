@@ -15,12 +15,12 @@ Memory of the game-planner agent. Updated each run.
 - [x] caida — PUZZLE / magenta — shipped
 - [x] serpentina — ARCADE / green — shipped
 - [x] ranaria — ARCADE / green — shipped 2026-08-25 (spec `specs/game-jam/frogger/01-frogger-core.md`, slug catálogo `ranaria`)
+- [x] bloque-buster — ARCADE / cyan — shipped 2026-08-17 (spec `specs/game-jam/bloque-buster/spec-a.md`, PR #53)
 
 ## Catalogued, pending engine
 
-- [ ] bloque-buster — ARCADE / cyan — **recommended 2026-08-12** — vanilla ref available (`04-arkanoid/`), single-canvas, proven loop pattern, first cyan shipped. Fit 5/6. Ranking: #1.
-- [ ] duelo-pixel — VERSUS / cyan — suggested 2026-08-12 — no vanilla ref, only VERSUS title, 2-player input + AI adds complexity. Fit 4/6. Ranking: #2.
-- [ ] invasores — SHOOTER / green — suggested 2026-08-12 — no vanilla ref, green already shipped. Fit 3/6. Ranking: #3.
+- [ ] duelo-pixel — VERSUS / cyan — suggested 2026-08-12 — no vanilla ref, only VERSUS title, 2-player input + AI adds complexity. Fit 4/6. Ranking: #1.
+- [ ] invasores — SHOOTER / green — suggested 2026-08-12 — no vanilla ref, green already shipped. Fit 3/6. Ranking: #2.
 - [ ] gloton — ARCADE / yellow — suggested 2026-08-12 — no vanilla ref, high complexity (AI/pathfinding 4 ghosts + maze).
 
 ## Run log
@@ -72,4 +72,4 @@ Ranking por coste de port (más barato primero):
 
 - [ ] patrulla-estelar — SHOOTER / green — Defender, scroll + rescate
 
-Nota: los 5 slugs catalogados sin motor (bloque-buster, duelo-pixel, invasores, gloton, ranaria) tienen prioridad sobre Pool B. Pool B es backlog cuando Pool A se agote o el usuario lo elija.
+Nota: los 3 slugs catalogados sin motor (duelo-pixel, invasores, gloton) tienen prioridad sobre Pool B. Pool B es backlog cuando Pool A se agote o el usuario lo elija.
