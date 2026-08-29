@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('DUELO PIXEL Game', () => {
-  test.beforeEach(async({ page }) => {
+  test.beforeEach(async ({ page }) => {
     await page.goto('/games/duelo-pixel?e2e=1');
     // Wait for the board canvas to be ready
     await page.waitForSelector('.duelo-pixel-board-wrap canvas', {
@@ -11,7 +11,7 @@ test.describe('DUELO PIXEL Game', () => {
     await page.waitForTimeout(1000);
   });
 
-  test('loads without errors', async({ page }) => {
+  test('loads without errors', async ({ page }) => {
     // Check page title
     await expect(page).toHaveTitle(/DUELO PIXEL \| Arcade Vault/);
 
@@ -20,9 +20,7 @@ test.describe('DUELO PIXEL Game', () => {
     await expect(board).toBeVisible();
 
     // Check mode selector renders
-    await expect(
-      page.getByRole('button', { name: /RACHA CPU/ })
-    ).toBeVisible();
+    await expect(page.getByRole('button', { name: /RACHA CPU/ })).toBeVisible();
 
     // Check no console errors
     const errors: string[] = [];
@@ -41,7 +39,7 @@ test.describe('DUELO PIXEL Game', () => {
     ).toBe(0);
   });
 
-  test('shows game controls sidebar', async({ page }) => {
+  test('shows game controls sidebar', async ({ page }) => {
     // Check for controls section
     await expect(page.locator('text=CONTROLES')).toBeVisible();
     await expect(page.locator('text=W / S')).toBeVisible(); // WASD move
@@ -51,13 +49,11 @@ test.describe('DUELO PIXEL Game', () => {
     await expect(
       page.locator('h2.duelo-pixel-sidebar-title--scoring')
     ).toBeVisible();
-    await expect(
-      page.getByText('Racha CPU', { exact: true })
-    ).toBeVisible();
+    await expect(page.getByText('Racha CPU', { exact: true })).toBeVisible();
     await expect(page.locator('text=1ª a 5 puntos')).toBeVisible();
   });
 
-  test('game is playable - can move paddles with W/S and arrows', async({
+  test('game is playable - can move paddles with W/S and arrows', async ({
     page,
   }) => {
     const board = page.locator('.duelo-pixel-board-wrap canvas');
@@ -90,7 +86,7 @@ test.describe('DUELO PIXEL Game', () => {
     await expect(board).toBeVisible();
   });
 
-  test('mode selector switches to local-exhibition and back', async({
+  test('mode selector switches to local-exhibition and back', async ({
     page,
   }) => {
     const localBtn = page.getByRole('button', { name: /2 JUGADORES/ });
@@ -108,7 +104,7 @@ test.describe('DUELO PIXEL Game', () => {
     await expect(cpuBtn).toHaveAttribute('aria-pressed', 'true');
   });
 
-  test('game over shows auth prompt for unauthenticated user', async({
+  test('game over shows auth prompt for unauthenticated user', async ({
     page,
   }) => {
     // The game over is forced via the test hook (?e2e=1). As an unauthenticated
@@ -132,7 +128,7 @@ test.describe('DUELO PIXEL Game', () => {
     );
   });
 
-  test('leaderboard displays', async({ page }) => {
+  test('leaderboard displays', async ({ page }) => {
     // Check leaderboard is visible
     const leaderboard = page.locator('.duelo-pixel-leaderboard');
     await expect(leaderboard).toBeVisible();
@@ -143,7 +139,7 @@ test.describe('DUELO PIXEL Game', () => {
     );
   });
 
-  test('responsive canvas scales correctly', async({ page }) => {
+  test('responsive canvas scales correctly', async ({ page }) => {
     const board = page.locator('.duelo-pixel-board-wrap canvas');
 
     // Get initial size on desktop
@@ -164,7 +160,7 @@ test.describe('DUELO PIXEL Game', () => {
     expect(aspectRatio).toBeCloseTo(4 / 3, 1);
   });
 
-  test('el selector de skin comparte columna con el panel', async({
+  test('el selector de skin comparte columna con el panel', async ({
     page,
   }) => {
     // El borde derecho de la barra de skin debe coincidir con el borde
@@ -180,7 +176,7 @@ test.describe('DUELO PIXEL Game', () => {
     expect(Math.abs(skinRight - panelRight)).toBeLessThanOrEqual(2);
   });
 
-  test('SEO metadata present', async({ page }) => {
+  test('SEO metadata present', async ({ page }) => {
     // Check title
     await expect(page).toHaveTitle(/DUELO PIXEL \| Arcade Vault/);
 
