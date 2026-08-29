@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 // Sin powerups ni tabla de puntuación alternativa: el sidebar de bloque-buster
 // solo tiene CONTROLES (← → / ratón, P pausa, ESPACIO reiniciar).
 test.describe('Bloque Buster Game', () => {
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async({ page }) => {
     await page.goto('/games/bloque-buster?e2e=1');
     // Wait for the game canvas to be ready
     await page.waitForSelector('.bloque-buster-game-container canvas', {
@@ -14,7 +14,7 @@ test.describe('Bloque Buster Game', () => {
     await page.waitForTimeout(1000);
   });
 
-  test('loads without errors', async ({ page }) => {
+  test('loads without errors', async({ page }) => {
     // Check page title
     await expect(page).toHaveTitle(/Bloque Buster \| Arcade Vault/);
 
@@ -39,7 +39,7 @@ test.describe('Bloque Buster Game', () => {
     ).toBe(0);
   });
 
-  test('shows game controls sidebar', async ({ page }) => {
+  test('shows game controls sidebar', async({ page }) => {
     // Check for controls section
     await expect(page.locator('text=CONTROLES')).toBeVisible();
     await expect(page.locator('text=← →')).toBeVisible(); // Mover paleta
@@ -57,7 +57,7 @@ test.describe('Bloque Buster Game', () => {
     ).toBeVisible(); // Reiniciar
   });
 
-  test('game is playable - paddle moves with keyboard', async ({ page }) => {
+  test('game is playable - paddle moves with keyboard', async({ page }) => {
     const canvas = page.locator('.bloque-buster-game-container canvas');
 
     // Focus the canvas
@@ -77,7 +77,7 @@ test.describe('Bloque Buster Game', () => {
     await expect(canvas).toBeVisible();
   });
 
-  test('el juego corre - la escena cambia con el tiempo', async ({ page }) => {
+  test('el juego corre - la escena cambia con el tiempo', async({ page }) => {
     // Sin input, la pelota arranca sola y se mueve: dos capturas separadas
     // 1.2s deben diferir; un loop congelado deja el canvas idéntico → fail.
     const canvas = page.locator('.bloque-buster-game-container canvas');
@@ -87,7 +87,7 @@ test.describe('Bloque Buster Game', () => {
     expect(shot1.equals(shot2)).toBe(false);
   });
 
-  test('game over shows auth prompt for unauthenticated user', async ({
+  test('game over shows auth prompt for unauthenticated user', async({
     page,
   }) => {
     // The game over is forced via the test hook (?e2e=1). As an unauthenticated
@@ -111,7 +111,7 @@ test.describe('Bloque Buster Game', () => {
     );
   });
 
-  test('leaderboard displays', async ({ page }) => {
+  test('leaderboard displays', async({ page }) => {
     // Check leaderboard card is visible
     const leaderboard = page.locator('.bloque-buster-leaderboard-card');
     await expect(leaderboard).toBeVisible();
@@ -122,7 +122,7 @@ test.describe('Bloque Buster Game', () => {
     ).toContainText('TOP 10');
   });
 
-  test('responsive canvas scales correctly', async ({ page }) => {
+  test('responsive canvas scales correctly', async({ page }) => {
     const canvas = page.locator('.bloque-buster-game-container canvas');
 
     // Get initial size on desktop
@@ -143,7 +143,7 @@ test.describe('Bloque Buster Game', () => {
     expect(aspectRatio).toBeCloseTo(4 / 3, 1);
   });
 
-  test('el selector de skin comparte columna con el canvas', async ({
+  test('el selector de skin comparte columna con el canvas', async({
     page,
   }) => {
     // El borde derecho de la barra de skin debe coincidir con el borde
@@ -160,7 +160,7 @@ test.describe('Bloque Buster Game', () => {
     expect(Math.abs(skinRight - canvasRight)).toBeLessThanOrEqual(2);
   });
 
-  test('SEO metadata present', async ({ page }) => {
+  test('SEO metadata present', async({ page }) => {
     // Check title
     await expect(page).toHaveTitle(/Bloque Buster \| Arcade Vault/);
 

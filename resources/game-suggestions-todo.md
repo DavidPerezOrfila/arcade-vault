@@ -15,15 +15,33 @@ Memory of the game-planner agent. Updated each run.
 - [x] caida — PUZZLE / magenta — shipped
 - [x] serpentina — ARCADE / green — shipped
 - [x] ranaria — ARCADE / green — shipped 2026-08-25 (spec `specs/game-jam/frogger/01-frogger-core.md`, slug catálogo `ranaria`)
+- [x] bloque-buster — ARCADE / cyan — shipped 2026-08-17 (spec `specs/game-jam/bloque-buster/spec-a.md`, PR #53)
 
 ## Catalogued, pending engine
 
-- [ ] bloque-buster — ARCADE / cyan — **recommended 2026-08-12** — vanilla ref available (`04-arkanoid/`), single-canvas, proven loop pattern, first cyan shipped. Fit 5/6. Ranking: #1.
-- [ ] duelo-pixel — VERSUS / cyan — suggested 2026-08-12 — no vanilla ref, only VERSUS title, 2-player input + AI adds complexity. Fit 4/6. Ranking: #2.
-- [ ] invasores — SHOOTER / green — suggested 2026-08-12 — no vanilla ref, green already shipped. Fit 3/6. Ranking: #3.
+- [ ] duelo-pixel — VERSUS / cyan — suggested 2026-08-12 — no vanilla ref, only VERSUS title, 2-player input + AI adds complexity. Fit 4/6. Ranking: #1.
+- [ ] invasores — SHOOTER / green — suggested 2026-08-12 — no vanilla ref, green already shipped. Fit 3/6. Ranking: #2.
 - [ ] gloton — ARCADE / yellow — suggested 2026-08-12 — no vanilla ref, high complexity (AI/pathfinding 4 ghosts + maze).
 
 ## Run log
+
+### 2026-08-28 — Ranking de Pool A (tras 2 nuevos shipped)
+
+Pool A reducido de 5 a 3: `bloque-buster` y `ranaria` pasaron a shipped. Ninguno de los
+3 restantes tiene vanilla ref — los 4 refs de `resources/started-games/` ya están portados.
+
+Estado catálogo: ARCADE 3 (serpentina, ranaria, bloque-buster) · SHOOTER 1 (asteroids) ·
+PUZZLE 1 (caida) · **VERSUS 0**. Colores: yellow 1 · magenta 1 · green 2 · cyan 1.
+
+Winner: **duelo-pixel** (fit 4/6). Runner-up: invasores (3/6), gloton (2/6).
+Rationale: VERSUS es la única categoría sin ningún juego shipped; abrirla compensa la
+saturación de ARCADE (3). Pong es el motor más simple de los tres — un canvas, una
+pelota, mínima colisión; el único delta real sobre el patrón probado (setTimeout
+encadenado + attach/detach pareados) es input 2P + CPU trivial. Cyan 1→2 equilibra
+colores (y/m/g/c = 1/1/2/2). Slug ya en catálogo, sin colisión. Invasores pesa menos:
+verde sería el 3º de ese color y SHOOTER ya tiene asteroids. Glotón descartado: ARCADE
+saturado + AI/pathfinding de 4 fantasmas (anti-patrón). Recomendación pendiente de
+confirmación del usuario — no pasar a implementación sin su OK.
 
 ### 2026-08-12 — Ranking de Pool A
 
@@ -72,4 +90,4 @@ Ranking por coste de port (más barato primero):
 
 - [ ] patrulla-estelar — SHOOTER / green — Defender, scroll + rescate
 
-Nota: los 5 slugs catalogados sin motor (bloque-buster, duelo-pixel, invasores, gloton, ranaria) tienen prioridad sobre Pool B. Pool B es backlog cuando Pool A se agote o el usuario lo elija.
+Nota: los 3 slugs catalogados sin motor (duelo-pixel, invasores, gloton) tienen prioridad sobre Pool B. Pool B es backlog cuando Pool A se agote o el usuario lo elija.

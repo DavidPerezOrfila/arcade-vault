@@ -75,20 +75,19 @@ Leer `resources/implemented-games.md` para la lista real. Para cada juego jugabl
 
 ## Process
 
-1. Ejecutar `graft map` u `graft ask "mobile responsive viewport touch"` para orientar.
-2. Leer `resources/implemented-games.md` para obtener lista de juegos jugables.
-3. Leer `resources/mobile-audit.md` previo (si existe). Si no, crear con tabla vacía.
-4. Auditar `<meta viewport>` en `app/layout.tsx`.
-5. Auditar cada ruta con la checklist. Verificar a 320px, 375px y 414px (mentalmente o con tool).
-6. Auditar `globals.css` breakpoints: 840px nav, 720px hall/podium/stats, 900px detail, 520px feature grid, 600px mini rail, 820px about.
-7. Auditar `game-viewport.css` y el wrapper de cada juego.
-8. Auditar nav mobile: panel, backdrop, hamburger, skin-switcher mobile.
-9. Auditar modals (game-over, auth): width, padding, overflow.
-10. Escribir hallazgos en `resources/mobile-audit.md`.
-11. Si el usuario pide fixes: aplicar cambios CSS/markup, priorizar CRITICAL > HIGH > MEDIUM.
-12. Ejecutar `npm run lint` y `npm run build` para verificar.
-13. Actualizar `resources/mobile-audit.md` con estado final.
-14. Ejecutar `npm run graphify:update` al terminar.
+1. Leer `resources/implemented-games.md` para obtener lista de juegos jugables.
+2. Leer `resources/mobile-audit.md` previo (si existe). Si no, crear con tabla vacía.
+3. Auditar `<meta viewport>` en `app/layout.tsx`.
+4. Auditar cada ruta con la checklist. Verificar a 320px, 375px y 414px (mentalmente o con tool).
+5. Auditar `globals.css` breakpoints: 840px nav, 720px hall/podium/stats, 900px detail, 520px feature grid, 600px mini rail, 820px about.
+6. Auditar `game-viewport.css` y el wrapper de cada juego.
+7. Auditar nav mobile: panel, backdrop, hamburger, skin-switcher mobile.
+8. Auditar modals (game-over, auth): width, padding, overflow.
+9. Escribir hallazgos en `resources/mobile-audit.md`.
+10. Si el usuario pide fixes: aplicar cambios CSS/markup, priorizar CRITICAL > HIGH > MEDIUM.
+11. Ejecutar `npm run lint` y `npm run build` para verificar.
+12. Actualizar `resources/mobile-audit.md` con estado final.
+13. Ejecutar `npm run graphify:update` al terminar.
 
 ## Output template
 

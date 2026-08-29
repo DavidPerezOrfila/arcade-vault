@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useEffect, useState, useTransition } from 'react';
-import { getUser } from '@/app/data/storage';
 import { saveScoreAction } from '@/app/data/actions';
 
 interface PlayerClientProps {
@@ -17,11 +16,6 @@ export default function PlayerClient({ game }: PlayerClientProps) {
   const [name, setName] = useState('INVITADO');
   const [saved, setSaved] = useState(false);
   const [, startSaveTransition] = useTransition();
-
-  useEffect(() => {
-    const u = getUser();
-    if (u) setName(u.name);
-  }, []);
 
   useEffect(() => {
     if (over || paused) {

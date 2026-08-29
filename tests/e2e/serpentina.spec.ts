@@ -97,9 +97,7 @@ test.describe('SERPENTINA Game', () => {
     await expect(board).toBeVisible();
 
     await page.evaluate(() => {
-      (
-        window as { __forceGameOver?: (score?: number) => void }
-      ).__forceGameOver?.();
+      (window as { __forceGameOver?: () => void }).__forceGameOver?.();
     });
 
     const overlay = page.locator('.serpentina-auth-overlay');
@@ -184,7 +182,9 @@ test.describe('SERPENTINA Game', () => {
     expect(aspectRatio).toBeCloseTo(1, 1);
   });
 
-  test('el selector de skin comparte columna con el panel', async ({ page }) => {
+  test('el selector de skin comparte columna con el panel', async ({
+    page,
+  }) => {
     // El borde derecho de la barra de skin debe coincidir con el borde
     // derecho del panel lateral. Tolerancia ±2px.
     const skinBar = page.locator('.serpentina-skin-bar');

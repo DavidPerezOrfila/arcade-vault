@@ -49,6 +49,29 @@ Las tres claves de Supabase son **obligatorias** para arrancar el juego y
 persistir puntuaciones. Sin ellas, `app/page.tsx`, `/salon` y
 `/detalle/[id]` fallan al consultar `getScores`.
 
+## Setup de Auth
+
+Registro/login (`/auth`), perfil (`/cuenta`) y reset de contraseña
+(`/auth/reset`) usan Supabase Auth vía `@supabase/ssr` con cookies. El
+refresco de sesión corre en el Proxy de Next.js 16 (`proxy.ts` en la raíz).
+
+Configuración manual en el dashboard de Supabase (Authentication):
+
+1. **Email**: desactiva "Confirm email" para que el registro abra sesión
+   directamente (si lo dejas activo, el trigger de `profiles` igual crea la
+   fila pero el usuario debe confirmar antes del primer login).
+2. **Providers**: activa Google y GitHub con sus credenciales de OAuth.
+3. **Redirect URLs**: añade `http://localhost:3000/auth/callback` (y la URL
+   de producción). El flujo OAuth redirige al provider y vuelve a
+   `/auth/callback`, que intercambia el `code` por sesión.
+4. **Reset de contraseña**: las URLs de recuperación apuntan a
+   `<origin>/auth/reset`, donde el `code` se intercambia antes de cambiar la
+   contraseña.
+
+El username vive en `public.profiles` (se crea al registrarse vía trigger en
+`auth.users`); el leaderboard muestra `profiles.username` en el momento del
+guardado. `npm run db:migrate` aplica la migración `auth_profiles`.
+
 ## Usa Spec Driven Design
 
 Basado en /spec y /spec-impl

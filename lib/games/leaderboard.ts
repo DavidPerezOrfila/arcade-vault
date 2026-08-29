@@ -47,11 +47,20 @@ export function createLeaderboardActions({
       return { ok: false, error: 'UNAUTHENTICATED' };
     }
 
+    // El nombre visible es profiles.username (fuente al guardar); si el
+    // profile aún no existe (registros legacy) se cae a user_metadata/email.
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('username')
+      .eq('id', user.id)
+      .maybeSingle();
+
     try {
       await saveScore({
         game: gameId,
         score,
         name:
+          profile?.username ??
           user.user_metadata?.full_name ??
           user.email?.split('@')[0] ??
           'Jugador',

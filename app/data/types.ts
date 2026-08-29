@@ -52,6 +52,8 @@ export interface ScoreRow {
   date: string; // dd/mm/aaaa
 }
 
-export interface User {
-  name: string;
+// Perfil público del jugador (fila de public.profiles).
+export interface Profile {
+  id: string;
+  username: string;
 }

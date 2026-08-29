@@ -101,6 +101,32 @@ export type Database = {
         };
         Relationships: [];
       };
+      profiles: {
+        Row: {
+          created_at: string;
+          id: string;
+          username: string;
+        };
+        Insert: {
+          created_at?: string;
+          id: string;
+          username: string;
+        };
+        Update: {
+          created_at?: string;
+          id?: string;
+          username?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'profiles_id_fkey';
+            columns: ['id'];
+            isOneToOne: true;
+            referencedRelation: 'users';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
     };
     Views: {
       [_ in never]: never;

@@ -54,3 +54,5 @@ next-env.d.ts
 
 # graphify cache (reproducible hash files, no need to commit)
 /graphify-out/cache/
+# graphify curated-graph dated backups (recreated on every graphify:update)
+/graphify-out/2*/
