@@ -12,6 +12,7 @@ El selector global vive en `components/nav.tsx` y cada juego integra un
 | `serpentina` | ✅       | ✅    | ✅     | ✅         | Completo  |
 | `bloque-buster` | ✅    | ✅    | ✅     | ✅         | Completo  |
 | `ranaria`    | ✅       | ✅    | ✅     | ✅         | Completo  |
+| `duelo-pixel` | ✅      | ✅    | ✅     | ✅         | Completo  |
 
 ## Notas
 
@@ -33,5 +34,9 @@ El selector global vive en `components/nav.tsx` y cada juego integra un
 - `ranaria`: engine consume `PALETTES` para colores de entidades (frog=player,
   coches=enemy/bullet, troncos=thrust, tortugas=accent). CSS usa variables
   del sistema de skins; `retro` scanlines, `neon` halo al canvas.
+- `duelo-pixel`: engine consume `PALETTES` (background=fondo, player=paleta
+  J1, enemy=paleta CPU/J2, bullet=pelota, accent=línea central, hudText=HUD y
+  overlays). CSS usa variables del sistema de skins; `retro` scanlines, `neon`
+  halo al canvas.
 
-Los 5 juegos jugables tienen cobertura completa de skins.
+Los 6 juegos jugables tienen cobertura completa de skins.

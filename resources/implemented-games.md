@@ -19,19 +19,19 @@ La plataforma distingue dos estados por juego:
 | 1   | `asteroids`     | ASTEROIDS     | SHOOTER   | yellow  | Nave triangular dispara y rota para dividir rocas; OVNIs hostiles.      | 41 200  | ✅ Implementado |
 | 2   | `bloque-buster` | BLOQUE BUSTER | ARCADE    | cyan    | Arkanoid: la paleta rebota el núcleo de plasma para pulverizar bloques. | 28 450  | ✅ Implementado |
 | 3   | `caida`         | CAÍDA         | PUZZLE    | magenta | Tetris: encaja piezas; la velocidad escala cada 10 líneas.              | 184 220 | ✅ Implementado |
-| 4   | `duelo-pixel`   | DUELO PIXEL   | VERSUS    | cyan    | Pong a dos paletas: contra CPU o dos jugadores locales.                 | 24      | 🗂 Catalogado    |
+| 4   | `duelo-pixel`   | DUELO PIXEL   | VERSUS    | cyan    | Pong a dos paletas: contra CPU o dos jugadores locales.                 | 24      | ✅ Implementado |
 | 5   | `gloton`        | GLOTÓN        | ARCADE    | yellow  | Laberinto con puntos y 4 fantasmas; la píldora invierte la persecución. | 96 400  | 🗂 Catalogado    |
 | 6   | `invasores`     | INVASORES     | SHOOTER   | green   | Canon horizontal contra filas alienígenas descendentes.                 | 54 190  | 🗂 Catalogado    |
 | 7   | `ranaria`       | RANARIA       | ARCADE    | green   | Frogger: cruza autopista y río sobre troncos a la deriva.               | 18 900  | ✅ Implementado |
 | 8   | `serpentina`    | SERPENTINA    | ARCADE    | green   | Snake de luz en grilla; cada núcleo alarga la serpiente y acelera.      | 7 820   | ✅ Implementado |
 
-8 juegos en catálogo, 5 jugables, 3 pendientes de implementar.
+8 juegos en catálogo, 6 jugables, 2 pendientes de implementar.
 
 ---
 
 ## Juegos implementados (jugables)
 
-Estos cinco siguen la receta de 8 archivos de la skill `integrate-arcade-game`
+Estos seis siguen la receta de 8 archivos de la skill `integrate-arcade-game`
 y usan la factory `createLeaderboardActions` (`lib/games/leaderboard.ts`).
 
 ### ASTEROIDS — `asteroids`
@@ -114,6 +114,25 @@ destino, 3 vidas, tortugas sumergibles y temporizador por ronda. Loop
 por `setTimeout` encadenado, `attachInput`/`detachInput` pareados,
 `destroy()` cancela el timer.
 
+### DUELO PIXEL — `duelo-pixel`
+
+- **Motor:** `lib/games/duelo-pixel/game.esm.js`
+- **Componente:** `components/games/duelo-pixel/DueloPixelGame.tsx` + `duelo-pixel.css`
+- **Página:** `app/games/duelo-pixel/page.tsx`
+- **Server Actions:** `app/games/duelo-pixel/actions.ts`
+- **API:** `app/api/leaderboard/duelo-pixel/route.ts` (`GET`)
+- **Especificación:** `specs/game-jam/duelo-pixel/spec-duelo-pixel-a.md`
+- **Categoría:** VERSUS · **Color:** cyan
+
+Pong a dos paletas. **Racha CPU** (puntuado): duelos al mejor de 5,
++1 ronda por victoria y sube el tier de la CPU (error baja, velocidad
+sirve y persigue sube); 3 vidas y terminal la puntuación = rondas ganadas.
+**Partida local** (no puntuado): al mejor de 7, overlay de vencedor.
+Canvas único 800×600 con HUD/overlays dibujados en-canvas; selector de
+modo en el wrapper; no TouchControls (fuera de alcance de la spec).
+Loop por `setTimeout` encadenado, `attachInput`/`detachInput` pareados,
+`destroy()` cancela el timer.
+
 ---
 
 ## Juegos catalogados (no jugables todavía)
@@ -122,15 +141,7 @@ Fila en `public.games` con descripción y portada, pero **sin** motor ni
 página propia. El navegador dinámico `app/games/[slug]/page.tsx` los
 resuelve y muestra la ficha; el botón de jugar debe verificar que el slug
 esté entre los implementados (`asteroids`, `caida`, `serpentina`,
-`bloque-buster`, `ranaria`) antes de ofrecer partida real.
-
-### DUELO PIXEL — `duelo-pixel`
-
-- **Refs motor vanilla:** no localizado en `resources/started-games/`
-- **Categoría:** VERSUS · **Color:** cyan
-
-Pong a dos paletas. Modo solitario contra CPU o local a dos jugadores. Sin
-motor en el repositorio.
+`bloque-buster`, `ranaria`, `duelo-pixel`) antes de ofrecer partida real.
 
 ### GLOTÓN — `gloton`
 
@@ -155,11 +166,11 @@ motor en el repositorio.
 - **Puntuaciones:** la tabla `public.scores` **no tiene** FK a `games.id`.
   El enlace es por convención (slug string coincidente). Los Server Actions
   usan `gameId: '<slug>'` al insertar.
-- **Leaderboard:** los cinco juegos implementados delegan submit/get a
+- **Leaderboard:** los seis juegos implementados delegan submit/get a
   `createLeaderboardActions({ gameId, gamePath })` en
   `lib/games/leaderboard.ts` — no hand-roll las acciones. Ver
   `app/games/asteroids/actions.ts` como ejemplo canónico.
-- **Loop de motor:** los cinco juegos implementados usan `setTimeout`
+- **Loop de motor:** los seis juegos implementados usan `setTimeout`
   encadenado en lugar de `requestAnimationFrame` (RAF se estrangula en
   WebKit headless/CI). No regredir a RAF.
 - **Portadas:** la columna `cover` referencia assets en `public/`

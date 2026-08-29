@@ -1,0 +1,487 @@
+/* DUELO PIXEL (Pong VERSUS): estilos de pagina y componente (fuente unica) */
+
+/* ===== Page Layout ===== */
+
+.duelo-pixel-page {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.duelo-pixel-page-header {
+  margin-bottom: 2rem;
+}
+
+.duelo-pixel-page-title {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.duelo-pixel-page-description {
+  color: var(--ink-dim);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  max-width: 60ch;
+}
+
+.duelo-pixel-page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .duelo-pixel-page-grid {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.duelo-pixel-game-wrapper {
+  width: 100%;
+}
+
+/* ===== Sidebar ===== */
+
+.duelo-pixel-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .duelo-pixel-sidebar {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+
+.duelo-pixel-sidebar-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.duelo-pixel-sidebar-title {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.duelo-pixel-sidebar-title--controls,
+.duelo-pixel-sidebar-title--scoring {
+  color: var(--cyan);
+}
+
+/* Controls List */
+.duelo-pixel-controls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.duelo-pixel-control-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.375rem 0;
+}
+
+.duelo-pixel-control-key {
+  color: var(--cyan);
+}
+
+/* Scoring List */
+.duelo-pixel-scoring-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.duelo-pixel-scoring-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+.duelo-pixel-scoring-value {
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+/* ===== Game layout ===== */
+
+.duelo-pixel-game-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+/* ===== Mode selector + Skin ===== */
+
+.duelo-pixel-mode-bar {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.duelo-pixel-mode-button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+  padding: 0.5rem 0.375rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  border-radius: 0.5rem;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition:
+    color 0.15s,
+    border-color 0.15s,
+    background-color 0.15s;
+  min-height: 52px;
+}
+
+.duelo-pixel-mode-button:hover {
+  color: var(--ink);
+  border-color: var(--cyan);
+}
+
+.duelo-pixel-mode-button.is-active {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  background: rgba(0, 245, 255, 0.08);
+}
+
+.duelo-pixel-mode-button:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+.duelo-pixel-mode-hint {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--ink-faint);
+  text-transform: none;
+}
+
+.duelo-pixel-skin-bar {
+  display: flex;
+}
+
+.duelo-pixel-skin-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 0.5rem;
+  padding: 0.375rem 0.5rem;
+  background: var(--bg-2);
+  border: 1px solid var(--line-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.7rem;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.duelo-pixel-skin-select select {
+  background: transparent;
+  color: var(--ink);
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.duelo-pixel-skin-select select:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+/* El listbox nativo no hereda --bg-2: sin fondo explícito las opciones salen
+   blancas sobre blanco. */
+.duelo-pixel-skin-select select option {
+  background: var(--bg-2);
+  color: var(--ink);
+}
+
+/* ===== Game area: board + side panel ===== */
+
+.duelo-pixel-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+
+/* Board: internal 800×600, CSS scales keeping ratio */
+.duelo-pixel-board-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 4 / 3;
+}
+
+.duelo-pixel-board-wrap canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid var(--line-2);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  touch-action: none; /* Prevent touch scrolling on canvas */
+}
+
+.duelo-pixel-board-wrap canvas:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+/* ===== Skin overlays ===== */
+
+/* Scanlines CRT del skin retro; el neon añade un halo sutil al canvas. */
+.duelo-pixel-board-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+html[data-skin='retro'] .duelo-pixel-board-wrap::after {
+  display: block;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.22) 0 2px,
+    transparent 2px 4px
+  );
+  mix-blend-mode: multiply;
+}
+
+html[data-skin='neon'] .duelo-pixel-board-wrap canvas {
+  box-shadow:
+    0 0 22px rgba(255, 0, 110, 0.22),
+    0 0 46px rgba(0, 245, 255, 0.16);
+}
+
+/* ===== Side panel (mode + skin + leaderboard) ===== */
+
+.duelo-pixel-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 220px;
+}
+
+/* ===== Leaderboard ===== */
+
+.duelo-pixel-leaderboard {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line-2);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: var(--ink);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.75rem;
+}
+
+.duelo-pixel-leaderboard-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cyan);
+}
+
+.duelo-pixel-leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.duelo-pixel-leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.duelo-pixel-leaderboard-item--current-user {
+  color: var(--cyan);
+}
+
+.duelo-pixel-leaderboard-rank-player {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.duelo-pixel-leaderboard-empty {
+  color: var(--ink-faint);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* ===== Auth Prompt Overlay ===== */
+
+.duelo-pixel-auth-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  padding: 1rem;
+}
+
+.duelo-pixel-auth-prompt {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.duelo-pixel-auth-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.duelo-pixel-auth-message {
+  color: var(--ink-dim);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.duelo-pixel-auth-button {
+  display: inline-block;
+  background: var(--cyan);
+  color: var(--bg);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.duelo-pixel-auth-button:hover {
+  filter: brightness(0.85);
+}
+
+.duelo-pixel-auth-dismiss {
+  margin-left: 1rem;
+  color: var(--ink-dim);
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  min-height: 44px;
+  padding: 0.25rem 0.5rem;
+}
+
+.duelo-pixel-auth-dismiss:hover {
+  color: var(--ink);
+}
+
+/* ===== Loading State ===== */
+
+.duelo-pixel-loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 1.5rem;
+  z-index: 5;
+}
+
+/* ===== Reduced motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .duelo-pixel-board-wrap canvas,
+  .duelo-pixel-auth-overlay,
+  .duelo-pixel-auth-prompt,
+  .duelo-pixel-leaderboard {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ===== Mobile adjustments ===== */
+
+@media (max-width: 640px) {
+  .duelo-pixel-game-layout {
+    flex: 1;
+    min-height: 0;
+  }
+
+  .duelo-pixel-game-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .duelo-pixel-board-wrap {
+    width: 100%;
+    max-height: calc(100dvh - 200px);
+    margin: 0 auto;
+  }
+
+  .duelo-pixel-panel {
+    max-width: 300px;
+  }
+
+  .duelo-pixel-mode-button {
+    min-height: 48px;
+    font-size: 0.65rem;
+    padding: 0.4rem 0.25rem;
+  }
+
+  .duelo-pixel-auth-prompt {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .duelo-pixel-auth-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .duelo-pixel-auth-dismiss {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

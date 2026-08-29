@@ -910,13 +910,13 @@
     "semantic_hash": ""
   },
   "components/games/AuthPrompt.tsx": {
-    "mtime": 1787852754.846509,
-    "ast_hash": "7c5712b4f69eeef5215408e9395d18ed",
+    "mtime": 1787956036.139104,
+    "ast_hash": "856aa05514e3b6fc152471b156399bfd",
     "semantic_hash": ""
   },
   "components/games/LeaderboardList.tsx": {
-    "mtime": 1787852754.848509,
-    "ast_hash": "2ffc8f0ddaaa39946ff9aa0fab12296c",
+    "mtime": 1787956039.5205092,
+    "ast_hash": "7d88017cf1c3601f84a2e55c5bc8b281",
     "semantic_hash": ""
   },
   "components/games/useArcadeGame.ts": {
@@ -1010,8 +1010,8 @@
     "semantic_hash": ""
   },
   "resources/implemented-games.md": {
-    "mtime": 1787936775.6142464,
-    "ast_hash": "7b071bfa1582b62ef030b7479ce03363",
+    "mtime": 1787956157.773982,
+    "ast_hash": "a9ea7469a43d3e9d0a5938311a0272c0",
     "semantic_hash": ""
   },
   "public/snake-assets/fruits.png": {
@@ -1050,8 +1050,8 @@
     "semantic_hash": ""
   },
   "resources/skins-todo.md": {
-    "mtime": 1787937204.3895736,
-    "ast_hash": "cab01f702124cc4922d757d8195f43a0",
+    "mtime": 1787956183.0722988,
+    "ast_hash": "8c7eb200c7a0612332d68028bfd6262e",
     "semantic_hash": ""
   },
   "components/skin/SkinSelect.tsx": {
@@ -1277,6 +1277,51 @@
   "tests/e2e/ranaria.spec.ts": {
     "mtime": 1787947074.425871,
     "ast_hash": "c314dfa0fa645bdf7360b42dfe2c6a08",
+    "semantic_hash": ""
+  },
+  "app/api/leaderboard/duelo-pixel/route.ts": {
+    "mtime": 1787956013.1001105,
+    "ast_hash": "ec90ccc4a31c12fc5a2843228678dc66",
+    "semantic_hash": ""
+  },
+  "app/games/duelo-pixel/actions.ts": {
+    "mtime": 1787956000.0699866,
+    "ast_hash": "cc41e79c34ce16731418d9ddb74ff40a",
+    "semantic_hash": ""
+  },
+  "app/games/duelo-pixel/page.tsx": {
+    "mtime": 1787955988.127993,
+    "ast_hash": "70da58d2c349574c29d37189ff6fcb33",
+    "semantic_hash": ""
+  },
+  "components/games/duelo-pixel/DueloPixelGame.tsx": {
+    "mtime": 1787955873.802777,
+    "ast_hash": "62ab5572a8d184af2d8b86d8b28d0d49",
+    "semantic_hash": ""
+  },
+  "lib/games/duelo-pixel/game.esm.js": {
+    "mtime": 1787956200.155116,
+    "ast_hash": "69ee3ef11a0da02223335871edba82b3",
+    "semantic_hash": ""
+  },
+  "lib/games/duelo-pixel/types.ts": {
+    "mtime": 1787955775.5925655,
+    "ast_hash": "73b9e35852d73c78bc9794f7cbaf04fb",
+    "semantic_hash": ""
+  },
+  "tests/e2e/duelo-pixel.spec.ts": {
+    "mtime": 1787956077.4354653,
+    "ast_hash": "f3dde6a7ce57d7d0390277b447cb8960",
+    "semantic_hash": ""
+  },
+  "specs/game-jam/duelo-pixel/spec-duelo-pixel-a.md": {
+    "mtime": 1787956217.767828,
+    "ast_hash": "fffc0c8f74371975dbb76c5cbac92566",
+    "semantic_hash": ""
+  },
+  "specs/game-jam/duelo-pixel/spec-duelo-pixel-b.md": {
+    "mtime": 1787955281.5778892,
+    "ast_hash": "a9c7ebedf853ef28edd71055a2d5d645",
     "semantic_hash": ""
   }
 }

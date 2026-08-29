@@ -1,5 +1,5 @@
 ---
-state: Approved
+state: Implemented
 dependencies: ['04-supabase-scores-foundation', '06-games-catalog-salon']
 date: 2026-08-29
 ---
