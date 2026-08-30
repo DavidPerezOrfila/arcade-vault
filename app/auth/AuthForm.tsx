@@ -128,12 +128,8 @@ export default function AuthForm({ redirect }: AuthFormProps) {
           </button>
         </form>
 
-        {tab === 'up' && (
-          <>
-            <div className='auth-divider'>O CONTINÚA CON</div>
-            <OAuthButtons />
-          </>
-        )}
+        <div className='auth-divider'>O CONTINÚA CON</div>
+        <OAuthButtons />
 
         <button
           className='btn ghost'
