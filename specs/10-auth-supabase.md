@@ -1,5 +1,5 @@
 ---
-state: Approved
+state: Implemented
 date: 2026-08-27
 dependencies:
   - 04-supabase-scores-foundation
