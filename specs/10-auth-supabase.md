@@ -1,6 +1,7 @@
 ---
 state: Implemented
 date: 2026-08-27
+revision: 2026-08-31 — revisión: cobertura E2E OAuth + avatar en navbar (item 14)
 dependencies:
   - 04-supabase-scores-foundation
 objective: Sustituir la autenticación simulada de /auth (localStorage) por Supabase Auth real con email+contraseña, OAuth de Google y GitHub, recuperación de contraseña y tabla profiles con nombre de jugador editable, de modo que las puntuaciones queden vinculadas a usuarios reales.
@@ -214,7 +215,7 @@ export const resetPasswordSchema = z.object({
     - `?redirect=` tras login devuelve al juego.
     - `/cuenta` sin sesión redirige a `/auth`.
     - Usuario de prueba único por run (email con timestamp) para no chocar con `unique`.
-    - Los flujos OAuth y reset por email quedan fuera del E2E (dependen de servicios externos); se verifican manualmente y se documenta en el spec.
+    - Los flujos OAuth se cubren en `tests/e2e/oauth.spec.ts` (ver item 14): iniciación hacia Google/GitHub, callback con code inválido (`/auth?error=callback`) y login real con GitHub (gated por env, cuenta de prueba sin 2FA). El reset por email queda fuera del E2E; se verifica manualmente.
     - Verificación: `npx playwright test tests/e2e/auth.spec.ts` verde; `npm run test:e2e` completo sigue verde.
 
 13. **Docs + verificación final + grafo.**
@@ -222,6 +223,13 @@ export const resetPasswordSchema = z.object({
     - `README.md`: setup OAuth + redirect URLs.
     - `npm run build`, `npm run lint`, `npm run test:e2e` → verdes.
     - `npm run graphify:update`.
+
+14. **E2E OAuth + avatar en navbar** (revisión 2026-08-31).
+    - `tests/e2e/oauth.spec.ts` con 4 tests: iniciación del flujo con GOOGLE (tolerante al bloqueo de tráfico inusual de Google) y GITHUB (`github.com/login`), callback con code inválido vía mock de `**/auth/v1/authorize*` → `/auth?error=callback`, y login completo con GitHub (gated: solo chromium y solo si existen `GH_E2E_USERNAME`/`GH_E2E_PASSWORD`; sin ellas el test se salta y la suite queda verde).
+    - Login real solo con GitHub: cuenta de prueba dedicada, sin 2FA ni passkeys (nunca la cuenta personal). Credenciales por entorno (shell o `.env` gitignored); nunca en el repo.
+    - El login completo con Google queda descartado: CAPTCHA / "tráfico inusual" impide automatizarlo.
+    - Avatar en el nav logueado: `components/nav.tsx` expone `avatarUrl` (de `user_metadata.avatar_url`, presente en OAuth) e iniciales fallback; `components/nav-client.tsx` muestra círculo con foto o iniciales junto al nombre; `.auth-avatar` en `app/globals.css`.
+    - Verificación: `npx playwright test tests/e2e/oauth.spec.ts -g "inicia el flujo|inválido"` verde; con credenciales, `-g "login completo" --project=chromium` verde; `tests/e2e/auth.spec.ts` sigue verde.
 
 ---
 
@@ -253,26 +261,35 @@ export const resetPasswordSchema = z.object({
 - [ ] `README.md` documenta el setup de providers OAuth y redirect URLs; `CLAUDE.md` documenta el flujo de auth (proxy.ts, actions, profiles).
 - [ ] `npm run graphify:update` se ejecuta sin errores al final.
 
+Criterios de la revisión 2026-08-31 (E2E OAuth + avatar):
+
+- [ ] Los botones GOOGLE y GITHUB de `/auth` inician el flujo hacia el proveedor (`oauth.spec.ts`).
+- [ ] El callback con code inválido redirige a `/auth?error=callback` (rama de error real del route handler).
+- [ ] El login real con GitHub (gated por `GH_E2E_USERNAME`/`GH_E2E_PASSWORD`, solo chromium) crea sesión y el nav muestra avatar (foto o iniciales), nombre y botón SALIR; `/cuenta` accesible.
+- [ ] El logout desde el nav vuelve al estado "Iniciar Sesión".
+- [ ] `npm run test:e2e` queda verde sin credenciales (el test gated se salta).
+- [ ] `components/nav-client.tsx` muestra `.auth-avatar` con la foto de `user_metadata.avatar_url` o iniciales cuando no hay foto.
+
 ---
 
 ## Decisiones tomadas y descartadas
 
-| Decisión                | Elegida                                                                     | Descartada                                                     | Justificación                                                                                                                                                     |
-| ----------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Proveedor de auth       | Supabase Auth (email+password, OAuth Google/GitHub)                         | Auth.js / Clerk / solución propia                              | Ya está en el stack (`@supabase/ssr`), RLS integrado con `auth.uid()`, cero deps nuevas.                                                                          |
-| Identidad del jugador   | Tabla `profiles` con `username` unique + trigger                            | `user_metadata` / prefijo del email                            | RLS propio, editable, único garantizado por constraint; era el camino que adelantó la spec 04.                                                                    |
-| Creación del profile    | Trigger en `auth.users` (PL/pgSQL)                                          | Insert desde la Server Action de registro                      | Cubre TODAS las vías de alta (email, Google, GitHub, futuro) sin duplicar lógica; el usuario nunca queda sin profile.                                             |
-| Colisiones de username  | Constraint unique + bucle de sufijo en el trigger                           | Validar solo en la app                                         | La DB es la garantía real; el bucle evita el error en el caso común (dos "Carlos" vía OAuth).                                                                     |
-| Verificación de email   | Desactivada en el proyecto Supabase                                         | Activada de serie                                              | Flujo simple y E2E fiable; activable en el dashboard sin tocar código. Decisión del usuario.                                                                      |
-| Convención de proxy     | `proxy.ts` (Next.js 16)                                                     | `middleware.ts`                                                | `middleware` está deprecado en Next.js 16; docs locales (`node_modules/next/dist/docs`) confirman el rename.                                                      |
-| Escritura de auth       | Server Actions con `useActionState`                                         | Route Handlers / cliente directo (`signIn` desde el navegador) | Mismo patrón que scores (spec 04); validación Zod server-side; secretos fuera del bundle. Excepción: `signInWithOAuth` necesita cliente browser para el redirect. |
-| Nombre en scores        | `profiles.username` leído en `submitScore`, desnormalizado en `scores.name` | FK a `profiles` + join en cada leaderboard                     | El esquema de `scores` no cambia; los leaderboards siguen siendo una sola query; el nombre histórico se preserva aunque el usuario lo cambie.                     |
-| Nav                     | Server Component que lee la sesión                                          | Cliente con `onAuthStateChange`                                | Sin flash de estado ni suscripciones; el panel móvil/SkinSwitcher bajan a un client component con props.                                                          |
-| Redirect tras login     | `?redirect=` validado (solo rutas internas)                                 | Estado en sessionStorage / cookie                              | El AuthPrompt ya genera el enlace; validación corta open-redirects.                                                                                               |
-| Botón invitado          | Se mantiene como "seguir sin cuenta" (sin sesión)                           | Eliminarlo / sesión anónima de Supabase                        | Decisión del usuario; los scores siguen bloqueados sin sesión (AuthPrompt), que es el comportamiento actual.                                                      |
-| Reset de contraseña     | En esta spec (`resetPasswordForEmail` + `/auth/reset`)                      | Spec futura                                                    | Decisión del usuario. Requiere redirect URL configurada; queda documentado.                                                                                       |
-| E2E de OAuth/reset      | Verificación manual documentada                                             | Tests automatizados con cuentas reales                         | Dependen de servicios externos (Google, GitHub, SMTP); automatizarlos exige mocks/credenciales que no compensan.                                                  |
-| Scores legacy sin dueño | Se quedan como están (`user_id null`)                                       | Backfill masivo / borrado                                      | Sin email no hay forma fiable de atribuirlos; la policy ya los admite.                                                                                            |
+| Decisión                | Elegida                                                                                                                                          | Descartada                                                      | Justificación                                                                                                                                                     |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Proveedor de auth       | Supabase Auth (email+password, OAuth Google/GitHub)                                                                                              | Auth.js / Clerk / solución propia                               | Ya está en el stack (`@supabase/ssr`), RLS integrado con `auth.uid()`, cero deps nuevas.                                                                          |
+| Identidad del jugador   | Tabla `profiles` con `username` unique + trigger                                                                                                 | `user_metadata` / prefijo del email                             | RLS propio, editable, único garantizado por constraint; era el camino que adelantó la spec 04.                                                                    |
+| Creación del profile    | Trigger en `auth.users` (PL/pgSQL)                                                                                                               | Insert desde la Server Action de registro                       | Cubre TODAS las vías de alta (email, Google, GitHub, futuro) sin duplicar lógica; el usuario nunca queda sin profile.                                             |
+| Colisiones de username  | Constraint unique + bucle de sufijo en el trigger                                                                                                | Validar solo en la app                                          | La DB es la garantía real; el bucle evita el error en el caso común (dos "Carlos" vía OAuth).                                                                     |
+| Verificación de email   | Desactivada en el proyecto Supabase                                                                                                              | Activada de serie                                               | Flujo simple y E2E fiable; activable en el dashboard sin tocar código. Decisión del usuario.                                                                      |
+| Convención de proxy     | `proxy.ts` (Next.js 16)                                                                                                                          | `middleware.ts`                                                 | `middleware` está deprecado en Next.js 16; docs locales (`node_modules/next/dist/docs`) confirman el rename.                                                      |
+| Escritura de auth       | Server Actions con `useActionState`                                                                                                              | Route Handlers / cliente directo (`signIn` desde el navegador)  | Mismo patrón que scores (spec 04); validación Zod server-side; secretos fuera del bundle. Excepción: `signInWithOAuth` necesita cliente browser para el redirect. |
+| Nombre en scores        | `profiles.username` leído en `submitScore`, desnormalizado en `scores.name`                                                                      | FK a `profiles` + join en cada leaderboard                      | El esquema de `scores` no cambia; los leaderboards siguen siendo una sola query; el nombre histórico se preserva aunque el usuario lo cambie.                     |
+| Nav                     | Server Component que lee la sesión                                                                                                               | Cliente con `onAuthStateChange`                                 | Sin flash de estado ni suscripciones; el panel móvil/SkinSwitcher bajan a un client component con props.                                                          |
+| Redirect tras login     | `?redirect=` validado (solo rutas internas)                                                                                                      | Estado en sessionStorage / cookie                               | El AuthPrompt ya genera el enlace; validación corta open-redirects.                                                                                               |
+| Botón invitado          | Se mantiene como "seguir sin cuenta" (sin sesión)                                                                                                | Eliminarlo / sesión anónima de Supabase                         | Decisión del usuario; los scores siguen bloqueados sin sesión (AuthPrompt), que es el comportamiento actual.                                                      |
+| Reset de contraseña     | En esta spec (`resetPasswordForEmail` + `/auth/reset`)                                                                                           | Spec futura                                                     | Decisión del usuario. Requiere redirect URL configurada; queda documentado.                                                                                       |
+| E2E de OAuth/reset      | OAuth automatizado en `oauth.spec.ts` (iniciación + callback inválido + login real GitHub gated por env, cuenta de prueba sin 2FA); reset manual | Tests automatizados con cuentas reales para todos los providers | Google no es automatizable (CAPTCHA / "tráfico inusual"); GitHub sí con cuenta de prueba dedicada. Revisión 2026-08-31 (item 14).                                 |
+| Scores legacy sin dueño | Se quedan como están (`user_id null`)                                                                                                            | Backfill masivo / borrado                                       | Sin email no hay forma fiable de atribuirlos; la policy ya los admite.                                                                                            |
 
 ---
 
@@ -288,3 +305,4 @@ export const resetPasswordSchema = z.object({
 | Colisión de usernames entre el trigger y el edit de `/cuenta`                                                | Bajo    | El edit valida con Zod + captura el error de unicidad de Postgres (`USERNAME_TAKEN`); el constraint es la última barrera.                                                                                           |
 | `av_user` legacy con nombre que viola el nuevo constraint (<3 chars, símbolos)                               | Bajo    | El one-shot de migración solo aplica si el nombre pasa `usernameSchema`; si no, se descarta y el usuario conserva el username del trigger.                                                                          |
 | Sesión caducada en páginas largas (juegos)                                                                   | Bajo    | El proxy refresca en cada navegación; `submitScore` devuelve `UNAUTHENTICATED` y el AuthPrompt cubre el caso. Sin `onAuthStateChange` por simplicidad.                                                              |
+| Flags de seguridad de GitHub sobre la cuenta de prueba del login real                                        | Bajo    | Cuenta dedicada sin 2FA ni passkeys (nunca la personal); test gated por env (skip si faltan `GH_E2E_USERNAME`/`GH_E2E_PASSWORD`) y solo chromium; recomendado ejecutarlo con `--headed` ante bloqueos.              |

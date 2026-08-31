@@ -10,7 +10,7 @@
     "semantic_hash": ""
   },
   "app/data/games.ts": {
-    "mtime": 1787082234.887843,
+    "mtime": 1788209994.268435,
     "ast_hash": "7d5d8eea9df236361128d09a6152bc11",
     "semantic_hash": ""
   },
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "components/nav.tsx": {
-    "mtime": 1788040922.2309175,
-    "ast_hash": "c21cfb9db80a9b1e6190ceec41a11361",
+    "mtime": 1788210226.354277,
+    "ast_hash": "268fe5ce489b054955ae553c0801e289",
     "semantic_hash": ""
   },
   "eslint.config.mjs": {
@@ -265,8 +265,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788040922.1893556,
-    "ast_hash": "9a6622b87d64eaaff3af7ca2b56720ec",
+    "mtime": 1788210226.3482773,
+    "ast_hash": "0951ef4d3ec3847a15e6f72634cb3463",
     "semantic_hash": ""
   },
   "README.md": {
@@ -340,7 +340,7 @@
     "semantic_hash": ""
   },
   "e2e/about.spec.ts": {
-    "mtime": 1786988485.4590526,
+    "mtime": 1788209994.2990763,
     "ast_hash": "d246160afe0ff69b59a6ec9f03ae5c3d",
     "semantic_hash": ""
   },
@@ -545,7 +545,7 @@
     "semantic_hash": ""
   },
   "app/_home/RecentActivity.tsx": {
-    "mtime": 1786988485.3933134,
+    "mtime": 1788209994.2664378,
     "ast_hash": "1962c5f01de09814d2bd06f2b666cf35",
     "semantic_hash": ""
   },
@@ -600,12 +600,12 @@
     "semantic_hash": ""
   },
   "app/player/[id]/PlayerClient.tsx": {
-    "mtime": 1788040922.2184055,
+    "mtime": 1788209994.2749414,
     "ast_hash": "622d368d727bce82671436a99b786675",
     "semantic_hash": ""
   },
   "app/salon/SalonClient.tsx": {
-    "mtime": 1787001033.0477245,
+    "mtime": 1788209994.2769566,
     "ast_hash": "2bf556cb1eafe33df033eae7636c5517",
     "semantic_hash": ""
   },
@@ -615,7 +615,7 @@
     "semantic_hash": ""
   },
   "lib/games/asteroids/game.esm.js": {
-    "mtime": 1787852754.887041,
+    "mtime": 1788209994.3294177,
     "ast_hash": "a369405f519e67e957a64f8926c0b6fe",
     "semantic_hash": ""
   },
@@ -625,17 +625,17 @@
     "semantic_hash": ""
   },
   "lib/supabase/admin.ts": {
-    "mtime": 1786986034.0233972,
+    "mtime": 1788209994.3409197,
     "ast_hash": "08fb4eb0763a19769ae3260b7904aa95",
     "semantic_hash": ""
   },
   "lib/supabase/client.ts": {
-    "mtime": 1786983541.1842072,
-    "ast_hash": "492ea4667ac90467249025245aed655e",
+    "mtime": 1788210226.3567843,
+    "ast_hash": "64aa5bd0a2901746f337450c214afbbe",
     "semantic_hash": ""
   },
   "lib/supabase/server.ts": {
-    "mtime": 1786986034.0243976,
+    "mtime": 1788209994.3429747,
     "ast_hash": "c4a2dc4a160c691df94f04dadd10bd82",
     "semantic_hash": ""
   },
@@ -665,7 +665,7 @@
     "semantic_hash": ""
   },
   "tests/e2e/salon.spec.ts": {
-    "mtime": 1788040922.291109,
+    "mtime": 1788210389.115844,
     "ast_hash": "aa5dbf2a7b41bb0f5bf44c7987763bb0",
     "semantic_hash": ""
   },
@@ -835,7 +835,7 @@
     "semantic_hash": ""
   },
   "lib/games/caida/game.esm.js": {
-    "mtime": 1787852754.8905485,
+    "mtime": 1788209994.3344183,
     "ast_hash": "597ce9fb9539beefa4b792fe95c5fb9f",
     "semantic_hash": ""
   },
@@ -845,7 +845,7 @@
     "semantic_hash": ""
   },
   "tests/e2e/caida.spec.ts": {
-    "mtime": 1788040922.2861106,
+    "mtime": 1788210389.1103363,
     "ast_hash": "594c455a408411ae1167d3cad9ff9ca1",
     "semantic_hash": ""
   },
@@ -920,7 +920,7 @@
     "semantic_hash": ""
   },
   "components/games/useArcadeGame.ts": {
-    "mtime": 1786988485.4560516,
+    "mtime": 1788209994.2950761,
     "ast_hash": "1131d04780f7dc8b0720eae26696d117",
     "semantic_hash": ""
   },
@@ -1020,12 +1020,12 @@
     "semantic_hash": ""
   },
   "components/skin/SkinProvider.tsx": {
-    "mtime": 1786986032.3172514,
+    "mtime": 1788209994.2970746,
     "ast_hash": "138543412234378385131c3282f0c87e",
     "semantic_hash": ""
   },
   "lib/games/skins.ts": {
-    "mtime": 1786986034.0213974,
+    "mtime": 1788209994.3394153,
     "ast_hash": "0d5c373ec48bba8ba0515589672a8b19",
     "semantic_hash": ""
   },
@@ -1040,7 +1040,7 @@
     "semantic_hash": ""
   },
   ".claude/agents/skin-designer.md": {
-    "mtime": 1786986032.294718,
+    "mtime": 1788210388.7703493,
     "ast_hash": "d8230b16061a2f0cc3112a0b81d998a1",
     "semantic_hash": ""
   },
@@ -1050,7 +1050,7 @@
     "semantic_hash": ""
   },
   "resources/skins-todo.md": {
-    "mtime": 1788040922.270563,
+    "mtime": 1788209994.3439815,
     "ast_hash": "8c7eb200c7a0612332d68028bfd6262e",
     "semantic_hash": ""
   },
@@ -1080,7 +1080,7 @@
     "semantic_hash": ""
   },
   "lib/games/bloque-buster/game.esm.js": {
-    "mtime": 1787852754.8880413,
+    "mtime": 1788209994.332417,
     "ast_hash": "df9f46ad331e824b7740f0b5165de189",
     "semantic_hash": ""
   },
@@ -1090,22 +1090,22 @@
     "semantic_hash": ""
   },
   "tests/e2e/bloque-buster.spec.ts": {
-    "mtime": 1788040922.2841103,
+    "mtime": 1788210389.1093276,
     "ast_hash": "0c3e37298514584aa881e3dca6f4e5eb",
     "semantic_hash": ""
   },
   "SPEC.md": {
-    "mtime": 1786985281.1736984,
+    "mtime": 1788209994.264434,
     "ast_hash": "eac25397d7c058f226f7798ccd797115",
     "semantic_hash": ""
   },
   "specs/game-jam/bloque-buster/spec-a.md": {
-    "mtime": 1786988485.5698225,
+    "mtime": 1788210389.1018212,
     "ast_hash": "353e40ea5f34f2112bf448829b92dbb3",
     "semantic_hash": ""
   },
   "specs/game-jam/bloque-buster/spec-b.md": {
-    "mtime": 1786988485.5719514,
+    "mtime": 1788210389.102821,
     "ast_hash": "6775bb4488290e5cf2e357285871b108",
     "semantic_hash": ""
   },
@@ -1125,12 +1125,12 @@
     "semantic_hash": ""
   },
   "components/games/TouchControls.tsx": {
-    "mtime": 1787090973.4493272,
+    "mtime": 1788209994.2789576,
     "ast_hash": "13a30e6fb71dd0a93c63e01f6fc8b5c2",
     "semantic_hash": ""
   },
   "tests/e2e/mobile-touch.spec.ts": {
-    "mtime": 1788040922.2881088,
+    "mtime": 1788210389.1123362,
     "ast_hash": "02e3d770f022e5903fe534d342c70274",
     "semantic_hash": ""
   },
@@ -1145,7 +1145,7 @@
     "semantic_hash": ""
   },
   ".claude/agents/mobile-porter.md": {
-    "mtime": 1788040922.1841283,
+    "mtime": 1788210388.7658286,
     "ast_hash": "1707afcd1c17cbda881727d5392b1e61",
     "semantic_hash": ""
   },
@@ -1155,7 +1155,7 @@
     "semantic_hash": ""
   },
   "specs/09-arcade-mobile-layout.md": {
-    "mtime": 1787259710.7634687,
+    "mtime": 1788210389.099256,
     "ast_hash": "1935366c1fcfb916c179989ecb9f9009",
     "semantic_hash": ""
   },
@@ -1165,48 +1165,48 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1787934433.3692842,
-    "ast_hash": "392e7123933fe3b3aab85f93ed158a9e",
+    "mtime": 1788205464.0815735,
+    "ast_hash": "d9e2a67cc24cbfe2d75920975288cb31",
     "semantic_hash": ""
   },
   "app/games/ranaria/actions.ts": {
-    "mtime": 1787852754.8435092,
+    "mtime": 1788209994.270435,
     "ast_hash": "e5442a7972128099cd4095185288b430",
     "semantic_hash": ""
   },
   "app/games/ranaria/page.tsx": {
-    "mtime": 1787852754.8445094,
+    "mtime": 1788209994.2714374,
     "ast_hash": "3f162087d723fd1ffa1165ed9770ba65",
     "semantic_hash": ""
   },
   "components/games/ranaria/RanariaGame.tsx": {
-    "mtime": 1787852754.8495095,
+    "mtime": 1788209994.2894702,
     "ast_hash": "b74d9aa524455d84750bcf8fff4638e2",
     "semantic_hash": ""
   },
   "lib/games/ranaria/game.esm.js": {
-    "mtime": 1787852754.8915575,
+    "mtime": 1788209994.3364177,
     "ast_hash": "fc4d6eb97780fdb0e90d65dccb672732",
     "semantic_hash": ""
   },
   "lib/games/ranaria/types.ts": {
-    "mtime": 1787852754.8925574,
+    "mtime": 1788209994.3384154,
     "ast_hash": "712ca53cf1df150458e1cd8b7192ad15",
     "semantic_hash": ""
   },
   ".claude/agents/optimize-arcade-game.md": {
-    "mtime": 1787852754.8365088,
+    "mtime": 1788210388.7673428,
     "ast_hash": "97fa1ea8f9da10e93ad4e6a06916c15b",
     "semantic_hash": ""
   },
   ".claude/skills/optimize-arcade-game/SKILL.md": {
-    "mtime": 1787852754.8395085,
+    "mtime": 1788210388.7733562,
     "ast_hash": "7f2974d66e7f8a17e68bdd3e4552c149",
     "semantic_hash": ""
   },
   "specs/10-auth-supabase.md": {
-    "mtime": 1788108011.954298,
-    "ast_hash": "fa8d4a71bce65f27d2cac457bc8c410e",
+    "mtime": 1788210226.3597836,
+    "ast_hash": "48026a88361d35f28981b4bd9fe312f5",
     "semantic_hash": ""
   },
   "app/api/leaderboard/ranaria/route.ts": {
@@ -1220,8 +1220,8 @@
     "semantic_hash": ""
   },
   "app/auth/OAuthButtons.tsx": {
-    "mtime": 1788040922.1973777,
-    "ast_hash": "3d593b7d480d333192ba4ac3bb2e359f",
+    "mtime": 1788210226.3502772,
+    "ast_hash": "89bdcb6478ad27201dcb50f6af6467da",
     "semantic_hash": ""
   },
   "app/auth/actions.ts": {
@@ -1255,8 +1255,8 @@
     "semantic_hash": ""
   },
   "components/nav-client.tsx": {
-    "mtime": 1788040922.2289143,
-    "ast_hash": "edc745edda260c7dc5cec5b01b54ae72",
+    "mtime": 1788210226.3532772,
+    "ast_hash": "ec990a999db5499d672dfd937347b584",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -1270,12 +1270,12 @@
     "semantic_hash": ""
   },
   "tests/e2e/auth.spec.ts": {
-    "mtime": 1788040922.2820938,
-    "ast_hash": "e5629acbda1a382e2299bd8a3a8724ba",
+    "mtime": 1788210226.3682919,
+    "ast_hash": "3bac7141b90609c0316b0083bb3b47bc",
     "semantic_hash": ""
   },
   "tests/e2e/ranaria.spec.ts": {
-    "mtime": 1788040922.2901092,
+    "mtime": 1788210389.1143367,
     "ast_hash": "c314dfa0fa645bdf7360b42dfe2c6a08",
     "semantic_hash": ""
   },
@@ -1295,7 +1295,7 @@
     "semantic_hash": ""
   },
   "components/games/duelo-pixel/DueloPixelGame.tsx": {
-    "mtime": 1788040922.224404,
+    "mtime": 1788209994.2864623,
     "ast_hash": "15b6670688648fa1da490e9f5760d2c6",
     "semantic_hash": ""
   },
@@ -1315,327 +1315,327 @@
     "semantic_hash": ""
   },
   "specs/game-jam/duelo-pixel/spec-duelo-pixel-a.md": {
-    "mtime": 1788040922.2760737,
+    "mtime": 1788210389.1048212,
     "ast_hash": "fffc0c8f74371975dbb76c5cbac92566",
     "semantic_hash": ""
   },
   "specs/game-jam/duelo-pixel/spec-duelo-pixel-b.md": {
-    "mtime": 1788040922.2775795,
+    "mtime": 1788210389.1068196,
     "ast_hash": "a9c7ebedf853ef28edd71055a2d5d645",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/SKILL.md": {
-    "mtime": 1788110315.642247,
+    "mtime": 1788210388.9411337,
     "ast_hash": "996f8ae10a704f7f59e9414455565f3d",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/advanced/authentication-flows.md": {
-    "mtime": 1788110315.6442466,
+    "mtime": 1788210388.9431348,
     "ast_hash": "1c38a61b6fb05e2d12cf95aa4e68a4bd",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/advanced/authentication.md": {
-    "mtime": 1788110315.6452465,
+    "mtime": 1788210388.9456387,
     "ast_hash": "9221f239c1510f4ed9b0f6c57494486d",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/advanced/clock-mocking.md": {
-    "mtime": 1788110315.646247,
+    "mtime": 1788210388.9481883,
     "ast_hash": "227d9143fe2f323e46971ef1a3bfcf80",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/advanced/mobile-testing.md": {
-    "mtime": 1788110315.6472468,
+    "mtime": 1788210388.9520407,
     "ast_hash": "af0cd3fbb8d7fbc1ce1a4d2fb831ac8f",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/advanced/multi-context.md": {
-    "mtime": 1788110315.6472468,
+    "mtime": 1788210388.9540403,
     "ast_hash": "99ac61719a1c542b5f5378662a4c77d1",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/advanced/multi-user.md": {
-    "mtime": 1788110315.6482465,
+    "mtime": 1788210388.956551,
     "ast_hash": "cdb2172a872cfe8ed948cbe2668dd6ed",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/advanced/network-advanced.md": {
-    "mtime": 1788110315.6492467,
+    "mtime": 1788210388.9585657,
     "ast_hash": "e7853ca834ce246c9690fed40f4c9344",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/advanced/third-party.md": {
-    "mtime": 1788110315.6502466,
+    "mtime": 1788210388.9605646,
     "ast_hash": "848ec68b9ded57c0437a580f3c4c3b07",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/architecture/pom-vs-fixtures.md": {
-    "mtime": 1788110315.6512468,
+    "mtime": 1788210388.9640787,
     "ast_hash": "6dbe8f4e069c3e7d181f8b84a6203858",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/architecture/test-architecture.md": {
-    "mtime": 1788110315.6522467,
+    "mtime": 1788210388.9665937,
     "ast_hash": "0b59870f4e73d004952764375bb9b90f",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/architecture/when-to-mock.md": {
-    "mtime": 1788110315.6532466,
+    "mtime": 1788210388.9686005,
     "ast_hash": "75b7386ec36b48de442ebc6145a093c7",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/browser-apis/browser-apis.md": {
-    "mtime": 1788110315.6552467,
+    "mtime": 1788210388.9716022,
     "ast_hash": "8f20e5aef7da44ad02229efb62395080",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/browser-apis/iframes.md": {
-    "mtime": 1788110315.6552467,
+    "mtime": 1788210388.974117,
     "ast_hash": "3af8a2d40696494d412914b4f33efe13",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/browser-apis/service-workers.md": {
-    "mtime": 1788110315.656247,
+    "mtime": 1788210388.9761178,
     "ast_hash": "2d230997bd7c3c4acf38439559a2af2b",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/browser-apis/websockets.md": {
-    "mtime": 1788110315.657253,
+    "mtime": 1788210388.9781172,
     "ast_hash": "6de13dc7f1e5b1e577874b36c638fc35",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/annotations.md": {
-    "mtime": 1788110315.6592517,
+    "mtime": 1788210388.9812763,
     "ast_hash": "26206a4dc17104965bfcba887d1a4a37",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/assertions-waiting.md": {
-    "mtime": 1788110315.6602516,
+    "mtime": 1788210388.9838314,
     "ast_hash": "fadb949f6f64edf4a6a24a83c331c82b",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/configuration.md": {
-    "mtime": 1788110315.66125,
+    "mtime": 1788210388.986831,
     "ast_hash": "c2de447e218df1f251458dc9e4a3cf35",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/fixtures-hooks.md": {
-    "mtime": 1788110315.66125,
+    "mtime": 1788210388.9888313,
     "ast_hash": "2b1914a8caf93f8330ad8bc5f29eccbd",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/global-setup.md": {
-    "mtime": 1788110315.6622498,
+    "mtime": 1788210388.9908307,
     "ast_hash": "f87a2a245faba175f6d183519b7c6967",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/locators.md": {
-    "mtime": 1788110315.6632497,
+    "mtime": 1788210388.9938316,
     "ast_hash": "e373c9aa67dae5b314e1b067ceb474f8",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/page-object-model.md": {
-    "mtime": 1788110315.6642497,
+    "mtime": 1788210388.9958313,
     "ast_hash": "381a9e30871a066f9aeed6cfe008e6fe",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/projects-dependencies.md": {
-    "mtime": 1788110315.6652496,
+    "mtime": 1788210388.9983485,
     "ast_hash": "7dd06e9b95276fa3a3a78203dc74f6ab",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/test-data.md": {
-    "mtime": 1788110315.6662495,
+    "mtime": 1788210389.000348,
     "ast_hash": "021cd9ad1c011d6c50ca7598c25372cb",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/test-suite-structure.md": {
-    "mtime": 1788110315.6672497,
+    "mtime": 1788210389.0023477,
     "ast_hash": "89e4064df9441a6191cf1d2fdfebb742",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/core/test-tags.md": {
-    "mtime": 1788110315.6672497,
+    "mtime": 1788210389.004349,
     "ast_hash": "3e4cba6f9cb032c56bb501e35063560c",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/debugging/console-errors.md": {
-    "mtime": 1788110315.66925,
+    "mtime": 1788210389.0078566,
     "ast_hash": "a7a71b6faf6fcec6ce1d9778c45ff1da",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/debugging/debugging.md": {
-    "mtime": 1788110315.6702497,
+    "mtime": 1788210389.0108645,
     "ast_hash": "01b4ea053c1ae6a39d8297fd57c02160",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/debugging/error-testing.md": {
-    "mtime": 1788110315.6702497,
+    "mtime": 1788210389.012865,
     "ast_hash": "e7b0af3267edc2111b49c8b8953f07f6",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/debugging/flaky-tests.md": {
-    "mtime": 1788110315.6717525,
+    "mtime": 1788210389.0143795,
     "ast_hash": "af35e329d1d421d674112af6da1609b6",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/frameworks/angular.md": {
-    "mtime": 1788110315.6737561,
+    "mtime": 1788210389.017905,
     "ast_hash": "28394fb73aebbbbb6453db3f6f57da9b",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/frameworks/nextjs.md": {
-    "mtime": 1788110315.674756,
+    "mtime": 1788210389.0199032,
     "ast_hash": "bcb498258715998710755cef1c2bfedf",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/frameworks/react.md": {
-    "mtime": 1788110315.675756,
+    "mtime": 1788210389.0219052,
     "ast_hash": "34c1cf6c267c61e6285a780ba9a0c32d",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/frameworks/vue.md": {
-    "mtime": 1788110315.675756,
+    "mtime": 1788210389.023904,
     "ast_hash": "8fb9dab5562104064df10381677a29c3",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/ci-cd.md": {
-    "mtime": 1788110315.6777558,
+    "mtime": 1788210389.027412,
     "ast_hash": "906683ea9288c89b531e4f5ab132f022",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/docker.md": {
-    "mtime": 1788110315.6787562,
+    "mtime": 1788210389.0284193,
     "ast_hash": "b7523483a3643ab000bed7aee2fed4a2",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/github-actions.md": {
-    "mtime": 1788110315.679756,
+    "mtime": 1788210389.031473,
     "ast_hash": "21e39a9fef5bd4cdb221803bb193bf6a",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/gitlab.md": {
-    "mtime": 1788110315.680756,
+    "mtime": 1788210389.0334785,
     "ast_hash": "3fcf5a184276e82b13c3c99ad223b44e",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/other-providers.md": {
-    "mtime": 1788110315.6817558,
+    "mtime": 1788210389.035482,
     "ast_hash": "7aa75c92d66277cc44f18f5f0a2b43d2",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/parallel-sharding.md": {
-    "mtime": 1788110315.6817558,
+    "mtime": 1788210389.0374787,
     "ast_hash": "96ed12d74dddc031b776fd4e453da6e4",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/performance.md": {
-    "mtime": 1788110315.682756,
+    "mtime": 1788210389.0394793,
     "ast_hash": "598b15108bead8326a1b419d68f6641f",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/reporting.md": {
-    "mtime": 1788110315.683756,
+    "mtime": 1788210389.0414796,
     "ast_hash": "ebf0f09aff065bce21cdc9b566c1909b",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/infrastructure-ci-cd/test-coverage.md": {
-    "mtime": 1788110315.684756,
+    "mtime": 1788210389.0439866,
     "ast_hash": "e42c262b43dc1db264bbfef141579d25",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/accessibility.md": {
-    "mtime": 1788110315.685756,
+    "mtime": 1788210389.047502,
     "ast_hash": "7791bdb510bb05da60b500c9f86bcbee",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/api-testing.md": {
-    "mtime": 1788110315.686756,
+    "mtime": 1788210389.0495167,
     "ast_hash": "1f73c94d08473b02fa1103a6cceb25d0",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/browser-extensions.md": {
-    "mtime": 1788110315.687756,
+    "mtime": 1788210389.0525165,
     "ast_hash": "4f6f235f9651cfaa5559b33708ea4b8a",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/canvas-webgl.md": {
-    "mtime": 1788110315.688758,
+    "mtime": 1788210389.0545146,
     "ast_hash": "f11c84c257560cb298adfb1376efbfc1",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/component-testing.md": {
-    "mtime": 1788110315.6897564,
+    "mtime": 1788210389.0565145,
     "ast_hash": "d80164b5403c25646f6d7c3732a86fe8",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/drag-drop.md": {
-    "mtime": 1788110315.6907563,
+    "mtime": 1788210389.0585155,
     "ast_hash": "65722b59eb6a48b7a965d40895d2ae7e",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/electron.md": {
-    "mtime": 1788110315.6917562,
+    "mtime": 1788210389.061513,
     "ast_hash": "d1dc03e0ea0fb39448a2e8101841361f",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/file-operations.md": {
-    "mtime": 1788110315.6927564,
+    "mtime": 1788210389.0640228,
     "ast_hash": "6c125e289e0ab43af9b199a4918e8843",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/file-upload-download.md": {
-    "mtime": 1788110315.693756,
+    "mtime": 1788210389.0655694,
     "ast_hash": "39fcc1e64637b6f807d0654c2087c1b2",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/forms-validation.md": {
-    "mtime": 1788110315.693756,
+    "mtime": 1788210389.0680914,
     "ast_hash": "d2090fa4a85ffbf148e4872fa38cc332",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/graphql-testing.md": {
-    "mtime": 1788110315.6947563,
+    "mtime": 1788210389.0700917,
     "ast_hash": "5db8e71cea437eda674930ec7fc8265f",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/i18n.md": {
-    "mtime": 1788110315.6957562,
+    "mtime": 1788210389.0720904,
     "ast_hash": "c62ea20fc6dd2d46ac59485b010bb7fa",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/performance-testing.md": {
-    "mtime": 1788110315.6967564,
+    "mtime": 1788210389.0740921,
     "ast_hash": "b76ebd2a88f8e0a9f5d22b4bc76db4b2",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/security-testing.md": {
-    "mtime": 1788110315.697756,
+    "mtime": 1788210389.077093,
     "ast_hash": "39e75c3bf247911da01da61f570bf79e",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/testing-patterns/visual-regression.md": {
-    "mtime": 1788110315.6987562,
+    "mtime": 1788210389.0790913,
     "ast_hash": "e83c6e0e746b82baf5d09712c0389b5a",
     "semantic_hash": ""
   },
   ".agents/skills/supabase-postgres-best-practices/CHANGELOG.md": {
-    "mtime": 1788110306.9658446,
+    "mtime": 1788210389.0826066,
     "ast_hash": "ec7c44c2b44de9f2802e6ba565acd78f",
     "semantic_hash": ""
   },
   ".agents/skills/supabase-postgres-best-practices/SKILL.md": {
-    "mtime": 1788110306.9668484,
+    "mtime": 1788210389.0846152,
     "ast_hash": "ea86e326638c57d05050456a9f6d89c1",
     "semantic_hash": ""
   },
   ".agents/skills/supabase-postgres-best-practices/references/_contributing.md": {
-    "mtime": 1788110306.9688447,
+    "mtime": 1788210389.0886157,
     "ast_hash": "19edd365b47667a9b81108cacfd75775",
     "semantic_hash": ""
   },
   ".agents/skills/supabase-postgres-best-practices/references/_sections.md": {
-    "mtime": 1788110306.9698446,
+    "mtime": 1788210389.0906165,
     "ast_hash": "7cc4829a3718c745dfdbec554c30485f",
     "semantic_hash": ""
   },
@@ -1800,12 +1800,12 @@
     "semantic_hash": ""
   },
   ".agents/skills/supabase/CHANGELOG.md": {
-    "mtime": 1788110300.3707929,
+    "mtime": 1788210389.0936158,
     "ast_hash": "419da285e98f313fc14f5d85f17b8d4c",
     "semantic_hash": ""
   },
   ".agents/skills/supabase/SKILL.md": {
-    "mtime": 1788110300.372296,
+    "mtime": 1788210389.0956163,
     "ast_hash": "44e2daf8cfb32f6410599dcf8c96b2ee",
     "semantic_hash": ""
   },
@@ -1820,317 +1820,317 @@
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/SKILL.md": {
-    "mtime": 1788110315.642247,
+    "mtime": 1788210388.9411337,
     "ast_hash": "996f8ae10a704f7f59e9414455565f3d",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/advanced/authentication-flows.md": {
-    "mtime": 1788110315.6442466,
+    "mtime": 1788210388.9431348,
     "ast_hash": "1c38a61b6fb05e2d12cf95aa4e68a4bd",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/advanced/authentication.md": {
-    "mtime": 1788110315.6452465,
+    "mtime": 1788210388.9456387,
     "ast_hash": "9221f239c1510f4ed9b0f6c57494486d",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/advanced/clock-mocking.md": {
-    "mtime": 1788110315.646247,
+    "mtime": 1788210388.9481883,
     "ast_hash": "227d9143fe2f323e46971ef1a3bfcf80",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/advanced/mobile-testing.md": {
-    "mtime": 1788110315.6472468,
+    "mtime": 1788210388.9520407,
     "ast_hash": "af0cd3fbb8d7fbc1ce1a4d2fb831ac8f",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/advanced/multi-context.md": {
-    "mtime": 1788110315.6472468,
+    "mtime": 1788210388.9540403,
     "ast_hash": "99ac61719a1c542b5f5378662a4c77d1",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/advanced/multi-user.md": {
-    "mtime": 1788110315.6482465,
+    "mtime": 1788210388.956551,
     "ast_hash": "cdb2172a872cfe8ed948cbe2668dd6ed",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/advanced/network-advanced.md": {
-    "mtime": 1788110315.6492467,
+    "mtime": 1788210388.9585657,
     "ast_hash": "e7853ca834ce246c9690fed40f4c9344",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/advanced/third-party.md": {
-    "mtime": 1788110315.6502466,
+    "mtime": 1788210388.9605646,
     "ast_hash": "848ec68b9ded57c0437a580f3c4c3b07",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/architecture/pom-vs-fixtures.md": {
-    "mtime": 1788110315.6512468,
+    "mtime": 1788210388.9640787,
     "ast_hash": "6dbe8f4e069c3e7d181f8b84a6203858",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/architecture/test-architecture.md": {
-    "mtime": 1788110315.6522467,
+    "mtime": 1788210388.9665937,
     "ast_hash": "0b59870f4e73d004952764375bb9b90f",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/architecture/when-to-mock.md": {
-    "mtime": 1788110315.6532466,
+    "mtime": 1788210388.9686005,
     "ast_hash": "75b7386ec36b48de442ebc6145a093c7",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/browser-apis/browser-apis.md": {
-    "mtime": 1788110315.6552467,
+    "mtime": 1788210388.9716022,
     "ast_hash": "8f20e5aef7da44ad02229efb62395080",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/browser-apis/iframes.md": {
-    "mtime": 1788110315.6552467,
+    "mtime": 1788210388.974117,
     "ast_hash": "3af8a2d40696494d412914b4f33efe13",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/browser-apis/service-workers.md": {
-    "mtime": 1788110315.656247,
+    "mtime": 1788210388.9761178,
     "ast_hash": "2d230997bd7c3c4acf38439559a2af2b",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/browser-apis/websockets.md": {
-    "mtime": 1788110315.657253,
+    "mtime": 1788210388.9781172,
     "ast_hash": "6de13dc7f1e5b1e577874b36c638fc35",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/annotations.md": {
-    "mtime": 1788110315.6592517,
+    "mtime": 1788210388.9812763,
     "ast_hash": "26206a4dc17104965bfcba887d1a4a37",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/assertions-waiting.md": {
-    "mtime": 1788110315.6602516,
+    "mtime": 1788210388.9838314,
     "ast_hash": "fadb949f6f64edf4a6a24a83c331c82b",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/configuration.md": {
-    "mtime": 1788110315.66125,
+    "mtime": 1788210388.986831,
     "ast_hash": "c2de447e218df1f251458dc9e4a3cf35",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/fixtures-hooks.md": {
-    "mtime": 1788110315.66125,
+    "mtime": 1788210388.9888313,
     "ast_hash": "2b1914a8caf93f8330ad8bc5f29eccbd",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/global-setup.md": {
-    "mtime": 1788110315.6622498,
+    "mtime": 1788210388.9908307,
     "ast_hash": "f87a2a245faba175f6d183519b7c6967",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/locators.md": {
-    "mtime": 1788110315.6632497,
+    "mtime": 1788210388.9938316,
     "ast_hash": "e373c9aa67dae5b314e1b067ceb474f8",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/page-object-model.md": {
-    "mtime": 1788110315.6642497,
+    "mtime": 1788210388.9958313,
     "ast_hash": "381a9e30871a066f9aeed6cfe008e6fe",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/projects-dependencies.md": {
-    "mtime": 1788110315.6652496,
+    "mtime": 1788210388.9983485,
     "ast_hash": "7dd06e9b95276fa3a3a78203dc74f6ab",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/test-data.md": {
-    "mtime": 1788110315.6662495,
+    "mtime": 1788210389.000348,
     "ast_hash": "021cd9ad1c011d6c50ca7598c25372cb",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/test-suite-structure.md": {
-    "mtime": 1788110315.6672497,
+    "mtime": 1788210389.0023477,
     "ast_hash": "89e4064df9441a6191cf1d2fdfebb742",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/core/test-tags.md": {
-    "mtime": 1788110315.6672497,
+    "mtime": 1788210389.004349,
     "ast_hash": "3e4cba6f9cb032c56bb501e35063560c",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/debugging/console-errors.md": {
-    "mtime": 1788110315.66925,
+    "mtime": 1788210389.0078566,
     "ast_hash": "a7a71b6faf6fcec6ce1d9778c45ff1da",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/debugging/debugging.md": {
-    "mtime": 1788110315.6702497,
+    "mtime": 1788210389.0108645,
     "ast_hash": "01b4ea053c1ae6a39d8297fd57c02160",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/debugging/error-testing.md": {
-    "mtime": 1788110315.6702497,
+    "mtime": 1788210389.012865,
     "ast_hash": "e7b0af3267edc2111b49c8b8953f07f6",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/debugging/flaky-tests.md": {
-    "mtime": 1788110315.6717525,
+    "mtime": 1788210389.0143795,
     "ast_hash": "af35e329d1d421d674112af6da1609b6",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/frameworks/angular.md": {
-    "mtime": 1788110315.6737561,
+    "mtime": 1788210389.017905,
     "ast_hash": "28394fb73aebbbbb6453db3f6f57da9b",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/frameworks/nextjs.md": {
-    "mtime": 1788110315.674756,
+    "mtime": 1788210389.0199032,
     "ast_hash": "bcb498258715998710755cef1c2bfedf",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/frameworks/react.md": {
-    "mtime": 1788110315.675756,
+    "mtime": 1788210389.0219052,
     "ast_hash": "34c1cf6c267c61e6285a780ba9a0c32d",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/frameworks/vue.md": {
-    "mtime": 1788110315.675756,
+    "mtime": 1788210389.023904,
     "ast_hash": "8fb9dab5562104064df10381677a29c3",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/ci-cd.md": {
-    "mtime": 1788110315.6777558,
+    "mtime": 1788210389.027412,
     "ast_hash": "906683ea9288c89b531e4f5ab132f022",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/docker.md": {
-    "mtime": 1788110315.6787562,
+    "mtime": 1788210389.0284193,
     "ast_hash": "b7523483a3643ab000bed7aee2fed4a2",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/github-actions.md": {
-    "mtime": 1788110315.679756,
+    "mtime": 1788210389.031473,
     "ast_hash": "21e39a9fef5bd4cdb221803bb193bf6a",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/gitlab.md": {
-    "mtime": 1788110315.680756,
+    "mtime": 1788210389.0334785,
     "ast_hash": "3fcf5a184276e82b13c3c99ad223b44e",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/other-providers.md": {
-    "mtime": 1788110315.6817558,
+    "mtime": 1788210389.035482,
     "ast_hash": "7aa75c92d66277cc44f18f5f0a2b43d2",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/parallel-sharding.md": {
-    "mtime": 1788110315.6817558,
+    "mtime": 1788210389.0374787,
     "ast_hash": "96ed12d74dddc031b776fd4e453da6e4",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/performance.md": {
-    "mtime": 1788110315.682756,
+    "mtime": 1788210389.0394793,
     "ast_hash": "598b15108bead8326a1b419d68f6641f",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/reporting.md": {
-    "mtime": 1788110315.683756,
+    "mtime": 1788210389.0414796,
     "ast_hash": "ebf0f09aff065bce21cdc9b566c1909b",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/infrastructure-ci-cd/test-coverage.md": {
-    "mtime": 1788110315.684756,
+    "mtime": 1788210389.0439866,
     "ast_hash": "e42c262b43dc1db264bbfef141579d25",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/accessibility.md": {
-    "mtime": 1788110315.685756,
+    "mtime": 1788210389.047502,
     "ast_hash": "7791bdb510bb05da60b500c9f86bcbee",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/api-testing.md": {
-    "mtime": 1788110315.686756,
+    "mtime": 1788210389.0495167,
     "ast_hash": "1f73c94d08473b02fa1103a6cceb25d0",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/browser-extensions.md": {
-    "mtime": 1788110315.687756,
+    "mtime": 1788210389.0525165,
     "ast_hash": "4f6f235f9651cfaa5559b33708ea4b8a",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/canvas-webgl.md": {
-    "mtime": 1788110315.688758,
+    "mtime": 1788210389.0545146,
     "ast_hash": "f11c84c257560cb298adfb1376efbfc1",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/component-testing.md": {
-    "mtime": 1788110315.6897564,
+    "mtime": 1788210389.0565145,
     "ast_hash": "d80164b5403c25646f6d7c3732a86fe8",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/drag-drop.md": {
-    "mtime": 1788110315.6907563,
+    "mtime": 1788210389.0585155,
     "ast_hash": "65722b59eb6a48b7a965d40895d2ae7e",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/electron.md": {
-    "mtime": 1788110315.6917562,
+    "mtime": 1788210389.061513,
     "ast_hash": "d1dc03e0ea0fb39448a2e8101841361f",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/file-operations.md": {
-    "mtime": 1788110315.6927564,
+    "mtime": 1788210389.0640228,
     "ast_hash": "6c125e289e0ab43af9b199a4918e8843",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/file-upload-download.md": {
-    "mtime": 1788110315.693756,
+    "mtime": 1788210389.0655694,
     "ast_hash": "39fcc1e64637b6f807d0654c2087c1b2",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/forms-validation.md": {
-    "mtime": 1788110315.693756,
+    "mtime": 1788210389.0680914,
     "ast_hash": "d2090fa4a85ffbf148e4872fa38cc332",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/graphql-testing.md": {
-    "mtime": 1788110315.6947563,
+    "mtime": 1788210389.0700917,
     "ast_hash": "5db8e71cea437eda674930ec7fc8265f",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/i18n.md": {
-    "mtime": 1788110315.6957562,
+    "mtime": 1788210389.0720904,
     "ast_hash": "c62ea20fc6dd2d46ac59485b010bb7fa",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/performance-testing.md": {
-    "mtime": 1788110315.6967564,
+    "mtime": 1788210389.0740921,
     "ast_hash": "b76ebd2a88f8e0a9f5d22b4bc76db4b2",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/security-testing.md": {
-    "mtime": 1788110315.697756,
+    "mtime": 1788210389.077093,
     "ast_hash": "39e75c3bf247911da01da61f570bf79e",
     "semantic_hash": ""
   },
   ".claude/skills/playwright-best-practices/testing-patterns/visual-regression.md": {
-    "mtime": 1788110315.6987562,
+    "mtime": 1788210389.0790913,
     "ast_hash": "e83c6e0e746b82baf5d09712c0389b5a",
     "semantic_hash": ""
   },
   ".claude/skills/supabase-postgres-best-practices/CHANGELOG.md": {
-    "mtime": 1788110306.9658446,
+    "mtime": 1788210389.0826066,
     "ast_hash": "ec7c44c2b44de9f2802e6ba565acd78f",
     "semantic_hash": ""
   },
   ".claude/skills/supabase-postgres-best-practices/SKILL.md": {
-    "mtime": 1788110306.9668484,
+    "mtime": 1788210389.0846152,
     "ast_hash": "ea86e326638c57d05050456a9f6d89c1",
     "semantic_hash": ""
   },
   ".claude/skills/supabase-postgres-best-practices/references/_contributing.md": {
-    "mtime": 1788110306.9688447,
+    "mtime": 1788210389.0886157,
     "ast_hash": "19edd365b47667a9b81108cacfd75775",
     "semantic_hash": ""
   },
   ".claude/skills/supabase-postgres-best-practices/references/_sections.md": {
-    "mtime": 1788110306.9698446,
+    "mtime": 1788210389.0906165,
     "ast_hash": "7cc4829a3718c745dfdbec554c30485f",
     "semantic_hash": ""
   },
@@ -2295,12 +2295,12 @@
     "semantic_hash": ""
   },
   ".claude/skills/supabase/CHANGELOG.md": {
-    "mtime": 1788110300.3707929,
+    "mtime": 1788210389.0936158,
     "ast_hash": "419da285e98f313fc14f5d85f17b8d4c",
     "semantic_hash": ""
   },
   ".claude/skills/supabase/SKILL.md": {
-    "mtime": 1788110300.372296,
+    "mtime": 1788210389.0956163,
     "ast_hash": "44e2daf8cfb32f6410599dcf8c96b2ee",
     "semantic_hash": ""
   },
@@ -2315,317 +2315,317 @@
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/SKILL.md": {
-    "mtime": 1788110315.642247,
+    "mtime": 1788210388.9411337,
     "ast_hash": "996f8ae10a704f7f59e9414455565f3d",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/advanced/authentication-flows.md": {
-    "mtime": 1788110315.6442466,
+    "mtime": 1788210388.9431348,
     "ast_hash": "1c38a61b6fb05e2d12cf95aa4e68a4bd",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/advanced/authentication.md": {
-    "mtime": 1788110315.6452465,
+    "mtime": 1788210388.9456387,
     "ast_hash": "9221f239c1510f4ed9b0f6c57494486d",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/advanced/clock-mocking.md": {
-    "mtime": 1788110315.646247,
+    "mtime": 1788210388.9481883,
     "ast_hash": "227d9143fe2f323e46971ef1a3bfcf80",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/advanced/mobile-testing.md": {
-    "mtime": 1788110315.6472468,
+    "mtime": 1788210388.9520407,
     "ast_hash": "af0cd3fbb8d7fbc1ce1a4d2fb831ac8f",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/advanced/multi-context.md": {
-    "mtime": 1788110315.6472468,
+    "mtime": 1788210388.9540403,
     "ast_hash": "99ac61719a1c542b5f5378662a4c77d1",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/advanced/multi-user.md": {
-    "mtime": 1788110315.6482465,
+    "mtime": 1788210388.956551,
     "ast_hash": "cdb2172a872cfe8ed948cbe2668dd6ed",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/advanced/network-advanced.md": {
-    "mtime": 1788110315.6492467,
+    "mtime": 1788210388.9585657,
     "ast_hash": "e7853ca834ce246c9690fed40f4c9344",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/advanced/third-party.md": {
-    "mtime": 1788110315.6502466,
+    "mtime": 1788210388.9605646,
     "ast_hash": "848ec68b9ded57c0437a580f3c4c3b07",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/architecture/pom-vs-fixtures.md": {
-    "mtime": 1788110315.6512468,
+    "mtime": 1788210388.9640787,
     "ast_hash": "6dbe8f4e069c3e7d181f8b84a6203858",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/architecture/test-architecture.md": {
-    "mtime": 1788110315.6522467,
+    "mtime": 1788210388.9665937,
     "ast_hash": "0b59870f4e73d004952764375bb9b90f",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/architecture/when-to-mock.md": {
-    "mtime": 1788110315.6532466,
+    "mtime": 1788210388.9686005,
     "ast_hash": "75b7386ec36b48de442ebc6145a093c7",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/browser-apis/browser-apis.md": {
-    "mtime": 1788110315.6552467,
+    "mtime": 1788210388.9716022,
     "ast_hash": "8f20e5aef7da44ad02229efb62395080",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/browser-apis/iframes.md": {
-    "mtime": 1788110315.6552467,
+    "mtime": 1788210388.974117,
     "ast_hash": "3af8a2d40696494d412914b4f33efe13",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/browser-apis/service-workers.md": {
-    "mtime": 1788110315.656247,
+    "mtime": 1788210388.9761178,
     "ast_hash": "2d230997bd7c3c4acf38439559a2af2b",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/browser-apis/websockets.md": {
-    "mtime": 1788110315.657253,
+    "mtime": 1788210388.9781172,
     "ast_hash": "6de13dc7f1e5b1e577874b36c638fc35",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/annotations.md": {
-    "mtime": 1788110315.6592517,
+    "mtime": 1788210388.9812763,
     "ast_hash": "26206a4dc17104965bfcba887d1a4a37",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/assertions-waiting.md": {
-    "mtime": 1788110315.6602516,
+    "mtime": 1788210388.9838314,
     "ast_hash": "fadb949f6f64edf4a6a24a83c331c82b",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/configuration.md": {
-    "mtime": 1788110315.66125,
+    "mtime": 1788210388.986831,
     "ast_hash": "c2de447e218df1f251458dc9e4a3cf35",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/fixtures-hooks.md": {
-    "mtime": 1788110315.66125,
+    "mtime": 1788210388.9888313,
     "ast_hash": "2b1914a8caf93f8330ad8bc5f29eccbd",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/global-setup.md": {
-    "mtime": 1788110315.6622498,
+    "mtime": 1788210388.9908307,
     "ast_hash": "f87a2a245faba175f6d183519b7c6967",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/locators.md": {
-    "mtime": 1788110315.6632497,
+    "mtime": 1788210388.9938316,
     "ast_hash": "e373c9aa67dae5b314e1b067ceb474f8",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/page-object-model.md": {
-    "mtime": 1788110315.6642497,
+    "mtime": 1788210388.9958313,
     "ast_hash": "381a9e30871a066f9aeed6cfe008e6fe",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/projects-dependencies.md": {
-    "mtime": 1788110315.6652496,
+    "mtime": 1788210388.9983485,
     "ast_hash": "7dd06e9b95276fa3a3a78203dc74f6ab",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/test-data.md": {
-    "mtime": 1788110315.6662495,
+    "mtime": 1788210389.000348,
     "ast_hash": "021cd9ad1c011d6c50ca7598c25372cb",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/test-suite-structure.md": {
-    "mtime": 1788110315.6672497,
+    "mtime": 1788210389.0023477,
     "ast_hash": "89e4064df9441a6191cf1d2fdfebb742",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/core/test-tags.md": {
-    "mtime": 1788110315.6672497,
+    "mtime": 1788210389.004349,
     "ast_hash": "3e4cba6f9cb032c56bb501e35063560c",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/debugging/console-errors.md": {
-    "mtime": 1788110315.66925,
+    "mtime": 1788210389.0078566,
     "ast_hash": "a7a71b6faf6fcec6ce1d9778c45ff1da",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/debugging/debugging.md": {
-    "mtime": 1788110315.6702497,
+    "mtime": 1788210389.0108645,
     "ast_hash": "01b4ea053c1ae6a39d8297fd57c02160",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/debugging/error-testing.md": {
-    "mtime": 1788110315.6702497,
+    "mtime": 1788210389.012865,
     "ast_hash": "e7b0af3267edc2111b49c8b8953f07f6",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/debugging/flaky-tests.md": {
-    "mtime": 1788110315.6717525,
+    "mtime": 1788210389.0143795,
     "ast_hash": "af35e329d1d421d674112af6da1609b6",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/frameworks/angular.md": {
-    "mtime": 1788110315.6737561,
+    "mtime": 1788210389.017905,
     "ast_hash": "28394fb73aebbbbb6453db3f6f57da9b",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/frameworks/nextjs.md": {
-    "mtime": 1788110315.674756,
+    "mtime": 1788210389.0199032,
     "ast_hash": "bcb498258715998710755cef1c2bfedf",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/frameworks/react.md": {
-    "mtime": 1788110315.675756,
+    "mtime": 1788210389.0219052,
     "ast_hash": "34c1cf6c267c61e6285a780ba9a0c32d",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/frameworks/vue.md": {
-    "mtime": 1788110315.675756,
+    "mtime": 1788210389.023904,
     "ast_hash": "8fb9dab5562104064df10381677a29c3",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/ci-cd.md": {
-    "mtime": 1788110315.6777558,
+    "mtime": 1788210389.027412,
     "ast_hash": "906683ea9288c89b531e4f5ab132f022",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/docker.md": {
-    "mtime": 1788110315.6787562,
+    "mtime": 1788210389.0284193,
     "ast_hash": "b7523483a3643ab000bed7aee2fed4a2",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/github-actions.md": {
-    "mtime": 1788110315.679756,
+    "mtime": 1788210389.031473,
     "ast_hash": "21e39a9fef5bd4cdb221803bb193bf6a",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/gitlab.md": {
-    "mtime": 1788110315.680756,
+    "mtime": 1788210389.0334785,
     "ast_hash": "3fcf5a184276e82b13c3c99ad223b44e",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/other-providers.md": {
-    "mtime": 1788110315.6817558,
+    "mtime": 1788210389.035482,
     "ast_hash": "7aa75c92d66277cc44f18f5f0a2b43d2",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/parallel-sharding.md": {
-    "mtime": 1788110315.6817558,
+    "mtime": 1788210389.0374787,
     "ast_hash": "96ed12d74dddc031b776fd4e453da6e4",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/performance.md": {
-    "mtime": 1788110315.682756,
+    "mtime": 1788210389.0394793,
     "ast_hash": "598b15108bead8326a1b419d68f6641f",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/reporting.md": {
-    "mtime": 1788110315.683756,
+    "mtime": 1788210389.0414796,
     "ast_hash": "ebf0f09aff065bce21cdc9b566c1909b",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/infrastructure-ci-cd/test-coverage.md": {
-    "mtime": 1788110315.684756,
+    "mtime": 1788210389.0439866,
     "ast_hash": "e42c262b43dc1db264bbfef141579d25",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/accessibility.md": {
-    "mtime": 1788110315.685756,
+    "mtime": 1788210389.047502,
     "ast_hash": "7791bdb510bb05da60b500c9f86bcbee",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/api-testing.md": {
-    "mtime": 1788110315.686756,
+    "mtime": 1788210389.0495167,
     "ast_hash": "1f73c94d08473b02fa1103a6cceb25d0",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/browser-extensions.md": {
-    "mtime": 1788110315.687756,
+    "mtime": 1788210389.0525165,
     "ast_hash": "4f6f235f9651cfaa5559b33708ea4b8a",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/canvas-webgl.md": {
-    "mtime": 1788110315.688758,
+    "mtime": 1788210389.0545146,
     "ast_hash": "f11c84c257560cb298adfb1376efbfc1",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/component-testing.md": {
-    "mtime": 1788110315.6897564,
+    "mtime": 1788210389.0565145,
     "ast_hash": "d80164b5403c25646f6d7c3732a86fe8",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/drag-drop.md": {
-    "mtime": 1788110315.6907563,
+    "mtime": 1788210389.0585155,
     "ast_hash": "65722b59eb6a48b7a965d40895d2ae7e",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/electron.md": {
-    "mtime": 1788110315.6917562,
+    "mtime": 1788210389.061513,
     "ast_hash": "d1dc03e0ea0fb39448a2e8101841361f",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/file-operations.md": {
-    "mtime": 1788110315.6927564,
+    "mtime": 1788210389.0640228,
     "ast_hash": "6c125e289e0ab43af9b199a4918e8843",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/file-upload-download.md": {
-    "mtime": 1788110315.693756,
+    "mtime": 1788210389.0655694,
     "ast_hash": "39fcc1e64637b6f807d0654c2087c1b2",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/forms-validation.md": {
-    "mtime": 1788110315.693756,
+    "mtime": 1788210389.0680914,
     "ast_hash": "d2090fa4a85ffbf148e4872fa38cc332",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/graphql-testing.md": {
-    "mtime": 1788110315.6947563,
+    "mtime": 1788210389.0700917,
     "ast_hash": "5db8e71cea437eda674930ec7fc8265f",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/i18n.md": {
-    "mtime": 1788110315.6957562,
+    "mtime": 1788210389.0720904,
     "ast_hash": "c62ea20fc6dd2d46ac59485b010bb7fa",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/performance-testing.md": {
-    "mtime": 1788110315.6967564,
+    "mtime": 1788210389.0740921,
     "ast_hash": "b76ebd2a88f8e0a9f5d22b4bc76db4b2",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/security-testing.md": {
-    "mtime": 1788110315.697756,
+    "mtime": 1788210389.077093,
     "ast_hash": "39e75c3bf247911da01da61f570bf79e",
     "semantic_hash": ""
   },
   ".commandcode/skills/playwright-best-practices/testing-patterns/visual-regression.md": {
-    "mtime": 1788110315.6987562,
+    "mtime": 1788210389.0790913,
     "ast_hash": "e83c6e0e746b82baf5d09712c0389b5a",
     "semantic_hash": ""
   },
   ".commandcode/skills/supabase-postgres-best-practices/CHANGELOG.md": {
-    "mtime": 1788110306.9658446,
+    "mtime": 1788210389.0826066,
     "ast_hash": "ec7c44c2b44de9f2802e6ba565acd78f",
     "semantic_hash": ""
   },
   ".commandcode/skills/supabase-postgres-best-practices/SKILL.md": {
-    "mtime": 1788110306.9668484,
+    "mtime": 1788210389.0846152,
     "ast_hash": "ea86e326638c57d05050456a9f6d89c1",
     "semantic_hash": ""
   },
   ".commandcode/skills/supabase-postgres-best-practices/references/_contributing.md": {
-    "mtime": 1788110306.9688447,
+    "mtime": 1788210389.0886157,
     "ast_hash": "19edd365b47667a9b81108cacfd75775",
     "semantic_hash": ""
   },
   ".commandcode/skills/supabase-postgres-best-practices/references/_sections.md": {
-    "mtime": 1788110306.9698446,
+    "mtime": 1788210389.0906165,
     "ast_hash": "7cc4829a3718c745dfdbec554c30485f",
     "semantic_hash": ""
   },
@@ -2790,12 +2790,12 @@
     "semantic_hash": ""
   },
   ".commandcode/skills/supabase/CHANGELOG.md": {
-    "mtime": 1788110300.3707929,
+    "mtime": 1788210389.0936158,
     "ast_hash": "419da285e98f313fc14f5d85f17b8d4c",
     "semantic_hash": ""
   },
   ".commandcode/skills/supabase/SKILL.md": {
-    "mtime": 1788110300.372296,
+    "mtime": 1788210389.0956163,
     "ast_hash": "44e2daf8cfb32f6410599dcf8c96b2ee",
     "semantic_hash": ""
   },
@@ -2807,6 +2807,11 @@
   ".commandcode/skills/supabase/references/skill-feedback.md": {
     "mtime": 1788110300.3742995,
     "ast_hash": "38a53e95ded880782190ddf2f2810317",
+    "semantic_hash": ""
+  },
+  "tests/e2e/oauth.spec.ts": {
+    "mtime": 1788207085.081922,
+    "ast_hash": "63bb911e3a56baa1784cd4c418cab0db",
     "semantic_hash": ""
   }
 }

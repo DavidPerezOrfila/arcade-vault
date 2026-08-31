@@ -13,7 +13,11 @@ import {
 import { signOutAction } from '@/app/auth/actions';
 
 interface NavClientProps {
-  user: { name: string } | null;
+  user: {
+    name: string;
+    avatarUrl?: string;
+    fallback: string;
+  } | null;
 }
 
 // Fuente única de links del nav: desktop (mayúsculas) y panel mobile comparten
@@ -115,6 +119,13 @@ export default function NavClient({ user }: NavClientProps) {
         {user ? (
           <>
             <Link href='/cuenta' className='btn ghost auth-btn'>
+              <span className='auth-avatar' aria-hidden>
+                {user.avatarUrl ? (
+                  <img src={user.avatarUrl} alt='' />
+                ) : (
+                  <span>{user.fallback}</span>
+                )}
+              </span>
               {user.name} ▾
             </Link>
             <button

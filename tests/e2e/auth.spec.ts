@@ -1,8 +1,9 @@
 import { test, expect } from '@playwright/test';
 
 // Usuario único por run con timestamp para no chocar con el unique de
-// profiles.username escasos de email. OAuth y reset por email quedan fuera
-// del E2E (dependen de servicios externos) — se verifican manualmente.
+// profiles.username escasos de email. El reset por email queda fuera del
+// E2E (depende de servicio externo) — se verifica manualmente. La
+// cobertura OAuth vive en tests/e2e/oauth.spec.ts.
 const unique = Date.now().toString().slice(-6);
 const EMAIL = `e2e_${unique}@vault.test`;
 const PASSWORD = 'clave-secreta-123';

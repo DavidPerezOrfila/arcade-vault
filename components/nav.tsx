@@ -4,7 +4,11 @@ import NavClient from './nav-client';
 // ponytail: si la sesión falla (sin cookie o sin envs configurados) el nav
 // se renderiza como deslogueado; nunca rompe la página.
 export default async function Nav() {
-  let user: { name: string } | null = null;
+  let user: {
+    name: string;
+    avatarUrl?: string;
+    fallback: string;
+  } | null = null;
 
   try {
     const supabase = await createSupabaseServerClient();
@@ -24,7 +28,17 @@ export default async function Nav() {
         (typeof authUser.user_metadata?.full_name === 'string'
           ? authUser.user_metadata.full_name
           : authUser.email?.split('@')[0]);
-      user = username ? { name: username } : null;
+      if (username) {
+        const avatarUrl =
+          typeof authUser.user_metadata?.avatar_url === 'string'
+            ? authUser.user_metadata.avatar_url
+            : undefined;
+        user = {
+          name: username,
+          avatarUrl,
+          fallback: username.slice(0, 2).toUpperCase(),
+        };
+      }
     }
   } catch {
     user = null;

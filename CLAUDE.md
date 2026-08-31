@@ -48,6 +48,8 @@ npm run db:stop
 
 Playwright specs live in `tests/e2e/` and match `testDir` in `playwright.config.ts`. (`e2e/about.spec.ts` is orphaned outside `testDir` and is not run by the default config.) Playwright starts `npm run start`, so build first and provide required Supabase environment variables.
 
+The real GitHub login in `tests/e2e/oauth.spec.ts` requires `GH_E2E_USERNAME` + `GH_E2E_PASSWORD` (dedicated test account, no 2FA; the visible username is the GitHub login); without them the test is skipped, and it only runs on chromium.
+
 ## Environment
 
 Copy `.env.template` to `.env.local`. The application normally uses the configured remote Supabase project; Docker is only needed for isolated local database work.
