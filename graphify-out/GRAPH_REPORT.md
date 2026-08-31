@@ -1,7 +1,7 @@
-# Graph Report - 05-arcade-vault  (2026-08-31)
+# Graph Report - 05-arcade-vault  (2026-09-01)
 
 ## Corpus Check
-- 542 files · ~471,062 words
+- 542 files · ~471,169 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0db5de76`
+- Built from commit: `b2d400f3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -374,11 +374,11 @@ Cohesion: 0.22
 Nodes (8): 02 — Animación de explosión al romper bloques, Alcance, Criterios de aceptación, Decisiones tomadas y descartadas, Dentro del spec, Fuera del alcance, Modelo de datos, Plan de implementación
 
 ### Community 28 - "playwright-cli/SKILL.md"
-Cohesion: 0.25
+Cohesion: 0.22
 Nodes (4): Examples, Inspecting Element Attributes, Debugging Playwright Tests, Running Playwright Tests
 
 ### Community 29 - "Video Recording"
-Cohesion: 0.22
+Cohesion: 0.25
 Nodes (8): 1. Use Descriptive Filenames, 2. Record entire hero scripts., Basic Recording, Best Practices, Limitations, Overlay API Summary, Tracing vs Video, Video Recording
 
 ### Community 30 - "Spec Design Skill"
@@ -478,8 +478,8 @@ Cohesion: 0.14
 Nodes (13): ASTEROIDS — `asteroids`, BLOQUE BUSTER — `bloque-buster`, CAÍDA — `caida`, DUELO PIXEL — `duelo-pixel`, GLOTÓN — `gloton`, INVASORES — `invasores`, Juegos catalogados (no jugables todavía), Juegos implementados en Arcade Vault (+5 more)
 
 ### Community 69 - "data.jsx"
-Cohesion: 0.13
-Nodes (20): CuentaPage(), metadata, LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, ScoreEntryInputParsed, scoreEntrySchema (+12 more)
+Cohesion: 0.15
+Nodes (15): CuentaPage(), metadata, LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, scoreEntrySchema, saveScore() (+7 more)
 
 ### Community 71 - "The tools"
 Cohesion: 0.15
@@ -494,8 +494,8 @@ Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
 
 ### Community 74 - "biblioteca.jsx"
-Cohesion: 0.36
-Nodes (7): getScores(), gameLabel(), PALETTE, RecentActivity(), tone(), relativeTime(), TimeAgo()
+Cohesion: 0.21
+Nodes (12): ScoreEntryInputParsed, fetchScores(), getScores(), rowToEntry(), ScoreRowSelected, ScoreRowDb, gameLabel(), PALETTE (+4 more)
 
 ### Community 77 - "leaderboard.ts"
 Cohesion: 0.17

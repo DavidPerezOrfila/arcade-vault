@@ -62,21 +62,36 @@ interface BloqueBusterGameProps {
 
 **Refs del juego (inyectados desde React al wrapper):**
 
-| Refs     | Elemento             |
-| -------- | -------------------- |
+| Refs     | Elemento                                                    |
+| -------- | ----------------------------------------------------------- |
 | `canvas` | canvas 800×600 playfield (HUD y overlays se dibujan dentro) |
 
 **Estado interno del motor (module-scoped en `game.esm.js`, port del vanilla):**
 
 ```typescript
 interface BloqueBusterBlock {
-  x: number; y: number; w: number; h: number;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
   color: 'gray' | 'red' | 'yellow' | 'cyan' | 'magenta' | 'hotpink' | 'green';
   alive: boolean;
 }
 
-interface BloqueBusterBall { x: number; y: number; w: number; h: number; vx: number; vy: number; }
-interface BloqueBusterPaddle { x: number; y: number; w: number; h: number; }
+interface BloqueBusterBall {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  vx: number;
+  vy: number;
+}
+interface BloqueBusterPaddle {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
 // gameState: 'playing' | 'paused' | 'gameover' | 'win'
 ```
 
@@ -129,31 +144,31 @@ interface BloqueBusterPaddle { x: number; y: number; w: number; h: number; }
 
 ## Decisions Taken & Discarded
 
-| Decisión                                             | Justificación                                                                                                                                                                                                                                  |
-| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Port 1:1 del vanilla (spec-a)**                    | El ref `04-arkanoid/` ya tiene mecánica AABB probada, 5 niveles y spritesheet. Portar fiel = menor riesgo y máxima fidelidad al concepto del catálogo. El game-planner rankeó el port como fit 5/6.                                             |
-| **Loop `setTimeout` encadenado (no RAF)**            | CLAUDE.md es autoritativo: RAF se congela en WebKit headless/CI. Patrón ya probado en asteroids/caida/serpentina. `dt` clamp 0.05s como guard de tab-blur.                                                                                     |
-| **HUD y overlays en-canvas (como el vanilla)**       | Fidelidad al ref. El vanilla dibuja score/nivel/vidas y los overlays dentro del canvas de 800×600; portar ese layout no requiere DOM extra. La diferencia HUD-DOM es el eje de spec-b.                                                           |
-| **Refs = `{ canvas }` único**                        | El port no necesita multi-elemento. Simplifica el componente y el wrapper. `initGame` sigue recibiendo el elemento ya montado (cero `getElementById` top-level).                                                                                |
-| **Se elimina el salto de nivel en pausa**            | Feature de debug del vanilla (botones 1–5). Se descarta en el port para mantener el wrapper lean; no aporta valor de producto al leaderboard.                                                                                                   |
-| **Sonidos portados con guard `Audio`**               | "Mantener assets" incluye los 2 sonidos del ref. Guard `typeof Audio !== 'undefined'` + try/catch para no romper CI/headless ni el SSR.                                                                                                         |
-| **Scoring vanilla (+10/bloque) se mantiene**         | Fidelidad sobre magnitud. Tope teórico ≈ 2 040 pts por partida perfecta (204 bloques en 5 niveles) — el best sembrado 28 450 es ficción de catálogo, no objetivo alcanzable. Si se quiere magnitud mayor, es el eje de spec-b (scoring progresivo). |
-| **`onGameOver` fire-once en `gameover` y `win`**     | Ambos son estados terminales del vanilla; el guard `gameOverFired` evita doble submit. `win` también cuenta como partida terminada con score.                                                                                                    |
-| **Fachada `createLeaderboardActions`**               | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod. Recipe inline del skill quedó obsoleta (CLAUDE.md).                                                                          |
-| **Sin nueva migration de catálogo**                  | `bloque-buster` ya existe (spec 06) con cover `cover-bricks` en `globals.css`. Solo se añade el juego jugable + assets. `id` == string `game` de `saveScore` (sin FK).                                                                          |
+| Decisión                                         | Justificación                                                                                                                                                                                                                                       |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Port 1:1 del vanilla (spec-a)**                | El ref `04-arkanoid/` ya tiene mecánica AABB probada, 5 niveles y spritesheet. Portar fiel = menor riesgo y máxima fidelidad al concepto del catálogo. El game-planner rankeó el port como fit 5/6.                                                 |
+| **Loop `setTimeout` encadenado (no RAF)**        | CLAUDE.md es autoritativo: RAF se congela en WebKit headless/CI. Patrón ya probado en asteroids/caida/serpentina. `dt` clamp 0.05s como guard de tab-blur.                                                                                          |
+| **HUD y overlays en-canvas (como el vanilla)**   | Fidelidad al ref. El vanilla dibuja score/nivel/vidas y los overlays dentro del canvas de 800×600; portar ese layout no requiere DOM extra. La diferencia HUD-DOM es el eje de spec-b.                                                              |
+| **Refs = `{ canvas }` único**                    | El port no necesita multi-elemento. Simplifica el componente y el wrapper. `initGame` sigue recibiendo el elemento ya montado (cero `getElementById` top-level).                                                                                    |
+| **Se elimina el salto de nivel en pausa**        | Feature de debug del vanilla (botones 1–5). Se descarta en el port para mantener el wrapper lean; no aporta valor de producto al leaderboard.                                                                                                       |
+| **Sonidos portados con guard `Audio`**           | "Mantener assets" incluye los 2 sonidos del ref. Guard `typeof Audio !== 'undefined'` + try/catch para no romper CI/headless ni el SSR.                                                                                                             |
+| **Scoring vanilla (+10/bloque) se mantiene**     | Fidelidad sobre magnitud. Tope teórico ≈ 2 040 pts por partida perfecta (204 bloques en 5 niveles) — el best sembrado 28 450 es ficción de catálogo, no objetivo alcanzable. Si se quiere magnitud mayor, es el eje de spec-b (scoring progresivo). |
+| **`onGameOver` fire-once en `gameover` y `win`** | Ambos son estados terminales del vanilla; el guard `gameOverFired` evita doble submit. `win` también cuenta como partida terminada con score.                                                                                                       |
+| **Fachada `createLeaderboardActions`**           | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod. Recipe inline del skill quedó obsoleta (CLAUDE.md).                                                                              |
+| **Sin nueva migration de catálogo**              | `bloque-buster` ya existe (spec 06) con cover `cover-bricks` en `globals.css`. Solo se añade el juego jugable + assets. `id` == string `game` de `saveScore` (sin FK).                                                                              |
 
 ## Identified Risks
 
-| Riesgo                                                             | Impacto                       | Mitigación                                                                                                                       |
-| ------------------------------------------------------------------ | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Spritesheet no carga a tiempo**                                  | Render vacío / bloques invis. | `loadSpritesheet` con `imgReady`; `drawSprite`/`drawFrame` no-op si `!imgReady`; re-draw al onload. Fallback geométrico mínimo si falla la imagen. |
-| **Sonidos en headless/CI**                                         | Excepciones de Audio          | Guard `typeof Audio !== 'undefined'` + try/catch silencioso en `.play()`. No bloquean el loop.                                    |
-| **Mapeo mousemove client rect → 800×600**                          | Paddle desincronizado         | Misma escala `canvas.width / rect.width` que el vanilla; reutilizar ese cálculo exacto.                                          |
-| **Game over spam en `win`/`gameover`**                             | Score duplicado               | Guard `gameOverFired` module-scoped; `onGameOver` fire una vez.                                                                   |
-| **Tab blur → dt gigante**                                          | Pelota atraviesa bloques      | `dt = Math.min(dt, 0.05)` en el loop.                                                                                            |
-| **Loop timer colgado tras unmount**                                | Memory leak                   | Handle del `setTimeout` module-scoped; `destroy()` idempotente lo cancela + desadjunta keydown/keyup/mousemove.                  |
-| **Scoring bajo vs best sembrado del catálogo (28 450)**            | Leaderboard desangelado       | Aceptado en spec-a (fidelidad). Si el usuario quiere magnitud mayor, elegir spec-b (scoring 10×nivel + bonus).                    |
-| **Catálogo `id` ≠ score `game` string**                            | Leaderboard devuelve vacío    | `saveScore` con `game: 'bloque-buster'` literal, idéntico al id del catálogo.                                                    |
+| Riesgo                                                  | Impacto                       | Mitigación                                                                                                                                         |
+| ------------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Spritesheet no carga a tiempo**                       | Render vacío / bloques invis. | `loadSpritesheet` con `imgReady`; `drawSprite`/`drawFrame` no-op si `!imgReady`; re-draw al onload. Fallback geométrico mínimo si falla la imagen. |
+| **Sonidos en headless/CI**                              | Excepciones de Audio          | Guard `typeof Audio !== 'undefined'` + try/catch silencioso en `.play()`. No bloquean el loop.                                                     |
+| **Mapeo mousemove client rect → 800×600**               | Paddle desincronizado         | Misma escala `canvas.width / rect.width` que el vanilla; reutilizar ese cálculo exacto.                                                            |
+| **Game over spam en `win`/`gameover`**                  | Score duplicado               | Guard `gameOverFired` module-scoped; `onGameOver` fire una vez.                                                                                    |
+| **Tab blur → dt gigante**                               | Pelota atraviesa bloques      | `dt = Math.min(dt, 0.05)` en el loop.                                                                                                              |
+| **Loop timer colgado tras unmount**                     | Memory leak                   | Handle del `setTimeout` module-scoped; `destroy()` idempotente lo cancela + desadjunta keydown/keyup/mousemove.                                    |
+| **Scoring bajo vs best sembrado del catálogo (28 450)** | Leaderboard desangelado       | Aceptado en spec-a (fidelidad). Si el usuario quiere magnitud mayor, elegir spec-b (scoring 10×nivel + bonus).                                     |
+| **Catálogo `id` ≠ score `game` string**                 | Leaderboard devuelve vacío    | `saveScore` con `game: 'bloque-buster'` literal, idéntico al id del catálogo.                                                                      |
 
 ## What is **not** in this spec
 

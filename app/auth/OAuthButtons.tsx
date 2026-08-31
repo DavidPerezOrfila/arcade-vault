@@ -8,7 +8,7 @@ const PROVIDERS = [
 ] as const;
 
 export default function OAuthButtons() {
-  const handleOAuth = async(provider: (typeof PROVIDERS)[number]['id']) => {
+  const handleOAuth = async (provider: (typeof PROVIDERS)[number]['id']) => {
     const supabase = createSupabaseBrowserClient();
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider,

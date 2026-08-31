@@ -77,29 +77,46 @@ interface DueloPixelGameProps {
 
 **Refs del juego (inyectados desde React al wrapper):**
 
-| Refs          | Elemento                       |
-| ------------- | ------------------------------ |
-| `canvas`      | canvas 800×600 playfield       |
-| `hudP1`       | HUD DOM puntos del duelo (J1)  |
-| `hudP2`       | HUD DOM puntos del duelo (J2)  |
-| `hudStreak`   | HUD DOM racha del lado marcado |
-| `overlay`     | overlay DOM pausa / terminal   |
-| `overlayTitle`| título del overlay             |
-| `overlayScore`| texto del overlay              |
+| Refs           | Elemento                       |
+| -------------- | ------------------------------ |
+| `canvas`       | canvas 800×600 playfield       |
+| `hudP1`        | HUD DOM puntos del duelo (J1)  |
+| `hudP2`        | HUD DOM puntos del duelo (J2)  |
+| `hudStreak`    | HUD DOM racha del lado marcado |
+| `overlay`      | overlay DOM pausa / terminal   |
+| `overlayTitle` | título del overlay             |
+| `overlayScore` | texto del overlay              |
 
 **Estado interno del motor (module-scoped en `game.esm.js`, documentado para el wrapper):**
 
 ```typescript
-interface DueloPixelPaddle { x: number; y: number; w: number; h: number; vy: number; }
-interface DueloPixelBall { x: number; y: number; size: number; vx: number; vy: number; speed: number; }
-interface DueloPixelCpu { targetY: number; maxSpeed: number; error: number; }
+interface DueloPixelPaddle {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  vy: number;
+}
+interface DueloPixelBall {
+  x: number;
+  y: number;
+  size: number;
+  vx: number;
+  vy: number;
+  speed: number;
+}
+interface DueloPixelCpu {
+  targetY: number;
+  maxSpeed: number;
+  error: number;
+}
 
 // gameState: 'serve' | 'playing' | 'paused' | 'gameover'
 // mode: 'local-duel' | 'cpu-casual'
 // markedPlayer: 'p1' | 'p2' (solo local-duel)
 // streak (score) · duelPointsP1 · duelPointsP2 · duelsWonP1 · duelsWonP2 · gameOverFired: boolean
-const DUEL_POINTS = 5;        // puntos para ganar un duelo
-const CASUAL_BEST_OF = 5;     // duelos del CPU casual (primero a 3)
+const DUEL_POINTS = 5; // puntos para ganar un duelo
+const CASUAL_BEST_OF = 5; // duelos del CPU casual (primero a 3)
 ```
 
 ## Implementation Plan
@@ -157,38 +174,38 @@ const CASUAL_BEST_OF = 5;     // duelos del CPU casual (primero a 3)
 
 ## Decisions Taken & Discarded
 
-| Decisión                                                                       | Justificación                                                                                                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`duelo-pixel` abre VERSUS puntuando el modo 2P local (spec-b)**              | El modelo de Arcade Vault pide un score por usuario y slug; en un hotseat local solo uno de los dos jugadores es la sesión. **Marcar tu lado** ("este eres tú") convierte el duelo local en un score legible del jugador acreditado; el oponente local es anónimo por diseño.                  |
-| **Score = racha de duelos ganados por tu lado (no best-of-N fijo)**           | El ejemplo "best-of-N y el ganador registra victorias" degenera el leaderboard: en un best-of-7 el ganador siempre registra 4. Encadenar duelos primera-a-5 hace que el marcador sea **cuántos duelos seguidos sobrevives ganando** (0…N), comparable y con spread real. Non-degenerate.      |
-| **Terminal = primer duelo perdido por tu lado (o rendición)**                 | Condición terminal bien definida y una sola vez (`gameOverFired`). La rendición desde pausa da salida limpia a la racha teóricamente infinita sin romper el contrato `onGameOver` fire-once.                                                                                                 |
-| **`markedPlayer` vive en el wrapper, no en el motor global**                  | El wrapper (que conoce la sesión y el `classPrefix`) decide qué lado es del usuario y lo pasa como `options.markedPlayer`; cambio de marcado = teardown + restart (mismo patrón que `skin` en los deps). El motor solo rastrea quién gana.                                                     |
-| **Mode: `cpu-casual` sin submit**                                              | Cumple el copy del catálogo ("modo solitario contra la CPU") sin contaminar el leaderboard: el motor no llama `onGameOver` en casual; el overlay DOM resuelve el resultado. El modo puntuado por CPU es el ejede spec-a.                                                                      |
-| **Rebote angular continuo ∝ offset**                                           | Mecánica de control fino en Pong (el jugador dirige el ángulo de salida). Diferencia real de jugabilidad vs el rebote discreto de 3 zonas de spec-a. Clamp del versor para evitar salidas casi horizontales.                                                                                   |
-| **HUD y overlay como elementos DOM separados (multi-ref)**                     | Ejerce el patrón multi-elemento de caida/ranaria: el texto DOM escalea mejor que el canvas y permite el botón "Rendirse y guardar racha" que el terminal por racha necesita. Diferencia de arquitectura real vs el single-canvas de spec-a.                                                    |
-| **Overlay DOM gestionado por el motor → texto + wrapper → visibilidad**       | El motor setea `overlayTitle`/`overlayScore` y el wrapper revela/oculta el contenedor (toggle `.hidden`), reutilizando el patrón caida. El engine no pinta overlays en-canvas.                                                                                                                |
-| **`cpu-casual` con CPU fija (sin rampa por `tier`)**                           | Como el modo no es puntuado, no necesita curva de dificultad; mínimo de lógica. La rampa queda en spec-a donde el CPU es el adversario puntuado.                                                                                                                                            |
-| **`setOnGameOver` antes de `initGame`**                                        | Patrón moderno de bloque-buster/ranaria: evita que un terminal temprano (racha 0) se pierda si el wrapper aún no cableó el callback.                                                                                                                                                         |
-| **`setTimeout` encadenado, `dt` clamp 0.05s**                                  | CLAUDE.md es autoritativo: RAF se congela en WebKit headless/CI; `dt` clamp evita atravesar la paleta en tab-blur.                                                                                                                                                                           |
-| **Fachada `createLeaderboardActions`**                                         | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod (bounds: `int().nonnegative().max(1e9)`, acepta 0 — una racha de 0 es legítima: "perdí mi primer duelo"). Recipe inline quedó obsoleta.                                      |
-| **Sin migration ni edición de `globals.css`**                                  | Fila `duelo-pixel` y cover `cover-duelo` ya existen (spec 06). `id` == string `game` de `saveScore` (sin FK).                                                                                                                                                                               |
+| Decisión                                                                | Justificación                                                                                                                                                                                                                                                                            |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`duelo-pixel` abre VERSUS puntuando el modo 2P local (spec-b)**       | El modelo de Arcade Vault pide un score por usuario y slug; en un hotseat local solo uno de los dos jugadores es la sesión. **Marcar tu lado** ("este eres tú") convierte el duelo local en un score legible del jugador acreditado; el oponente local es anónimo por diseño.            |
+| **Score = racha de duelos ganados por tu lado (no best-of-N fijo)**     | El ejemplo "best-of-N y el ganador registra victorias" degenera el leaderboard: en un best-of-7 el ganador siempre registra 4. Encadenar duelos primera-a-5 hace que el marcador sea **cuántos duelos seguidos sobrevives ganando** (0…N), comparable y con spread real. Non-degenerate. |
+| **Terminal = primer duelo perdido por tu lado (o rendición)**           | Condición terminal bien definida y una sola vez (`gameOverFired`). La rendición desde pausa da salida limpia a la racha teóricamente infinita sin romper el contrato `onGameOver` fire-once.                                                                                             |
+| **`markedPlayer` vive en el wrapper, no en el motor global**            | El wrapper (que conoce la sesión y el `classPrefix`) decide qué lado es del usuario y lo pasa como `options.markedPlayer`; cambio de marcado = teardown + restart (mismo patrón que `skin` en los deps). El motor solo rastrea quién gana.                                               |
+| **Mode: `cpu-casual` sin submit**                                       | Cumple el copy del catálogo ("modo solitario contra la CPU") sin contaminar el leaderboard: el motor no llama `onGameOver` en casual; el overlay DOM resuelve el resultado. El modo puntuado por CPU es el ejede spec-a.                                                                 |
+| **Rebote angular continuo ∝ offset**                                    | Mecánica de control fino en Pong (el jugador dirige el ángulo de salida). Diferencia real de jugabilidad vs el rebote discreto de 3 zonas de spec-a. Clamp del versor para evitar salidas casi horizontales.                                                                             |
+| **HUD y overlay como elementos DOM separados (multi-ref)**              | Ejerce el patrón multi-elemento de caida/ranaria: el texto DOM escalea mejor que el canvas y permite el botón "Rendirse y guardar racha" que el terminal por racha necesita. Diferencia de arquitectura real vs el single-canvas de spec-a.                                              |
+| **Overlay DOM gestionado por el motor → texto + wrapper → visibilidad** | El motor setea `overlayTitle`/`overlayScore` y el wrapper revela/oculta el contenedor (toggle `.hidden`), reutilizando el patrón caida. El engine no pinta overlays en-canvas.                                                                                                           |
+| **`cpu-casual` con CPU fija (sin rampa por `tier`)**                    | Como el modo no es puntuado, no necesita curva de dificultad; mínimo de lógica. La rampa queda en spec-a donde el CPU es el adversario puntuado.                                                                                                                                         |
+| **`setOnGameOver` antes de `initGame`**                                 | Patrón moderno de bloque-buster/ranaria: evita que un terminal temprano (racha 0) se pierda si el wrapper aún no cableó el callback.                                                                                                                                                     |
+| **`setTimeout` encadenado, `dt` clamp 0.05s**                           | CLAUDE.md es autoritativo: RAF se congela en WebKit headless/CI; `dt` clamp evita atravesar la paleta en tab-blur.                                                                                                                                                                       |
+| **Fachada `createLeaderboardActions`**                                  | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod (bounds: `int().nonnegative().max(1e9)`, acepta 0 — una racha de 0 es legítima: "perdí mi primer duelo"). Recipe inline quedó obsoleta.                                |
+| **Sin migration ni edición de `globals.css`**                           | Fila `duelo-pixel` y cover `cover-duelo` ya existen (spec 06). `id` == string `game` de `saveScore` (sin FK).                                                                                                                                                                            |
 
 ## Identified Risks
 
-| Riesgo                                                               | Impacto                      | Mitigación                                                                                                        |
-| -------------------------------------------------------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Racha teóricamente infinita**                                      | `onGameOver` no se dispara   | Terminal por pérdida del lado marcado + **rendición desde pausa** como salida manual; `?e2e=1` fuerza en tests.      |
-| **Ambigüedad de identidad en hotseat**                               | Score atribuido al lado erróneo | Selector `markedPlayer` default J1 y visible; el texto de scoring explica "tu racha = duelos ganados por TU lado". |
-| **Ambos jugadores quieren publicar**                                 | Solo un score por sesión     | Fuera de scope (nota en "Out of scope"): el modelo de Arcade Vault es un score por usuario; el lado contrario es anónimo local. Spec futura si cambia. |
-| **Tuneling de pelota a velocidad alta**                              | Atraviesa la paleta          | `dt` clamp 0.05s + `MAX_BALL_SPEED=560` + pelota de 14 px.                                                         |
-| **Ángulos extremos en rebote continuo**                              | Salidas casi horizontales    | Clamp del versor: mínimo `|vx|` = 30% de `speed`; `[−72°, +72°]` acotado.                                           |
-| **Refs multi-elemento null en el primer render**                     | Crash en `initGame`          | Guard de serpentina: recolectar refs y no llamar `initGame` si alguno es null.                                      |
-| **Rendición accidental (toque de `Escape`) destrozando la racha**    | Pérdida de progreso          | La rendición es un botón dentro del overlay de pausa (dos pasos), nunca una tecla directa.                          |
-| **Game over spam en el terminal**                                    | Score duplicado              | Guard `gameOverFired` module-scoped; `onGameOver` fire una vez.                                                     |
-| **Loop timer colgado tras unmount**                                  | Memory leak                  | `timerId` module-scoped; `destroy()` idempotente cancela + desadjunta `keydown`/`keyup`.                            |
-| **CPU casual sin rampa → trivial**                                   | Aburrido pero no puntuado    | Aceptado: el modo puntuado de spec-b es el local; el reto de la CPU es cobertura del copy, no leaderboard.           |
-| **Catálogo `id` ≠ score `game` string**                              | Leaderboard devuelve vacío   | `saveScore` con `game: 'duelo-pixel'` literal, idéntico al id del catálogo.                                          |
-| **`score=0` en terminal temprano**                                   | Racha de 0 subida            | Schema `nonnegative()` acepta 0; score legítimo. No bloquea.                                                        |
+| Riesgo                                                            | Impacto                         | Mitigación                                                                                                                                             |
+| ----------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Racha teóricamente infinita**                                   | `onGameOver` no se dispara      | Terminal por pérdida del lado marcado + **rendición desde pausa** como salida manual; `?e2e=1` fuerza en tests.                                        |
+| **Ambigüedad de identidad en hotseat**                            | Score atribuido al lado erróneo | Selector `markedPlayer` default J1 y visible; el texto de scoring explica "tu racha = duelos ganados por TU lado".                                     |
+| **Ambos jugadores quieren publicar**                              | Solo un score por sesión        | Fuera de scope (nota en "Out of scope"): el modelo de Arcade Vault es un score por usuario; el lado contrario es anónimo local. Spec futura si cambia. |
+| **Tuneling de pelota a velocidad alta**                           | Atraviesa la paleta             | `dt` clamp 0.05s + `MAX_BALL_SPEED=560` + pelota de 14 px.                                                                                             |
+| **Ángulos extremos en rebote continuo**                           | Salidas casi horizontales       | Clamp del versor: mínimo `                                                                                                                             | vx  | `= 30% de`speed`; `[−72°, +72°]` acotado. |
+| **Refs multi-elemento null en el primer render**                  | Crash en `initGame`             | Guard de serpentina: recolectar refs y no llamar `initGame` si alguno es null.                                                                         |
+| **Rendición accidental (toque de `Escape`) destrozando la racha** | Pérdida de progreso             | La rendición es un botón dentro del overlay de pausa (dos pasos), nunca una tecla directa.                                                             |
+| **Game over spam en el terminal**                                 | Score duplicado                 | Guard `gameOverFired` module-scoped; `onGameOver` fire una vez.                                                                                        |
+| **Loop timer colgado tras unmount**                               | Memory leak                     | `timerId` module-scoped; `destroy()` idempotente cancela + desadjunta `keydown`/`keyup`.                                                               |
+| **CPU casual sin rampa → trivial**                                | Aburrido pero no puntuado       | Aceptado: el modo puntuado de spec-b es el local; el reto de la CPU es cobertura del copy, no leaderboard.                                             |
+| **Catálogo `id` ≠ score `game` string**                           | Leaderboard devuelve vacío      | `saveScore` con `game: 'duelo-pixel'` literal, idéntico al id del catálogo.                                                                            |
+| **`score=0` en terminal temprano**                                | Racha de 0 subida               | Schema `nonnegative()` acepta 0; score legítimo. No bloquea.                                                                                           |
 
 ## What is **not** in this spec
 

@@ -34,4 +34,3 @@ export async function getGameBySlug(slug: string): Promise<Game | null> {
   // id === slug in our schema
   return getGameById(slug);
 }
-

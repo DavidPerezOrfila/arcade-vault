@@ -42,7 +42,7 @@
 /* Brazos vertical y horizontal superpuestos forman la cruz. */
 .touch-dpad::before,
 .touch-dpad::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -76,13 +76,31 @@
   font-size: 16px;
   line-height: 1;
   pointer-events: none;
-  transition: color 80ms ease, text-shadow 80ms ease;
+  transition:
+    color 80ms ease,
+    text-shadow 80ms ease;
 }
 
-.touch-dpad__up { left: 50%; top: 0; transform: translateX(-50%); }
-.touch-dpad__down { left: 50%; bottom: 0; transform: translateX(-50%); }
-.touch-dpad__left { left: 0; top: 50%; transform: translateY(-50%); }
-.touch-dpad__right { right: 0; top: 50%; transform: translateY(-50%); }
+.touch-dpad__up {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.touch-dpad__down {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.touch-dpad__left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.touch-dpad__right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .touch-dpad[data-active='up'] .touch-dpad__up,
 .touch-dpad[data-active='down'] .touch-dpad__down,

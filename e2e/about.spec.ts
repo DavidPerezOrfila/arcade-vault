@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('/about', () => {
-  test('renders hero, highlights and contact form', async({ page }) => {
+  test('renders hero, highlights and contact form', async ({ page }) => {
     await page.goto('/about');
 
     await expect(page.locator('h1')).toHaveText('ACERCA DE ARCADE VAULT');
@@ -10,14 +10,14 @@ test.describe('/about', () => {
     await expect(page.locator('form.contact-form')).toBeVisible();
   });
 
-  test('navigates from nav link', async({ page }) => {
+  test('navigates from nav link', async ({ page }) => {
     await page.goto('/');
     await page.locator('nav .links a[href="/about"]').click();
     await expect(page).toHaveURL('/about');
     await expect(page.locator('h1')).toHaveText('ACERCA DE ARCADE VAULT');
   });
 
-  test('validates required fields before sending', async({ page }) => {
+  test('validates required fields before sending', async ({ page }) => {
     await page.goto('/about');
 
     const nameInput = page.locator('input#name');
@@ -31,7 +31,7 @@ test.describe('/about', () => {
     await expect(messageInput).toHaveAttribute('required', '');
   });
 
-  test('submits the form and shows terminal success', async({ page }) => {
+  test('submits the form and shows terminal success', async ({ page }) => {
     await page.goto('/about');
 
     await page.locator('input#name').fill('Jugador Test');

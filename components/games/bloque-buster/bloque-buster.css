@@ -137,7 +137,9 @@
 .bloque-buster-sidebar-card {
   background: var(--bg-2);
   border: 1px solid var(--line-2);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.35);
   padding: 1.5rem;
 }
 
@@ -175,7 +177,9 @@
 .bloque-buster-leaderboard-card {
   background: var(--bg-2);
   border: 1px solid var(--line-2);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.35);
   padding: 1rem;
   color: var(--ink);
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
@@ -206,7 +210,9 @@
 .bloque-buster-auth-prompt {
   background: var(--bg-2);
   border: 1px solid var(--line);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.35);
   padding: 2rem;
   max-width: 400px;
   width: 100%;
@@ -273,7 +279,7 @@
 
 /* Scanlines CRT del skin retro; el neon añade un halo sutil al canvas. */
 .bloque-buster-game-container::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: 4;

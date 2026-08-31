@@ -85,7 +85,7 @@ export default function NavClient({ user }: NavClientProps) {
   const isGamePage = pathname.startsWith('/games/');
 
   const handleSignOut = () => {
-    startTransition(async() => {
+    startTransition(async () => {
       await signOutAction();
     });
   };

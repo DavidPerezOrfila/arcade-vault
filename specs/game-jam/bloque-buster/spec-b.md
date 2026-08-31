@@ -68,8 +68,14 @@ interface BloqueBusterGameProps {
 type PowerUpKind = 'W' | 'M' | 'L';
 type BlockColor = 'red' | 'yellow' | 'cyan' | 'magenta' | 'hotpink' | 'green';
 type PatternName =
-  | 'grid' | 'pyramid' | 'checker' | 'gapped-rows'
-  | 'frame-cross' | 'double-frame' | 'zigzag' | 'onslaught';
+  | 'grid'
+  | 'pyramid'
+  | 'checker'
+  | 'gapped-rows'
+  | 'frame-cross'
+  | 'double-frame'
+  | 'zigzag'
+  | 'onslaught';
 
 interface PatternSpec {
   name: PatternName;
@@ -81,15 +87,15 @@ interface PatternSpec {
 
 **Refs del juego (inyectados desde React al wrapper):**
 
-| Refs           | Elemento                       |
-| -------------- | ------------------------------ |
-| `canvas`       | canvas 800×600 playfield       |
-| `scoreEl`      | HUD DOM puntos                 |
-| `livesEl`      | HUD DOM vidas                  |
-| `levelEl`      | HUD DOM nivel                  |
-| `overlay`      | overlay DOM GAME OVER / WIN    |
-| `overlayTitle` | título del overlay             |
-| `overlayScore` | texto del overlay              |
+| Refs           | Elemento                    |
+| -------------- | --------------------------- |
+| `canvas`       | canvas 800×600 playfield    |
+| `scoreEl`      | HUD DOM puntos              |
+| `livesEl`      | HUD DOM vidas               |
+| `levelEl`      | HUD DOM nivel               |
+| `overlay`      | overlay DOM GAME OVER / WIN |
+| `overlayTitle` | título del overlay          |
+| `overlayScore` | texto del overlay           |
 
 ## Implementation Plan
 
@@ -145,34 +151,34 @@ interface PatternSpec {
 
 ## Decisions Taken & Discarded
 
-| Decisión                                            | Justificación                                                                                                                                                                                                   |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Engine desde cero, sin port (spec-b)**            | Eje de diferencia real vs spec-a: reimplementación con decisiones de diseño propias en física, niveles y HUD. Riesgo mayor (lógica nueva) a cambio de un juego con más profundidad y scoring coherente con el catálogo. |
-| **Física angular en la paleta**                     | Rebote con ángulo ∝ offset de impacto da control al jugador (mismo patrón que Breakout clásico). Reemplaza el flip vertical ciego del vanilla.                                                                  |
-| **Resolución AABB por eje de menor penetración**    | Evita rebotes dobles y atraviesos a velocidad alta; corrección de posición + inversión solo del eje con menor solape.                                                                                            |
-| **HUD DOM separado (multi-ref)**                    | Ejerce el patrón multi-elemento ya probado en caida/serpentina (`initGame` con objeto de refs). El DOM escalea el texto mejor que el canvas a distintas resoluciones.                                            |
-| **Render geométrico sin assets**                    | Cero copias de spritesheet/sonidos → motor autocontenido, sin riesgo de asset-load. Diferenciador claro frente al port con sprites de spec-a.                                                                    |
-| **Power-ups `W`/`M`/`L`**                           | Subconjunto mínimo que añade profundidad sin explotar scope: paleta ancha (timer), multi-bola (tope 3), vida extra. Láser/expand/slow quedan fuera (spec futura).                                                |
-| **Niveles generados por patrón (8)**                | Builder data-driven de 8 patrones en vez de copiar `levels.js` (5 niveles fijos). Permite alargar la partida sin datos manuales y sin assets.                                                                    |
-| **Scoring progresivo `10 × nivel` + bonus**         | Valora bloques según el nivel → una partida perfecta ≈ 16k + bonus, en el rango del best sembrado del catálogo (28 450). Diferente del tope ~2k del vanilla (spec-a).                                            |
-| **`onGameOver` fire-once en `gameover` y `win`**    | Guard `gameOverFired` evita doble submit; `win` (nivel 8) también es terminal con score.                                                                                                                         |
-| **Sin sonidos**                                     | Motor sin assets por diseño; el audio se añadiría en spec propia si llega. La plataforma no requiere sonido en los juegos existentes.                                                                            |
-| **Fachada `createLeaderboardActions`**              | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod. Recipe inline del skill quedó obsoleta (CLAUDE.md).                                           |
-| **Sin nueva migration de catálogo**                 | `bloque-buster` ya existe (spec 06) con cover `cover-bricks` en `globals.css`. `id` == string `game` de `saveScore` (sin FK).                                                                                   |
+| Decisión                                         | Justificación                                                                                                                                                                                                           |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Engine desde cero, sin port (spec-b)**         | Eje de diferencia real vs spec-a: reimplementación con decisiones de diseño propias en física, niveles y HUD. Riesgo mayor (lógica nueva) a cambio de un juego con más profundidad y scoring coherente con el catálogo. |
+| **Física angular en la paleta**                  | Rebote con ángulo ∝ offset de impacto da control al jugador (mismo patrón que Breakout clásico). Reemplaza el flip vertical ciego del vanilla.                                                                          |
+| **Resolución AABB por eje de menor penetración** | Evita rebotes dobles y atraviesos a velocidad alta; corrección de posición + inversión solo del eje con menor solape.                                                                                                   |
+| **HUD DOM separado (multi-ref)**                 | Ejerce el patrón multi-elemento ya probado en caida/serpentina (`initGame` con objeto de refs). El DOM escalea el texto mejor que el canvas a distintas resoluciones.                                                   |
+| **Render geométrico sin assets**                 | Cero copias de spritesheet/sonidos → motor autocontenido, sin riesgo de asset-load. Diferenciador claro frente al port con sprites de spec-a.                                                                           |
+| **Power-ups `W`/`M`/`L`**                        | Subconjunto mínimo que añade profundidad sin explotar scope: paleta ancha (timer), multi-bola (tope 3), vida extra. Láser/expand/slow quedan fuera (spec futura).                                                       |
+| **Niveles generados por patrón (8)**             | Builder data-driven de 8 patrones en vez de copiar `levels.js` (5 niveles fijos). Permite alargar la partida sin datos manuales y sin assets.                                                                           |
+| **Scoring progresivo `10 × nivel` + bonus**      | Valora bloques según el nivel → una partida perfecta ≈ 16k + bonus, en el rango del best sembrado del catálogo (28 450). Diferente del tope ~2k del vanilla (spec-a).                                                   |
+| **`onGameOver` fire-once en `gameover` y `win`** | Guard `gameOverFired` evita doble submit; `win` (nivel 8) también es terminal con score.                                                                                                                                |
+| **Sin sonidos**                                  | Motor sin assets por diseño; el audio se añadiría en spec propia si llega. La plataforma no requiere sonido en los juegos existentes.                                                                                   |
+| **Fachada `createLeaderboardActions`**           | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod. Recipe inline del skill quedó obsoleta (CLAUDE.md).                                                  |
+| **Sin nueva migration de catálogo**              | `bloque-buster` ya existe (spec 06) con cover `cover-bricks` en `globals.css`. `id` == string `game` de `saveScore` (sin FK).                                                                                           |
 
 ## Identified Risks
 
-| Riesgo                                              | Impacto                        | Mitigación                                                                                                             |
-| --------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Lógica nueva sin ref probado**                    | Bugs en física/power-ups       | Mantener el motor mínimo y legible; dt clamp 0.05s; resolver AABB por eje; tope de 3 bolas; constantes nombradas.       |
-| **Tuneling de pelota a velocidad alta**             | Pelota atraviesa bloques       | `dt` clamp 0.05s + resolución por eje de menor penetración; `BASE_BALL_SPEED` moderada (340).                            |
-| **Rebote angular en los bordes de la paleta**       | Ángulos extremos (bola casi horizontal) | Clamp del ángulo de salida a `[60°, 120°]` desde el versor; nunca invertir vx por debajo de un mínimo.          |
-| **Power-up `M` multi-bola desbalanceado**           | Partida infinita / fps issues  | Tope de 3 bolas activas; las bolas extra son más lentas (×0.9) y comparten vidas.                                       |
-| **Refs multi-elemento null en el primer render**    | Crash en `initGame`            | Mismo guard que serpentina: recolectar refs y no llamar `initGame` si alguno es null.                                   |
-| **Game over spam en `win`/`gameover`**              | Score duplicado                | Guard `gameOverFired` module-scoped; `onGameOver` fire una vez.                                                         |
-| **Loop timer colgado tras unmount**                 | Memory leak                    | Handle del `setTimeout` module-scoped; `destroy()` idempotente cancela + desadjunta listeners.                          |
-| **Balance de scoring (perfect run ~16k vs best 28k)** | Best sembrado difícil de superar | Aceptado; el best del catálogo es ficción de catálogo. Si se quiere, ajustar constantes en spec futura.                |
-| **Catálogo `id` ≠ score `game` string**             | Leaderboard devuelve vacío     | `saveScore` con `game: 'bloque-buster'` literal, idéntico al id del catálogo.                                           |
+| Riesgo                                                | Impacto                                 | Mitigación                                                                                                        |
+| ----------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Lógica nueva sin ref probado**                      | Bugs en física/power-ups                | Mantener el motor mínimo y legible; dt clamp 0.05s; resolver AABB por eje; tope de 3 bolas; constantes nombradas. |
+| **Tuneling de pelota a velocidad alta**               | Pelota atraviesa bloques                | `dt` clamp 0.05s + resolución por eje de menor penetración; `BASE_BALL_SPEED` moderada (340).                     |
+| **Rebote angular en los bordes de la paleta**         | Ángulos extremos (bola casi horizontal) | Clamp del ángulo de salida a `[60°, 120°]` desde el versor; nunca invertir vx por debajo de un mínimo.            |
+| **Power-up `M` multi-bola desbalanceado**             | Partida infinita / fps issues           | Tope de 3 bolas activas; las bolas extra son más lentas (×0.9) y comparten vidas.                                 |
+| **Refs multi-elemento null en el primer render**      | Crash en `initGame`                     | Mismo guard que serpentina: recolectar refs y no llamar `initGame` si alguno es null.                             |
+| **Game over spam en `win`/`gameover`**                | Score duplicado                         | Guard `gameOverFired` module-scoped; `onGameOver` fire una vez.                                                   |
+| **Loop timer colgado tras unmount**                   | Memory leak                             | Handle del `setTimeout` module-scoped; `destroy()` idempotente cancela + desadjunta listeners.                    |
+| **Balance de scoring (perfect run ~16k vs best 28k)** | Best sembrado difícil de superar        | Aceptado; el best del catálogo es ficción de catálogo. Si se quiere, ajustar constantes en spec futura.           |
+| **Catálogo `id` ≠ score `game` string**               | Leaderboard devuelve vacío              | `saveScore` con `game: 'bloque-buster'` literal, idéntico al id del catálogo.                                     |
 
 ## What is **not** in this spec
 

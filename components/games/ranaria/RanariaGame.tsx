@@ -1,37 +1,34 @@
-"use client";
+'use client';
 
-import { useCallback, useEffect, useRef } from "react";
-import { submitRanariaScore } from "@/app/games/ranaria/actions";
-import { AuthPrompt } from "@/components/games/AuthPrompt";
-import { LeaderboardList } from "@/components/games/LeaderboardList";
-import { TouchControls, dispatchKey } from "@/components/games/TouchControls";
-import type { TouchControlsProps } from "@/components/games/TouchControls";
-import { useArcadeGame } from "@/components/games/useArcadeGame";
-import { useSkin } from "@/components/skin/SkinProvider";
-import { SkinSelect } from "@/components/skin/SkinSelect";
-import { LEADERBOARD_TOP_N } from "@/lib/games/constants";
-import type {
-  RanariaGameProps,
-  RanariaRefs,
-} from "@/lib/games/ranaria/types";
-import "./ranaria.css";
+import { useCallback, useEffect, useRef } from 'react';
+import { submitRanariaScore } from '@/app/games/ranaria/actions';
+import { AuthPrompt } from '@/components/games/AuthPrompt';
+import { LeaderboardList } from '@/components/games/LeaderboardList';
+import { TouchControls, dispatchKey } from '@/components/games/TouchControls';
+import type { TouchControlsProps } from '@/components/games/TouchControls';
+import { useArcadeGame } from '@/components/games/useArcadeGame';
+import { useSkin } from '@/components/skin/SkinProvider';
+import { SkinSelect } from '@/components/skin/SkinSelect';
+import { LEADERBOARD_TOP_N } from '@/lib/games/constants';
+import type { RanariaGameProps, RanariaRefs } from '@/lib/games/ranaria/types';
+import './ranaria.css';
 
 const CANVAS_W = 640;
 const CANVAS_H = 560;
-const API_URL = "/api/leaderboard/ranaria";
+const API_URL = '/api/leaderboard/ranaria';
 
 // Mando NES: cruceta para saltar (tap); A/B sin uso (atenuados).
 const D_PAD = {
-  up: { action: "up", mode: "tap" },
-  down: { action: "down", mode: "tap" },
-  left: { action: "left", mode: "tap" },
-  right: { action: "right", mode: "tap" },
-} satisfies TouchControlsProps["dPad"];
+  up: { action: 'up', mode: 'tap' },
+  down: { action: 'down', mode: 'tap' },
+  left: { action: 'left', mode: 'tap' },
+  right: { action: 'right', mode: 'tap' },
+} satisfies TouchControlsProps['dPad'];
 
 const BUTTONS = [
-  { label: "B", disabled: true },
-  { label: "A", disabled: true },
-] satisfies TouchControlsProps["buttons"];
+  { label: 'B', disabled: true },
+  { label: 'A', disabled: true },
+] satisfies TouchControlsProps['buttons'];
 
 export function RanariaGame({ initialLeaderboard = [] }: RanariaGameProps) {
   const boardRef = useRef<HTMLCanvasElement>(null);
@@ -52,7 +49,7 @@ export function RanariaGame({ initialLeaderboard = [] }: RanariaGameProps) {
     setShowAuthPrompt,
     handleGameOver,
   } = useArcadeGame({
-    loadModule: () => import("@/lib/games/ranaria/game.esm.js"),
+    loadModule: () => import('@/lib/games/ranaria/game.esm.js'),
     apiUrl: API_URL,
     submitScore: submitRanariaScore,
     initialLeaderboard,
@@ -100,93 +97,93 @@ export function RanariaGame({ initialLeaderboard = [] }: RanariaGameProps) {
   }, [isLoading, startGame, gameRef]);
 
   const handleDown = useCallback((action: string) => {
-    if (action === "pause") {
-      dispatchKey("KeyP", "keydown", "p");
+    if (action === 'pause') {
+      dispatchKey('KeyP', 'keydown', 'p');
       return;
     }
     const key: Record<string, string> = {
-      up: "ArrowUp",
-      down: "ArrowDown",
-      left: "ArrowLeft",
-      right: "ArrowRight",
+      up: 'ArrowUp',
+      down: 'ArrowDown',
+      left: 'ArrowLeft',
+      right: 'ArrowRight',
     };
-    dispatchKey(key[action] ?? action, "keydown");
+    dispatchKey(key[action] ?? action, 'keydown');
   }, []);
 
   const handleUp = useCallback(() => undefined, []);
 
   if (isLoading) {
     return (
-      <div className="ranaria-game-container">
-        <div className="ranaria-loading-overlay">Cargando...</div>
+      <div className='ranaria-game-container'>
+        <div className='ranaria-loading-overlay'>Cargando...</div>
       </div>
     );
   }
 
   return (
-    <div className="ranaria-game-layout">
-      <div className="ranaria-game-container">
-        <div className="ranaria-board-wrap">
+    <div className='ranaria-game-layout'>
+      <div className='ranaria-game-container'>
+        <div className='ranaria-board-wrap'>
           <canvas
             ref={boardRef}
             width={CANVAS_W}
             height={CANVAS_H}
-            aria-label="Juego RANARIA"
+            aria-label='Juego RANARIA'
           />
 
           {/* Overlay compartido: GAME OVER / PAUSA. El wrapper togglea 'hidden'. */}
-          <div className="ranaria-overlay hidden" ref={overlayRef}>
-            <h3 className="ranaria-overlay-title" ref={overlayTitleRef}>
+          <div className='ranaria-overlay hidden' ref={overlayRef}>
+            <h3 className='ranaria-overlay-title' ref={overlayTitleRef}>
               GAME OVER
             </h3>
-            <p className="ranaria-overlay-score" ref={overlayScoreRef}></p>
-            <button onClick={startGame} className="ranaria-overlay-button">
+            <p className='ranaria-overlay-score' ref={overlayScoreRef}></p>
+            <button onClick={startGame} className='ranaria-overlay-button'>
               Jugar de nuevo
             </button>
           </div>
 
           {showAuthPrompt && (
             <AuthPrompt
-              classPrefix="ranaria"
-              gamePath="/games/ranaria"
-              title="¡Partida terminada!"
-              message="Inicia sesión para guardar tu puntuación en el ranking global."
+              classPrefix='ranaria'
+              gamePath='/games/ranaria'
+              title='¡Partida terminada!'
+              message='Inicia sesión para guardar tu puntuación en el ranking global.'
               onDismiss={() => setShowAuthPrompt(false)}
             />
           )}
         </div>
 
-        <div className="ranaria-panel">
-          <SkinSelect classPrefix="ranaria" />
+        <div className='ranaria-panel'>
+          <SkinSelect classPrefix='ranaria' />
 
-          <div className="ranaria-hud">
-            <div className="ranaria-hud-item">
+          <div className='ranaria-hud'>
+            <div className='ranaria-hud-item'>
               <span>PUNTOS</span>
               <span ref={scoreRef}>0</span>
             </div>
-            <div className="ranaria-hud-item">
+            <div className='ranaria-hud-item'>
               <span>VIDAS</span>
               <span ref={livesRef}>3</span>
             </div>
-            <div className="ranaria-hud-item">
+            <div className='ranaria-hud-item'>
               <span>NIVEL</span>
               <span ref={levelRef}>1</span>
             </div>
-            <div className="ranaria-hud-item">
+            <div className='ranaria-hud-item'>
               <span>TIEMPO</span>
               <span ref={timeRef}>15s</span>
             </div>
           </div>
 
-          <div className="ranaria-leaderboard">
-            <div className="ranaria-leaderboard-title">
+          <div className='ranaria-leaderboard'>
+            <div className='ranaria-leaderboard-title'>
               TOP {LEADERBOARD_TOP_N}
             </div>
             <LeaderboardList
-              classPrefix="ranaria"
+              classPrefix='ranaria'
               entries={leaderboard}
               maxRows={LEADERBOARD_TOP_N}
-              emptyText="Sin puntuaciones aún"
+              emptyText='Sin puntuaciones aún'
             />
           </div>
         </div>
@@ -195,7 +192,7 @@ export function RanariaGame({ initialLeaderboard = [] }: RanariaGameProps) {
       <TouchControls
         dPad={D_PAD}
         buttons={BUTTONS}
-        pause={{ label: "PAUSA", action: "pause" }}
+        pause={{ label: 'PAUSA', action: 'pause' }}
         gameAreaRef={boardRef}
         onDown={handleDown}
         onUp={handleUp}

@@ -4,14 +4,14 @@ import { test, expect } from '@playwright/test';
 // NES (TouchControls) se monta solo en punteros gruesos y el layout no
 // desborda horizontalmente en movil ni en desktop.
 test.describe('desktop keyboard', () => {
-  test.beforeEach(async({ page }) => {
+  test.beforeEach(async ({ page }) => {
     await page.goto('/games/asteroids?e2e=1');
     await page.waitForSelector('.asteroids-game-container canvas', {
       timeout: 10000,
     });
   });
 
-  test('loads the asteroids canvas and accepts keyboard input', async({
+  test('loads the asteroids canvas and accepts keyboard input', async ({
     page,
   }) => {
     const canvas = page.locator('.asteroids-game-container canvas');
@@ -23,11 +23,11 @@ test.describe('desktop keyboard', () => {
     await expect(canvas).toBeVisible();
   });
 
-  test('does not render the touch controls on desktop', async({ page }) => {
+  test('does not render the touch controls on desktop', async ({ page }) => {
     await expect(page.locator('.touch-controls')).toHaveCount(0);
   });
 
-  test('home page has no horizontal overflow on desktop', async({ page }) => {
+  test('home page has no horizontal overflow on desktop', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/');
 
@@ -46,7 +46,7 @@ test.describe('mobile touch', () => {
     viewport: { width: 390, height: 844 },
   });
 
-  test.beforeEach(async({ page }) => {
+  test.beforeEach(async ({ page }) => {
     await page.goto('/games/asteroids?e2e=1');
     await page.waitForSelector('.asteroids-game-container canvas', {
       timeout: 10000,
@@ -56,7 +56,7 @@ test.describe('mobile touch', () => {
     });
   });
 
-  test('renders the NES touch controls (d-pad + A/B) on mobile', async({
+  test('renders the NES touch controls (d-pad + A/B) on mobile', async ({
     page,
   }) => {
     const controls = page.locator('.touch-controls');
@@ -68,7 +68,7 @@ test.describe('mobile touch', () => {
     expect(buttonCount).toBeGreaterThanOrEqual(2);
   });
 
-  test('tapping the A (FIRE) button fires an action and the canvas keeps animating', async({
+  test('tapping the A (FIRE) button fires an action and the canvas keeps animating', async ({
     page,
   }) => {
     const canvas = page.locator('.asteroids-game-container canvas');
@@ -88,7 +88,7 @@ test.describe('mobile touch', () => {
     expect(after).not.toBe(before);
   });
 
-  test('tapping the d-pad right direction dispatches input without throwing', async({
+  test('tapping the d-pad right direction dispatches input without throwing', async ({
     page,
   }) => {
     const canvas = page.locator('.asteroids-game-container canvas');
@@ -101,7 +101,7 @@ test.describe('mobile touch', () => {
     await expect(canvas).toBeVisible();
   });
 
-  test('home page has no horizontal overflow on mobile', async({ page }) => {
+  test('home page has no horizontal overflow on mobile', async ({ page }) => {
     await page.goto('/');
 
     const hasNoOverflow = await page.evaluate(
@@ -111,7 +111,7 @@ test.describe('mobile touch', () => {
     expect(hasNoOverflow).toBe(true);
   });
 
-  test('bloque-buster shows a PAUSA touch button and tapping it does not throw', async({
+  test('bloque-buster shows a PAUSA touch button and tapping it does not throw', async ({
     page,
   }) => {
     await page.goto('/games/bloque-buster?e2e=1');
@@ -134,13 +134,13 @@ test.describe('mobile touch', () => {
     ).toBeVisible();
   });
 
-  test('game page uses the game-viewport container on mobile', async({
+  test('game page uses the game-viewport container on mobile', async ({
     page,
   }) => {
     await expect(page.locator('.game-viewport')).toHaveCount(1);
   });
 
-  test('touch controls do not overlap the canvas', async({ page }) => {
+  test('touch controls do not overlap the canvas', async ({ page }) => {
     const canvas = page.locator('.asteroids-game-container canvas');
     const controls = page.locator('.touch-controls');
 

@@ -68,23 +68,41 @@ interface DueloPixelGameProps {
 
 **Refs del juego (inyectados desde React al wrapper):**
 
-| Refs     | Elemento             |
-| -------- | -------------------- |
+| Refs     | Elemento                                                    |
+| -------- | ----------------------------------------------------------- |
 | `canvas` | canvas 800×600 playfield (HUD y overlays se dibujan dentro) |
 
 **Estado interno del motor (module-scoped en `game.esm.js`, documentado para el wrapper):**
 
 ```typescript
-interface DueloPixelPaddle { x: number; y: number; w: number; h: number; vx: number; vy: number; }
-interface DueloPixelBall { x: number; y: number; size: number; vx: number; vy: number; speed: number; }
-interface DueloPixelCpu { targetY: number; maxSpeed: number; error: number; }
+interface DueloPixelPaddle {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  vx: number;
+  vy: number;
+}
+interface DueloPixelBall {
+  x: number;
+  y: number;
+  size: number;
+  vx: number;
+  vy: number;
+  speed: number;
+}
+interface DueloPixelCpu {
+  targetY: number;
+  maxSpeed: number;
+  error: number;
+}
 
 // gameState: 'serve' | 'playing' | 'paused' | 'gameover'
 // mode: 'cpu-endurance' | 'local-exhibition'
 // lives: 3 · duelsWon (score) · tier = duelsWon · gameOverFired: boolean
-const DUEL_POINTS = 5;        // puntos para ganar una ronda
-const STARTING_LIVES = 3;     // vidas en cpu-endurance
-const BEST_OF = 7;            // rondas del 2P exhibition (primero a 4)
+const DUEL_POINTS = 5; // puntos para ganar una ronda
+const STARTING_LIVES = 3; // vidas en cpu-endurance
+const BEST_OF = 7; // rondas del 2P exhibition (primero a 4)
 ```
 
 ## Implementation Plan
@@ -140,34 +158,34 @@ const BEST_OF = 7;            // rondas del 2P exhibition (primero a 4)
 
 ## Decisions Taken & Discarded
 
-| Decisión                                                                 | Justificación                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`duelo-pixel` abre VERSUS puntuando el modo solitario (spec-a)**       | El leaderboard de Arcade Vault modela un score por usuario y slug; el modo 1P vs CPU tiene un único dueño del score. El modo 2P local no tiene un vencedor con identidad en la sesión → se mantiene como exhibición sin submit. |
-| **Score = rondas ganadas en racha (no puntos anotados)**                 | Legible en el leaderboard ("rondas ganadas") y coherente con el `best` sembrado del catálogo (24 = 24 rondas en una racha). El marcador de la ronda (5) queda como detalle interno.                                          |
-| **Ronda primera a 5, 3 vidas, terminal por vidas**                       | Forma de duelo corta (rápida de jugar) con terminal garantizado por vidas; evita partidas infinitas y da granularidad de racha.                                                                                              |
-| **Rebote discreto de 3 zonas (estilo arcade)**                           | Mecánica fiel del Pong original y simple de implementar; la diferencia de física de rebote (continuo ∝ offset) queda como eje de spec-b.                                                                                     |
-| **Rebote rápido de CPU limitado por `error`/`maxSpeed`**                 | `tier = rondas ganadas` sube la dificultad de forma medible y beatable; el jugador controla el ritmo al ganar rondas.                                                                                                       |
-| **Refs = `{ canvas }`, HUD y overlays en-canvas**                        | Coherente con el eajede spec-a: wrapper y motor mínimos, un único elemento; el HUD DOM multi-ref es el ejede spec-b.                                                                                                         |
-| **`local-exhibition` best-of-7 sin `onGameOver`**                        | El contrato del wrapper sube el score del modo puntuado; un envío del 2P local no tendría dueño legible en el leaderboard (¿cuál de los dos jugadores es `userId`?). Overlay en-canvas resuelve la revancha.                    |
-| **`setOnGameOver` antes de `initGame`**                                  | Patrón moderno de bloque-buster/ranaria: el wrapper cablea el callback antes de arrancar el motor; evita que un game over temprano (0 rondas) se pierda.                                                                     |
-| **`setTimeout` encadenado, `dt` clamp 0.05s**                            | CLAUDE.md es autoritativo: RAF se congela en WebKit headless/CI; `dt` clamp evita que un tab-blur atraviese la paleta.                                                                                                       |
-| **Fachada `createLeaderboardActions`**                                   | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod (bounds: `int().nonnegative().max(1e9)`, acepta 0). Recipe inline quedó obsoleta.                          |
-| **Sin nueva migration ni edición de `globals.css`**                      | Fila `duelo-pixel` y cover `cover-duelo` ya existen (spec 06). `id` == string `game` de `saveScore` (sin FK).                                                                                                                |
+| Decisión                                                           | Justificación                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`duelo-pixel` abre VERSUS puntuando el modo solitario (spec-a)** | El leaderboard de Arcade Vault modela un score por usuario y slug; el modo 1P vs CPU tiene un único dueño del score. El modo 2P local no tiene un vencedor con identidad en la sesión → se mantiene como exhibición sin submit. |
+| **Score = rondas ganadas en racha (no puntos anotados)**           | Legible en el leaderboard ("rondas ganadas") y coherente con el `best` sembrado del catálogo (24 = 24 rondas en una racha). El marcador de la ronda (5) queda como detalle interno.                                             |
+| **Ronda primera a 5, 3 vidas, terminal por vidas**                 | Forma de duelo corta (rápida de jugar) con terminal garantizado por vidas; evita partidas infinitas y da granularidad de racha.                                                                                                 |
+| **Rebote discreto de 3 zonas (estilo arcade)**                     | Mecánica fiel del Pong original y simple de implementar; la diferencia de física de rebote (continuo ∝ offset) queda como eje de spec-b.                                                                                        |
+| **Rebote rápido de CPU limitado por `error`/`maxSpeed`**           | `tier = rondas ganadas` sube la dificultad de forma medible y beatable; el jugador controla el ritmo al ganar rondas.                                                                                                           |
+| **Refs = `{ canvas }`, HUD y overlays en-canvas**                  | Coherente con el eajede spec-a: wrapper y motor mínimos, un único elemento; el HUD DOM multi-ref es el ejede spec-b.                                                                                                            |
+| **`local-exhibition` best-of-7 sin `onGameOver`**                  | El contrato del wrapper sube el score del modo puntuado; un envío del 2P local no tendría dueño legible en el leaderboard (¿cuál de los dos jugadores es `userId`?). Overlay en-canvas resuelve la revancha.                    |
+| **`setOnGameOver` antes de `initGame`**                            | Patrón moderno de bloque-buster/ranaria: el wrapper cablea el callback antes de arrancar el motor; evita que un game over temprano (0 rondas) se pierda.                                                                        |
+| **`setTimeout` encadenado, `dt` clamp 0.05s**                      | CLAUDE.md es autoritativo: RAF se congela en WebKit headless/CI; `dt` clamp evita que un tab-blur atraviese la paleta.                                                                                                          |
+| **Fachada `createLeaderboardActions`**                             | La factoría compartida en `lib/games/leaderboard.ts` ya hace `mapToLeaderboardEntry`, revalidate y validación Zod (bounds: `int().nonnegative().max(1e9)`, acepta 0). Recipe inline quedó obsoleta.                             |
+| **Sin nueva migration ni edición de `globals.css`**                | Fila `duelo-pixel` y cover `cover-duelo` ya existen (spec 06). `id` == string `game` de `saveScore` (sin FK).                                                                                                                   |
 
 ## Identified Risks
 
-| Riesgo                                                             | Impacto                     | Mitigación                                                                                                       |
-| ------------------------------------------------------------------ | --------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Partida `cpu-endurance` teóricamente infinita**                  | `onGameOver` no se dispara  | Aceptado (como en asteroids/caida: el jugador termina perdiendo). `?e2e=1` fuerza el terminal en tests.            |
-| **Tuneling de pelota a velocidad alta**                            | Atraviesa la paleta         | `dt` clamp 0.05s + `MAX_BALL_SPEED=560` + pelota de 14 px; suficiente para 60 fps nominales.                      |
-| **CPU demasiado fácil o imposible**                                | Leaderboard plano / frustr. | `error`/`maxSpeed` escalan por `tier` con clamps (error ≥ 10, speed ≤ 520); balance ajustable en spec futura.     |
-| **3 zonas de rebote injustas en el borde**                         | Rebotes impredecibles       | Zonas discretas con mapeo ángulo→versor y `speed` conservado; no hay ángulos casi horizontales.                   |
-| **2P exhibition sin terminal claro**                               | Overlay sin salida          | Best-of-7 finito → overlay vencedor + `R` reinicia; selector de modo en el wrapper cambia a `cpu-endurance`.      |
-| **Game over spam en el terminal**                                  | Score duplicado             | Guard `gameOverFired` module-scoped; `onGameOver` fire una vez.                                                   |
-| **Loop timer colgado tras unmount**                                | Memory leak                 | `timerId` module-scoped; `destroy()` idempotente cancela + desadjunta `keydown`/`keyup`.                          |
-| **Mix-up de teclas entre modos**                                   | Control cruzado             | `cpu-endurance` acepta W/S y flechas; `local-exhibition` reparto estricto por jugador; `detachInput` entre modos.  |
-| **Catálogo `id` ≠ score `game` string**                            | Leaderboard devuelve vacío  | `saveScore` con `game: 'duelo-pixel'` literal, idéntico al id del catálogo.                                       |
-| **`score=0` en terminal temprano**                                 | Racha de 0 subida           | Schema `nonnegative()` acepta 0; es un score legítimo ("perdí mi primer duelo"). No bloquea.                      |
+| Riesgo                                            | Impacto                     | Mitigación                                                                                                        |
+| ------------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Partida `cpu-endurance` teóricamente infinita** | `onGameOver` no se dispara  | Aceptado (como en asteroids/caida: el jugador termina perdiendo). `?e2e=1` fuerza el terminal en tests.           |
+| **Tuneling de pelota a velocidad alta**           | Atraviesa la paleta         | `dt` clamp 0.05s + `MAX_BALL_SPEED=560` + pelota de 14 px; suficiente para 60 fps nominales.                      |
+| **CPU demasiado fácil o imposible**               | Leaderboard plano / frustr. | `error`/`maxSpeed` escalan por `tier` con clamps (error ≥ 10, speed ≤ 520); balance ajustable en spec futura.     |
+| **3 zonas de rebote injustas en el borde**        | Rebotes impredecibles       | Zonas discretas con mapeo ángulo→versor y `speed` conservado; no hay ángulos casi horizontales.                   |
+| **2P exhibition sin terminal claro**              | Overlay sin salida          | Best-of-7 finito → overlay vencedor + `R` reinicia; selector de modo en el wrapper cambia a `cpu-endurance`.      |
+| **Game over spam en el terminal**                 | Score duplicado             | Guard `gameOverFired` module-scoped; `onGameOver` fire una vez.                                                   |
+| **Loop timer colgado tras unmount**               | Memory leak                 | `timerId` module-scoped; `destroy()` idempotente cancela + desadjunta `keydown`/`keyup`.                          |
+| **Mix-up de teclas entre modos**                  | Control cruzado             | `cpu-endurance` acepta W/S y flechas; `local-exhibition` reparto estricto por jugador; `detachInput` entre modos. |
+| **Catálogo `id` ≠ score `game` string**           | Leaderboard devuelve vacío  | `saveScore` con `game: 'duelo-pixel'` literal, idéntico al id del catálogo.                                       |
+| **`score=0` en terminal temprano**                | Racha de 0 subida           | Schema `nonnegative()` acepta 0; es un score legítimo ("perdí mi primer duelo"). No bloquea.                      |
 
 ## What is **not** in this spec
 

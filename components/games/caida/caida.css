@@ -455,7 +455,7 @@
 
 /* Scanlines CRT del skin retro; el neon añade un halo sutil al canvas. */
 .caida-board-wrap::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: 4;

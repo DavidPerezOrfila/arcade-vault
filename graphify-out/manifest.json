@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "app/data/games.ts": {
-    "mtime": 1788209994.268435,
-    "ast_hash": "7d5d8eea9df236361128d09a6152bc11",
+    "mtime": 1788213293.2437577,
+    "ast_hash": "4f8d1d504dba93faf05b8bf7659cbf4a",
     "semantic_hash": ""
   },
   "app/data/players.ts": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "eslint.config.mjs": {
-    "mtime": 1786988485.461052,
-    "ast_hash": "597025393d7be06b0d7f720ab85f5d99",
+    "mtime": 1788212399.5253136,
+    "ast_hash": "68d794fecf56bd59cf25846b4b8cba16",
     "semantic_hash": ""
   },
   "package.json": {
@@ -340,8 +340,8 @@
     "semantic_hash": ""
   },
   "e2e/about.spec.ts": {
-    "mtime": 1788209994.2990763,
-    "ast_hash": "d246160afe0ff69b59a6ec9f03ae5c3d",
+    "mtime": 1788213295.1750333,
+    "ast_hash": "e648dccda9c235ae0624de4ce4b0bed7",
     "semantic_hash": ""
   },
   ".claude/hooks/accumulate-edited.ps1": {
@@ -545,8 +545,8 @@
     "semantic_hash": ""
   },
   "app/_home/RecentActivity.tsx": {
-    "mtime": 1788209994.2664378,
-    "ast_hash": "1962c5f01de09814d2bd06f2b666cf35",
+    "mtime": 1788213292.5274594,
+    "ast_hash": "4a4d4c0cd25fc621abbe4f49c25640ea",
     "semantic_hash": ""
   },
   "app/_home/TopPlayersToday.tsx": {
@@ -600,13 +600,13 @@
     "semantic_hash": ""
   },
   "app/player/[id]/PlayerClient.tsx": {
-    "mtime": 1788209994.2749414,
-    "ast_hash": "622d368d727bce82671436a99b786675",
+    "mtime": 1788213294.1575727,
+    "ast_hash": "7b8e36536f43dba3bdb7d49051475ef2",
     "semantic_hash": ""
   },
   "app/salon/SalonClient.tsx": {
-    "mtime": 1788209994.2769566,
-    "ast_hash": "2bf556cb1eafe33df033eae7636c5517",
+    "mtime": 1788213294.2382023,
+    "ast_hash": "2bbad5d46cf68b4a0e81f6472e9eb245",
     "semantic_hash": ""
   },
   "components/games/asteroids/AsteroidsGame.tsx": {
@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "lib/games/asteroids/game.esm.js": {
-    "mtime": 1788209994.3294177,
-    "ast_hash": "a369405f519e67e957a64f8926c0b6fe",
+    "mtime": 1788213295.4066885,
+    "ast_hash": "773626f65c6bca4a6d630ebb5022dc90",
     "semantic_hash": ""
   },
   "lib/games/asteroids/types.ts": {
@@ -625,8 +625,8 @@
     "semantic_hash": ""
   },
   "lib/supabase/admin.ts": {
-    "mtime": 1788209994.3409197,
-    "ast_hash": "08fb4eb0763a19769ae3260b7904aa95",
+    "mtime": 1788213295.9773078,
+    "ast_hash": "b9b8b47c34e40eaa4392ea4d88696f53",
     "semantic_hash": ""
   },
   "lib/supabase/client.ts": {
@@ -635,8 +635,8 @@
     "semantic_hash": ""
   },
   "lib/supabase/server.ts": {
-    "mtime": 1788209994.3429747,
-    "ast_hash": "c4a2dc4a160c691df94f04dadd10bd82",
+    "mtime": 1788213296.0173473,
+    "ast_hash": "f586806f51faec42a9e64d66a2b8eb69",
     "semantic_hash": ""
   },
   "lib/supabase/types.ts": {
@@ -665,8 +665,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/salon.spec.ts": {
-    "mtime": 1788210389.115844,
-    "ast_hash": "aa5dbf2a7b41bb0f5bf44c7987763bb0",
+    "mtime": 1788213300.960808,
+    "ast_hash": "8cdef07a8d2938634e9de1d402de0d23",
     "semantic_hash": ""
   },
   ".agents/skills/cavecrew/README.md": {
@@ -835,8 +835,8 @@
     "semantic_hash": ""
   },
   "lib/games/caida/game.esm.js": {
-    "mtime": 1788209994.3344183,
-    "ast_hash": "597ce9fb9539beefa4b792fe95c5fb9f",
+    "mtime": 1788213295.5866618,
+    "ast_hash": "20242fe30ddff9ea5766e0709f2bb8bc",
     "semantic_hash": ""
   },
   "lib/games/caida/types.ts": {
@@ -845,8 +845,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/caida.spec.ts": {
-    "mtime": 1788210389.1103363,
-    "ast_hash": "594c455a408411ae1167d3cad9ff9ca1",
+    "mtime": 1788213300.8120935,
+    "ast_hash": "43ab1c8664ee1fa45c399c73f8d0ca13",
     "semantic_hash": ""
   },
   "specs/07-tetris-caida.md": {
@@ -920,8 +920,8 @@
     "semantic_hash": ""
   },
   "components/games/useArcadeGame.ts": {
-    "mtime": 1788209994.2950761,
-    "ast_hash": "1131d04780f7dc8b0720eae26696d117",
+    "mtime": 1788213295.0521493,
+    "ast_hash": "2350ae021dc37f2ba2214b3d210352ea",
     "semantic_hash": ""
   },
   "lib/env.ts": {
@@ -1020,13 +1020,13 @@
     "semantic_hash": ""
   },
   "components/skin/SkinProvider.tsx": {
-    "mtime": 1788209994.2970746,
-    "ast_hash": "138543412234378385131c3282f0c87e",
+    "mtime": 1788213295.1293533,
+    "ast_hash": "ef94ae3996133104a6cf8ed0322540a2",
     "semantic_hash": ""
   },
   "lib/games/skins.ts": {
-    "mtime": 1788209994.3394153,
-    "ast_hash": "0d5c373ec48bba8ba0515589672a8b19",
+    "mtime": 1788213295.9356844,
+    "ast_hash": "8a8b0fca5259c9092ce269c651d3fb24",
     "semantic_hash": ""
   },
   ".claude/agents/game-jam.md": {
@@ -1050,8 +1050,8 @@
     "semantic_hash": ""
   },
   "resources/skins-todo.md": {
-    "mtime": 1788209994.3439815,
-    "ast_hash": "8c7eb200c7a0612332d68028bfd6262e",
+    "mtime": 1788213296.2709532,
+    "ast_hash": "f6eb7fa9937166882cbf1c17783eef7a",
     "semantic_hash": ""
   },
   "components/skin/SkinSelect.tsx": {
@@ -1080,8 +1080,8 @@
     "semantic_hash": ""
   },
   "lib/games/bloque-buster/game.esm.js": {
-    "mtime": 1788209994.332417,
-    "ast_hash": "df9f46ad331e824b7740f0b5165de189",
+    "mtime": 1788213295.4994192,
+    "ast_hash": "ebd3adaebdb2e4fa048a21416fb23002",
     "semantic_hash": ""
   },
   "lib/games/bloque-buster/types.ts": {
@@ -1090,23 +1090,23 @@
     "semantic_hash": ""
   },
   "tests/e2e/bloque-buster.spec.ts": {
-    "mtime": 1788210389.1093276,
-    "ast_hash": "0c3e37298514584aa881e3dca6f4e5eb",
+    "mtime": 1788213300.7749414,
+    "ast_hash": "b544622b897fe6fe9aa8d18ffef8498a",
     "semantic_hash": ""
   },
   "SPEC.md": {
-    "mtime": 1788209994.264434,
-    "ast_hash": "eac25397d7c058f226f7798ccd797115",
+    "mtime": 1788213298.3228388,
+    "ast_hash": "93e379f5e542b9f934b6ac10630bfa4c",
     "semantic_hash": ""
   },
   "specs/game-jam/bloque-buster/spec-a.md": {
-    "mtime": 1788210389.1018212,
-    "ast_hash": "353e40ea5f34f2112bf448829b92dbb3",
+    "mtime": 1788213298.90281,
+    "ast_hash": "db81c19617fdc95ddbe6096cea9660ee",
     "semantic_hash": ""
   },
   "specs/game-jam/bloque-buster/spec-b.md": {
-    "mtime": 1788210389.102821,
-    "ast_hash": "6775bb4488290e5cf2e357285871b108",
+    "mtime": 1788213298.9594488,
+    "ast_hash": "c2198f1312e9b28cfc971a875ee4679d",
     "semantic_hash": ""
   },
   "public/arkanoid-assets/spritesheet-breakout.png": {
@@ -1125,13 +1125,13 @@
     "semantic_hash": ""
   },
   "components/games/TouchControls.tsx": {
-    "mtime": 1788209994.2789576,
-    "ast_hash": "13a30e6fb71dd0a93c63e01f6fc8b5c2",
+    "mtime": 1788213295.0236335,
+    "ast_hash": "a57febe79ac331918990d916995ec802",
     "semantic_hash": ""
   },
   "tests/e2e/mobile-touch.spec.ts": {
-    "mtime": 1788210389.1123362,
-    "ast_hash": "02e3d770f022e5903fe534d342c70274",
+    "mtime": 1788213300.877173,
+    "ast_hash": "765f81b6c5dcea4a48600eb8802457d6",
     "semantic_hash": ""
   },
   ".scratch/refactor-skin-layout-issue.md": {
@@ -1155,8 +1155,8 @@
     "semantic_hash": ""
   },
   "specs/09-arcade-mobile-layout.md": {
-    "mtime": 1788210389.099256,
-    "ast_hash": "1935366c1fcfb916c179989ecb9f9009",
+    "mtime": 1788213298.761577,
+    "ast_hash": "bf66fe3b14b42e2c52d827a703855401",
     "semantic_hash": ""
   },
   "specs/game-jam/frogger/01-frogger-core.md": {
@@ -1170,28 +1170,28 @@
     "semantic_hash": ""
   },
   "app/games/ranaria/actions.ts": {
-    "mtime": 1788209994.270435,
-    "ast_hash": "e5442a7972128099cd4095185288b430",
+    "mtime": 1788213293.674702,
+    "ast_hash": "edad977198b622c83a71c0487b8ed1ce",
     "semantic_hash": ""
   },
   "app/games/ranaria/page.tsx": {
-    "mtime": 1788209994.2714374,
-    "ast_hash": "3f162087d723fd1ffa1165ed9770ba65",
+    "mtime": 1788213293.705379,
+    "ast_hash": "816cf8a872500f76c4890c28058ec639",
     "semantic_hash": ""
   },
   "components/games/ranaria/RanariaGame.tsx": {
-    "mtime": 1788209994.2894702,
-    "ast_hash": "b74d9aa524455d84750bcf8fff4638e2",
+    "mtime": 1788213294.8462813,
+    "ast_hash": "1d8db85e1879f9767cfaf0520a48878d",
     "semantic_hash": ""
   },
   "lib/games/ranaria/game.esm.js": {
-    "mtime": 1788209994.3364177,
-    "ast_hash": "fc4d6eb97780fdb0e90d65dccb672732",
+    "mtime": 1788213295.8082924,
+    "ast_hash": "fccfe347b47783dbd411321ca0bc3a0b",
     "semantic_hash": ""
   },
   "lib/games/ranaria/types.ts": {
-    "mtime": 1788209994.3384154,
-    "ast_hash": "712ca53cf1df150458e1cd8b7192ad15",
+    "mtime": 1788213295.8329544,
+    "ast_hash": "71ef26d06ef29c1799df8cfdf7055c98",
     "semantic_hash": ""
   },
   ".claude/agents/optimize-arcade-game.md": {
@@ -1220,8 +1220,8 @@
     "semantic_hash": ""
   },
   "app/auth/OAuthButtons.tsx": {
-    "mtime": 1788210226.3502772,
-    "ast_hash": "89bdcb6478ad27201dcb50f6af6467da",
+    "mtime": 1788210653.4701405,
+    "ast_hash": "7817365a3c96a58dfa95e72f0f219c88",
     "semantic_hash": ""
   },
   "app/auth/actions.ts": {
@@ -1255,8 +1255,8 @@
     "semantic_hash": ""
   },
   "components/nav-client.tsx": {
-    "mtime": 1788210226.3532772,
-    "ast_hash": "ec990a999db5499d672dfd937347b584",
+    "mtime": 1788210653.5424824,
+    "ast_hash": "6be8a5d48e223a0792d60f39db2ee3c5",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -1275,8 +1275,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/ranaria.spec.ts": {
-    "mtime": 1788210389.1143367,
-    "ast_hash": "c314dfa0fa645bdf7360b42dfe2c6a08",
+    "mtime": 1788213300.9357743,
+    "ast_hash": "ba72ca4e23fedb199af84f069485d0db",
     "semantic_hash": ""
   },
   "app/api/leaderboard/duelo-pixel/route.ts": {
@@ -1295,8 +1295,8 @@
     "semantic_hash": ""
   },
   "components/games/duelo-pixel/DueloPixelGame.tsx": {
-    "mtime": 1788209994.2864623,
-    "ast_hash": "15b6670688648fa1da490e9f5760d2c6",
+    "mtime": 1788213294.7026021,
+    "ast_hash": "37cd965d2218d177192b85067878b281",
     "semantic_hash": ""
   },
   "lib/games/duelo-pixel/game.esm.js": {
@@ -1315,13 +1315,13 @@
     "semantic_hash": ""
   },
   "specs/game-jam/duelo-pixel/spec-duelo-pixel-a.md": {
-    "mtime": 1788210389.1048212,
-    "ast_hash": "fffc0c8f74371975dbb76c5cbac92566",
+    "mtime": 1788213299.0180697,
+    "ast_hash": "0445414a8a8dcdb4c0c24e0db363ac43",
     "semantic_hash": ""
   },
   "specs/game-jam/duelo-pixel/spec-duelo-pixel-b.md": {
-    "mtime": 1788210389.1068196,
-    "ast_hash": "a9c7ebedf853ef28edd71055a2d5d645",
+    "mtime": 1788213299.090937,
+    "ast_hash": "737fea3c4b98b9b9593be41d763a45a3",
     "semantic_hash": ""
   },
   ".agents/skills/playwright-best-practices/SKILL.md": {

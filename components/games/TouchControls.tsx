@@ -261,7 +261,7 @@ export function TouchControls({
 
   return (
     <div
-      className={`touch-controls${visible ? '' : ' touch-controls--hidden'}`}
+      className={`touch-controls${visible ? '' : 'touch-controls--hidden'}`}
       aria-label='Controles táctiles'
     >
       <div
@@ -295,7 +295,11 @@ export function TouchControls({
         </button>
       ) : null}
 
-      <div className='touch-actions' role='group' aria-label='Botones de acción'>
+      <div
+        className='touch-actions'
+        role='group'
+        aria-label='Botones de acción'
+      >
         {buttons.map((button) => (
           <button
             key={button.label}

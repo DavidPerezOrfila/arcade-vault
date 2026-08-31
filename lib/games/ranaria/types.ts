@@ -1,4 +1,4 @@
-import type { LeaderboardEntry } from "@/lib/games/types";
+import type { LeaderboardEntry } from '@/lib/games/types';
 
 // Refs del juego — elementos inyectados desde React al wrapper (sin
 // document.getElementById top-level).
