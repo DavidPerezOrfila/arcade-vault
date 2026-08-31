@@ -5,14 +5,14 @@ El selector global vive en `components/nav.tsx` y cada juego integra un
 `<SkinSelect>` local; la persistencia usa `localStorage` con clave
 `arcade-vault-skin` y el estado se refleja en `<html data-skin="...">`.
 
-| Juego        | clasico | neon | retro | dark-safe | Estado    |
-| ------------ | ------- | ---- | ----- | --------- | --------- |
-| `asteroids`  | ✅       | ✅    | ✅     | ✅         | Completo  |
-| `caida`      | ✅       | ✅    | ✅     | ✅         | Completo  |
-| `serpentina` | ✅       | ✅    | ✅     | ✅         | Completo  |
-| `bloque-buster` | ✅    | ✅    | ✅     | ✅         | Completo  |
-| `ranaria`    | ✅       | ✅    | ✅     | ✅         | Completo  |
-| `duelo-pixel` | ✅      | ✅    | ✅     | ✅         | Completo  |
+| Juego           | clasico | neon | retro | dark-safe | Estado   |
+| --------------- | ------- | ---- | ----- | --------- | -------- |
+| `asteroids`     | ✅      | ✅   | ✅    | ✅        | Completo |
+| `caida`         | ✅      | ✅   | ✅    | ✅        | Completo |
+| `serpentina`    | ✅      | ✅   | ✅    | ✅        | Completo |
+| `bloque-buster` | ✅      | ✅   | ✅    | ✅        | Completo |
+| `ranaria`       | ✅      | ✅   | ✅    | ✅        | Completo |
+| `duelo-pixel`   | ✅      | ✅   | ✅    | ✅        | Completo |
 
 ## Notas
 

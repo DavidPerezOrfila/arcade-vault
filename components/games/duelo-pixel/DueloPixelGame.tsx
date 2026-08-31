@@ -103,7 +103,7 @@ export function DueloPixelGame({
                 key={m.id}
                 type='button'
                 className={`duelo-pixel-mode-button${
-                  mode === m.id ? ' is-active' : ''
+                  mode === m.id ? 'is-active' : ''
                 }`}
                 aria-pressed={mode === m.id}
                 onClick={() => setMode(m.id)}

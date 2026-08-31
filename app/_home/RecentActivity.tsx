@@ -33,7 +33,7 @@ export default async function RecentActivity() {
 
   // Resolve game labels in parallel
   const rowsWithLabels = await Promise.all(
-    scores.map(async(r) => ({
+    scores.map(async (r) => ({
       ...r,
       gameLabel: await gameLabel(r.game),
     }))

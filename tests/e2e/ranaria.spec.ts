@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('RANARIA Game', () => {
-  test.beforeEach(async({ page }) => {
+  test.beforeEach(async ({ page }) => {
     await page.goto('/games/ranaria?e2e=1');
     // Wait for the board canvas to be ready
     await page.waitForSelector('.ranaria-board-wrap canvas', {
@@ -11,7 +11,7 @@ test.describe('RANARIA Game', () => {
     await page.waitForTimeout(1000);
   });
 
-  test('loads without errors', async({ page }) => {
+  test('loads without errors', async ({ page }) => {
     // Check page title
     await expect(page).toHaveTitle(/RANARIA \| Arcade Vault/);
 
@@ -39,7 +39,7 @@ test.describe('RANARIA Game', () => {
     ).toBe(0);
   });
 
-  test('shows game controls sidebar', async({ page }) => {
+  test('shows game controls sidebar', async ({ page }) => {
     // Check for controls section
     await expect(page.locator('text=CONTROLES')).toBeVisible();
     await expect(page.locator('text=↑ ↓ ← →')).toBeVisible(); // Arrows
@@ -53,7 +53,7 @@ test.describe('RANARIA Game', () => {
     await expect(page.locator('text=+10')).toBeVisible();
   });
 
-  test('game is playable - can move with arrows and WASD', async({ page }) => {
+  test('game is playable - can move with arrows and WASD', async ({ page }) => {
     const board = page.locator('.ranaria-board-wrap canvas');
 
     // Arrows
@@ -87,7 +87,7 @@ test.describe('RANARIA Game', () => {
     await expect(board).toBeVisible();
   });
 
-  test('game over shows auth prompt for unauthenticated user', async({
+  test('game over shows auth prompt for unauthenticated user', async ({
     page,
   }) => {
     // The game over is forced via the test hook (?e2e=1). As an unauthenticated
@@ -111,7 +111,7 @@ test.describe('RANARIA Game', () => {
     );
   });
 
-  test('leaderboard displays', async({ page }) => {
+  test('leaderboard displays', async ({ page }) => {
     // Check leaderboard HUD is visible
     const leaderboard = page.locator('.ranaria-leaderboard');
     await expect(leaderboard).toBeVisible();
@@ -122,7 +122,7 @@ test.describe('RANARIA Game', () => {
     );
   });
 
-  test('responsive canvas scales correctly', async({ page }) => {
+  test('responsive canvas scales correctly', async ({ page }) => {
     const board = page.locator('.ranaria-board-wrap canvas');
 
     // Get initial size on desktop
@@ -143,7 +143,7 @@ test.describe('RANARIA Game', () => {
     expect(aspectRatio).toBeCloseTo(8 / 7, 1);
   });
 
-  test('el selector de skin comparte columna con el panel', async({
+  test('el selector de skin comparte columna con el panel', async ({
     page,
   }) => {
     // El borde derecho de la barra de skin debe coincidir con el borde
@@ -159,7 +159,7 @@ test.describe('RANARIA Game', () => {
     expect(Math.abs(skinRight - panelRight)).toBeLessThanOrEqual(2);
   });
 
-  test('SEO metadata present', async({ page }) => {
+  test('SEO metadata present', async ({ page }) => {
     // Check title
     await expect(page).toHaveTitle(/RANARIA \| Arcade Vault/);
 

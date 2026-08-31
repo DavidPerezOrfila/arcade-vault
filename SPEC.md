@@ -17,10 +17,10 @@ desktop (teclado/ratón). Un mismo layout debe validarse en los tres.
 
 ## Capability Map (aprobado 2026-08-17)
 
-| ID | Responsabilidad | Depende de |
-|---|---|---|
-| `responsive-ui` | Adaptar shell, navegación y todas las pantallas a viewport móvil/tablet/desktop | — |
-| `mobile-game-input` | Controles táctiles, orientación adaptativa y targets accesibles en cada juego | `responsive-ui` |
+| ID                  | Responsabilidad                                                                 | Depende de      |
+| ------------------- | ------------------------------------------------------------------------------- | --------------- |
+| `responsive-ui`     | Adaptar shell, navegación y todas las pantallas a viewport móvil/tablet/desktop | —               |
+| `mobile-game-input` | Controles táctiles, orientación adaptativa y targets accesibles en cada juego   | `responsive-ui` |
 
 Build order: `responsive-ui` → `mobile-game-input`.
 
@@ -65,7 +65,7 @@ hardcodeado.
 ```ts
 // components/games/TouchControls.tsx — overlay de botones táctiles
 interface TouchControlsProps {
-  classPrefix: string;          // convención {prefix}-skin-select, igual que AuthPrompt
+  classPrefix: string; // convención {prefix}-skin-select, igual que AuthPrompt
   onDown(action: string): void;
   onUp(action: string): void;
 }

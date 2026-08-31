@@ -58,7 +58,7 @@ export function useArcadeGame({
     };
   }, [loadModule]);
 
-  const refreshLeaderboard = useCallback(async() => {
+  const refreshLeaderboard = useCallback(async () => {
     const response = await fetch(apiUrl);
     if (response.ok) {
       const data = (await response.json()) as LeaderboardEntry[];
@@ -67,7 +67,7 @@ export function useArcadeGame({
   }, [apiUrl]);
 
   const handleGameOver = useCallback(
-    async(score: number) => {
+    async (score: number) => {
       const result = await submitScore(score);
       if (!result.ok) {
         setShowAuthPrompt(true);

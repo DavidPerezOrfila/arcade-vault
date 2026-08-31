@@ -1,6 +1,5 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import { createSupabaseBrowserClient } from '@/lib/supabase/client';
 
 const PROVIDERS = [
@@ -9,9 +8,7 @@ const PROVIDERS = [
 ] as const;
 
 export default function OAuthButtons() {
-  const router = useRouter();
-
-  const handleOAuth = async(provider: (typeof PROVIDERS)[number]['id']) => {
+  const handleOAuth = async (provider: (typeof PROVIDERS)[number]['id']) => {
     const supabase = createSupabaseBrowserClient();
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider,
@@ -20,7 +17,9 @@ export default function OAuthButtons() {
       },
     });
     if (error) return;
-    if (data.url) router.push(data.url);
+    // router.push no navega a URLs externas (silencioso); el authorize del
+    // provider siempre es otro origen.
+    if (data.url) window.location.assign(data.url);
   };
 
   return (

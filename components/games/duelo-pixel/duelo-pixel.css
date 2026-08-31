@@ -12,7 +12,7 @@
 }
 
 .duelo-pixel-page-title {
-  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
   color: var(--cyan);
@@ -67,7 +67,7 @@
 }
 
 .duelo-pixel-sidebar-title {
-  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 0.875rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -142,7 +142,7 @@
   background: var(--bg-2);
   border: 1px solid var(--line-2);
   border-radius: 0.5rem;
-  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 0.7rem;
   font-weight: 700;
   color: var(--ink-dim);
@@ -193,7 +193,7 @@
   background: var(--bg-2);
   border: 1px solid var(--line-2);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 0.7rem;
   color: var(--ink-dim);
   text-transform: uppercase;
@@ -260,7 +260,7 @@
 
 /* Scanlines CRT del skin retro; el neon añade un halo sutil al canvas. */
 .duelo-pixel-board-wrap::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: 4;
@@ -304,7 +304,7 @@ html[data-skin='neon'] .duelo-pixel-board-wrap canvas {
   border-radius: 0.75rem;
   padding: 0.75rem 1rem;
   color: var(--ink);
-  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 0.75rem;
 }
 
@@ -420,7 +420,7 @@ html[data-skin='neon'] .duelo-pixel-board-wrap canvas {
   justify-content: center;
   background: var(--bg);
   color: var(--ink);
-  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 1.5rem;
   z-index: 5;
 }

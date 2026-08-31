@@ -39,7 +39,7 @@ export default function PlayerClient({ game }: PlayerClientProps) {
     setSaved(false);
   };
   const handleSave = () => {
-    startSaveTransition(async() => {
+    startSaveTransition(async () => {
       const fd = new FormData();
       fd.set('game', game.id);
       fd.set('score', String(score));

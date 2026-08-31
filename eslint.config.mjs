@@ -85,7 +85,12 @@ export default [
       'semi-spacing': 'error',
       'keyword-spacing': 'error',
       'space-before-blocks': 'error',
-      'space-before-function-paren': ['error', 'never'],
+      // Debe coincidir con el estilo de Prettier: funciones anónimas y
+      // flechas async con espacio, con nombre sin espacio.
+      'space-before-function-paren': [
+        'error',
+        { anonymous: 'always', named: 'never', asyncArrow: 'always' },
+      ],
       'space-in-parens': 'error',
       'space-infix-ops': 'error',
       'space-unary-ops': 'error',

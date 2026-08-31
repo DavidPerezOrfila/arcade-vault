@@ -74,6 +74,7 @@ Quitar `pointer-events: none` del padre y `pointer-events: auto` de `.touch-dpad
 ## Paso 2 — Wrapper viewport mobile en cada page.tsx
 
 **Archivos (4):**
+
 - `app/games/asteroids/page.tsx`
 - `app/games/bloque-buster/page.tsx`
 - `app/games/caida/page.tsx`
@@ -94,19 +95,19 @@ Quitar `pointer-events: none` del padre y `pointer-events: auto` de `.touch-dpad
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-height: 100dvh;          /* modern browsers */
+  min-height: 100dvh; /* modern browsers */
 }
 
 @media (max-width: 640px) {
   .game-viewport {
     height: 100vh;
     height: 100dvh;
-    overflow: hidden;           /* bloquear scroll del viewport */
+    overflow: hidden; /* bloquear scroll del viewport */
     padding-top: 0;
     padding-bottom: 0;
   }
   .game-viewport > header {
-    flex-shrink: 0;             /* header no encoge */
+    flex-shrink: 0; /* header no encoge */
   }
 }
 ```
@@ -114,12 +115,14 @@ Quitar `pointer-events: none` del padre y `pointer-events: auto` de `.touch-dpad
 ## Paso 3 — Canvas container: altura disponible + aspect-ratio
 
 **Archivos CSS (4 juegos):**
+
 - `components/games/asteroids/asteroids.css`
 - `components/games/bloque-buster/bloque-buster.css`
 - `components/games/caida/caida.css`
 - `components/games/serpentina/serpentina.css`
 
 Añadir al game-layout (el grid/flex padre del canvas + sidebar):
+
 ```css
 @media (max-width: 640px) {
   .{slug}-game-layout {
@@ -131,6 +134,7 @@ Añadir al game-layout (el grid/flex padre del canvas + sidebar):
 ```
 
 Añadir al canvas container (el div con `aspect-ratio`):
+
 ```css
 @media (max-width: 640px) {
   .{slug}-game-container,       /* asteroids, bloque-buster */
@@ -144,6 +148,7 @@ Añadir al canvas container (el div con `aspect-ratio`):
 ```
 
 **Sizing por juego:**
+
 - **Asteroids/Bloque Buster (4:3):** height=100% del game-layout (~550px en 844dvh). `aspect-ratio: 4/3` → width ~733px, limitado por max-width 800px → 733×550. Viewport 390px: width=100% domina → 390×293. ✓
 - **Serpentina (1:1):** height=100% → 550×550. Viewport 390px → 390×390. ✓
 - **Caida (1:2):** height=100% → 550px. `aspect-ratio: 1/2` → width=1100px, limitado por max-width 300px → 300×600. max-height 644px permite 600px. ✓
@@ -157,11 +162,13 @@ En la media query `@media (max-width: 640px)` de cada juego, el sidebar ya tiene
 **Branch:** `feat/arcade-mobile-layout` desde `main`
 
 **Tests a actualizar (`tests/e2e/mobile-touch.spec.ts`):**
+
 - Añadir aserción: controles no se solapan con canvas (bounding box: `controls.top >= canvas.bottom`)
 - Verificar `.game-viewport` existe en mobile
 - Añadir test de paisaje (375×667 landscape) — controles al lado del canvas
 
 **Tests que no deben romperse:**
+
 - Layout de skins (`*skin*.spec.ts`)
 - Touch (`mobile-touch.spec.ts` — adaptar, no eliminar)
 - Leaderboard

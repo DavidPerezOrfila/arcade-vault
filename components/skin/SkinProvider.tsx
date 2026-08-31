@@ -5,14 +5,14 @@ import {
   useCallback,
   useContext,
   useSyncExternalStore,
-  type ReactNode
+  type ReactNode,
 } from 'react';
 import {
   DEFAULT_SKIN,
   SKIN_STORAGE_KEY,
   isSkinId,
   readStoredSkin,
-  type SkinId
+  type SkinId,
 } from '@/lib/games/skins';
 
 type Listener = () => void;
