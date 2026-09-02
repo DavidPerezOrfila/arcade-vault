@@ -232,5 +232,7 @@
   "230": "@playwright/test",
   "231": "typescript",
   "232": "test-suite-structure.md",
-  "233": "oauth.spec.ts"
+  "233": "oauth.spec.ts",
+  "234": "prettier",
+  "235": "excluir-defender.ps1"
 }
