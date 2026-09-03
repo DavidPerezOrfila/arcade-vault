@@ -605,7 +605,7 @@
     "semantic_hash": ""
   },
   "app/salon/SalonClient.tsx": {
-    "mtime": 1788470622.3832562,
+    "mtime": 1788471933.2672188,
     "ast_hash": "56667113ae5ff73f19a9b52d18c522e9",
     "semantic_hash": ""
   },
@@ -645,7 +645,7 @@
     "semantic_hash": ""
   },
   "next.config.mjs": {
-    "mtime": 1788377641.302961,
+    "mtime": 1788471933.2902312,
     "ast_hash": "fd846a19ebf0318956d7ba9da32227dc",
     "semantic_hash": ""
   },
@@ -1260,7 +1260,7 @@
     "semantic_hash": ""
   },
   "tests/e2e/auth.spec.ts": {
-    "mtime": 1788470625.6185179,
+    "mtime": 1788471933.2972355,
     "ast_hash": "568dbcef01f365d257e63d1f77080119",
     "semantic_hash": ""
   },
@@ -2805,17 +2805,17 @@
     "semantic_hash": ""
   },
   "resources/security/security-checklist.md": {
-    "mtime": 1788288027.6726513,
+    "mtime": 1788471933.2922373,
     "ast_hash": "4c1a8c4bcd690847c7012ba0e6e0586f",
     "semantic_hash": ""
   },
   "specs/11-security-hardening.md": {
-    "mtime": 1788471321.9662669,
+    "mtime": 1788471933.2942376,
     "ast_hash": "554385b4dfb403618bc90011afc6b44f",
     "semantic_hash": ""
   },
   "supabase/migrations/20260902000001_security_hardening.sql": {
-    "mtime": 1788378109.9999223,
+    "mtime": 1788471933.295236,
     "ast_hash": "b128fdafec4fe21f090b96b21c3afb58",
     "semantic_hash": ""
   }
