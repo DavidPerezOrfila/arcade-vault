@@ -1,16 +1,16 @@
-# Graph Report - 05-arcade-vault  (2026-09-01)
+# Graph Report - 05-arcade-vault  (2026-09-03)
 
 ## Corpus Check
-- 542 files · ~471,169 words
+- 544 files · ~467,033 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3261 nodes · 4000 edges · 234 communities (188 shown, 46 thin omitted)
+- 3264 nodes · 4002 edges · 233 communities (182 shown, 51 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 54 edges (avg confidence: 0.64)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b2d400f3`
+- Built from commit: `51150cee`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -82,6 +82,7 @@
 - INDEX.md
 - caveman-compress/README.md
 - biblioteca.jsx
+- SkinProvider.tsx
 - leaderboard.ts
 - AsteroidsGame.tsx
 - about/actions.md
@@ -176,14 +177,15 @@
 - .agents/skills/consult-graph/SKILL.md
 - .claude/skills/consult-graph/SKILL.md
 - Drag and Drop Testing
+- AuthForm.tsx
 - Organizing Reusable Test Code
 - Patterns
 - Choosing Test Types: E2E, Component, or API
 - SerpentinaGame.tsx
 - CaidaGame.tsx
+- server.ts
 - Section Definitions
 - Cookies
-- actions.ts
 - Session Storage
 - Supabase Postgres Best Practices
 - package.json
@@ -225,6 +227,7 @@
 - _template.md
 - @playwright/test
 - typescript
+- prettier
 
 ## God Nodes (most connected - your core abstractions)
 1. `createSupabaseServerClient()` - 22 edges
@@ -259,7 +262,7 @@
 - **Spec Driven Design Workflow (Klerith/fernando-skills)** — claude_specdrivendesign, readme_fernandoskillsreference, specs_02_home_page_homepagespec, specs_03_about_page_resend_aboutpageresendspec [INFERRED 0.90]
 - **Spec-Driven Development Workflow** — _agents_skills_spec_skill_document, _agents_skills_spec_impl_skill_document, _agents_skills_spec_template_document, spec_driven_development_concept [INFERRED 0.95]
 
-## Communities (234 total, 46 thin omitted)
+## Communities (233 total, 51 thin omitted)
 
 ### Community 0 - "02-asteroids/game.js"
 Cohesion: 0.07
@@ -374,11 +377,11 @@ Cohesion: 0.22
 Nodes (8): 02 — Animación de explosión al romper bloques, Alcance, Criterios de aceptación, Decisiones tomadas y descartadas, Dentro del spec, Fuera del alcance, Modelo de datos, Plan de implementación
 
 ### Community 28 - "playwright-cli/SKILL.md"
-Cohesion: 0.22
+Cohesion: 0.25
 Nodes (4): Examples, Inspecting Element Attributes, Debugging Playwright Tests, Running Playwright Tests
 
 ### Community 29 - "Video Recording"
-Cohesion: 0.25
+Cohesion: 0.22
 Nodes (8): 1. Use Descriptive Filenames, 2. Record entire hero scripts., Basic Recording, Best Practices, Limitations, Overlay API Summary, Tracing vs Video, Video Recording
 
 ### Community 30 - "Spec Design Skill"
@@ -418,8 +421,8 @@ Cohesion: 0.06
 Nodes (35): Asteroid, attachInput(), Bullet, destroy(), detachInput(), dist(), draw(), drawHUD() (+27 more)
 
 ### Community 49 - "about/page.tsx"
-Cohesion: 0.11
-Nodes (18): Anti-Patterns, Basic Pipeline Configuration, Browser launch fails: "Failed to launch browser", Decision Guide, Environment Variables and Secrets, GitLab CI/CD Configuration, Key Commands, Merged report is empty after sharded run (+10 more)
+Cohesion: 0.06
+Nodes (33): Anti-Patterns, "browserType.launch: Executable doesn't exist", CI Container Jobs, Container-Based Testing, Custom Dockerfile, Decision Guide, Dev Container Setup, Docker Compose Stack (+25 more)
 
 ### Community 52 - "Workflow: opencode-loop"
 Cohesion: 0.18
@@ -442,12 +445,12 @@ Cohesion: 0.22
 Nodes (8): 08-serpentina-game, Acceptance Criteria, Data Model, Decisions Taken & Discarded, Identified Risks, Implementation Plan, Scope, What is **not** in this spec
 
 ### Community 59 - "about.spec.ts"
-Cohesion: 0.23
-Nodes (10): LeaderboardList(), LeaderboardListProps, ArcadeGameModule, UseArcadeGameParams, UseArcadeGameResult, AsteroidsGameProps, CaidaGameProps, CaidaRefs (+2 more)
+Cohesion: 0.15
+Nodes (15): metadata, MODES, LeaderboardList(), LeaderboardListProps, ArcadeGameModule, UseArcadeGameParams, UseArcadeGameResult, AsteroidsGameProps (+7 more)
 
 ### Community 60 - "playwright.config.ts"
-Cohesion: 0.16
-Nodes (19): getSalonLeaderboard(), PLAYERS, seededScores(), getScoresByGame(), DetailPage(), DetailPageProps, TopPlayersToday(), LeaderboardRow (+11 more)
+Cohesion: 0.15
+Nodes (20): getSalonLeaderboard(), PLAYERS, seededScores(), getScoresByGame(), ScoreRow, DetailPage(), DetailPageProps, TopPlayersToday() (+12 more)
 
 ### Community 61 - "asteroids.spec.ts"
 Cohesion: 0.05
@@ -455,11 +458,11 @@ Nodes (37): By Symptom, Capture Browser Console, CI-Specific Configuration, Comm
 
 ### Community 62 - "salon.spec.ts"
 Cohesion: 0.10
-Nodes (18): CATS, Game, GameCategory, GameColor, GameFilter, Profile, ScoreRow, GamesClientProps (+10 more)
+Nodes (18): CATS, Game, GameCategory, GameColor, GameFilter, Profile, ScoreEntry, GamesClientProps (+10 more)
 
 ### Community 63 - "caida/game.esm.js"
-Cohesion: 0.05
-Nodes (71): signOutAction(), Footer(), NAV_LINKS, NavClient(), NavClientProps, SkinSwitcher(), Nav(), applySkin() (+63 more)
+Cohesion: 0.15
+Nodes (30): attachInput(), clearLines(), collide(), createBoard(), destroy(), detachInput(), draw(), drawBlock() (+22 more)
 
 ### Community 64 - "app/page.tsx"
 Cohesion: 0.13
@@ -478,8 +481,8 @@ Cohesion: 0.14
 Nodes (13): ASTEROIDS — `asteroids`, BLOQUE BUSTER — `bloque-buster`, CAÍDA — `caida`, DUELO PIXEL — `duelo-pixel`, GLOTÓN — `gloton`, INVASORES — `invasores`, Juegos catalogados (no jugables todavía), Juegos implementados en Arcade Vault (+5 more)
 
 ### Community 69 - "data.jsx"
-Cohesion: 0.15
-Nodes (15): CuentaPage(), metadata, LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, scoreEntrySchema, saveScore() (+7 more)
+Cohesion: 0.19
+Nodes (18): attachInput(), bodyColor, destroy(), detachInput(), draw(), endGame(), FRUIT_ATLAS, FRUIT_NAMES (+10 more)
 
 ### Community 71 - "The tools"
 Cohesion: 0.15
@@ -494,16 +497,20 @@ Cohesion: 0.09
 Nodes (20): Before / After, Benchmarks, How It Work, <img src="../../docs/assets/dancing-rock.svg" width="20" height="20" alt="rock"/> Caveman (285 tokens), Install, 📄 Original (706 tokens), Part of Caveman, Security (+12 more)
 
 ### Community 74 - "biblioteca.jsx"
-Cohesion: 0.21
-Nodes (12): ScoreEntryInputParsed, fetchScores(), getScores(), rowToEntry(), ScoreRowSelected, ScoreRowDb, gameLabel(), PALETTE (+4 more)
+Cohesion: 0.20
+Nodes (13): ScoreEntryInputParsed, fetchScores(), getScores(), rowToEntry(), saveScore(), ScoreRowSelected, ScoreRowDb, gameLabel() (+5 more)
+
+### Community 76 - "SkinProvider.tsx"
+Cohesion: 0.11
+Nodes (25): metadata, metadata, AsteroidsGame(), AuthPrompt(), AuthPromptProps, BloqueBusterGame(), CaidaGame(), DueloPixelGame() (+17 more)
 
 ### Community 77 - "leaderboard.ts"
-Cohesion: 0.17
-Nodes (7): actions, metadata, AuthPrompt(), AuthPromptProps, RanariaGame(), RanariaGameProps, RanariaRefs
+Cohesion: 0.11
+Nodes (18): Anti-Patterns, CLI Commands, Decision Guide, Dynamic Shard Count, Merged report missing results, Merging Shard Reports, More workers = Slower, "No tests found" in some shards (+10 more)
 
 ### Community 78 - "AsteroidsGame.tsx"
-Cohesion: 0.21
-Nodes (13): metadata, AsteroidsGame(), CaidaGame(), Direction, dispatchKey(), PadDirection, TouchButton, TouchControls() (+5 more)
+Cohesion: 0.31
+Nodes (7): LeaderboardRow, parseFormData(), saveScoreAction(), SaveScoreResult, scoreEntrySchema, PlayerClient(), PlayerClientProps
 
 ### Community 79 - "about/actions.md"
 Cohesion: 0.20
@@ -524,10 +531,6 @@ Nodes (16): Caso de referencia: RANARIA (2026-08-26), Checklist P1-P7, Dificulta
 ### Community 91 - "scores.md"
 Cohesion: 0.13
 Nodes (14): Balance rules, Checklist P1-P7, Optimize an Arcade Vault game, P1 — DOM writes per frame, P2 — Linear scans in hot paths, P3 — Canvas state churn, P4 — Unbounded difficulty scaling, P5 — Entity saturation (+6 more)
-
-### Community 92 - "DueloPixelGame.tsx"
-Cohesion: 0.18
-Nodes (7): actions, metadata, DueloPixelGame(), MODES, DueloPixelGameProps, DueloPixelMode, DueloPixelRefs
 
 ### Community 93 - "validate.py"
 Cohesion: 0.20
@@ -554,8 +557,8 @@ Cohesion: 0.22
 Nodes (8): Acceptance Criteria, Data Model, Decisions Taken & Discarded, duelo-pixel spec-b — Duelo local hotseat con racha (multi-ref + HUD DOM), Identified Risks, Implementation Plan, Scope, What is **not** in this spec
 
 ### Community 101 - "actions.ts"
-Cohesion: 0.19
-Nodes (4): actions, metadata, BloqueBusterGame(), BloqueBusterGameProps
+Cohesion: 0.09
+Nodes (8): actions, actions, actions, actions, actions, actions, createLeaderboardActions(), CreateLeaderboardActionsParams
 
 ### Community 102 - "cavecrew/SKILL.md"
 Cohesion: 0.14
@@ -750,8 +753,8 @@ Cohesion: 0.10
 Nodes (21): Anti-Patterns to Avoid, Budget Fixture, CI Performance Monitoring, Core Web Vitals, Define Budgets, Lighthouse Integration, Lighthouse with Config, Measure LCP, FID, CLS (+13 more)
 
 ### Community 151 - "actions.ts"
-Cohesion: 0.09
-Nodes (26): AuthActionResult, invalid(), resetPasswordAction(), signInAction(), signUpAction(), updatePasswordAction(), updateUsernameAction(), AuthForm() (+18 more)
+Cohesion: 0.11
+Nodes (24): AuthActionResult, invalid(), resetPasswordAction(), signInAction(), signUpAction(), updatePasswordAction(), updateUsernameAction(), AuthForm() (+16 more)
 
 ### Community 152 - "Third-Party Service Mocking"
 Cohesion: 0.10
@@ -801,10 +804,6 @@ Nodes (19): Anti-Patterns to Avoid, Chat & Messaging, Collaborative Document, Co
 Cohesion: 0.11
 Nodes (19): Angular Material Components, Angular Testing with Playwright, Anti-Patterns, Build Configurations, CDK Overlay Container, Configuration, Lazy-Loaded Modules, Locator Strategies (+11 more)
 
-### Community 165 - "refactor-skin-layout-issue.md"
-Cohesion: 0.25
-Nodes (7): Commits, Decisiones de testing, Documento de decisiones, Fuera de alcance, Notas adicionales, Problema, Solución
-
 ### Community 166 - "Patterns"
 Cohesion: 0.11
 Nodes (19): Anti-Patterns, Component Testing (Experimental), CRA vs Vite Differences, Detecting Memory Leaks, E2E Config (Vite), Error Boundaries, Form Libraries (React Hook Form, Formik), Framework Tips (+11 more)
@@ -812,10 +811,6 @@ Nodes (19): Anti-Patterns, Component Testing (Experimental), CRA vs Vite Differe
 ### Community 167 - "GitHub Actions for Playwright"
 Cohesion: 0.11
 Nodes (19): Basic Workflow, Browser launch fails: "Missing dependencies", CLI Commands, Common Mistakes, Container-Based Execution, Environment Secrets, GitHub Actions for Playwright, No PR annotations (+11 more)
-
-### Community 168 - "Patterns"
-Cohesion: 0.11
-Nodes (18): Anti-Patterns, CLI Commands, Decision Guide, Dynamic Shard Count, Merged report missing results, Merging Shard Reports, More workers = Slower, "No tests found" in some shards (+10 more)
 
 ### Community 169 - "Patterns"
 Cohesion: 0.11
@@ -865,6 +860,10 @@ Nodes (3): Boundaries, Refresh policy, Workflow
 Cohesion: 0.13
 Nodes (14): Canvas Coordinate-Based Dragging, Cross-Frame Dragging, Custom Drag Preview, Drag and Drop Testing, File Drop Zone, Incremental Mouse Movement for Custom Libraries, Kanban Board (Cross-Column Movement), Keyboard-Based Reordering (+6 more)
 
+### Community 181 - "AuthForm.tsx"
+Cohesion: 0.27
+Nodes (8): signOutAction(), CuentaPage(), metadata, NavClient(), Nav(), requireEnv(), createSupabaseAdminClient(), createSupabaseServerClient()
+
 ### Community 182 - "Organizing Reusable Test Code"
 Cohesion: 0.14
 Nodes (14): Anti-Patterns, Combined Project Structure, Custom Fixtures, Helper Functions, Helpers with side effects, Locator-only page objects, Monolithic fixtures, Organizing Reusable Test Code (+6 more)
@@ -877,13 +876,13 @@ Nodes (14): Anti-Patterns, Authenticated GraphQL Fixture, Authorization Errors, 
 Cohesion: 0.15
 Nodes (13): API Layer (60% of tests), API Tests, Choosing Test Types: E2E, Component, or API, Common Mistakes, Component Layer (30% of tests), Component Tests, Decision Matrix, E2E Layer (10% of tests) (+5 more)
 
-### Community 185 - "SerpentinaGame.tsx"
-Cohesion: 0.21
-Nodes (5): actions, metadata, SerpentinaGame(), SerpentinaGameProps, SerpentinaRefs
-
 ### Community 186 - "CaidaGame.tsx"
-Cohesion: 0.13
-Nodes (15): Anti-Patterns, "browserType.launch: Executable doesn't exist", CI Container Jobs, Container-Based Testing, Custom Dockerfile, Decision Guide, Dev Container Setup, Docker Compose Stack (+7 more)
+Cohesion: 0.14
+Nodes (20): Footer(), NAV_LINKS, NavClientProps, SkinSwitcher(), applySkin(), getServerSnapshot(), getSnapshot(), Listener (+12 more)
+
+### Community 187 - "server.ts"
+Cohesion: 0.25
+Nodes (7): Acceptance criteria, Data model, Decisiones tomadas y descartadas, Identified risks, Implementation plan, Scope, SPEC 11 — Hardening de seguridad codificable
 
 ### Community 188 - "Section Definitions"
 Cohesion: 0.20
@@ -892,10 +891,6 @@ Nodes (9): 1. Query Performance (query), 2. Connection Management (conn), 3. Sec
 ### Community 189 - "Cookies"
 Cohesion: 0.22
 Nodes (9): Advanced: Multiple Cookies or Custom Options, Clear All Cookies, Cookies, Delete a Cookie, Filter Cookies by Domain, Filter Cookies by Path, Get Specific Cookie, List All Cookies (+1 more)
-
-### Community 190 - "actions.ts"
-Cohesion: 0.15
-Nodes (4): actions, actions, metadata, createLeaderboardActions()
 
 ### Community 191 - "Session Storage"
 Cohesion: 0.33
@@ -920,16 +915,16 @@ Nodes (4): Restore Storage State, Save Storage State, Storage State, Storage Sta
 ## Knowledge Gaps
 - **1947 isolated node(s):** `FeatureIconKind`, `PALETTE`, `FeatureItem`, `StatItem`, `FormFields` (+1942 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **46 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **51 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Advanced Network Interception` connect `Advanced Network Interception` to `server.ts`?**
+- **Why does `Advanced Network Interception` connect `Advanced Network Interception` to `about/page.tsx`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `File Upload & Download Testing` connect `File Upload & Download Testing` to `AuthForm.tsx`?**
+- **Why does `File Upload & Download Testing` connect `File Upload & Download Testing` to `about/page.tsx`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `Locator Strategies` connect `Locator Strategies` to `SkinProvider.tsx`?**
+- **Why does `Locator Strategies` connect `Locator Strategies` to `about/page.tsx`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **What connects `FeatureIconKind`, `PALETTE`, `FeatureItem` to the rest of the system?**
   _1947 weakly-connected nodes found - possible documentation gaps or missing edges._

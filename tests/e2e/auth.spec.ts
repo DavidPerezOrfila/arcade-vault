@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
 // cobertura OAuth vive en tests/e2e/oauth.spec.ts.
 const unique = Date.now().toString().slice(-6);
 const EMAIL = `e2e_${unique}@vault.test`;
-const PASSWORD = 'clave-secreta-123';
+const PASSWORD = 'Clave-secreta-123!';
 const USERNAME = `px_${unique}`;
 
 test.describe('Auth', () => {

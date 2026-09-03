@@ -56,3 +56,8 @@ next-env.d.ts
 /graphify-out/cache/
 # graphify curated-graph dated backups (recreated on every graphify:update)
 /graphify-out/2*/
+
+# workspace local (spec 11 ephemeral scripts)
+.scratch/
+.vscode/
+

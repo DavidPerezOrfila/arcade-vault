@@ -189,7 +189,6 @@
   "187": "server.ts",
   "188": "Section Definitions",
   "189": "Cookies",
-  "190": "actions.ts",
   "191": "Session Storage",
   "192": "Supabase Postgres Best Practices",
   "193": "package.json",
@@ -231,6 +230,6 @@
   "229": "_template.md",
   "230": "@playwright/test",
   "231": "typescript",
-  "232": "test-suite-structure.md",
-  "233": "oauth.spec.ts"
+  "233": "oauth.spec.ts",
+  "234": "prettier"
 }
