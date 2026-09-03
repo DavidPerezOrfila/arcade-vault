@@ -605,8 +605,8 @@
     "semantic_hash": ""
   },
   "app/salon/SalonClient.tsx": {
-    "mtime": 1788215047.434296,
-    "ast_hash": "2bbad5d46cf68b4a0e81f6472e9eb245",
+    "mtime": 1788470622.3832562,
+    "ast_hash": "56667113ae5ff73f19a9b52d18c522e9",
     "semantic_hash": ""
   },
   "components/games/asteroids/AsteroidsGame.tsx": {
@@ -650,8 +650,8 @@
     "semantic_hash": ""
   },
   "supabase/migrations/20260719000001_init_scores.sql": {
-    "mtime": 1788287697.48772,
-    "ast_hash": "8570f9d40cbe851a495d6039587f4ec2",
+    "mtime": 1788462276.4812975,
+    "ast_hash": "1a3c1a76215098a2e64b46e1134be346",
     "semantic_hash": ""
   },
   "supabase/migrations/20260728_games_catalog.sql": {
@@ -964,11 +964,6 @@
     "ast_hash": "94273da3938a75ef0bc0afe5d56934ba",
     "semantic_hash": ""
   },
-  ".scratch/asteroids-game.png": {
-    "mtime": 1786466999.571739,
-    "ast_hash": "ce6f00e091ab453fc007ca8b97f7ba7a",
-    "semantic_hash": ""
-  },
   "resources/started-games/06-snake/fruits.png": {
     "mtime": 1786466999.6237836,
     "ast_hash": "4c9f6c368023d2a01d9ca3912a576c65",
@@ -1134,11 +1129,6 @@
     "ast_hash": "765f81b6c5dcea4a48600eb8802457d6",
     "semantic_hash": ""
   },
-  ".scratch/refactor-skin-layout-issue.md": {
-    "mtime": 1787002351.9502492,
-    "ast_hash": "166bcfa25780ce78033e6294087bdbc7",
-    "semantic_hash": ""
-  },
   ".gemini/settings.json": {
     "mtime": 1787261770.8241675,
     "ast_hash": "39fcaa6fd7f6d4d670500978ca977562",
@@ -1270,8 +1260,8 @@
     "semantic_hash": ""
   },
   "tests/e2e/auth.spec.ts": {
-    "mtime": 1788215047.523741,
-    "ast_hash": "3bac7141b90609c0316b0083bb3b47bc",
+    "mtime": 1788470625.6185179,
+    "ast_hash": "568dbcef01f365d257e63d1f77080119",
     "semantic_hash": ""
   },
   "tests/e2e/ranaria.spec.ts": {
@@ -2814,39 +2804,14 @@
     "ast_hash": "63bb911e3a56baa1784cd4c418cab0db",
     "semantic_hash": ""
   },
-  ".scratch/excluir-defender.ps1": {
-    "mtime": 1788214022.4170122,
-    "ast_hash": "7474a58977d89961956d2ae01bd27459",
-    "semantic_hash": ""
-  },
-  ".scratch/remote-baseline.mjs": {
-    "mtime": 1788301498.129658,
-    "ast_hash": "818d00370a14182e0c0dd47fcbc28916",
-    "semantic_hash": ""
-  },
-  ".scratch/remote-schema.sql": {
-    "mtime": 1788301337.7547984,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
-    "semantic_hash": ""
-  },
-  ".vscode/settings.json": {
-    "mtime": 1788214011.372353,
-    "ast_hash": "6d3521b8c8dc1fdea01a5a201d25446a",
-    "semantic_hash": ""
-  },
   "resources/security/security-checklist.md": {
     "mtime": 1788288027.6726513,
     "ast_hash": "4c1a8c4bcd690847c7012ba0e6e0586f",
     "semantic_hash": ""
   },
   "specs/11-security-hardening.md": {
-    "mtime": 1788384275.9458237,
-    "ast_hash": "cf3a3f4f0f17f0f2ba7a16cb5b43c738",
-    "semantic_hash": ""
-  },
-  ".scratch/verify-security-hardening.mjs": {
-    "mtime": 1788384392.8081808,
-    "ast_hash": "05c9c020b2f6a626e46283993fbcd51b",
+    "mtime": 1788471321.9662669,
+    "ast_hash": "554385b4dfb403618bc90011afc6b44f",
     "semantic_hash": ""
   },
   "supabase/migrations/20260902000001_security_hardening.sql": {

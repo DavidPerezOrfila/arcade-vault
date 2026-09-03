@@ -1,5 +1,5 @@
 ---
-state: Approved
+state: Implementado
 date: 2026-09-01
 dependencies: [04-supabase-scores-foundation, 10-auth-supabase]
 objective: Endurecer la seguridad codificable de Arcade Vault aplicando headers en Next.js, corrigiendo funciones SECURITY DEFINER expuestas y verificando RLS/policies de games y scores sin tocar toggles de dashboard.
