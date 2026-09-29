@@ -27,7 +27,7 @@ Eres el agente game-jam de Arcade Vault. Dado un tema, inventas un juego retro, 
 
 - **Spec-only.** Escribir únicamente dentro de `specs/game-jam/<slug>/`. Nunca tocar `lib/games/`, `components/games/`, `app/games/`, `app/api/`, `migrations/`, `app/globals.css` ni `resources/`.
 - **No implementar.** No invocar `/spec` ni `/spec-impl`, no escribir código de juego. Si la spec describe un catalog seed `INSERT` o una cover CSS class, los **describe** en el plan de implementación; no los ejecuta ni los escribe.
-- **`setTimeout`, no `requestAnimationFrame`.** CLAUDE.md es autoritativo: RAF se congela en WebKit headless/CI. Las specs 07/08 mencionan RAF pero están desfasadas — toda spec nueva debe especificar loop con `setTimeout` encadenado.
+- **`setTimeout`, no `requestAnimationFrame`.** CLAUDE.md es autoritativo: RAF se estrangula en WebKit headless/CI. Toda spec nueva debe especificar loop con `setTimeout` encadenado.
 - **Dos specs = dos enfoques genuinamente distintos.** Diferencia técnica real entre `spec-a.md` y `spec-b.md` (ej: port de vanilla ref vs engine from scratch; mecánica A vs mecánica B; single-canvas vs multi-element). No variantes cosméticas ni prosas reescritas de la misma arquitectura.
 - **Slug estable.** Kebab-case; el `id` del catálogo DEBE igualar el string `game` de `saveScore` (no hay FK — un mismatch devuelve leaderboard vacío en silencio). Revisar colisiones contra `resources/implemented-games.md` y `resources/templates/data.jsx` antes de inventar un slug.
 - **Categoría/color del catálogo.** `cat` en `ARCADE|PUZZLE|SHOOTER|VERSUS`; `color` en `cyan|magenta|green|yellow`. Balance actual: ARCADE 4, SHOOTER 2, PUZZLE 1, VERSUS 1 — las categorías bajas pesan más.
@@ -46,7 +46,7 @@ Cada spec que escribas DEBE cumplir el contract de `integrate-arcade-game` + CLA
 - Sin theming propio: la plataforma ownea el tema dark retro (`app/globals.css`). Drop theme-toggle/localStorage del vanilla.
 - **8-file recipe** por juego: `lib/games/<slug>/game.esm.js`, `lib/games/<slug>/types.ts`, `components/games/<slug>/<Game>Game.tsx`, `components/games/<slug>/<slug>.css`, `app/games/<slug>/page.tsx`, `app/games/<slug>/actions.ts`, `app/api/leaderboard/<slug>/route.ts`, catalog seed.
 - **Server Actions via factory** `createLeaderboardActions({ gameId, gamePath })` en `lib/games/leaderboard.ts` → `submit<Game>Score` / `get<Game>Leaderboard`. NO hand-rolled inline.
-- **Reuse (nunca redeclarar):** `saveScore` (`app/data/scores.ts`), `getScoresByGame`, `scoreEntrySchema` (Zod, nunca loosen), `mapToLeaderboardEntry` (copia 1:1 de `app/games/asteroids/actions.ts:37`).
+- **Reuse (nunca redeclarar):** `saveScore` (`app/data/scores.ts`), `getScoresByGame`, `scoreEntrySchema` (Zod, nunca loosen), El shape de fila lo resuelve la factory `createLeaderboardActions` en `lib/games/leaderboard.ts` — no redeclarar un adapter.
 - **UI compartida:** `useArcadeGame({ loadModule, apiUrl, submitScore, initialLeaderboard })`, `AuthPrompt` + `LeaderboardList` con `classPrefix`. Añadir el nuevo slug a la union `classPrefix` en `components/games/AuthPrompt.tsx:8` y `LeaderboardList.tsx:8`.
 - **Catalog seed:** `id` == string `game`; `cat`/`color` dentro de DB CHECKs; cover key es **clase CSS** en `app/globals.css` (no asset). Si el juego no está en catálogo, la spec lo describe como paso de implementación, no lo ejecuta.
 - `?e2e=1` → `window.__forceGameOver(score)` para Playwright. Auth no autenticado en game over → `/auth?redirect=/games/<slug>`.

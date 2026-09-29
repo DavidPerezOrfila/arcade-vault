@@ -52,12 +52,12 @@ Real paths from `app/games/asteroids/` — copy that shape. `<slug>` = catalog i
 
 ## REUSE, do not modify
 
-- `saveScore(input)` — `app/data/scores.ts:56`. Insert primitive.
-- `getScoresByGame(game)` — `app/data/scores.ts:39`. Per-game read.
+- `saveScore(input)` — `app/data/scores.ts`. Insert primitive.
+- `getScoresByGame(game)` — `app/data/scores.ts`. Per-game read.
 - `scoreEntrySchema` / `ScoreEntryInputParsed` — `app/data/schema.ts`. Zod contract. **Never redeclare or loosen.**
 - `createSupabaseServerClient()` — `lib/supabase/server.ts`. Cookie auth.
 - `Game` / `GameFilter` / `GameColor` — `app/data/types.ts`.
-- `mapToLeaderboardEntry` — copy the 1:1 adapter from `app/games/asteroids/actions.ts:37` (fills `rank`, `isCurrentUser`, ISO `createdAt`).
+- Leaderboard rows are shaped inside `createLeaderboardActions` in `lib/games/leaderboard.ts` (`mapToLeaderboardEntry`, not exported — it fills `rank`, `isCurrentUser`, ISO `createdAt`). Extend the factory; do not copy the adapter into a game's `actions.ts`.
 
 Scores table has **no FK** to `games.id` — linkage is by-convention (matching string). Honor it.
 
@@ -68,7 +68,7 @@ Vanilla engines from `resources/started-games/<NN>-<name>/game.js` use `document
 - Remove top-level `document.getElementById` reads — receive the DOM via `initGame(refs, { onGameOver })`. For a single-canvas game, `refs` is the canvas; for multi-element games (e.g. tetris: `board` + `next-canvas` + HUD `score/lines/level` + overlay), `refs` is an object of the needed elements passed from React.
 - Drop vanilla theming/theme-toggle/localStorage blocks — the platform owns theming (dark retro `app/globals.css`).
 - Pair `window.addEventListener` attach/detach (asteroids `attachInput`/`detachInput`) so `destroy()` removes them.
-- Store `requestAnimationFrame` handle module-scoped; `destroy()` cancels it.
+- Store the chained-`setTimeout` handle module-scoped; `destroy()` cancels it. **Never `requestAnimationFrame`** — it throttles in headless WebKit/CI and freezes the game there.
 - Clamp `dt` to `0.05s` (tab-blur guard).
 - Fixed internal resolution; CSS scales visually. Engine never reads CSS dims.
 - `onGameOverCallback(score)` fires **once** at terminal state.
@@ -123,7 +123,7 @@ useEffect(() => {
     m.setOnGameOver(handleGameOver); // wire BEFORE init
     m.initGame(canvasRef.current!, options);
   });
-  return () => game?.destroy(); // cleanup REQUIRED: cancels RAF + detaches listeners
+  return () => game?.destroy(); // cleanup REQUIRED: cancels the timer + detaches listeners
 }, []);
 ```
 
@@ -147,7 +147,7 @@ useEffect(() => {
 | ----------------------------------- | ------------------------------------------- |
 | `/juegos/<slug>` (spec 05 text)     | Real routing is `/games/<slug>`             |
 | Sync `import` of engine             | Dynamic `import()` in useEffect (SSR-safe)  |
-| No `destroy()` in cleanup           | RAF + listeners leak across navigations     |
+| No `destroy()` in cleanup           | Timer + listeners leak across navigations   |
 | `onGameOver` wired after `initGame` | Wire BEFORE init                            |
 | Rewriting `scores.ts`/`schema.ts`   | Game-agnostic already; reuse, don't touch   |
 | Catalog `id` ≠ score `game` string  | Leaderboard returns nothing (no FK, silent) |
